@@ -1,0 +1,14 @@
+07-14-2021 @ 03:59:01 - ---[ New import started at 2021-07-13 15:59:01 ] PHP Memory: 768 MB, WP Memory: 40 MB
+07-14-2021 @ 03:59:01 - Preparing for import.
+07-14-2021 @ 03:59:01 - Row :1 - Parsing item.
+07-14-2021 @ 03:59:01 - Row :1 - Processing item.
+07-14-2021 @ 03:59:01 - Found simple product object. ID:443892
+07-14-2021 @ 03:59:01 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/07/FC-JC0135.jpg
+07-14-2021 @ 03:59:01 - Attachment ID:449713
+07-14-2021 @ 03:59:01 - Setting Gallery Images.
+07-14-2021 @ 03:59:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/07/FC-JC0135-1.jpg
+07-14-2021 @ 03:59:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/07/FC-JC0135-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/07/FC-JC0135-1.jpg. Error: Not Found
+07-14-2021 @ 03:59:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/07/FC-JC0135-2.jpg
+07-14-2021 @ 03:59:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/07/FC-JC0135-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/07/FC-JC0135-2.jpg. Error: Not Found
+07-14-2021 @ 03:59:04 - Row :1 - Product updated successfully.
+07-14-2021 @ 03:59:04 - ---[ Import ended at 2021-07-13 15:59:04]---

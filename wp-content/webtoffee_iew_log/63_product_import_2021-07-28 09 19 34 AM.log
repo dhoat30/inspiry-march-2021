@@ -1,0 +1,909 @@
+07-28-2021 @ 21:19:34 - ---[ New import started at 2021-07-28 09:19:34 ] PHP Memory: 768 MB, WP Memory: 40 MB
+07-28-2021 @ 21:19:34 - Preparing for import.
+07-28-2021 @ 21:19:34 - Row :1 - Parsing item.
+07-28-2021 @ 21:19:34 - Row :1 - Processing item.
+07-28-2021 @ 21:19:35 - Found simple product object. ID:450578
+07-28-2021 @ 21:19:35 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERGRE.jpg
+07-28-2021 @ 21:19:35 - Attachment ID:450631
+07-28-2021 @ 21:19:35 - Setting Gallery Images.
+07-28-2021 @ 21:19:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERGRE-1.jpg
+07-28-2021 @ 21:19:35 - Attachment ID:450632
+07-28-2021 @ 21:19:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERGRE-2.jpg
+07-28-2021 @ 21:19:35 - Attachment ID:450633
+07-28-2021 @ 21:19:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERGRE-3.jpg
+07-28-2021 @ 21:19:36 - Attachment ID:450634
+07-28-2021 @ 21:19:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERGRE-4.jpg
+07-28-2021 @ 21:19:36 - Attachment ID:450635
+07-28-2021 @ 21:19:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERGRE-5.jpg
+07-28-2021 @ 21:19:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERGRE-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERGRE-5.jpg. Error: Not Found
+07-28-2021 @ 21:19:38 - Row :1 - Product updated successfully.
+07-28-2021 @ 21:19:38 - Row :2 - Parsing item.
+07-28-2021 @ 21:19:38 - Row :2 - Processing item.
+07-28-2021 @ 21:19:38 - Found simple product object. ID:450579
+07-28-2021 @ 21:19:38 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERBLK.jpg
+07-28-2021 @ 21:19:39 - Attachment ID:450636
+07-28-2021 @ 21:19:39 - Setting Gallery Images.
+07-28-2021 @ 21:19:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERBLK-1.jpg
+07-28-2021 @ 21:19:39 - Attachment ID:450637
+07-28-2021 @ 21:19:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERBLK-2.jpg
+07-28-2021 @ 21:19:39 - Attachment ID:450638
+07-28-2021 @ 21:19:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERBLK-3.jpg
+07-28-2021 @ 21:19:40 - Attachment ID:450639
+07-28-2021 @ 21:19:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERBLK-4.jpg
+07-28-2021 @ 21:19:40 - Attachment ID:450640
+07-28-2021 @ 21:19:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERBLK-5.jpg
+07-28-2021 @ 21:19:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERBLK-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERBLK-5.jpg. Error: Not Found
+07-28-2021 @ 21:19:42 - Row :2 - Product updated successfully.
+07-28-2021 @ 21:19:42 - Row :3 - Parsing item.
+07-28-2021 @ 21:19:42 - Row :3 - Processing item.
+07-28-2021 @ 21:19:42 - Found simple product object. ID:450580
+07-28-2021 @ 21:19:42 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERDBRN.jpg
+07-28-2021 @ 21:19:42 - Attachment ID:450641
+07-28-2021 @ 21:19:42 - Setting Gallery Images.
+07-28-2021 @ 21:19:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERDBRN-1.jpg
+07-28-2021 @ 21:19:43 - Attachment ID:450642
+07-28-2021 @ 21:19:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERDBRN-2.jpg
+07-28-2021 @ 21:19:43 - Attachment ID:450643
+07-28-2021 @ 21:19:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERDBRN-3.jpg
+07-28-2021 @ 21:19:43 - Attachment ID:450644
+07-28-2021 @ 21:19:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERDBRN-4.jpg
+07-28-2021 @ 21:19:44 - Attachment ID:450645
+07-28-2021 @ 21:19:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERDBRN-5.jpg
+07-28-2021 @ 21:19:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERDBRN-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERDBRN-5.jpg. Error: Not Found
+07-28-2021 @ 21:19:46 - Row :3 - Product updated successfully.
+07-28-2021 @ 21:19:46 - Row :4 - Parsing item.
+07-28-2021 @ 21:19:46 - Row :4 - Processing item.
+07-28-2021 @ 21:19:46 - Found simple product object. ID:450581
+07-28-2021 @ 21:19:46 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERCOG.jpg
+07-28-2021 @ 21:19:46 - Attachment ID:450646
+07-28-2021 @ 21:19:46 - Setting Gallery Images.
+07-28-2021 @ 21:19:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERCOG-1.jpg
+07-28-2021 @ 21:19:46 - Attachment ID:450647
+07-28-2021 @ 21:19:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERCOG-2.jpg
+07-28-2021 @ 21:19:47 - Attachment ID:450648
+07-28-2021 @ 21:19:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERCOG-3.jpg
+07-28-2021 @ 21:19:47 - Attachment ID:450649
+07-28-2021 @ 21:19:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERCOG-4.jpg
+07-28-2021 @ 21:19:47 - Attachment ID:450650
+07-28-2021 @ 21:19:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERCOG-5.jpg
+07-28-2021 @ 21:19:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERCOG-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-EURFERCOG-5.jpg. Error: Not Found
+07-28-2021 @ 21:19:50 - Row :4 - Product updated successfully.
+07-28-2021 @ 21:19:50 - Row :5 - Parsing item.
+07-28-2021 @ 21:19:50 - Row :5 - Processing item.
+07-28-2021 @ 21:19:50 - Found simple product object. ID:450582
+07-28-2021 @ 21:19:50 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41.jpg
+07-28-2021 @ 21:19:50 - Attachment ID:450651
+07-28-2021 @ 21:19:50 - Setting Gallery Images.
+07-28-2021 @ 21:19:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-1.jpg
+07-28-2021 @ 21:19:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-1.jpg. Error: Not Found
+07-28-2021 @ 21:19:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-2.jpg
+07-28-2021 @ 21:19:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-2.jpg. Error: Not Found
+07-28-2021 @ 21:19:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-3.jpg
+07-28-2021 @ 21:19:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-3.jpg. Error: Not Found
+07-28-2021 @ 21:19:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-4.jpg
+07-28-2021 @ 21:19:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-4.jpg. Error: Not Found
+07-28-2021 @ 21:19:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-5.jpg
+07-28-2021 @ 21:19:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB41-5.jpg. Error: Not Found
+07-28-2021 @ 21:19:58 - Row :5 - Product updated successfully.
+07-28-2021 @ 21:19:58 - Row :6 - Parsing item.
+07-28-2021 @ 21:19:58 - Row :6 - Processing item.
+07-28-2021 @ 21:19:58 - Found simple product object. ID:450583
+07-28-2021 @ 21:19:58 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51.jpg
+07-28-2021 @ 21:19:58 - Attachment ID:450652
+07-28-2021 @ 21:19:58 - Setting Gallery Images.
+07-28-2021 @ 21:19:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-1.jpg
+07-28-2021 @ 21:19:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-1.jpg. Error: Not Found
+07-28-2021 @ 21:19:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-2.jpg
+07-28-2021 @ 21:20:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-2.jpg. Error: Not Found
+07-28-2021 @ 21:20:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-3.jpg
+07-28-2021 @ 21:20:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-3.jpg. Error: Not Found
+07-28-2021 @ 21:20:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-4.jpg
+07-28-2021 @ 21:20:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-4.jpg. Error: Not Found
+07-28-2021 @ 21:20:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-5.jpg
+07-28-2021 @ 21:20:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB51-5.jpg. Error: Not Found
+07-28-2021 @ 21:20:05 - Row :6 - Product updated successfully.
+07-28-2021 @ 21:20:05 - Row :7 - Parsing item.
+07-28-2021 @ 21:20:05 - Row :7 - Processing item.
+07-28-2021 @ 21:20:05 - Found simple product object. ID:450584
+07-28-2021 @ 21:20:05 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61.jpg
+07-28-2021 @ 21:20:05 - Attachment ID:450653
+07-28-2021 @ 21:20:05 - Setting Gallery Images.
+07-28-2021 @ 21:20:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-1.jpg
+07-28-2021 @ 21:20:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-1.jpg. Error: Not Found
+07-28-2021 @ 21:20:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-2.jpg
+07-28-2021 @ 21:20:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-2.jpg. Error: Not Found
+07-28-2021 @ 21:20:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-3.jpg
+07-28-2021 @ 21:20:09 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-3.jpg. Error: Not Found
+07-28-2021 @ 21:20:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-4.jpg
+07-28-2021 @ 21:20:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-4.jpg. Error: Not Found
+07-28-2021 @ 21:20:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-5.jpg
+07-28-2021 @ 21:20:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB61-5.jpg. Error: Not Found
+07-28-2021 @ 21:20:13 - Row :7 - Product updated successfully.
+07-28-2021 @ 21:20:13 - Row :8 - Parsing item.
+07-28-2021 @ 21:20:13 - Row :8 - Processing item.
+07-28-2021 @ 21:20:13 - Found simple product object. ID:450585
+07-28-2021 @ 21:20:13 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01.jpg
+07-28-2021 @ 21:20:13 - Attachment ID:450654
+07-28-2021 @ 21:20:13 - Setting Gallery Images.
+07-28-2021 @ 21:20:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-1.jpg
+07-28-2021 @ 21:20:15 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-1.jpg. Error: Not Found
+07-28-2021 @ 21:20:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-2.jpg
+07-28-2021 @ 21:20:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-2.jpg. Error: Not Found
+07-28-2021 @ 21:20:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-3.jpg
+07-28-2021 @ 21:20:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-3.jpg. Error: Not Found
+07-28-2021 @ 21:20:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-4.jpg
+07-28-2021 @ 21:20:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-4.jpg. Error: Not Found
+07-28-2021 @ 21:20:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-5.jpg
+07-28-2021 @ 21:20:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01-5.jpg. Error: Not Found
+07-28-2021 @ 21:20:21 - Row :8 - Product updated successfully.
+07-28-2021 @ 21:20:21 - Row :9 - Parsing item.
+07-28-2021 @ 21:20:21 - Row :9 - Processing item.
+07-28-2021 @ 21:20:21 - Found simple product object. ID:450586
+07-28-2021 @ 21:20:21 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB.jpg
+07-28-2021 @ 21:20:21 - Attachment ID:450655
+07-28-2021 @ 21:20:21 - Setting Gallery Images.
+07-28-2021 @ 21:20:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-1.jpg
+07-28-2021 @ 21:20:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-1.jpg. Error: Not Found
+07-28-2021 @ 21:20:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-2.jpg
+07-28-2021 @ 21:20:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-2.jpg. Error: Not Found
+07-28-2021 @ 21:20:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-3.jpg
+07-28-2021 @ 21:20:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-3.jpg. Error: Not Found
+07-28-2021 @ 21:20:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-4.jpg
+07-28-2021 @ 21:20:27 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-4.jpg. Error: Not Found
+07-28-2021 @ 21:20:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-5.jpg
+07-28-2021 @ 21:20:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB01HB-5.jpg. Error: Not Found
+07-28-2021 @ 21:20:29 - Row :9 - Product updated successfully.
+07-28-2021 @ 21:20:29 - Row :10 - Parsing item.
+07-28-2021 @ 21:20:29 - Row :10 - Processing item.
+07-28-2021 @ 21:20:29 - Found simple product object. ID:450587
+07-28-2021 @ 21:20:29 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB.jpg
+07-28-2021 @ 21:20:29 - Attachment ID:450656
+07-28-2021 @ 21:20:29 - Setting Gallery Images.
+07-28-2021 @ 21:20:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-1.jpg
+07-28-2021 @ 21:20:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-1.jpg. Error: Not Found
+07-28-2021 @ 21:20:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-2.jpg
+07-28-2021 @ 21:20:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-2.jpg. Error: Not Found
+07-28-2021 @ 21:20:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-3.jpg
+07-28-2021 @ 21:20:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-3.jpg. Error: Not Found
+07-28-2021 @ 21:20:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-4.jpg
+07-28-2021 @ 21:20:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-4.jpg. Error: Not Found
+07-28-2021 @ 21:20:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-5.jpg
+07-28-2021 @ 21:20:36 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB02HB-5.jpg. Error: Not Found
+07-28-2021 @ 21:20:36 - Row :10 - Product updated successfully.
+07-28-2021 @ 21:20:38 - Preparing for import.
+07-28-2021 @ 21:20:38 - Row :11 - Parsing item.
+07-28-2021 @ 21:20:38 - Row :11 - Processing item.
+07-28-2021 @ 21:20:38 - Found simple product object. ID:450588
+07-28-2021 @ 21:20:38 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71.jpg
+07-28-2021 @ 21:20:39 - Attachment ID:450879
+07-28-2021 @ 21:20:39 - Setting Gallery Images.
+07-28-2021 @ 21:20:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-1.jpg
+07-28-2021 @ 21:20:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-1.jpg. Error: Not Found
+07-28-2021 @ 21:20:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-2.jpg
+07-28-2021 @ 21:20:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-2.jpg. Error: Not Found
+07-28-2021 @ 21:20:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-3.jpg
+07-28-2021 @ 21:20:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-3.jpg. Error: Not Found
+07-28-2021 @ 21:20:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-4.jpg
+07-28-2021 @ 21:20:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-4.jpg. Error: Not Found
+07-28-2021 @ 21:20:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-5.jpg
+07-28-2021 @ 21:20:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSRAGB71-5.jpg. Error: Not Found
+07-28-2021 @ 21:20:45 - Row :11 - Product updated successfully.
+07-28-2021 @ 21:20:45 - Row :12 - Parsing item.
+07-28-2021 @ 21:20:45 - Row :12 - Processing item.
+07-28-2021 @ 21:20:45 - Found simple product object. ID:450589
+07-28-2021 @ 21:20:45 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV.jpg
+07-28-2021 @ 21:20:46 - Attachment ID:450880
+07-28-2021 @ 21:20:46 - Setting Gallery Images.
+07-28-2021 @ 21:20:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-1.jpg
+07-28-2021 @ 21:20:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-1.jpg. Error: Not Found
+07-28-2021 @ 21:20:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-2.jpg
+07-28-2021 @ 21:20:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-2.jpg. Error: Not Found
+07-28-2021 @ 21:20:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-3.jpg
+07-28-2021 @ 21:20:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-3.jpg. Error: Not Found
+07-28-2021 @ 21:20:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-4.jpg
+07-28-2021 @ 21:20:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-4.jpg. Error: Not Found
+07-28-2021 @ 21:20:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-5.jpg
+07-28-2021 @ 21:20:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARTV-5.jpg. Error: Not Found
+07-28-2021 @ 21:20:52 - Row :12 - Product updated successfully.
+07-28-2021 @ 21:20:52 - Row :13 - Parsing item.
+07-28-2021 @ 21:20:52 - Row :13 - Processing item.
+07-28-2021 @ 21:20:52 - Found simple product object. ID:450590
+07-28-2021 @ 21:20:52 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE.jpg
+07-28-2021 @ 21:20:53 - Attachment ID:450881
+07-28-2021 @ 21:20:53 - Setting Gallery Images.
+07-28-2021 @ 21:20:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-1.jpg
+07-28-2021 @ 21:20:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-1.jpg. Error: Not Found
+07-28-2021 @ 21:20:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-2.jpg
+07-28-2021 @ 21:20:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-2.jpg. Error: Not Found
+07-28-2021 @ 21:20:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-3.jpg
+07-28-2021 @ 21:20:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-3.jpg. Error: Not Found
+07-28-2021 @ 21:20:57 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-4.jpg
+07-28-2021 @ 21:20:58 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-4.jpg. Error: Not Found
+07-28-2021 @ 21:20:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-5.jpg
+07-28-2021 @ 21:20:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLKARSIDE-5.jpg. Error: Not Found
+07-28-2021 @ 21:21:00 - Row :13 - Product updated successfully.
+07-28-2021 @ 21:21:00 - Row :14 - Parsing item.
+07-28-2021 @ 21:21:00 - Row :14 - Processing item.
+07-28-2021 @ 21:21:00 - Found simple product object. ID:450591
+07-28-2021 @ 21:21:00 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2.jpg
+07-28-2021 @ 21:21:00 - Attachment ID:450882
+07-28-2021 @ 21:21:00 - Setting Gallery Images.
+07-28-2021 @ 21:21:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-1.jpg
+07-28-2021 @ 21:21:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-1.jpg. Error: Not Found
+07-28-2021 @ 21:21:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-2.jpg
+07-28-2021 @ 21:21:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-2.jpg. Error: Not Found
+07-28-2021 @ 21:21:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-3.jpg
+07-28-2021 @ 21:21:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-3.jpg. Error: Not Found
+07-28-2021 @ 21:21:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-4.jpg
+07-28-2021 @ 21:21:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-4.jpg. Error: Not Found
+07-28-2021 @ 21:21:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-5.jpg
+07-28-2021 @ 21:21:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBS2-5.jpg. Error: Not Found
+07-28-2021 @ 21:21:08 - Row :14 - Product updated successfully.
+07-28-2021 @ 21:21:08 - Row :15 - Parsing item.
+07-28-2021 @ 21:21:08 - Row :15 - Processing item.
+07-28-2021 @ 21:21:08 - Found simple product object. ID:450592
+07-28-2021 @ 21:21:08 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5.jpg
+07-28-2021 @ 21:21:08 - Attachment ID:450883
+07-28-2021 @ 21:21:08 - Setting Gallery Images.
+07-28-2021 @ 21:21:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-1.jpg
+07-28-2021 @ 21:21:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-1.jpg. Error: Not Found
+07-28-2021 @ 21:21:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-2.jpg
+07-28-2021 @ 21:21:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-2.jpg. Error: Not Found
+07-28-2021 @ 21:21:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-3.jpg
+07-28-2021 @ 21:21:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-3.jpg. Error: Not Found
+07-28-2021 @ 21:21:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-4.jpg
+07-28-2021 @ 21:21:14 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-4.jpg. Error: Not Found
+07-28-2021 @ 21:21:14 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-5.jpg
+07-28-2021 @ 21:21:15 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH5-5.jpg. Error: Not Found
+07-28-2021 @ 21:21:16 - Row :15 - Product updated successfully.
+07-28-2021 @ 21:21:16 - Row :16 - Parsing item.
+07-28-2021 @ 21:21:16 - Row :16 - Processing item.
+07-28-2021 @ 21:21:16 - Found simple product object. ID:450593
+07-28-2021 @ 21:21:16 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6.jpg
+07-28-2021 @ 21:21:16 - Attachment ID:450884
+07-28-2021 @ 21:21:16 - Setting Gallery Images.
+07-28-2021 @ 21:21:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-1.jpg
+07-28-2021 @ 21:21:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-1.jpg. Error: Not Found
+07-28-2021 @ 21:21:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-2.jpg
+07-28-2021 @ 21:21:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-2.jpg. Error: Not Found
+07-28-2021 @ 21:21:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-3.jpg
+07-28-2021 @ 21:21:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-3.jpg. Error: Not Found
+07-28-2021 @ 21:21:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-4.jpg
+07-28-2021 @ 21:21:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-4.jpg. Error: Not Found
+07-28-2021 @ 21:21:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-5.jpg
+07-28-2021 @ 21:21:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCH6-5.jpg. Error: Not Found
+07-28-2021 @ 21:21:24 - Row :16 - Product updated successfully.
+07-28-2021 @ 21:21:24 - Row :17 - Parsing item.
+07-28-2021 @ 21:21:24 - Row :17 - Processing item.
+07-28-2021 @ 21:21:24 - Found simple product object. ID:450594
+07-28-2021 @ 21:21:24 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ.jpg
+07-28-2021 @ 21:21:25 - Attachment ID:450885
+07-28-2021 @ 21:21:25 - Setting Gallery Images.
+07-28-2021 @ 21:21:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-1.jpg
+07-28-2021 @ 21:21:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-1.jpg. Error: Not Found
+07-28-2021 @ 21:21:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-2.jpg
+07-28-2021 @ 21:21:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-2.jpg. Error: Not Found
+07-28-2021 @ 21:21:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-3.jpg
+07-28-2021 @ 21:21:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-3.jpg. Error: Not Found
+07-28-2021 @ 21:21:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-4.jpg
+07-28-2021 @ 21:21:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-4.jpg. Error: Not Found
+07-28-2021 @ 21:21:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-5.jpg
+07-28-2021 @ 21:21:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBQ-5.jpg. Error: Not Found
+07-28-2021 @ 21:21:32 - Row :17 - Product updated successfully.
+07-28-2021 @ 21:21:32 - Row :18 - Parsing item.
+07-28-2021 @ 21:21:32 - Row :18 - Processing item.
+07-28-2021 @ 21:21:32 - Found simple product object. ID:450595
+07-28-2021 @ 21:21:32 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK.jpg
+07-28-2021 @ 21:21:33 - Attachment ID:450886
+07-28-2021 @ 21:21:33 - Setting Gallery Images.
+07-28-2021 @ 21:21:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-1.jpg
+07-28-2021 @ 21:21:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-1.jpg. Error: Not Found
+07-28-2021 @ 21:21:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-2.jpg
+07-28-2021 @ 21:21:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-2.jpg. Error: Not Found
+07-28-2021 @ 21:21:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-3.jpg
+07-28-2021 @ 21:21:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-3.jpg. Error: Not Found
+07-28-2021 @ 21:21:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-4.jpg
+07-28-2021 @ 21:21:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-4.jpg. Error: Not Found
+07-28-2021 @ 21:21:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-5.jpg
+07-28-2021 @ 21:21:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHBK-5.jpg. Error: Not Found
+07-28-2021 @ 21:21:40 - Row :18 - Product updated successfully.
+07-28-2021 @ 21:21:40 - Row :19 - Parsing item.
+07-28-2021 @ 21:21:40 - Row :19 - Processing item.
+07-28-2021 @ 21:21:40 - Found simple product object. ID:450596
+07-28-2021 @ 21:21:40 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF.jpg
+07-28-2021 @ 21:21:41 - Attachment ID:450887
+07-28-2021 @ 21:21:41 - Setting Gallery Images.
+07-28-2021 @ 21:21:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-1.jpg
+07-28-2021 @ 21:21:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-1.jpg. Error: Not Found
+07-28-2021 @ 21:21:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-2.jpg
+07-28-2021 @ 21:21:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-2.jpg. Error: Not Found
+07-28-2021 @ 21:21:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-3.jpg
+07-28-2021 @ 21:21:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-3.jpg. Error: Not Found
+07-28-2021 @ 21:21:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-4.jpg
+07-28-2021 @ 21:21:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-4.jpg. Error: Not Found
+07-28-2021 @ 21:21:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-5.jpg
+07-28-2021 @ 21:21:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCOF-5.jpg. Error: Not Found
+07-28-2021 @ 21:21:47 - Row :19 - Product updated successfully.
+07-28-2021 @ 21:21:47 - Row :20 - Parsing item.
+07-28-2021 @ 21:21:47 - Row :20 - Processing item.
+07-28-2021 @ 21:21:47 - Found simple product object. ID:450597
+07-28-2021 @ 21:21:48 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16.jpg
+07-28-2021 @ 21:21:48 - Attachment ID:450888
+07-28-2021 @ 21:21:48 - Setting Gallery Images.
+07-28-2021 @ 21:21:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-1.jpg
+07-28-2021 @ 21:21:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-1.jpg. Error: Not Found
+07-28-2021 @ 21:21:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-2.jpg
+07-28-2021 @ 21:21:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-2.jpg. Error: Not Found
+07-28-2021 @ 21:21:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-3.jpg
+07-28-2021 @ 21:21:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-3.jpg. Error: Not Found
+07-28-2021 @ 21:21:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-4.jpg
+07-28-2021 @ 21:21:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-4.jpg. Error: Not Found
+07-28-2021 @ 21:21:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-5.jpg
+07-28-2021 @ 21:21:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTV16-5.jpg. Error: Not Found
+07-28-2021 @ 21:21:55 - Row :20 - Product updated successfully.
+07-28-2021 @ 21:21:57 - Preparing for import.
+07-28-2021 @ 21:21:57 - Row :21 - Parsing item.
+07-28-2021 @ 21:21:57 - Row :21 - Processing item.
+07-28-2021 @ 21:21:57 - Found simple product object. ID:450598
+07-28-2021 @ 21:21:57 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON.jpg
+07-28-2021 @ 21:21:58 - Attachment ID:450889
+07-28-2021 @ 21:21:58 - Setting Gallery Images.
+07-28-2021 @ 21:21:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-1.jpg
+07-28-2021 @ 21:21:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-1.jpg. Error: Not Found
+07-28-2021 @ 21:21:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-2.jpg
+07-28-2021 @ 21:22:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-2.jpg. Error: Not Found
+07-28-2021 @ 21:22:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-3.jpg
+07-28-2021 @ 21:22:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-3.jpg. Error: Not Found
+07-28-2021 @ 21:22:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-4.jpg
+07-28-2021 @ 21:22:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-4.jpg. Error: Not Found
+07-28-2021 @ 21:22:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-5.jpg
+07-28-2021 @ 21:22:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHCON-5.jpg. Error: Not Found
+07-28-2021 @ 21:22:05 - Row :21 - Product updated successfully.
+07-28-2021 @ 21:22:05 - Row :22 - Parsing item.
+07-28-2021 @ 21:22:05 - Row :22 - Processing item.
+07-28-2021 @ 21:22:05 - Found simple product object. ID:450599
+07-28-2021 @ 21:22:05 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB.jpg
+07-28-2021 @ 21:22:06 - Attachment ID:450890
+07-28-2021 @ 21:22:06 - Setting Gallery Images.
+07-28-2021 @ 21:22:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-1.jpg
+07-28-2021 @ 21:22:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-1.jpg. Error: Not Found
+07-28-2021 @ 21:22:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-2.jpg
+07-28-2021 @ 21:22:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-2.jpg. Error: Not Found
+07-28-2021 @ 21:22:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-3.jpg
+07-28-2021 @ 21:22:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-3.jpg. Error: Not Found
+07-28-2021 @ 21:22:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-4.jpg
+07-28-2021 @ 21:22:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-4.jpg. Error: Not Found
+07-28-2021 @ 21:22:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-5.jpg
+07-28-2021 @ 21:22:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHSB-5.jpg. Error: Not Found
+07-28-2021 @ 21:22:13 - Row :22 - Product updated successfully.
+07-28-2021 @ 21:22:13 - Row :23 - Parsing item.
+07-28-2021 @ 21:22:13 - Row :23 - Processing item.
+07-28-2021 @ 21:22:13 - Found simple product object. ID:450600
+07-28-2021 @ 21:22:13 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18.jpg
+07-28-2021 @ 21:22:13 - Attachment ID:450891
+07-28-2021 @ 21:22:13 - Setting Gallery Images.
+07-28-2021 @ 21:22:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-1.jpg
+07-28-2021 @ 21:22:15 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-1.jpg. Error: Not Found
+07-28-2021 @ 21:22:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-2.jpg
+07-28-2021 @ 21:22:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-2.jpg. Error: Not Found
+07-28-2021 @ 21:22:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-3.jpg
+07-28-2021 @ 21:22:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-3.jpg. Error: Not Found
+07-28-2021 @ 21:22:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-4.jpg
+07-28-2021 @ 21:22:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-4.jpg. Error: Not Found
+07-28-2021 @ 21:22:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-5.jpg
+07-28-2021 @ 21:22:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB18-5.jpg. Error: Not Found
+07-28-2021 @ 21:22:21 - Row :23 - Product updated successfully.
+07-28-2021 @ 21:22:21 - Row :24 - Parsing item.
+07-28-2021 @ 21:22:21 - Row :24 - Processing item.
+07-28-2021 @ 21:22:21 - Found simple product object. ID:450601
+07-28-2021 @ 21:22:21 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21.jpg
+07-28-2021 @ 21:22:22 - Attachment ID:450892
+07-28-2021 @ 21:22:22 - Setting Gallery Images.
+07-28-2021 @ 21:22:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-1.jpg
+07-28-2021 @ 21:22:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-1.jpg. Error: Not Found
+07-28-2021 @ 21:22:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-2.jpg
+07-28-2021 @ 21:22:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-2.jpg. Error: Not Found
+07-28-2021 @ 21:22:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-3.jpg
+07-28-2021 @ 21:22:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-3.jpg. Error: Not Found
+07-28-2021 @ 21:22:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-4.jpg
+07-28-2021 @ 21:22:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-4.jpg. Error: Not Found
+07-28-2021 @ 21:22:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-5.jpg
+07-28-2021 @ 21:22:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTAB21-5.jpg. Error: Not Found
+07-28-2021 @ 21:22:29 - Row :24 - Product updated successfully.
+07-28-2021 @ 21:22:29 - Row :25 - Parsing item.
+07-28-2021 @ 21:22:29 - Row :25 - Processing item.
+07-28-2021 @ 21:22:29 - Found simple product object. ID:450602
+07-28-2021 @ 21:22:29 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15.jpg
+07-28-2021 @ 21:22:30 - Attachment ID:450893
+07-28-2021 @ 21:22:30 - Setting Gallery Images.
+07-28-2021 @ 21:22:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-1.jpg
+07-28-2021 @ 21:22:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-1.jpg. Error: Not Found
+07-28-2021 @ 21:22:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-2.jpg
+07-28-2021 @ 21:22:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-2.jpg. Error: Not Found
+07-28-2021 @ 21:22:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-3.jpg
+07-28-2021 @ 21:22:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-3.jpg. Error: Not Found
+07-28-2021 @ 21:22:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-4.jpg
+07-28-2021 @ 21:22:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-4.jpg. Error: Not Found
+07-28-2021 @ 21:22:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-5.jpg
+07-28-2021 @ 21:22:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB15-5.jpg. Error: Not Found
+07-28-2021 @ 21:22:37 - Row :25 - Product updated successfully.
+07-28-2021 @ 21:22:37 - Row :26 - Parsing item.
+07-28-2021 @ 21:22:37 - Row :26 - Processing item.
+07-28-2021 @ 21:22:37 - Found simple product object. ID:450603
+07-28-2021 @ 21:22:37 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18.jpg
+07-28-2021 @ 21:22:38 - Attachment ID:450894
+07-28-2021 @ 21:22:38 - Setting Gallery Images.
+07-28-2021 @ 21:22:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-1.jpg
+07-28-2021 @ 21:22:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-1.jpg. Error: Not Found
+07-28-2021 @ 21:22:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-2.jpg
+07-28-2021 @ 21:22:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-2.jpg. Error: Not Found
+07-28-2021 @ 21:22:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-3.jpg
+07-28-2021 @ 21:22:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-3.jpg. Error: Not Found
+07-28-2021 @ 21:22:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-4.jpg
+07-28-2021 @ 21:22:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-4.jpg. Error: Not Found
+07-28-2021 @ 21:22:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-5.jpg
+07-28-2021 @ 21:22:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-CSOHTABB18-5.jpg. Error: Not Found
+07-28-2021 @ 21:22:45 - Row :26 - Product updated successfully.
+07-28-2021 @ 21:22:45 - Row :27 - Parsing item.
+07-28-2021 @ 21:22:45 - Row :27 - Processing item.
+07-28-2021 @ 21:22:45 - Found simple product object. ID:450604
+07-28-2021 @ 21:22:45 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO.jpg
+07-28-2021 @ 21:22:45 - Attachment ID:450895
+07-28-2021 @ 21:22:45 - Setting Gallery Images.
+07-28-2021 @ 21:22:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO-1.jpg
+07-28-2021 @ 21:22:46 - Attachment ID:450896
+07-28-2021 @ 21:22:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO-2.jpg
+07-28-2021 @ 21:22:47 - Attachment ID:450897
+07-28-2021 @ 21:22:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO-3.jpg
+07-28-2021 @ 21:22:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO-3.jpg. Error: Not Found
+07-28-2021 @ 21:22:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO-4.jpg
+07-28-2021 @ 21:22:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO-4.jpg. Error: Not Found
+07-28-2021 @ 21:22:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO-5.jpg
+07-28-2021 @ 21:22:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTBO-5.jpg. Error: Not Found
+07-28-2021 @ 21:22:51 - Row :27 - Product updated successfully.
+07-28-2021 @ 21:22:51 - Row :28 - Parsing item.
+07-28-2021 @ 21:22:51 - Row :28 - Processing item.
+07-28-2021 @ 21:22:51 - Found simple product object. ID:450605
+07-28-2021 @ 21:22:51 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO.jpg
+07-28-2021 @ 21:22:51 - Attachment ID:450898
+07-28-2021 @ 21:22:51 - Setting Gallery Images.
+07-28-2021 @ 21:22:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-1.jpg
+07-28-2021 @ 21:22:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-1.jpg. Error: Not Found
+07-28-2021 @ 21:22:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-2.jpg
+07-28-2021 @ 21:22:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-2.jpg. Error: Not Found
+07-28-2021 @ 21:22:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-3.jpg
+07-28-2021 @ 21:22:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-3.jpg. Error: Not Found
+07-28-2021 @ 21:22:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-4.jpg
+07-28-2021 @ 21:22:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-4.jpg. Error: Not Found
+07-28-2021 @ 21:22:57 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-5.jpg
+07-28-2021 @ 21:22:58 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCTNO-5.jpg. Error: Not Found
+07-28-2021 @ 21:22:58 - Row :28 - Product updated successfully.
+07-28-2021 @ 21:22:58 - Row :29 - Parsing item.
+07-28-2021 @ 21:22:58 - Row :29 - Processing item.
+07-28-2021 @ 21:22:58 - Found simple product object. ID:450606
+07-28-2021 @ 21:22:58 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO.jpg
+07-28-2021 @ 21:22:59 - Attachment ID:450899
+07-28-2021 @ 21:22:59 - Setting Gallery Images.
+07-28-2021 @ 21:22:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO-1.jpg
+07-28-2021 @ 21:23:00 - Attachment ID:450900
+07-28-2021 @ 21:23:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO-2.jpg
+07-28-2021 @ 21:23:00 - Attachment ID:450901
+07-28-2021 @ 21:23:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO-3.jpg
+07-28-2021 @ 21:23:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO-3.jpg. Error: Not Found
+07-28-2021 @ 21:23:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO-4.jpg
+07-28-2021 @ 21:23:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO-4.jpg. Error: Not Found
+07-28-2021 @ 21:23:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO-5.jpg
+07-28-2021 @ 21:23:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCOBO-5.jpg. Error: Not Found
+07-28-2021 @ 21:23:05 - Row :29 - Product updated successfully.
+07-28-2021 @ 21:23:05 - Row :30 - Parsing item.
+07-28-2021 @ 21:23:05 - Row :30 - Processing item.
+07-28-2021 @ 21:23:05 - Found simple product object. ID:450607
+07-28-2021 @ 21:23:05 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO.jpg
+07-28-2021 @ 21:23:05 - Attachment ID:450902
+07-28-2021 @ 21:23:05 - Setting Gallery Images.
+07-28-2021 @ 21:23:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-1.jpg
+07-28-2021 @ 21:23:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-1.jpg. Error: Not Found
+07-28-2021 @ 21:23:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-2.jpg
+07-28-2021 @ 21:23:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-2.jpg. Error: Not Found
+07-28-2021 @ 21:23:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-3.jpg
+07-28-2021 @ 21:23:09 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-3.jpg. Error: Not Found
+07-28-2021 @ 21:23:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-4.jpg
+07-28-2021 @ 21:23:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-4.jpg. Error: Not Found
+07-28-2021 @ 21:23:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-5.jpg
+07-28-2021 @ 21:23:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPCONO-5.jpg. Error: Not Found
+07-28-2021 @ 21:23:12 - Row :30 - Product updated successfully.
+07-28-2021 @ 21:23:14 - Preparing for import.
+07-28-2021 @ 21:23:14 - Row :31 - Parsing item.
+07-28-2021 @ 21:23:14 - Row :31 - Processing item.
+07-28-2021 @ 21:23:14 - Found simple product object. ID:450608
+07-28-2021 @ 21:23:14 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO.jpg
+07-28-2021 @ 21:23:15 - Attachment ID:450903
+07-28-2021 @ 21:23:15 - Setting Gallery Images.
+07-28-2021 @ 21:23:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO-1.jpg
+07-28-2021 @ 21:23:15 - Attachment ID:450904
+07-28-2021 @ 21:23:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO-2.jpg
+07-28-2021 @ 21:23:16 - Attachment ID:450905
+07-28-2021 @ 21:23:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO-3.jpg
+07-28-2021 @ 21:23:17 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO-3.jpg. Error: Not Found
+07-28-2021 @ 21:23:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO-4.jpg
+07-28-2021 @ 21:23:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO-4.jpg. Error: Not Found
+07-28-2021 @ 21:23:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO-5.jpg
+07-28-2021 @ 21:23:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISBO-5.jpg. Error: Not Found
+07-28-2021 @ 21:23:20 - Row :31 - Product updated successfully.
+07-28-2021 @ 21:23:20 - Row :32 - Parsing item.
+07-28-2021 @ 21:23:20 - Row :32 - Processing item.
+07-28-2021 @ 21:23:20 - Found simple product object. ID:450609
+07-28-2021 @ 21:23:20 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO.jpg
+07-28-2021 @ 21:23:22 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO.jpg. Error: Not Found
+07-28-2021 @ 21:23:22 - Setting Gallery Images.
+07-28-2021 @ 21:23:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-1.jpg
+07-28-2021 @ 21:23:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-1.jpg. Error: Not Found
+07-28-2021 @ 21:23:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-2.jpg
+07-28-2021 @ 21:23:24 - Attachment ID:450906
+07-28-2021 @ 21:23:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-3.jpg
+07-28-2021 @ 21:23:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-3.jpg. Error: Not Found
+07-28-2021 @ 21:23:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-4.jpg
+07-28-2021 @ 21:23:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-4.jpg. Error: Not Found
+07-28-2021 @ 21:23:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-5.jpg
+07-28-2021 @ 21:23:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPDISNO-5.jpg. Error: Not Found
+07-28-2021 @ 21:23:28 - Row :32 - Product updated successfully.
+07-28-2021 @ 21:23:28 - Row :33 - Parsing item.
+07-28-2021 @ 21:23:28 - Row :33 - Processing item.
+07-28-2021 @ 21:23:28 - Found simple product object. ID:450610
+07-28-2021 @ 21:23:28 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO.jpg
+07-28-2021 @ 21:23:29 - Attachment ID:450907
+07-28-2021 @ 21:23:29 - Setting Gallery Images.
+07-28-2021 @ 21:23:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO-1.jpg
+07-28-2021 @ 21:23:29 - Attachment ID:450908
+07-28-2021 @ 21:23:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO-2.jpg
+07-28-2021 @ 21:23:30 - Attachment ID:450909
+07-28-2021 @ 21:23:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO-3.jpg
+07-28-2021 @ 21:23:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO-3.jpg. Error: Not Found
+07-28-2021 @ 21:23:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO-4.jpg
+07-28-2021 @ 21:23:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO-4.jpg. Error: Not Found
+07-28-2021 @ 21:23:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO-5.jpg
+07-28-2021 @ 21:23:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETBO-5.jpg. Error: Not Found
+07-28-2021 @ 21:23:34 - Row :33 - Product updated successfully.
+07-28-2021 @ 21:23:34 - Row :34 - Parsing item.
+07-28-2021 @ 21:23:34 - Row :34 - Processing item.
+07-28-2021 @ 21:23:34 - Found simple product object. ID:450611
+07-28-2021 @ 21:23:34 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO.jpg
+07-28-2021 @ 21:23:35 - Attachment ID:450910
+07-28-2021 @ 21:23:35 - Setting Gallery Images.
+07-28-2021 @ 21:23:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-1.jpg
+07-28-2021 @ 21:23:36 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-1.jpg. Error: Not Found
+07-28-2021 @ 21:23:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-2.jpg
+07-28-2021 @ 21:23:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-2.jpg. Error: Not Found
+07-28-2021 @ 21:23:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-3.jpg
+07-28-2021 @ 21:23:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-3.jpg. Error: Not Found
+07-28-2021 @ 21:23:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-4.jpg
+07-28-2021 @ 21:23:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-4.jpg. Error: Not Found
+07-28-2021 @ 21:23:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-5.jpg
+07-28-2021 @ 21:23:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLAPETNO-5.jpg. Error: Not Found
+07-28-2021 @ 21:23:41 - Row :34 - Product updated successfully.
+07-28-2021 @ 21:23:41 - Row :35 - Parsing item.
+07-28-2021 @ 21:23:41 - Row :35 - Processing item.
+07-28-2021 @ 21:23:41 - Found simple product object. ID:450612
+07-28-2021 @ 21:23:41 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O.jpg
+07-28-2021 @ 21:23:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O.jpg. Error: Not Found
+07-28-2021 @ 21:23:42 - Setting Gallery Images.
+07-28-2021 @ 21:23:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-1.jpg
+07-28-2021 @ 21:23:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-1.jpg. Error: Not Found
+07-28-2021 @ 21:23:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-2.jpg
+07-28-2021 @ 21:23:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-2.jpg. Error: Not Found
+07-28-2021 @ 21:23:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-3.jpg
+07-28-2021 @ 21:23:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-3.jpg. Error: Not Found
+07-28-2021 @ 21:23:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-4.jpg
+07-28-2021 @ 21:23:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-4.jpg. Error: Not Found
+07-28-2021 @ 21:23:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-5.jpg
+07-28-2021 @ 21:23:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRMOTAB12O-5.jpg. Error: Not Found
+07-28-2021 @ 21:23:49 - Row :35 - Product updated successfully.
+07-28-2021 @ 21:23:49 - Row :36 - Parsing item.
+07-28-2021 @ 21:23:49 - Row :36 - Processing item.
+07-28-2021 @ 21:23:49 - Found simple product object. ID:450613
+07-28-2021 @ 21:23:49 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT.jpg
+07-28-2021 @ 21:23:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT.jpg. Error: Not Found
+07-28-2021 @ 21:23:50 - Setting Gallery Images.
+07-28-2021 @ 21:23:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-1.jpg
+07-28-2021 @ 21:23:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-1.jpg. Error: Not Found
+07-28-2021 @ 21:23:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-2.jpg
+07-28-2021 @ 21:23:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-2.jpg. Error: Not Found
+07-28-2021 @ 21:23:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-3.jpg
+07-28-2021 @ 21:23:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-3.jpg. Error: Not Found
+07-28-2021 @ 21:23:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-4.jpg
+07-28-2021 @ 21:23:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-4.jpg. Error: Not Found
+07-28-2021 @ 21:23:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-5.jpg
+07-28-2021 @ 21:23:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOT-5.jpg. Error: Not Found
+07-28-2021 @ 21:23:57 - Row :36 - Product updated successfully.
+07-28-2021 @ 21:23:57 - Row :37 - Parsing item.
+07-28-2021 @ 21:23:57 - Row :37 - Processing item.
+07-28-2021 @ 21:23:57 - Found simple product object. ID:450614
+07-28-2021 @ 21:23:57 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO.jpg
+07-28-2021 @ 21:23:58 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO.jpg. Error: Not Found
+07-28-2021 @ 21:23:58 - Setting Gallery Images.
+07-28-2021 @ 21:23:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-1.jpg
+07-28-2021 @ 21:24:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-1.jpg. Error: Not Found
+07-28-2021 @ 21:24:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-2.jpg
+07-28-2021 @ 21:24:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-2.jpg. Error: Not Found
+07-28-2021 @ 21:24:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-3.jpg
+07-28-2021 @ 21:24:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-3.jpg. Error: Not Found
+07-28-2021 @ 21:24:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-4.jpg
+07-28-2021 @ 21:24:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-4.jpg. Error: Not Found
+07-28-2021 @ 21:24:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-5.jpg
+07-28-2021 @ 21:24:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOO-5.jpg. Error: Not Found
+07-28-2021 @ 21:24:05 - Row :37 - Product updated successfully.
+07-28-2021 @ 21:24:05 - Row :38 - Parsing item.
+07-28-2021 @ 21:24:05 - Row :38 - Processing item.
+07-28-2021 @ 21:24:05 - Found simple product object. ID:450615
+07-28-2021 @ 21:24:06 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM.jpg
+07-28-2021 @ 21:24:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM.jpg. Error: Not Found
+07-28-2021 @ 21:24:07 - Setting Gallery Images.
+07-28-2021 @ 21:24:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-1.jpg
+07-28-2021 @ 21:24:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-1.jpg. Error: Not Found
+07-28-2021 @ 21:24:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-2.jpg
+07-28-2021 @ 21:24:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-2.jpg. Error: Not Found
+07-28-2021 @ 21:24:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-3.jpg
+07-28-2021 @ 21:24:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-3.jpg. Error: Not Found
+07-28-2021 @ 21:24:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-4.jpg
+07-28-2021 @ 21:24:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-4.jpg. Error: Not Found
+07-28-2021 @ 21:24:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-5.jpg
+07-28-2021 @ 21:24:14 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-BRAVASOM-5.jpg. Error: Not Found
+07-28-2021 @ 21:24:14 - Row :38 - Product updated successfully.
+07-28-2021 @ 21:24:14 - Row :39 - Parsing item.
+07-28-2021 @ 21:24:14 - Row :39 - Processing item.
+07-28-2021 @ 21:24:14 - Found simple product object. ID:450616
+07-28-2021 @ 21:24:14 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE.jpg
+07-28-2021 @ 21:24:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE.jpg. Error: Not Found
+07-28-2021 @ 21:24:16 - Setting Gallery Images.
+07-28-2021 @ 21:24:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-1.jpg
+07-28-2021 @ 21:24:17 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-1.jpg. Error: Not Found
+07-28-2021 @ 21:24:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-2.jpg
+07-28-2021 @ 21:24:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-2.jpg. Error: Not Found
+07-28-2021 @ 21:24:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-3.jpg
+07-28-2021 @ 21:24:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-3.jpg. Error: Not Found
+07-28-2021 @ 21:24:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-4.jpg
+07-28-2021 @ 21:24:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-4.jpg. Error: Not Found
+07-28-2021 @ 21:24:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-5.jpg
+07-28-2021 @ 21:24:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHSIDE-5.jpg. Error: Not Found
+07-28-2021 @ 21:24:23 - Row :39 - Product updated successfully.
+07-28-2021 @ 21:24:23 - Row :40 - Parsing item.
+07-28-2021 @ 21:24:23 - Row :40 - Processing item.
+07-28-2021 @ 21:24:23 - Found simple product object. ID:450617
+07-28-2021 @ 21:24:23 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV.jpg
+07-28-2021 @ 21:24:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV.jpg. Error: Not Found
+07-28-2021 @ 21:24:24 - Setting Gallery Images.
+07-28-2021 @ 21:24:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-1.jpg
+07-28-2021 @ 21:24:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-1.jpg. Error: Not Found
+07-28-2021 @ 21:24:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-2.jpg
+07-28-2021 @ 21:24:27 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-2.jpg. Error: Not Found
+07-28-2021 @ 21:24:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-3.jpg
+07-28-2021 @ 21:24:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-3.jpg. Error: Not Found
+07-28-2021 @ 21:24:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-4.jpg
+07-28-2021 @ 21:24:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-4.jpg. Error: Not Found
+07-28-2021 @ 21:24:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-5.jpg
+07-28-2021 @ 21:24:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHTV-5.jpg. Error: Not Found
+07-28-2021 @ 21:24:31 - Row :40 - Product updated successfully.
+07-28-2021 @ 21:24:32 - Preparing for import.
+07-28-2021 @ 21:24:32 - Row :41 - Parsing item.
+07-28-2021 @ 21:24:32 - Row :41 - Processing item.
+07-28-2021 @ 21:24:32 - Found simple product object. ID:450618
+07-28-2021 @ 21:24:32 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16.jpg
+07-28-2021 @ 21:24:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16.jpg. Error: Not Found
+07-28-2021 @ 21:24:34 - Setting Gallery Images.
+07-28-2021 @ 21:24:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-1.jpg
+07-28-2021 @ 21:24:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-1.jpg. Error: Not Found
+07-28-2021 @ 21:24:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-2.jpg
+07-28-2021 @ 21:24:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-2.jpg. Error: Not Found
+07-28-2021 @ 21:24:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-3.jpg
+07-28-2021 @ 21:24:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-3.jpg. Error: Not Found
+07-28-2021 @ 21:24:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-4.jpg
+07-28-2021 @ 21:24:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-4.jpg. Error: Not Found
+07-28-2021 @ 21:24:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-5.jpg
+07-28-2021 @ 21:24:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB16-5.jpg. Error: Not Found
+07-28-2021 @ 21:24:41 - Row :41 - Product updated successfully.
+07-28-2021 @ 21:24:41 - Row :42 - Parsing item.
+07-28-2021 @ 21:24:41 - Row :42 - Processing item.
+07-28-2021 @ 21:24:41 - Found simple product object. ID:450619
+07-28-2021 @ 21:24:41 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20.jpg
+07-28-2021 @ 21:24:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20.jpg. Error: Not Found
+07-28-2021 @ 21:24:43 - Setting Gallery Images.
+07-28-2021 @ 21:24:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-1.jpg
+07-28-2021 @ 21:24:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-1.jpg. Error: Not Found
+07-28-2021 @ 21:24:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-2.jpg
+07-28-2021 @ 21:24:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-2.jpg. Error: Not Found
+07-28-2021 @ 21:24:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-3.jpg
+07-28-2021 @ 21:24:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-3.jpg. Error: Not Found
+07-28-2021 @ 21:24:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-4.jpg
+07-28-2021 @ 21:24:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-4.jpg. Error: Not Found
+07-28-2021 @ 21:24:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-5.jpg
+07-28-2021 @ 21:24:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB20-5.jpg. Error: Not Found
+07-28-2021 @ 21:24:50 - Row :42 - Product updated successfully.
+07-28-2021 @ 21:24:50 - Row :43 - Parsing item.
+07-28-2021 @ 21:24:50 - Row :43 - Processing item.
+07-28-2021 @ 21:24:50 - Found simple product object. ID:450620
+07-28-2021 @ 21:24:50 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21.jpg
+07-28-2021 @ 21:24:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21.jpg. Error: Not Found
+07-28-2021 @ 21:24:51 - Setting Gallery Images.
+07-28-2021 @ 21:24:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-1.jpg
+07-28-2021 @ 21:24:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-1.jpg. Error: Not Found
+07-28-2021 @ 21:24:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-2.jpg
+07-28-2021 @ 21:24:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-2.jpg. Error: Not Found
+07-28-2021 @ 21:24:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-3.jpg
+07-28-2021 @ 21:24:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-3.jpg. Error: Not Found
+07-28-2021 @ 21:24:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-4.jpg
+07-28-2021 @ 21:24:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-4.jpg. Error: Not Found
+07-28-2021 @ 21:24:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-5.jpg
+07-28-2021 @ 21:24:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOTTAB21-5.jpg. Error: Not Found
+07-28-2021 @ 21:24:58 - Row :43 - Product updated successfully.
+07-28-2021 @ 21:24:58 - Row :44 - Parsing item.
+07-28-2021 @ 21:24:58 - Row :44 - Processing item.
+07-28-2021 @ 21:24:58 - Found simple product object. ID:450621
+07-28-2021 @ 21:24:58 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18.jpg
+07-28-2021 @ 21:24:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18.jpg. Error: Not Found
+07-28-2021 @ 21:24:59 - Setting Gallery Images.
+07-28-2021 @ 21:24:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-1.jpg
+07-28-2021 @ 21:25:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-1.jpg. Error: Not Found
+07-28-2021 @ 21:25:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-2.jpg
+07-28-2021 @ 21:25:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-2.jpg. Error: Not Found
+07-28-2021 @ 21:25:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-3.jpg
+07-28-2021 @ 21:25:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-3.jpg. Error: Not Found
+07-28-2021 @ 21:25:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-4.jpg
+07-28-2021 @ 21:25:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-4.jpg. Error: Not Found
+07-28-2021 @ 21:25:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-5.jpg
+07-28-2021 @ 21:25:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB18-5.jpg. Error: Not Found
+07-28-2021 @ 21:25:06 - Row :44 - Product updated successfully.
+07-28-2021 @ 21:25:06 - Row :45 - Parsing item.
+07-28-2021 @ 21:25:06 - Row :45 - Processing item.
+07-28-2021 @ 21:25:06 - Found simple product object. ID:450622
+07-28-2021 @ 21:25:06 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20.jpg
+07-28-2021 @ 21:25:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20.jpg. Error: Not Found
+07-28-2021 @ 21:25:08 - Setting Gallery Images.
+07-28-2021 @ 21:25:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-1.jpg
+07-28-2021 @ 21:25:09 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-1.jpg. Error: Not Found
+07-28-2021 @ 21:25:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-2.jpg
+07-28-2021 @ 21:25:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-2.jpg. Error: Not Found
+07-28-2021 @ 21:25:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-3.jpg
+07-28-2021 @ 21:25:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-3.jpg. Error: Not Found
+07-28-2021 @ 21:25:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-4.jpg
+07-28-2021 @ 21:25:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-4.jpg. Error: Not Found
+07-28-2021 @ 21:25:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-5.jpg
+07-28-2021 @ 21:25:14 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHOSTAB20-5.jpg. Error: Not Found
+07-28-2021 @ 21:25:15 - Row :45 - Product updated successfully.
+07-28-2021 @ 21:25:15 - Row :46 - Parsing item.
+07-28-2021 @ 21:25:15 - Row :46 - Processing item.
+07-28-2021 @ 21:25:15 - Found simple product object. ID:450623
+07-28-2021 @ 21:25:15 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG.jpg
+07-28-2021 @ 21:25:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG.jpg. Error: Not Found
+07-28-2021 @ 21:25:16 - Setting Gallery Images.
+07-28-2021 @ 21:25:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-1.jpg
+07-28-2021 @ 21:25:17 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-1.jpg. Error: Not Found
+07-28-2021 @ 21:25:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-2.jpg
+07-28-2021 @ 21:25:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-2.jpg. Error: Not Found
+07-28-2021 @ 21:25:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-3.jpg
+07-28-2021 @ 21:25:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-3.jpg. Error: Not Found
+07-28-2021 @ 21:25:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-4.jpg
+07-28-2021 @ 21:25:22 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-4.jpg. Error: Not Found
+07-28-2021 @ 21:25:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-5.jpg
+07-28-2021 @ 21:25:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30LG-5.jpg. Error: Not Found
+07-28-2021 @ 21:25:23 - Row :46 - Product updated successfully.
+07-28-2021 @ 21:25:23 - Row :47 - Parsing item.
+07-28-2021 @ 21:25:23 - Row :47 - Processing item.
+07-28-2021 @ 21:25:23 - Found simple product object. ID:450624
+07-28-2021 @ 21:25:23 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG.jpg
+07-28-2021 @ 21:25:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG.jpg. Error: Not Found
+07-28-2021 @ 21:25:25 - Setting Gallery Images.
+07-28-2021 @ 21:25:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-1.jpg
+07-28-2021 @ 21:25:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-1.jpg. Error: Not Found
+07-28-2021 @ 21:25:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-2.jpg
+07-28-2021 @ 21:25:27 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-2.jpg. Error: Not Found
+07-28-2021 @ 21:25:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-3.jpg
+07-28-2021 @ 21:25:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-3.jpg. Error: Not Found
+07-28-2021 @ 21:25:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-4.jpg
+07-28-2021 @ 21:25:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-4.jpg. Error: Not Found
+07-28-2021 @ 21:25:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-5.jpg
+07-28-2021 @ 21:25:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-OHCH30DG-5.jpg. Error: Not Found
+07-28-2021 @ 21:25:32 - Row :47 - Product updated successfully.
+07-28-2021 @ 21:25:32 - Row :48 - Parsing item.
+07-28-2021 @ 21:25:32 - Row :48 - Processing item.
+07-28-2021 @ 21:25:32 - Found simple product object. ID:450625
+07-28-2021 @ 21:25:32 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB.jpg
+07-28-2021 @ 21:25:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB.jpg. Error: Not Found
+07-28-2021 @ 21:25:33 - Setting Gallery Images.
+07-28-2021 @ 21:25:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-1.jpg
+07-28-2021 @ 21:25:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-1.jpg. Error: Not Found
+07-28-2021 @ 21:25:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-2.jpg
+07-28-2021 @ 21:25:36 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-2.jpg. Error: Not Found
+07-28-2021 @ 21:25:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-3.jpg
+07-28-2021 @ 21:25:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-3.jpg. Error: Not Found
+07-28-2021 @ 21:25:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-4.jpg
+07-28-2021 @ 21:25:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-4.jpg. Error: Not Found
+07-28-2021 @ 21:25:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-5.jpg
+07-28-2021 @ 21:25:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUTUWB-5.jpg. Error: Not Found
+07-28-2021 @ 21:25:40 - Row :48 - Product updated successfully.
+07-28-2021 @ 21:25:40 - Row :49 - Parsing item.
+07-28-2021 @ 21:25:40 - Row :49 - Processing item.
+07-28-2021 @ 21:25:40 - Found simple product object. ID:450626
+07-28-2021 @ 21:25:40 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK.jpg
+07-28-2021 @ 21:25:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK.jpg. Error: Not Found
+07-28-2021 @ 21:25:42 - Setting Gallery Images.
+07-28-2021 @ 21:25:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-1.jpg
+07-28-2021 @ 21:25:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-1.jpg. Error: Not Found
+07-28-2021 @ 21:25:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-2.jpg
+07-28-2021 @ 21:25:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-2.jpg. Error: Not Found
+07-28-2021 @ 21:25:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-3.jpg
+07-28-2021 @ 21:25:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-3.jpg. Error: Not Found
+07-28-2021 @ 21:25:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-4.jpg
+07-28-2021 @ 21:25:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-4.jpg. Error: Not Found
+07-28-2021 @ 21:25:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-5.jpg
+07-28-2021 @ 21:25:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIBLK-5.jpg. Error: Not Found
+07-28-2021 @ 21:25:49 - Row :49 - Product updated successfully.
+07-28-2021 @ 21:25:49 - Row :50 - Parsing item.
+07-28-2021 @ 21:25:49 - Row :50 - Processing item.
+07-28-2021 @ 21:25:49 - Found simple product object. ID:450627
+07-28-2021 @ 21:25:49 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL.jpg
+07-28-2021 @ 21:25:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL.jpg. Error: Not Found
+07-28-2021 @ 21:25:51 - Setting Gallery Images.
+07-28-2021 @ 21:25:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-1.jpg
+07-28-2021 @ 21:25:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-1.jpg. Error: Not Found
+07-28-2021 @ 21:25:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-2.jpg
+07-28-2021 @ 21:25:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-2.jpg. Error: Not Found
+07-28-2021 @ 21:25:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-3.jpg
+07-28-2021 @ 21:25:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-3.jpg. Error: Not Found
+07-28-2021 @ 21:25:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-4.jpg
+07-28-2021 @ 21:25:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-4.jpg. Error: Not Found
+07-28-2021 @ 21:25:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-5.jpg
+07-28-2021 @ 21:25:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAIWAL-5.jpg. Error: Not Found
+07-28-2021 @ 21:25:58 - Row :50 - Product updated successfully.
+07-28-2021 @ 21:25:59 - Preparing for import.
+07-28-2021 @ 21:25:59 - Row :51 - Parsing item.
+07-28-2021 @ 21:25:59 - Row :51 - Processing item.
+07-28-2021 @ 21:25:59 - Found simple product object. ID:450628
+07-28-2021 @ 21:25:59 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT.jpg
+07-28-2021 @ 21:26:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT.jpg. Error: Not Found
+07-28-2021 @ 21:26:01 - Setting Gallery Images.
+07-28-2021 @ 21:26:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-1.jpg
+07-28-2021 @ 21:26:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-1.jpg. Error: Not Found
+07-28-2021 @ 21:26:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-2.jpg
+07-28-2021 @ 21:26:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-2.jpg. Error: Not Found
+07-28-2021 @ 21:26:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-3.jpg
+07-28-2021 @ 21:26:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-3.jpg. Error: Not Found
+07-28-2021 @ 21:26:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-4.jpg
+07-28-2021 @ 21:26:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-4.jpg. Error: Not Found
+07-28-2021 @ 21:26:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-5.jpg
+07-28-2021 @ 21:26:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-RUKAINAT-5.jpg. Error: Not Found
+07-28-2021 @ 21:26:08 - Row :51 - Product updated successfully.
+07-28-2021 @ 21:26:08 - Row :52 - Parsing item.
+07-28-2021 @ 21:26:08 - Row :52 - Processing item.
+07-28-2021 @ 21:26:08 - Found simple product object. ID:450629
+07-28-2021 @ 21:26:08 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG.jpg
+07-28-2021 @ 21:26:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG.jpg. Error: Not Found
+07-28-2021 @ 21:26:10 - Setting Gallery Images.
+07-28-2021 @ 21:26:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-1.jpg
+07-28-2021 @ 21:26:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-1.jpg. Error: Not Found
+07-28-2021 @ 21:26:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-2.jpg
+07-28-2021 @ 21:26:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-2.jpg. Error: Not Found
+07-28-2021 @ 21:26:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-3.jpg
+07-28-2021 @ 21:26:15 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-3.jpg. Error: Not Found
+07-28-2021 @ 21:26:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-4.jpg
+07-28-2021 @ 21:26:17 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-4.jpg. Error: Not Found
+07-28-2021 @ 21:26:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-5.jpg
+07-28-2021 @ 21:26:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-PLQINWAG-5.jpg. Error: Not Found
+07-28-2021 @ 21:26:19 - Row :52 - Product updated successfully.
+07-28-2021 @ 21:26:19 - Row :53 - Parsing item.
+07-28-2021 @ 21:26:19 - Row :53 - Processing item.
+07-28-2021 @ 21:26:19 - Found simple product object. ID:450630
+07-28-2021 @ 21:26:19 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT.jpg
+07-28-2021 @ 21:26:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT.jpg. Error: Not Found
+07-28-2021 @ 21:26:21 - Setting Gallery Images.
+07-28-2021 @ 21:26:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-1.jpg
+07-28-2021 @ 21:26:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-1.jpg. Error: Not Found
+07-28-2021 @ 21:26:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-2.jpg
+07-28-2021 @ 21:26:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-2.jpg. Error: Not Found
+07-28-2021 @ 21:26:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-3.jpg
+07-28-2021 @ 21:26:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-3.jpg. Error: Not Found
+07-28-2021 @ 21:26:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-4.jpg
+07-28-2021 @ 21:26:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-4.jpg. Error: Not Found
+07-28-2021 @ 21:26:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-5.jpg
+07-28-2021 @ 21:26:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Salamander/SAL-INTEROSLOCHT-5.jpg. Error: Not Found
+07-28-2021 @ 21:26:32 - Row :53 - Product updated successfully.
+07-28-2021 @ 21:26:32 - ---[ Import ended at 2021-07-28 09:26:32]---

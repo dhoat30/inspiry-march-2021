@@ -1,0 +1,926 @@
+06-19-2021 @ 20:24:46 - ---[ New import started at 2021-06-19 08:24:46 ] PHP Memory: 768 MB, WP Memory: 40 MB
+06-19-2021 @ 20:24:46 - Preparing for import.
+06-19-2021 @ 20:24:46 - Row :1 - Parsing item.
+06-19-2021 @ 20:24:46 - Row :1 - Processing item.
+06-19-2021 @ 20:24:46 - Found simple product object. ID:446600
+06-19-2021 @ 20:24:46 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106.jpg
+06-19-2021 @ 20:24:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106.jpg. Error: Not Found
+06-19-2021 @ 20:24:47 - Setting Gallery Images.
+06-19-2021 @ 20:24:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-1.jpg
+06-19-2021 @ 20:24:47 - Attachment ID:446588
+06-19-2021 @ 20:24:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-2.jpg
+06-19-2021 @ 20:24:47 - Attachment ID:446590
+06-19-2021 @ 20:24:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-3.jpg
+06-19-2021 @ 20:24:48 - Attachment ID:446592
+06-19-2021 @ 20:24:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-4.jpg
+06-19-2021 @ 20:24:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-4.jpg. Error: Not Found
+06-19-2021 @ 20:24:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-5.jpg
+06-19-2021 @ 20:24:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-5.jpg. Error: Not Found
+06-19-2021 @ 20:24:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-6.jpg
+06-19-2021 @ 20:24:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-6.jpg. Error: Not Found
+06-19-2021 @ 20:24:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-7.jpg
+06-19-2021 @ 20:24:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-7.jpg. Error: Not Found
+06-19-2021 @ 20:24:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-8.jpg
+06-19-2021 @ 20:24:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-74870106-8.jpg. Error: Not Found
+06-19-2021 @ 20:24:52 - Row :1 - Product updated successfully.
+06-19-2021 @ 20:24:52 - Row :2 - Parsing item.
+06-19-2021 @ 20:24:52 - Row :2 - Processing item.
+06-19-2021 @ 20:24:52 - Found simple product object. ID:446601
+06-19-2021 @ 20:24:52 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100.jpg
+06-19-2021 @ 20:24:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100.jpg. Error: Not Found
+06-19-2021 @ 20:24:53 - Setting Gallery Images.
+06-19-2021 @ 20:24:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-1.jpg
+06-19-2021 @ 20:24:53 - Attachment ID:446400
+06-19-2021 @ 20:24:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-2.jpg
+06-19-2021 @ 20:24:54 - Attachment ID:446402
+06-19-2021 @ 20:24:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-3.jpg
+06-19-2021 @ 20:24:54 - Attachment ID:446404
+06-19-2021 @ 20:24:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-4.jpg
+06-19-2021 @ 20:24:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-4.jpg. Error: Not Found
+06-19-2021 @ 20:24:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-5.jpg
+06-19-2021 @ 20:24:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-5.jpg. Error: Not Found
+06-19-2021 @ 20:24:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-6.jpg
+06-19-2021 @ 20:24:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-6.jpg. Error: Not Found
+06-19-2021 @ 20:24:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-7.jpg
+06-19-2021 @ 20:24:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-7.jpg. Error: Not Found
+06-19-2021 @ 20:24:57 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-8.jpg
+06-19-2021 @ 20:24:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354100-8.jpg. Error: Not Found
+06-19-2021 @ 20:24:59 - Row :2 - Product updated successfully.
+06-19-2021 @ 20:24:59 - Row :3 - Parsing item.
+06-19-2021 @ 20:24:59 - Row :3 - Processing item.
+06-19-2021 @ 20:24:59 - Found simple product object. ID:446602
+06-19-2021 @ 20:24:59 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102.jpg
+06-19-2021 @ 20:25:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102.jpg. Error: Not Found
+06-19-2021 @ 20:25:00 - Setting Gallery Images.
+06-19-2021 @ 20:25:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-1.jpg
+06-19-2021 @ 20:25:00 - Attachment ID:446576
+06-19-2021 @ 20:25:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-2.jpg
+06-19-2021 @ 20:25:00 - Attachment ID:446578
+06-19-2021 @ 20:25:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-3.jpg
+06-19-2021 @ 20:25:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-3.jpg. Error: Not Found
+06-19-2021 @ 20:25:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-4.jpg
+06-19-2021 @ 20:25:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-4.jpg. Error: Not Found
+06-19-2021 @ 20:25:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-5.jpg
+06-19-2021 @ 20:25:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-5.jpg. Error: Not Found
+06-19-2021 @ 20:25:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-6.jpg
+06-19-2021 @ 20:25:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-6.jpg. Error: Not Found
+06-19-2021 @ 20:25:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-7.jpg
+06-19-2021 @ 20:25:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-7.jpg. Error: Not Found
+06-19-2021 @ 20:25:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-8.jpg
+06-19-2021 @ 20:25:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102102-8.jpg. Error: Not Found
+06-19-2021 @ 20:25:07 - Row :3 - Product updated successfully.
+06-19-2021 @ 20:25:07 - Row :4 - Parsing item.
+06-19-2021 @ 20:25:07 - Row :4 - Processing item.
+06-19-2021 @ 20:25:07 - Found simple product object. ID:446603
+06-19-2021 @ 20:25:07 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100.jpg
+06-19-2021 @ 20:25:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100.jpg. Error: Not Found
+06-19-2021 @ 20:25:08 - Setting Gallery Images.
+06-19-2021 @ 20:25:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-1.jpg
+06-19-2021 @ 20:25:08 - Attachment ID:446460
+06-19-2021 @ 20:25:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-2.jpg
+06-19-2021 @ 20:25:08 - Attachment ID:446462
+06-19-2021 @ 20:25:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-3.jpg
+06-19-2021 @ 20:25:08 - Attachment ID:446464
+06-19-2021 @ 20:25:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-4.jpg
+06-19-2021 @ 20:25:09 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-4.jpg. Error: Not Found
+06-19-2021 @ 20:25:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-5.jpg
+06-19-2021 @ 20:25:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-5.jpg. Error: Not Found
+06-19-2021 @ 20:25:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-6.jpg
+06-19-2021 @ 20:25:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-6.jpg. Error: Not Found
+06-19-2021 @ 20:25:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-7.jpg
+06-19-2021 @ 20:25:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-7.jpg. Error: Not Found
+06-19-2021 @ 20:25:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-8.jpg
+06-19-2021 @ 20:25:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374100-8.jpg. Error: Not Found
+06-19-2021 @ 20:25:13 - Row :4 - Product updated successfully.
+06-19-2021 @ 20:25:13 - Row :5 - Parsing item.
+06-19-2021 @ 20:25:13 - Row :5 - Processing item.
+06-19-2021 @ 20:25:13 - Found simple product object. ID:446604
+06-19-2021 @ 20:25:13 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100.jpg
+06-19-2021 @ 20:25:15 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100.jpg. Error: Not Found
+06-19-2021 @ 20:25:15 - Setting Gallery Images.
+06-19-2021 @ 20:25:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-1.jpg
+06-19-2021 @ 20:25:15 - Attachment ID:446510
+06-19-2021 @ 20:25:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-2.jpg
+06-19-2021 @ 20:25:15 - Attachment ID:446512
+06-19-2021 @ 20:25:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-3.jpg
+06-19-2021 @ 20:25:15 - Attachment ID:446514
+06-19-2021 @ 20:25:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-4.jpg
+06-19-2021 @ 20:25:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-4.jpg. Error: Not Found
+06-19-2021 @ 20:25:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-5.jpg
+06-19-2021 @ 20:25:17 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-5.jpg. Error: Not Found
+06-19-2021 @ 20:25:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-6.jpg
+06-19-2021 @ 20:25:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-6.jpg. Error: Not Found
+06-19-2021 @ 20:25:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-7.jpg
+06-19-2021 @ 20:25:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-7.jpg. Error: Not Found
+06-19-2021 @ 20:25:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-8.jpg
+06-19-2021 @ 20:25:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826100-8.jpg. Error: Not Found
+06-19-2021 @ 20:25:21 - Row :5 - Product updated successfully.
+06-19-2021 @ 20:25:21 - Row :6 - Parsing item.
+06-19-2021 @ 20:25:21 - Row :6 - Processing item.
+06-19-2021 @ 20:25:21 - Found simple product object. ID:446605
+06-19-2021 @ 20:25:21 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106.jpg
+06-19-2021 @ 20:25:22 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106.jpg. Error: Not Found
+06-19-2021 @ 20:25:22 - Setting Gallery Images.
+06-19-2021 @ 20:25:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-1.jpg
+06-19-2021 @ 20:25:22 - Attachment ID:446420
+06-19-2021 @ 20:25:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-2.jpg
+06-19-2021 @ 20:25:22 - Attachment ID:446422
+06-19-2021 @ 20:25:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-3.jpg
+06-19-2021 @ 20:25:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-3.jpg. Error: Not Found
+06-19-2021 @ 20:25:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-4.jpg
+06-19-2021 @ 20:25:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-4.jpg. Error: Not Found
+06-19-2021 @ 20:25:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-5.jpg
+06-19-2021 @ 20:25:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-5.jpg. Error: Not Found
+06-19-2021 @ 20:25:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-6.jpg
+06-19-2021 @ 20:25:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-6.jpg. Error: Not Found
+06-19-2021 @ 20:25:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-7.jpg
+06-19-2021 @ 20:25:27 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-7.jpg. Error: Not Found
+06-19-2021 @ 20:25:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-8.jpg
+06-19-2021 @ 20:25:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614106-8.jpg. Error: Not Found
+06-19-2021 @ 20:25:28 - Row :6 - Product updated successfully.
+06-19-2021 @ 20:25:28 - Row :7 - Parsing item.
+06-19-2021 @ 20:25:28 - Row :7 - Processing item.
+06-19-2021 @ 20:25:28 - Found simple product object. ID:446606
+06-19-2021 @ 20:25:28 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104.jpg
+06-19-2021 @ 20:25:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104.jpg. Error: Not Found
+06-19-2021 @ 20:25:29 - Setting Gallery Images.
+06-19-2021 @ 20:25:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-1.jpg
+06-19-2021 @ 20:25:29 - Attachment ID:446488
+06-19-2021 @ 20:25:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-2.jpg
+06-19-2021 @ 20:25:29 - Attachment ID:446490
+06-19-2021 @ 20:25:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-3.jpg
+06-19-2021 @ 20:25:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-3.jpg. Error: Not Found
+06-19-2021 @ 20:25:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-4.jpg
+06-19-2021 @ 20:25:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-4.jpg. Error: Not Found
+06-19-2021 @ 20:25:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-5.jpg
+06-19-2021 @ 20:25:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-5.jpg. Error: Not Found
+06-19-2021 @ 20:25:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-6.jpg
+06-19-2021 @ 20:25:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-6.jpg. Error: Not Found
+06-19-2021 @ 20:25:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-7.jpg
+06-19-2021 @ 20:25:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-7.jpg. Error: Not Found
+06-19-2021 @ 20:25:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-8.jpg
+06-19-2021 @ 20:25:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496104-8.jpg. Error: Not Found
+06-19-2021 @ 20:25:35 - Row :7 - Product updated successfully.
+06-19-2021 @ 20:25:35 - Row :8 - Parsing item.
+06-19-2021 @ 20:25:35 - Row :8 - Processing item.
+06-19-2021 @ 20:25:35 - Found simple product object. ID:446607
+06-19-2021 @ 20:25:35 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104.jpg
+06-19-2021 @ 20:25:36 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104.jpg. Error: Not Found
+06-19-2021 @ 20:25:36 - Setting Gallery Images.
+06-19-2021 @ 20:25:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-1.jpg
+06-19-2021 @ 20:25:36 - Attachment ID:446540
+06-19-2021 @ 20:25:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-2.jpg
+06-19-2021 @ 20:25:36 - Attachment ID:446542
+06-19-2021 @ 20:25:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-3.jpg
+06-19-2021 @ 20:25:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-3.jpg. Error: Not Found
+06-19-2021 @ 20:25:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-4.jpg
+06-19-2021 @ 20:25:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-4.jpg. Error: Not Found
+06-19-2021 @ 20:25:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-5.jpg
+06-19-2021 @ 20:25:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-5.jpg. Error: Not Found
+06-19-2021 @ 20:25:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-6.jpg
+06-19-2021 @ 20:25:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-6.jpg. Error: Not Found
+06-19-2021 @ 20:25:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-7.jpg
+06-19-2021 @ 20:25:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-7.jpg. Error: Not Found
+06-19-2021 @ 20:25:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-8.jpg
+06-19-2021 @ 20:25:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524104-8.jpg. Error: Not Found
+06-19-2021 @ 20:25:42 - Row :8 - Product updated successfully.
+06-19-2021 @ 20:25:42 - Row :9 - Parsing item.
+06-19-2021 @ 20:25:42 - Row :9 - Processing item.
+06-19-2021 @ 20:25:42 - Found simple product object. ID:446608
+06-19-2021 @ 20:25:42 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112.jpg
+06-19-2021 @ 20:25:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112.jpg. Error: Not Found
+06-19-2021 @ 20:25:43 - Setting Gallery Images.
+06-19-2021 @ 20:25:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-1.jpg
+06-19-2021 @ 20:25:43 - Attachment ID:446450
+06-19-2021 @ 20:25:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-2.jpg
+06-19-2021 @ 20:25:43 - Attachment ID:446452
+06-19-2021 @ 20:25:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-3.jpg
+06-19-2021 @ 20:25:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-3.jpg. Error: Not Found
+06-19-2021 @ 20:25:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-4.jpg
+06-19-2021 @ 20:25:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-4.jpg. Error: Not Found
+06-19-2021 @ 20:25:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-5.jpg
+06-19-2021 @ 20:25:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-5.jpg. Error: Not Found
+06-19-2021 @ 20:25:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-6.jpg
+06-19-2021 @ 20:25:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-6.jpg. Error: Not Found
+06-19-2021 @ 20:25:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-7.jpg
+06-19-2021 @ 20:25:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-7.jpg. Error: Not Found
+06-19-2021 @ 20:25:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-8.jpg
+06-19-2021 @ 20:25:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-24474112-8.jpg. Error: Not Found
+06-19-2021 @ 20:25:48 - Row :9 - Product updated successfully.
+06-19-2021 @ 20:25:48 - Row :10 - Parsing item.
+06-19-2021 @ 20:25:48 - Row :10 - Processing item.
+06-19-2021 @ 20:25:48 - Found simple product object. ID:446609
+06-19-2021 @ 20:25:48 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100.jpg
+06-19-2021 @ 20:25:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100.jpg. Error: Not Found
+06-19-2021 @ 20:25:49 - Setting Gallery Images.
+06-19-2021 @ 20:25:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-1.jpg
+06-19-2021 @ 20:25:49 - Attachment ID:446572
+06-19-2021 @ 20:25:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-2.jpg
+06-19-2021 @ 20:25:50 - Attachment ID:446574
+06-19-2021 @ 20:25:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-3.jpg
+06-19-2021 @ 20:25:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-3.jpg. Error: Not Found
+06-19-2021 @ 20:25:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-4.jpg
+06-19-2021 @ 20:25:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-4.jpg. Error: Not Found
+06-19-2021 @ 20:25:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-5.jpg
+06-19-2021 @ 20:25:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-5.jpg. Error: Not Found
+06-19-2021 @ 20:25:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-6.jpg
+06-19-2021 @ 20:25:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-6.jpg. Error: Not Found
+06-19-2021 @ 20:25:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-7.jpg
+06-19-2021 @ 20:25:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-7.jpg. Error: Not Found
+06-19-2021 @ 20:25:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-8.jpg
+06-19-2021 @ 20:25:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102100-8.jpg. Error: Not Found
+06-19-2021 @ 20:25:56 - Row :10 - Product updated successfully.
+06-19-2021 @ 20:25:59 - Preparing for import.
+06-19-2021 @ 20:25:59 - Row :11 - Parsing item.
+06-19-2021 @ 20:25:59 - Row :11 - Processing item.
+06-19-2021 @ 20:25:59 - Found simple product object. ID:446610
+06-19-2021 @ 20:25:59 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100.jpg
+06-19-2021 @ 20:26:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100.jpg. Error: Not Found
+06-19-2021 @ 20:26:00 - Setting Gallery Images.
+06-19-2021 @ 20:26:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-1.jpg
+06-19-2021 @ 20:26:00 - Attachment ID:446532
+06-19-2021 @ 20:26:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-2.jpg
+06-19-2021 @ 20:26:00 - Attachment ID:446534
+06-19-2021 @ 20:26:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-3.jpg
+06-19-2021 @ 20:26:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-3.jpg. Error: Not Found
+06-19-2021 @ 20:26:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-4.jpg
+06-19-2021 @ 20:26:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-4.jpg. Error: Not Found
+06-19-2021 @ 20:26:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-5.jpg
+06-19-2021 @ 20:26:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-5.jpg. Error: Not Found
+06-19-2021 @ 20:26:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-6.jpg
+06-19-2021 @ 20:26:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-6.jpg. Error: Not Found
+06-19-2021 @ 20:26:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-7.jpg
+06-19-2021 @ 20:26:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-7.jpg. Error: Not Found
+06-19-2021 @ 20:26:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-8.jpg
+06-19-2021 @ 20:26:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524100-8.jpg. Error: Not Found
+06-19-2021 @ 20:26:07 - Row :11 - Product updated successfully.
+06-19-2021 @ 20:26:07 - Row :12 - Parsing item.
+06-19-2021 @ 20:26:07 - Row :12 - Processing item.
+06-19-2021 @ 20:26:07 - Found simple product object. ID:446611
+06-19-2021 @ 20:26:07 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144.jpg
+06-19-2021 @ 20:26:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144.jpg. Error: Not Found
+06-19-2021 @ 20:26:08 - Setting Gallery Images.
+06-19-2021 @ 20:26:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-1.jpg
+06-19-2021 @ 20:26:09 - Attachment ID:446444
+06-19-2021 @ 20:26:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-2.jpg
+06-19-2021 @ 20:26:09 - Attachment ID:446446
+06-19-2021 @ 20:26:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-3.jpg
+06-19-2021 @ 20:26:09 - Attachment ID:446448
+06-19-2021 @ 20:26:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-4.jpg
+06-19-2021 @ 20:26:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-4.jpg. Error: Not Found
+06-19-2021 @ 20:26:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-5.jpg
+06-19-2021 @ 20:26:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-5.jpg. Error: Not Found
+06-19-2021 @ 20:26:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-6.jpg
+06-19-2021 @ 20:26:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-6.jpg. Error: Not Found
+06-19-2021 @ 20:26:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-7.jpg
+06-19-2021 @ 20:26:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-7.jpg. Error: Not Found
+06-19-2021 @ 20:26:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-8.jpg
+06-19-2021 @ 20:26:14 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788144-8.jpg. Error: Not Found
+06-19-2021 @ 20:26:14 - Row :12 - Product updated successfully.
+06-19-2021 @ 20:26:14 - Row :13 - Parsing item.
+06-19-2021 @ 20:26:14 - Row :13 - Processing item.
+06-19-2021 @ 20:26:14 - Found simple product object. ID:446612
+06-19-2021 @ 20:26:14 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100.jpg
+06-19-2021 @ 20:26:15 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100.jpg. Error: Not Found
+06-19-2021 @ 20:26:15 - Setting Gallery Images.
+06-19-2021 @ 20:26:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-1.jpg
+06-19-2021 @ 20:26:15 - Attachment ID:446496
+06-19-2021 @ 20:26:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-2.jpg
+06-19-2021 @ 20:26:15 - Attachment ID:446498
+06-19-2021 @ 20:26:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-3.jpg
+06-19-2021 @ 20:26:15 - Attachment ID:446500
+06-19-2021 @ 20:26:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-4.jpg
+06-19-2021 @ 20:26:16 - Attachment ID:446502
+06-19-2021 @ 20:26:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-5.jpg
+06-19-2021 @ 20:26:17 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-5.jpg. Error: Not Found
+06-19-2021 @ 20:26:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-6.jpg
+06-19-2021 @ 20:26:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-6.jpg. Error: Not Found
+06-19-2021 @ 20:26:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-7.jpg
+06-19-2021 @ 20:26:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-7.jpg. Error: Not Found
+06-19-2021 @ 20:26:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-8.jpg
+06-19-2021 @ 20:26:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630100-8.jpg. Error: Not Found
+06-19-2021 @ 20:26:20 - Row :13 - Product updated successfully.
+06-19-2021 @ 20:26:20 - Row :14 - Parsing item.
+06-19-2021 @ 20:26:20 - Row :14 - Processing item.
+06-19-2021 @ 20:26:20 - Found simple product object. ID:446613
+06-19-2021 @ 20:26:20 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100.jpg
+06-19-2021 @ 20:26:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100.jpg. Error: Not Found
+06-19-2021 @ 20:26:21 - Setting Gallery Images.
+06-19-2021 @ 20:26:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-1.jpg
+06-19-2021 @ 20:26:21 - Attachment ID:446484
+06-19-2021 @ 20:26:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-2.jpg
+06-19-2021 @ 20:26:21 - Attachment ID:446486
+06-19-2021 @ 20:26:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-3.jpg
+06-19-2021 @ 20:26:22 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-3.jpg. Error: Not Found
+06-19-2021 @ 20:26:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-4.jpg
+06-19-2021 @ 20:26:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-4.jpg. Error: Not Found
+06-19-2021 @ 20:26:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-5.jpg
+06-19-2021 @ 20:26:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-5.jpg. Error: Not Found
+06-19-2021 @ 20:26:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-6.jpg
+06-19-2021 @ 20:26:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-6.jpg. Error: Not Found
+06-19-2021 @ 20:26:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-7.jpg
+06-19-2021 @ 20:26:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-7.jpg. Error: Not Found
+06-19-2021 @ 20:26:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-8.jpg
+06-19-2021 @ 20:26:27 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30496100-8.jpg. Error: Not Found
+06-19-2021 @ 20:26:27 - Row :14 - Product updated successfully.
+06-19-2021 @ 20:26:27 - Row :15 - Parsing item.
+06-19-2021 @ 20:26:27 - Row :15 - Processing item.
+06-19-2021 @ 20:26:27 - Found simple product object. ID:446614
+06-19-2021 @ 20:26:27 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102.jpg
+06-19-2021 @ 20:26:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102.jpg. Error: Not Found
+06-19-2021 @ 20:26:28 - Setting Gallery Images.
+06-19-2021 @ 20:26:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-1.jpg
+06-19-2021 @ 20:26:28 - Attachment ID:446536
+06-19-2021 @ 20:26:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-2.jpg
+06-19-2021 @ 20:26:28 - Attachment ID:446538
+06-19-2021 @ 20:26:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-3.jpg
+06-19-2021 @ 20:26:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-3.jpg. Error: Not Found
+06-19-2021 @ 20:26:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-4.jpg
+06-19-2021 @ 20:26:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-4.jpg. Error: Not Found
+06-19-2021 @ 20:26:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-5.jpg
+06-19-2021 @ 20:26:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-5.jpg. Error: Not Found
+06-19-2021 @ 20:26:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-6.jpg
+06-19-2021 @ 20:26:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-6.jpg. Error: Not Found
+06-19-2021 @ 20:26:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-7.jpg
+06-19-2021 @ 20:26:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-7.jpg. Error: Not Found
+06-19-2021 @ 20:26:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-8.jpg
+06-19-2021 @ 20:26:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524102-8.jpg. Error: Not Found
+06-19-2021 @ 20:26:34 - Row :15 - Product updated successfully.
+06-19-2021 @ 20:26:34 - Row :16 - Parsing item.
+06-19-2021 @ 20:26:34 - Row :16 - Processing item.
+06-19-2021 @ 20:26:34 - Found simple product object. ID:446615
+06-19-2021 @ 20:26:34 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104.jpg
+06-19-2021 @ 20:26:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104.jpg. Error: Not Found
+06-19-2021 @ 20:26:35 - Setting Gallery Images.
+06-19-2021 @ 20:26:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-1.jpg
+06-19-2021 @ 20:26:35 - Attachment ID:446580
+06-19-2021 @ 20:26:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-2.jpg
+06-19-2021 @ 20:26:36 - Attachment ID:446582
+06-19-2021 @ 20:26:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-3.jpg
+06-19-2021 @ 20:26:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-3.jpg. Error: Not Found
+06-19-2021 @ 20:26:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-4.jpg
+06-19-2021 @ 20:26:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-4.jpg. Error: Not Found
+06-19-2021 @ 20:26:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-5.jpg
+06-19-2021 @ 20:26:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-5.jpg. Error: Not Found
+06-19-2021 @ 20:26:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-6.jpg
+06-19-2021 @ 20:26:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-6.jpg. Error: Not Found
+06-19-2021 @ 20:26:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-7.jpg
+06-19-2021 @ 20:26:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-7.jpg. Error: Not Found
+06-19-2021 @ 20:26:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-8.jpg
+06-19-2021 @ 20:26:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102104-8.jpg. Error: Not Found
+06-19-2021 @ 20:26:42 - Row :16 - Product updated successfully.
+06-19-2021 @ 20:26:42 - Row :17 - Parsing item.
+06-19-2021 @ 20:26:42 - Row :17 - Processing item.
+06-19-2021 @ 20:26:42 - Found simple product object. ID:446616
+06-19-2021 @ 20:26:42 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112.jpg
+06-19-2021 @ 20:26:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112.jpg. Error: Not Found
+06-19-2021 @ 20:26:43 - Setting Gallery Images.
+06-19-2021 @ 20:26:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-1.jpg
+06-19-2021 @ 20:26:43 - Attachment ID:446478
+06-19-2021 @ 20:26:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-2.jpg
+06-19-2021 @ 20:26:43 - Attachment ID:446480
+06-19-2021 @ 20:26:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-3.jpg
+06-19-2021 @ 20:26:43 - Attachment ID:446482
+06-19-2021 @ 20:26:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-4.jpg
+06-19-2021 @ 20:26:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-4.jpg. Error: Not Found
+06-19-2021 @ 20:26:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-5.jpg
+06-19-2021 @ 20:26:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-5.jpg. Error: Not Found
+06-19-2021 @ 20:26:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-6.jpg
+06-19-2021 @ 20:26:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-6.jpg. Error: Not Found
+06-19-2021 @ 20:26:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-7.jpg
+06-19-2021 @ 20:26:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-7.jpg. Error: Not Found
+06-19-2021 @ 20:26:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-8.jpg
+06-19-2021 @ 20:26:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021112-8.jpg. Error: Not Found
+06-19-2021 @ 20:26:48 - Row :17 - Product updated successfully.
+06-19-2021 @ 20:26:48 - Row :18 - Parsing item.
+06-19-2021 @ 20:26:48 - Row :18 - Processing item.
+06-19-2021 @ 20:26:48 - Found simple product object. ID:446617
+06-19-2021 @ 20:26:48 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106.jpg
+06-19-2021 @ 20:26:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106.jpg. Error: Not Found
+06-19-2021 @ 20:26:49 - Setting Gallery Images.
+06-19-2021 @ 20:26:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-1.jpg
+06-19-2021 @ 20:26:49 - Attachment ID:446544
+06-19-2021 @ 20:26:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-2.jpg
+06-19-2021 @ 20:26:49 - Attachment ID:446546
+06-19-2021 @ 20:26:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-3.jpg
+06-19-2021 @ 20:26:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-3.jpg. Error: Not Found
+06-19-2021 @ 20:26:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-4.jpg
+06-19-2021 @ 20:26:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-4.jpg. Error: Not Found
+06-19-2021 @ 20:26:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-5.jpg
+06-19-2021 @ 20:26:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-5.jpg. Error: Not Found
+06-19-2021 @ 20:26:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-6.jpg
+06-19-2021 @ 20:26:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-6.jpg. Error: Not Found
+06-19-2021 @ 20:26:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-7.jpg
+06-19-2021 @ 20:26:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-7.jpg. Error: Not Found
+06-19-2021 @ 20:26:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-8.jpg
+06-19-2021 @ 20:26:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524106-8.jpg. Error: Not Found
+06-19-2021 @ 20:26:55 - Row :18 - Product updated successfully.
+06-19-2021 @ 20:26:55 - Row :19 - Parsing item.
+06-19-2021 @ 20:26:55 - Row :19 - Processing item.
+06-19-2021 @ 20:26:55 - Found simple product object. ID:446618
+06-19-2021 @ 20:26:55 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110.jpg
+06-19-2021 @ 20:26:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110.jpg. Error: Not Found
+06-19-2021 @ 20:26:56 - Setting Gallery Images.
+06-19-2021 @ 20:26:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-1.jpg
+06-19-2021 @ 20:26:56 - Attachment ID:446424
+06-19-2021 @ 20:26:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-2.jpg
+06-19-2021 @ 20:26:56 - Attachment ID:446426
+06-19-2021 @ 20:26:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-3.jpg
+06-19-2021 @ 20:26:56 - Attachment ID:446428
+06-19-2021 @ 20:26:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-4.jpg
+06-19-2021 @ 20:26:56 - Attachment ID:446430
+06-19-2021 @ 20:26:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-5.jpg
+06-19-2021 @ 20:26:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-5.jpg. Error: Not Found
+06-19-2021 @ 20:26:57 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-6.jpg
+06-19-2021 @ 20:26:58 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-6.jpg. Error: Not Found
+06-19-2021 @ 20:26:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-7.jpg
+06-19-2021 @ 20:26:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-7.jpg. Error: Not Found
+06-19-2021 @ 20:26:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-8.jpg
+06-19-2021 @ 20:27:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788110-8.jpg. Error: Not Found
+06-19-2021 @ 20:27:00 - Row :19 - Product updated successfully.
+06-19-2021 @ 20:27:00 - Row :20 - Parsing item.
+06-19-2021 @ 20:27:00 - Row :20 - Processing item.
+06-19-2021 @ 20:27:00 - Found simple product object. ID:446619
+06-19-2021 @ 20:27:00 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108.jpg
+06-19-2021 @ 20:27:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108.jpg. Error: Not Found
+06-19-2021 @ 20:27:01 - Setting Gallery Images.
+06-19-2021 @ 20:27:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-1.jpg
+06-19-2021 @ 20:27:02 - Attachment ID:446516
+06-19-2021 @ 20:27:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-2.jpg
+06-19-2021 @ 20:27:02 - Attachment ID:446518
+06-19-2021 @ 20:27:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-3.jpg
+06-19-2021 @ 20:27:02 - Attachment ID:446520
+06-19-2021 @ 20:27:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-4.jpg
+06-19-2021 @ 20:27:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-4.jpg. Error: Not Found
+06-19-2021 @ 20:27:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-5.jpg
+06-19-2021 @ 20:27:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-5.jpg. Error: Not Found
+06-19-2021 @ 20:27:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-6.jpg
+06-19-2021 @ 20:27:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-6.jpg. Error: Not Found
+06-19-2021 @ 20:27:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-7.jpg
+06-19-2021 @ 20:27:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-7.jpg. Error: Not Found
+06-19-2021 @ 20:27:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-8.jpg
+06-19-2021 @ 20:27:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826108-8.jpg. Error: Not Found
+06-19-2021 @ 20:27:08 - Row :20 - Product updated successfully.
+06-19-2021 @ 20:27:11 - Preparing for import.
+06-19-2021 @ 20:27:11 - Row :21 - Parsing item.
+06-19-2021 @ 20:27:11 - Row :21 - Processing item.
+06-19-2021 @ 20:27:11 - Found simple product object. ID:446620
+06-19-2021 @ 20:27:11 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106.jpg
+06-19-2021 @ 20:27:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106.jpg. Error: Not Found
+06-19-2021 @ 20:27:12 - Setting Gallery Images.
+06-19-2021 @ 20:27:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-1.jpg
+06-19-2021 @ 20:27:13 - Attachment ID:446564
+06-19-2021 @ 20:27:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-2.jpg
+06-19-2021 @ 20:27:13 - Attachment ID:446566
+06-19-2021 @ 20:27:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-3.jpg
+06-19-2021 @ 20:27:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-3.jpg. Error: Not Found
+06-19-2021 @ 20:27:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-4.jpg
+06-19-2021 @ 20:27:14 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-4.jpg. Error: Not Found
+06-19-2021 @ 20:27:14 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-5.jpg
+06-19-2021 @ 20:27:15 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-5.jpg. Error: Not Found
+06-19-2021 @ 20:27:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-6.jpg
+06-19-2021 @ 20:27:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-6.jpg. Error: Not Found
+06-19-2021 @ 20:27:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-7.jpg
+06-19-2021 @ 20:27:17 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-7.jpg. Error: Not Found
+06-19-2021 @ 20:27:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-8.jpg
+06-19-2021 @ 20:27:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780106-8.jpg. Error: Not Found
+06-19-2021 @ 20:27:20 - Row :21 - Product updated successfully.
+06-19-2021 @ 20:27:20 - Row :22 - Parsing item.
+06-19-2021 @ 20:27:20 - Row :22 - Processing item.
+06-19-2021 @ 20:27:20 - Found simple product object. ID:446621
+06-19-2021 @ 20:27:20 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120.jpg
+06-19-2021 @ 20:27:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120.jpg. Error: Not Found
+06-19-2021 @ 20:27:21 - Setting Gallery Images.
+06-19-2021 @ 20:27:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-1.jpg
+06-19-2021 @ 20:27:21 - Attachment ID:446432
+06-19-2021 @ 20:27:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-2.jpg
+06-19-2021 @ 20:27:21 - Attachment ID:446434
+06-19-2021 @ 20:27:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-3.jpg
+06-19-2021 @ 20:27:21 - Attachment ID:446436
+06-19-2021 @ 20:27:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-4.jpg
+06-19-2021 @ 20:27:22 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-4.jpg. Error: Not Found
+06-19-2021 @ 20:27:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-5.jpg
+06-19-2021 @ 20:27:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-5.jpg. Error: Not Found
+06-19-2021 @ 20:27:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-6.jpg
+06-19-2021 @ 20:27:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-6.jpg. Error: Not Found
+06-19-2021 @ 20:27:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-7.jpg
+06-19-2021 @ 20:27:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-7.jpg. Error: Not Found
+06-19-2021 @ 20:27:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-8.jpg
+06-19-2021 @ 20:27:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788120-8.jpg. Error: Not Found
+06-19-2021 @ 20:27:26 - Row :22 - Product updated successfully.
+06-19-2021 @ 20:27:26 - Row :23 - Parsing item.
+06-19-2021 @ 20:27:26 - Row :23 - Processing item.
+06-19-2021 @ 20:27:26 - Found simple product object. ID:446622
+06-19-2021 @ 20:27:26 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126.jpg
+06-19-2021 @ 20:27:27 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126.jpg. Error: Not Found
+06-19-2021 @ 20:27:27 - Setting Gallery Images.
+06-19-2021 @ 20:27:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-1.jpg
+06-19-2021 @ 20:27:27 - Attachment ID:446438
+06-19-2021 @ 20:27:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-2.jpg
+06-19-2021 @ 20:27:28 - Attachment ID:446440
+06-19-2021 @ 20:27:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-3.jpg
+06-19-2021 @ 20:27:28 - Attachment ID:446442
+06-19-2021 @ 20:27:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-4.jpg
+06-19-2021 @ 20:27:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-4.jpg. Error: Not Found
+06-19-2021 @ 20:27:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-5.jpg
+06-19-2021 @ 20:27:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-5.jpg. Error: Not Found
+06-19-2021 @ 20:27:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-6.jpg
+06-19-2021 @ 20:27:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-6.jpg. Error: Not Found
+06-19-2021 @ 20:27:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-7.jpg
+06-19-2021 @ 20:27:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-7.jpg. Error: Not Found
+06-19-2021 @ 20:27:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-8.jpg
+06-19-2021 @ 20:27:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788126-8.jpg. Error: Not Found
+06-19-2021 @ 20:27:34 - Row :23 - Product updated successfully.
+06-19-2021 @ 20:27:34 - Row :24 - Parsing item.
+06-19-2021 @ 20:27:34 - Row :24 - Processing item.
+06-19-2021 @ 20:27:34 - Found simple product object. ID:446623
+06-19-2021 @ 20:27:34 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104.jpg
+06-19-2021 @ 20:27:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104.jpg. Error: Not Found
+06-19-2021 @ 20:27:35 - Setting Gallery Images.
+06-19-2021 @ 20:27:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-1.jpg
+06-19-2021 @ 20:27:35 - Attachment ID:446454
+06-19-2021 @ 20:27:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-2.jpg
+06-19-2021 @ 20:27:35 - Attachment ID:446456
+06-19-2021 @ 20:27:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-3.jpg
+06-19-2021 @ 20:27:35 - Attachment ID:446458
+06-19-2021 @ 20:27:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-4.jpg
+06-19-2021 @ 20:27:36 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-4.jpg. Error: Not Found
+06-19-2021 @ 20:27:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-5.jpg
+06-19-2021 @ 20:27:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-5.jpg. Error: Not Found
+06-19-2021 @ 20:27:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-6.jpg
+06-19-2021 @ 20:27:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-6.jpg. Error: Not Found
+06-19-2021 @ 20:27:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-7.jpg
+06-19-2021 @ 20:27:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-7.jpg. Error: Not Found
+06-19-2021 @ 20:27:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-8.jpg
+06-19-2021 @ 20:27:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-25826104-8.jpg. Error: Not Found
+06-19-2021 @ 20:27:41 - Row :24 - Product updated successfully.
+06-19-2021 @ 20:27:41 - Row :25 - Parsing item.
+06-19-2021 @ 20:27:41 - Row :25 - Processing item.
+06-19-2021 @ 20:27:41 - Found simple product object. ID:446624
+06-19-2021 @ 20:27:41 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102.jpg
+06-19-2021 @ 20:27:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102.jpg. Error: Not Found
+06-19-2021 @ 20:27:42 - Setting Gallery Images.
+06-19-2021 @ 20:27:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-1.jpg
+06-19-2021 @ 20:27:42 - Attachment ID:446412
+06-19-2021 @ 20:27:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-2.jpg
+06-19-2021 @ 20:27:42 - Attachment ID:446414
+06-19-2021 @ 20:27:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-3.jpg
+06-19-2021 @ 20:27:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-3.jpg. Error: Not Found
+06-19-2021 @ 20:27:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-4.jpg
+06-19-2021 @ 20:27:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-4.jpg. Error: Not Found
+06-19-2021 @ 20:27:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-5.jpg
+06-19-2021 @ 20:27:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-5.jpg. Error: Not Found
+06-19-2021 @ 20:27:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-6.jpg
+06-19-2021 @ 20:27:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-6.jpg. Error: Not Found
+06-19-2021 @ 20:27:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-7.jpg
+06-19-2021 @ 20:27:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-7.jpg. Error: Not Found
+06-19-2021 @ 20:27:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-8.jpg
+06-19-2021 @ 20:27:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614102-8.jpg. Error: Not Found
+06-19-2021 @ 20:27:48 - Row :25 - Product updated successfully.
+06-19-2021 @ 20:27:48 - Row :26 - Parsing item.
+06-19-2021 @ 20:27:48 - Row :26 - Processing item.
+06-19-2021 @ 20:27:48 - Found simple product object. ID:446625
+06-19-2021 @ 20:27:48 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104.jpg
+06-19-2021 @ 20:27:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104.jpg. Error: Not Found
+06-19-2021 @ 20:27:49 - Setting Gallery Images.
+06-19-2021 @ 20:27:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-1.jpg
+06-19-2021 @ 20:27:49 - Attachment ID:446416
+06-19-2021 @ 20:27:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-2.jpg
+06-19-2021 @ 20:27:49 - Attachment ID:446418
+06-19-2021 @ 20:27:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-3.jpg
+06-19-2021 @ 20:27:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-3.jpg. Error: Not Found
+06-19-2021 @ 20:27:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-4.jpg
+06-19-2021 @ 20:27:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-4.jpg. Error: Not Found
+06-19-2021 @ 20:27:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-5.jpg
+06-19-2021 @ 20:27:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-5.jpg. Error: Not Found
+06-19-2021 @ 20:27:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-6.jpg
+06-19-2021 @ 20:27:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-6.jpg. Error: Not Found
+06-19-2021 @ 20:27:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-7.jpg
+06-19-2021 @ 20:27:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-7.jpg. Error: Not Found
+06-19-2021 @ 20:27:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-8.jpg
+06-19-2021 @ 20:27:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-20614104-8.jpg. Error: Not Found
+06-19-2021 @ 20:27:55 - Row :26 - Product updated successfully.
+06-19-2021 @ 20:27:55 - Row :27 - Parsing item.
+06-19-2021 @ 20:27:55 - Row :27 - Processing item.
+06-19-2021 @ 20:27:55 - Found simple product object. ID:446626
+06-19-2021 @ 20:27:55 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108.jpg
+06-19-2021 @ 20:27:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108.jpg. Error: Not Found
+06-19-2021 @ 20:27:56 - Setting Gallery Images.
+06-19-2021 @ 20:27:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-1.jpg
+06-19-2021 @ 20:27:56 - Attachment ID:446548
+06-19-2021 @ 20:27:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-2.jpg
+06-19-2021 @ 20:27:57 - Attachment ID:446550
+06-19-2021 @ 20:27:57 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-3.jpg
+06-19-2021 @ 20:27:57 - Attachment ID:446552
+06-19-2021 @ 20:27:57 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-4.jpg
+06-19-2021 @ 20:27:58 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-4.jpg. Error: Not Found
+06-19-2021 @ 20:27:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-5.jpg
+06-19-2021 @ 20:27:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-5.jpg. Error: Not Found
+06-19-2021 @ 20:27:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-6.jpg
+06-19-2021 @ 20:28:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-6.jpg. Error: Not Found
+06-19-2021 @ 20:28:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-7.jpg
+06-19-2021 @ 20:28:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-7.jpg. Error: Not Found
+06-19-2021 @ 20:28:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-8.jpg
+06-19-2021 @ 20:28:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524108-8.jpg. Error: Not Found
+06-19-2021 @ 20:28:02 - Row :27 - Product updated successfully.
+06-19-2021 @ 20:28:02 - Row :28 - Parsing item.
+06-19-2021 @ 20:28:02 - Row :28 - Processing item.
+06-19-2021 @ 20:28:02 - Found simple product object. ID:446627
+06-19-2021 @ 20:28:02 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110.jpg
+06-19-2021 @ 20:28:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110.jpg. Error: Not Found
+06-19-2021 @ 20:28:03 - Setting Gallery Images.
+06-19-2021 @ 20:28:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-1.jpg
+06-19-2021 @ 20:28:03 - Attachment ID:446554
+06-19-2021 @ 20:28:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-2.jpg
+06-19-2021 @ 20:28:04 - Attachment ID:446556
+06-19-2021 @ 20:28:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-3.jpg
+06-19-2021 @ 20:28:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-3.jpg. Error: Not Found
+06-19-2021 @ 20:28:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-4.jpg
+06-19-2021 @ 20:28:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-4.jpg. Error: Not Found
+06-19-2021 @ 20:28:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-5.jpg
+06-19-2021 @ 20:28:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-5.jpg. Error: Not Found
+06-19-2021 @ 20:28:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-6.jpg
+06-19-2021 @ 20:28:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-6.jpg. Error: Not Found
+06-19-2021 @ 20:28:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-7.jpg
+06-19-2021 @ 20:28:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-7.jpg. Error: Not Found
+06-19-2021 @ 20:28:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-8.jpg
+06-19-2021 @ 20:28:09 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44524110-8.jpg. Error: Not Found
+06-19-2021 @ 20:28:10 - Row :28 - Product updated successfully.
+06-19-2021 @ 20:28:10 - Row :29 - Parsing item.
+06-19-2021 @ 20:28:10 - Row :29 - Processing item.
+06-19-2021 @ 20:28:10 - Found simple product object. ID:446628
+06-19-2021 @ 20:28:10 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108.jpg
+06-19-2021 @ 20:28:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108.jpg. Error: Not Found
+06-19-2021 @ 20:28:10 - Setting Gallery Images.
+06-19-2021 @ 20:28:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-1.jpg
+06-19-2021 @ 20:28:11 - Attachment ID:446568
+06-19-2021 @ 20:28:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-2.jpg
+06-19-2021 @ 20:28:11 - Attachment ID:446570
+06-19-2021 @ 20:28:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-3.jpg
+06-19-2021 @ 20:28:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-3.jpg. Error: Not Found
+06-19-2021 @ 20:28:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-4.jpg
+06-19-2021 @ 20:28:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-4.jpg. Error: Not Found
+06-19-2021 @ 20:28:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-5.jpg
+06-19-2021 @ 20:28:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-5.jpg. Error: Not Found
+06-19-2021 @ 20:28:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-6.jpg
+06-19-2021 @ 20:28:14 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-6.jpg. Error: Not Found
+06-19-2021 @ 20:28:14 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-7.jpg
+06-19-2021 @ 20:28:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-7.jpg. Error: Not Found
+06-19-2021 @ 20:28:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-8.jpg
+06-19-2021 @ 20:28:17 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45780108-8.jpg. Error: Not Found
+06-19-2021 @ 20:28:17 - Row :29 - Product updated successfully.
+06-19-2021 @ 20:28:17 - Row :30 - Parsing item.
+06-19-2021 @ 20:28:17 - Row :30 - Processing item.
+06-19-2021 @ 20:28:17 - Found simple product object. ID:446629
+06-19-2021 @ 20:28:17 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104.jpg
+06-19-2021 @ 20:28:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104.jpg. Error: Not Found
+06-19-2021 @ 20:28:18 - Setting Gallery Images.
+06-19-2021 @ 20:28:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-1.jpg
+06-19-2021 @ 20:28:18 - Attachment ID:446560
+06-19-2021 @ 20:28:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-2.jpg
+06-19-2021 @ 20:28:18 - Attachment ID:446562
+06-19-2021 @ 20:28:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-3.jpg
+06-19-2021 @ 20:28:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-3.jpg. Error: Not Found
+06-19-2021 @ 20:28:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-4.jpg
+06-19-2021 @ 20:28:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-4.jpg. Error: Not Found
+06-19-2021 @ 20:28:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-5.jpg
+06-19-2021 @ 20:28:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-5.jpg. Error: Not Found
+06-19-2021 @ 20:28:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-6.jpg
+06-19-2021 @ 20:28:22 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-6.jpg. Error: Not Found
+06-19-2021 @ 20:28:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-7.jpg
+06-19-2021 @ 20:28:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-7.jpg. Error: Not Found
+06-19-2021 @ 20:28:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-8.jpg
+06-19-2021 @ 20:28:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-45228104-8.jpg. Error: Not Found
+06-19-2021 @ 20:28:26 - Row :30 - Product updated successfully.
+06-19-2021 @ 20:28:28 - Preparing for import.
+06-19-2021 @ 20:28:28 - Row :31 - Parsing item.
+06-19-2021 @ 20:28:28 - Row :31 - Processing item.
+06-19-2021 @ 20:28:28 - Found simple product object. ID:446630
+06-19-2021 @ 20:28:28 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160.jpg
+06-19-2021 @ 20:28:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160.jpg. Error: Not Found
+06-19-2021 @ 20:28:29 - Setting Gallery Images.
+06-19-2021 @ 20:28:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-1.jpg
+06-19-2021 @ 20:28:30 - Attachment ID:446594
+06-19-2021 @ 20:28:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-2.jpg
+06-19-2021 @ 20:28:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-2.jpg. Error: Not Found
+06-19-2021 @ 20:28:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-3.jpg
+06-19-2021 @ 20:28:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-3.jpg. Error: Not Found
+06-19-2021 @ 20:28:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-4.jpg
+06-19-2021 @ 20:28:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-4.jpg. Error: Not Found
+06-19-2021 @ 20:28:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-5.jpg
+06-19-2021 @ 20:28:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-5.jpg. Error: Not Found
+06-19-2021 @ 20:28:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-6.jpg
+06-19-2021 @ 20:28:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-6.jpg. Error: Not Found
+06-19-2021 @ 20:28:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-7.jpg
+06-19-2021 @ 20:28:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-7.jpg. Error: Not Found
+06-19-2021 @ 20:28:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-8.jpg
+06-19-2021 @ 20:28:36 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-21788154160-8.jpg. Error: Not Found
+06-19-2021 @ 20:28:37 - Row :31 - Product updated successfully.
+06-19-2021 @ 20:28:37 - Row :32 - Parsing item.
+06-19-2021 @ 20:28:37 - Row :32 - Processing item.
+06-19-2021 @ 20:28:37 - Found simple product object. ID:446631
+06-19-2021 @ 20:28:37 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100.jpg
+06-19-2021 @ 20:28:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100.jpg. Error: Not Found
+06-19-2021 @ 20:28:38 - Setting Gallery Images.
+06-19-2021 @ 20:28:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-1.jpg
+06-19-2021 @ 20:28:38 - Attachment ID:446492
+06-19-2021 @ 20:28:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-2.jpg
+06-19-2021 @ 20:28:38 - Attachment ID:446494
+06-19-2021 @ 20:28:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-3.jpg
+06-19-2021 @ 20:28:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-3.jpg. Error: Not Found
+06-19-2021 @ 20:28:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-4.jpg
+06-19-2021 @ 20:28:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-4.jpg. Error: Not Found
+06-19-2021 @ 20:28:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-5.jpg
+06-19-2021 @ 20:28:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-5.jpg. Error: Not Found
+06-19-2021 @ 20:28:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-6.jpg
+06-19-2021 @ 20:28:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-6.jpg. Error: Not Found
+06-19-2021 @ 20:28:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-7.jpg
+06-19-2021 @ 20:28:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-7.jpg. Error: Not Found
+06-19-2021 @ 20:28:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-8.jpg
+06-19-2021 @ 20:28:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-40496100-8.jpg. Error: Not Found
+06-19-2021 @ 20:28:44 - Row :32 - Product updated successfully.
+06-19-2021 @ 20:28:44 - Row :33 - Parsing item.
+06-19-2021 @ 20:28:44 - Row :33 - Processing item.
+06-19-2021 @ 20:28:44 - Found simple product object. ID:446632
+06-19-2021 @ 20:28:44 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106.jpg
+06-19-2021 @ 20:28:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106.jpg. Error: Not Found
+06-19-2021 @ 20:28:46 - Setting Gallery Images.
+06-19-2021 @ 20:28:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-1.jpg
+06-19-2021 @ 20:28:46 - Attachment ID:446584
+06-19-2021 @ 20:28:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-2.jpg
+06-19-2021 @ 20:28:46 - Attachment ID:446586
+06-19-2021 @ 20:28:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-3.jpg
+06-19-2021 @ 20:28:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-3.jpg. Error: Not Found
+06-19-2021 @ 20:28:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-4.jpg
+06-19-2021 @ 20:28:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-4.jpg. Error: Not Found
+06-19-2021 @ 20:28:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-5.jpg
+06-19-2021 @ 20:28:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-5.jpg. Error: Not Found
+06-19-2021 @ 20:28:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-6.jpg
+06-19-2021 @ 20:28:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-6.jpg. Error: Not Found
+06-19-2021 @ 20:28:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-7.jpg
+06-19-2021 @ 20:28:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-7.jpg. Error: Not Found
+06-19-2021 @ 20:28:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-8.jpg
+06-19-2021 @ 20:28:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-47102106-8.jpg. Error: Not Found
+06-19-2021 @ 20:28:54 - Row :33 - Product updated successfully.
+06-19-2021 @ 20:28:54 - Row :34 - Parsing item.
+06-19-2021 @ 20:28:54 - Row :34 - Processing item.
+06-19-2021 @ 20:28:54 - Found simple product object. ID:446633
+06-19-2021 @ 20:28:54 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102.jpg
+06-19-2021 @ 20:28:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102.jpg. Error: Not Found
+06-19-2021 @ 20:28:55 - Setting Gallery Images.
+06-19-2021 @ 20:28:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-1.jpg
+06-19-2021 @ 20:28:55 - Attachment ID:446504
+06-19-2021 @ 20:28:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-2.jpg
+06-19-2021 @ 20:28:55 - Attachment ID:446506
+06-19-2021 @ 20:28:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-3.jpg
+06-19-2021 @ 20:28:55 - Attachment ID:446508
+06-19-2021 @ 20:28:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-4.jpg
+06-19-2021 @ 20:28:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-4.jpg. Error: Not Found
+06-19-2021 @ 20:28:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-5.jpg
+06-19-2021 @ 20:28:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-5.jpg. Error: Not Found
+06-19-2021 @ 20:28:57 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-6.jpg
+06-19-2021 @ 20:28:58 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-6.jpg. Error: Not Found
+06-19-2021 @ 20:28:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-7.jpg
+06-19-2021 @ 20:28:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-7.jpg. Error: Not Found
+06-19-2021 @ 20:28:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-8.jpg
+06-19-2021 @ 20:29:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42630102-8.jpg. Error: Not Found
+06-19-2021 @ 20:29:00 - Row :34 - Product updated successfully.
+06-19-2021 @ 20:29:00 - Row :35 - Parsing item.
+06-19-2021 @ 20:29:00 - Row :35 - Processing item.
+06-19-2021 @ 20:29:00 - Found simple product object. ID:446634
+06-19-2021 @ 20:29:00 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108.jpg
+06-19-2021 @ 20:29:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108.jpg. Error: Not Found
+06-19-2021 @ 20:29:01 - Setting Gallery Images.
+06-19-2021 @ 20:29:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-1.jpg
+06-19-2021 @ 20:29:02 - Attachment ID:446472
+06-19-2021 @ 20:29:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-2.jpg
+06-19-2021 @ 20:29:02 - Attachment ID:446474
+06-19-2021 @ 20:29:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-3.jpg
+06-19-2021 @ 20:29:02 - Attachment ID:446476
+06-19-2021 @ 20:29:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-4.jpg
+06-19-2021 @ 20:29:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-4.jpg. Error: Not Found
+06-19-2021 @ 20:29:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-5.jpg
+06-19-2021 @ 20:29:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-5.jpg. Error: Not Found
+06-19-2021 @ 20:29:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-6.jpg
+06-19-2021 @ 20:29:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-6.jpg. Error: Not Found
+06-19-2021 @ 20:29:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-7.jpg
+06-19-2021 @ 20:29:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-7.jpg. Error: Not Found
+06-19-2021 @ 20:29:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-8.jpg
+06-19-2021 @ 20:29:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-30021108-8.jpg. Error: Not Found
+06-19-2021 @ 20:29:07 - Row :35 - Product updated successfully.
+06-19-2021 @ 20:29:07 - Row :36 - Parsing item.
+06-19-2021 @ 20:29:07 - Row :36 - Processing item.
+06-19-2021 @ 20:29:07 - Found simple product object. ID:446635
+06-19-2021 @ 20:29:07 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100.jpg
+06-19-2021 @ 20:29:09 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100.jpg. Error: Not Found
+06-19-2021 @ 20:29:09 - Setting Gallery Images.
+06-19-2021 @ 20:29:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-1.jpg
+06-19-2021 @ 20:29:09 - Attachment ID:446558
+06-19-2021 @ 20:29:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-2.jpg
+06-19-2021 @ 20:29:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-2.jpg. Error: Not Found
+06-19-2021 @ 20:29:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-3.jpg
+06-19-2021 @ 20:29:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-3.jpg. Error: Not Found
+06-19-2021 @ 20:29:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-4.jpg
+06-19-2021 @ 20:29:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-4.jpg. Error: Not Found
+06-19-2021 @ 20:29:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-5.jpg
+06-19-2021 @ 20:29:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-5.jpg. Error: Not Found
+06-19-2021 @ 20:29:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-6.jpg
+06-19-2021 @ 20:29:14 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-6.jpg. Error: Not Found
+06-19-2021 @ 20:29:14 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-7.jpg
+06-19-2021 @ 20:29:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-7.jpg. Error: Not Found
+06-19-2021 @ 20:29:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-8.jpg
+06-19-2021 @ 20:29:17 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-44694100-8.jpg. Error: Not Found
+06-19-2021 @ 20:29:17 - Row :36 - Product updated successfully.
+06-19-2021 @ 20:29:17 - Row :37 - Parsing item.
+06-19-2021 @ 20:29:17 - Row :37 - Processing item.
+06-19-2021 @ 20:29:17 - Found simple product object. ID:446636
+06-19-2021 @ 20:29:17 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110.jpg
+06-19-2021 @ 20:29:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110.jpg. Error: Not Found
+06-19-2021 @ 20:29:19 - Setting Gallery Images.
+06-19-2021 @ 20:29:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-1.jpg
+06-19-2021 @ 20:29:19 - Attachment ID:446522
+06-19-2021 @ 20:29:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-2.jpg
+06-19-2021 @ 20:29:20 - Attachment ID:446524
+06-19-2021 @ 20:29:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-3.jpg
+06-19-2021 @ 20:29:20 - Attachment ID:446526
+06-19-2021 @ 20:29:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-4.jpg
+06-19-2021 @ 20:29:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-4.jpg. Error: Not Found
+06-19-2021 @ 20:29:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-5.jpg
+06-19-2021 @ 20:29:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-5.jpg. Error: Not Found
+06-19-2021 @ 20:29:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-6.jpg
+06-19-2021 @ 20:29:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-6.jpg. Error: Not Found
+06-19-2021 @ 20:29:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-7.jpg
+06-19-2021 @ 20:29:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-7.jpg. Error: Not Found
+06-19-2021 @ 20:29:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-8.jpg
+06-19-2021 @ 20:29:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-42826110-8.jpg. Error: Not Found
+06-19-2021 @ 20:29:27 - Row :37 - Product updated successfully.
+06-19-2021 @ 20:29:27 - Row :38 - Parsing item.
+06-19-2021 @ 20:29:27 - Row :38 - Processing item.
+06-19-2021 @ 20:29:27 - Found simple product object. ID:446637
+06-19-2021 @ 20:29:27 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102.jpg
+06-19-2021 @ 20:29:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102.jpg. Error: Not Found
+06-19-2021 @ 20:29:28 - Setting Gallery Images.
+06-19-2021 @ 20:29:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-1.jpg
+06-19-2021 @ 20:29:28 - Attachment ID:446528
+06-19-2021 @ 20:29:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-2.jpg
+06-19-2021 @ 20:29:28 - Attachment ID:446530
+06-19-2021 @ 20:29:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-3.jpg
+06-19-2021 @ 20:29:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-3.jpg. Error: Not Found
+06-19-2021 @ 20:29:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-4.jpg
+06-19-2021 @ 20:29:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-4.jpg. Error: Not Found
+06-19-2021 @ 20:29:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-5.jpg
+06-19-2021 @ 20:29:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-5.jpg. Error: Not Found
+06-19-2021 @ 20:29:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-6.jpg
+06-19-2021 @ 20:29:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-6.jpg. Error: Not Found
+06-19-2021 @ 20:29:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-7.jpg
+06-19-2021 @ 20:29:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-7.jpg. Error: Not Found
+06-19-2021 @ 20:29:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-8.jpg
+06-19-2021 @ 20:29:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-43698102-8.jpg. Error: Not Found
+06-19-2021 @ 20:29:35 - Row :38 - Product updated successfully.
+06-19-2021 @ 20:29:35 - Row :39 - Parsing item.
+06-19-2021 @ 20:29:35 - Row :39 - Processing item.
+06-19-2021 @ 20:29:35 - Found simple product object. ID:446638
+06-19-2021 @ 20:29:35 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102.jpg
+06-19-2021 @ 20:29:36 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102.jpg. Error: Not Found
+06-19-2021 @ 20:29:36 - Setting Gallery Images.
+06-19-2021 @ 20:29:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-1.jpg
+06-19-2021 @ 20:29:36 - Attachment ID:446466
+06-19-2021 @ 20:29:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-2.jpg
+06-19-2021 @ 20:29:36 - Attachment ID:446468
+06-19-2021 @ 20:29:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-3.jpg
+06-19-2021 @ 20:29:36 - Attachment ID:446470
+06-19-2021 @ 20:29:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-4.jpg
+06-19-2021 @ 20:29:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-4.jpg. Error: Not Found
+06-19-2021 @ 20:29:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-5.jpg
+06-19-2021 @ 20:29:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-5.jpg. Error: Not Found
+06-19-2021 @ 20:29:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-6.jpg
+06-19-2021 @ 20:29:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-6.jpg. Error: Not Found
+06-19-2021 @ 20:29:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-7.jpg
+06-19-2021 @ 20:29:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-7.jpg. Error: Not Found
+06-19-2021 @ 20:29:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-8.jpg
+06-19-2021 @ 20:29:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-28374102-8.jpg. Error: Not Found
+06-19-2021 @ 20:29:41 - Row :39 - Product updated successfully.
+06-19-2021 @ 20:29:41 - Row :40 - Parsing item.
+06-19-2021 @ 20:29:41 - Row :40 - Processing item.
+06-19-2021 @ 20:29:42 - Found simple product object. ID:446639
+06-19-2021 @ 20:29:42 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102.jpg
+06-19-2021 @ 20:29:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102.jpg. Error: Not Found
+06-19-2021 @ 20:29:43 - Setting Gallery Images.
+06-19-2021 @ 20:29:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-1.jpg
+06-19-2021 @ 20:29:43 - Attachment ID:446406
+06-19-2021 @ 20:29:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-2.jpg
+06-19-2021 @ 20:29:43 - Attachment ID:446408
+06-19-2021 @ 20:29:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-3.jpg
+06-19-2021 @ 20:29:43 - Attachment ID:446410
+06-19-2021 @ 20:29:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-4.jpg
+06-19-2021 @ 20:29:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-4.jpg. Error: Not Found
+06-19-2021 @ 20:29:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-5.jpg
+06-19-2021 @ 20:29:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-5.jpg. Error: Not Found
+06-19-2021 @ 20:29:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-6.jpg
+06-19-2021 @ 20:29:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-6.jpg. Error: Not Found
+06-19-2021 @ 20:29:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-7.jpg
+06-19-2021 @ 20:29:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-7.jpg. Error: Not Found
+06-19-2021 @ 20:29:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-8.jpg
+06-19-2021 @ 20:29:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/06/WK-13354102-8.jpg. Error: Not Found
+06-19-2021 @ 20:29:48 - Row :40 - Product updated successfully.
+06-19-2021 @ 20:29:48 - ---[ Import ended at 2021-06-19 08:29:48]---

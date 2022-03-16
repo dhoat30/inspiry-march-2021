@@ -1,0 +1,867 @@
+06-17-2021 @ 17:31:03 - ---[ New import started at 2021-06-17 05:31:03 ] PHP Memory: 768 MB, WP Memory: 40 MB
+06-17-2021 @ 17:31:03 - Preparing for import.
+06-17-2021 @ 17:31:03 - Row :1 - Parsing item.
+06-17-2021 @ 17:31:03 - Row :1 - Processing item.
+06-17-2021 @ 17:31:03 - Found simple product object. ID:445962
+06-17-2021 @ 17:31:03 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBA.jpg
+06-17-2021 @ 17:31:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBA.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBA.jpg. Error: Not Found
+06-17-2021 @ 17:31:05 - Setting Gallery Images.
+06-17-2021 @ 17:31:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBA-1.jpg
+06-17-2021 @ 17:31:05 - Attachment ID:446057
+06-17-2021 @ 17:31:06 - Row :1 - Product updated successfully.
+06-17-2021 @ 17:31:06 - Row :2 - Parsing item.
+06-17-2021 @ 17:31:06 - Row :2 - Processing item.
+06-17-2021 @ 17:31:06 - Found simple product object. ID:445963
+06-17-2021 @ 17:31:06 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBS.jpg
+06-17-2021 @ 17:31:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBS.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBS.jpg. Error: Not Found
+06-17-2021 @ 17:31:08 - Setting Gallery Images.
+06-17-2021 @ 17:31:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBS-1.jpg
+06-17-2021 @ 17:31:08 - Attachment ID:446058
+06-17-2021 @ 17:31:08 - Row :2 - Product updated successfully.
+06-17-2021 @ 17:31:08 - Row :3 - Parsing item.
+06-17-2021 @ 17:31:09 - Row :3 - Processing item.
+06-17-2021 @ 17:31:09 - Found simple product object. ID:445964
+06-17-2021 @ 17:31:09 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBL.jpg
+06-17-2021 @ 17:31:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBL.jpg. Error: Not Found
+06-17-2021 @ 17:31:10 - Setting Gallery Images.
+06-17-2021 @ 17:31:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCBL-1.jpg
+06-17-2021 @ 17:31:10 - Attachment ID:446059
+06-17-2021 @ 17:31:11 - Row :3 - Product updated successfully.
+06-17-2021 @ 17:31:11 - Row :4 - Parsing item.
+06-17-2021 @ 17:31:11 - Row :4 - Processing item.
+06-17-2021 @ 17:31:11 - Found simple product object. ID:445965
+06-17-2021 @ 17:31:11 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCCL.jpg
+06-17-2021 @ 17:31:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCCL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCCL.jpg. Error: Not Found
+06-17-2021 @ 17:31:12 - Setting Gallery Images.
+06-17-2021 @ 17:31:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCCL-1.jpg
+06-17-2021 @ 17:31:13 - Attachment ID:446060
+06-17-2021 @ 17:31:13 - Row :4 - Product updated successfully.
+06-17-2021 @ 17:31:13 - Row :5 - Parsing item.
+06-17-2021 @ 17:31:13 - Row :5 - Processing item.
+06-17-2021 @ 17:31:13 - Found simple product object. ID:445966
+06-17-2021 @ 17:31:13 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCDO.jpg
+06-17-2021 @ 17:31:14 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCDO.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCDO.jpg. Error: Not Found
+06-17-2021 @ 17:31:14 - Setting Gallery Images.
+06-17-2021 @ 17:31:14 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCDO-1.jpg
+06-17-2021 @ 17:31:15 - Attachment ID:446061
+06-17-2021 @ 17:31:15 - Row :5 - Product updated successfully.
+06-17-2021 @ 17:31:15 - Row :6 - Parsing item.
+06-17-2021 @ 17:31:15 - Row :6 - Processing item.
+06-17-2021 @ 17:31:15 - Found simple product object. ID:445967
+06-17-2021 @ 17:31:15 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCDU.jpg
+06-17-2021 @ 17:31:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCDU.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCDU.jpg. Error: Not Found
+06-17-2021 @ 17:31:16 - Setting Gallery Images.
+06-17-2021 @ 17:31:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCDU-1.jpg
+06-17-2021 @ 17:31:17 - Attachment ID:446062
+06-17-2021 @ 17:31:17 - Row :6 - Product updated successfully.
+06-17-2021 @ 17:31:17 - Row :7 - Parsing item.
+06-17-2021 @ 17:31:17 - Row :7 - Processing item.
+06-17-2021 @ 17:31:17 - Found simple product object. ID:445968
+06-17-2021 @ 17:31:17 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCFL.jpg
+06-17-2021 @ 17:31:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCFL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCFL.jpg. Error: Not Found
+06-17-2021 @ 17:31:18 - Setting Gallery Images.
+06-17-2021 @ 17:31:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCFL-1.jpg
+06-17-2021 @ 17:31:19 - Attachment ID:446063
+06-17-2021 @ 17:31:19 - Row :7 - Product updated successfully.
+06-17-2021 @ 17:31:19 - Row :8 - Parsing item.
+06-17-2021 @ 17:31:19 - Row :8 - Processing item.
+06-17-2021 @ 17:31:19 - Found simple product object. ID:445969
+06-17-2021 @ 17:31:19 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCJU.jpg
+06-17-2021 @ 17:31:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCJU.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCJU.jpg. Error: Not Found
+06-17-2021 @ 17:31:20 - Setting Gallery Images.
+06-17-2021 @ 17:31:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCJU-1.jpg
+06-17-2021 @ 17:31:21 - Attachment ID:446064
+06-17-2021 @ 17:31:21 - Row :8 - Product updated successfully.
+06-17-2021 @ 17:31:21 - Row :9 - Parsing item.
+06-17-2021 @ 17:31:21 - Row :9 - Processing item.
+06-17-2021 @ 17:31:21 - Found simple product object. ID:445970
+06-17-2021 @ 17:31:21 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCMI.jpg
+06-17-2021 @ 17:31:22 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCMI.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCMI.jpg. Error: Not Found
+06-17-2021 @ 17:31:22 - Setting Gallery Images.
+06-17-2021 @ 17:31:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCMI-1.jpg
+06-17-2021 @ 17:31:23 - Attachment ID:446065
+06-17-2021 @ 17:31:23 - Row :9 - Product updated successfully.
+06-17-2021 @ 17:31:23 - Row :10 - Parsing item.
+06-17-2021 @ 17:31:23 - Row :10 - Processing item.
+06-17-2021 @ 17:31:23 - Found simple product object. ID:445971
+06-17-2021 @ 17:31:23 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCPA.jpg
+06-17-2021 @ 17:31:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCPA.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCPA.jpg. Error: Not Found
+06-17-2021 @ 17:31:25 - Setting Gallery Images.
+06-17-2021 @ 17:31:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCPA-1.jpg
+06-17-2021 @ 17:31:25 - Attachment ID:446066
+06-17-2021 @ 17:31:25 - Row :10 - Product updated successfully.
+06-17-2021 @ 17:31:27 - Preparing for import.
+06-17-2021 @ 17:31:27 - Row :11 - Parsing item.
+06-17-2021 @ 17:31:27 - Row :11 - Processing item.
+06-17-2021 @ 17:31:27 - Found simple product object. ID:445972
+06-17-2021 @ 17:31:27 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCPE.jpg
+06-17-2021 @ 17:31:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCPE.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCPE.jpg. Error: Not Found
+06-17-2021 @ 17:31:28 - Setting Gallery Images.
+06-17-2021 @ 17:31:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCPE-1.jpg
+06-17-2021 @ 17:31:29 - Attachment ID:446067
+06-17-2021 @ 17:31:29 - Row :11 - Product updated successfully.
+06-17-2021 @ 17:31:29 - Row :12 - Parsing item.
+06-17-2021 @ 17:31:29 - Row :12 - Processing item.
+06-17-2021 @ 17:31:29 - Found simple product object. ID:445973
+06-17-2021 @ 17:31:29 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCSL.jpg
+06-17-2021 @ 17:31:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCSL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCSL.jpg. Error: Not Found
+06-17-2021 @ 17:31:30 - Setting Gallery Images.
+06-17-2021 @ 17:31:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCSL-1.jpg
+06-17-2021 @ 17:31:31 - Attachment ID:446068
+06-17-2021 @ 17:31:31 - Row :12 - Product updated successfully.
+06-17-2021 @ 17:31:31 - Row :13 - Parsing item.
+06-17-2021 @ 17:31:31 - Row :13 - Processing item.
+06-17-2021 @ 17:31:31 - Found simple product object. ID:445974
+06-17-2021 @ 17:31:31 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCST.jpg
+06-17-2021 @ 17:31:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCST.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCST.jpg. Error: Not Found
+06-17-2021 @ 17:31:32 - Setting Gallery Images.
+06-17-2021 @ 17:31:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-DUN-300UNCST-1.jpg
+06-17-2021 @ 17:31:33 - Attachment ID:446069
+06-17-2021 @ 17:31:33 - Row :13 - Product updated successfully.
+06-17-2021 @ 17:31:33 - Row :14 - Parsing item.
+06-17-2021 @ 17:31:33 - Row :14 - Processing item.
+06-17-2021 @ 17:31:33 - Found simple product object. ID:445975
+06-17-2021 @ 17:31:33 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCAW.jpg
+06-17-2021 @ 17:31:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCAW.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCAW.jpg. Error: Not Found
+06-17-2021 @ 17:31:34 - Setting Gallery Images.
+06-17-2021 @ 17:31:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCAW-1.jpg
+06-17-2021 @ 17:31:35 - Attachment ID:446070
+06-17-2021 @ 17:31:35 - Row :14 - Product updated successfully.
+06-17-2021 @ 17:31:35 - Row :15 - Parsing item.
+06-17-2021 @ 17:31:35 - Row :15 - Processing item.
+06-17-2021 @ 17:31:36 - Found simple product object. ID:445976
+06-17-2021 @ 17:31:36 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBA.jpg
+06-17-2021 @ 17:31:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBA.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBA.jpg. Error: Not Found
+06-17-2021 @ 17:31:37 - Setting Gallery Images.
+06-17-2021 @ 17:31:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBA-1.jpg
+06-17-2021 @ 17:31:37 - Attachment ID:446071
+06-17-2021 @ 17:31:38 - Row :15 - Product updated successfully.
+06-17-2021 @ 17:31:38 - Row :16 - Parsing item.
+06-17-2021 @ 17:31:38 - Row :16 - Processing item.
+06-17-2021 @ 17:31:38 - Found simple product object. ID:445977
+06-17-2021 @ 17:31:38 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBS.jpg
+06-17-2021 @ 17:31:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBS.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBS.jpg. Error: Not Found
+06-17-2021 @ 17:31:39 - Setting Gallery Images.
+06-17-2021 @ 17:31:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBS-1.jpg
+06-17-2021 @ 17:31:39 - Attachment ID:446072
+06-17-2021 @ 17:31:39 - Row :16 - Product updated successfully.
+06-17-2021 @ 17:31:39 - Row :17 - Parsing item.
+06-17-2021 @ 17:31:39 - Row :17 - Processing item.
+06-17-2021 @ 17:31:39 - Found simple product object. ID:445978
+06-17-2021 @ 17:31:39 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBL.jpg
+06-17-2021 @ 17:31:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBL.jpg. Error: Not Found
+06-17-2021 @ 17:31:41 - Setting Gallery Images.
+06-17-2021 @ 17:31:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCBL-1.jpg
+06-17-2021 @ 17:31:41 - Attachment ID:446073
+06-17-2021 @ 17:31:42 - Row :17 - Product updated successfully.
+06-17-2021 @ 17:31:42 - Row :18 - Parsing item.
+06-17-2021 @ 17:31:42 - Row :18 - Processing item.
+06-17-2021 @ 17:31:42 - Found simple product object. ID:445979
+06-17-2021 @ 17:31:42 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCCL.jpg
+06-17-2021 @ 17:31:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCCL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCCL.jpg. Error: Not Found
+06-17-2021 @ 17:31:43 - Setting Gallery Images.
+06-17-2021 @ 17:31:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCCL-1.jpg
+06-17-2021 @ 17:31:43 - Attachment ID:446074
+06-17-2021 @ 17:31:44 - Row :18 - Product updated successfully.
+06-17-2021 @ 17:31:44 - Row :19 - Parsing item.
+06-17-2021 @ 17:31:44 - Row :19 - Processing item.
+06-17-2021 @ 17:31:44 - Found simple product object. ID:445980
+06-17-2021 @ 17:31:44 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDE.jpg
+06-17-2021 @ 17:31:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDE.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDE.jpg. Error: Not Found
+06-17-2021 @ 17:31:45 - Setting Gallery Images.
+06-17-2021 @ 17:31:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDE-1.jpg
+06-17-2021 @ 17:31:45 - Attachment ID:446075
+06-17-2021 @ 17:31:45 - Row :19 - Product updated successfully.
+06-17-2021 @ 17:31:45 - Row :20 - Parsing item.
+06-17-2021 @ 17:31:45 - Row :20 - Processing item.
+06-17-2021 @ 17:31:45 - Found simple product object. ID:445981
+06-17-2021 @ 17:31:45 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDO.jpg
+06-17-2021 @ 17:31:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDO.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDO.jpg. Error: Not Found
+06-17-2021 @ 17:31:47 - Setting Gallery Images.
+06-17-2021 @ 17:31:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDO-1.jpg
+06-17-2021 @ 17:31:47 - Attachment ID:446076
+06-17-2021 @ 17:31:47 - Row :20 - Product updated successfully.
+06-17-2021 @ 17:31:49 - Preparing for import.
+06-17-2021 @ 17:31:49 - Row :21 - Parsing item.
+06-17-2021 @ 17:31:49 - Row :21 - Processing item.
+06-17-2021 @ 17:31:49 - Found simple product object. ID:445982
+06-17-2021 @ 17:31:49 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDU.jpg
+06-17-2021 @ 17:31:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDU.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDU.jpg. Error: Not Found
+06-17-2021 @ 17:31:50 - Setting Gallery Images.
+06-17-2021 @ 17:31:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCDU-1.jpg
+06-17-2021 @ 17:31:50 - Attachment ID:446077
+06-17-2021 @ 17:31:51 - Row :21 - Product updated successfully.
+06-17-2021 @ 17:31:51 - Row :22 - Parsing item.
+06-17-2021 @ 17:31:51 - Row :22 - Processing item.
+06-17-2021 @ 17:31:51 - Found simple product object. ID:445983
+06-17-2021 @ 17:31:51 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCFL.jpg
+06-17-2021 @ 17:31:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCFL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCFL.jpg. Error: Not Found
+06-17-2021 @ 17:31:52 - Setting Gallery Images.
+06-17-2021 @ 17:31:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCFL-1.jpg
+06-17-2021 @ 17:31:52 - Attachment ID:446078
+06-17-2021 @ 17:31:53 - Row :22 - Product updated successfully.
+06-17-2021 @ 17:31:53 - Row :23 - Parsing item.
+06-17-2021 @ 17:31:53 - Row :23 - Processing item.
+06-17-2021 @ 17:31:53 - Found simple product object. ID:445984
+06-17-2021 @ 17:31:53 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCJU.jpg
+06-17-2021 @ 17:31:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCJU.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCJU.jpg. Error: Not Found
+06-17-2021 @ 17:31:54 - Setting Gallery Images.
+06-17-2021 @ 17:31:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCJU-1.jpg
+06-17-2021 @ 17:31:54 - Attachment ID:446079
+06-17-2021 @ 17:31:55 - Row :23 - Product updated successfully.
+06-17-2021 @ 17:31:55 - Row :24 - Parsing item.
+06-17-2021 @ 17:31:55 - Row :24 - Processing item.
+06-17-2021 @ 17:31:55 - Found simple product object. ID:445985
+06-17-2021 @ 17:31:55 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCMI.jpg
+06-17-2021 @ 17:31:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCMI.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCMI.jpg. Error: Not Found
+06-17-2021 @ 17:31:56 - Setting Gallery Images.
+06-17-2021 @ 17:31:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCMI-1.jpg
+06-17-2021 @ 17:31:57 - Attachment ID:446080
+06-17-2021 @ 17:31:58 - Row :24 - Product updated successfully.
+06-17-2021 @ 17:31:58 - Row :25 - Parsing item.
+06-17-2021 @ 17:31:58 - Row :25 - Processing item.
+06-17-2021 @ 17:31:58 - Found simple product object. ID:445986
+06-17-2021 @ 17:31:58 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCPA.jpg
+06-17-2021 @ 17:31:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCPA.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCPA.jpg. Error: Not Found
+06-17-2021 @ 17:31:59 - Setting Gallery Images.
+06-17-2021 @ 17:31:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCPA-1.jpg
+06-17-2021 @ 17:32:00 - Attachment ID:446081
+06-17-2021 @ 17:32:00 - Row :25 - Product updated successfully.
+06-17-2021 @ 17:32:00 - Row :26 - Parsing item.
+06-17-2021 @ 17:32:00 - Row :26 - Processing item.
+06-17-2021 @ 17:32:00 - Found simple product object. ID:445987
+06-17-2021 @ 17:32:00 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCPE.jpg
+06-17-2021 @ 17:32:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCPE.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCPE.jpg. Error: Not Found
+06-17-2021 @ 17:32:01 - Setting Gallery Images.
+06-17-2021 @ 17:32:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCPE-1.jpg
+06-17-2021 @ 17:32:02 - Attachment ID:446082
+06-17-2021 @ 17:32:02 - Row :26 - Product updated successfully.
+06-17-2021 @ 17:32:02 - Row :27 - Parsing item.
+06-17-2021 @ 17:32:02 - Row :27 - Processing item.
+06-17-2021 @ 17:32:02 - Found simple product object. ID:445988
+06-17-2021 @ 17:32:02 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCRE.jpg
+06-17-2021 @ 17:32:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCRE.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCRE.jpg. Error: Not Found
+06-17-2021 @ 17:32:03 - Setting Gallery Images.
+06-17-2021 @ 17:32:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCRE-1.jpg
+06-17-2021 @ 17:32:04 - Attachment ID:446083
+06-17-2021 @ 17:32:04 - Row :27 - Product updated successfully.
+06-17-2021 @ 17:32:04 - Row :28 - Parsing item.
+06-17-2021 @ 17:32:04 - Row :28 - Processing item.
+06-17-2021 @ 17:32:04 - Found simple product object. ID:445989
+06-17-2021 @ 17:32:04 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSA.jpg
+06-17-2021 @ 17:32:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSA.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSA.jpg. Error: Not Found
+06-17-2021 @ 17:32:05 - Setting Gallery Images.
+06-17-2021 @ 17:32:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSA-1.jpg
+06-17-2021 @ 17:32:06 - Attachment ID:446084
+06-17-2021 @ 17:32:06 - Row :28 - Product updated successfully.
+06-17-2021 @ 17:32:06 - Row :29 - Parsing item.
+06-17-2021 @ 17:32:06 - Row :29 - Processing item.
+06-17-2021 @ 17:32:06 - Found simple product object. ID:445990
+06-17-2021 @ 17:32:06 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSC.jpg
+06-17-2021 @ 17:32:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSC.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSC.jpg. Error: Not Found
+06-17-2021 @ 17:32:07 - Setting Gallery Images.
+06-17-2021 @ 17:32:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSC-1.jpg
+06-17-2021 @ 17:32:08 - Attachment ID:446085
+06-17-2021 @ 17:32:08 - Row :29 - Product updated successfully.
+06-17-2021 @ 17:32:08 - Row :30 - Parsing item.
+06-17-2021 @ 17:32:08 - Row :30 - Processing item.
+06-17-2021 @ 17:32:08 - Found simple product object. ID:445991
+06-17-2021 @ 17:32:08 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSL.jpg
+06-17-2021 @ 17:32:09 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSL.jpg. Error: Not Found
+06-17-2021 @ 17:32:09 - Setting Gallery Images.
+06-17-2021 @ 17:32:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSL-1.jpg
+06-17-2021 @ 17:32:10 - Attachment ID:446086
+06-17-2021 @ 17:32:10 - Row :30 - Product updated successfully.
+06-17-2021 @ 17:32:11 - Preparing for import.
+06-17-2021 @ 17:32:11 - Row :31 - Parsing item.
+06-17-2021 @ 17:32:11 - Row :31 - Processing item.
+06-17-2021 @ 17:32:11 - Found simple product object. ID:445992
+06-17-2021 @ 17:32:11 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSO.jpg
+06-17-2021 @ 17:32:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSO.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSO.jpg. Error: Not Found
+06-17-2021 @ 17:32:12 - Setting Gallery Images.
+06-17-2021 @ 17:32:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSO-1.jpg
+06-17-2021 @ 17:32:13 - Attachment ID:446087
+06-17-2021 @ 17:32:13 - Row :31 - Product updated successfully.
+06-17-2021 @ 17:32:13 - Row :32 - Parsing item.
+06-17-2021 @ 17:32:13 - Row :32 - Processing item.
+06-17-2021 @ 17:32:13 - Found simple product object. ID:445993
+06-17-2021 @ 17:32:13 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCST.jpg
+06-17-2021 @ 17:32:14 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCST.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCST.jpg. Error: Not Found
+06-17-2021 @ 17:32:14 - Setting Gallery Images.
+06-17-2021 @ 17:32:14 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCST-1.jpg
+06-17-2021 @ 17:32:15 - Attachment ID:446088
+06-17-2021 @ 17:32:15 - Row :32 - Product updated successfully.
+06-17-2021 @ 17:32:15 - Row :33 - Parsing item.
+06-17-2021 @ 17:32:15 - Row :33 - Processing item.
+06-17-2021 @ 17:32:15 - Found simple product object. ID:445994
+06-17-2021 @ 17:32:15 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSR.jpg
+06-17-2021 @ 17:32:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSR.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSR.jpg. Error: Not Found
+06-17-2021 @ 17:32:16 - Setting Gallery Images.
+06-17-2021 @ 17:32:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-KIN-300UNCSR-1.jpg
+06-17-2021 @ 17:32:17 - Attachment ID:446089
+06-17-2021 @ 17:32:17 - Row :33 - Product updated successfully.
+06-17-2021 @ 17:32:17 - Row :34 - Parsing item.
+06-17-2021 @ 17:32:17 - Row :34 - Processing item.
+06-17-2021 @ 17:32:17 - Found simple product object. ID:445995
+06-17-2021 @ 17:32:17 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220DU.jpg
+06-17-2021 @ 17:32:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220DU.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220DU.jpg. Error: Not Found
+06-17-2021 @ 17:32:19 - Setting Gallery Images.
+06-17-2021 @ 17:32:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220DU-1.jpg
+06-17-2021 @ 17:32:19 - Attachment ID:446090
+06-17-2021 @ 17:32:19 - Row :34 - Product updated successfully.
+06-17-2021 @ 17:32:19 - Row :35 - Parsing item.
+06-17-2021 @ 17:32:19 - Row :35 - Processing item.
+06-17-2021 @ 17:32:19 - Found simple product object. ID:445996
+06-17-2021 @ 17:32:19 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220JE.jpg
+06-17-2021 @ 17:32:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220JE.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220JE.jpg. Error: Not Found
+06-17-2021 @ 17:32:20 - Setting Gallery Images.
+06-17-2021 @ 17:32:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220JE-1.jpg
+06-17-2021 @ 17:32:21 - Attachment ID:446091
+06-17-2021 @ 17:32:21 - Row :35 - Product updated successfully.
+06-17-2021 @ 17:32:21 - Row :36 - Parsing item.
+06-17-2021 @ 17:32:21 - Row :36 - Processing item.
+06-17-2021 @ 17:32:21 - Found simple product object. ID:445997
+06-17-2021 @ 17:32:21 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220NA.jpg
+06-17-2021 @ 17:32:22 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220NA.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220NA.jpg. Error: Not Found
+06-17-2021 @ 17:32:22 - Setting Gallery Images.
+06-17-2021 @ 17:32:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220NA-1.jpg
+06-17-2021 @ 17:32:23 - Attachment ID:446092
+06-17-2021 @ 17:32:23 - Row :36 - Product updated successfully.
+06-17-2021 @ 17:32:23 - Row :37 - Parsing item.
+06-17-2021 @ 17:32:23 - Row :37 - Processing item.
+06-17-2021 @ 17:32:23 - Found simple product object. ID:445998
+06-17-2021 @ 17:32:23 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220SI.jpg
+06-17-2021 @ 17:32:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220SI.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220SI.jpg. Error: Not Found
+06-17-2021 @ 17:32:24 - Setting Gallery Images.
+06-17-2021 @ 17:32:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BOTA210220SI-1.jpg
+06-17-2021 @ 17:32:25 - Attachment ID:446093
+06-17-2021 @ 17:32:25 - Row :37 - Product updated successfully.
+06-17-2021 @ 17:32:25 - Row :38 - Parsing item.
+06-17-2021 @ 17:32:25 - Row :38 - Processing item.
+06-17-2021 @ 17:32:25 - Found simple product object. ID:445999
+06-17-2021 @ 17:32:25 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220CL.jpg
+06-17-2021 @ 17:32:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220CL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220CL.jpg. Error: Not Found
+06-17-2021 @ 17:32:26 - Setting Gallery Images.
+06-17-2021 @ 17:32:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220CL-1.jpg
+06-17-2021 @ 17:32:27 - Attachment ID:446094
+06-17-2021 @ 17:32:27 - Row :38 - Product updated successfully.
+06-17-2021 @ 17:32:27 - Row :39 - Parsing item.
+06-17-2021 @ 17:32:27 - Row :39 - Processing item.
+06-17-2021 @ 17:32:27 - Found simple product object. ID:446000
+06-17-2021 @ 17:32:27 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220DR.jpg
+06-17-2021 @ 17:32:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220DR.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220DR.jpg. Error: Not Found
+06-17-2021 @ 17:32:28 - Setting Gallery Images.
+06-17-2021 @ 17:32:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220DR-1.jpg
+06-17-2021 @ 17:32:28 - Attachment ID:446095
+06-17-2021 @ 17:32:29 - Row :39 - Product updated successfully.
+06-17-2021 @ 17:32:29 - Row :40 - Parsing item.
+06-17-2021 @ 17:32:29 - Row :40 - Processing item.
+06-17-2021 @ 17:32:29 - Found simple product object. ID:446001
+06-17-2021 @ 17:32:29 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220GR.jpg
+06-17-2021 @ 17:32:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220GR.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220GR.jpg. Error: Not Found
+06-17-2021 @ 17:32:30 - Setting Gallery Images.
+06-17-2021 @ 17:32:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220GR-1.jpg
+06-17-2021 @ 17:32:30 - Attachment ID:446096
+06-17-2021 @ 17:32:31 - Row :40 - Product updated successfully.
+06-17-2021 @ 17:32:32 - Preparing for import.
+06-17-2021 @ 17:32:32 - Row :41 - Parsing item.
+06-17-2021 @ 17:32:32 - Row :41 - Processing item.
+06-17-2021 @ 17:32:32 - Found simple product object. ID:446002
+06-17-2021 @ 17:32:32 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220ON.jpg
+06-17-2021 @ 17:32:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220ON.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220ON.jpg. Error: Not Found
+06-17-2021 @ 17:32:33 - Setting Gallery Images.
+06-17-2021 @ 17:32:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220ON-1.jpg
+06-17-2021 @ 17:32:33 - Attachment ID:446097
+06-17-2021 @ 17:32:34 - Row :41 - Product updated successfully.
+06-17-2021 @ 17:32:34 - Row :42 - Parsing item.
+06-17-2021 @ 17:32:34 - Row :42 - Processing item.
+06-17-2021 @ 17:32:34 - Found simple product object. ID:446003
+06-17-2021 @ 17:32:34 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220SL.jpg
+06-17-2021 @ 17:32:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220SL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220SL.jpg. Error: Not Found
+06-17-2021 @ 17:32:35 - Setting Gallery Images.
+06-17-2021 @ 17:32:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB210220SL-1.jpg
+06-17-2021 @ 17:32:35 - Attachment ID:446098
+06-17-2021 @ 17:32:36 - Row :42 - Product updated successfully.
+06-17-2021 @ 17:32:36 - Row :43 - Parsing item.
+06-17-2021 @ 17:32:36 - Row :43 - Processing item.
+06-17-2021 @ 17:32:36 - Found simple product object. ID:446004
+06-17-2021 @ 17:32:36 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BONB140221OC.jpg
+06-17-2021 @ 17:32:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BONB140221OC.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BONB140221OC.jpg. Error: Not Found
+06-17-2021 @ 17:32:37 - Setting Gallery Images.
+06-17-2021 @ 17:32:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-BONB140221OC-1.jpg
+06-17-2021 @ 17:32:37 - Attachment ID:446099
+06-17-2021 @ 17:32:37 - Row :43 - Product updated successfully.
+06-17-2021 @ 17:32:37 - Row :44 - Parsing item.
+06-17-2021 @ 17:32:37 - Row :44 - Processing item.
+06-17-2021 @ 17:32:37 - Found simple product object. ID:446005
+06-17-2021 @ 17:32:37 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221CL.jpg
+06-17-2021 @ 17:32:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221CL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221CL.jpg. Error: Not Found
+06-17-2021 @ 17:32:38 - Setting Gallery Images.
+06-17-2021 @ 17:32:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221CL-1.jpg
+06-17-2021 @ 17:32:39 - Attachment ID:446100
+06-17-2021 @ 17:32:39 - Row :44 - Product updated successfully.
+06-17-2021 @ 17:32:39 - Row :45 - Parsing item.
+06-17-2021 @ 17:32:39 - Row :45 - Processing item.
+06-17-2021 @ 17:32:39 - Found simple product object. ID:446006
+06-17-2021 @ 17:32:39 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221DR.jpg
+06-17-2021 @ 17:32:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221DR.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221DR.jpg. Error: Not Found
+06-17-2021 @ 17:32:40 - Setting Gallery Images.
+06-17-2021 @ 17:32:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221DR-1.jpg
+06-17-2021 @ 17:32:40 - Attachment ID:446101
+06-17-2021 @ 17:32:41 - Row :45 - Product updated successfully.
+06-17-2021 @ 17:32:41 - Row :46 - Parsing item.
+06-17-2021 @ 17:32:41 - Row :46 - Processing item.
+06-17-2021 @ 17:32:41 - Found simple product object. ID:446007
+06-17-2021 @ 17:32:41 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221GR.jpg
+06-17-2021 @ 17:32:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221GR.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221GR.jpg. Error: Not Found
+06-17-2021 @ 17:32:42 - Setting Gallery Images.
+06-17-2021 @ 17:32:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-HAVB180221GR-1.jpg
+06-17-2021 @ 17:32:42 - Attachment ID:446102
+06-17-2021 @ 17:32:42 - Row :46 - Product updated successfully.
+06-17-2021 @ 17:32:42 - Row :47 - Parsing item.
+06-17-2021 @ 17:32:42 - Row :47 - Processing item.
+06-17-2021 @ 17:32:42 - Found simple product object. ID:446008
+06-17-2021 @ 17:32:42 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220CH.jpg
+06-17-2021 @ 17:32:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220CH.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220CH.jpg. Error: Not Found
+06-17-2021 @ 17:32:43 - Setting Gallery Images.
+06-17-2021 @ 17:32:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220CH-1.jpg
+06-17-2021 @ 17:32:44 - Attachment ID:446103
+06-17-2021 @ 17:32:44 - Row :47 - Product updated successfully.
+06-17-2021 @ 17:32:44 - Row :48 - Parsing item.
+06-17-2021 @ 17:32:44 - Row :48 - Processing item.
+06-17-2021 @ 17:32:44 - Found simple product object. ID:446009
+06-17-2021 @ 17:32:44 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220NA.jpg
+06-17-2021 @ 17:32:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220NA.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220NA.jpg. Error: Not Found
+06-17-2021 @ 17:32:45 - Setting Gallery Images.
+06-17-2021 @ 17:32:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220NA-1.jpg
+06-17-2021 @ 17:32:45 - Attachment ID:446104
+06-17-2021 @ 17:32:46 - Row :48 - Product updated successfully.
+06-17-2021 @ 17:32:46 - Row :49 - Parsing item.
+06-17-2021 @ 17:32:46 - Row :49 - Processing item.
+06-17-2021 @ 17:32:46 - Found simple product object. ID:446010
+06-17-2021 @ 17:32:46 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220SI.jpg
+06-17-2021 @ 17:32:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220SI.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220SI.jpg. Error: Not Found
+06-17-2021 @ 17:32:47 - Setting Gallery Images.
+06-17-2021 @ 17:32:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB220220SI-1.jpg
+06-17-2021 @ 17:32:47 - Attachment ID:446105
+06-17-2021 @ 17:32:47 - Row :49 - Product updated successfully.
+06-17-2021 @ 17:32:47 - Row :50 - Parsing item.
+06-17-2021 @ 17:32:47 - Row :50 - Processing item.
+06-17-2021 @ 17:32:47 - Found simple product object. ID:446011
+06-17-2021 @ 17:32:47 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221CH.jpg
+06-17-2021 @ 17:32:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221CH.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221CH.jpg. Error: Not Found
+06-17-2021 @ 17:32:48 - Setting Gallery Images.
+06-17-2021 @ 17:32:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221CH-1.jpg
+06-17-2021 @ 17:32:49 - Attachment ID:446106
+06-17-2021 @ 17:32:49 - Row :50 - Product updated successfully.
+06-17-2021 @ 17:32:51 - Preparing for import.
+06-17-2021 @ 17:32:51 - Row :51 - Parsing item.
+06-17-2021 @ 17:32:51 - Row :51 - Processing item.
+06-17-2021 @ 17:32:51 - Found simple product object. ID:446012
+06-17-2021 @ 17:32:51 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221NA.jpg
+06-17-2021 @ 17:32:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221NA.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221NA.jpg. Error: Not Found
+06-17-2021 @ 17:32:52 - Setting Gallery Images.
+06-17-2021 @ 17:32:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221NA-1.jpg
+06-17-2021 @ 17:32:52 - Attachment ID:446107
+06-17-2021 @ 17:32:53 - Row :51 - Product updated successfully.
+06-17-2021 @ 17:32:53 - Row :52 - Parsing item.
+06-17-2021 @ 17:32:53 - Row :52 - Processing item.
+06-17-2021 @ 17:32:53 - Found simple product object. ID:446013
+06-17-2021 @ 17:32:53 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221SI.jpg
+06-17-2021 @ 17:32:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221SI.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221SI.jpg. Error: Not Found
+06-17-2021 @ 17:32:54 - Setting Gallery Images.
+06-17-2021 @ 17:32:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-LANB140221SI-1.jpg
+06-17-2021 @ 17:32:54 - Attachment ID:446108
+06-17-2021 @ 17:32:54 - Row :52 - Product updated successfully.
+06-17-2021 @ 17:32:54 - Row :53 - Parsing item.
+06-17-2021 @ 17:32:54 - Row :53 - Processing item.
+06-17-2021 @ 17:32:54 - Found simple product object. ID:446014
+06-17-2021 @ 17:32:54 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221AS.jpg
+06-17-2021 @ 17:32:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221AS.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221AS.jpg. Error: Not Found
+06-17-2021 @ 17:32:55 - Setting Gallery Images.
+06-17-2021 @ 17:32:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221AS-1.jpg
+06-17-2021 @ 17:32:56 - Attachment ID:446109
+06-17-2021 @ 17:32:56 - Row :53 - Product updated successfully.
+06-17-2021 @ 17:32:56 - Row :54 - Parsing item.
+06-17-2021 @ 17:32:56 - Row :54 - Processing item.
+06-17-2021 @ 17:32:56 - Found simple product object. ID:446015
+06-17-2021 @ 17:32:56 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221GR.jpg
+06-17-2021 @ 17:32:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221GR.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221GR.jpg. Error: Not Found
+06-17-2021 @ 17:32:57 - Setting Gallery Images.
+06-17-2021 @ 17:32:57 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221GR-1.jpg
+06-17-2021 @ 17:32:57 - Attachment ID:446110
+06-17-2021 @ 17:32:58 - Row :54 - Product updated successfully.
+06-17-2021 @ 17:32:58 - Row :55 - Parsing item.
+06-17-2021 @ 17:32:58 - Row :55 - Processing item.
+06-17-2021 @ 17:32:58 - Found simple product object. ID:446016
+06-17-2021 @ 17:32:58 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221WH.jpg
+06-17-2021 @ 17:32:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221WH.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221WH.jpg. Error: Not Found
+06-17-2021 @ 17:32:59 - Setting Gallery Images.
+06-17-2021 @ 17:32:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MONT180221WH-1.jpg
+06-17-2021 @ 17:32:59 - Attachment ID:446111
+06-17-2021 @ 17:33:00 - Row :55 - Product updated successfully.
+06-17-2021 @ 17:33:00 - Row :56 - Parsing item.
+06-17-2021 @ 17:33:00 - Row :56 - Processing item.
+06-17-2021 @ 17:33:00 - Found simple product object. ID:446017
+06-17-2021 @ 17:33:00 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221BL.jpg
+06-17-2021 @ 17:33:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221BL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221BL.jpg. Error: Not Found
+06-17-2021 @ 17:33:01 - Setting Gallery Images.
+06-17-2021 @ 17:33:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221BL-1.jpg
+06-17-2021 @ 17:33:01 - Attachment ID:446112
+06-17-2021 @ 17:33:01 - Row :56 - Product updated successfully.
+06-17-2021 @ 17:33:01 - Row :57 - Parsing item.
+06-17-2021 @ 17:33:01 - Row :57 - Processing item.
+06-17-2021 @ 17:33:01 - Found simple product object. ID:446018
+06-17-2021 @ 17:33:02 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221ST.jpg
+06-17-2021 @ 17:33:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221ST.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221ST.jpg. Error: Not Found
+06-17-2021 @ 17:33:03 - Setting Gallery Images.
+06-17-2021 @ 17:33:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221ST-1.jpg
+06-17-2021 @ 17:33:03 - Attachment ID:446113
+06-17-2021 @ 17:33:03 - Row :57 - Product updated successfully.
+06-17-2021 @ 17:33:03 - Row :58 - Parsing item.
+06-17-2021 @ 17:33:03 - Row :58 - Processing item.
+06-17-2021 @ 17:33:03 - Found simple product object. ID:446019
+06-17-2021 @ 17:33:03 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221TR.jpg
+06-17-2021 @ 17:33:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221TR.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221TR.jpg. Error: Not Found
+06-17-2021 @ 17:33:04 - Setting Gallery Images.
+06-17-2021 @ 17:33:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-UMB-140221TR-1.jpg
+06-17-2021 @ 17:33:05 - Attachment ID:446114
+06-17-2021 @ 17:33:05 - Row :58 - Product updated successfully.
+06-17-2021 @ 17:33:05 - Row :59 - Parsing item.
+06-17-2021 @ 17:33:05 - Row :59 - Processing item.
+06-17-2021 @ 17:33:05 - Found simple product object. ID:446020
+06-17-2021 @ 17:33:05 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221AS.jpg
+06-17-2021 @ 17:33:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221AS.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221AS.jpg. Error: Not Found
+06-17-2021 @ 17:33:06 - Setting Gallery Images.
+06-17-2021 @ 17:33:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221AS-1.jpg
+06-17-2021 @ 17:33:07 - Attachment ID:446115
+06-17-2021 @ 17:33:07 - Row :59 - Product updated successfully.
+06-17-2021 @ 17:33:07 - Row :60 - Parsing item.
+06-17-2021 @ 17:33:07 - Row :60 - Processing item.
+06-17-2021 @ 17:33:07 - Found simple product object. ID:446021
+06-17-2021 @ 17:33:07 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221CH.jpg
+06-17-2021 @ 17:33:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221CH.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221CH.jpg. Error: Not Found
+06-17-2021 @ 17:33:08 - Setting Gallery Images.
+06-17-2021 @ 17:33:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221CH-1.jpg
+06-17-2021 @ 17:33:08 - Attachment ID:446116
+06-17-2021 @ 17:33:09 - Row :60 - Product updated successfully.
+06-17-2021 @ 17:33:10 - Preparing for import.
+06-17-2021 @ 17:33:10 - Row :61 - Parsing item.
+06-17-2021 @ 17:33:10 - Row :61 - Processing item.
+06-17-2021 @ 17:33:10 - Found simple product object. ID:446022
+06-17-2021 @ 17:33:10 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221LI.jpg
+06-17-2021 @ 17:33:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221LI.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221LI.jpg. Error: Not Found
+06-17-2021 @ 17:33:11 - Setting Gallery Images.
+06-17-2021 @ 17:33:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATE-135221LI-1.jpg
+06-17-2021 @ 17:33:12 - Attachment ID:446117
+06-17-2021 @ 17:33:12 - Row :61 - Product updated successfully.
+06-17-2021 @ 17:33:12 - Row :62 - Parsing item.
+06-17-2021 @ 17:33:12 - Row :62 - Processing item.
+06-17-2021 @ 17:33:12 - Found simple product object. ID:446023
+06-17-2021 @ 17:33:12 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221AS.jpg
+06-17-2021 @ 17:33:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221AS.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221AS.jpg. Error: Not Found
+06-17-2021 @ 17:33:13 - Setting Gallery Images.
+06-17-2021 @ 17:33:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221AS-1.jpg
+06-17-2021 @ 17:33:14 - Attachment ID:446118
+06-17-2021 @ 17:33:14 - Row :62 - Product updated successfully.
+06-17-2021 @ 17:33:14 - Row :63 - Parsing item.
+06-17-2021 @ 17:33:14 - Row :63 - Processing item.
+06-17-2021 @ 17:33:14 - Found simple product object. ID:446024
+06-17-2021 @ 17:33:14 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221GR.jpg
+06-17-2021 @ 17:33:15 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221GR.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221GR.jpg. Error: Not Found
+06-17-2021 @ 17:33:15 - Setting Gallery Images.
+06-17-2021 @ 17:33:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221GR-1.jpg
+06-17-2021 @ 17:33:15 - Attachment ID:446119
+06-17-2021 @ 17:33:15 - Row :63 - Product updated successfully.
+06-17-2021 @ 17:33:15 - Row :64 - Parsing item.
+06-17-2021 @ 17:33:15 - Row :64 - Processing item.
+06-17-2021 @ 17:33:15 - Found simple product object. ID:446025
+06-17-2021 @ 17:33:15 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221WH.jpg
+06-17-2021 @ 17:33:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221WH.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221WH.jpg. Error: Not Found
+06-17-2021 @ 17:33:16 - Setting Gallery Images.
+06-17-2021 @ 17:33:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MON-180221WH-1.jpg
+06-17-2021 @ 17:33:17 - Attachment ID:446120
+06-17-2021 @ 17:33:17 - Row :64 - Product updated successfully.
+06-17-2021 @ 17:33:17 - Row :65 - Parsing item.
+06-17-2021 @ 17:33:17 - Row :65 - Processing item.
+06-17-2021 @ 17:33:17 - Found simple product object. ID:446026
+06-17-2021 @ 17:33:17 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221AS.jpg
+06-17-2021 @ 17:33:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221AS.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221AS.jpg. Error: Not Found
+06-17-2021 @ 17:33:18 - Setting Gallery Images.
+06-17-2021 @ 17:33:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221AS-1.jpg
+06-17-2021 @ 17:33:19 - Attachment ID:446121
+06-17-2021 @ 17:33:19 - Row :65 - Product updated successfully.
+06-17-2021 @ 17:33:19 - Row :66 - Parsing item.
+06-17-2021 @ 17:33:19 - Row :66 - Processing item.
+06-17-2021 @ 17:33:19 - Found simple product object. ID:446027
+06-17-2021 @ 17:33:19 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221DU.jpg
+06-17-2021 @ 17:33:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221DU.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221DU.jpg. Error: Not Found
+06-17-2021 @ 17:33:20 - Setting Gallery Images.
+06-17-2021 @ 17:33:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221DU-1.jpg
+06-17-2021 @ 17:33:21 - Attachment ID:446122
+06-17-2021 @ 17:33:21 - Row :66 - Product updated successfully.
+06-17-2021 @ 17:33:21 - Row :67 - Parsing item.
+06-17-2021 @ 17:33:21 - Row :67 - Processing item.
+06-17-2021 @ 17:33:21 - Found simple product object. ID:446028
+06-17-2021 @ 17:33:21 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221IC.jpg
+06-17-2021 @ 17:33:22 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221IC.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221IC.jpg. Error: Not Found
+06-17-2021 @ 17:33:22 - Setting Gallery Images.
+06-17-2021 @ 17:33:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221IC-1.jpg
+06-17-2021 @ 17:33:23 - Attachment ID:446123
+06-17-2021 @ 17:33:23 - Row :67 - Product updated successfully.
+06-17-2021 @ 17:33:23 - Row :68 - Parsing item.
+06-17-2021 @ 17:33:23 - Row :68 - Processing item.
+06-17-2021 @ 17:33:23 - Found simple product object. ID:446029
+06-17-2021 @ 17:33:23 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221SN.jpg
+06-17-2021 @ 17:33:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221SN.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221SN.jpg. Error: Not Found
+06-17-2021 @ 17:33:25 - Setting Gallery Images.
+06-17-2021 @ 17:33:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-MYK-180221SN-1.jpg
+06-17-2021 @ 17:33:25 - Attachment ID:446124
+06-17-2021 @ 17:33:26 - Row :68 - Product updated successfully.
+06-17-2021 @ 17:33:26 - Row :69 - Parsing item.
+06-17-2021 @ 17:33:26 - Row :69 - Processing item.
+06-17-2021 @ 17:33:26 - Found simple product object. ID:446030
+06-17-2021 @ 17:33:26 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221AS.jpg
+06-17-2021 @ 17:33:27 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221AS.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221AS.jpg. Error: Not Found
+06-17-2021 @ 17:33:27 - Setting Gallery Images.
+06-17-2021 @ 17:33:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221AS-1.jpg
+06-17-2021 @ 17:33:27 - Attachment ID:446125
+06-17-2021 @ 17:33:27 - Row :69 - Product updated successfully.
+06-17-2021 @ 17:33:27 - Row :70 - Parsing item.
+06-17-2021 @ 17:33:27 - Row :70 - Processing item.
+06-17-2021 @ 17:33:27 - Found simple product object. ID:446031
+06-17-2021 @ 17:33:27 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221DU.jpg
+06-17-2021 @ 17:33:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221DU.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221DU.jpg. Error: Not Found
+06-17-2021 @ 17:33:28 - Setting Gallery Images.
+06-17-2021 @ 17:33:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221DU-1.jpg
+06-17-2021 @ 17:33:29 - Attachment ID:446126
+06-17-2021 @ 17:33:29 - Row :70 - Product updated successfully.
+06-17-2021 @ 17:33:31 - Preparing for import.
+06-17-2021 @ 17:33:31 - Row :71 - Parsing item.
+06-17-2021 @ 17:33:31 - Row :71 - Processing item.
+06-17-2021 @ 17:33:31 - Found simple product object. ID:446032
+06-17-2021 @ 17:33:31 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221IC.jpg
+06-17-2021 @ 17:33:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221IC.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221IC.jpg. Error: Not Found
+06-17-2021 @ 17:33:32 - Setting Gallery Images.
+06-17-2021 @ 17:33:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221IC-1.jpg
+06-17-2021 @ 17:33:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221IC-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221IC-1.jpg. Error: Not Found
+06-17-2021 @ 17:33:33 - Row :71 - Product updated successfully.
+06-17-2021 @ 17:33:33 - Row :72 - Parsing item.
+06-17-2021 @ 17:33:33 - Row :72 - Processing item.
+06-17-2021 @ 17:33:33 - Found simple product object. ID:446033
+06-17-2021 @ 17:33:33 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221SN.jpg
+06-17-2021 @ 17:33:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221SN.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221SN.jpg. Error: Not Found
+06-17-2021 @ 17:33:34 - Setting Gallery Images.
+06-17-2021 @ 17:33:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-SANT180221SN-1.jpg
+06-17-2021 @ 17:33:34 - Attachment ID:446127
+06-17-2021 @ 17:33:35 - Row :72 - Product updated successfully.
+06-17-2021 @ 17:33:35 - Row :73 - Parsing item.
+06-17-2021 @ 17:33:35 - Row :73 - Processing item.
+06-17-2021 @ 17:33:35 - Found simple product object. ID:446034
+06-17-2021 @ 17:33:35 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210BL.jpg
+06-17-2021 @ 17:33:36 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210BL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210BL.jpg. Error: Not Found
+06-17-2021 @ 17:33:36 - Setting Gallery Images.
+06-17-2021 @ 17:33:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210BL-1.jpg
+06-17-2021 @ 17:33:36 - Attachment ID:446128
+06-17-2021 @ 17:33:37 - Row :73 - Product updated successfully.
+06-17-2021 @ 17:33:37 - Row :74 - Parsing item.
+06-17-2021 @ 17:33:37 - Row :74 - Processing item.
+06-17-2021 @ 17:33:37 - Found simple product object. ID:446035
+06-17-2021 @ 17:33:37 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210NS.jpg
+06-17-2021 @ 17:33:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210NS.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210NS.jpg. Error: Not Found
+06-17-2021 @ 17:33:38 - Setting Gallery Images.
+06-17-2021 @ 17:33:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210NS-1.jpg
+06-17-2021 @ 17:33:38 - Attachment ID:446129
+06-17-2021 @ 17:33:39 - Row :74 - Product updated successfully.
+06-17-2021 @ 17:33:39 - Row :75 - Parsing item.
+06-17-2021 @ 17:33:39 - Row :75 - Processing item.
+06-17-2021 @ 17:33:39 - Found simple product object. ID:446036
+06-17-2021 @ 17:33:39 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210SI.jpg
+06-17-2021 @ 17:33:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210SI.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210SI.jpg. Error: Not Found
+06-17-2021 @ 17:33:39 - Setting Gallery Images.
+06-17-2021 @ 17:33:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210SI-1.jpg
+06-17-2021 @ 17:33:40 - Attachment ID:446130
+06-17-2021 @ 17:33:40 - Row :75 - Product updated successfully.
+06-17-2021 @ 17:33:40 - Row :76 - Parsing item.
+06-17-2021 @ 17:33:40 - Row :76 - Processing item.
+06-17-2021 @ 17:33:40 - Found simple product object. ID:446037
+06-17-2021 @ 17:33:40 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210WH.jpg
+06-17-2021 @ 17:33:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210WH.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210WH.jpg. Error: Not Found
+06-17-2021 @ 17:33:41 - Setting Gallery Images.
+06-17-2021 @ 17:33:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-ATRI060210WH-1.jpg
+06-17-2021 @ 17:33:42 - Attachment ID:446131
+06-17-2021 @ 17:33:42 - Row :76 - Product updated successfully.
+06-17-2021 @ 17:33:42 - Row :77 - Parsing item.
+06-17-2021 @ 17:33:42 - Row :77 - Processing item.
+06-17-2021 @ 17:33:42 - Found simple product object. ID:446038
+06-17-2021 @ 17:33:42 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220AS.jpg
+06-17-2021 @ 17:33:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220AS.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220AS.jpg. Error: Not Found
+06-17-2021 @ 17:33:43 - Setting Gallery Images.
+06-17-2021 @ 17:33:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220AS-1.jpg
+06-17-2021 @ 17:33:43 - Attachment ID:446132
+06-17-2021 @ 17:33:44 - Row :77 - Product updated successfully.
+06-17-2021 @ 17:33:44 - Row :78 - Parsing item.
+06-17-2021 @ 17:33:44 - Row :78 - Processing item.
+06-17-2021 @ 17:33:44 - Found simple product object. ID:446039
+06-17-2021 @ 17:33:44 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220CH.jpg
+06-17-2021 @ 17:33:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220CH.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220CH.jpg. Error: Not Found
+06-17-2021 @ 17:33:45 - Setting Gallery Images.
+06-17-2021 @ 17:33:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220CH-1.jpg
+06-17-2021 @ 17:33:45 - Attachment ID:446133
+06-17-2021 @ 17:33:45 - Row :78 - Product updated successfully.
+06-17-2021 @ 17:33:45 - Row :79 - Parsing item.
+06-17-2021 @ 17:33:45 - Row :79 - Processing item.
+06-17-2021 @ 17:33:45 - Found simple product object. ID:446040
+06-17-2021 @ 17:33:45 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220LI.jpg
+06-17-2021 @ 17:33:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220LI.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220LI.jpg. Error: Not Found
+06-17-2021 @ 17:33:47 - Setting Gallery Images.
+06-17-2021 @ 17:33:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-CATO-210220LI-1.jpg
+06-17-2021 @ 17:33:47 - Attachment ID:446134
+06-17-2021 @ 17:33:47 - Row :79 - Product updated successfully.
+06-17-2021 @ 17:33:47 - Row :80 - Parsing item.
+06-17-2021 @ 17:33:47 - Row :80 - Processing item.
+06-17-2021 @ 17:33:47 - Found simple product object. ID:446041
+06-17-2021 @ 17:33:47 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240BL.jpg
+06-17-2021 @ 17:33:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240BL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240BL.jpg. Error: Not Found
+06-17-2021 @ 17:33:48 - Setting Gallery Images.
+06-17-2021 @ 17:33:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240BL-1.jpg
+06-17-2021 @ 17:33:49 - Attachment ID:446135
+06-17-2021 @ 17:33:50 - Row :80 - Product updated successfully.
+06-17-2021 @ 17:33:51 - Preparing for import.
+06-17-2021 @ 17:33:51 - Row :81 - Parsing item.
+06-17-2021 @ 17:33:51 - Row :81 - Processing item.
+06-17-2021 @ 17:33:51 - Found simple product object. ID:446042
+06-17-2021 @ 17:33:51 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240SI.jpg
+06-17-2021 @ 17:33:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240SI.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240SI.jpg. Error: Not Found
+06-17-2021 @ 17:33:52 - Setting Gallery Images.
+06-17-2021 @ 17:33:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240SI-1.jpg
+06-17-2021 @ 17:33:53 - Attachment ID:446136
+06-17-2021 @ 17:33:53 - Row :81 - Product updated successfully.
+06-17-2021 @ 17:33:53 - Row :82 - Parsing item.
+06-17-2021 @ 17:33:53 - Row :82 - Processing item.
+06-17-2021 @ 17:33:53 - Found simple product object. ID:446043
+06-17-2021 @ 17:33:53 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240ST.jpg
+06-17-2021 @ 17:33:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240ST.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240ST.jpg. Error: Not Found
+06-17-2021 @ 17:33:54 - Setting Gallery Images.
+06-17-2021 @ 17:33:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240ST-1.jpg
+06-17-2021 @ 17:33:55 - Attachment ID:446137
+06-17-2021 @ 17:33:55 - Row :82 - Product updated successfully.
+06-17-2021 @ 17:33:55 - Row :83 - Parsing item.
+06-17-2021 @ 17:33:55 - Row :83 - Processing item.
+06-17-2021 @ 17:33:55 - Found simple product object. ID:446044
+06-17-2021 @ 17:33:55 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240WH.jpg
+06-17-2021 @ 17:33:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240WH.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240WH.jpg. Error: Not Found
+06-17-2021 @ 17:33:56 - Setting Gallery Images.
+06-17-2021 @ 17:33:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-VIS060240WH-1.jpg
+06-17-2021 @ 17:33:57 - Attachment ID:446138
+06-17-2021 @ 17:33:57 - Row :83 - Product updated successfully.
+06-17-2021 @ 17:33:57 - Row :84 - Parsing item.
+06-17-2021 @ 17:33:57 - Row :84 - Processing item.
+06-17-2021 @ 17:33:57 - Found simple product object. ID:446045
+06-17-2021 @ 17:33:57 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300LI.jpg
+06-17-2021 @ 17:33:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300LI.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300LI.jpg. Error: Not Found
+06-17-2021 @ 17:33:59 - Setting Gallery Images.
+06-17-2021 @ 17:33:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300LI-1.jpg
+06-17-2021 @ 17:34:00 - Attachment ID:446139
+06-17-2021 @ 17:34:00 - Row :84 - Product updated successfully.
+06-17-2021 @ 17:34:00 - Row :85 - Parsing item.
+06-17-2021 @ 17:34:00 - Row :85 - Processing item.
+06-17-2021 @ 17:34:00 - Found simple product object. ID:446046
+06-17-2021 @ 17:34:00 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300MA.jpg
+06-17-2021 @ 17:34:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300MA.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300MA.jpg. Error: Not Found
+06-17-2021 @ 17:34:03 - Setting Gallery Images.
+06-17-2021 @ 17:34:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300MA-1.jpg
+06-17-2021 @ 17:34:04 - Attachment ID:446140
+06-17-2021 @ 17:34:04 - Row :85 - Product updated successfully.
+06-17-2021 @ 17:34:04 - Row :86 - Parsing item.
+06-17-2021 @ 17:34:04 - Row :86 - Processing item.
+06-17-2021 @ 17:34:04 - Found simple product object. ID:446047
+06-17-2021 @ 17:34:04 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300PE.jpg
+06-17-2021 @ 17:34:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300PE.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300PE.jpg. Error: Not Found
+06-17-2021 @ 17:34:07 - Setting Gallery Images.
+06-17-2021 @ 17:34:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300PE-1.jpg
+06-17-2021 @ 17:34:08 - Attachment ID:446141
+06-17-2021 @ 17:34:09 - Row :86 - Product updated successfully.
+06-17-2021 @ 17:34:09 - Row :87 - Parsing item.
+06-17-2021 @ 17:34:09 - Row :87 - Processing item.
+06-17-2021 @ 17:34:09 - Found simple product object. ID:446048
+06-17-2021 @ 17:34:09 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300QU.jpg
+06-17-2021 @ 17:34:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300QU.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300QU.jpg. Error: Not Found
+06-17-2021 @ 17:34:10 - Setting Gallery Images.
+06-17-2021 @ 17:34:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300QU-1.jpg
+06-17-2021 @ 17:34:11 - Attachment ID:446142
+06-17-2021 @ 17:34:11 - Row :87 - Product updated successfully.
+06-17-2021 @ 17:34:11 - Row :88 - Parsing item.
+06-17-2021 @ 17:34:11 - Row :88 - Processing item.
+06-17-2021 @ 17:34:11 - Found simple product object. ID:446049
+06-17-2021 @ 17:34:11 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300ST.jpg
+06-17-2021 @ 17:34:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300ST.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300ST.jpg. Error: Not Found
+06-17-2021 @ 17:34:13 - Setting Gallery Images.
+06-17-2021 @ 17:34:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300ST-1.jpg
+06-17-2021 @ 17:34:13 - Attachment ID:446143
+06-17-2021 @ 17:34:14 - Row :88 - Product updated successfully.
+06-17-2021 @ 17:34:14 - Row :89 - Parsing item.
+06-17-2021 @ 17:34:14 - Row :89 - Processing item.
+06-17-2021 @ 17:34:14 - Found simple product object. ID:446050
+06-17-2021 @ 17:34:14 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300TA.jpg
+06-17-2021 @ 17:34:15 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300TA.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300TA.jpg. Error: Not Found
+06-17-2021 @ 17:34:15 - Setting Gallery Images.
+06-17-2021 @ 17:34:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300TA-1.jpg
+06-17-2021 @ 17:34:16 - Attachment ID:446144
+06-17-2021 @ 17:34:16 - Row :89 - Product updated successfully.
+06-17-2021 @ 17:34:16 - Row :90 - Parsing item.
+06-17-2021 @ 17:34:16 - Row :90 - Processing item.
+06-17-2021 @ 17:34:16 - Found simple product object. ID:446051
+06-17-2021 @ 17:34:16 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300GR.jpg
+06-17-2021 @ 17:34:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300GR.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300GR.jpg. Error: Not Found
+06-17-2021 @ 17:34:18 - Setting Gallery Images.
+06-17-2021 @ 17:34:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300GR-1.jpg
+06-17-2021 @ 17:34:18 - Attachment ID:446145
+06-17-2021 @ 17:34:19 - Row :90 - Product updated successfully.
+06-17-2021 @ 17:34:20 - Preparing for import.
+06-17-2021 @ 17:34:20 - Row :91 - Parsing item.
+06-17-2021 @ 17:34:20 - Row :91 - Processing item.
+06-17-2021 @ 17:34:20 - Found simple product object. ID:446052
+06-17-2021 @ 17:34:20 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300PA.jpg
+06-17-2021 @ 17:34:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300PA.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300PA.jpg. Error: Not Found
+06-17-2021 @ 17:34:21 - Setting Gallery Images.
+06-17-2021 @ 17:34:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300PA-1.jpg
+06-17-2021 @ 17:34:22 - Attachment ID:446146
+06-17-2021 @ 17:34:22 - Row :91 - Product updated successfully.
+06-17-2021 @ 17:34:22 - Row :92 - Parsing item.
+06-17-2021 @ 17:34:22 - Row :92 - Processing item.
+06-17-2021 @ 17:34:22 - Found simple product object. ID:446053
+06-17-2021 @ 17:34:22 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300BR.jpg
+06-17-2021 @ 17:34:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300BR.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300BR.jpg. Error: Not Found
+06-17-2021 @ 17:34:23 - Setting Gallery Images.
+06-17-2021 @ 17:34:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300BR-1.jpg
+06-17-2021 @ 17:34:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300BR-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300BR-1.jpg. Error: Not Found
+06-17-2021 @ 17:34:25 - Row :92 - Product updated successfully.
+06-17-2021 @ 17:34:25 - Row :93 - Parsing item.
+06-17-2021 @ 17:34:25 - Row :93 - Processing item.
+06-17-2021 @ 17:34:25 - Found simple product object. ID:446054
+06-17-2021 @ 17:34:25 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300VO.jpg
+06-17-2021 @ 17:34:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300VO.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300VO.jpg. Error: Not Found
+06-17-2021 @ 17:34:26 - Setting Gallery Images.
+06-17-2021 @ 17:34:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300VO-1.jpg
+06-17-2021 @ 17:34:27 - Attachment ID:446147
+06-17-2021 @ 17:34:27 - Row :93 - Product updated successfully.
+06-17-2021 @ 17:34:27 - Row :94 - Parsing item.
+06-17-2021 @ 17:34:27 - Row :94 - Processing item.
+06-17-2021 @ 17:34:27 - Found simple product object. ID:446055
+06-17-2021 @ 17:34:27 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300FL.jpg
+06-17-2021 @ 17:34:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300FL.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300FL.jpg. Error: Not Found
+06-17-2021 @ 17:34:29 - Setting Gallery Images.
+06-17-2021 @ 17:34:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300FL-1.jpg
+06-17-2021 @ 17:34:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300FL-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300FL-1.jpg. Error: Not Found
+06-17-2021 @ 17:34:30 - Row :94 - Product updated successfully.
+06-17-2021 @ 17:34:30 - Row :95 - Parsing item.
+06-17-2021 @ 17:34:30 - Row :95 - Processing item.
+06-17-2021 @ 17:34:30 - Found simple product object. ID:446056
+06-17-2021 @ 17:34:30 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300IC.jpg
+06-17-2021 @ 17:34:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300IC.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300IC.jpg. Error: Not Found
+06-17-2021 @ 17:34:31 - Setting Gallery Images.
+06-17-2021 @ 17:34:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/basford-brands/MK-PILB-300IC-1.jpg
+06-17-2021 @ 17:34:32 - Attachment ID:446148
+06-17-2021 @ 17:34:32 - Row :95 - Product updated successfully.
+06-17-2021 @ 17:34:32 - ---[ Import ended at 2021-06-17 05:34:32]---

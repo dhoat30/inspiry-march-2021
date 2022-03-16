@@ -1,0 +1,38 @@
+09-07-2021 @ 21:51:53 - ---[ New import started at 2021-09-07 09:51:53 ] PHP Memory: 768 MB, WP Memory: 40 MB
+09-07-2021 @ 21:51:53 - Preparing for import.
+09-07-2021 @ 21:51:53 - Row :1 - Parsing item.
+09-07-2021 @ 21:51:53 - Row :1 - Processing item.
+09-07-2021 @ 21:51:53 - Found simple product object. ID:454317
+09-07-2021 @ 21:51:53 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8201.jpg
+09-07-2021 @ 21:51:55 - Attachment ID:454323
+09-07-2021 @ 21:51:55 - Setting Gallery Images.
+09-07-2021 @ 21:51:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8201-1.jpg
+09-07-2021 @ 21:51:58 - Attachment ID:454324
+09-07-2021 @ 21:51:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8201-2.jpg
+09-07-2021 @ 21:52:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8201-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8201-2.jpg. Error: Not Found
+09-07-2021 @ 21:52:01 - Row :1 - Product updated successfully.
+09-07-2021 @ 21:52:02 - Preparing for import.
+09-07-2021 @ 21:52:02 - Row :2 - Parsing item.
+09-07-2021 @ 21:52:02 - Row :2 - Processing item.
+09-07-2021 @ 21:52:02 - Found simple product object. ID:454318
+09-07-2021 @ 21:52:02 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8203.jpg
+09-07-2021 @ 21:52:04 - Attachment ID:454325
+09-07-2021 @ 21:52:04 - Setting Gallery Images.
+09-07-2021 @ 21:52:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8203-1.jpg
+09-07-2021 @ 21:52:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8203-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8203-1.jpg. Error: Not Found
+09-07-2021 @ 21:52:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8203-2.jpg
+09-07-2021 @ 21:52:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8203-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-CF8203-2.jpg. Error: Not Found
+09-07-2021 @ 21:52:07 - Row :2 - Product updated successfully.
+09-07-2021 @ 21:52:08 - Preparing for import.
+09-07-2021 @ 21:52:08 - Row :3 - Parsing item.
+09-07-2021 @ 21:52:08 - Row :3 - Processing item.
+09-07-2021 @ 21:52:08 - Found simple product object. ID:454319
+09-07-2021 @ 21:52:08 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-AF2281.jpg
+09-07-2021 @ 21:52:09 - Attachment ID:454326
+09-07-2021 @ 21:52:09 - Setting Gallery Images.
+09-07-2021 @ 21:52:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-AF2281-1.jpg
+09-07-2021 @ 21:52:10 - Attachment ID:454327
+09-07-2021 @ 21:52:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/RebrandT/RFA-AF2281-2.jpg
+09-07-2021 @ 21:52:11 - Attachment ID:454328
+09-07-2021 @ 21:52:12 - Row :3 - Product updated successfully.
+09-07-2021 @ 21:52:12 - ---[ Import ended at 2021-09-07 09:52:12]---

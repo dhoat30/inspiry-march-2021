@@ -1,0 +1,37 @@
+06-10-2021 @ 03:10:37 - ---[ New import started at 2021-06-09 15:10:37 ] PHP Memory: 768 MB, WP Memory: 40 MB
+06-10-2021 @ 03:10:37 - Preparing for import.
+06-10-2021 @ 03:10:37 - Row :1 - Parsing item.
+06-10-2021 @ 03:10:37 - Row :1 - Processing item.
+06-10-2021 @ 03:10:37 - Found simple product object. ID:420778
+06-10-2021 @ 03:10:37 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01.jpg
+06-10-2021 @ 03:10:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01.jpg. Error: Not Found
+06-10-2021 @ 03:10:38 - Setting Gallery Images.
+06-10-2021 @ 03:10:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01-1.jpg
+06-10-2021 @ 03:10:38 - Attachment ID:444961
+06-10-2021 @ 03:10:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01-2.jpg
+06-10-2021 @ 03:10:38 - Attachment ID:444962
+06-10-2021 @ 03:10:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01-3.jpg
+06-10-2021 @ 03:10:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01-3.jpg. Error: Not Found
+06-10-2021 @ 03:10:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01-4.jpg
+06-10-2021 @ 03:10:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01-4.jpg. Error: Not Found
+06-10-2021 @ 03:10:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01-5.jpg
+06-10-2021 @ 03:10:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6005-01-5.jpg. Error: Not Found
+06-10-2021 @ 03:10:41 - Row :1 - Product updated successfully.
+06-10-2021 @ 03:10:41 - Row :2 - Parsing item.
+06-10-2021 @ 03:10:41 - Row :2 - Processing item.
+06-10-2021 @ 03:10:41 - Found simple product object. ID:420779
+06-10-2021 @ 03:10:41 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01.jpg
+06-10-2021 @ 03:10:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01.jpg. Error: Not Found
+06-10-2021 @ 03:10:42 - Setting Gallery Images.
+06-10-2021 @ 03:10:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01-1.jpg
+06-10-2021 @ 03:10:42 - Attachment ID:444963
+06-10-2021 @ 03:10:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01-2.jpg
+06-10-2021 @ 03:10:42 - Attachment ID:444964
+06-10-2021 @ 03:10:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01-3.jpg
+06-10-2021 @ 03:10:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01-3.jpg. Error: Not Found
+06-10-2021 @ 03:10:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01-4.jpg
+06-10-2021 @ 03:10:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01-4.jpg. Error: Not Found
+06-10-2021 @ 03:10:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01-5.jpg
+06-10-2021 @ 03:10:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/john-derian/PJD6006-01-5.jpg. Error: Not Found
+06-10-2021 @ 03:10:46 - Row :2 - Product updated successfully.
+06-10-2021 @ 03:10:46 - ---[ Import ended at 2021-06-09 15:10:46]---

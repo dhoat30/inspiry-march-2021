@@ -1,0 +1,22 @@
+06-09-2021 @ 20:53:43 - ---[ New import started at 2021-06-09 08:53:43 ] PHP Memory: 768 MB, WP Memory: 40 MB
+06-09-2021 @ 20:53:43 - Preparing for import.
+06-09-2021 @ 20:53:43 - Row :1 - Parsing item.
+06-09-2021 @ 20:53:43 - Row :1 - Processing item.
+06-09-2021 @ 20:53:43 - Found simple product object. ID:409371
+06-09-2021 @ 20:53:43 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/engblad-mix-metallic/ENG-4561.jpg
+06-09-2021 @ 20:53:43 - Attachment ID:444949
+06-09-2021 @ 20:53:43 - Setting Gallery Images.
+06-09-2021 @ 20:53:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/engblad-mix-metallic/ENG-4561-1.jpg
+06-09-2021 @ 20:53:44 - Attachment ID:444950
+06-09-2021 @ 20:53:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/engblad-mix-metallic/ENG-4561-2.jpg
+06-09-2021 @ 20:53:44 - Attachment ID:444951
+06-09-2021 @ 20:53:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/engblad-mix-metallic/ENG-4561-3.jpg
+06-09-2021 @ 20:53:45 - Attachment ID:444952
+06-09-2021 @ 20:53:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/engblad-mix-metallic/ENG-4561-4.jpg
+06-09-2021 @ 20:53:45 - Attachment ID:444953
+06-09-2021 @ 20:53:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/engblad-mix-metallic/ENG-4561-5.jpg
+06-09-2021 @ 20:53:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/engblad-mix-metallic/ENG-4561-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/engblad-mix-metallic/ENG-4561-5.jpg. Error: Not Found
+06-09-2021 @ 20:53:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/engblad-mix-metallic/ENG-4561-6.jpg
+06-09-2021 @ 20:53:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/engblad-mix-metallic/ENG-4561-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/engblad-mix-metallic/ENG-4561-6.jpg. Error: Not Found
+06-09-2021 @ 20:53:47 - Row :1 - Product updated successfully.
+06-09-2021 @ 20:53:47 - ---[ Import ended at 2021-06-09 08:53:47]---

@@ -1,0 +1,5 @@
+06-09-2021 @ 20:49:59 - ---[ New import started at 2021-06-09 08:49:59 ] PHP Memory: 768 MB, WP Memory: 40 MB
+06-09-2021 @ 20:49:59 - Preparing for import.
+06-09-2021 @ 20:49:59 - Row :1 - Parsing item.
+06-09-2021 @ 20:49:59 - Row :1 - Parsing failed. Reason: Product with same ID already exists. ID: 409371
+06-09-2021 @ 20:49:59 - ---[ Import ended at 2021-06-09 08:49:59]---

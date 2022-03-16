@@ -1,0 +1,567 @@
+08-03-2021 @ 22:51:31 - ---[ New import started at 2021-08-03 10:51:31 ] PHP Memory: 768 MB, WP Memory: 40 MB
+08-03-2021 @ 22:51:31 - Preparing for import.
+08-03-2021 @ 22:51:31 - Row :1 - Parsing item.
+08-03-2021 @ 22:51:31 - Row :1 - Processing item.
+08-03-2021 @ 22:51:31 - Found simple product object. ID:409065
+08-03-2021 @ 22:51:31 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022.jpg
+08-03-2021 @ 22:51:32 - Attachment ID:451095
+08-03-2021 @ 22:51:32 - Setting Gallery Images.
+08-03-2021 @ 22:51:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-1.jpg
+08-03-2021 @ 22:51:33 - Attachment ID:451096
+08-03-2021 @ 22:51:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-2.jpg
+08-03-2021 @ 22:51:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-2.jpg. Error: Not Found
+08-03-2021 @ 22:51:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-3.jpg
+08-03-2021 @ 22:51:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-3.jpg. Error: Not Found
+08-03-2021 @ 22:51:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-4.jpg
+08-03-2021 @ 22:51:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-4.jpg. Error: Not Found
+08-03-2021 @ 22:51:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-5.jpg
+08-03-2021 @ 22:51:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-4022-5.jpg. Error: Not Found
+08-03-2021 @ 22:51:36 - Row :1 - Product updated successfully.
+08-03-2021 @ 22:51:36 - Row :2 - Parsing item.
+08-03-2021 @ 22:51:36 - Row :2 - Processing item.
+08-03-2021 @ 22:51:36 - Found simple product object. ID:424297
+08-03-2021 @ 22:51:36 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041.jpg
+08-03-2021 @ 22:51:36 - Attachment ID:451097
+08-03-2021 @ 22:51:36 - Setting Gallery Images.
+08-03-2021 @ 22:51:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-1.jpg
+08-03-2021 @ 22:51:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-1.jpg. Error: Not Found
+08-03-2021 @ 22:51:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-2.jpg
+08-03-2021 @ 22:51:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-2.jpg. Error: Not Found
+08-03-2021 @ 22:51:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-3.jpg
+08-03-2021 @ 22:51:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-3.jpg. Error: Not Found
+08-03-2021 @ 22:51:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-4.jpg
+08-03-2021 @ 22:51:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-4.jpg. Error: Not Found
+08-03-2021 @ 22:51:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-5.jpg
+08-03-2021 @ 22:51:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13041-5.jpg. Error: Not Found
+08-03-2021 @ 22:51:40 - Row :2 - Product updated successfully.
+08-03-2021 @ 22:51:40 - Row :3 - Parsing item.
+08-03-2021 @ 22:51:40 - Row :3 - Processing item.
+08-03-2021 @ 22:51:40 - Found simple product object. ID:409073
+08-03-2021 @ 22:51:40 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007.jpg
+08-03-2021 @ 22:51:41 - Attachment ID:451098
+08-03-2021 @ 22:51:41 - Setting Gallery Images.
+08-03-2021 @ 22:51:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-1.jpg
+08-03-2021 @ 22:51:42 - Attachment ID:451099
+08-03-2021 @ 22:51:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-2.jpg
+08-03-2021 @ 22:51:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-2.jpg. Error: Not Found
+08-03-2021 @ 22:51:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-3.jpg
+08-03-2021 @ 22:51:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-3.jpg. Error: Not Found
+08-03-2021 @ 22:51:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-4.jpg
+08-03-2021 @ 22:51:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-4.jpg. Error: Not Found
+08-03-2021 @ 22:51:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-5.jpg
+08-03-2021 @ 22:51:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-110-2007-5.jpg. Error: Not Found
+08-03-2021 @ 22:51:45 - Row :3 - Product updated successfully.
+08-03-2021 @ 22:51:45 - Row :4 - Parsing item.
+08-03-2021 @ 22:51:45 - Row :4 - Processing item.
+08-03-2021 @ 22:51:45 - Found simple product object. ID:424298
+08-03-2021 @ 22:51:45 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042.jpg
+08-03-2021 @ 22:51:46 - Attachment ID:451100
+08-03-2021 @ 22:51:46 - Setting Gallery Images.
+08-03-2021 @ 22:51:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-1.jpg
+08-03-2021 @ 22:51:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-1.jpg. Error: Not Found
+08-03-2021 @ 22:51:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-2.jpg
+08-03-2021 @ 22:51:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-2.jpg. Error: Not Found
+08-03-2021 @ 22:51:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-3.jpg
+08-03-2021 @ 22:51:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-3.jpg. Error: Not Found
+08-03-2021 @ 22:51:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-4.jpg
+08-03-2021 @ 22:51:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-4.jpg. Error: Not Found
+08-03-2021 @ 22:51:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-5.jpg
+08-03-2021 @ 22:51:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13042-5.jpg. Error: Not Found
+08-03-2021 @ 22:51:50 - Row :4 - Product updated successfully.
+08-03-2021 @ 22:51:50 - Row :5 - Parsing item.
+08-03-2021 @ 22:51:50 - Row :5 - Processing item.
+08-03-2021 @ 22:51:50 - Found simple product object. ID:424323
+08-03-2021 @ 22:51:50 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012.jpg
+08-03-2021 @ 22:51:51 - Attachment ID:451101
+08-03-2021 @ 22:51:51 - Setting Gallery Images.
+08-03-2021 @ 22:51:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-1.jpg
+08-03-2021 @ 22:51:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-1.jpg. Error: Not Found
+08-03-2021 @ 22:51:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-2.jpg
+08-03-2021 @ 22:51:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-2.jpg. Error: Not Found
+08-03-2021 @ 22:51:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-3.jpg
+08-03-2021 @ 22:51:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-3.jpg. Error: Not Found
+08-03-2021 @ 22:51:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-4.jpg
+08-03-2021 @ 22:51:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-4.jpg. Error: Not Found
+08-03-2021 @ 22:51:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-5.jpg
+08-03-2021 @ 22:51:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4012-5.jpg. Error: Not Found
+08-03-2021 @ 22:51:55 - Row :5 - Product updated successfully.
+08-03-2021 @ 22:51:55 - Row :6 - Parsing item.
+08-03-2021 @ 22:51:55 - Row :6 - Processing item.
+08-03-2021 @ 22:51:55 - Found simple product object. ID:424324
+08-03-2021 @ 22:51:55 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011.jpg
+08-03-2021 @ 22:51:56 - Attachment ID:451102
+08-03-2021 @ 22:51:56 - Setting Gallery Images.
+08-03-2021 @ 22:51:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-1.jpg
+08-03-2021 @ 22:51:56 - Attachment ID:451103
+08-03-2021 @ 22:51:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-2.jpg
+08-03-2021 @ 22:51:58 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-2.jpg. Error: Not Found
+08-03-2021 @ 22:51:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-3.jpg
+08-03-2021 @ 22:51:58 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-3.jpg. Error: Not Found
+08-03-2021 @ 22:51:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-4.jpg
+08-03-2021 @ 22:51:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-4.jpg. Error: Not Found
+08-03-2021 @ 22:51:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-5.jpg
+08-03-2021 @ 22:51:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4011-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:00 - Row :6 - Product updated successfully.
+08-03-2021 @ 22:52:00 - Row :7 - Parsing item.
+08-03-2021 @ 22:52:00 - Row :7 - Processing item.
+08-03-2021 @ 22:52:00 - Found simple product object. ID:424299
+08-03-2021 @ 22:52:00 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038.jpg
+08-03-2021 @ 22:52:00 - Attachment ID:451104
+08-03-2021 @ 22:52:00 - Setting Gallery Images.
+08-03-2021 @ 22:52:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-1.jpg
+08-03-2021 @ 22:52:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-1.jpg. Error: Not Found
+08-03-2021 @ 22:52:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-2.jpg
+08-03-2021 @ 22:52:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-2.jpg. Error: Not Found
+08-03-2021 @ 22:52:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-3.jpg
+08-03-2021 @ 22:52:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-3.jpg. Error: Not Found
+08-03-2021 @ 22:52:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-4.jpg
+08-03-2021 @ 22:52:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-5.jpg
+08-03-2021 @ 22:52:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-12038-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:05 - Row :7 - Product updated successfully.
+08-03-2021 @ 22:52:05 - Row :8 - Parsing item.
+08-03-2021 @ 22:52:05 - Row :8 - Processing item.
+08-03-2021 @ 22:52:05 - Found simple product object. ID:424327
+08-03-2021 @ 22:52:05 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008.jpg
+08-03-2021 @ 22:52:06 - Attachment ID:451105
+08-03-2021 @ 22:52:06 - Setting Gallery Images.
+08-03-2021 @ 22:52:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-1.jpg
+08-03-2021 @ 22:52:07 - Attachment ID:451106
+08-03-2021 @ 22:52:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-2.jpg
+08-03-2021 @ 22:52:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-2.jpg. Error: Not Found
+08-03-2021 @ 22:52:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-3.jpg
+08-03-2021 @ 22:52:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-3.jpg. Error: Not Found
+08-03-2021 @ 22:52:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-4.jpg
+08-03-2021 @ 22:52:09 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-5.jpg
+08-03-2021 @ 22:52:09 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3008-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:10 - Row :8 - Product updated successfully.
+08-03-2021 @ 22:52:10 - Row :9 - Parsing item.
+08-03-2021 @ 22:52:10 - Row :9 - Processing item.
+08-03-2021 @ 22:52:10 - Found simple product object. ID:424326
+08-03-2021 @ 22:52:10 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009.jpg
+08-03-2021 @ 22:52:11 - Attachment ID:451107
+08-03-2021 @ 22:52:11 - Setting Gallery Images.
+08-03-2021 @ 22:52:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009-1.jpg
+08-03-2021 @ 22:52:11 - Attachment ID:451108
+08-03-2021 @ 22:52:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009-2.jpg
+08-03-2021 @ 22:52:11 - Attachment ID:451109
+08-03-2021 @ 22:52:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009-3.jpg
+08-03-2021 @ 22:52:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009-3.jpg. Error: Not Found
+08-03-2021 @ 22:52:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009-4.jpg
+08-03-2021 @ 22:52:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009-5.jpg
+08-03-2021 @ 22:52:14 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3009-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:15 - Row :9 - Product updated successfully.
+08-03-2021 @ 22:52:15 - Row :10 - Parsing item.
+08-03-2021 @ 22:52:15 - Row :10 - Processing item.
+08-03-2021 @ 22:52:15 - Found simple product object. ID:424325
+08-03-2021 @ 22:52:15 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3007.jpg
+08-03-2021 @ 22:52:16 - Attachment ID:451110
+08-03-2021 @ 22:52:16 - Setting Gallery Images.
+08-03-2021 @ 22:52:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3007-1.jpg
+08-03-2021 @ 22:52:16 - Attachment ID:451111
+08-03-2021 @ 22:52:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3007-2.jpg
+08-03-2021 @ 22:52:17 - Attachment ID:451112
+08-03-2021 @ 22:52:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3007-3.jpg
+08-03-2021 @ 22:52:17 - Attachment ID:451113
+08-03-2021 @ 22:52:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3007-4.jpg
+08-03-2021 @ 22:52:18 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3007-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3007-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3007-5.jpg
+08-03-2021 @ 22:52:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3007-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3007-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:19 - Row :10 - Product updated successfully.
+08-03-2021 @ 22:52:21 - Preparing for import.
+08-03-2021 @ 22:52:21 - Row :11 - Parsing item.
+08-03-2021 @ 22:52:21 - Row :11 - Processing item.
+08-03-2021 @ 22:52:21 - Found simple product object. ID:424322
+08-03-2021 @ 22:52:21 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4010.jpg
+08-03-2021 @ 22:52:22 - Attachment ID:451114
+08-03-2021 @ 22:52:22 - Setting Gallery Images.
+08-03-2021 @ 22:52:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4010-1.jpg
+08-03-2021 @ 22:52:22 - Attachment ID:451115
+08-03-2021 @ 22:52:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4010-2.jpg
+08-03-2021 @ 22:52:23 - Attachment ID:451116
+08-03-2021 @ 22:52:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4010-3.jpg
+08-03-2021 @ 22:52:23 - Attachment ID:451117
+08-03-2021 @ 22:52:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4010-4.jpg
+08-03-2021 @ 22:52:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4010-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4010-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4010-5.jpg
+08-03-2021 @ 22:52:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4010-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-4010-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:25 - Row :11 - Product updated successfully.
+08-03-2021 @ 22:52:25 - Row :12 - Parsing item.
+08-03-2021 @ 22:52:25 - Row :12 - Processing item.
+08-03-2021 @ 22:52:25 - Found simple product object. ID:424296
+08-03-2021 @ 22:52:25 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040.jpg
+08-03-2021 @ 22:52:26 - Attachment ID:451118
+08-03-2021 @ 22:52:26 - Setting Gallery Images.
+08-03-2021 @ 22:52:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040-1.jpg
+08-03-2021 @ 22:52:26 - Attachment ID:451119
+08-03-2021 @ 22:52:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040-2.jpg
+08-03-2021 @ 22:52:27 - Attachment ID:451120
+08-03-2021 @ 22:52:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040-3.jpg
+08-03-2021 @ 22:52:27 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040-3.jpg. Error: Not Found
+08-03-2021 @ 22:52:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040-4.jpg
+08-03-2021 @ 22:52:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040-5.jpg
+08-03-2021 @ 22:52:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-13040-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:29 - Row :12 - Product updated successfully.
+08-03-2021 @ 22:52:29 - Row :13 - Parsing item.
+08-03-2021 @ 22:52:29 - Row :13 - Processing item.
+08-03-2021 @ 22:52:29 - Found simple product object. ID:424328
+08-03-2021 @ 22:52:29 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006.jpg
+08-03-2021 @ 22:52:30 - Attachment ID:451121
+08-03-2021 @ 22:52:30 - Setting Gallery Images.
+08-03-2021 @ 22:52:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-1.jpg
+08-03-2021 @ 22:52:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-1.jpg. Error: Not Found
+08-03-2021 @ 22:52:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-2.jpg
+08-03-2021 @ 22:52:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-2.jpg. Error: Not Found
+08-03-2021 @ 22:52:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-3.jpg
+08-03-2021 @ 22:52:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-3.jpg. Error: Not Found
+08-03-2021 @ 22:52:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-4.jpg
+08-03-2021 @ 22:52:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-5.jpg
+08-03-2021 @ 22:52:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-3006-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:34 - Row :13 - Product updated successfully.
+08-03-2021 @ 22:52:34 - Row :14 - Parsing item.
+08-03-2021 @ 22:52:34 - Row :14 - Processing item.
+08-03-2021 @ 22:52:34 - Found simple product object. ID:424316
+08-03-2021 @ 22:52:34 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018.jpg
+08-03-2021 @ 22:52:35 - Attachment ID:451122
+08-03-2021 @ 22:52:35 - Setting Gallery Images.
+08-03-2021 @ 22:52:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-1.jpg
+08-03-2021 @ 22:52:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-1.jpg. Error: Not Found
+08-03-2021 @ 22:52:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-2.jpg
+08-03-2021 @ 22:52:36 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-2.jpg. Error: Not Found
+08-03-2021 @ 22:52:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-3.jpg
+08-03-2021 @ 22:52:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-3.jpg. Error: Not Found
+08-03-2021 @ 22:52:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-4.jpg
+08-03-2021 @ 22:52:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-5.jpg
+08-03-2021 @ 22:52:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6018-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:39 - Row :14 - Product updated successfully.
+08-03-2021 @ 22:52:39 - Row :15 - Parsing item.
+08-03-2021 @ 22:52:39 - Row :15 - Processing item.
+08-03-2021 @ 22:52:39 - Found simple product object. ID:424317
+08-03-2021 @ 22:52:39 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019.jpg
+08-03-2021 @ 22:52:39 - Attachment ID:451123
+08-03-2021 @ 22:52:39 - Setting Gallery Images.
+08-03-2021 @ 22:52:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-1.jpg
+08-03-2021 @ 22:52:40 - Attachment ID:451124
+08-03-2021 @ 22:52:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-2.jpg
+08-03-2021 @ 22:52:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-2.jpg. Error: Not Found
+08-03-2021 @ 22:52:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-3.jpg
+08-03-2021 @ 22:52:41 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-3.jpg. Error: Not Found
+08-03-2021 @ 22:52:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-4.jpg
+08-03-2021 @ 22:52:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-5.jpg
+08-03-2021 @ 22:52:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6019-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:43 - Row :15 - Product updated successfully.
+08-03-2021 @ 22:52:43 - Row :16 - Parsing item.
+08-03-2021 @ 22:52:43 - Row :16 - Processing item.
+08-03-2021 @ 22:52:43 - Found simple product object. ID:424315
+08-03-2021 @ 22:52:43 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6016.jpg
+08-03-2021 @ 22:52:44 - Attachment ID:451125
+08-03-2021 @ 22:52:44 - Setting Gallery Images.
+08-03-2021 @ 22:52:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6016-1.jpg
+08-03-2021 @ 22:52:44 - Attachment ID:451126
+08-03-2021 @ 22:52:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6016-2.jpg
+08-03-2021 @ 22:52:44 - Attachment ID:451127
+08-03-2021 @ 22:52:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6016-3.jpg
+08-03-2021 @ 22:52:45 - Attachment ID:451128
+08-03-2021 @ 22:52:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6016-4.jpg
+08-03-2021 @ 22:52:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6016-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6016-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6016-5.jpg
+08-03-2021 @ 22:52:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6016-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-6016-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:47 - Row :16 - Product updated successfully.
+08-03-2021 @ 22:52:47 - Row :17 - Parsing item.
+08-03-2021 @ 22:52:47 - Row :17 - Processing item.
+08-03-2021 @ 22:52:47 - Found simple product object. ID:424294
+08-03-2021 @ 22:52:47 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045.jpg
+08-03-2021 @ 22:52:48 - Attachment ID:451129
+08-03-2021 @ 22:52:48 - Setting Gallery Images.
+08-03-2021 @ 22:52:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-1.jpg
+08-03-2021 @ 22:52:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-1.jpg. Error: Not Found
+08-03-2021 @ 22:52:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-2.jpg
+08-03-2021 @ 22:52:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-2.jpg. Error: Not Found
+08-03-2021 @ 22:52:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-3.jpg
+08-03-2021 @ 22:52:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-3.jpg. Error: Not Found
+08-03-2021 @ 22:52:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-4.jpg
+08-03-2021 @ 22:52:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-5.jpg
+08-03-2021 @ 22:52:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14045-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:51 - Row :17 - Product updated successfully.
+08-03-2021 @ 22:52:51 - Row :18 - Parsing item.
+08-03-2021 @ 22:52:51 - Row :18 - Processing item.
+08-03-2021 @ 22:52:51 - Found simple product object. ID:424293
+08-03-2021 @ 22:52:51 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044.jpg
+08-03-2021 @ 22:52:53 - Attachment ID:451130
+08-03-2021 @ 22:52:53 - Setting Gallery Images.
+08-03-2021 @ 22:52:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-1.jpg
+08-03-2021 @ 22:52:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-1.jpg. Error: Not Found
+08-03-2021 @ 22:52:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-2.jpg
+08-03-2021 @ 22:52:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-2.jpg. Error: Not Found
+08-03-2021 @ 22:52:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-3.jpg
+08-03-2021 @ 22:52:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-3.jpg. Error: Not Found
+08-03-2021 @ 22:52:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-4.jpg
+08-03-2021 @ 22:52:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-4.jpg. Error: Not Found
+08-03-2021 @ 22:52:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-5.jpg
+08-03-2021 @ 22:52:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14044-5.jpg. Error: Not Found
+08-03-2021 @ 22:52:57 - Row :18 - Product updated successfully.
+08-03-2021 @ 22:52:57 - Row :19 - Parsing item.
+08-03-2021 @ 22:52:57 - Row :19 - Processing item.
+08-03-2021 @ 22:52:57 - Found simple product object. ID:424295
+08-03-2021 @ 22:52:57 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046.jpg
+08-03-2021 @ 22:52:58 - Attachment ID:451131
+08-03-2021 @ 22:52:58 - Setting Gallery Images.
+08-03-2021 @ 22:52:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-1.jpg
+08-03-2021 @ 22:52:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-1.jpg. Error: Not Found
+08-03-2021 @ 22:52:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-2.jpg
+08-03-2021 @ 22:52:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-2.jpg. Error: Not Found
+08-03-2021 @ 22:52:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-3.jpg
+08-03-2021 @ 22:53:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-4.jpg
+08-03-2021 @ 22:53:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-5.jpg
+08-03-2021 @ 22:53:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14046-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:02 - Row :19 - Product updated successfully.
+08-03-2021 @ 22:53:02 - Row :20 - Parsing item.
+08-03-2021 @ 22:53:02 - Row :20 - Processing item.
+08-03-2021 @ 22:53:02 - Found simple product object. ID:424306
+08-03-2021 @ 22:53:02 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034.jpg
+08-03-2021 @ 22:53:03 - Attachment ID:451132
+08-03-2021 @ 22:53:03 - Setting Gallery Images.
+08-03-2021 @ 22:53:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-1.jpg
+08-03-2021 @ 22:53:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-1.jpg. Error: Not Found
+08-03-2021 @ 22:53:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-2.jpg
+08-03-2021 @ 22:53:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-2.jpg. Error: Not Found
+08-03-2021 @ 22:53:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-3.jpg
+08-03-2021 @ 22:53:05 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-4.jpg
+08-03-2021 @ 22:53:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-5.jpg
+08-03-2021 @ 22:53:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11034-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:07 - Row :20 - Product updated successfully.
+08-03-2021 @ 22:53:08 - Preparing for import.
+08-03-2021 @ 22:53:08 - Row :21 - Parsing item.
+08-03-2021 @ 22:53:08 - Row :21 - Processing item.
+08-03-2021 @ 22:53:08 - Found simple product object. ID:424303
+08-03-2021 @ 22:53:08 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033.jpg
+08-03-2021 @ 22:53:09 - Attachment ID:451133
+08-03-2021 @ 22:53:09 - Setting Gallery Images.
+08-03-2021 @ 22:53:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-1.jpg
+08-03-2021 @ 22:53:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-1.jpg. Error: Not Found
+08-03-2021 @ 22:53:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-2.jpg
+08-03-2021 @ 22:53:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-2.jpg. Error: Not Found
+08-03-2021 @ 22:53:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-3.jpg
+08-03-2021 @ 22:53:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-4.jpg
+08-03-2021 @ 22:53:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-5.jpg
+08-03-2021 @ 22:53:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-11033-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:13 - Row :21 - Product updated successfully.
+08-03-2021 @ 22:53:13 - Row :22 - Parsing item.
+08-03-2021 @ 22:53:13 - Row :22 - Processing item.
+08-03-2021 @ 22:53:13 - Found simple product object. ID:424292
+08-03-2021 @ 22:53:13 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043.jpg
+08-03-2021 @ 22:53:14 - Attachment ID:451134
+08-03-2021 @ 22:53:14 - Setting Gallery Images.
+08-03-2021 @ 22:53:14 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043-1.jpg
+08-03-2021 @ 22:53:15 - Attachment ID:451135
+08-03-2021 @ 22:53:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043-2.jpg
+08-03-2021 @ 22:53:15 - Attachment ID:451136
+08-03-2021 @ 22:53:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043-3.jpg
+08-03-2021 @ 22:53:16 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043-4.jpg
+08-03-2021 @ 22:53:17 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043-5.jpg
+08-03-2021 @ 22:53:17 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-14043-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:17 - Row :22 - Product updated successfully.
+08-03-2021 @ 22:53:17 - Row :23 - Parsing item.
+08-03-2021 @ 22:53:17 - Row :23 - Processing item.
+08-03-2021 @ 22:53:17 - Found simple product object. ID:424309
+08-03-2021 @ 22:53:17 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031.jpg
+08-03-2021 @ 22:53:18 - Attachment ID:451137
+08-03-2021 @ 22:53:18 - Setting Gallery Images.
+08-03-2021 @ 22:53:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031-1.jpg
+08-03-2021 @ 22:53:19 - Attachment ID:451138
+08-03-2021 @ 22:53:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031-2.jpg
+08-03-2021 @ 22:53:19 - Attachment ID:451139
+08-03-2021 @ 22:53:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031-3.jpg
+08-03-2021 @ 22:53:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031-4.jpg
+08-03-2021 @ 22:53:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031-5.jpg
+08-03-2021 @ 22:53:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10031-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:22 - Row :23 - Product updated successfully.
+08-03-2021 @ 22:53:22 - Row :24 - Parsing item.
+08-03-2021 @ 22:53:22 - Row :24 - Processing item.
+08-03-2021 @ 22:53:22 - Found simple product object. ID:424310
+08-03-2021 @ 22:53:22 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029.jpg
+08-03-2021 @ 22:53:22 - Attachment ID:451140
+08-03-2021 @ 22:53:22 - Setting Gallery Images.
+08-03-2021 @ 22:53:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-1.jpg
+08-03-2021 @ 22:53:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-1.jpg. Error: Not Found
+08-03-2021 @ 22:53:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-2.jpg
+08-03-2021 @ 22:53:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-2.jpg. Error: Not Found
+08-03-2021 @ 22:53:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-3.jpg
+08-03-2021 @ 22:53:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-4.jpg
+08-03-2021 @ 22:53:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-5.jpg
+08-03-2021 @ 22:53:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-10029-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:26 - Row :24 - Product updated successfully.
+08-03-2021 @ 22:53:26 - Row :25 - Parsing item.
+08-03-2021 @ 22:53:26 - Row :25 - Processing item.
+08-03-2021 @ 22:53:26 - Found simple product object. ID:421220
+08-03-2021 @ 22:53:26 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018.jpg
+08-03-2021 @ 22:53:27 - Attachment ID:451141
+08-03-2021 @ 22:53:27 - Setting Gallery Images.
+08-03-2021 @ 22:53:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018-1.jpg
+08-03-2021 @ 22:53:28 - Attachment ID:451142
+08-03-2021 @ 22:53:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018-2.jpg
+08-03-2021 @ 22:53:28 - Attachment ID:451143
+08-03-2021 @ 22:53:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018-3.jpg
+08-03-2021 @ 22:53:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018-4.jpg
+08-03-2021 @ 22:53:29 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018-5.jpg
+08-03-2021 @ 22:53:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-115-6018-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:31 - Row :25 - Product updated successfully.
+08-03-2021 @ 22:53:31 - Row :26 - Parsing item.
+08-03-2021 @ 22:53:31 - Row :26 - Processing item.
+08-03-2021 @ 22:53:31 - Found simple product object. ID:424331
+08-03-2021 @ 22:53:31 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004.jpg
+08-03-2021 @ 22:53:32 - Attachment ID:451144
+08-03-2021 @ 22:53:32 - Setting Gallery Images.
+08-03-2021 @ 22:53:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-1.jpg
+08-03-2021 @ 22:53:32 - Attachment ID:451145
+08-03-2021 @ 22:53:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-2.jpg
+08-03-2021 @ 22:53:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-2.jpg. Error: Not Found
+08-03-2021 @ 22:53:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-3.jpg
+08-03-2021 @ 22:53:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-4.jpg
+08-03-2021 @ 22:53:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-5.jpg
+08-03-2021 @ 22:53:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1004-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:36 - Row :26 - Product updated successfully.
+08-03-2021 @ 22:53:36 - Row :27 - Parsing item.
+08-03-2021 @ 22:53:36 - Row :27 - Processing item.
+08-03-2021 @ 22:53:36 - Found simple product object. ID:424330
+08-03-2021 @ 22:53:36 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003.jpg
+08-03-2021 @ 22:53:37 - Attachment ID:451146
+08-03-2021 @ 22:53:37 - Setting Gallery Images.
+08-03-2021 @ 22:53:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-1.jpg
+08-03-2021 @ 22:53:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-1.jpg. Error: Not Found
+08-03-2021 @ 22:53:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-2.jpg
+08-03-2021 @ 22:53:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-2.jpg. Error: Not Found
+08-03-2021 @ 22:53:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-3.jpg
+08-03-2021 @ 22:53:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-4.jpg
+08-03-2021 @ 22:53:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-5.jpg
+08-03-2021 @ 22:53:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-1003-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:40 - Row :27 - Product updated successfully.
+08-03-2021 @ 22:53:40 - Row :28 - Parsing item.
+08-03-2021 @ 22:53:40 - Row :28 - Processing item.
+08-03-2021 @ 22:53:40 - Found simple product object. ID:424337
+08-03-2021 @ 22:53:40 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022.jpg
+08-03-2021 @ 22:53:41 - Attachment ID:451147
+08-03-2021 @ 22:53:41 - Setting Gallery Images.
+08-03-2021 @ 22:53:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-1.jpg
+08-03-2021 @ 22:53:41 - Attachment ID:451148
+08-03-2021 @ 22:53:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-2.jpg
+08-03-2021 @ 22:53:42 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-2.jpg. Error: Not Found
+08-03-2021 @ 22:53:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-3.jpg
+08-03-2021 @ 22:53:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-4.jpg
+08-03-2021 @ 22:53:43 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-5.jpg
+08-03-2021 @ 22:53:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8022-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:45 - Row :28 - Product updated successfully.
+08-03-2021 @ 22:53:45 - Row :29 - Parsing item.
+08-03-2021 @ 22:53:45 - Row :29 - Processing item.
+08-03-2021 @ 22:53:45 - Found simple product object. ID:424341
+08-03-2021 @ 22:53:45 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021.jpg
+08-03-2021 @ 22:53:46 - Attachment ID:451149
+08-03-2021 @ 22:53:46 - Setting Gallery Images.
+08-03-2021 @ 22:53:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021-1.jpg
+08-03-2021 @ 22:53:46 - Attachment ID:451150
+08-03-2021 @ 22:53:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021-2.jpg
+08-03-2021 @ 22:53:47 - Attachment ID:451151
+08-03-2021 @ 22:53:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021-3.jpg
+08-03-2021 @ 22:53:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021-4.jpg
+08-03-2021 @ 22:53:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021-5.jpg
+08-03-2021 @ 22:53:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-8021-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:49 - Row :29 - Product updated successfully.
+08-03-2021 @ 22:53:49 - Row :30 - Parsing item.
+08-03-2021 @ 22:53:49 - Row :30 - Processing item.
+08-03-2021 @ 22:53:50 - Found simple product object. ID:424312
+08-03-2021 @ 22:53:50 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026.jpg
+08-03-2021 @ 22:53:50 - Attachment ID:451152
+08-03-2021 @ 22:53:50 - Setting Gallery Images.
+08-03-2021 @ 22:53:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-1.jpg
+08-03-2021 @ 22:53:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-1.jpg. Error: Not Found
+08-03-2021 @ 22:53:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-2.jpg
+08-03-2021 @ 22:53:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-2.jpg. Error: Not Found
+08-03-2021 @ 22:53:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-3.jpg
+08-03-2021 @ 22:53:52 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-3.jpg. Error: Not Found
+08-03-2021 @ 22:53:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-4.jpg
+08-03-2021 @ 22:53:53 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-4.jpg. Error: Not Found
+08-03-2021 @ 22:53:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-5.jpg
+08-03-2021 @ 22:53:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9026-5.jpg. Error: Not Found
+08-03-2021 @ 22:53:54 - Row :30 - Product updated successfully.
+08-03-2021 @ 22:53:57 - Preparing for import.
+08-03-2021 @ 22:53:57 - Row :31 - Parsing item.
+08-03-2021 @ 22:53:57 - Row :31 - Processing item.
+08-03-2021 @ 22:53:57 - Found simple product object. ID:424313
+08-03-2021 @ 22:53:57 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027.jpg
+08-03-2021 @ 22:53:58 - Attachment ID:451153
+08-03-2021 @ 22:53:58 - Setting Gallery Images.
+08-03-2021 @ 22:53:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-1.jpg
+08-03-2021 @ 22:53:58 - Attachment ID:451154
+08-03-2021 @ 22:53:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-2.jpg
+08-03-2021 @ 22:53:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-2.jpg. Error: Not Found
+08-03-2021 @ 22:53:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-3.jpg
+08-03-2021 @ 22:54:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-3.jpg. Error: Not Found
+08-03-2021 @ 22:54:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-4.jpg
+08-03-2021 @ 22:54:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-4.jpg. Error: Not Found
+08-03-2021 @ 22:54:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-5.jpg
+08-03-2021 @ 22:54:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9027-5.jpg. Error: Not Found
+08-03-2021 @ 22:54:03 - Row :31 - Product updated successfully.
+08-03-2021 @ 22:54:03 - Row :32 - Parsing item.
+08-03-2021 @ 22:54:03 - Row :32 - Processing item.
+08-03-2021 @ 22:54:04 - Found simple product object. ID:424311
+08-03-2021 @ 22:54:04 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025.jpg
+08-03-2021 @ 22:54:04 - Attachment ID:451155
+08-03-2021 @ 22:54:04 - Setting Gallery Images.
+08-03-2021 @ 22:54:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025-1.jpg
+08-03-2021 @ 22:54:05 - Attachment ID:451156
+08-03-2021 @ 22:54:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025-2.jpg
+08-03-2021 @ 22:54:05 - Attachment ID:451157
+08-03-2021 @ 22:54:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025-3.jpg
+08-03-2021 @ 22:54:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025-3.jpg. Error: Not Found
+08-03-2021 @ 22:54:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025-4.jpg
+08-03-2021 @ 22:54:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025-4.jpg. Error: Not Found
+08-03-2021 @ 22:54:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025-5.jpg
+08-03-2021 @ 22:54:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-9025-5.jpg. Error: Not Found
+08-03-2021 @ 22:54:08 - Row :32 - Product updated successfully.
+08-03-2021 @ 22:54:08 - Row :33 - Parsing item.
+08-03-2021 @ 22:54:08 - Row :33 - Processing item.
+08-03-2021 @ 22:54:08 - Found simple product object. ID:424321
+08-03-2021 @ 22:54:08 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013.jpg
+08-03-2021 @ 22:54:09 - Attachment ID:451158
+08-03-2021 @ 22:54:09 - Setting Gallery Images.
+08-03-2021 @ 22:54:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013-1.jpg
+08-03-2021 @ 22:54:10 - Attachment ID:451159
+08-03-2021 @ 22:54:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013-2.jpg
+08-03-2021 @ 22:54:10 - Attachment ID:451160
+08-03-2021 @ 22:54:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013-3.jpg
+08-03-2021 @ 22:54:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013-3.jpg. Error: Not Found
+08-03-2021 @ 22:54:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013-4.jpg
+08-03-2021 @ 22:54:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013-4.jpg. Error: Not Found
+08-03-2021 @ 22:54:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013-5.jpg
+08-03-2021 @ 22:54:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Cole&Son/CS-117-5013-5.jpg. Error: Not Found
+08-03-2021 @ 22:54:13 - Row :33 - Product updated successfully.
+08-03-2021 @ 22:54:13 - ---[ Import ended at 2021-08-03 10:54:13]---

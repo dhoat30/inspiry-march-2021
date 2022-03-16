@@ -1,0 +1,292 @@
+09-02-2021 @ 19:49:30 - ---[ New import started at 2021-09-02 07:49:30 ] PHP Memory: 768 MB, WP Memory: 40 MB
+09-02-2021 @ 19:49:30 - Preparing for import.
+09-02-2021 @ 19:49:30 - Row :1 - Parsing item.
+09-02-2021 @ 19:49:30 - Row :1 - Processing item.
+09-02-2021 @ 19:49:30 - Found simple product object. ID:452973
+09-02-2021 @ 19:49:30 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave.jpg
+09-02-2021 @ 19:49:31 - Attachment ID:453039
+09-02-2021 @ 19:49:31 - Setting Gallery Images.
+09-02-2021 @ 19:49:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-1.jpg
+09-02-2021 @ 19:49:32 - Attachment ID:453040
+09-02-2021 @ 19:49:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-2.jpg
+09-02-2021 @ 19:49:32 - Attachment ID:453041
+09-02-2021 @ 19:49:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-3.jpg
+09-02-2021 @ 19:49:33 - Attachment ID:453042
+09-02-2021 @ 19:49:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-4.jpg
+09-02-2021 @ 19:49:34 - Attachment ID:453043
+09-02-2021 @ 19:49:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-5.jpg
+09-02-2021 @ 19:49:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-5.jpg. Error: Not Found
+09-02-2021 @ 19:49:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-6.jpg
+09-02-2021 @ 19:49:36 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-6.jpg. Error: Not Found
+09-02-2021 @ 19:49:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-7.jpg
+09-02-2021 @ 19:49:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-7.jpg. Error: Not Found
+09-02-2021 @ 19:49:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-8.jpg
+09-02-2021 @ 19:49:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-8.jpg. Error: Not Found
+09-02-2021 @ 19:49:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-9.jpg
+09-02-2021 @ 19:49:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-9.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-9.jpg. Error: Not Found
+09-02-2021 @ 19:49:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-10.jpg
+09-02-2021 @ 19:49:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-10.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-10.jpg. Error: Not Found
+09-02-2021 @ 19:49:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-11.jpg
+09-02-2021 @ 19:49:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-11.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Weave-11.jpg. Error: Not Found
+09-02-2021 @ 19:49:40 - Row :1 - Product updated successfully.
+09-02-2021 @ 19:49:40 - Row :2 - Parsing item.
+09-02-2021 @ 19:49:40 - Row :2 - Processing item.
+09-02-2021 @ 19:49:40 - Found simple product object. ID:452974
+09-02-2021 @ 19:49:40 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather.jpg
+09-02-2021 @ 19:49:41 - Attachment ID:453044
+09-02-2021 @ 19:49:41 - Setting Gallery Images.
+09-02-2021 @ 19:49:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-1.jpg
+09-02-2021 @ 19:49:42 - Attachment ID:453045
+09-02-2021 @ 19:49:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-2.jpg
+09-02-2021 @ 19:49:43 - Attachment ID:453046
+09-02-2021 @ 19:49:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-3.jpg
+09-02-2021 @ 19:49:44 - Attachment ID:453047
+09-02-2021 @ 19:49:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-4.jpg
+09-02-2021 @ 19:49:45 - Attachment ID:453048
+09-02-2021 @ 19:49:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-5.jpg
+09-02-2021 @ 19:49:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-5.jpg. Error: Not Found
+09-02-2021 @ 19:49:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-6.jpg
+09-02-2021 @ 19:49:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-6.jpg. Error: Not Found
+09-02-2021 @ 19:49:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-7.jpg
+09-02-2021 @ 19:49:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-7.jpg. Error: Not Found
+09-02-2021 @ 19:49:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-8.jpg
+09-02-2021 @ 19:49:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-8.jpg. Error: Not Found
+09-02-2021 @ 19:49:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-9.jpg
+09-02-2021 @ 19:49:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-9.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-9.jpg. Error: Not Found
+09-02-2021 @ 19:49:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-10.jpg
+09-02-2021 @ 19:49:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-10.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-10.jpg. Error: Not Found
+09-02-2021 @ 19:49:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-11.jpg
+09-02-2021 @ 19:49:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-11.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Blush-Feather-11.jpg. Error: Not Found
+09-02-2021 @ 19:49:51 - Row :2 - Product updated successfully.
+09-02-2021 @ 19:49:51 - Row :3 - Parsing item.
+09-02-2021 @ 19:49:52 - Row :3 - Processing item.
+09-02-2021 @ 19:49:52 - Found simple product object. ID:452975
+09-02-2021 @ 19:49:52 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave.jpg
+09-02-2021 @ 19:49:52 - Attachment ID:453049
+09-02-2021 @ 19:49:52 - Setting Gallery Images.
+09-02-2021 @ 19:49:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-1.jpg
+09-02-2021 @ 19:49:53 - Attachment ID:453050
+09-02-2021 @ 19:49:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-2.jpg
+09-02-2021 @ 19:49:54 - Attachment ID:453051
+09-02-2021 @ 19:49:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-3.jpg
+09-02-2021 @ 19:49:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-3.jpg. Error: Not Found
+09-02-2021 @ 19:49:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-4.jpg
+09-02-2021 @ 19:49:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-4.jpg. Error: Not Found
+09-02-2021 @ 19:49:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-5.jpg
+09-02-2021 @ 19:49:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-5.jpg. Error: Not Found
+09-02-2021 @ 19:49:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-6.jpg
+09-02-2021 @ 19:49:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-6.jpg. Error: Not Found
+09-02-2021 @ 19:49:57 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-7.jpg
+09-02-2021 @ 19:49:58 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-7.jpg. Error: Not Found
+09-02-2021 @ 19:49:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-8.jpg
+09-02-2021 @ 19:49:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-8.jpg. Error: Not Found
+09-02-2021 @ 19:49:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-9.jpg
+09-02-2021 @ 19:50:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-9.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-9.jpg. Error: Not Found
+09-02-2021 @ 19:50:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-10.jpg
+09-02-2021 @ 19:50:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-10.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-10.jpg. Error: Not Found
+09-02-2021 @ 19:50:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-11.jpg
+09-02-2021 @ 19:50:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-11.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Weave-11.jpg. Error: Not Found
+09-02-2021 @ 19:50:02 - Row :3 - Product updated successfully.
+09-02-2021 @ 19:50:02 - Row :4 - Parsing item.
+09-02-2021 @ 19:50:03 - Row :4 - Processing item.
+09-02-2021 @ 19:50:03 - Found simple product object. ID:452976
+09-02-2021 @ 19:50:03 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather.jpg
+09-02-2021 @ 19:50:04 - Attachment ID:453052
+09-02-2021 @ 19:50:04 - Setting Gallery Images.
+09-02-2021 @ 19:50:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-1.jpg
+09-02-2021 @ 19:50:04 - Attachment ID:453053
+09-02-2021 @ 19:50:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-2.jpg
+09-02-2021 @ 19:50:05 - Attachment ID:453054
+09-02-2021 @ 19:50:05 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-3.jpg
+09-02-2021 @ 19:50:06 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-3.jpg. Error: Not Found
+09-02-2021 @ 19:50:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-4.jpg
+09-02-2021 @ 19:50:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-4.jpg. Error: Not Found
+09-02-2021 @ 19:50:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-5.jpg
+09-02-2021 @ 19:50:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-5.jpg. Error: Not Found
+09-02-2021 @ 19:50:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-6.jpg
+09-02-2021 @ 19:50:09 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-6.jpg. Error: Not Found
+09-02-2021 @ 19:50:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-7.jpg
+09-02-2021 @ 19:50:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-7.jpg. Error: Not Found
+09-02-2021 @ 19:50:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-8.jpg
+09-02-2021 @ 19:50:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-8.jpg. Error: Not Found
+09-02-2021 @ 19:50:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-9.jpg
+09-02-2021 @ 19:50:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-9.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-9.jpg. Error: Not Found
+09-02-2021 @ 19:50:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-10.jpg
+09-02-2021 @ 19:50:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-10.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-10.jpg. Error: Not Found
+09-02-2021 @ 19:50:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-11.jpg
+09-02-2021 @ 19:50:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-11.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Linen-Feather-11.jpg. Error: Not Found
+09-02-2021 @ 19:50:14 - Row :4 - Product updated successfully.
+09-02-2021 @ 19:50:14 - Row :5 - Parsing item.
+09-02-2021 @ 19:50:14 - Row :5 - Processing item.
+09-02-2021 @ 19:50:14 - Found simple product object. ID:452977
+09-02-2021 @ 19:50:14 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave.jpg
+09-02-2021 @ 19:50:15 - Attachment ID:453055
+09-02-2021 @ 19:50:15 - Setting Gallery Images.
+09-02-2021 @ 19:50:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-1.jpg
+09-02-2021 @ 19:50:16 - Attachment ID:453056
+09-02-2021 @ 19:50:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-2.jpg
+09-02-2021 @ 19:50:17 - Attachment ID:453057
+09-02-2021 @ 19:50:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-3.jpg
+09-02-2021 @ 19:50:18 - Attachment ID:453058
+09-02-2021 @ 19:50:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-4.jpg
+09-02-2021 @ 19:50:19 - Attachment ID:453059
+09-02-2021 @ 19:50:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-5.jpg
+09-02-2021 @ 19:50:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-5.jpg. Error: Not Found
+09-02-2021 @ 19:50:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-6.jpg
+09-02-2021 @ 19:50:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-6.jpg. Error: Not Found
+09-02-2021 @ 19:50:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-7.jpg
+09-02-2021 @ 19:50:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-7.jpg. Error: Not Found
+09-02-2021 @ 19:50:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-8.jpg
+09-02-2021 @ 19:50:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-8.jpg. Error: Not Found
+09-02-2021 @ 19:50:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-9.jpg
+09-02-2021 @ 19:50:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-9.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-9.jpg. Error: Not Found
+09-02-2021 @ 19:50:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-10.jpg
+09-02-2021 @ 19:50:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-10.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-10.jpg. Error: Not Found
+09-02-2021 @ 19:50:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-11.jpg
+09-02-2021 @ 19:50:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-11.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Weave-11.jpg. Error: Not Found
+09-02-2021 @ 19:50:27 - Row :5 - Product updated successfully.
+09-02-2021 @ 19:50:27 - Row :6 - Parsing item.
+09-02-2021 @ 19:50:27 - Row :6 - Processing item.
+09-02-2021 @ 19:50:27 - Found simple product object. ID:452978
+09-02-2021 @ 19:50:27 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather.jpg
+09-02-2021 @ 19:50:28 - Attachment ID:453060
+09-02-2021 @ 19:50:28 - Setting Gallery Images.
+09-02-2021 @ 19:50:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-1.jpg
+09-02-2021 @ 19:50:29 - Attachment ID:453061
+09-02-2021 @ 19:50:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-2.jpg
+09-02-2021 @ 19:50:30 - Attachment ID:453062
+09-02-2021 @ 19:50:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-3.jpg
+09-02-2021 @ 19:50:31 - Attachment ID:453063
+09-02-2021 @ 19:50:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-4.jpg
+09-02-2021 @ 19:50:32 - Attachment ID:453064
+09-02-2021 @ 19:50:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-5.jpg
+09-02-2021 @ 19:50:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-5.jpg. Error: Not Found
+09-02-2021 @ 19:50:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-6.jpg
+09-02-2021 @ 19:50:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-6.jpg. Error: Not Found
+09-02-2021 @ 19:50:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-7.jpg
+09-02-2021 @ 19:50:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-7.jpg. Error: Not Found
+09-02-2021 @ 19:50:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-8.jpg
+09-02-2021 @ 19:50:36 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-8.jpg. Error: Not Found
+09-02-2021 @ 19:50:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-9.jpg
+09-02-2021 @ 19:50:37 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-9.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-9.jpg. Error: Not Found
+09-02-2021 @ 19:50:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-10.jpg
+09-02-2021 @ 19:50:38 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-10.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-10.jpg. Error: Not Found
+09-02-2021 @ 19:50:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-11.jpg
+09-02-2021 @ 19:50:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-11.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Luca-Limoncello-Feather-11.jpg. Error: Not Found
+09-02-2021 @ 19:50:39 - Row :6 - Product updated successfully.
+09-02-2021 @ 19:50:39 - Row :7 - Parsing item.
+09-02-2021 @ 19:50:39 - Row :7 - Processing item.
+09-02-2021 @ 19:50:39 - Found simple product object. ID:452979
+09-02-2021 @ 19:50:39 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave.jpg
+09-02-2021 @ 19:50:40 - Attachment ID:453065
+09-02-2021 @ 19:50:40 - Setting Gallery Images.
+09-02-2021 @ 19:50:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-1.jpg
+09-02-2021 @ 19:50:41 - Attachment ID:453066
+09-02-2021 @ 19:50:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-2.jpg
+09-02-2021 @ 19:50:42 - Attachment ID:453067
+09-02-2021 @ 19:50:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-3.jpg
+09-02-2021 @ 19:50:43 - Attachment ID:453068
+09-02-2021 @ 19:50:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-4.jpg
+09-02-2021 @ 19:50:44 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-4.jpg. Error: Not Found
+09-02-2021 @ 19:50:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-5.jpg
+09-02-2021 @ 19:50:45 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-5.jpg. Error: Not Found
+09-02-2021 @ 19:50:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-6.jpg
+09-02-2021 @ 19:50:46 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-6.jpg. Error: Not Found
+09-02-2021 @ 19:50:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-7.jpg
+09-02-2021 @ 19:50:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-7.jpg. Error: Not Found
+09-02-2021 @ 19:50:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-8.jpg
+09-02-2021 @ 19:50:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-8.jpg. Error: Not Found
+09-02-2021 @ 19:50:48 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-9.jpg
+09-02-2021 @ 19:50:49 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-9.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-9.jpg. Error: Not Found
+09-02-2021 @ 19:50:49 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-10.jpg
+09-02-2021 @ 19:50:50 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-10.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-10.jpg. Error: Not Found
+09-02-2021 @ 19:50:50 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-11.jpg
+09-02-2021 @ 19:50:51 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-11.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Weave-11.jpg. Error: Not Found
+09-02-2021 @ 19:50:51 - Row :7 - Product updated successfully.
+09-02-2021 @ 19:50:51 - Row :8 - Parsing item.
+09-02-2021 @ 19:50:51 - Row :8 - Processing item.
+09-02-2021 @ 19:50:51 - Found simple product object. ID:452980
+09-02-2021 @ 19:50:51 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather.jpg
+09-02-2021 @ 19:50:52 - Attachment ID:453069
+09-02-2021 @ 19:50:52 - Setting Gallery Images.
+09-02-2021 @ 19:50:52 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-1.jpg
+09-02-2021 @ 19:50:53 - Attachment ID:453070
+09-02-2021 @ 19:50:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-2.jpg
+09-02-2021 @ 19:50:54 - Attachment ID:453071
+09-02-2021 @ 19:50:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-3.jpg
+09-02-2021 @ 19:50:55 - Attachment ID:453072
+09-02-2021 @ 19:50:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-4.jpg
+09-02-2021 @ 19:50:56 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-4.jpg. Error: Not Found
+09-02-2021 @ 19:50:56 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-5.jpg
+09-02-2021 @ 19:50:57 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-5.jpg. Error: Not Found
+09-02-2021 @ 19:50:57 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-6.jpg
+09-02-2021 @ 19:50:58 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-6.jpg. Error: Not Found
+09-02-2021 @ 19:50:58 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-7.jpg
+09-02-2021 @ 19:50:59 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-7.jpg. Error: Not Found
+09-02-2021 @ 19:50:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-8.jpg
+09-02-2021 @ 19:51:00 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-8.jpg. Error: Not Found
+09-02-2021 @ 19:51:00 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-9.jpg
+09-02-2021 @ 19:51:01 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-9.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-9.jpg. Error: Not Found
+09-02-2021 @ 19:51:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-10.jpg
+09-02-2021 @ 19:51:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-10.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-10.jpg. Error: Not Found
+09-02-2021 @ 19:51:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-11.jpg
+09-02-2021 @ 19:51:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-11.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Byblos-Limoncello-Feather-11.jpg. Error: Not Found
+09-02-2021 @ 19:51:03 - Row :8 - Product updated successfully.
+09-02-2021 @ 19:51:03 - Row :9 - Parsing item.
+09-02-2021 @ 19:51:03 - Row :9 - Processing item.
+09-02-2021 @ 19:51:03 - Found simple product object. ID:452981
+09-02-2021 @ 19:51:03 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave.jpg
+09-02-2021 @ 19:51:04 - Attachment ID:453073
+09-02-2021 @ 19:51:04 - Setting Gallery Images.
+09-02-2021 @ 19:51:04 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-1.jpg
+09-02-2021 @ 19:51:06 - Attachment ID:453074
+09-02-2021 @ 19:51:06 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-2.jpg
+09-02-2021 @ 19:51:07 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-2.jpg. Error: Not Found
+09-02-2021 @ 19:51:07 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-3.jpg
+09-02-2021 @ 19:51:08 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-3.jpg. Error: Not Found
+09-02-2021 @ 19:51:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-4.jpg
+09-02-2021 @ 19:51:09 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-4.jpg. Error: Not Found
+09-02-2021 @ 19:51:09 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-5.jpg
+09-02-2021 @ 19:51:10 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-5.jpg. Error: Not Found
+09-02-2021 @ 19:51:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-6.jpg
+09-02-2021 @ 19:51:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-6.jpg. Error: Not Found
+09-02-2021 @ 19:51:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-7.jpg
+09-02-2021 @ 19:51:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-7.jpg. Error: Not Found
+09-02-2021 @ 19:51:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-8.jpg
+09-02-2021 @ 19:51:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-8.jpg. Error: Not Found
+09-02-2021 @ 19:51:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-9.jpg
+09-02-2021 @ 19:51:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-9.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-9.jpg. Error: Not Found
+09-02-2021 @ 19:51:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-10.jpg
+09-02-2021 @ 19:51:14 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-10.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-10.jpg. Error: Not Found
+09-02-2021 @ 19:51:14 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-11.jpg
+09-02-2021 @ 19:51:15 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-11.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-11.jpg. Error: Not Found
+09-02-2021 @ 19:51:16 - Row :9 - Product updated successfully.
+09-02-2021 @ 19:51:16 - Row :10 - Parsing item.
+09-02-2021 @ 19:51:16 - Row :10 - Processing item.
+09-02-2021 @ 19:51:16 - Found simple product object. ID:452982
+09-02-2021 @ 19:51:16 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm.jpg
+09-02-2021 @ 19:51:17 - Attachment ID:453075
+09-02-2021 @ 19:51:17 - Setting Gallery Images.
+09-02-2021 @ 19:51:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-1.jpg
+09-02-2021 @ 19:51:18 - Attachment ID:453076
+09-02-2021 @ 19:51:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-2.jpg
+09-02-2021 @ 19:51:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-2.jpg. Error: Not Found
+09-02-2021 @ 19:51:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-3.jpg
+09-02-2021 @ 19:51:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-3.jpg. Error: Not Found
+09-02-2021 @ 19:51:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-4.jpg
+09-02-2021 @ 19:51:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-4.jpg. Error: Not Found
+09-02-2021 @ 19:51:21 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-5.jpg
+09-02-2021 @ 19:51:23 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-5.jpg. Error: Not Found
+09-02-2021 @ 19:51:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-6.jpg
+09-02-2021 @ 19:51:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-6.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-6.jpg. Error: Not Found
+09-02-2021 @ 19:51:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-7.jpg
+09-02-2021 @ 19:51:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-7.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-7.jpg. Error: Not Found
+09-02-2021 @ 19:51:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-8.jpg
+09-02-2021 @ 19:51:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-8.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-8.jpg. Error: Not Found
+09-02-2021 @ 19:51:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-9.jpg
+09-02-2021 @ 19:51:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-9.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-9.jpg. Error: Not Found
+09-02-2021 @ 19:51:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-10.jpg
+09-02-2021 @ 19:51:27 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-10.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-10.jpg. Error: Not Found
+09-02-2021 @ 19:51:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-11.jpg
+09-02-2021 @ 19:51:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-11.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/Weave/WK-Como-Limoncello-Weave-50cm-11.jpg. Error: Not Found
+09-02-2021 @ 19:51:29 - Row :10 - Product updated successfully.

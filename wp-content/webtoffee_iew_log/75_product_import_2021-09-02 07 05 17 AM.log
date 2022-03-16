@@ -1,0 +1,153 @@
+09-02-2021 @ 19:05:17 - ---[ New import started at 2021-09-02 07:05:17 ] PHP Memory: 768 MB, WP Memory: 40 MB
+09-02-2021 @ 19:05:17 - Preparing for import.
+09-02-2021 @ 19:05:17 - Row :1 - Parsing item.
+09-02-2021 @ 19:05:17 - Row :1 - Processing item.
+09-02-2021 @ 19:05:17 - Found simple product object. ID:452938
+09-02-2021 @ 19:05:17 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT001.jpg
+09-02-2021 @ 19:05:20 - Attachment ID:452949
+09-02-2021 @ 19:05:20 - Setting Gallery Images.
+09-02-2021 @ 19:05:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT001-1.jpg
+09-02-2021 @ 19:05:22 - Attachment ID:452950
+09-02-2021 @ 19:05:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT001-2.jpg
+09-02-2021 @ 19:05:24 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT001-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT001-2.jpg. Error: Not Found
+09-02-2021 @ 19:05:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT001-3.jpg
+09-02-2021 @ 19:05:25 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT001-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT001-3.jpg. Error: Not Found
+09-02-2021 @ 19:05:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT001-4.jpg
+09-02-2021 @ 19:05:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT001-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT001-4.jpg. Error: Not Found
+09-02-2021 @ 19:05:26 - Row :1 - Product updated successfully.
+09-02-2021 @ 19:05:26 - Row :2 - Parsing item.
+09-02-2021 @ 19:05:26 - Row :2 - Processing item.
+09-02-2021 @ 19:05:26 - Found simple product object. ID:452939
+09-02-2021 @ 19:05:26 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002.jpg
+09-02-2021 @ 19:05:29 - Attachment ID:452951
+09-02-2021 @ 19:05:29 - Setting Gallery Images.
+09-02-2021 @ 19:05:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-1.jpg
+09-02-2021 @ 19:05:30 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-1.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-1.jpg. Error: Not Found
+09-02-2021 @ 19:05:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-2.jpg
+09-02-2021 @ 19:05:31 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-2.jpg. Error: Not Found
+09-02-2021 @ 19:05:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-3.jpg
+09-02-2021 @ 19:05:32 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-3.jpg. Error: Not Found
+09-02-2021 @ 19:05:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-4.jpg
+09-02-2021 @ 19:05:33 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT002-4.jpg. Error: Not Found
+09-02-2021 @ 19:05:33 - Row :2 - Product updated successfully.
+09-02-2021 @ 19:05:33 - Row :3 - Parsing item.
+09-02-2021 @ 19:05:33 - Row :3 - Processing item.
+09-02-2021 @ 19:05:33 - Found simple product object. ID:452940
+09-02-2021 @ 19:05:33 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT003.jpg
+09-02-2021 @ 19:05:36 - Attachment ID:452952
+09-02-2021 @ 19:05:36 - Setting Gallery Images.
+09-02-2021 @ 19:05:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT003-1.jpg
+09-02-2021 @ 19:05:38 - Attachment ID:452953
+09-02-2021 @ 19:05:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT003-2.jpg
+09-02-2021 @ 19:05:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT003-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT003-2.jpg. Error: Not Found
+09-02-2021 @ 19:05:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT003-3.jpg
+09-02-2021 @ 19:05:39 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT003-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT003-3.jpg. Error: Not Found
+09-02-2021 @ 19:05:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT003-4.jpg
+09-02-2021 @ 19:05:40 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT003-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT003-4.jpg. Error: Not Found
+09-02-2021 @ 19:05:41 - Row :3 - Product updated successfully.
+09-02-2021 @ 19:05:41 - Row :4 - Parsing item.
+09-02-2021 @ 19:05:41 - Row :4 - Processing item.
+09-02-2021 @ 19:05:41 - Found simple product object. ID:452941
+09-02-2021 @ 19:05:41 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT004.jpg
+09-02-2021 @ 19:05:43 - Attachment ID:452954
+09-02-2021 @ 19:05:43 - Setting Gallery Images.
+09-02-2021 @ 19:05:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT004-1.jpg
+09-02-2021 @ 19:05:45 - Attachment ID:452955
+09-02-2021 @ 19:05:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT004-2.jpg
+09-02-2021 @ 19:05:47 - Attachment ID:452956
+09-02-2021 @ 19:05:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT004-3.jpg
+09-02-2021 @ 19:05:47 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT004-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT004-3.jpg. Error: Not Found
+09-02-2021 @ 19:05:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT004-4.jpg
+09-02-2021 @ 19:05:48 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT004-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT004-4.jpg. Error: Not Found
+09-02-2021 @ 19:05:49 - Row :4 - Product updated successfully.
+09-02-2021 @ 19:05:49 - Row :5 - Parsing item.
+09-02-2021 @ 19:05:49 - Row :5 - Processing item.
+09-02-2021 @ 19:05:49 - Found simple product object. ID:452942
+09-02-2021 @ 19:05:49 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT005.jpg
+09-02-2021 @ 19:05:51 - Attachment ID:452957
+09-02-2021 @ 19:05:51 - Setting Gallery Images.
+09-02-2021 @ 19:05:51 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT005-1.jpg
+09-02-2021 @ 19:05:53 - Attachment ID:452958
+09-02-2021 @ 19:05:53 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT005-2.jpg
+09-02-2021 @ 19:05:54 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT005-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT005-2.jpg. Error: Not Found
+09-02-2021 @ 19:05:54 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT005-3.jpg
+09-02-2021 @ 19:05:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT005-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT005-3.jpg. Error: Not Found
+09-02-2021 @ 19:05:55 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT005-4.jpg
+09-02-2021 @ 19:05:55 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT005-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT005-4.jpg. Error: Not Found
+09-02-2021 @ 19:05:56 - Row :5 - Product updated successfully.
+09-02-2021 @ 19:05:56 - Row :6 - Parsing item.
+09-02-2021 @ 19:05:56 - Row :6 - Processing item.
+09-02-2021 @ 19:05:56 - Found simple product object. ID:452943
+09-02-2021 @ 19:05:56 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT006.jpg
+09-02-2021 @ 19:05:59 - Attachment ID:452959
+09-02-2021 @ 19:05:59 - Setting Gallery Images.
+09-02-2021 @ 19:05:59 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT006-1.jpg
+09-02-2021 @ 19:06:01 - Attachment ID:452960
+09-02-2021 @ 19:06:01 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT006-2.jpg
+09-02-2021 @ 19:06:02 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT006-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT006-2.jpg. Error: Not Found
+09-02-2021 @ 19:06:02 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT006-3.jpg
+09-02-2021 @ 19:06:03 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT006-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT006-3.jpg. Error: Not Found
+09-02-2021 @ 19:06:03 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT006-4.jpg
+09-02-2021 @ 19:06:04 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT006-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT006-4.jpg. Error: Not Found
+09-02-2021 @ 19:06:05 - Row :6 - Product updated successfully.
+09-02-2021 @ 19:06:05 - Row :7 - Parsing item.
+09-02-2021 @ 19:06:05 - Row :7 - Processing item.
+09-02-2021 @ 19:06:05 - Found simple product object. ID:452944
+09-02-2021 @ 19:06:05 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT101.jpg
+09-02-2021 @ 19:06:08 - Attachment ID:452961
+09-02-2021 @ 19:06:08 - Setting Gallery Images.
+09-02-2021 @ 19:06:08 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT101-1.jpg
+09-02-2021 @ 19:06:10 - Attachment ID:452962
+09-02-2021 @ 19:06:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT101-2.jpg
+09-02-2021 @ 19:06:11 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT101-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT101-2.jpg. Error: Not Found
+09-02-2021 @ 19:06:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT101-3.jpg
+09-02-2021 @ 19:06:12 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT101-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT101-3.jpg. Error: Not Found
+09-02-2021 @ 19:06:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT101-4.jpg
+09-02-2021 @ 19:06:13 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT101-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT101-4.jpg. Error: Not Found
+09-02-2021 @ 19:06:13 - Row :7 - Product updated successfully.
+09-02-2021 @ 19:06:13 - Row :8 - Parsing item.
+09-02-2021 @ 19:06:13 - Row :8 - Processing item.
+09-02-2021 @ 19:06:14 - Found simple product object. ID:452945
+09-02-2021 @ 19:06:14 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT102.jpg
+09-02-2021 @ 19:06:16 - Attachment ID:452963
+09-02-2021 @ 19:06:16 - Setting Gallery Images.
+09-02-2021 @ 19:06:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT102-1.jpg
+09-02-2021 @ 19:06:18 - Attachment ID:452964
+09-02-2021 @ 19:06:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT102-2.jpg
+09-02-2021 @ 19:06:19 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT102-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT102-2.jpg. Error: Not Found
+09-02-2021 @ 19:06:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT102-3.jpg
+09-02-2021 @ 19:06:20 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT102-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT102-3.jpg. Error: Not Found
+09-02-2021 @ 19:06:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT102-4.jpg
+09-02-2021 @ 19:06:21 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT102-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT102-4.jpg. Error: Not Found
+09-02-2021 @ 19:06:21 - Row :8 - Product updated successfully.
+09-02-2021 @ 19:06:21 - Row :9 - Parsing item.
+09-02-2021 @ 19:06:21 - Row :9 - Processing item.
+09-02-2021 @ 19:06:21 - Found simple product object. ID:452946
+09-02-2021 @ 19:06:21 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT103.jpg
+09-02-2021 @ 19:06:24 - Attachment ID:452965
+09-02-2021 @ 19:06:24 - Setting Gallery Images.
+09-02-2021 @ 19:06:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT103-1.jpg
+09-02-2021 @ 19:06:26 - Attachment ID:452966
+09-02-2021 @ 19:06:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT103-2.jpg
+09-02-2021 @ 19:06:26 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT103-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT103-2.jpg. Error: Not Found
+09-02-2021 @ 19:06:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT103-3.jpg
+09-02-2021 @ 19:06:27 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT103-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT103-3.jpg. Error: Not Found
+09-02-2021 @ 19:06:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT103-4.jpg
+09-02-2021 @ 19:06:28 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT103-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT103-4.jpg. Error: Not Found
+09-02-2021 @ 19:06:28 - Row :9 - Product updated successfully.
+09-02-2021 @ 19:06:28 - Row :10 - Parsing item.
+09-02-2021 @ 19:06:28 - Row :10 - Processing item.
+09-02-2021 @ 19:06:28 - Found simple product object. ID:452947
+09-02-2021 @ 19:06:28 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT104.jpg
+09-02-2021 @ 19:06:31 - Attachment ID:452967
+09-02-2021 @ 19:06:31 - Setting Gallery Images.
+09-02-2021 @ 19:06:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT104-1.jpg
+09-02-2021 @ 19:06:33 - Attachment ID:452968
+09-02-2021 @ 19:06:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT104-2.jpg
+09-02-2021 @ 19:06:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT104-2.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT104-2.jpg. Error: Not Found
+09-02-2021 @ 19:06:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT104-3.jpg
+09-02-2021 @ 19:06:34 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT104-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT104-3.jpg. Error: Not Found
+09-02-2021 @ 19:06:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT104-4.jpg
+09-02-2021 @ 19:06:35 - URL:https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT104-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/2021/khroma/ZO-LOT104-4.jpg. Error: Not Found
+09-02-2021 @ 19:06:36 - Row :10 - Product updated successfully.
+09-02-2021 @ 19:06:36 - ---[ Import ended at 2021-09-02 07:06:36]---
