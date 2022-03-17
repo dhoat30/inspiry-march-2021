@@ -22,8 +22,6 @@ $gClient->setClientSecret("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");
 $gClient->setApplicationName("Inspiry Local and Live");
 $gClient->setState($_GET['redirect-link']);
 
-
-
     if (strstr($_SERVER['SERVER_NAME'], 'localhost')) {
         $gClient->setRedirectUri("https://localhost/wp-admin/admin-ajax.php?action=vm_login_google");
     }
@@ -32,7 +30,6 @@ $gClient->setState($_GET['redirect-link']);
     }
 
 $gClient->addScope("https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email");
-
 
 // login URL
 $login_url = $gClient->createAuthUrl();
@@ -80,21 +77,8 @@ function vm_login_with_google(){
 
 // google login 
 // add ajax action
-$redirectLink = ""; 
-    if($_GET['redirect-link']){ 
-        $redirectLink = $_GET['redirect-link']; 
-    }
-    else{ 
-        $redirectLink = home_url();
-    }
-   
 
-    add_action('wp_ajax_vm_login_google', 
-		  function() use ($redirectLink){
-			  vm_login_google($redirectLink); 
-    });
-
-function vm_login_google($redirectLink){
+function vm_login_google(){
 	global $wp;
     // echo "fffff";
     global $gClient;
@@ -175,7 +159,6 @@ function add_google_ajax_actions(){
     add_action('wp_ajax_nopriv_vm_login_google', 'vm_login_google');
 }
 add_action('admin_init', 'add_google_ajax_actions');
-
 
 // get jwt auth token 
 function jwtTokenGoogleLogin($username, $password){

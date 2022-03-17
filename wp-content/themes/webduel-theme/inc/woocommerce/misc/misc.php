@@ -118,3 +118,12 @@ function change_attachement_image_attributes( $attr, $attachment ){
     $attr['title'] = $title;
     return $attr;
 }
+
+
+// send user to home page after logout 
+add_action('wp_logout','auto_redirect_after_logout');
+
+function auto_redirect_after_logout(){
+  wp_safe_redirect( home_url() );
+  exit;
+}

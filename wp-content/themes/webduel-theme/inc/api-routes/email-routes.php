@@ -34,10 +34,37 @@ function email_route() {
 			"callback" => "feedbackEmail"
 		));
 
+		// contact form email
+		register_rest_route("inspiry/v1/", "windcave-success", array(
+			"methods" => "GET",
+			"callback" => "wincaveSuccess"
+		));
 
+		// contact form email
+		register_rest_route("inspiry/v1/", "windcave-fail", array(
+			"methods" => "GET",
+			"callback" => "windcaveFail"
+		));
+}
+function wincaveSuccess($data){ 
+		$boardName = 'testing boards';
+		$publishStatus =  "private";
 
+		   wp_insert_post(array(
+			  "post_type" => "boards", 
+			  "post_status" => $publishStatus, 
+			  "post_title" => $boardName,
+			  'post_content' => $data['sessionId']
+	   )); 
+	  
+	return 200; 
 }
 
+function windcaveFail(){ 
+	wp_redirect('https://localhost/product-category/furniture/dining-kitchen-furniture/'); 
+	exit;
+	return 200; 
+}
 // send email to trade professional 
 function professionalEmail($data) {
     $name = sanitize_text_field($data["name"]);

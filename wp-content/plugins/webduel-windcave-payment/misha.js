@@ -10,8 +10,7 @@ var successCallback = function (data) {
     checkout_form.find('#windcave_session_id').val(data);
     // deactivate the tokenRequest function event
     checkout_form.off('checkout_place_order');
-    // hide submit button
-    $('.windcave-submit-button').hide()
+
 
     // send request to api to check the transaction status before submiting a form 
     $.ajax({
@@ -83,6 +82,7 @@ var tokenRequest = function (e) {
                 if (isValid) {
                     console.log(isValid)
                     // if the credit card is valid, submit the form 
+                    $('.windcave-submit-button').hide()
                     WindcavePayments.Seamless.submit({
                         onProcessed: function (response) {
                             console.log(response)

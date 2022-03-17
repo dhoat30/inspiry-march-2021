@@ -41,7 +41,18 @@ function signInModal()
                     <span>View Saved Items </span>
                 </a>
             </li>
-
+            <?php 
+            if (is_user_logged_in()) {
+                ?>
+                     <li class="list-item">
+                <a href="<?php echo get_home_url() ?>/wp-login.php?action=logout" class="anchor">
+                <i class="fa-light fa-arrow-right-from-bracket"></i>
+                    <span>Sign Out </span>
+                </a>
+            </li>
+                <?php
+                }?>
+           
         </ul>
     </div>
 <?php

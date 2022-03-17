@@ -211,9 +211,10 @@ function wc_offline_gateway_init() {
 			 \"amount\": \"$totalAmount\",
 			 \"currency\": \"NZD\",
 			 \"callbackUrls\": {
-				\"approved\": \"http://localhost/\",
-				\"declined\": \"http://localhost/checkout/\"
-			 }
+				\"approved\": \"https://inspiry.co.nz/\",
+				\"declined\": \"https://inspiry.co.nz/\"
+			 },
+			 \"notificationUrl\": \"https://inspiry.co.nz/wp-json/inspiry/v1/windcave-success\"
 			 }");
 		  
 			 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
@@ -326,9 +327,6 @@ function wc_offline_gateway_init() {
 
 					return;
 				}
-
-			
-
 		}
 	
   } // end \WD_Windcave_Gateway class
