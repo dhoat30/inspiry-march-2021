@@ -23,7 +23,7 @@ class Image_Deleted extends Base_Event
     {
         try{
             $imageMeta = new Image_Meta( $attachmentId );
-           
+            
             foreach ( $imageMeta->getSizeNames() as $sizeName ) {
                 wp_delete_file( $imageMeta->getSizeFullPath( $sizeName, 'webp' ) );
             }

@@ -177,6 +177,14 @@ if (!class_exists('\WP_Smart_Image_Resize\Plugin')) :
             require_once WP_SIR_DIR . 'src/Admin.php';
             require_once WP_SIR_DIR . 'src/Media_Library.php';
             require_once WP_SIR_DIR . 'src/Background_Process_On_Post_Save.php';
+            // require_once WP_SIR_DIR . 'src/plugin-support/wpml.php';
+            require_once WP_SIR_DIR . 'src/plugin-support/woocommerce.php';
+            require_once WP_SIR_DIR . 'src/plugin-support/jetpack.php';
+            require_once WP_SIR_DIR . 'src/plugin-support/regenerate-thumbnails.php';
+
+            /* LITE-ONLY: START */
+            // require_once WP_SIR_DIR . 'src/class-plugin-review-request-notice.php';
+            /* LITE-ONLY: END */
 
             if (extension_loaded('fileinfo')) {
                 Image_Editor::get_instance()->run();

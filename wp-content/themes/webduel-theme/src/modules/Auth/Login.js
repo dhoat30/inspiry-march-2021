@@ -19,13 +19,13 @@ class Login {
         const urlParams = new URLSearchParams(queryString);
         const redirectLink = urlParams.get('redirect-link')
 
-        $('form#login p.status').show().text(ajax_login_object.loadingmessage);
+        $('form#login p.status').show().text(inspiryData.loadingmessage);
         $('.login-page #login .primary-button').html('<div class="loader-icon loader--visible"></div>')
-        console.log('sending request ')
+        console.log(inspiryData.ajaxurl)
         $.ajax({
             type: 'POST',
             dataType: 'json',
-            url: ajax_login_object.ajaxurl,
+            url: inspiryData.ajaxurl,
             data: {
                 'action': 'ajaxlogin', //calls wp_ajax_nopriv_ajaxlogin
                 'username': $('form#login #username').val(),

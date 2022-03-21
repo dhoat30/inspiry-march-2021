@@ -14,6 +14,7 @@ use WP_Smart_Image_Resize\Utilities\File;
  * Class WP_Smart_Image_Resize\Image_Editor
  *
  * @package WP_Smart_Image_Resize\Inc
+ * 
  */
 
 defined('ABSPATH') || exit;
@@ -47,16 +48,7 @@ if (!class_exists('\WP_Smart_Image_Resize\Image_Editor')) :
         public function run() {
 
             // A low priority < 10 to let plugins optimize thumbnails.
-            add_filter('wp_generate_attachment_metadata', [$this, 'processImage'], 9, 2);
-
-            // Prevent WooCommerce from resizeing images on the fly.
-            add_filter('woocommerce_image_sizes_to_resize', '__return_empty_array');
-
-            // Disable photon.
-            add_filter('jetpack_photon_skip_image', '__return_true');
-
-            // Don't use remotely-resized images with Jetpack Photon.
-            add_filter('jetpack_photon_override_image_downsize', '__return_true', 19);
+            add_filter('wp_generate_attachment_metadata', [$this, 'processImage'],9, 2);
 
             // Force 1:1 size for single product thumbnail.
             // @see  force_square_woocommerce_single()
@@ -66,7 +58,6 @@ if (!class_exists('\WP_Smart_Image_Resize\Image_Editor')) :
             // @see force_woocommerce_single()
             add_filter('woocommerce_gallery_image_size', [$this, 'forceWooCommerceSingle'], PHP_INT_MAX);
 
-            add_filter('regenerate_thumbnails_options_onlymissingthumbnails', '__return_false');
         }
 
         /**
@@ -175,7 +166,7 @@ if (!class_exists('\WP_Smart_Image_Resize\Image_Editor')) :
 
                 $image->filter(new Trim_Filter($imageMeta));
                 
-                $image->filter(new CreateWebP_Filter($imageMeta->getOriginalFullPath('webp'), 'full',$imageMeta));
+                $image->filter(new CreateWebP_Filter($imageMeta->getOriginalFullPath('webp'), 'full', $imageMeta));
                 
 
                 $imageMeta->setBackup();
@@ -183,17 +174,21 @@ if (!class_exists('\WP_Smart_Image_Resize\Image_Editor')) :
                 $imageMeta->clearSizes();
                 $sameSizes = [];
 
-                $skipped_sizes = [];
+                $excluded_sizes = [];
 
-                foreach (_wp_sir_get_sizes_to_generate() as $sizeName => $sizeData) {
+                $processed_at  = time();
+
+                $excluded_size_names = _wp_sir_get_excluded_sizes();
+                $sizes = _wp_sir_get_sizes_to_generate();
+                foreach ($sizes as $sizeName => $sizeData) {
 
                     @set_time_limit(0);
-                    $fit_mode = _wp_sir_get_size_fit_mode($sizeName);
 
-                    if ($fit_mode === 'none') {
-
+                    if (in_array($sizeName, $excluded_size_names)) {
                         if (!empty($metadata['sizes'][$sizeName])) {
-                            $skipped_sizes[$sizeName] = $metadata['sizes'][$sizeName];
+                            $excluded_sizes[$sizeName] = $metadata['sizes'][$sizeName];
+                            $excluded_sizes[$sizeName]['_processed_by'] = WP_SIR_VERSION;
+                            $excluded_sizes[$sizeName]['_processed_at'] = $processed_at;
                         }
 
                         continue;
@@ -207,12 +202,12 @@ if (!class_exists('\WP_Smart_Image_Resize\Image_Editor')) :
                     }
 
                     $thumb_object = clone $image;
-                    $thumb_object = $thumb_object->filter(new Thumbnail_Filter($sizeName, $sizeData, $fit_mode));
+                    $thumb_object = $thumb_object->filter(new Thumbnail_Filter($sizeName, $sizeData));
                     
                     
                     $thumb_object->filter(new Watermark_Filter);
                     
-                    
+
                     $thumb_path = $this->generateThumbPath($image->basePath(), $sizeData, $sizeName, $imageId);
 
                     @unlink($thumb_path);
@@ -228,6 +223,8 @@ if (!class_exists('\WP_Smart_Image_Resize\Image_Editor')) :
                         'height'    => $thumb_object->getHeight(),
                         'file'      => $thumb_object->basename,
                         'mime-type' => $thumb_object->mime(),
+                        '_processed_at' => $processed_at,
+                        '_processed_by' => WP_SIR_VERSION,
                     ]);
 
                     $sameSizes[$sizeHash] = $sizeName;
@@ -242,32 +239,34 @@ if (!class_exists('\WP_Smart_Image_Resize\Image_Editor')) :
 
                 $image->destroy();
 
-                $imageMeta->markSizesRegenerated();
+                $imageMeta->markSizesRegenerated($processed_at);
 
                 $new_meta = $imageMeta->toArray();
-                $new_meta['sizes'] = array_merge($skipped_sizes, $new_meta['sizes']);
-                $this->deleteOrphanThumbnails($imageId, $metadata, $new_meta);
 
+                $new_meta['sizes'] = array_merge($excluded_sizes, $new_meta['sizes']);
+
+                $this->deleteOrphanThumbnails($imageId, $metadata, $new_meta);
+                
 
                 return $new_meta;
             } catch (Invalid_Image_Meta_Exception $e) {
                 return $metadata;
             } catch (Exception $e) {
-                
-                if(defined('WP_CLI') && WP_CLI) {
+
+                if (defined('WP_CLI') && WP_CLI) {
                     $msg = "Smart Image Resize: " . $e->getMessage();
-                    
-                    if(!empty($metadata['file'])){
+
+                    if (!empty($metadata['file'])) {
                         $msg .= " (Path: " . $metadata['file'] . ", ID: " . $imageId . ")";
                     }
-                    
+
                     \WP_CLI::warning($msg);
-                }else{
+                } else {
                     wp_send_json_error([
                         'message' => "Smart Image Resize: " . $e->getMessage()
                     ]);
                 }
-              
+
                 return $metadata;
             }
         }
@@ -275,7 +274,6 @@ if (!class_exists('\WP_Smart_Image_Resize\Image_Editor')) :
         private function deleteOrphanThumbnails($imageId, $oldMeta, $newMeta) {
             // Old file names to delete.
             $oldFileNames = [];
-
             // Since we prevent WP from generating any additional size via 
             // the filter `intermediate_image_sizes_advanced`, when a third-party triggers
             // the plugin the `$oldMeta[sizes]` won't contains unselected sizes
@@ -309,10 +307,22 @@ if (!class_exists('\WP_Smart_Image_Resize\Image_Editor')) :
             $uploadsPath  = wp_get_upload_dir()['basedir'];
             $imageDirPath = trailingslashit($uploadsPath) . trailingslashit(dirname($oldMeta['file']));
 
+
             foreach ($oldFileNames as $file) {
 
+                // Clean up WebP size if the "WebP Images" feature is disabled.
+                if (!wp_sir_get_settings()['enable_webp']) {
+
+                    $webp_file = File::mb_pathinfo($file, PATHINFO_FILENAME) . '.webp';
+
+                    // Check if the WebP file is not the same as the size or original file.
+                    if ($webp_file !== wp_basename($file) && $webp_file !== wp_basename($oldMeta['file'])) {
+                        @unlink($imageDirPath . $webp_file);
+                    }
+                }
+
                 // Prevent accidently deleting original image.
-                if ($file === basename($oldMeta['file'])) {
+                if ($file === wp_basename($oldMeta['file'])) {
                     continue;
                 }
 
@@ -323,7 +333,18 @@ if (!class_exists('\WP_Smart_Image_Resize\Image_Editor')) :
 
                     // Delete old WebP images if present.
                     $webp = $imageDirPath . File::mb_pathinfo($file, PATHINFO_FILENAME) . '.webp';
-                    @unlink($imageDirPath . $webp);
+                    @unlink($webp);
+                }
+            }
+
+            // Clean up full size WebP file if "WebP images" feature has been disabled.
+            if (!wp_sir_get_settings()['enable_webp']) {
+                $webp_file = File::mb_pathinfo($oldMeta['file'], PATHINFO_FILENAME) . '.webp';
+
+                // Only delete if original file is not the same as the WebP file
+                // to prevent accidently deleting the original file.
+                if ($webp_file !== wp_basename($oldMeta['file'])) {
+                    @unlink($imageDirPath . $webp_file);
                 }
             }
         }

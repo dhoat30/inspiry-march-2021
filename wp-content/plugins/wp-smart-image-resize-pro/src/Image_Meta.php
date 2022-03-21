@@ -356,12 +356,11 @@ class Image_Meta
 
     }
 
-    public function markSizesRegenerated()
+    public function markSizesRegenerated($processed_at)
     {
-        $processedAt = time();
-        $this->setMetaItem( '_processed_at', $processedAt );
+        $this->setMetaItem( '_processed_at', $processed_at );
         $this->setMetaItem( '_processed_by', WP_SIR_VERSION );
-        update_post_meta( $this->id, '_processed_at', $processedAt );
+        update_post_meta( $this->id, '_processed_at', $processed_at );
         update_post_meta( $this->id, '_processed_by', WP_SIR_VERSION );
     }
 

@@ -3,13 +3,6 @@
 //   ajax login 
 function ajax_login_init(){
 
-    wp_register_script('ajax-login-script', get_template_directory_uri() . '/build/index.js', array('jquery') ); 
-    wp_enqueue_script('ajax-login-script');
-  
-    wp_localize_script( 'ajax-login-script', 'ajax_login_object', array( 
-        'ajaxurl' => admin_url( 'admin-ajax.php' ),
-        'loadingmessage' => __('Sending user info, please wait...')
-    ));
   
     // Enable the user with no privileges to run ajax_login() in AJAX
     add_action( 'wp_ajax_nopriv_ajaxlogin', 'ajax_login' );

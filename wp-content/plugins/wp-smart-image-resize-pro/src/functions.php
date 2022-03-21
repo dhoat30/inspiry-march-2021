@@ -732,10 +732,48 @@ function _wp_sir_get_sizes_to_generate() {
  * @access private 
  * @internal
  */
-function _wp_sir_get_size_fit_mode($size_name) {
+function _wp_sir_exclude_size($size_name) {
+    return in_array($size_name, _wp_sir_get_excluded_sizes(), true);
+}
+
+
+function _wp_sir_get_excluded_sizes($filtered = true){
+
     $size_options = wp_sir_get_settings()['size_options'];
 
-    return empty($size_options[$size_name]['fit_mode'])
-           || $size_options[$size_name]['fit_mode'] === 'contain' ? 'contain' : 'none';
+    $excluded_sizes = [];
+    foreach($size_options as $size_name => $option){
+
+        if(!empty($option['fit_mode']) && $option['fit_mode'] !== 'contain'){
+            $excluded_sizes[] = $size_name;
+        }
+    }
+    
+    if ( $filtered ) {
+        $excluded_sizes = apply_filters('wp_sir_exclude_sizes', $excluded_sizes);
+
+        if (in_array('woocommerce_single', $excluded_sizes)) {
+            $excluded_sizes[] = 'shop_single';
+        }
+
+        if (in_array('woocommerce_thumbnail', $excluded_sizes)) {
+            $excluded_sizes[] = 'shop_catalog';
+        }
+        
+        if (in_array('woocommerce_gallery_thumbnail', $excluded_sizes)) {
+            $excluded_sizes[] = 'shop_thumbnail';
+        }
+
+        $excluded_sizes = array_unique($excluded_sizes);
+        
+        if (! $excluded_sizes) {
+            return [];
+        }
+
+        if (! is_array($excluded_sizes)) {
+            $excluded_sizes = (array) $excluded_sizes;
+        }
+    }
+     return $excluded_sizes;
 
 }

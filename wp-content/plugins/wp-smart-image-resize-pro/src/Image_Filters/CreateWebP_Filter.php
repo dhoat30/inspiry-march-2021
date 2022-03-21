@@ -34,6 +34,11 @@ class CreateWebP_Filter implements FilterInterface {
             return $image;
         }
 
+        // Already a WebP image, no need to create a new one.
+        if (strpos($image->mime, 'image/webp') !== false) {
+            return $image;
+        }
+
         try {
             @unlink($this->path);
             $webp_image = clone $image;

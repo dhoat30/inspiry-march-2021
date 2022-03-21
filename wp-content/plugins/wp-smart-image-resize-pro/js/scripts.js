@@ -207,6 +207,7 @@ var WP_SIR_UTIL = {
 
 
   $(document).on('change', '.wpSirSelectSize', function () {
+    
     $(this).closest('tr').find('input[type="number"]').prop('disabled', !$(this).is(':checked'));
     $(this).closest('tr').find('.wp-sir-fit-mode').prop('disabled', !$(this).is(':checked'));
     if ($(this).closest('tr').find('.wp-sir-fit-mode').is(':checked')) {
@@ -217,6 +218,7 @@ var WP_SIR_UTIL = {
   });
 
   $('.wpSirSelectSize').each(function () {
+   
     $(this).closest('tr').find('input[type=number]').prop('disabled', !$(this).is(':checked')).change();
     $(this).closest('tr').find('.wp-sir-fit-mode').prop('disabled', !$(this).is(':checked')).change();
     $(this).closest('tr').find('.wp-sir-fit-mode').each(function () {
@@ -227,7 +229,14 @@ var WP_SIR_UTIL = {
   });
 
   $('#wp-sir-toggle-all-sizes').on('change', function () {
-    $('.wpSirSelectSize').prop('checked', $(this).is(':checked')).change();
+    var $toggle = $(this);
+    $('.wpSirSelectSize').each(function(){
+      if(! $(this).is(':disabled')){
+        $(this).prop('checked', $toggle.is(':checked'));
+
+      }
+    });
+    $('.wpSirSelectSize').change();
   });
 
   $('.wp-sir-fit-mode').on('change', function () {

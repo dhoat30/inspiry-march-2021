@@ -163,6 +163,7 @@ if (!class_exists('\WP_Smart_Image_Resize\Settings')) :
                 'enable_webp' => 0,
                 'enable_trim' => 0,
                 'enable_watermark' => 0,
+                
             ];
 
             if (isset($newval['processable_images']['taxonomies'])) {
@@ -518,14 +519,17 @@ if (!class_exists('\WP_Smart_Image_Resize\Settings')) :
             $settings = \wp_sir_get_settings('view');
 
             $additional_sizes = wp_sir_get_additional_sizes('view');
+            $enable_fit_mode_option = ! empty(_wp_sir_get_excluded_sizes(false));
+
         ?>
 
 
             <div id="wp-sir-sizes-options" style="max-height: 500px;overflow-y: scroll;border-bottom: 1px solid #ddd;">
-                <table id="wp-sir-sizes-selector" data-defaults="<?php echo implode(',', _wp_sir_get_default_sizes()) ?>">
+                <table width="100%" id="wp-sir-sizes-selector" data-defaults="<?php echo implode(',', _wp_sir_get_default_sizes()) ?>">
                     <tr>
-                        <th style="padding-left:0;padding-top:5px !important; padding-bottom:5px !important;border-bottom:1px solid #ddd;margin-bottom:0 !important;"><input type="checkbox" id="wp-sir-toggle-all-sizes" <?php echo count($additional_sizes) === count($settings['sizes']) ? 'checked' : '' ?> /> Size</th>
-                        <th style="padding-left:0;padding-top:5px !important; padding-bottom:5px !important;border-bottom:1px solid #ddd;margin-bottom:0 !important;text-align:center">Use WordPress Cropping
+                        <th style="padding-left:0;padding-top:10px !important; padding-bottom:10px !important;border-bottom:1px solid #ddd;margin-bottom:0 !important;"><input type="checkbox" id="wp-sir-toggle-all-sizes" <?php echo (count($additional_sizes)) === count($settings['sizes']) ? 'checked' : '' ?> /> Select all</th>
+                        <?php if($enable_fit_mode_option): ?>
+                        <th style="padding-left:0;padding-top:10px !important; padding-bottom:10px !important;border-bottom:1px solid #ddd;margin-bottom:0 !important;text-align:center">Use WordPress Cropping
                         <?php $tooltip = "Check this to apply the thumbnail cropping setting under Settings → Media"; 
 
                         if(wp_sir_is_woocommerce_activated()){
@@ -536,12 +540,14 @@ if (!class_exists('\WP_Smart_Image_Resize\Settings')) :
                         ?>
                         <span class="wp-sir-help-tip" title="<?php echo $tooltip ?>"></span>
                     </th>
+                    <?php endif;?>
                         <?php if (wp_sir_is_woocommerce_activated()) : ?>
-                            <th style="padding-left:5px;padding-top:5px !important;padding-right:5px; padding-bottom:5px !important;border-bottom:1px solid #ddd;margin-bottom:0 !important; max-width:100px">Width</th>
-                            <th style="padding-left:0;padding-right:0;padding-top:5px !important; padding-bottom:5px !important;border-bottom:1px solid #ddd;margin-bottom:0 !important;max-width:100px">Height</th>
+                            <th style="padding-left:5px;padding-top:10px !important;padding-right:10px; padding-bottom:5px !important;border-bottom:1px solid #ddd;margin-bottom:0 !important; max-width:100px">Width</th>
+                            <th style="padding-left:0;padding-right:0;padding-top:10px !important; padding-bottom:10px !important;border-bottom:1px solid #ddd;margin-bottom:0 !important;max-width:100px">Height</th>
                         <?php endif; ?>
                     </tr>
                     <?php $i = 0;
+                   
                     foreach ($additional_sizes as $size_name => $size_data) :
                         if (!empty($settings['size_options'][$size_name]['width'])) {
                             $size_data['width'] = $settings['size_options'][$size_name]['width'];
@@ -549,21 +555,15 @@ if (!class_exists('\WP_Smart_Image_Resize\Settings')) :
                         if (!empty($settings['size_options'][$size_name]['height'])) {
                             $size_data['height'] = $settings['size_options'][$size_name]['height'];
                         }
-
-                        if(empty($settings['size_options'][$size_name]['fit_mode']) || $settings['size_options'][$size_name]['fit_mode'] === 'contain') {
-                            $fit_mode  = 'contain';
-                        }
-                        else{
-                            $fit_mode  = 'none';
-                        }
+                        
 
                     ?>
                         <tr>
-                            <td style="<?php echo wp_sir_is_woocommerce_activated() ? 'min-width:310px;' : '' ?>padding-left:0;padding-top:5px !important; padding-bottom:5px !important;<?php echo $i === count($additional_sizes) - 1 ? '' : 'border-bottom:1px solid #ddd' ?>;margin-bottom:0 !important; "><label title="" for="" style="display:flex;align-items:center;font-size:13px;">
+                            <td style="<?php echo wp_sir_is_woocommerce_activated() ? 'min-width:310px;' : '' ?>padding-left:0;padding-top:10px !important; padding-bottom:10px !important;margin-bottom:0 !important; "><label title="" for="" style="display:flex;align-items:center;font-size:13px;">
                                     <label style="display: block;width:100%">
-                                        
                                         <input
-                                        type="checkbox" class="wpSirSelectSize" value="<?php echo $size_name ?>" <?php echo in_array($size_name, $settings['sizes']) ? 'checked' : ''; ?> name="wp_sir_settings[sizes][]">
+                                        type="checkbox" class="wpSirSelectSize" value="<?php echo $size_name ?>" <?php echo in_array($size_name, $settings['sizes']) ? 'checked' : ''; ?> name="wp_sir_settings[sizes][]"
+                                        >
                                         <span><?php echo str_replace('_', ' ', ucfirst($size_name)) ?> (<?php echo $size_data['width'] . 'x' . $size_data['height'] ?>)</span>
                                         <?php if ($size_name === 'woocommerce_thumbnail') : ?>
                                             <span class="wp-sir-help-tip" title="Used in the product grids in places such as the shop page."></span>
@@ -580,21 +580,22 @@ if (!class_exists('\WP_Smart_Image_Resize\Settings')) :
                                     </label>
 
                             </td>
-
-                            <td style="text-align:center;padding-left:0;padding-right:0;padding-top:5px !important; padding-bottom:5px !important;<?php echo $i === count($additional_sizes) - 1 ? '' : 'border-bottom:1px solid #ddd' ?>;margin-bottom:0 !important;">
+                             <?php if($enable_fit_mode_option): ?>
+                            <td style="text-align:center;padding-left:0;padding-right:0;padding-top:5px !important; padding-bottom:5px !important;margin-bottom:0 !important;">
                                 <label>
                                     <input type="hidden" name="wp_sir_settings[size_options][<?php echo $size_name ?>][fit_mode]" value="contain">
                                     <input type="checkbox" class="wp-sir-fit-mode" name="wp_sir_settings[size_options][<?php echo $size_name ?>][fit_mode]" value="none" 
-                                    <?php echo $fit_mode === 'none'? 'checked': '' ?>
+                                    <?php echo _wp_sir_exclude_size($size_name, $settings['size_options']) ? 'checked': '' ?>
                                     >
                                 </label>
                             </td>
+                            <?php endif; ?>
                             <?php if (is_woocommerce_size($size_name)) : ?>
 
-                                <td class="wp-sir-custom-dimensions" style="padding-left:5px;padding-right:5px;padding-top:5px !important; padding-bottom:5px !important;<?php echo $i === count($additional_sizes) - 1 ? '' : 'border-bottom:1px solid #ddd' ?>;margin-bottom:0 !important; max-width:100px">
+                                <td class="wp-sir-custom-dimensions" style="padding-left:5px;padding-right:5px;padding-top:5px !important; padding-bottom:5px !important;margin-bottom:0 !important; max-width:100px">
                                     <input type="number" value="<?php echo $size_data['width'] ?>" style="width:70px" name="wp_sir_settings[size_options][<?php echo $size_name ?>][width]">
                                 </td>
-                                <td class="wp-sir-custom-dimensions" style="padding-left:0;padding-right:0;padding-top:5px !important; padding-bottom:5px !important;<?php echo $i === count($additional_sizes) - 1 ? '' : 'border-bottom:1px solid #ddd' ?>;margin-bottom:0 !important; max-width:100px">
+                                <td class="wp-sir-custom-dimensions" style="padding-left:0;padding-right:0;padding-top:5px !important; padding-bottom:5px !important;margin-bottom:0 !important; max-width:100px">
                                     <input type="number" value="<?php echo $size_data['height'] ?>" style="width:70px" name="wp_sir_settings[size_options][<?php echo $size_name ?>][height]">
                                 </td>
 
@@ -608,9 +609,7 @@ if (!class_exists('\WP_Smart_Image_Resize\Settings')) :
                 </table>
             </div>
             <p class="description">
-                Use the list above to select which image sizes to generate.
-                <br>
-                NOTE: To save some disk space, only needed sizes are pre-selected. <button id="wpsirResetDefaultSizes" type="button" class="button-link">Reset to pre-selected sizes</button>
+                Select which image sizes to generate from the list above. To save disk space, only needed sizes are pre-selected. <button id="wpsirResetDefaultSizes" type="button" class="button-link">Reset to pre-selected sizes</button>
             </p>
         <?php
         }

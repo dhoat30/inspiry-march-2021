@@ -85,7 +85,9 @@ require get_theme_file_path('/inc/design-board-modal/design-board-modal.php');
     
     wp_localize_script("main", "inspiryData", array(
       "root_url" => get_site_url(),
-      "nonce" => wp_create_nonce("wp_rest")
+      "nonce" => wp_create_nonce("wp_rest"),
+      'loadingmessage' => __('Sending user info, please wait...'),
+      'ajaxurl' => admin_url( 'admin-ajax.php' )
     ));
 }
 add_action( "wp_enqueue_scripts", "inspiry_scripts" ); 

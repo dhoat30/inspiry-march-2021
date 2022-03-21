@@ -7,7 +7,6 @@ class Background_Thumbnails_Regeneration extends Base_Filter
     public function listen()
     {
         add_filter( 'woocommerce_regenerate_images_intermediate_image_sizes', [ $this, 'add_regeneratable_sizes' ] );
-        add_filter('woocommerce_background_image_regeneration', '__return_false');
     }
 
     /**

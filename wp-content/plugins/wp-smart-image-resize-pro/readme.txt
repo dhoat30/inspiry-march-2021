@@ -4,11 +4,11 @@ Tags: uniform images,same image size,woocommerce image resize,different image si
 Requires at least: 4.0
 Tested up to: 5.9
 WC requires at least: 3.0
-WC tested up to: 6.1
+WC tested up to: 6.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Requires PHP: 5.6
-Stable tag: 1.7.5.4
+Stable tag: 1.7.6.2
 
 Make WooCommerce products images the same size and uniform without cropping.
 
@@ -52,6 +52,17 @@ Make sure PHP extension `fileinfo` is enabled.
 
 == Changelog ==
 
+= 1.7.6.2 =
+
+* Fixed a conflict in v1.7.6 causing some plugins admin pages to not load properly
+
+= 1.7.6 =
+
+* Deleted the option "Use WordPress cropping" as it seems to be causing some confusion for many users. To prevent specific sizes from being resized by the plugin use the filter `wp_sir_exclude_sizes` to return an array of size names you want to exclude.
+* Fixed an issue with WebP files not deleted when the WebP feature is turned off.
+* Declared compatibility with WooCommerce 6.3
+* Added a work-around to fix a bug in Regenerate Thumbnails causing the latter to interfere with WPML.
+* Stability improvements
 
 = 1.7.5.4 =
 

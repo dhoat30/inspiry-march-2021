@@ -16,14 +16,12 @@ class Thumbnail_Filter implements FilterInterface {
      */
     protected $size_data;
     protected $size_name;
-    protected $fit_mode;
     protected $allow_upscale;
 
 
-    public function __construct($size_name, $size_data, $fit_mode) {
+    public function __construct($size_name, $size_data) {
         $this->size_data           = $size_data;
         $this->size_name           = $size_name;
-        $this->fit_mode            = $fit_mode;
 
         /**
          * Filter whether to upscale small original images.
@@ -32,7 +30,7 @@ class Thumbnail_Filter implements FilterInterface {
          * @param string $size_name 
          * @param array   $size_data Array of {width, height}
          */
-        $this->allow_upscale = (bool)apply_filters('wp_sir_maybe_upscale', true, $this->size_name, $this->size_data, $this->fit_mode);
+        $this->allow_upscale = (bool)apply_filters('wp_sir_maybe_upscale', true, $this->size_name, $this->size_data);
     }
 
 
@@ -92,33 +90,23 @@ class Thumbnail_Filter implements FilterInterface {
 
     public function applyFilter(Image $image) {
 
-        if ($this->fit_mode === 'contain') {
-
-            try {
-                return $this->maybe_use_imagick($image);
-            } catch (\Exception $e) {
-            }
-
-            // GD or Imagick failed.
-            $image->resize($this->size_data['width'], $this->size_data['height'], function ($constraint) {
-
-                /** @var $constraint Constraint */
-                // Preserve the original aspect-ratio of the given image.
-                $constraint->aspectRatio();
-
-                if (!$this->allow_upscale) {
-                    $constraint->upsize();
-                }
-            });
-
-            return $image->filter(new Recanvas_Filter($this->size_data));
-        } else {
-            /** @var $constraint Constraint */
-            return $image->fit($this->size_data['width'], $this->size_data['height'], function ($constraint) {
-                if (!$this->allow_upscale) {
-                    $constraint->upsize();
-                }
-            });
+        try {
+            return $this->maybe_use_imagick($image);
+        } catch (\Exception $e) {
         }
+
+        // GD or Imagick failed.
+        $image->resize($this->size_data['width'], $this->size_data['height'], function ($constraint) {
+
+            /** @var $constraint Constraint */
+            // Preserve the original aspect-ratio of the given image.
+            $constraint->aspectRatio();
+
+            if (!$this->allow_upscale) {
+                $constraint->upsize();
+            }
+        });
+
+        return $image->filter(new Recanvas_Filter($this->size_data));
     }
 }

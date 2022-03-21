@@ -16,7 +16,7 @@ class Image_Source extends Base_Filter {
         global $wp_version;
 
         
-
+        
         if (apply_filters('wp_sir_serve_webp_images', true)) {
             add_filter('wp_get_attachment_image_src', [$this, 'replaceSrcWebpExtension'], (PHP_INT_MAX - 1), 4);
             add_filter('wp_calculate_image_srcset_meta', [$this, 'replaceWebPExtensionSrcsetMetadata'], (PHP_INT_MAX - 1), 4);
@@ -30,34 +30,28 @@ class Image_Source extends Base_Filter {
         }
         add_filter('wp_calculate_image_srcset', [$this, 'fix_srcset_subsize_overwritten_by_fullsize'], 10, 5);
         add_filter('wp_get_attachment_image_attributes', [$this, 'flatsome_use_thumbnail_in_lazyload']);
-        add_filter('wp_calculate_image_srcset', [$this, 'remove_srcset_mixed_fit_mode'], PHP_INT_MAX, 5);
+        add_filter('wp_calculate_image_srcset', [$this, 'remove_srcset_if_has_excluded_size'], PHP_INT_MAX, 5);
     }
 
-    function remove_srcset_mixed_fit_mode($sources, $size_array, $image_src, $image_meta, $image_id) {
+    function remove_srcset_if_has_excluded_size($sources, $size_array, $image_src, $image_meta, $image_id) {
 
-        if (!apply_filters('wp_sir_remove_srcset_mixed_fit_mode', true)) {
-            return $sources;
-        }
+    if (!apply_filters('wp_sir_remove_srcset_mixed_fit_mode', true)) {
+        return $sources;
+    }
 
-        if (!isset($image_meta['_processed_at'])) {
-            return $sources;
-        }
+    if (!isset($image_meta['_processed_at'])) {
+        return $sources;
+    }
 
-        $has_mixed_fit_modes = wp_cache_get('has_mixed_fit_modes', 'wp_sir');
+    $has_mixed  = wp_cache_get('wp_sir_srcset_mixed_fit_mode');
 
-        if (empty($has_mixed_fit_modes)) {
-            $size_options = wp_sir_get_settings()['size_options'];
-            $sizes = _wp_sir_get_sizes_to_generate();
-            $size_options = array_filter($size_options, function ($size_name) use ($sizes) {
-                return isset($sizes[$size_name]);
-            }, ARRAY_FILTER_USE_KEY);
+    if(! $has_mixed ){
+        $has_mixed = !empty(_wp_sir_get_excluded_sizes()) ? 'yes' : 'no';
+        wp_cache_set('wp_sir_srcset_mixed_fit_mode', $has_mixed);
+    }
 
-            $fit_modes = array_column($size_options, 'fit_mode');
-            $has_mixed_fit_modes = count(array_unique($fit_modes)) === 1 ? 'no' : 'yes';
-            wp_cache_set('has_mixed_fit_modes', $has_mixed_fit_modes, 'wp_sir');
-        }
+    return  $has_mixed === 'yes' ? false : $sources;
 
-        return $has_mixed_fit_modes  === 'yes' ? false : $sources;
     }
 
     /**
