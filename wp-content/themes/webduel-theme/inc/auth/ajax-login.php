@@ -3,7 +3,7 @@
 //   ajax login 
 function ajax_login_init(){
 
-    wp_register_script('ajax-login-script', get_template_directory_uri() . '/js/scripts.js', array('jquery') ); 
+    wp_register_script('ajax-login-script', get_template_directory_uri() . '/build/index.js', array('jquery') ); 
     wp_enqueue_script('ajax-login-script');
   
     wp_localize_script( 'ajax-login-script', 'ajax_login_object', array( 

@@ -109,9 +109,9 @@ add_action('woocommerce_single_product_summary', function (){
     if($countryOfOrigin){ 
         $countryOfOrigin = 'Country Of Origin: '.$countryOfOrigin; 
     }
-    echo '
-    <div class="availability">
-        <h3 class="title">'; 
+    // echo '
+    // <div class="availability">
+    //     <h3 class="title">'; 
         // if($product->get_availability()['class'] === 'in-stock'){ 
         //    echo ' 
         //     <i class="fa-solid fa-circle-check" style="color: var(--green); "></i>
@@ -129,17 +129,17 @@ add_action('woocommerce_single_product_summary', function (){
         //     </span>
         //     '; 
         // }
-        echo '
-        <h3>
-        <div class="content">
-            <h4 class="subtitle">
-                '.$countryOfOrigin.'
-            </h4>
-            <h5 class="delivery-info">
-                Availability: '.$deliveryETA.' 
-            </h5>
-        </div>
-    </div>'; 
+    //     echo '
+    //     <h3>
+    //     <div class="content">
+    //         <h4 class="subtitle">
+    //             '.$countryOfOrigin.'
+    //         </h4>
+    //         <h5 class="delivery-info">
+    //             Availability: '.$deliveryETA.' 
+    //         </h5>
+    //     </div>
+    // </div>'; 
 }, 60) ; 
 
 // social share -----------------------------------------------------------

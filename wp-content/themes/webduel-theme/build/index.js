@@ -2133,13 +2133,7 @@ __webpack_require__.r(__webpack_exports__);
  // header 
 
 
-let $ = jQuery;
-$(document).on('click', '.ppc-button', () => {
-  console.log('this is paypal');
-});
-$(document).on('click', '.paypal-button', () => {
-  console.log('this is paypal ');
-}); // add to cart and remove from cart class 
+let $ = jQuery; // add to cart and remove from cart class 
 
 const popUpCart = new _modules_PopUpCart__WEBPACK_IMPORTED_MODULE_10__["default"](); // woo Gallery 
 
@@ -2192,26 +2186,7 @@ window.onload = function () {
   let pricevalue = document.getElementsByClassName('bc-show-current-price'); // console.log($('.bc-show-current-price').text);
   //slogan 
 
-  $('.logo-container .slogan').css('opacity', '1'); //profile navbar
-
-  let profileNavbar = {
-    eventListener: function () {
-      $('.profile-name-value').click(function (e) {
-        let user = document.querySelector('.profile-name-value').innerHTML;
-        console.log("click working");
-
-        if (user.includes('LOGIN / REGISTER')) {
-          console.log('Log In');
-        } else {
-          e.preventDefault();
-          $('.my-account-nav').slideToggle(200, function () {
-            $('.arrow-icon').toggleClass('fa-chevron-up');
-          });
-        }
-      });
-    }
-  };
-  profileNavbar.eventListener();
+  $('.logo-container .slogan').css('opacity', '1');
 }; //log in 
 //const logIn = new LogIn();
 
@@ -2324,17 +2299,15 @@ class AuthToken {
       username: this.username,
       email: this.email,
       password: this.password
-    };
-    console.log(formData); // erase existing cookies 
+    }; // erase existing cookies 
 
     this.eraseCookie('inpiryAuthToken');
     let url = 'https://inspiry.co.nz/wp-json/jwt-auth/v1/token';
 
     if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-      url = 'http://localhost/inspirynew/wp-json/jwt-auth/v1/token';
-    }
+      url = 'http://localhost/wp-json/jwt-auth/v1/token';
+    } // set auth cookies 
 
-    console.log("this is url" + url); // set auth cookies 
 
     fetch(url, {
       method: "POST",
@@ -2344,8 +2317,6 @@ class AuthToken {
       }
     }).then(res => res.json()).then(res => {
       // document.forms["login-form"].submit();
-      console.log(res);
-
       if (res.data) {
         console.log(res.data.status);
       } else {
@@ -2412,6 +2383,7 @@ class Login {
     const redirectLink = urlParams.get('redirect-link');
     $('form#login p.status').show().text(ajax_login_object.loadingmessage);
     $('.login-page #login .primary-button').html('<div class="loader-icon loader--visible"></div>');
+    console.log('sending request ');
     $.ajax({
       type: 'POST',
       dataType: 'json',
@@ -2434,6 +2406,7 @@ class Login {
         }
 
         $('.login-page #login .primary-button').html('SIGN IN');
+        const authToken = new _AuthToken__WEBPACK_IMPORTED_MODULE_0__["default"](redirectLink, $('form#login #username').val(), $('form#login #password').val());
       }
     });
   }

@@ -16,6 +16,7 @@ function auth_route() {
 
 // send email to trade professional 
 function createUser($data) {
+    return 10; 
     $new_user_name = stripcslashes($_POST['username']);
 	  $new_user_email = stripcslashes($_POST['email']);
 	  $new_user_password = $_POST['password'];

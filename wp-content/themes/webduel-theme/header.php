@@ -105,7 +105,7 @@
 
 </head>
 
-<body id="header" <?php body_class(); ?> data-archive='<?php echo $archive ?>'>
+<body id="header" <?php body_class(); ?>>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS7XFHN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

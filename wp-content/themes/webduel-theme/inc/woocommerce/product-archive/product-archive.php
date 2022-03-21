@@ -2,6 +2,9 @@
 // add category and tag banner
 add_action('woocommerce_before_main_content', 'add_category_banner_webduel', 5); 
 function add_category_banner_webduel(){ 
+    if(!is_archive()){ 
+        return;
+    }
     // add category banner
     global $wp_query;
     $cat = $wp_query->get_queried_object();

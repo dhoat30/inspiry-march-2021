@@ -126,60 +126,52 @@ add_action('woocommerce_before_cart', function () {
                                     ?>
                                 </div>
                                 <!-- uncomment once all the product are uploaded -->
-                                <div class="availability-container">
-                                        
-                                        <!-- <div class="availability">
-                                            <i class="fa-solid fa-cube"></i>
-                                            Availability: 
-                                            <span>
-                                                <?php
-                                                // if( $availability['class']=== 'in-stock'){ 
-                                                //     echo "In stock"; 
-                                                // }
-                                                // else{ 
-                                                // echo "Pre order";
-                                                // }
-                                                ?>
-                                            </span>
-                                        </div> -->
-                                        <?php if($delivery){ 
+                                <!-- <div class="availability-container">
+
+                                    <div class="availability">
+                                        <i class="fa-solid fa-cube"></i>
+                                        Availability:
+                                        <span>
+                                            <?php
+                                            // if ($availability['class'] === 'in-stock') {
+                                            //     echo "In stock";
+                                            // } else {
+                                            //     echo "Pre order";
+                                            // }
                                             ?>
-                                             <div class="arrives">
-                                            Arrives: <span> <?php echo $delivery;
-                                                            ?></span>
-                                        </div>
-                                            <?php 
-                                        }
-                                        ?>
-                                       
+                                        </span>
                                     </div>
+                                    <div class="arrives">
+                                        Arrives: <span> <?php //echo $delivery;
+                                                        ?></span>
+                                    </div>
+                                </div> -->
                             </td>
                             <td class="quantity-column">
                                 <!-- check if the product is sample  -->
-                            <?php
-                                        if (wc_get_product($cart_item["free_sample"])) {
-                                            $originalProduct = wc_get_product($cart_item["free_sample"]);
-                                            $imageID = $originalProduct->image_id;
-                                            $name = $originalProduct->get_name();
-                                            ?>
-                                             <div class="quantity-container">
-                                    <input class="minus" type="button" value="–" control-id="ControlID-1">
-                                    <input type="number" name="quantity" id="cart-quantity" value="<?php echo $quantity; ?>" max="1" min="1" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>" />
-                                    <input class="plus" type="button" value="+" control-id="ControlID-3">
-                                </div>
-                                            <?php
-                                        }
-                                        else{ 
-                                            ?>
-                                            <div class="quantity-container">
-                                            <input class="minus" type="button" value="–" control-id="ControlID-1">
-                                            <input type="number" name="quantity" id="cart-quantity" value="<?php echo $quantity; ?>" max="25" min="1" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>" />
-                                            <input class="plus" type="button" value="+" control-id="ControlID-3">
-                                        </div>
-                                        <?php 
-                                        }
-                                        ?>
-                               
+                                <?php
+                                if (wc_get_product($cart_item["free_sample"])) {
+                                    $originalProduct = wc_get_product($cart_item["free_sample"]);
+                                    $imageID = $originalProduct->image_id;
+                                    $name = $originalProduct->get_name();
+                                ?>
+                                    <div class="quantity-container">
+                                        <input class="minus" type="button" value="–" control-id="ControlID-1">
+                                        <input type="number" name="quantity" id="cart-quantity" value="<?php echo $quantity; ?>" max="1" min="1" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>" />
+                                        <input class="plus" type="button" value="+" control-id="ControlID-3">
+                                    </div>
+                                <?php
+                                } else {
+                                ?>
+                                    <div class="quantity-container">
+                                        <input class="minus" type="button" value="–" control-id="ControlID-1">
+                                        <input type="number" name="quantity" id="cart-quantity" value="<?php echo $quantity; ?>" max="25" min="1" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>" />
+                                        <input class="plus" type="button" value="+" control-id="ControlID-3">
+                                    </div>
+                                <?php
+                                }
+                                ?>
+
 
                             </td>
                             <td class="price-column">

@@ -16,11 +16,16 @@ get_header();
                         
                         <div class="flex">
                             <button class="primary-button" type="submit">SIGN IN</button>
-                            <div class="divider">Or</div>
-                            <?php echo do_shortcode('[google-login]');
-                            if(!is_front_page()){ 
-                                echo do_shortcode('[facebook-login]');
+                            <?php 
+                            if(has_action('webduel_social_login')){ 
+                                ?>
+                                <div class="divider">Or</div>
+                                <?php 
                             }
+                            ?>
+                            
+                            <?php 
+                             do_action('webduel_social_login');
                             ?>
                         </div>        
                         <div class="terms-flex">

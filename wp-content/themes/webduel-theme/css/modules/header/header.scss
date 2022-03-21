@@ -270,6 +270,9 @@
           display: none;
           a {
             font-weight: var(--light) !important;
+            &:hover {
+              text-decoration: underline !important;
+            }
           }
         }
       }
@@ -292,6 +295,9 @@
           a {
             display: none;
             padding: 0 !important;
+            &:hover {
+              text-decoration: underline !important;
+            }
           }
         }
       }

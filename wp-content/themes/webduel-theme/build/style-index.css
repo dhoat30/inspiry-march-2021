@@ -569,6 +569,9 @@
 .desktop-header .top-navbar-section .navbar #mega-menu-top-navbar .mega-menu-item a {
   font-weight: var(--light) !important;
 }
+.desktop-header .top-navbar-section .navbar #mega-menu-top-navbar .mega-menu-item a:hover {
+  text-decoration: underline !important;
+}
 .desktop-header .main-navbar-section {
   border: 1px solid var(--lightGrey);
 }
@@ -588,6 +591,9 @@
 .desktop-header .main-navbar-section .navbar #mega-menu-inspiry_main_menu .mega-menu-item a {
   display: none;
   padding: 0 !important;
+}
+.desktop-header .main-navbar-section .navbar #mega-menu-inspiry_main_menu .mega-menu-item a:hover {
+  text-decoration: underline !important;
 }
 
 .mobile-header {

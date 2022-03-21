@@ -54,12 +54,7 @@ import Checkout from "./modules/Woocommerce/Checkout/Checkout";
 import Header from './modules/Header'
 
 let $ = jQuery;
-$(document).on('click', '.ppc-button', () => {
-  console.log('this is paypal')
-})
-$(document).on('click', '.paypal-button', () => {
-  console.log('this is paypal ')
-})
+
 
 // add to cart and remove from cart class 
 const popUpCart = new PopUpCart();
@@ -131,28 +126,6 @@ window.onload = function () {
   $('.logo-container .slogan').css('opacity', '1');
 
 
-  //profile navbar
-
-
-  let profileNavbar = {
-    eventListener: function () {
-      $('.profile-name-value').click(function (e) {
-        let user = document.querySelector('.profile-name-value').innerHTML;
-        console.log("click working");
-        if (user.includes('LOGIN / REGISTER')) {
-          console.log('Log In');
-        }
-        else {
-          e.preventDefault();
-          $('.my-account-nav').slideToggle(200, function () {
-            $('.arrow-icon').toggleClass('fa-chevron-up');
-          });
-        }
-      })
-    }
-  }
-
-  profileNavbar.eventListener();
 }
 
 

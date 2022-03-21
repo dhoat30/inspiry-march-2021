@@ -31,11 +31,17 @@
                         </div> -->
                         <div class="flex">
                             <button type="submit" class="primary-button" >CREATE ACCOUNT</button>
-                           <div class="divider">Or</div>
-                            <?php echo do_shortcode('[google-login]');
-                            if(!is_front_page()){ 
-                                echo do_shortcode('[facebook-login]');
+                            <?php 
+                            if(has_action('webduel_social_login')){ 
+                                ?>
+                                <div class="divider">Or</div>
+                                <?php 
                             }
+                            ?>
+                            <?php 
+                            has_action('webduel_social_login');
+                             do_action('webduel_social_login');
+
                             ?>
                         </div>        
                         <div class="terms-flex">

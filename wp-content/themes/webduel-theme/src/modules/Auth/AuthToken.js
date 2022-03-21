@@ -15,16 +15,14 @@ class AuthToken {
             email: this.email,
             password: this.password
         }
-        console.log(formData)
         // erase existing cookies 
         this.eraseCookie('inpiryAuthToken')
 
         let url = 'https://inspiry.co.nz/wp-json/jwt-auth/v1/token';
         if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-            url = 'http://localhost/inspirynew/wp-json/jwt-auth/v1/token';
+            url = 'http://localhost/wp-json/jwt-auth/v1/token';
         }
 
-        console.log("this is url" + url)
         // set auth cookies 
         fetch(url, {
             method: "POST",
@@ -36,7 +34,6 @@ class AuthToken {
             .then(res => res.json())
             .then(res => {
                 // document.forms["login-form"].submit();
-                console.log(res)
                 if (res.data) {
                     console.log(res.data.status)
                 }

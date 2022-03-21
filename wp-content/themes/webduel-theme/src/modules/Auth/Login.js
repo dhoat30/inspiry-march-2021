@@ -7,7 +7,6 @@ class Login {
         this.events()
     }
     events() {
-
         // submit login form
         $('form#login').on('submit', this.submitLogin)
     }
@@ -22,7 +21,7 @@ class Login {
 
         $('form#login p.status').show().text(ajax_login_object.loadingmessage);
         $('.login-page #login .primary-button').html('<div class="loader-icon loader--visible"></div>')
-
+        console.log('sending request ')
         $.ajax({
             type: 'POST',
             dataType: 'json',
@@ -44,7 +43,7 @@ class Login {
                     const authToken = new AuthToken(redirectLink, $('form#login #username').val(), $('form#login #password').val())
                 }
                 $('.login-page #login .primary-button').html('SIGN IN')
-
+                const authToken = new AuthToken(redirectLink, $('form#login #username').val(), $('form#login #password').val())
             }
         });
 
