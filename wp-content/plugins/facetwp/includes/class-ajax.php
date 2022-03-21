@@ -4,7 +4,7 @@ class FacetWP_Ajax
 {
 
     function __construct() {
-        add_action( 'facetwp_init', [ $this, 'switchboard' ] );
+        add_action( 'init', [ $this, 'switchboard' ], 1000 );
     }
 
 
@@ -61,11 +61,18 @@ class FacetWP_Ajax
         if ( isset( $settings['settings'] ) ) {
             update_option( 'facetwp_settings', json_encode( $settings ), 'no' );
 
-            $response = [
-                'code' => 'success',
-                'message' => __( 'Settings saved', 'fwp' ),
-                'reindex' => FWP()->diff->is_reindex_needed()
-            ];
+            if ( FWP()->diff->is_reindex_needed() ) {
+                $response = [
+                    'code' => 'error',
+                    'message' => __( 'Settings saved, please re-index', 'fwp' )
+                ];
+            }
+            else {
+                $response = [
+                    'code' => 'success',
+                    'message' => __( 'Settings saved', 'fwp' )
+                ];
+            }
         }
         else {
             $response = [

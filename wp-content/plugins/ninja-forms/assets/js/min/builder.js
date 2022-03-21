@@ -3268,12 +3268,17 @@ define( 'views/app/drawer/itemSetting',['views/app/drawer/mergeTagsContent', 'vi
 			if ( deps ) {
 				// If we don't have a 'settings' property, this is a legacy depdency setup.
 				if ( 'undefined' == typeof deps.settings ) {
-					let name = _.keys( deps )[0];
-					deps.settings = [ { name: name, value: deps[ name ] } ];
+					deps.settings = [];
+					_.each(deps, function(dep, name){
+						if( 'settings' !== name ) {
+							deps.settings.push( { name: name, value: dep } );
+						}
+					});
+					deps.match = 'all';
 				}
 
 				for (var i = deps.settings.length - 1; i >= 0; i--) {
-					name = deps.settings[i].name;
+					let name = deps.settings[i].name;
 					this.dataModel.on( 'change:' + name, this.render, this );
 				}
 			}
@@ -3326,14 +3331,8 @@ define( 'views/app/drawer/itemSetting',['views/app/drawer/mergeTagsContent', 'vi
 
 			var deps = this.model.get( 'deps' );
 			if ( deps ) {
-				// If we don't have a 'settings' property, this is a legacy depdency setup.
-				if ( 'undefined' == typeof deps.settings ) {
-					let name = _.keys( deps )[0];
-					deps.settings = [ { name: name, value: deps[ name ] } ];
-				}
-
 				for (var i = deps.settings.length - 1; i >= 0; i--) {
-					name = deps.settings[i].name;
+					let name = deps.settings[i].name;
 					this.dataModel.off( 'change:' + name, this.render );
 				}
 			}
@@ -3534,17 +3533,6 @@ define( 'views/app/drawer/itemSetting',['views/app/drawer/mergeTagsContent', 'vi
 					}
 
 					return nfRadio.channel( 'settings' ).request( 'check:deps', this, that );
-
-					if ( this.deps ) {
-						for (var name in this.deps) {
-						    if ( this.deps.hasOwnProperty( name ) ) {
-						        if ( that.dataModel.get( name ) != this.deps[ name ] ) {
-						        	return 'style="display:none;"';
-						        }
-						    }
-						}
-					}
-	    			return '';
 	    		},
 
 	    		renderSetting: function(){
@@ -3689,6 +3677,11 @@ define( 'views/app/drawer/itemSetting',['views/app/drawer/mergeTagsContent', 'vi
 					    minMaxStr = minMaxStr + " max='" + this.max_val + "'";
 				    }
 
+				    // if we have a step size set, then output it
+				    if( 'undefined' != typeof this.step && '' != this.step && jQuery.isNumeric( this.step ) ) {
+					    minMaxStr = minMaxStr + " step='" + this.step + "'";
+				    }
+
 				    return minMaxStr;
 			    },
 
@@ -3739,6 +3732,24 @@ define( 'views/app/drawer/itemSetting',['views/app/drawer/mergeTagsContent', 'vi
 		},
 
 		changeSetting: function( e ) {
+			//Check characters set in custom classes match sanitize_html_class
+			if ( 'textbox' == this.model.get( 'type' ) &&  this.model.get('name').endsWith("_class" )) {
+				const regexp = /^[a-zA-Z 0-9-_]+$/;
+				if(e.target.value.search(regexp) === -1 &&  '' !== e.target.value){
+					this.model.set('error', "HTML classes only allow - _ and alphanumeric characters." )
+				} else if(e.target.value.search(regexp) === 0 || '' === e.target.value){
+					this.model.unset('error');
+				}
+			} else if( 'textbox' == this.model.get( 'type' ) && this.model.get('name') === "title" ){
+				const regexp = /[/"<>`]/;
+				if(e.target.value.search(regexp) !== -1 &&  '' !== e.target.value){
+					const foundIndex = e.target.value.search(regexp);
+					const foundChar = e.target.value.charAt(foundIndex);
+					this.model.set('error', "The forbidden " + foundChar + " character was found. Title must not contain / \" < > ` characters.")
+				} else if(e.target.value.search(regexp) === -1 || '' === e.target.value){
+					this.model.unset('error');
+				}
+			}
 			nfRadio.channel( 'app' ).trigger( 'change:setting', e, this.model, this.dataModel );
 		},
 
@@ -5442,15 +5453,7 @@ define( 'controllers/app/data',['models/app/appModel'], function( appModel ) {
 		 */
 		checkDeps: function( setting, context ) {
 			if ( ! setting.deps ) {
-				return false;
-			}
-
-
-			// If we don't have a "settings" property, then this is a legacy dependency format.
-			if ( 'undefined' == typeof setting.deps.settings ) {
-				let name = _.keys( setting.deps )[0];
-				setting.deps.settings = [ { name: name, value: setting.deps[ name ] } ];
-				setting.deps.match = 'any';
+				return '';
 			}
 
 			// If we do have a "settings" property, then this is a new dependency format.
@@ -5460,10 +5463,11 @@ define( 'controllers/app/data',['models/app/appModel'], function( appModel ) {
 			let hide = false;
 			
 			for (var i = deps_settings.length - 1; i >= 0; i--) {
-				name = deps_settings[i].name;
-				value = deps_settings[i].value;
+				let name = deps_settings[i].name;
+				let value = deps_settings[i].value;
 
-			    if ( context.dataModel.get( name ) === value ) {
+				// Use == here instead of === in order to avoid string => int comparison.
+			    if ( context.dataModel.get( name ) == value ) {
 		        	// If we're looking for "any" match, we can go ahead and return here. 
 		        	if ( 'any' == match ) {
 		        		hide = false;
@@ -5478,7 +5482,7 @@ define( 'controllers/app/data',['models/app/appModel'], function( appModel ) {
 				return 'style="display:none;"';
 			}
 			
-			return false;
+			return '';
 		},
 
 		updateCurrentDomain: function( model ) {
@@ -6982,12 +6986,17 @@ define( 'views/app/drawer/typeSettingFieldset',['views/app/drawer/itemSetting'],
 			if ( deps ) {
 				// If we don't have a 'settings' property, this is a legacy depdency setup.
 				if ( 'undefined' == typeof deps.settings ) {
-					let name = _.keys( deps )[0];
-					deps.settings = [ { name: name, value: deps[ name ] } ];
+					deps.settings = [];
+					_.each(deps, function(dep, name){
+						if( 'settings' !== name ) {
+							deps.settings.push( { name: name, value: dep } );
+						}
+					});
+					deps.match = 'all';
 				}
 
 				for (var i = deps.settings.length - 1; i >= 0; i--) {
-					name = deps.settings[i].name;
+					let name = deps.settings[i].name;
 					this.dataModel.on( 'change:' + name, this.render, this );
 				}
 			}
@@ -6997,12 +7006,6 @@ define( 'views/app/drawer/typeSettingFieldset',['views/app/drawer/itemSetting'],
 		onBeforeDestroy: function() {
 			var deps = this.model.get( 'deps' );
 			if ( deps ) {
-				// If we don't have a 'settings' property, this is a legacy depdency setup.
-				if ( 'undefined' == typeof deps.settings ) {
-					let name = _.keys( deps )[0];
-					deps.settings = [ { name: name, value: deps[ name ] } ];
-				}
-
 				for (var i = deps.settings.length - 1; i >= 0; i--) {
 					name = deps.settings[i].name;
 					this.dataModel.off( 'change:' + name, this.render );
@@ -7044,17 +7047,6 @@ define( 'views/app/drawer/typeSettingFieldset',['views/app/drawer/itemSetting'],
 					}
 
 					return nfRadio.channel( 'settings' ).request( 'check:deps', this, that );
-
-					if ( this.deps ) {
-						for (var name in this.deps) {
-						    if ( this.deps.hasOwnProperty( name ) ) {
-						        if ( that.dataModel.get( name ) !== this.deps[ name ] ) {
-						        	return 'style="display:none;"';
-						        }
-						    }
-						}
-					}
-	    			return '';
 	    		},
 	    		renderSetting: function(){
 	    			var setting = nfRadio.channel( 'app' ).request( 'get:template',  '#tmpl-nf-edit-setting-' + this.type );
@@ -10703,7 +10695,8 @@ define( 'controllers/fields/filterTypes',['models/fields/typeSectionCollection']
 					'product',
 					'quantity',
 					'shipping',
-					'total'
+					'total',
+					'button'
 				]);
 
                 // Search our results of hidden fields.
@@ -12541,12 +12534,17 @@ define( 'views/app/drawer/optionRepeaterComposite',['views/app/drawer/optionRepe
 			if ( deps ) {
 				// If we don't have a 'settings' property, this is a legacy depdency setup.
 				if ( 'undefined' == typeof deps.settings ) {
-					let name = _.keys( deps )[0];
-					deps.settings = [ { name: name, value: deps[ name ] } ];
+					deps.settings = [];
+					_.each(deps, function(dep, name){
+						if( 'settings' !== name ) {
+							deps.settings.push( { name: name, value: dep } );
+						}
+					});
+					deps.match = 'all';
 				}
 
 				for (var i = deps.settings.length - 1; i >= 0; i--) {
-					name = deps.settings[i].name;
+					let name = deps.settings[i].name;
 					this.dataModel.on( 'change:' + name, this.render, this );
 				}
 			}
@@ -12557,12 +12555,6 @@ define( 'views/app/drawer/optionRepeaterComposite',['views/app/drawer/optionRepe
 		onBeforeDestroy: function() {
 			var deps = this.model.get( 'deps' );
 			if ( deps ) {
-				// If we don't have a 'settings' property, this is a legacy depdency setup.
-				if ( 'undefined' == typeof deps.settings ) {
-					let name = _.keys( deps )[0];
-					deps.settings = [ { name: name, value: deps[ name ] } ];
-				}
-
 				for (var i = deps.settings.length - 1; i >= 0; i--) {
 					name = deps.settings[i].name;
 					this.dataModel.off( 'change:' + name, this.render );
@@ -12745,16 +12737,6 @@ define( 'views/app/drawer/optionRepeaterComposite',['views/app/drawer/optionRepe
 
 				renderVisible: function() {
 					return nfRadio.channel( 'settings' ).request( 'check:deps', this, that );
-					if ( this.deps ) {
-						for (var name in this.deps) {
-						    if ( this.deps.hasOwnProperty( name ) ) {
-						        if ( that.dataModel.get( name ) !== this.deps[ name ] ) {
-						        	return 'style="display:none;"';
-						        }
-						    }
-						}
-					}
-	    			return '';
 	    		},
 
 				renderError: function() {
@@ -13501,12 +13483,17 @@ define( 'views/app/drawer/imageOptionRepeaterComposite',['views/app/drawer/image
 			if ( deps ) {
 				// If we don't have a 'settings' property, this is a legacy depdency setup.
 				if ( 'undefined' == typeof deps.settings ) {
-					let name = _.keys( deps )[0];
-					deps.settings = [ { name: name, value: deps[ name ] } ];
+					deps.settings = [];
+					_.each(deps, function(dep, name){
+						if( 'settings' !== name ) {
+							deps.settings.push( { name: name, value: dep } );
+						}
+					});
+					deps.match = 'all';
 				}
 
 				for (var i = deps.settings.length - 1; i >= 0; i--) {
-					name = deps.settings[i].name;
+					let name = deps.settings[i].name;
 					this.dataModel.on( 'change:' + name, this.render, this );
 				}
 			}
@@ -13517,14 +13504,8 @@ define( 'views/app/drawer/imageOptionRepeaterComposite',['views/app/drawer/image
 		onBeforeDestroy: function() {
 			var deps = this.model.get( 'deps' );
 			if ( deps ) {
-				// If we don't have a 'settings' property, this is a legacy depdency setup.
-				if ( 'undefined' == typeof deps.settings ) {
-					let name = _.keys( deps )[0];
-					deps.settings = [ { name: name, value: deps[ name ] } ];
-				}
-
 				for (var i = deps.settings.length - 1; i >= 0; i--) {
-					name = deps.settings[i].name;
+					let name = deps.settings[i].name;
 					this.dataModel.off( 'change:' + name, this.render );
 				}
 			}
@@ -13705,17 +13686,6 @@ define( 'views/app/drawer/imageOptionRepeaterComposite',['views/app/drawer/image
 
 				renderVisible: function() {
 					return nfRadio.channel( 'settings' ).request( 'check:deps', this, that );
-
-					if ( this.deps ) {
-						for (var name in this.deps) {
-						    if ( this.deps.hasOwnProperty( name ) ) {
-						        if ( that.dataModel.get( name ) !== this.deps[ name ] ) {
-						        	return 'style="display:none;"';
-						        }
-						    }
-						}
-					}
-	    			return '';
 	    		},
 
 				renderError: function() {

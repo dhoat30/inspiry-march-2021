@@ -12,7 +12,6 @@
  */
 
 $current_tab = isset( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'general';
-
 ?>
 <div class="wrap">
     

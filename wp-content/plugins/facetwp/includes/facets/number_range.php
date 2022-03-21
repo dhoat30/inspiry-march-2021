@@ -5,6 +5,7 @@ class FacetWP_Facet_Number_Range extends FacetWP_Facet
 
     function __construct() {
         $this->label = __( 'Number Range', 'fwp' );
+        $this->fields = [ 'source_other', 'compare_type', 'number_fields' ];
     }
 
 
@@ -101,46 +102,23 @@ class FacetWP_Facet_Number_Range extends FacetWP_Facet
     }
 
 
-    /**
-     * (Admin) Output settings HTML
-     */
-    function settings_html() {
-?>
-        <div class="facetwp-row">
-            <div>
-                <div class="facetwp-tooltip">
-                    <?php _e('Other data source', 'fwp'); ?>:
-                    <div class="facetwp-tooltip-content"><?php _e( 'Use a separate value for the upper limit?', 'fwp' ); ?></div>
-                </div>
-            </div>
-            <div>
-                <data-sources
-                    :facet="facet"
-                    settingName="source_other">
-                </data-sources>
-            </div>
-        </div>
-        <div class="facetwp-row">
-            <div><?php _e('Fields to show', 'fwp'); ?>:</div>
-            <div>
-                <select class="facet-fields">
-                    <option value="both"><?php _e( 'Min + Max', 'fwp' ); ?></option>
-                    <option value="exact"><?php _e( 'Exact', 'fwp' ); ?></option>
-                    <option value="min"><?php _e( 'Min', 'fwp' ); ?></option>
-                    <option value="max"><?php _e( 'Max', 'fwp' ); ?></option>
-                </select>
-            </div>
-        </div>
-        <div class="facetwp-row" v-show="facet.source_other">
-            <div><?php _e('Compare type', 'fwp'); ?>:</div>
-            <div>
-                <select class="facet-compare-type">
-                    <option value=""><?php _e( 'Basic', 'fwp' ); ?></option>
-                    <option value="enclose"><?php _e( 'Enclose', 'fwp' ); ?></option>
-                    <option value="intersect"><?php _e( 'Intersect', 'fwp' ); ?></option>
-                </select>
-            </div>
-        </div>
-<?php
+    function register_fields() {
+        return [
+            'number_fields' => [
+                'type' => 'alias',
+                'items' => [
+                    'fields' => [
+                        'type' => 'select',
+                        'label' => __( 'Fields to show', 'fwp' ),
+                        'choices' => [
+                            'both' => __( 'Min + Max', 'fwp' ),
+                            'exact' => __( 'Exact', 'fwp' ),
+                            'min' => __( 'Min', 'fwp' ),
+                            'max' => __( 'Max', 'fwp' )
+                        ]
+                    ]
+                ]
+            ]
+        ];
     }
 }

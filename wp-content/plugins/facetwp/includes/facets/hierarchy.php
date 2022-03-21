@@ -5,6 +5,7 @@ class FacetWP_Facet_Hierarchy extends FacetWP_Facet
 
     function __construct() {
         $this->label = __( 'Hierarchy', 'fwp' );
+        $this->fields = [ 'label_any', 'modifiers', 'orderby', 'count' ];
     }
 
 
@@ -116,14 +117,18 @@ class FacetWP_Facet_Hierarchy extends FacetWP_Facet
         $num = 0;
 
         if ( ! empty( $values ) ) {
-            foreach ( $values as $data ) {
-                $last_depth = isset( $last_depth ) ? $last_depth : $data['depth'];
+            foreach ( $values as $row ) {
+                $last_depth = isset( $last_depth ) ? $last_depth : $row['depth'];
+                $selected = ( ! empty( $selected_values ) && $row['facet_value'] == $selected_values[0] );
 
-                $label = esc_html( $data['facet_display_value'] );
-                $is_checked = ( ! empty( $selected_values ) && $data['facet_value'] == $selected_values[0] );
-                $class = $is_checked ? ' checked' : '';
+                $label = esc_html( $row['facet_display_value'] );
+                $label = apply_filters( 'facetwp_facet_display_value', $label, [
+                    'selected' => $selected,
+                    'facet' => $facet,
+                    'row' => $row
+                ]);
 
-                if ( $data['depth'] > $last_depth ) {
+                if ( $row['depth'] > $last_depth ) {
                     $output .= '<div class="facetwp-depth">';
                 }
 
@@ -131,22 +136,23 @@ class FacetWP_Facet_Hierarchy extends FacetWP_Facet
                     $output .= '<div class="facetwp-overflow facetwp-hidden">';
                 }
 
-                if ( ! $is_checked ) {
-                    if ( isset( $data['is_choice'] ) ) {
-                        $label .= ' <span class="facetwp-counter">(' . $data['counter'] . ')</span>';
+                if ( ! $selected ) {
+                    if ( isset( $row['is_choice'] ) ) {
+                        $label .= ' <span class="facetwp-counter">(' . $row['counter'] . ')</span>';
                     }
                     else {
-                        $label = '&#8249; ' . $label;
+                        $arrow = apply_filters( 'facetwp_facet_hierarchy_arrow', '&#8249; ' );
+                        $label = $arrow . $label;
                     }
                 }
 
-                $output .= '<div class="facetwp-link' . $class . '" data-value="' . esc_attr( $data['facet_value'] ) . '">' . $label . '</div>';
+                $output .= '<div class="facetwp-link' . ( $selected ? ' checked' : '' ) . '" data-value="' . esc_attr( $row['facet_value'] ) . '">' . $label . '</div>';
 
-                if ( isset( $data['is_choice'] ) ) {
+                if ( isset( $row['is_choice'] ) ) {
                     $num++;
                 }
 
-                $last_depth = $data['depth'];
+                $last_depth = $row['depth'];
             }
 
             if ( $num_visible < $num ) {
@@ -169,16 +175,5 @@ class FacetWP_Facet_Hierarchy extends FacetWP_Facet
      */
     function filter_posts( $params ) {
         return FWP()->helper->facet_types['checkboxes']->filter_posts( $params );
-    }
-
-
-    /**
-     * Output admin settings HTML
-     */
-    function settings_html() {
-        $this->render_setting( 'label_any' );
-        $this->render_setting( 'modifiers' );
-        $this->render_setting( 'orderby' );
-        $this->render_setting( 'count' );
     }
 }

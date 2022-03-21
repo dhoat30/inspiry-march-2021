@@ -4,7 +4,9 @@ class FacetWP_Facet_fSelect extends FacetWP_Facet
 {
 
     function __construct() {
-        $this->label = __( 'fSelect', 'fwp' );
+        $this->label = __( 'Dropdown (fSelect)', 'fwp' );
+        $this->fields = [ 'label_any', 'parent_term', 'modifiers', 'hierarchical', 'multiple',
+            'ghosts', 'operator', 'orderby', 'count' ];
     }
 
 
@@ -87,21 +89,5 @@ class FacetWP_Facet_fSelect extends FacetWP_Facet
     function front_scripts() {
         FWP()->display->assets['fSelect.css'] = FACETWP_URL . '/assets/vendor/fSelect/fSelect.css';
         FWP()->display->assets['fSelect.js'] = FACETWP_URL . '/assets/vendor/fSelect/fSelect.js';
-    }
-
-
-    /**
-     * Output admin settings HTML
-     */
-    function settings_html() {
-        $this->render_setting( 'label_any' );
-        $this->render_setting( 'parent_term' );
-        $this->render_setting( 'modifiers' );
-        $this->render_setting( 'hierarchical' );
-        $this->render_setting( 'multiple' );
-        $this->render_setting( 'ghosts' );
-        $this->render_setting( 'operator' );
-        $this->render_setting( 'orderby' );
-        $this->render_setting( 'count' );
     }
 }

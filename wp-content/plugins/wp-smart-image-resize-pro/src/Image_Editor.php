@@ -7,6 +7,7 @@ use WP_Smart_Image_Resize\Exceptions\Invalid_Image_Meta_Exception;
 use WP_Smart_Image_Resize\Image_Filters\Thumbnail_Filter;
 use WP_Smart_Image_Resize\Image_Filters\Trim_Filter;
 use WP_Smart_Image_Resize\Image_Filters\CreateWebP_Filter;
+use WP_Smart_Image_Resize\Image_Filters\Watermark_Filter;
 use WP_Smart_Image_Resize\Utilities\File;
 
 /*
@@ -15,12 +16,11 @@ use WP_Smart_Image_Resize\Utilities\File;
  * @package WP_Smart_Image_Resize\Inc
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-if ( ! class_exists( '\WP_Smart_Image_Resize\Image_Editor' ) ) :
+if (!class_exists('\WP_Smart_Image_Resize\Image_Editor')) :
 
-    final class Image_Editor
-    {
+    final class Image_Editor {
         use Processable_Trait;
         use Runtime_Config_Trait;
 
@@ -33,9 +33,8 @@ if ( ! class_exists( '\WP_Smart_Image_Resize\Image_Editor' ) ) :
         /**
          * @return \WP_Smart_Image_Resize\Image_Editor
          */
-        public static function get_instance()
-        {
-            if ( is_null( static::$instance ) ) {
+        public static function get_instance() {
+            if (is_null(static::$instance)) {
                 static::$instance = new self;
             }
 
@@ -45,30 +44,29 @@ if ( ! class_exists( '\WP_Smart_Image_Resize\Image_Editor' ) ) :
         /**
          * Register hooks.
          */
-        public function run()
-        {
+        public function run() {
 
             // A low priority < 10 to let plugins optimize thumbnails.
-            add_filter( 'wp_generate_attachment_metadata', [ $this, 'processImage' ], 9, 2 );
+            add_filter('wp_generate_attachment_metadata', [$this, 'processImage'], 9, 2);
 
             // Prevent WooCommerce from resizeing images on the fly.
-            add_filter( 'woocommerce_image_sizes_to_resize', '__return_empty_array' );
+            add_filter('woocommerce_image_sizes_to_resize', '__return_empty_array');
 
             // Disable photon.
-            add_filter( 'jetpack_photon_skip_image', '__return_true' );
+            add_filter('jetpack_photon_skip_image', '__return_true');
 
             // Don't use remotely-resized images with Jetpack Photon.
-            add_filter( 'jetpack_photon_override_image_downsize', '__return_true', 19 );
+            add_filter('jetpack_photon_override_image_downsize', '__return_true', 19);
 
             // Force 1:1 size for single product thumbnail.
             // @see  force_square_woocommerce_single()
-            add_filter( 'woocommerce_get_image_size_single', [ $this, 'forceSquareWooCommerceSingle' ] );
+            add_filter('woocommerce_get_image_size_single', [$this, 'forceSquareWooCommerceSingle']);
 
             // Force woocommerce single on single product page.
             // @see force_woocommerce_single()
-            add_filter( 'woocommerce_gallery_image_size', [ $this, 'forceWooCommerceSingle' ], PHP_INT_MAX );
+            add_filter('woocommerce_gallery_image_size', [$this, 'forceWooCommerceSingle'], PHP_INT_MAX);
 
-            add_filter( 'regenerate_thumbnails_options_onlymissingthumbnails', '__return_false' );
+            add_filter('regenerate_thumbnails_options_onlymissingthumbnails', '__return_false');
         }
 
         /**
@@ -78,15 +76,14 @@ if ( ! class_exists( '\WP_Smart_Image_Resize\Image_Editor' ) ) :
          *
          * @return bool
          */
-        public function isProcessableSize( $sizes )
-        {
-            if ( ! is_array( $sizes ) ) {
+        public function isProcessableSize($sizes) {
+            if (!is_array($sizes)) {
                 $sizes = (array)$sizes;
             }
 
-            $selected_sizes = apply_filters( 'wp_sir_sizes', wp_sir_get_settings()[ 'sizes' ] );
+            $selected_sizes = apply_filters('wp_sir_sizes', wp_sir_get_settings()['sizes']);
 
-            return count( array_intersect( $sizes, $selected_sizes ) ) === count( $sizes );
+            return count(array_intersect($sizes, $selected_sizes)) === count($sizes);
         }
 
         /**
@@ -98,15 +95,14 @@ if ( ! class_exists( '\WP_Smart_Image_Resize\Image_Editor' ) ) :
          */
 
 
-        public function forceSquareWooCommerceSingle( $size )
-        {
-            if ( ! $this->isProcessableSize( [ 'woocommerce_single', 'shop_single' ] ) ) {
+        public function forceSquareWooCommerceSingle($size) {
+            if (!$this->isProcessableSize(['woocommerce_single', 'shop_single'])) {
                 return $size;
             }
 
             // If height is not set, make it square.
-            if ( $size[ 'width' ] && ! $size[ 'height' ] ) {
-                $size[ 'height' ] = $size[ 'width' ];
+            if ($size['width'] && !$size['height']) {
+                $size['height'] = $size['width'];
             }
 
             return $size;
@@ -121,13 +117,12 @@ if ( ! class_exists( '\WP_Smart_Image_Resize\Image_Editor' ) ) :
          *
          * @return string
          */
-        public function forceWooCommerceSingle( $size )
-        {
-            if ( ! apply_filters( 'wp_sir_force_woocommerce_single', true ) ) {
+        public function forceWooCommerceSingle($size) {
+            if (!apply_filters('wp_sir_force_woocommerce_single', true)) {
                 return $size;
             }
 
-            if ( $this->isProcessableSize( [ 'woocommerce_single', 'shop_single' ] ) ) {
+            if ($this->isProcessableSize(['woocommerce_single', 'shop_single'])) {
                 return 'woocommerce_single';
             }
 
@@ -135,7 +130,7 @@ if ( ! class_exists( '\WP_Smart_Image_Resize\Image_Editor' ) ) :
         }
 
         /**
-         * Proceed resize.
+         * Proceed image editing and thumbnails generation.
          *
          * @param array $metadata
          * @param int $imageId
@@ -143,115 +138,141 @@ if ( ! class_exists( '\WP_Smart_Image_Resize\Image_Editor' ) ) :
          * @return array
          */
 
-        public function processImage( $metadata, $imageId )
-        {
+        public function processImage($metadata, $imageId) {
+
+
             try {
 
+                // Get global settings.
                 $settings = wp_sir_get_settings();
 
-                if ( ! $settings[ 'enable' ] ) {
+                // Bail if resizing is disabled.
+                if (!$settings['enable']) {
                     return $metadata;
                 }
 
 
-                $imageMeta = new Image_Meta( $imageId, $metadata );
+                // Wrap the current image metadata.
+                // This allows manupilating metadata easier.
+                // TODO: Remove in v2.0.
+                $imageMeta = new Image_Meta($imageId, $metadata);
 
-                if ( ! $this->isProcessable( $imageId, $imageMeta ) ) {
+                // Check whether the current image is processable.
+                // By default, the plugin does only process specified images.
+                if (!$this->isProcessable($imageId, $imageMeta)) {
                     return $metadata;
                 }
 
-                $imageManager = new Image_Manager( [ $metadata[ 'width' ], $metadata[ 'height' ] ] );
+                // TODO: Use WP_Image_Editor class instead.
+                $imageManager = new Image_Manager();
 
                 // Let's try to load the given image to memory,
-                $image = $imageManager->make( $imageMeta->getOriginalFullPath() );
-                
-                @set_time_limit( 0 );
+                $image = $imageManager->make($imageMeta->getOriginalFullPath());
 
-                $imageMeta->setMimeType( $image->mime() );
-               
-                
-                $image->filter( new CreateWebP_Filter( $imageMeta->getOriginalFullPath( 'webp' ) ) );
-                
+                @set_time_limit(0);
 
-                $image->filter( new Trim_Filter( $imageMeta ) );
+                $imageMeta->setMimeType($image->mime());
+
+                $image->filter(new Trim_Filter($imageMeta));
+                
+                $image->filter(new CreateWebP_Filter($imageMeta->getOriginalFullPath('webp'), 'full',$imageMeta));
+                
 
                 $imageMeta->setBackup();
 
                 $imageMeta->clearSizes();
-
-                // TODO: Check if server memory limit can be high enough to generate all selected sizes, otherwise
-                // limit to only the woocommerce_ sizes.
-                $sizesToGenerate = $this->getSizesToGenerate();
-
                 $sameSizes = [];
 
-                foreach ( $sizesToGenerate as $sizeName => $sizeData ) {
-                    @set_time_limit( 0 );
+                $skipped_sizes = [];
 
+                foreach (_wp_sir_get_sizes_to_generate() as $sizeName => $sizeData) {
+
+                    @set_time_limit(0);
+                    $fit_mode = _wp_sir_get_size_fit_mode($sizeName);
+
+                    if ($fit_mode === 'none') {
+
+                        if (!empty($metadata['sizes'][$sizeName])) {
+                            $skipped_sizes[$sizeName] = $metadata['sizes'][$sizeName];
+                        }
+
+                        continue;
+                    }
                     // Ignore duplicated sizes.
-                    $sizeHash = $sizeData[ 'width' ] . '|' . $sizeData[ 'height' ];
+                    $sizeHash = $sizeData['width'] . '|' . $sizeData['height'];
 
-                    if ( isset( $sameSizes[ $sizeHash ] ) ) {
-                        $imageMeta->setSizeData( $sizeName, $imageMeta->getSizeData( $sameSizes[ $sizeHash ] ) );
+                    if (isset($sameSizes[$sizeHash])) {
+                        $imageMeta->setSizeData($sizeName, $imageMeta->getSizeData($sameSizes[$sizeHash]));
                         continue;
                     }
 
-                    // Should force-crop the image or preserve the aspect-ratio.
-                    $preserveAspectRatio = filter_var( $settings[ 'preserve_aspect_ratio' ], FILTER_VALIDATE_BOOLEAN );
+                    $thumb_object = clone $image;
+                    $thumb_object = $thumb_object->filter(new Thumbnail_Filter($sizeName, $sizeData, $fit_mode));
+                    
+                    
+                    $thumb_object->filter(new Watermark_Filter);
+                    
+                    
+                    $thumb_path = $this->generateThumbPath($image->basePath(), $sizeData, $sizeName, $imageId);
 
-                    $thumb = $image->filter( new Thumbnail_Filter( $imageManager, $sizeData, $preserveAspectRatio ) );
+                    @unlink($thumb_path);
 
-                    $thumbPath = $this->generateThumbPath( $image->basePath(), $sizeData, $sizeName, $imageId );
+                    $quality = 100 - intval($settings['jpg_quality']);
 
-                    File::delete( $thumbPath );
+                    $quality = apply_filters('jpeg_quality', $quality, 'image_resize');
 
-                    $quality = 100 - intval( $settings[ 'jpg_quality' ] );
+                    $thumb_object->save($thumb_path, $quality);
 
-                    $quality = apply_filters( 'jpeg_quality', $quality, 'image_resize' );
+                    $imageMeta->setSizeData($sizeName, [
+                        'width'     => $thumb_object->getWidth(),
+                        'height'    => $thumb_object->getHeight(),
+                        'file'      => $thumb_object->basename,
+                        'mime-type' => $thumb_object->mime(),
+                    ]);
 
-                    $thumb->save( $thumbPath, $quality );
-
-                    $imageMeta->setSizeData( $sizeName, [
-                        'width'     => $thumb->getWidth(),
-                        'height'    => $thumb->getHeight(),
-                        'file'      => $thumb->basename,
-                        'mime-type' => $thumb->mime(),
-                    ] );
-
-                    $sameSizes[ $sizeHash ] = $sizeName;
+                    $sameSizes[$sizeHash] = $sizeName;
 
                     
-                    $webpThumb = $imageMeta->getSizeFullPath( $sizeName, 'webp' );
-                    $thumb->filter( new CreateWebP_Filter( $webpThumb ) );
+                    $webp_thumb_path = $imageMeta->getSizeFullPath($sizeName, 'webp');
+                    $thumb_object->filter(new CreateWebP_Filter($webp_thumb_path, $sizeName));
                     
 
-                    $thumb->destroy();
+                    $thumb_object->destroy();
                 }
 
                 $image->destroy();
 
                 $imageMeta->markSizesRegenerated();
 
-                $this->deleteOrphanThumbnails($imageId, $metadata, $imageMeta->toArray() );
+                $new_meta = $imageMeta->toArray();
+                $new_meta['sizes'] = array_merge($skipped_sizes, $new_meta['sizes']);
+                $this->deleteOrphanThumbnails($imageId, $metadata, $new_meta);
 
 
-                return $imageMeta->toArray();
-
-            }
-            catch ( Invalid_Image_Meta_Exception $e ) {
+                return $new_meta;
+            } catch (Invalid_Image_Meta_Exception $e) {
                 return $metadata;
-            }
-            catch ( Exception $e ) {
-                wp_send_json_error( [
-                    'message' => "Smart Image Resize: {$e->getMessage()}",
-                ] );
-
+            } catch (Exception $e) {
+                
+                if(defined('WP_CLI') && WP_CLI) {
+                    $msg = "Smart Image Resize: " . $e->getMessage();
+                    
+                    if(!empty($metadata['file'])){
+                        $msg .= " (Path: " . $metadata['file'] . ", ID: " . $imageId . ")";
+                    }
+                    
+                    \WP_CLI::warning($msg);
+                }else{
+                    wp_send_json_error([
+                        'message' => "Smart Image Resize: " . $e->getMessage()
+                    ]);
+                }
+              
                 return $metadata;
             }
         }
 
-        private function deleteOrphanThumbnails( $imageId, $oldMeta, $newMeta )
-        {   
+        private function deleteOrphanThumbnails($imageId, $oldMeta, $newMeta) {
             // Old file names to delete.
             $oldFileNames = [];
 
@@ -261,52 +282,50 @@ if ( ! class_exists( '\WP_Smart_Image_Resize\Image_Editor' ) ) :
             // to manage this, we temporary store previously generated sizes
             //  in the `_old_image_meta` via the filter `wp_update_attachment_metadata`
             // to retreive them later here when running a clean up.
-            
+
             $orphanMeta = get_post_meta($imageId, '_old_image_meta', true);
-            if( is_array( $orphanMeta ) && !empty( $orphanMeta ) && !empty( $orphanMeta['sizes'] )){
-                foreach($orphanMeta['sizes'] as $orphanSize){
+            if (is_array($orphanMeta) && !empty($orphanMeta) && !empty($orphanMeta['sizes'])) {
+                foreach ($orphanMeta['sizes'] as $orphanSize) {
                     $oldFileNames[] = $orphanSize['file'];
                 }
-             }
+            }
 
-            if( !empty( $oldMeta[ 'sizes' ] ) ){
-                foreach($oldMeta['sizes'] as $oldSize){
+            if (!empty($oldMeta['sizes'])) {
+                foreach ($oldMeta['sizes'] as $oldSize) {
                     $oldFileNames[] = $oldSize['file'];
                 }
             }
-        
+
             $oldFileNames = array_unique($oldFileNames);
 
-            if( empty( $oldFileNames ) ){
+            if (empty($oldFileNames)) {
                 return;
             }
-            
-            $newFileNames = array_map( function ( $size ) {
-                return $size[ 'file' ];
-            }, $newMeta[ 'sizes' ] );
 
-            $uploadsPath  = wp_get_upload_dir()[ 'basedir' ];
-            $imageDirPath = trailingslashit( $uploadsPath ) . trailingslashit( dirname( $oldMeta[ 'file' ] ) );
+            $newFileNames = array_map(function ($size) {
+                return $size['file'];
+            }, $newMeta['sizes']);
 
-            foreach ( $oldFileNames as $file ) {
+            $uploadsPath  = wp_get_upload_dir()['basedir'];
+            $imageDirPath = trailingslashit($uploadsPath) . trailingslashit(dirname($oldMeta['file']));
+
+            foreach ($oldFileNames as $file) {
 
                 // Prevent accidently deleting original image.
-                if ( $file === basename( $oldMeta[ 'file' ] ) ) {
+                if ($file === basename($oldMeta['file'])) {
                     continue;
                 }
 
-                if ( ! in_array( $file, $newFileNames ) ) {
+                if (!in_array($file, $newFileNames)) {
 
                     // Delete old thumbnails, including JPG-converted images as well.
-                    File::delete( $imageDirPath . $file );
+                    @unlink($imageDirPath . $file);
 
                     // Delete old WebP images if present.
-                    
-                    $webp = $imageDirPath . File::mb_pathinfo( $file, PATHINFO_FILENAME ) . '.webp';
-                    File::delete( $imageDirPath . $webp );
+                    $webp = $imageDirPath . File::mb_pathinfo($file, PATHINFO_FILENAME) . '.webp';
+                    @unlink($imageDirPath . $webp);
                 }
             }
-
         }
 
         /**
@@ -315,26 +334,28 @@ if ( ! class_exists( '\WP_Smart_Image_Resize\Image_Editor' ) ) :
          * @return array
          */
 
-        private function getSizesToGenerate()
-        {
-            $sizeNames = apply_filters( 'wp_sir_sizes', wp_sir_get_settings()[ 'sizes' ] );
+
+        private function getSizesToGenerate() {
+            $sizeNames = apply_filters('wp_sir_sizes', wp_sir_get_settings()['sizes']);
 
             $sizes = [];
 
-            foreach ( $sizeNames as $sizeName ) {
-                $size = wp_sir_get_size_dimensions( $sizeName );
+            foreach ($sizeNames as $sizeName) {
 
-                if ( ! empty( $size ) ) {
-                    $sizes[ $sizeName ] = $size;
+                // TODO: Use `wp_sir_get_additional_sizes` directly.
+                $size = wp_sir_get_size_dimensions($sizeName);
+
+                if (!empty($size) && !empty($size['width']) && !empty($size['height'])) {
+                    $sizes[$sizeName] = $size;
                 }
             }
 
-            if ( ! apply_filters( 'wp_sir_enable_hd_sizes', false ) ) {
-                unset( $sizes[ '2048x2048' ] );
-                unset( $sizes[ '1536x1536' ] );
+            if (!apply_filters('wp_sir_enable_hd_sizes', false)) {
+                unset($sizes['2048x2048']);
+                unset($sizes['1536x1536']);
             }
 
-            return apply_filters( 'wp_sir_sizes', $sizes );
+            return apply_filters('wp_sir_sizes', $sizes);
         }
 
 
@@ -353,35 +374,34 @@ if ( ! class_exists( '\WP_Smart_Image_Resize\Image_Editor' ) ) :
             $sizeName,
             $imageId
         ) {
-           
-            $sourceInfo = File::mb_pathinfo( $sourcePath );
-            
-            $alreadyInJPG = in_array( $sourceInfo[ 'extension' ], [ 'jpg', 'jpeg' ] );
-            $isPNGToJPGEnabled = wp_sir_get_settings()[ 'jpg_convert' ];
 
-            if ( $isPNGToJPGEnabled && !$alreadyInJPG) {
+            $sourceInfo = File::mb_pathinfo($sourcePath);
+
+            $alreadyInJPG = in_array($sourceInfo['extension'], ['jpg', 'jpeg']);
+            $isPNGToJPGEnabled = wp_sir_get_settings()['jpg_convert'];
+
+            if ($isPNGToJPGEnabled && !$alreadyInJPG) {
                 // To avoid conflict with existing original image/thumbnails 
                 // under the same path and file name we preserve 
                 // the original extension in the filename, i.e. 'chair-500x500.png.jpg'
                 $extension = $sourceInfo['extension'] . '.jpg';
             } else {
                 // No conversion needed.
-                $extension = $sourceInfo[ 'extension' ];
+                $extension = $sourceInfo['extension'];
             }
 
             $basename = sprintf(
                 '%s-%dx%d.%s',
-                $sourceInfo[ 'filename' ],
-                $size[ 'width' ],
-                $size[ 'height' ],
+                $sourceInfo['filename'],
+                $size['width'],
+                $size['height'],
                 $extension
             );
 
-            $path = trailingslashit( $sourceInfo[ 'dirname' ] ) . $basename;
+            $path = trailingslashit($sourceInfo['dirname']) . $basename;
 
-            return apply_filters( 'wp_sir_thumbnail_save_path', $path, $sizeName, $imageId);
+            return apply_filters('wp_sir_thumbnail_save_path', $path, $sizeName, $imageId);
         }
-
     }
 
 

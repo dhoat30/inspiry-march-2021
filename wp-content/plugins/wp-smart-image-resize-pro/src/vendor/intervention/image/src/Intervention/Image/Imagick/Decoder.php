@@ -7,51 +7,49 @@ use Intervention\Image\Exception\NotReadableException;
 use Intervention\Image\Exception\NotSupportedException;
 use Intervention\Image\Image;
 
-class Decoder extends AbstractDecoder
-{
+class Decoder extends AbstractDecoder {
     /**
-     * Initiates new image from path in filesystem
+     * Initiates new image from path in filesystem.
      *
      * @param  string $path
      * @return \Intervention\Image\Image
      */
-    public function initFromPath($path)
-    {
+    public function initFromPath($path) {
         $core = new \Imagick;
 
         try {
-
             $core->setBackgroundColor(new \ImagickPixel('transparent'));
             $core->readImage($path);
-            
-            $setImageType = true;
-
-            if($core->getImageColorspace() === \Imagick::COLORSPACE_CMYK){
-
-                // Attempty to convert CMYK to sRGB.
-               $core->profileImage('icc', file_get_contents(__DIR__ . '/sRGB_v4_ICC_preference.icc'));
-            
-               // Since `profileImage()` could fails silently, wee need to verify whether 
-               // the profile has been changed or not.
-               if( $core->getImageColorspace() === \Imagick::COLORSPACE_SRGB ){
-                   $setImageType = false;
-               }
-            }
-          
-             if( $setImageType ){
-                $core->setImageType(defined('\Imagick::IMGTYPE_TRUECOLORALPHA') ? \Imagick::IMGTYPE_TRUECOLORALPHA : \Imagick::IMGTYPE_TRUECOLORMATTE);
-           
-            }
-        
-        } catch (\ImagickException $e) {
-            throw new \Intervention\Image\Exception\NotReadableException(
-                "Unable to read image from path ({$path}).",
-                0,
-                $e
-            );
+        } catch (\Exception $e) {
+            throw new \Exception("Unable to read image from path ({$path}). " . $e->getMessage(), $e->getCode(), $e);
         }
 
-        // build image
+        try {
+
+            if ($core->getImageColorspace() === \Imagick::COLORSPACE_CMYK) {
+
+                try {
+                    $has_icc_profile = (bool) $core->getImageProfile('icc');
+                } catch (\ImagickException $e) {
+                    $has_icc_profile = false;
+                }
+
+                if (!$has_icc_profile) {
+                    $core->profileImage('icc', file_get_contents(__DIR__ . '/USWebUncoated.icc'));
+                }
+
+                $core->profileImage('icc', file_get_contents(__DIR__ . '/sRGB_IEC61966-2-1_black_scaled.icc'));
+
+                $core->setColorspace(\Imagick::COLORSPACE_RGB);
+            }
+        
+            $type = defined('\Imagick::IMGTYPE_TRUECOLORALPHA') ? \Imagick::IMGTYPE_TRUECOLORALPHA : (defined('\Imagick::IMGTYPE_TRUECOLORMATTE') ? \Imagick::IMGTYPE_TRUECOLORMATTE : 7);
+            $core->setType($type);
+
+        } catch (\Exception $e) {
+           $core->transformImageColorspace(\Imagick::COLORSPACE_SRGB);
+        }
+
         $image = $this->initFromImagick($core);
         $image->setFileInfoFromPath($path);
 
@@ -59,26 +57,24 @@ class Decoder extends AbstractDecoder
     }
 
     /**
-     * Initiates new image from GD resource
+     * Initiates new image from GD resource.
      *
-     * @param  Resource $resource
+     * @param  resource $resource
      * @return \Intervention\Image\Image
      */
-    public function initFromGdResource($resource)
-    {
+    public function initFromGdResource($resource) {
         throw new NotSupportedException(
             'Imagick driver is unable to init from GD resource.'
         );
     }
 
     /**
-     * Initiates new image from Imagick object
+     * Initiates new image from Imagick object.
      *
      * @param  Imagick $object
      * @return \Intervention\Image\Image
      */
-    public function initFromImagick(\Imagick $object)
-    {
+    public function initFromImagick(\Imagick $object) {
         // currently animations are not supported
         // so all images are turned into static
         $object = $this->removeAnimation($object);
@@ -90,23 +86,21 @@ class Decoder extends AbstractDecoder
     }
 
     /**
-     * Initiates new image from binary data
+     * Initiates new image from binary data.
      *
      * @param  string $data
      * @return \Intervention\Image\Image
      */
-    public function initFromBinary($binary)
-    {
+    public function initFromBinary($binary) {
         $core = new \Imagick;
 
         try {
             $core->setBackgroundColor(new \ImagickPixel('transparent'));
 
             $core->readImageBlob($binary);
-
         } catch (\ImagickException $e) {
             throw new NotReadableException(
-                "Unable to read image from binary data.",
+                'Unable to read image from binary data.',
                 0,
                 $e
             );
@@ -121,13 +115,12 @@ class Decoder extends AbstractDecoder
 
     /**
      * Turns object into one frame Imagick object
-     * by removing all frames except first
+     * by removing all frames except first.
      *
      * @param  Imagick $object
      * @return Imagick
      */
-    private function removeAnimation(\Imagick $object)
-    {
+    private function removeAnimation(\Imagick $object) {
         $imagick = new \Imagick;
 
         foreach ($object as $frame) {

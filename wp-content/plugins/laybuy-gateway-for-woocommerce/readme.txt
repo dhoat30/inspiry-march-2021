@@ -2,8 +2,8 @@
 Contributors: laybuy, overdose
 Tags: woocommerce, payment-gateway
 Requires at least: 4.6
-Tested up to: 5.5.3
-Stable tag: 5.3.2
+Tested up to: 5.8
+Stable tag: 5.3.5
 Requires PHP: 5.6.32
 License: Apache License
 License URI: https://www.apache.org/licenses/LICENSE-2.0.html
@@ -28,6 +28,21 @@ This extension allows you to integrate your WooCommerce store platform with the 
 3. Browse to Admin -> Wocommerce -> Settings -> Checkout -> Laybuy, here you can set your Laybuy Merchant details and choose to display the product price breakdown. The breakdown is displayed with Woocommerce's Product actions, there is a link in the Description to show you where these will display.
 
 == Changelog ==
+
+= 5.3.5 =
+*Release Date: Wed, 15 Dec 2021*
+
+* Redirect from Laybuy wp action
+
+= 5.3.4 =
+*Release Date: Fri, 27 Aug 2021*
+
+* Support request button added
+
+= 5.3.3 =
+*Release Date: Thu, 12 Aug 2021*
+
+* Compatibility with WordPress 5.8
 
 = 5.3.2 =
 *Release Date: Thu, 9 July 2021*

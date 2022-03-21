@@ -409,7 +409,7 @@
                     <a href="javascript:;" @click="$root.getQueryArgs(template)">{{ 'Convert to query args' | i18n }}</a>
                 </div>
 
-                <div>
+                <div class="qb-condition">
                     {{ 'Fetch' | i18n }}
                     <v-select
                         v-model="query_obj.post_type"
@@ -439,6 +439,7 @@
                             <option value="type">{{ 'Post Type' | i18n }}</option>
                             <option value="date">{{ 'Post Date' | i18n }}</option>
                             <option value="modified">{{ 'Post Modified' | i18n }}</option>
+                            <option value="comment_count">{{ 'Comment Count' | i18n }}</option>
                             <option value="menu_order">{{ 'Menu Order' | i18n }}</option>
                             <option value="post__in">post__in</option>
                         </optgroup>
@@ -496,12 +497,15 @@
                         :taggable="true"
                         :close-on-select="false"
                         :placeholder="getPlaceholder(row)">
+                        <div slot="no-options">
+                            Type a value, then press "Enter" to add it
+                        </div>
                     </v-select>
 
                     <span @click="deleteFilterCriteria(index)" class="qb-remove" v-html="FWP.svg['minus-circle']"></span>
                 </div>
 
-                <div class="qb-add">
+                <div>
                     <button class="button" @click="addSortCriteria">{{ 'Add sort' | i18n }}</button>
                     <button class="button" @click="addFilterCriteria">{{ 'Add filter' | i18n }}</button>
                 </div>
@@ -562,32 +566,31 @@
         });
 
         Vue.component('fselect', {
+            data() {
+                return {
+                    prev_key: ''
+                };
+            },
             props: ['row'],
             template: `
-            <select :id="rand" v-model="row.key" class="qb-object">
+            <select v-model="row.key" class="qb-object" :data-key="row.key">
                 <slot></slot>
             </select>
             `,
-            methods: {
-                fSelectChanged(wrap) {
-
-                    // only update this instance
-                    if (wrap._rel.matches('#' + this.rand)) {
-                        this.row.key = this.$el.value;
-                    }
-                }
-            },
-            created() {
-
-                // create a random ID for each fSelect instance
-                this.rand = 'fs-' + Math.random().toString(36).substring(7);
-            },
             mounted() {
                 fSelect(this.$el);
-                $().on('fs:changed', (e) => this.fSelectChanged(...e.detail));
             },
-            beforeDestroy() {
-                $().off('fs:changed', (e) => this.fSelectChanged(...e.detail));
+            /**
+             * fSelects won't refresh when deleting, so we need to
+             * manually reload() the changed elements
+             */
+            beforeUpdate() {
+                this.prev_key = this.$el.getAttribute('data-key');
+            },
+            updated() {
+                if (this.row.key != this.prev_key) {
+                    this.$el.fselect.reload();
+                }
             }
         });
 
@@ -602,8 +605,6 @@
             <div class="builder-wrap">
                 <div class="builder-canvas-wrap">
                     <div class="builder-canvas">
-                        <div class="builder-edge"></div>
-                        <div class="builder-edge vertical"></div>
                         <draggable :list="layout.items" handle=".builder-row-actions.not-child">
                             <builder-row
                                 v-for="(row, index) in layout.items"
@@ -831,10 +832,10 @@
             template: `
             <div>
                 <div class="utrbl utrbl-unit"><input type="text" v-model="settings[name].unit" /><span>unit</span></div>
-                <div class="utrbl"><input type="number" v-model.number="settings[name].top" /><span>top</span></div>
-                <div class="utrbl"><input type="number" v-model.number="settings[name].right" /><span>right</span></div>
-                <div class="utrbl"><input type="number" v-model.number="settings[name].bottom" /><span>bottom</span></div>
-                <div class="utrbl"><input type="number" v-model.number="settings[name].left" /><span>left</span></div>
+                <div class="utrbl"><input type="text" v-model.number="settings[name].top" /><span>top</span></div>
+                <div class="utrbl"><input type="text" v-model.number="settings[name].right" /><span>right</span></div>
+                <div class="utrbl"><input type="text" v-model.number="settings[name].bottom" /><span>bottom</span></div>
+                <div class="utrbl"><input type="text" v-model.number="settings[name].left" /><span>left</span></div>
             </div>
             `
         });
@@ -1027,7 +1028,7 @@
         });
 
         Vue.component('builder-col', {
-            mixins: [builder_defaults, VueClickaway.mixin],
+            mixins: [builder_defaults],
             props: {
                 col: Object,
                 cols: Array,
@@ -1041,7 +1042,7 @@
             template: `
             <div class="builder-col">
                 <col-resizer :cols="cols" :index="index" v-show="index < (cols.length - 1)"></col-resizer>
-                <popover :col="col" v-if="adding_item" v-on-clickaway="away"></popover>
+                <popover :col="col" v-if="adding_item"></popover>
                 <div class="builder-col-actions">
                     <span @click="editCol" title="Edit columm" v-html="FWP.svg['cog']"></span>
                     <span @click="deleteCol" title="Delete column" v-html="FWP.svg['times']"></span>
@@ -1108,7 +1109,7 @@
             data() {
                 return {
                     isResizing: false
-                };
+                }
             },
             template: '<div :class="classNames" @mousedown="onMouseDown"></div>',
             computed: {
@@ -1204,7 +1205,7 @@
                 }
             },
             template: `
-            <div class="popover">
+            <div class="popover" tabindex="0" @focusout="handleBlur">
                 <div class="popover-search">
                     <input
                         type="text"
@@ -1224,6 +1225,11 @@
             </div>
             `,
             methods: {
+                handleBlur(e) {
+                    if (!e.currentTarget.contains(e.relatedTarget)) {
+                        this.$parent.adding_item = false;
+                    }
+                },
                 isMatch(label) {
                     let bool = ('' == this.keywords) ? true : false;
 
@@ -1340,7 +1346,7 @@
             data() {
                 return {
                     facet: {}
-                };
+                }
             },
             created() {
                 this.facet = this.$root.editing;
@@ -1404,7 +1410,7 @@
                 return {
                     template: {},
                     tab: 'display'
-                };
+                }
             },
             created() {
                 this.template = this.$root.editing;
@@ -1481,7 +1487,7 @@
                         </div>
                         <div class="table-row" v-show="template.modes.display == 'advanced'">
                             <div class="side-link">
-                                <a href="https://facetwp.com/documentation/templates/advanced-mode/" target="_blank">{{ 'Help' | i18n }}</a>
+                                <a href="https://facetwp.com/help-center/templates/advanced-mode/" target="_blank">{{ 'Help' | i18n }}</a>
                             </div>
                             <div class="row-label">{{ 'Display Code' | i18n }}</div>
                             <textarea v-model="template.template"></textarea>
@@ -1494,7 +1500,7 @@
                         </div>
                         <div class="table-row" v-show="template.modes.query == 'advanced'">
                             <div class="side-link">
-                                <a href="https://facetwp.com/documentation/templates/advanced-mode/" target="_blank">{{ 'Help' | i18n }}</a>
+                                <a href="https://facetwp.com/help-center/templates/advanced-mode/" target="_blank">{{ 'Help' | i18n }}</a>
                             </div>
                             <div class="row-label">{{ 'Query Arguments' | i18n }}</div>
                             <textarea v-model="template.query"></textarea>
@@ -1516,104 +1522,119 @@
 
         Vue.component('facet-settings', {
             props: ['facet'],
-            data() {
-                return {
-                    original_facet_type: ''
-                };
+            template: '<component :is="dynComponent" :facet="facet"></component>',
+            methods: {
+                getFields(aliases) {
+                    let output = [];
+                    $.each(aliases, function(name) {
+                        output = output.concat(FWP.facet_fields[name].names);
+                    });
+                    return output;
+                }
             },
-            template: `
-            <div class="facet-fields">
-                <component :is="dynComponent" :facet="facet"></component>
-            </div>
-            `,
             computed: {
-
+                // dynamic component so the data bindings (e.g. v-model) get compiled
+                dynComponent() {
+                    return {
+                        template: '<div class="facet-fields">' + this.settingsHtml + '</div>',
+                        props: ['facet']
+                    }
+                },
                 settingsHtml() {
-                    const self = this;
-                    let html = FWP.clone[this.facet.type];
-                    let custom_settings = ['_code'];
+                    let self = this;
+                    let facet_obj = FWP.facet_types[self.facet.type];
+                    let aliases = facet_obj.fields;
 
-                    // Backwards compatibility
-                    html = html.replace(/<tr>/g, '<div class="facetwp-row">');
-                    html = html.replace(/<td>/g, '<div class="facetwp-col">');
-                    html = html.replace(/<\/td>/g, '</div>');
-                    html = html.replace(/<\/tr>/g, '</div>');
+                    // Support for settings_html() in < 3.9
+                    if ('undefined' === typeof aliases) {
+                        if ('undefined' !== typeof FWP.clone[self.facet.type]) {
+                            FWP.facet_fields[self.facet.type + '_fields'] = {
+                                names: [],
+                                html: FWP.clone[self.facet.type]
+                            };
 
-                    // Remove default keys
-                    const keys = Object.keys(this.facet).filter(key => {
-                        return !['label', 'name', 'type', 'source', 'source_other'].includes(key);
+                            var $html = $(FWP.clone[self.facet.type]);
+                            $.each($html.nodes[0].children, function(chunk) {
+                                $(chunk).find('input, textarea, select, [setting-name]').each(function() {
+                                    let $el = $(this);
+                                    let setting_name = $el.attr('setting-name');
+
+                                    if (null === setting_name) {
+                                        setting_name = $el.attr('class').split(' ')[0].replace(/-/g, '_').substr(6);
+                                    }
+
+                                    FWP.facet_fields[self.facet.type + '_fields'].names.push(setting_name);
+                                });
+                            });
+
+                            aliases = [self.facet.type + '_fields'];
+                        }
+                    }
+
+                    // Get the actual fields by parsing the aliases (groups)
+                    let fields = self.getFields(aliases);
+                    let html = '';
+
+                    // Add UI-dependant fields
+                    if ('undefined' !== typeof facet_obj.ui_fields) {
+                        if ('undefined' !== typeof self.facet.ui_type && '' != self.facet.ui_type) {
+                            let ui_fields = facet_obj.ui_fields[self.facet.ui_type];
+                            aliases = aliases.concat(ui_fields);
+                            fields = fields.concat(this.getFields(ui_fields));
+                        }
+                    }
+
+                    let combined = ['label', 'name', 'type', 'source', '_code'].concat(fields);
+
+                    // Remove irrelevant settings
+                    $.each(Object.keys(self.facet), function(setting_name) {
+                        if (-1 == combined.indexOf(setting_name)) {
+                            Vue.delete(self.facet, setting_name);
+                        }
                     });
 
-                    // Add setting names by parsing the DOM
-                    $(html).find('input, textarea, select').each(function() {
-                        let $el = $(this);
-                        let setting_name = $el.attr('class').split(' ')[0].replace(/-/g, '_').substr(6);
-                        custom_settings.push(setting_name);
+                    // Add new settings
+                    $.each(aliases, function(alias_name) {
+                        let $parsed = $(FWP.facet_fields[alias_name].html);
 
-                        let is_new_type = (self.facet.type !== self.original_facet_type);
-                        let is_new_setting = (!keys.includes(setting_name));
+                        $.each(FWP.facet_fields[alias_name].names, function(setting_name) {
+                            let name_dashed = setting_name.replace(/_/g, '-');
+                            let $input = $parsed.find('.facet-' + name_dashed);
+                            let val = $input.val();
 
-                        if (is_new_type || is_new_setting) {
-                            let val = $el.val();
+                            if (0 < $input.len()) {
+                                $input.attr('v-model', 'facet.' + setting_name);
 
-                            if ($el.is('[type=checkbox]')) {
-                                val = $el.nodes[0].checked ? 'yes' : 'no';
+                                if ('undefined' === typeof self.facet[setting_name]) {
+                                    if ($input.is('[type=checkbox]')) {
+                                        val = $input.nodes[0].checked ? 'yes' : 'no';
+                                    }
+                                    if ('[]' === val) {
+                                        val = [];
+                                    }
+                                }
+                                else {
+                                    val = self.facet[setting_name];
+                                    Vue.delete(self.facet, setting_name);
+                                }
+
+                                Vue.set(self.facet, setting_name, val);
                             }
-                            if ('[]' === val) {
-                                val = [];
-                            }
+                        });
 
-                            Vue.set(self.facet, setting_name, val);
-                        }
-
-                        if (is_new_setting) {
-                            keys.push(setting_name);
-                        }
-                    });
-
-                    keys.forEach((key) => {
-
-                        // Delete orphan settings
-                        if (!custom_settings.includes(key)) {
-                            Vue.delete(this.facet, key);
-                        }
-
-                        // Dynamically add v-models
-                        const key_dashed = key.replace(/_/g, '-');
-                        const pattern = new RegExp('(class="facet-' + key_dashed + '")', 'gm');
-                        const replacement = '$1 v-model="facet.' + key + '"';
-                        html = html.replace(pattern, replacement);
+                        // Update the documentFragment HTML to include the "v-model"
+                        $.each($parsed.nodes[0].children, function(el) {
+                            html += el.outerHTML;
+                        });
                     });
 
                     return html;
-                },
-
-                // use a dynamic component so the data bindings (e.g. v-model) get compiled
-                dynComponent() {
-                    return {
-                        template: '<div>' + this.settingsHtml + '</div>',
-                        props: ['facet']
-                    }
                 }
-            },
-            created() {
-                this.original_facet_type = this.facet.type;
             },
             watch: {
                 'facet.type': function(val) {
-                    if ('search' == val || 'pager' == val) {
-                        Vue.set(this.facet, 'source', '');
-                    }
-                    Vue.set(this.facet, 'source_other', '');
-                },
-                'facet.ghosts': function(val) {
-                    if ('no' == val) {
-                        Vue.set(this.facet, 'preserve_ghosts', 'no');
-                    }
-                },
-                'facet.hierarchical': function(val) {
-                    if ('no' == val) {
-                        Vue.set(this.facet, 'show_expanded', 'no');
+                    if ('search' == val || 'pager' == val || 'sort' == val) {
+                        Vue.delete(this.facet, 'source');
                     }
                 }
             }
@@ -1628,33 +1649,123 @@
                 }
             },
             template: `
-            <select :id="rand">
+            <select :class="className" v-model="facet[settingName]">
                 <option v-if="settingName != 'source'" value="">{{ 'None' | i18n }}</option>
                 <optgroup v-for="optgroup in FWP.data_sources" :label="optgroup.label">
                     <option v-for="(label, key) in optgroup.choices" :value="key" :selected="facet[settingName] == key">{{ label }}</option>
                 </optgroup>
             </select>
             `,
-            methods: {
-                fSelectChanged(wrap) {
-
-                    // only update this instance
-                    if (wrap._rel.matches('#' + this.rand)) {
-                        Vue.set(this.facet, this.settingName, this.$el.value);
-                    }
+            computed: {
+                className() {
+                    return 'facet-' + this.settingName.replace(/_/g, '-');
                 }
-            },
-            created() {
-
-                // create a random ID for each fSelect instance
-                this.rand = 'fs-' + Math.random().toString(36).substring(7);
             },
             mounted() {
                 fSelect(this.$el);
-                $().on('fs:changed', (e) => this.fSelectChanged(...e.detail));
+            }
+        });
+
+        Vue.component('ui-type', {
+            props: {
+                facet: Object
             },
-            beforeDestroy() {
-                $().off('fs:changed', (e) => this.fSelectChanged(...e.detail));
+            created() {
+                this.ui_fields = FWP.facet_types[this.facet.type].ui_fields || [];
+                this.sorted = Object.keys(this.ui_fields).reverse();
+            },
+            template: `
+            <select class="facet-ui-type" v-model="facet.ui_type">
+                <option value="">{{ 'None' | i18n }}</option>
+                <option v-for="name in sorted" :value="name" :selected="facet.ui_type == name">{{ FWP.facet_types[name].label }}</option>
+            </select>
+            `
+        });
+
+        Vue.component('sort-options', {
+            props: {
+                facet: Object
+            },
+            template: `
+            <div class="qb-wrap">
+                <div v-for="(rowOuter, indexOuter) in facet.sort_options" class="qb-row">
+                    <div>
+                        <input
+                            type="text"
+                            v-model="rowOuter.label"
+                            @focus="$root.isNameEditable(rowOuter)"
+                            @keyup="$root.maybeEditName(rowOuter)"
+                        />
+                        <code class="item-name" contenteditable v-text="rowOuter.name" @blur="setName(rowOuter, $event)" @keydown.enter.prevent autocorrect="off"></code>
+
+                        <div v-for="(row, index) in rowOuter.orderby" class="qb-order-row">
+                            <fselect :row="row">
+                                <optgroup label="Posts">
+                                    <option value="ID">ID</option>
+                                    <option value="title">{{ 'Post Title' | i18n }}</option>
+                                    <option value="name">{{ 'Post Name' | i18n }}</option>
+                                    <option value="type">{{ 'Post Type' | i18n }}</option>
+                                    <option value="date">{{ 'Post Date' | i18n }}</option>
+                                    <option value="modified">{{ 'Post Modified' | i18n }}</option>
+                                    <option value="comment_count">{{ 'Comment Count' | i18n }}</option>
+                                    <option value="menu_order">{{ 'Menu Order' | i18n }}</option>
+                                    <option value="post__in">post__in</option>
+                                </optgroup>
+                                <optgroup label="Custom Fields">
+                                    <option v-for="(label, name) in FWP.data_sources.custom_fields.choices" :value="name">{{ label }}</option>
+                                </optgroup>
+                            </fselect>
+                            <select v-model="row.type" v-show="row.key.substr(0, 3) == 'cf/'" class="qb-type">
+                                <option value="CHAR">TEXT</option>
+                                <option value="NUMERIC">NUMERIC</option>
+                            </select>
+                            <select v-model="row.order" class="qb-order">
+                                <option value="ASC">ASC</option>
+                                <option value="DESC">DESC</option>
+                            </select>
+                            <span @click="addSortField(rowOuter.orderby, index)" class="qb-add" v-html="FWP.svg['plus-circle']"></span>
+                            <span @click="removeItem(rowOuter.orderby, index)" class="qb-remove" v-html="FWP.svg['minus-circle']" v-show="rowOuter.orderby.length > 1"></span>
+                        </div>
+                    </div>
+                    <div class="align-right">
+                        <span @click="moveUp(facet.sort_options, indexOuter)" class="qb-move" v-html="FWP.svg['arrow-circle-up']" v-show="indexOuter > 0"></span>
+                        <span @click="removeItem(facet.sort_options, indexOuter)" class="qb-remove" v-html="FWP.svg['minus-circle']"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="button" @click="addSort">{{ 'Add sort' | i18n }}</button>
+                </div>
+            </div>
+            `,
+            methods: {
+                addSort() {
+                    this.facet.sort_options.push({
+                        label: 'New option',
+                        name: 'new_option',
+                        orderby: [{
+                            key: 'title',
+                            order: 'ASC',
+                            type: 'CHAR'
+                        }]
+                    });
+                },
+                addSortField(opts, index) {
+                    opts.splice(index + 1, 0, {
+                        key: 'title',
+                        order: 'ASC',
+                        type: 'CHAR'
+                    });
+                },
+                moveUp(opts, index) {
+                    opts.splice(index -1, 0, opts.splice(index, 1)[0]);
+                },
+                removeItem(row, index) {
+                    Vue.delete(row, index);
+                },
+                setName(row, e) {
+                    row.name = this.$root.sanitizeName(e.target.innerHTML);
+                }
             }
         });
 
@@ -1722,8 +1833,7 @@
                     }
                 },
                 saveChanges() {
-                    $('.facetwp-response').html(FWP.__('Saving') + '...');
-                    $('.facetwp-response').addClass('visible');
+                    window.setStatus('load', FWP.__('Saving') + '...');
 
                     let data = JSON.parse(JSON.stringify(FWP.data));
 
@@ -1739,14 +1849,12 @@
                     });
 
                     $.post(ajaxurl, data, {
-                        done: ({message, reindex}) => {
-                            $('.facetwp-response').html(message);
-                            var method = (reindex) ? 'addClass' : 'removeClass';
-                            $('.facetwp-rebuild')[method]('flux');
+                        done: ({code, message}) => {
+                            var code = ('success' == code) ? 'ok' : code;
+                            window.setStatus(code, message);
                         },
                         fail: (err) => {
-                            console.log(err);
-                            // $('.facetwp-response').html(status + ' ' + errorThrown);
+                            window.setStatus('error', err);
                         }
                     });
                 },
@@ -1756,8 +1864,6 @@
                 rebuildIndex() {
                     let self = this;
 
-                    $('.facetwp-rebuild').removeClass('flux');
-
                     if (this.is_indexing) {
                         return;
                     }
@@ -1765,8 +1871,7 @@
                     this.is_indexing = true;
 
                     $.post(ajaxurl, { action: 'facetwp_rebuild_index', nonce: FWP.nonce });
-                    $('.facetwp-response').html(FWP.__('Indexing') + '... 0%');
-                    $('.facetwp-response').addClass('visible');
+                    window.setStatus('load', FWP.__('Indexing') + '... 0%');
                     this.timeout = setTimeout(() => {
                         self.getProgress();
                     }, 5000);
@@ -1782,7 +1887,7 @@
                         done: ({message}) => {
                             self.is_indexing = false;
                             clearTimeout(self.timeout);
-                            $('.facetwp-response').html(message);
+                            window.setStatus('error', message);
                         }
                     });
                 },
@@ -1796,17 +1901,22 @@
                     }, {
                         done: (data) => {
                             if ('-1' == data.pct) {
-                                $('.facetwp-response').html(FWP.__('Indexing complete'));
                                 self.is_indexing = false;
-    
-                                // Update the row counts
-                                $.each(data.rows, function(count, facet_name) {
-                                    Vue.set(self.row_counts, facet_name, count);
-                                });
+
+                                if (data.rows.length < 1) {
+                                    window.setStatus('error', FWP.__('The index table is empty'));
+                                }
+                                else {
+                                    window.setStatus('ok', FWP.__('Indexing complete'));
+
+                                    // Update the row counts
+                                    $.each(data.rows, function(count, facet_name) {
+                                        Vue.set(self.row_counts, facet_name, count);
+                                    });
+                                }
                             }
                             else if (isNumeric(data.pct)) {
-                                $('.facetwp-response').html(FWP.__('Indexing') + '... ' + data.pct + '%');
-                                $('.facetwp-response').addClass('visible');
+                                window.setStatus('load', FWP.__('Indexing') + '... ' + data.pct + '%');
                                 self.is_indexing = true;
     
                                 self.timeout = setTimeout(() => {
@@ -1814,15 +1924,14 @@
                                 }, 5000);
                             }
                             else {
-                                $('.facetwp-response').html(data);
+                                window.setStatus('error', data);
                                 self.is_indexing = false;
                             }
                         }
                     });
                 },
                 getInfo(type, label) {
-                    $('.facetwp-response').html(FWP.__(label) + '...');
-                    $('.facetwp-response').addClass('visible');
+                    window.setStatus('load', FWP.__(label) + '...');
 
                     $.post(ajaxurl, {
                         action: 'facetwp_get_info',
@@ -1830,7 +1939,7 @@
                         nonce: FWP.nonce
                     }, {
                         done: ({message}) => {
-                            $('.facetwp-response').html(message);
+                            window.setStatus('error', message);
                         }
                     });
                 },
@@ -1911,7 +2020,7 @@
                     val = val.replace(/[^\w- ]/g, ''); // strip invalid characters
                     val = val.replace(/[- ]/g, '_'); // replace space and hyphen with underscore
                     val = val.replace(/[_]{2,}/g, '_'); // strip consecutive underscores
-                    val = ('pager' == val) ? val + '_' : val; // reserved
+                    val = ('pager' == val || 'sort' == val) ? val + '_' : val; // reserved
                     return val;
                 },
                 documentClick({target}) {
@@ -1941,6 +2050,23 @@
 
     function init_custom_js() {
 
+        window.setStatus = (code, message) => {
+            $('.facetwp-response').html(message);
+            $('.facetwp-response-icon').nodes[0].setAttribute('data-status', code);
+
+            if ('error' == code) {
+                $('.facetwp-response').addClass('visible');
+            }
+        };
+
+        $().on('click', '.facetwp-settings-section .facetwp-switch', () => {
+            window.setStatus('error', 'Press "Save changes" to apply');
+        });
+
+        $().on('click', '.facetwp-response-wrap', () => {
+            $('.facetwp-response').toggleClass('visible');
+        });
+
         // Export
         $().on('click', '.export-submit', () => {
             $('.import-code').val(FWP.__('Loading') + '...');
@@ -1959,8 +2085,7 @@
 
         // Import
         $().on('click', '.import-submit', () => {
-            $('.facetwp-response').addClass('visible');
-            $('.facetwp-response').html(FWP.__('Importing') + '...');
+            window.setStatus('load', FWP.__('Importing') + '...');
 
             try {
                 var code = JSON.parse($('.import-code').val());
@@ -1974,7 +2099,7 @@
                 }, {
                     dataType: 'text',
                     done: (resp) => {
-                        $('.facetwp-response').html(resp);
+                        window.setStatus('ok', resp);
                         setTimeout(() => {
                             window.location.reload();
                         }, 1500);
@@ -1982,7 +2107,7 @@
                 });
             }
             catch(err) {
-                $('.facetwp-response').html('Invalid JSON');
+                window.setStatus('error', 'Invalid JSON');
             }
         });
 

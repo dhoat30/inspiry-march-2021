@@ -8,6 +8,7 @@ class FacetWP_Facet_Autocomplete extends FacetWP_Facet
 
     function __construct() {
         $this->label = __( 'Autocomplete', 'fwp' );
+        $this->fields = [ 'placeholder' ];
 
         // ajax
         add_action( 'facetwp_autocomplete_load', [ $this, 'ajax_load' ] );
@@ -119,6 +120,9 @@ class FacetWP_Facet_Autocomplete extends FacetWP_Facet
         // then grab the matching post IDs
         $where_clause = $this->get_where_clause( [ 'name' => $facet_name ] );
 
+        // customize limit
+        $limit = (int) apply_filters( 'facetwp_facet_autocomplete_limit', 10 );
+
         if ( ! empty( $query ) && ! empty( $facet_name ) ) {
             $sql = "
             SELECT DISTINCT facet_display_value
@@ -128,7 +132,7 @@ class FacetWP_Facet_Autocomplete extends FacetWP_Facet
                 facet_display_value LIKE '%$query%'
                 $where_clause
             ORDER BY facet_display_value ASC
-            LIMIT 10";
+            LIMIT $limit";
 
             $results = $wpdb->get_results( $sql );
 
@@ -145,14 +149,13 @@ class FacetWP_Facet_Autocomplete extends FacetWP_Facet
 
 
     /**
-     * Output admin settings HTML
+     * (Front-end) Attach settings to the AJAX response
      */
-    function settings_html() {
-?>
-        <div class="facetwp-row">
-            <div><?php _e( 'Placeholder text', 'fwp' ); ?>:</div>
-            <div><input type="text" class="facet-placeholder" /></div>
-        </div>
-<?php
+    function settings_js( $params ) {
+        return [
+            'loadingText' => __( 'Loading', 'fwp-front' ) . '...',
+            'minCharsText' => __( 'Enter {n} or more characters', 'fwp-front' ),
+            'noResultsText' => __( 'No results', 'fwp-front' )
+        ];
     }
 }

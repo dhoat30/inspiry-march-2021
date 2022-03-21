@@ -16,7 +16,7 @@ class Driver extends AbstractDriver
      */
     public function __construct(Decoder $decoder = null, Encoder $encoder = null)
     {
-        if ( ! $this->coreAvailable()) {
+        if (!$this->coreAvailable()) {
             throw new NotSupportedException(
                 "ImageMagick module not available with this PHP installation."
             );
@@ -36,14 +36,24 @@ class Driver extends AbstractDriver
      */
     public function newImage($width, $height, $background = null)
     {
+        $args = func_get_args();
+        $image = isset($args[3]) ? $args[3] : false;
+
         $background = new Color($background);
 
         // create empty core
         $core = new \Imagick;
         $core->newImage($width, $height, $background->getPixel(), 'png');
-        $core->setType(\Imagick::IMGTYPE_UNDEFINED);
-        $core->setImageType(\Imagick::IMGTYPE_UNDEFINED);
-        $core->setColorspace(\Imagick::COLORSPACE_UNDEFINED);
+
+        if ($image instanceof Image) {
+            $core->setImageType($image->getCore()->getImageType());
+            $core->setColorspace($image->getCore()->getColorspace());
+            $core->setColorspace($image->getCore()->getImageColorspace());
+        } else {
+            $core->setType(\Imagick::IMGTYPE_UNDEFINED);
+            $core->setImageType(\Imagick::IMGTYPE_UNDEFINED);
+            $core->setColorspace(\Imagick::COLORSPACE_UNDEFINED);
+        }
 
         // build image
         $image = new Image(new static, $core);

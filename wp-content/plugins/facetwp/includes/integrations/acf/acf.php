@@ -23,21 +23,24 @@ class FacetWP_Integration_ACF
      */
     function facet_sources( $sources ) {
         $fields = $this->get_fields();
-
-        $sources['acf'] = [
-            'label' => 'Advanced Custom Fields',
-            'choices' => [],
-            'weight' => 5
-        ];
+        $choices = [];
 
         foreach ( $fields as $field ) {
             $field_id = $field['hierarchy'];
             $field_name = $field['name'];
             $field_label = '[' . $field['group_title'] . '] ' . $field['parents'] . $field['label'];
-            $sources['acf']['choices'][ "acf/$field_id" ] = $field_label;
+            $choices[ "acf/$field_id" ] = $field_label;
 
             // remove "hidden" ACF fields
             unset( $sources['custom_fields']['choices'][ "cf/_$field_name" ] );
+        }
+
+        if ( ! empty( $choices ) ) {
+            $sources['acf'] = [
+                'label' => 'ACF',
+                'choices' => $choices,
+                'weight' => 5
+            ];
         }
 
         return $sources;

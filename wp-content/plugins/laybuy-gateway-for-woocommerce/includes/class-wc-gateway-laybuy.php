@@ -827,6 +827,8 @@ LOGO;
      */
     public function is_available() {
 
+        return true; // debug
+
         $is_available = parent::is_available();
 
         if (!$is_available) {
@@ -957,6 +959,9 @@ LOGO;
         }
 
         if (WC()->cart->total < $this->pay_over_time_limit_min) {
+            if (isset($_GET['debug'])) {
+                var_dump('UNSET');exit;
+            }
             unset($gateways[$this->id]);
 
         }
@@ -1041,5 +1046,28 @@ LOGO;
         }
 
         return $country;
+    }
+
+    public function generate_support_request_btn_html( $key, $data )
+    {
+        $field_key = $this->get_field_key( $key );
+
+        ob_start();
+        ?>
+        <tr valign="top">
+            <th scope="row" class="titledesc">
+                <label for="<?php echo esc_attr( $field_key ); ?>"><?php echo wp_kses_post( $data['title'] ); ?> <?php echo $this->get_tooltip_html( $data ); // WPCS: XSS ok. ?></label>
+            </th>
+            <td class="forminp">
+                <fieldset>
+                    <legend class="screen-reader-text"><span><?php echo wp_kses_post( $data['title'] ); ?></span></legend>
+                    <button id="laybuy_send_support_request" class="button-cancel woocommerce-save-button" type="button" value="<?php esc_attr_e( 'Send Support Report', 'woocommerce' ); ?>"><?php esc_html_e( 'Send Support Request', 'woocommerce' ); ?></button>
+                    <?php echo $this->get_description_html( $data ); // WPCS: XSS ok. ?>
+                </fieldset>
+            </td>
+        </tr>
+        <?php
+
+        return ob_get_clean();
     }
 }

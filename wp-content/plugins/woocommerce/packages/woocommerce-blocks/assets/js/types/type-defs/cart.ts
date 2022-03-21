@@ -6,6 +6,9 @@ import {
 	ShippingRateItem,
 	ExtensionsData,
 } from './cart-response';
+
+import { ProductResponseItemData } from './product-response';
+
 export interface CurrencyInfo {
 	currency_code: string;
 	currency_symbol: string;
@@ -114,7 +117,12 @@ export interface CartItem {
 	id: number;
 	quantity: number;
 	catalog_visibility: CatalogVisibility;
-	quantity_limit: number;
+	quantity_limits: {
+		minimum: number;
+		maximum: number;
+		multiple_of: number;
+		editable: boolean;
+	};
 	name: string;
 	summary: string;
 	short_description: string;
@@ -130,7 +138,7 @@ export interface CartItem {
 	prices: CartItemPrices;
 	totals: CartItemTotals;
 	extensions: ExtensionsData;
-	item_data: Record< string, unknown >[];
+	item_data: ProductResponseItemData[];
 }
 
 export interface CartTotalsTaxLineItem {
@@ -196,4 +204,9 @@ export interface CartMeta {
 export interface ExtensionCartUpdateArgs {
 	data: Record< string, unknown >;
 	namespace: string;
+}
+
+export interface BillingAddressShippingAddress {
+	billing_address: CartBillingAddress;
+	shipping_address: CartShippingAddress;
 }

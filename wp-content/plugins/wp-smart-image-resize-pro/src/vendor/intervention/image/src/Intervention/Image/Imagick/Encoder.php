@@ -4,6 +4,7 @@ namespace Intervention\Image\Imagick;
 
 use Intervention\Image\AbstractEncoder;
 use Intervention\Image\Exception\NotSupportedException;
+use WP_Smart_Image_Resize\Utilities\Env;
 
 class Encoder extends AbstractEncoder
 {
@@ -81,9 +82,19 @@ class Encoder extends AbstractEncoder
         $compression = \Imagick::COMPRESSION_JPEG;
 
         $imagick = $this->image->getCore();
-        $imagick->setImageBackgroundColor(new \ImagickPixel('transparent'));
 
-        $imagick = $imagick->mergeImageLayers(\Imagick::LAYERMETHOD_MERGE);
+        // Backward compat with Imagick 6.x
+        if(version_compare(Env::getImagickVersion(), '7', '<')) {
+            $color = maybe_hash_hex_color(strtolower(wp_sir_get_settings()['bg_color']));
+            if(empty($color) && is_callable(array($imagick, 'getImageAlphaChannel')) &&  !$imagick->getImageAlphaChannel()){ 
+                $color = 'white';
+            }
+        }
+        
+        $color = !empty($color) ? new \ImagickPixel($color) : new \ImagickPixel('none');
+        $imagick->setImageBackgroundColor($color);
+
+        $imagick = $imagick->mergeImageLayers(\Imagick::LAYERMETHOD_FLATTEN);
         $imagick->setFormat($format);
         $imagick->setImageFormat($format);
         $imagick->setCompression($compression);

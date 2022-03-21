@@ -1,15 +1,14 @@
 === Smart Image Resize PRO ===
 Contributors: nlemsieh
-Tags: WooCommerce product image resize, fix image crop, resize, image, picture resize, image crop, image resize without cropping, image resize, resize thumbnails, resize images in WooCommerce
+Tags: uniform images,same image size,woocommerce image resize,different image size,product image resize, image crop, image cut-off, resize image, fix image crop,photo resize,image crop, resize image without cropping, image resize, resize thumbnails
 Requires at least: 4.0
-Tested up to: 5.7
+Tested up to: 5.9
 WC requires at least: 3.0
-WC tested up to: 5.2
+WC tested up to: 6.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Requires PHP: 5.6
-Stable tag: 1.5.0
-
+Stable tag: 1.7.5.4
 
 Make WooCommerce products images the same size and uniform without cropping.
 
@@ -52,6 +51,115 @@ Make sure PHP extension `fileinfo` is enabled.
 2. Settings page.
 
 == Changelog ==
+
+
+= 1.7.5.4 =
+
+* Declare compatibility with WooCommerce 6.1
+* Declare compatibility with WP 5.9
+* Stability improvements
+
+= 1.7.5.3 =
+
+* Fix a bug when background processing is trigged from the frontend.
+
+= 1.7.5.2 =
+
+* Bugfixes
+
+
+= 1.7.5.1 =
+
+*  Add fallback when used image processor fails to create WebP image. 
+
+= 1.7.5 =
+
+*  Recheck and process skipped images in the background after the parent post is saved.
+
+= 1.7.4 =
+
+* Replace "Resize fit mode" option with "Use WordPress cropping".
+* Performance improvement.
+
+= 1.7.3 =
+
+* Fix blank WebP images with converting some PNG images in Imagick 6.x 
+* Fix issue with Trimming border size limited to original image size.
+
+= 1.7.2 =
+
+* Improve CMYK images handling
+
+= 1.7.1 =
+
+* Format error message in WP CLI and avoid halting execution.
+* Fix an issue with CMYK profile not being converted to RGB in Imagick.
+
+= 1.7.0 =
+
+* Add Watermark tool (beta).
+
+= 1.6.4.2 =
+
+* Use another image processor as fallback when current one doesn't support WebP.
+
+= 1.6.4.1 =
+
+* Fix WebP Images not served in Ajax responses
+
+= 1.6.4 =
+
+* Stability improvement
+* Fix an issue with default image processor when Imagick doesn't support WebP. 
+
+= 1.6.3 =
+
+* Minor bugfixes 
+
+= 1.6.2 =
+
+* Add the ability to generate and serve WebP files for all images using the filter `wp_sir_generate_webp_for_all_images`.
+
+= 1.6.1 =
+
+* Add the ability to custom woocommerce default sizes.
+* Stability improvement
+
+= 1.6.0 =
+
+* Add the ability to specify the resize fit mode for each size. 
+* Stability improvement
+
+= 1.5.5.1 =
+
+* Stability improvement
+
+= 1.5.5 =
+
+* Fix color issue with some CMYK images.
+* Fix faded images in some Imagick installs.
+
+= 1.5.4 =
+
+* Fix an issue with some themes not loading the correct image size.
+
+= 1.5.3 =
+
+* Stability improvement
+
+= 1.5.2 =
+
+* Fix thumbnail overwriten by WordPress when original image and thumbnail dimensions are identical
+* Fix an issue with Flatsome using full size image instead of woocommerce_single for lazy load.
+* Ignore sizes with 9999 dimension (unlimited height/width).
+* Improve WebP availability detection.
+
+= 1.5.1 =
+
+* Use Imagick as default when available.
+* Fix Avada not serving correct thumbnails on non-WooCommerce pages.
+* Improve the user experience of the settings page. 
+
 
 = 1.5.0 =
 
@@ -286,7 +394,7 @@ Initial release of Smart Image Resize Pro
 
  == Upgrade Notice ==
  
-  = 1.4.11 =
+  = 1.7.0 =
 
-* Now you can filter processed images in the media library toolbar.
+* Adding watermark is now available in beta.
 

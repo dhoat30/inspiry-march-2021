@@ -28,7 +28,6 @@ class Generated_Sizes extends Base_Filter
      */
     public function removeUnwantedSizes( $sizes, $metadata, $image_id = null )
     {
-
         // We need the image ID to determine whether the uploaded
         // image is part of the processable images.
         if ( ! $image_id ) {
@@ -44,9 +43,19 @@ class Generated_Sizes extends Base_Filter
             // Since this filter is applied multiple times
             // we need to cache result to improve performances when it's used later.
             wp_cache_add( 'processable_image_' . $image_id, ( $isProcessable ? 'yes' : 'no' ), 'wp_sir_cache' );
-
+            $filtered  = [];
             if ( $isProcessable ) {
-                return  [];
+                $settings = wp_sir_get_settings();
+                $sizes_to_generate = $settings['sizes'];
+                $size_options = $settings['size_options'];
+                foreach($sizes as $name => $size){
+                    $no_edit = in_array($name, $sizes_to_generate) && !empty($size_options[$name]['fit_mode']) && $size_options[$name]['fit_mode'] === 'none';
+                    if($no_edit){
+                        $filtered[$name] = $size;
+                    }
+                }
+
+                $sizes = $filtered;
             }
         } catch ( Invalid_Image_Meta_Exception $e ) {
         }

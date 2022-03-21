@@ -12,6 +12,7 @@ class FacetWP_Facet_Proximity_Core extends FacetWP_Facet
 
     function __construct() {
         $this->label = __( 'Proximity', 'fwp' );
+        $this->fields = [ 'longitude', 'unit', 'radius_ui', 'radius_options', 'radius_min', 'radius_max', 'radius_default' ];
 
         add_filter( 'facetwp_index_row', [ $this, 'index_latlng' ], 1, 2 );
         add_filter( 'facetwp_sort_options', [ $this, 'sort_options' ], 1, 2 );
@@ -183,80 +184,56 @@ class FacetWP_Facet_Proximity_Core extends FacetWP_Facet
     }
 
 
-    /**
-     * Output admin settings HTML
-     */
-    function settings_html() {
-?>
-        <div class="facetwp-row">
-            <div>
-                <div class="facetwp-tooltip">
-                    <?php _e('Longitude', 'fwp'); ?>:
-                    <div class="facetwp-tooltip-content"><?php _e( '(Optional) use a separate longitude field', 'fwp' ); ?></div>
-                </div>
-            </div>
-            <div>
-                <data-sources
-                    :facet="facet"
-                    settingName="source_other">
-                </data-sources>
-            </div>
-        </div>
-        <div class="facetwp-row">
-            <div>
-                <?php _e( 'Unit of measurement', 'fwp' ); ?>:
-            </div>
-            <div>
-                <select class="facet-unit">
-                    <option value="mi"><?php _e( 'Miles', 'fwp' ); ?></option>
-                    <option value="km"><?php _e( 'Kilometers', 'fwp' ); ?></option>
-                </select>
-            </div>
-        </div>
-        <div class="facetwp-row">
-            <div>
-                <?php _e( 'Radius UI', 'fwp' ); ?>:
-            </div>
-            <div>
-                <select class="facet-radius-ui">
-                    <option value="dropdown"><?php _e( 'Dropdown', 'fwp' ); ?></option>
-                    <option value="slider"><?php _e( 'Slider', 'fwp' ); ?></option>
-                    <option value="none"><?php echo _e( 'None', 'fwp' ); ?></option>
-                </select>
-            </div>
-        </div>
-        <div class="facetwp-row" v-show="facet.radius_ui == 'dropdown'">
-            <div>
-                <div class="facetwp-tooltip">
-                    <?php _e( 'Radius options', 'fwp' ); ?>:
-                    <div class="facetwp-tooltip-content">A comma-separated list of radius choices</div>
-                </div>
-            </div>
-            <div>
-                <input type="text" class="facet-radius-options" value="10, 25, 50, 100, 250" />
-            </div>
-        </div>
-        <div class="facetwp-row" v-show="facet.radius_ui == 'slider'">
-            <div>
-                <div class="facetwp-tooltip">
-                    <?php _e( 'Slider range', 'fwp' ); ?>:
-                    <div class="facetwp-tooltip-content">Set the lower and upper limits</div>
-                </div>
-            </div>
-            <div>
-                <input type="number" class="facet-radius-min" value="1" />
-                <input type="number" class="facet-radius-max" value="50" />
-            </div>
-        </div>
-        <div class="facetwp-row">
-            <div>
-                <?php _e( 'Default radius', 'fwp' ); ?>:
-            </div>
-            <div>
-                <input type="number" class="facet-radius-default" value="25" />
-            </div>
-        </div>
-<?php
+    function register_fields() {
+        return [
+            'longitude' => [
+                'type' => 'alias',
+                'items' => [
+                    'source_other' => [
+                        'label' => __( 'Longitude', 'fwp' ),
+                        'notes' => '(Optional) use a separate longitude field',
+                        'html' => '<data-sources :facet="facet" setting-name="source_other"></data-sources>'
+                    ]
+                ]
+            ],
+            'unit' => [
+                'type' => 'select',
+                'label' => __( 'Unit of measurement', 'fwp' ),
+                'choices' => [
+                    'mi' => __( 'Miles', 'fwp' ),
+                    'km' => __( 'Kilometers', 'fwp' )
+                ]
+            ],
+            'radius_ui' => [
+                'type' => 'select',
+                'label' => __( 'Radius UI', 'fwp' ),
+                'choices' => [
+                    'dropdown' => __( 'Dropdown', 'fwp' ),
+                    'slider' => __( 'Slider', 'fwp' ),
+                    'none' => __( 'None', 'fwp' )
+                ]
+            ],
+            'radius_options' => [
+                'label' => __( 'Radius options', 'fwp' ),
+                'notes' => 'A comma-separated list of radius choices',
+                'default' => '10, 25, 50, 100, 250',
+                'show' => "facet.radius_ui == 'dropdown'"
+            ],
+            'radius_min' => [
+                'label' => __( 'Range (min)', 'fwp' ),
+                'default' => 1,
+                'show' => "facet.radius_ui == 'slider'"
+            ],
+            'radius_max' => [
+                'label' => __( 'Range (max)', 'fwp' ),
+                'default' => 50,
+                'show' => "facet.radius_ui == 'slider'"
+            ],
+            'radius_default' => [
+                'label' => __( 'Default radius', 'fwp' ),
+                'default' => 25
+            ]
+        ];
     }
 
 

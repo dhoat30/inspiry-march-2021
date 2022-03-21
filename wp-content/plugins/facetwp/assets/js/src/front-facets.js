@@ -39,22 +39,22 @@
             var facet_name = $facet.attr('data-name');
 
             var endpoint = ('wp' === FWP.template) ? document.URL : FWP_JSON.ajaxurl;
+            var options = FWP.settings[facet_name];
+            options.data = () => {
+                return $.post(endpoint, {
+                    action: 'facetwp_autocomplete_load',
+                    facet_name: facet_name,
+                    query: el.value,
+                    data: FWP.buildPostData()
+                }, {
+                    done: (resp) => {
+                        this.fcomplete.render(resp);
+                    }
+                });
+            };
+            options.onSelect = () => FWP.autoload();
 
-            fComplete(el, {
-                data: () => {
-                    return $.post(endpoint, {
-                        action: 'facetwp_autocomplete_load',
-                        facet_name: facet_name,
-                        query: el.value,
-                        data: FWP.buildPostData()
-                    }, {
-                        done: (resp) => {
-                            this.fcomplete.render(resp);
-                        }
-                    });
-                },
-                onSelect: () => FWP.autoload()
-            });
+            fComplete(el, options);
         });
     });
 
@@ -137,9 +137,14 @@
             var num = $(this).find('.facetwp-checkbox').len();
             var $el = $(this).next('.facetwp-toggle');
             $el.text($el.text().replace('{num}', num));
+
+            // auto-expand if a checkbox within the overflow is checked
+            if (0 < $(this).find('.facetwp-checkbox.checked').len()) {
+                $el.trigger('click');
+            }
         });
 
-        // add toggle feature
+        // hierarchy expand / collapse buttons
         $('.facetwp-type-checkboxes').each(function() {
             var $facet = $(this);
             var name = $facet.attr('data-name');
@@ -356,7 +361,7 @@
     });
 
     $().on('facetwp-loaded', function() {
-        $('.facetwp-type-fselect select:not(.hidden)').each(function() {
+        $('.facetwp-type-fselect select:not(.fs-hidden)').each(function() {
             var facet_name = $(this).closest('.facetwp-facet').attr('data-name');
             var settings = FWP.settings[facet_name];
 
@@ -371,9 +376,6 @@
 
             fSelect(this, opts);
         });
-
-        // unfreeze choices
-        $('.fs-wrap.fs-disabled').removeClass('fs-disabled');
     });
 
     $().on('fs:changed', function() {
@@ -683,16 +685,21 @@
     FWP.hooks.addAction('facetwp/refresh/slider', function($this, facet_name) {
         FWP.facets[facet_name] = [];
 
-        // settings have already been loaded
-        if ('undefined' !== typeof FWP.frozen_facets[facet_name]) {
-            var node = $this.find('.facetwp-slider').nodes[0];
+        var $active = FWP.active_facet;
+        var url_var = FWP.helper.getUrlVar(facet_name);
+
+        if (null !== $active && facet_name === $active.attr('data-name')) {
+            var node = $active.find('.facetwp-slider').nodes[0];
             if ('undefined' !== typeof node.noUiSlider) {
                 FWP.facets[facet_name] = node.noUiSlider.get();
-
-                // prevent changes during loading
-                node.setAttribute('disabled', true);
             }
         }
+        else if (false !== url_var) {
+            FWP.facets[facet_name] = url_var.replace('%2C', ',').split(',');
+        }
+
+        // prevent changes during loading
+        $this.find('.facetwp-slider').attr('disabled', true);
     });
 
     FWP.hooks.addAction('facetwp/loaded', function() {
@@ -709,19 +716,15 @@
             thousands_separator: FWP.settings[facet_name]['thousands_separator']
         };
 
+        var prefix = FWP.settings[facet_name]['prefix'];
+        var suffix = FWP.settings[facet_name]['suffix'];
+
         if ( min === max ) {
-            var label = FWP.settings[facet_name]['prefix']
-                + nummy(min).format(format, opts)
-                + FWP.settings[facet_name]['suffix'];
+            var label = prefix + nummy(min).format(format, opts) + suffix;
         }
         else {
-            var label = FWP.settings[facet_name]['prefix']
-                + nummy(min).format(format, opts)
-                + FWP.settings[facet_name]['suffix']
-                + ' &mdash; '
-                + FWP.settings[facet_name]['prefix']
-                + nummy(max).format(format, opts)
-                + FWP.settings[facet_name]['suffix'];
+            var label = prefix + nummy(min).format(format, opts) + suffix + ' &mdash; ' +
+                prefix + nummy(max).format(format, opts) + suffix;
         }
         $this.find('.facetwp-slider-label').html(label);
     });
@@ -732,56 +735,60 @@
     });
 
     $().on('facetwp-loaded', function() {
-        $('.facetwp-type-slider .facetwp-slider:not(.ready)').each(function() {
-            var $parent = $(this).closest('.facetwp-facet');
+        $('.facetwp-type-slider .facetwp-slider').each(function() {
+            var $this = $(this);
+            var $parent = $this.closest('.facetwp-facet');
             var facet_name = $parent.attr('data-name');
             var opts = FWP.settings[facet_name];
 
-            // on first load, check for slider URL variable
-            if (false !== FWP.helper.getUrlVar(facet_name)) {
-                FWP.frozen_facets[facet_name] = 'hard';
+            if ($this.hasClass('ready')) {
+                $this.nodes[0].noUiSlider.updateOptions({
+                    range: FWP.settings[facet_name].range
+                }, false);
             }
+            else {
 
-            // fail on slider already initialized
-            if ('undefined' !== typeof this.noUiSlider) {
-                return;
+                // fail on slider already initialized
+                if ('undefined' !== typeof this.noUiSlider) {
+                    return;
+                }
+
+                // fail if start values are null
+                if (null === FWP.settings[facet_name].start[0]) {
+                    return;
+                }
+
+                // fail on invalid ranges
+                if (parseFloat(opts.range.min) >= parseFloat(opts.range.max)) {
+                    FWP.settings[facet_name]['lower'] = opts.range.min;
+                    FWP.settings[facet_name]['upper'] = opts.range.max;
+                    FWP.hooks.doAction('facetwp/set_label/slider', $parent);
+                    return;
+                }
+
+                // custom slider options
+                var slider_opts = FWP.hooks.applyFilters('facetwp/set_options/slider', {
+                    range: opts.range,
+                    start: opts.start,
+                    step: parseFloat(opts.step),
+                    connect: true
+                }, { 'facet_name': facet_name });
+
+
+                var slider = this;
+                noUiSlider.create(slider, slider_opts);
+                slider.noUiSlider.on('update', function(values, handle) {
+                    FWP.settings[facet_name]['lower'] = values[0];
+                    FWP.settings[facet_name]['upper'] = values[1];
+                    FWP.hooks.doAction('facetwp/set_label/slider', $parent);
+                });
+                slider.noUiSlider.on('set', function() {
+                    FWP.active_facet = $this.closest('.facetwp-facet');
+                    FWP.autoload();
+                });
+
+                $this.addClass('ready');
             }
-
-            // fail if start values are null
-            if (null === FWP.settings[facet_name].start[0]) {
-                return;
-            }
-
-            // fail on invalid ranges
-            if (parseFloat(opts.range.min) >= parseFloat(opts.range.max)) {
-                FWP.settings[facet_name]['lower'] = opts.range.min;
-                FWP.settings[facet_name]['upper'] = opts.range.max;
-                FWP.hooks.doAction('facetwp/set_label/slider', $parent);
-                return;
-            }
-
-            // custom slider options
-            var slider_opts = FWP.hooks.applyFilters('facetwp/set_options/slider', {
-                range: opts.range,
-                start: opts.start,
-                step: parseFloat(opts.step),
-                connect: true
-            }, { 'facet_name': facet_name });
-
-
-            var slider = this;
-            noUiSlider.create(slider, slider_opts);
-            slider.noUiSlider.on('update', function(values, handle) {
-                FWP.settings[facet_name]['lower'] = values[0];
-                FWP.settings[facet_name]['upper'] = values[1];
-                FWP.hooks.doAction('facetwp/set_label/slider', $parent);
-            });
-            slider.noUiSlider.on('set', function() {
-                FWP.frozen_facets[facet_name] = 'hard';
-                FWP.autoload();
-            });
-
-            $(this).addClass('ready');
         });
 
         // hide reset buttons
@@ -836,6 +843,23 @@
         $facet.find('.facetwp-star').removeClass('selected');
         if (! is_selected) {
             $(this).addClass('selected');
+        }
+        FWP.autoload();
+    });
+
+    /* ======== Sort ======== */
+
+    FWP.hooks.addAction('facetwp/refresh/sort', function($this, facet_name) {
+        var val = $this.find('select').val();
+        FWP.facets[facet_name] = val ? [val] : [];
+    });
+
+    $().on('change', '.facetwp-type-sort select', function() {
+        var $facet = $(this).closest('.facetwp-facet');
+        var facet_name = $facet.attr('data-name');
+
+        if ('' !== $(this).val()) {
+            FWP.frozen_facets[facet_name] = 'hard';
         }
         FWP.autoload();
     });

@@ -4,9 +4,10 @@ Plugin Name: Laybuy Gateway for WooCommerce
 Description: Provide Laybuy as a payment option for WooCommerce orders.
 Author: Laybuy
 Author URI: https://www.laybuy.com/
-Version: 5.3.2
+Version: 5.3.5
 Text Domain: laybuy-gateway-for-woocommerce
 License: GPL2
+Tested up to: 5.8
 WC requires at least: 3.0.0
 WC tested up to: 5.0.0
 Woocommerce Laybuy is free software: you can redistribute it and/or modify
@@ -40,7 +41,7 @@ function woocommerce_gateway_laybuy_init() {
     }
 }
 
-define( 'WC_LAYBUY_VERSION', '5.3.2' );
+define( 'WC_LAYBUY_VERSION', '5.3.5' );
 define('WC_LAYBUY_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 
@@ -66,6 +67,7 @@ class WC_Laybuy
 
         require_once dirname( __FILE__ ) . '/includes/Laybuy/ApiGateway.php';
         require_once dirname( __FILE__ ) . '/includes/Laybuy/ProcessManager.php';
+        require_once dirname( __FILE__ ) . '/includes/Laybuy/SupportRequest.php';
 
         $gateway = WC_Payment_Gateway_Laybuy::getInstance();
         $settings = get_option( 'woocommerce_laybuy_settings', true );
@@ -104,7 +106,7 @@ class WC_Laybuy
 
         // actions
         add_action( 'woocommerce_cart_totals_after_order_total', array($gateway, 'render_schedule_on_cart_page'), 10, 0 );
-        add_action( 'wp', array( $gateway, 'process_redirect_order' ) );
+        add_action( 'template_redirect', array( $gateway, 'process_redirect_order' ) );
 
         add_action(
             $settings['price_breakdown_option_product_page_position'],
@@ -114,6 +116,7 @@ class WC_Laybuy
 
         // shortcodes
         add_shortcode( 'laybuy_logo', array($gateway, 'shortcode_laybuy_logo') );
+        add_action( 'wp_ajax_send_laybuy_support_request', array(new Laybuy_SupportRequest(), 'send'));
     }
 
     /**
@@ -171,6 +174,9 @@ class WC_Laybuy
      */
     public function add_gateways($methods) {
 
+        if (isset($_GET['debug'])) {
+            var_dump('add laybuy gateway');
+        }
         $methods[] = 'WC_Payment_Gateway_LayBuy';
 
         return $methods;

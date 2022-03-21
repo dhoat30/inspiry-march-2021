@@ -8,6 +8,9 @@ class FacetWP_Facet_Pager extends FacetWP_Facet
 
     function __construct() {
         $this->label = __( 'Pager', 'fwp' );
+        $this->fields = [ 'pager_type', 'inner_size', 'dots_label', 'prev_label', 'next_label',
+            'count_text_plural', 'count_text_singular', 'count_text_none', 'load_more_text',
+            'loading_text', 'default_label', 'per_page_options' ];
     }
 
 
@@ -106,16 +109,25 @@ class FacetWP_Facet_Pager extends FacetWP_Facet
         $page = $this->pager_args['page'];
         $per_page = $this->pager_args['per_page'];
         $total_rows = $this->pager_args['total_rows'];
+        $total_pages = $this->pager_args['total_pages'];
 
         if ( 1 < $total_rows ) {
             $lower = ( 1 + ( ( $page - 1 ) * $per_page ) );
             $upper = ( $page * $per_page );
             $upper = ( $total_rows < $upper ) ? $total_rows : $upper;
 
+            // If a load_more pager is in use, force $lower = 1
+            if ( FWP()->helper->facet_setting_exists( 'pager_type', 'load_more' ) ) {
+                $lower = 1;
+            }
+
             $output = $text_plural;
             $output = str_replace( '[lower]', $lower, $output );
             $output = str_replace( '[upper]', $upper, $output );
             $output = str_replace( '[total]', $total_rows, $output );
+            $output = str_replace( '[page]', $page, $output );
+            $output = str_replace( '[per_page]', $per_page, $output );
+            $output = str_replace( '[total_pages]', $total_pages, $output );
         }
         else {
             $output = ( 0 < $total_rows ) ? $text_singular : $text_none;
@@ -177,96 +189,79 @@ class FacetWP_Facet_Pager extends FacetWP_Facet
     }
 
 
-    /**
-     * Output admin settings HTML
-     */
-    function settings_html() {
-?>
-        <div class="facetwp-row">
-            <div><?php _e('Pager type', 'fwp'); ?>:</div>
-            <div>
-                <select class="facet-pager-type">
-                    <option value="numbers"><?php _e( 'Page numbers', 'fwp' ); ?></option>
-                    <option value="counts"><?php _e( 'Result counts', 'fwp' ); ?></option>
-                    <option value="load_more"><?php _e( 'Load more', 'fwp' ); ?></option>
-                    <option value="per_page"><?php _e( 'Per page', 'fwp' ); ?></option>
-                </select>
-            </div>
-        </div>
-        <div class="facetwp-row" v-show="facet.pager_type == 'numbers'">
-            <div>
-                <div class="facetwp-tooltip">
-                    <?php _e('Inner size', 'fwp'); ?>:
-                    <div class="facetwp-tooltip-content"><?php _e( 'Number of pages to show on each side of the current page', 'fwp' ); ?></div>
-                </div>
-            </div>
-            <div><input type="text" class="facet-inner-size" value="2" /></div>
-        </div>
-        <div class="facetwp-row" v-show="facet.pager_type == 'numbers'">
-            <div>
-                <div class="facetwp-tooltip">
-                    <?php _e('Dots label', 'fwp'); ?>:
-                    <div class="facetwp-tooltip-content"><?php _e( 'The filler between the inner and outer pages', 'fwp' ); ?></div>
-                </div>
-            </div>
-            <div><input type="text" class="facet-dots-label" value="…" /></div>
-        </div>
-        <div class="facetwp-row" v-show="facet.pager_type == 'numbers'">
-            <div>
-                <div class="facetwp-tooltip">
-                    <?php _e('Prev button label', 'fwp'); ?>:
-                    <div class="facetwp-tooltip-content"><?php _e( 'Leave blank to hide', 'fwp' ); ?></div>
-                </div>
-            </div>
-            <div><input type="text" class="facet-prev-label" value="« Prev" /></div>
-        </div>
-        <div class="facetwp-row" v-show="facet.pager_type == 'numbers'">
-            <div>
-                <div class="facetwp-tooltip">
-                    <?php _e('Next button label', 'fwp'); ?>:
-                    <div class="facetwp-tooltip-content"><?php _e( 'Leave blank to hide', 'fwp' ); ?></div>
-                </div>
-            </div>
-            <div><input type="text" class="facet-next-label" value="Next »" /></div>
-        </div>
-        <div class="facetwp-row" v-show="facet.pager_type == 'counts'">
-            <div>
-                <div class="facetwp-tooltip">
-                    <?php _e('Count text (plural)', 'fwp'); ?>:
-                    <div class="facetwp-tooltip-content"><?php _e( 'Available tags: [lower], [upper], and [total]', 'fwp' ); ?></div>
-                </div>
-            </div>
-            <div><input type="text" class="facet-count-text-plural" value="[lower] - [upper] of [total] results" /></div>
-        </div>
-        <div class="facetwp-row" v-show="facet.pager_type == 'counts'">
-            <div><?php _e('Count text (singular)', 'fwp'); ?>:</div>
-            <div><input type="text" class="facet-count-text-singular" value="1 result" /></div>
-        </div>
-        <div class="facetwp-row" v-show="facet.pager_type == 'counts'">
-            <div><?php _e('Count text (no results)', 'fwp'); ?>:</div>
-            <div><input type="text" class="facet-count-text-none" value="No results" /></div>
-        </div>
-        <div class="facetwp-row" v-show="facet.pager_type == 'load_more'">
-            <div><?php _e('Load more text', 'fwp'); ?>:</div>
-            <div><input type="text" class="facet-load-more-text" value="Load more" /></div>
-        </div>
-        <div class="facetwp-row" v-show="facet.pager_type == 'load_more'">
-            <div><?php _e('Loading text', 'fwp'); ?>:</div>
-            <div><input type="text" class="facet-loading-text" value="Loading..." /></div>
-        </div>
-        <div class="facetwp-row" v-show="facet.pager_type == 'per_page'">
-            <div><?php _e('Default label', 'fwp'); ?>:</div>
-            <div><input type="text" class="facet-default-label" value="Per page" /></div>
-        </div>
-        <div class="facetwp-row" v-show="facet.pager_type == 'per_page'">
-            <div>
-                <div class="facetwp-tooltip">
-                    <?php _e('Per page options', 'fwp'); ?>:
-                    <div class="facetwp-tooltip-content"><?php _e( 'A comma-separated list of choices', 'fwp' ); ?></div>
-                </div>
-            </div>
-            <div><input type="text" class="facet-per-page-options" value="10, 25, 50, 100" /></div>
-        </div>
-<?php
+    function register_fields() {
+        return [
+            'pager_type' => [
+                'type' => 'select',
+                'label' => __( 'Pager type', 'fwp' ),
+                'choices' => [
+                    'numbers' => __( 'Page numbers', 'fwp' ),
+                    'counts' => __( 'Result counts', 'fwp' ),
+                    'load_more' => __( 'Load more', 'fwp' ),
+                    'per_page' => __( 'Per page', 'fwp' )
+                ]
+            ],
+            'inner_size' => [
+                'label' => __( 'Inner size', 'fwp' ),
+                'notes' => 'Number of pages to show on each side of the current page',
+                'default' => 2,
+                'show' => "facet.pager_type == 'numbers'"
+            ],
+            'dots_label' => [
+                'label' => __( 'Dots label', 'fwp' ),
+                'notes' => 'The filler between the inner and outer pages',
+                'default' => '…',
+                'show' => "facet.pager_type == 'numbers'"
+            ],
+            'prev_label' => [
+                'label' => __( 'Prev button label', 'fwp' ),
+                'notes' => 'Leave blank to hide',
+                'default' => '« Prev',
+                'show' => "facet.pager_type == 'numbers'"
+            ],
+            'next_label' => [
+                'label' => __( 'Next button label', 'fwp' ),
+                'notes' => 'Leave blank to hide',
+                'default' => 'Next »',
+                'show' => "facet.pager_type == 'numbers'"
+            ],
+            'count_text_plural' => [
+                'label' => __( 'Count text (plural)', 'fwp' ),
+                'notes' => 'Available tags: [lower], [upper], [total], [page], [per_page], [total_pages]',
+                'default' => '[lower] - [upper] of [total] results',
+                'show' => "facet.pager_type == 'counts'"
+            ],
+            'count_text_singular' => [
+                'label' => __( 'Count text (singular)', 'fwp' ),
+                'default' => '1 result',
+                'show' => "facet.pager_type == 'counts'"
+            ],
+            'count_text_none' => [
+                'label' => __( 'Count text (no results)', 'fwp' ),
+                'default' => 'No results',
+                'show' => "facet.pager_type == 'counts'"
+            ],
+            'load_more_text' => [
+                'label' => __( 'Load more text', 'fwp' ),
+                'default' => 'Load more',
+                'show' => "facet.pager_type == 'load_more'"
+            ],
+            'loading_text' => [
+                'label' => __( 'Loading text', 'fwp' ),
+                'default' => 'Loading...',
+                'show' => "facet.pager_type == 'load_more'"
+            ],
+            'default_label' => [
+                'label' => __( 'Default label', 'fwp' ),
+                'default' => 'Per page',
+                'show' => "facet.pager_type == 'per_page'"
+            ],
+            'per_page_options' => [
+                'label' => __( 'Per page options', 'fwp' ),
+                'notes' => 'A comma-separated list of choices',
+                'default' => '10, 25, 50, 100',
+                'show' => "facet.pager_type == 'per_page'"
+            ]
+        ];
     }
 }

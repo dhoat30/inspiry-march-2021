@@ -33,6 +33,9 @@ class FacetWP_Renderer
     /* (array) Data for the sort box dropdown */
     public $sort_options;
 
+    /* (array) Sort facet, if available */
+    public $sort_facet;
+
     /* (array) Cache preloaded facet values */
     public $preloaded_values;
 
@@ -96,6 +99,12 @@ class FacetWP_Renderer
                 }
 
                 $facet['selected_values'] = FWP()->helper->sanitize( $f['selected_values'] );
+
+                // Is a sort facet?
+                if ( 'sort' == $facet['type'] ) {
+                    $this->sort_facet = $facet;
+                }
+
                 $this->facets[ $name ] = $facet;
             }
         }
@@ -152,6 +161,26 @@ class FacetWP_Renderer
                 if ( ! empty( $this->sort_options[ $sort_value ] ) ) {
                     $args = $this->sort_options[ $sort_value ]['query_args'];
                     $this->query_args = array_merge( $this->query_args, $args );
+                }
+            }
+
+            // Sort facet
+            if ( ! empty( $this->sort_facet ) && ! empty( $this->sort_facet['selected_values'] ) ) {
+                $chosen_sort = $this->sort_facet['selected_values'][0];
+
+                foreach ( $this->sort_facet['sort_options'] as $contents ) {
+                    if ( $chosen_sort == $contents['name'] ) {
+                        $args = FWP()->builder->parse_query_obj([ 'orderby' => $contents['orderby'] ]);
+
+                        if ( isset( $args['meta_query'] ) ) {
+                            $meta_query = isset( $this->query_args['meta_query'] ) ? $this->query_args['meta_query'] : [];
+                            $meta_query = array_merge( $meta_query, $args['meta_query'] );
+                            $this->query_args['meta_query'] = $meta_query;
+                        }
+
+                        $this->query_args['orderby'] = $args['orderby'];
+                        break;
+                    }
                 }
             }
 
@@ -240,6 +269,7 @@ class FacetWP_Renderer
         // Get facet data
         foreach ( $this->facets as $facet_name => $the_facet ) {
             $facet_type = $the_facet['type'];
+            $ui_type = empty( $the_facet['ui_type'] ) ? $facet_type : $the_facet['ui_type'];
 
             // Invalid facet type
             if ( ! isset( $this->facet_types[ $facet_type ] ) ) {
@@ -305,12 +335,12 @@ class FacetWP_Renderer
             }
 
             // Generate the facet HTML
-            $html = $this->facet_types[ $facet_type ]->render( $args );
+            $html = $this->facet_types[ $ui_type ]->render( $args );
             $output['facets'][ $facet_name ] = apply_filters( 'facetwp_facet_html', $html, $args );
 
             // Return any JS settings
-            if ( method_exists( $this->facet_types[ $facet_type ], 'settings_js' ) ) {
-                $output['settings'][ $facet_name ] = $this->facet_types[ $facet_type ]->settings_js( $args );
+            if ( method_exists( $this->facet_types[ $ui_type ], 'settings_js' ) ) {
+                $output['settings'][ $facet_name ] = $this->facet_types[ $ui_type ]->settings_js( $args );
             }
 
             // Grab num_choices for slider facets

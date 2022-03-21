@@ -122,6 +122,10 @@ class FacetWP_API_Fetch
                         'count'     => (int) $choice['counter'],
                     ];
 
+                    if ( isset( $choice['term_id'] ) ) {
+                        $row['term_id'] = (int) $choice['term_id'];
+                    }
+
                     if ( isset( $choice['parent_id'] ) ) {
                         $row['parent_id'] = (int) $choice['parent_id'];
                     }

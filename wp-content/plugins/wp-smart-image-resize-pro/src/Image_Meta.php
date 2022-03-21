@@ -94,9 +94,7 @@ class Image_Meta
             }
 
             wp_raise_memory_limit( 'image' );
-            $image = ( new Image_Manager( [
-                $this->data[ 'width' ], $this->data[ 'height' ]
-            ] ) )->make( $webpPath );
+            $image = ( new Image_Manager())->make( $webpPath );
 
             $this->data[ '_trimmed_width' ]  = $image->getWidth();
             $this->data[ '_trimmed_height' ] = $image->getHeight();

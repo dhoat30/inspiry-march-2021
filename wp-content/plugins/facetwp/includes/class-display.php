@@ -55,7 +55,9 @@ class FacetWP_Display
             $facet = FWP()->helper->get_facet_by_name( $atts['facet'] );
 
             if ( $facet ) {
-                $output = '<div class="facetwp-facet facetwp-facet-' . $facet['name'] . ' facetwp-type-' . $facet['type'] . '" data-name="' . $facet['name'] . '" data-type="' . $facet['type'] . '"></div>';
+                $ui = empty( $facet['ui_type'] ) ? $facet['type'] : $facet['ui_type'];
+                $ui_attr = empty( $facet['ui_type'] ) ? '' : ' data-ui="' . $ui . '"';
+                $output = '<div class="facetwp-facet facetwp-facet-' . $facet['name'] . ' facetwp-type-' . $ui . '" data-name="' . $facet['name'] . '" data-type="' . $facet['type'] . '"' . $ui_attr . '></div>';
 
                 // Build list of active facet types
                 $this->active_types[ $facet['type'] ] = $facet['type'];
@@ -125,12 +127,15 @@ class FacetWP_Display
             $this->assets['front.js'] = FACETWP_URL . '/assets/js/dist/front.min.js';
 
             // Backwards compat?
-            if ( apply_filters( 'facetwp_load_deprecated', true ) ) {
+            if ( apply_filters( 'facetwp_load_deprecated', false ) ) {
                 $this->assets['front-deprecated.js'] = FACETWP_URL . '/assets/js/src/deprecated.js';
             }
 
             // Load a11y?
-            if ( apply_filters( 'facetwp_load_a11y', false ) ) {
+            $a11y = FWP()->helper->get_setting( 'load_a11y', 'no' );
+            $a11y_hook = apply_filters( 'facetwp_load_a11y', false );
+
+            if ( 'yes' == $a11y || $a11y_hook ) {
                 $this->assets['accessibility.js'] = FACETWP_URL . '/assets/js/src/accessibility.js';
             }
 
@@ -173,19 +178,19 @@ class FacetWP_Display
             $inline_scripts = ob_get_clean();
             $assets = apply_filters( 'facetwp_assets', $this->assets );
 
-            foreach ( $assets as $slug => $url ) {
-                $html = '<script src="{url}"></script>';
-
-                if ( 'css' == substr( $slug, -3 ) ) {
-                    $html = '<link href="{url}" rel="stylesheet">';
-                }
+            foreach ( $assets as $slug => $data ) {
+                $data = (array) $data;
+                $is_css = ( 'css' == substr( $slug, -3 ) );
+                $version = empty( $data[1] ) ? FACETWP_VERSION : $data[1];
+                $url = $data[0];
 
                 if ( false !== strpos( $url, 'facetwp' ) ) {
-                    $url .= '?ver=' . FACETWP_VERSION;
+                    $prefix = ( false !== strpos( $url, '?' ) ) ? '&' : '?';
+                    $url .= $prefix . 'ver=' . $version;
                 }
 
+                $html = $is_css ? '<link href="{url}" rel="stylesheet">' : '<script src="{url}"></script>';
                 $html = apply_filters( 'facetwp_asset_html', $html, $url );
-
                 echo str_replace( '{url}', $url, $html ) . "\n";
             }
 

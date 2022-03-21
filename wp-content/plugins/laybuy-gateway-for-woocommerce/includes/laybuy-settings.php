@@ -464,6 +464,12 @@ $settings += array(
         'default'     => 'no',
         'description' => __('This is only for developers, be careful with this setting. You should not need to use this.', 'woo_laybuy'),
     ),
+    'laybuy_send_support_request' => array(
+        'title'       => __('', 'woo_laybuy'),
+        'type'        => 'support_request_btn',
+        'desc_tip'    => false,
+        'description' => __('Submit email support request to Laybuy.', 'woo_laybuy'),
+    ),
 );
 
 return apply_filters('woocommerce_laybuy_settings', $settings);

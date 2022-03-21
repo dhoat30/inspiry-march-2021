@@ -39,7 +39,7 @@ final class FacetWP_Helper
         }
 
         $uri = parse_url( $_SERVER['REQUEST_URI'] );
-        return trim( $uri['path'], '/' );
+        return isset( $uri['path'] ) ? trim( $uri['path'], '/' ) : '';
     }
 
 
@@ -66,7 +66,8 @@ final class FacetWP_Helper
             'proximity'     => 'Facetwp_Facet_Proximity_Core',
             'radio'         => 'Facetwp_Facet_Radio_Core',
             'rating'        => 'FacetWP_Facet_Rating',
-            'pager'         => 'FacetWP_Facet_Pager'
+            'pager'         => 'FacetWP_Facet_Pager',
+            'sort'          => 'FacetWP_Facet_Sort'
         ];
 
         $facet_types = [];
@@ -248,6 +249,22 @@ final class FacetWP_Helper
 
 
     /**
+     * Get terms across all languages (thanks, WPML)
+     * @since 3.8.5
+     */
+    function get_terms( $taxonomy ) {
+        global $wpdb;
+
+        $sql = "
+        SELECT t.term_id, t.name, t.slug, tt.parent FROM {$wpdb->term_taxonomy} tt
+        INNER JOIN {$wpdb->terms} t ON t.term_id = tt.term_id
+        WHERE tt.taxonomy = %s";
+
+        return $wpdb->get_results( $wpdb->prepare( $sql, $taxonomy ) );
+    }
+
+
+    /**
      * Get an array of term information, including depth
      * @param string $taxonomy The taxonomy name
      * @return array Term information
@@ -262,10 +279,7 @@ final class FacetWP_Helper
         $output = [];
         $parents = [];
 
-        $terms = get_terms( [ 'taxonomy' => $taxonomy, 'hide_empty' => false, 'lang' => '' ] );
-        if ( is_wp_error( $terms ) ) {
-            return $output;
-        }
+        $terms = $this->get_terms( $taxonomy );
 
         // Get term parents
         foreach ( $terms as $term ) {

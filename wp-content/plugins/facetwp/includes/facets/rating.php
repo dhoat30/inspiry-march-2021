@@ -5,6 +5,7 @@ class FacetWP_Facet_Rating extends FacetWP_Facet
 
     function __construct() {
         $this->label = __( 'Star Rating', 'fwp' );
+        $this->fields = [];
     }
 
 

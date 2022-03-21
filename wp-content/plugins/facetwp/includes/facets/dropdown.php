@@ -5,6 +5,7 @@ class FacetWP_Facet_Dropdown extends FacetWP_Facet
 
     function __construct() {
         $this->label = __( 'Dropdown', 'fwp' );
+        $this->fields = [ 'label_any', 'parent_term', 'modifiers', 'hierarchical', 'orderby', 'count' ];
     }
 
 
@@ -25,8 +26,9 @@ class FacetWP_Facet_Dropdown extends FacetWP_Facet
         $facet = $params['facet'];
         $values = (array) $params['values'];
         $selected_values = (array) $params['selected_values'];
+        $is_hierarchical = FWP()->helper->facet_is( $facet, 'hierarchical', 'yes' );
 
-        if ( FWP()->helper->facet_is( $facet, 'hierarchical', 'yes' ) ) {
+        if ( $is_hierarchical ) {
             $values = FWP()->helper->sort_taxonomy_values( $params['values'], $facet['orderby'] );
         }
 
@@ -40,8 +42,11 @@ class FacetWP_Facet_Dropdown extends FacetWP_Facet
             $selected = in_array( $result['facet_value'], $selected_values ) ? ' selected' : '';
 
             $display_value = '';
-            for ( $i = 0; $i < (int) $result['depth']; $i++ ) {
-                $display_value .= '&nbsp;&nbsp;';
+
+            if ( $is_hierarchical ) {
+                for ( $i = 0; $i < (int) $result['depth']; $i++ ) {
+                    $display_value .= '&nbsp;&nbsp;';
+                }
             }
 
             // Determine whether to show counts
@@ -65,18 +70,5 @@ class FacetWP_Facet_Dropdown extends FacetWP_Facet
      */
     function filter_posts( $params ) {
         return FWP()->helper->facet_types['checkboxes']->filter_posts( $params );
-    }
-
-
-    /**
-     * Output admin settings HTML
-     */
-    function settings_html() {
-        $this->render_setting( 'label_any' );
-        $this->render_setting( 'parent_term' );
-        $this->render_setting( 'modifiers' );
-        $this->render_setting( 'hierarchical' );
-        $this->render_setting( 'orderby' );
-        $this->render_setting( 'count' );
     }
 }

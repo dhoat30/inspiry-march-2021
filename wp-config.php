@@ -55,6 +55,7 @@ define('SECURE_AUTH_SALT', 'UfsoCN9OYxWO+j4jz2A2jXnlhLD8DK4DPI2pHWxpRUrrpzm+amKN
 define('LOGGED_IN_SALT',   'zls/tb1CCVbejzdx1ZX8D+lRzymIh3iLzFRNr5nKL/gVYulri8WCa5UY+HHdjSSbMubyiXKjLEVgnJ/ZAhkd1g==');
 define('NONCE_SALT',       'FJ5fpa++xU9yx2eFE0Kga3UgdnETRcm/IFOTkjhk5m2UIyTPdZEiQIodDHuOVa5gcGoqPuMM5hEV65WosKJNQA==');
 
+
 /**
  * WordPress Database Table prefix.
  *
@@ -64,6 +65,8 @@ define('NONCE_SALT',       'FJ5fpa++xU9yx2eFE0Kga3UgdnETRcm/IFOTkjhk5m2UIyTPdZEi
 $table_prefix = 'wp_';
 
 
+define('JWT_AUTH_SECRET_KEY', 'eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTY0NzUwODgzNiwiaWF0IjoxNjQ3NTA4ODM2fQ.HKK3gUccLYGMsY_C5zZVx4GYf80KRWJWtzwByJc53j4');
+define('JWT_AUTH_CORS_ENABLE', true);
 
 
 /* That's all, stop editing! Happy publishing. */
@@ -75,3 +78,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+

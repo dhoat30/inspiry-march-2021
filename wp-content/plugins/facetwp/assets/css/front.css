@@ -248,14 +248,15 @@
 /* Rating */
 
 .facetwp-stars {
-    float: left;
+    display: inline-block;
     line-height: 1;
     padding-right: 4px;
     user-select: none;
+    unicode-bidi: bidi-override;
+    direction: rtl;
 }
 
 .facetwp-star {
-    float: right;
     cursor: pointer;
     font-size: 20px;
     color: #ccc;
@@ -301,4 +302,16 @@
     background-size: 12px 12px;
     background-repeat: no-repeat;
     background-position: right center;
+}
+
+/* Layout builder */
+
+.fwpl-layout, .fwpl-row {
+    display: grid;
+}
+
+@media (max-width: 480px) {
+    .fwpl-layout {
+        grid-template-columns: 1fr;
+    }
 }

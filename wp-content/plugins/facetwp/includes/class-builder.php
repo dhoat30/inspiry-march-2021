@@ -14,28 +14,40 @@ class FacetWP_Builder
 
 
     /**
+     * Generate CSS class string (helper method)
+     * @since 3.9.3
+     */
+    function get_classes( $type, $settings ) {
+        $classes = [ $type, $settings['name'], $settings['css_class'] ];
+        return trim( implode( ' ', $classes ) );
+    }
+
+
+    /**
      * Generate the layout HTML
      * @since 3.2.0
      */
     function render_layout( $layout ) {
         global $wp_query, $post;
 
+        $counter = 0;
         $settings = $layout['settings'];
         $this->custom_css = $settings['custom_css'];
-        $css_class = empty( $settings['css_class'] ) ? '' : ' ' . $settings['css_class'];
 
         $this->css['.fwpl-layout'] = [
-            'display' => 'grid',
             'grid-template-columns' => trim( str_repeat( '1fr ', $settings['num_columns'] ) ),
             'grid-gap' => $settings['grid_gap'] . 'px'
         ];
 
         $this->css['.fwpl-result'] = $this->build_styles( $settings );
 
-        $output = '<div class="fwpl-layout ' . $settings['name'] . $css_class . '">';
+        $classes = $this->get_classes( 'fwpl-layout', $settings );
+
+        $output = '<div class="' . $classes . '">';
 
         if ( have_posts() ) {
             while ( have_posts() ) : the_post();
+                $counter++;
 
                 // Default dynamic tags
                 $tags = [
@@ -50,7 +62,7 @@ class FacetWP_Builder
                     'post' => $post
                 ] );
 
-                $output .= '<div class="fwpl-result">';
+                $output .= '<div class="fwpl-result r' . $counter . '">';
 
                 foreach ( $layout['items'] as $row ) {
                     $output .= $this->render_row( $row );
@@ -78,11 +90,11 @@ class FacetWP_Builder
     function render_row( $row ) {
         $settings = $row['settings'];
 
-        $this->css['.fwpl-row'] = [ 'display' => 'grid' ];
         $this->css['.fwpl-row.' . $settings['name'] ] = $this->build_styles( $settings );
 
-        $css_class = empty( $settings['css_class'] ) ? '' : ' ' . $settings['css_class'];
-        $output = '<div class="fwpl-row ' . $settings['name'] . $css_class . '">';
+        $classes = $this->get_classes( 'fwpl-row', $settings );
+
+        $output = '<div class="' . $classes . '">';
 
         foreach ( $row['items'] as $col ) {
             $output .= $this->render_col( $col );
@@ -103,8 +115,9 @@ class FacetWP_Builder
 
         $this->css['.fwpl-col.' . $settings['name'] ] = $this->build_styles( $settings );
 
-        $css_class = empty( $settings['css_class'] ) ? '' : ' ' . $settings['css_class'];
-        $output = '<div class="fwpl-col ' . $settings['name'] . $css_class . '">';
+        $classes = $this->get_classes( 'fwpl-col', $settings );
+
+        $output = '<div class="fwpl-col ' . $classes . '">';
 
         foreach ( $col['items'] as $item ) {
             if ( 'row' == $item['type'] ) {
@@ -243,7 +256,7 @@ class FacetWP_Builder
             $value = $this->linkify( $value, $settings['link'] );
         }
         elseif ( 'html' == $source ) {
-            $value = $settings['content'];
+            $value = do_shortcode( $settings['content'] );
         }
 
         // Date format
@@ -255,8 +268,9 @@ class FacetWP_Builder
                 $date = new DateTime( $value );
             }
 
+            // Use wp_date() to support i18n
             if ( $date ) {
-                $value = $date->format( $settings['date_format'] );
+                $value = wp_date( $settings['date_format'], $date->getTimestamp() );
             }
         }
 
@@ -306,10 +320,16 @@ class FacetWP_Builder
         // Store the short-tag
         $this->data[ $name ] = $value;
 
+        // Build the list of CSS classes
+        $classes = $this->get_classes( 'fwpl-item', $settings );
+
+        if ( '' == $value ) {
+            $classes .= ' is-empty';
+        }
+
         // Prevent output
         if ( ! $settings['is_hidden'] ) {
-            $css_class = empty( $settings['css_class'] ) ? '' : ' ' . $settings['css_class'];
-            $output = '<div class="fwpl-item ' . $name . $css_class . '">' . $value . '</div>';
+            $output = '<div class="' . $classes . '">' . $value . '</div>';
         }
 
         return $output;
@@ -457,14 +477,6 @@ class FacetWP_Builder
             $output .= $this->custom_css . "\n";
         }
 
-        $output .= "
-@media (max-width: 480px) {
-    .fwpl-layout {
-        grid-template-columns: 1fr;
-    }
-}
-";
-
         $output .= "</style>\n";
 
         return $output;
@@ -518,11 +530,16 @@ class FacetWP_Builder
         $date_query = [];
         $post_type = 'any';
         $post_status = [ 'publish' ];
+        $posts_per_page = 10;
         $post_in = [];
         $post_not_in = [];
         $author_in = [];
         $author_not_in = [];
         $orderby = [];
+
+        if ( ! empty( $query_obj['posts_per_page'] ) ) {
+            $posts_per_page = (int) $query_obj['posts_per_page'];
+        }
 
         if ( ! empty( $query_obj['post_type'] ) ) {
             $post_type = array_column( $query_obj['post_type'], 'value' );
@@ -655,7 +672,7 @@ class FacetWP_Builder
             'author__in' => $author_in,
             'author__not_in' => $author_not_in,
             'orderby' => $orderby,
-            'posts_per_page' => $query_obj['posts_per_page']
+            'posts_per_page' => $posts_per_page
         ];
 
         foreach ( $temp as $key => $val ) {

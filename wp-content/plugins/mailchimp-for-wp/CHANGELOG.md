@@ -1,6 +1,37 @@
 Changelog
 =========
 
+#### 4.8.7 - Mar 2, 2022
+
+- Fix PHP 8.1 deprecation warnings in `MC4WP_Container` class.
+- Fix name of action hook that fires before Mailchimp settings rows are displayed on the settings page. Thanks [LoonSongSoftware](https://github.com/LoonSongSoftware).
+- Improve WPML compatibility. Thanks [Sumit Singh](https://github.com/5um17).
+- Fix deprecated function for AMP integration.
+- Only allow unfiltered HTML if user has `unfiltered_html` capability. Please read the below.
+
+Despite extensive testing, we may have missed some more obscure HTML elements or attributes from our whitelist.
+If you notice that some of your form HTML is stripped after saving your form, please get in touch with our support team and provide the HTML you attempted to save.
+
+
+#### 4.8.6 - Jun 24, 2021
+
+- Add nonce field to button for dismissing notice asking for plugin review.
+- Add strings from config/ directory to POT file.
+- Add nonce check to AJAX endpoint for refreshing cached Mailchimp lists.
+- Add capability check to AJAX endpoint for retrieving list details.
+- Schedule event to refresh cached Mailchimp list upon plugin activation.
+
+Thanks to the team over at [pluginvulnerabilities.com](https://www.pluginvulnerabilities.com/) for bringing some of these changes to our attention.
+
+
+#### 4.8.5 - Jun 1, 2021
+
+Add nonce verification to all URL's using _mc4wp_action query parameter.
+This fixes a CSRF vulnerability where a malicious website could trick a logged-in admin user in performing unwanted actions.
+
+A special thanks to Erwan from [WPScan](https://wpscan.com/) for bringing this issue to our attention.
+
+
 #### 4.8.4 - May 7, 2021
 
 - Add `defer` attribute to JS file, so page parsing isn't blocked at all.

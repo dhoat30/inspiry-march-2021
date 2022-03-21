@@ -15,7 +15,8 @@ class Filter_Subscriber
         Image_Source::class,
         Background_Thumbnails_Regeneration::class,
         Generated_Sizes::class,
-        Filter_Processable_Regenerate_Thumbnails::class
+        Filter_Processable_Regenerate_Thumbnails::class,
+        Custom_Sizes::class
     ];
 
     /**

@@ -4,6 +4,7 @@ namespace WP_Smart_Image_Resize\Image_Filters;
 
 use Intervention\Image\Filters\FilterInterface;
 use Intervention\Image\Image;
+use WP_Smart_Image_Resize\Image_Manager;
 
 class Recanvas_Filter implements FilterInterface
 {
@@ -25,64 +26,47 @@ class Recanvas_Filter implements FilterInterface
         'top',
         'bottom',
         'left',
-        'right',
-        'bottom-right',
-        'bottom-left',
-        'top-right',
-        'top-left'
+        'right'
     ];
 
 
     /**
      * Canvas width/height.
      *
-     * @var array $size [width, height]
+     * @var array $size {width, height}
      */
     protected $size;
 
-    /**
-     * The image manager instance.
-     *
-     * @var \WP_Smart_Image_Resize\Image_Manager
-     */
-    protected $manager;
 
-    public function __construct( $manager, $size )
+    public function __construct($size)
     {
         $this->size    = $size;
-        $this->manager = $manager;
     }
 
 
     public function getCanvasColor()
     {
-        return sanitize_hex_color( wp_sir_get_settings()[ 'bg_color' ] ) ?: null;
+        return maybe_hash_hex_color(wp_sir_get_settings()['bg_color']) ?: null;
     }
 
     public function getImagePosition()
     {
-        $position = strtolower( apply_filters( 'wp_sir_canvas_position', $this->defaultPosition ) );
+        $position = strtolower(apply_filters('wp_sir_canvas_position', $this->defaultPosition));
 
-        if ( ! in_array( $position, $this->supportedPositions ) ) {
+        if (!in_array($position, $this->supportedPositions)) {
             $position = $this->defaultPosition;
         }
 
         return $position;
     }
 
-    public function applyFilter( Image $image )
+    public function applyFilter(Image $image)
     {
 
-        $canvas = $this->manager->canvas(
-            $this->size[ 'width' ],
-            $this->size[ 'height' ],
-            $this->getCanvasColor()
-        );
+        // Place the image inside a canvas.
+        $image_manager = new Image_Manager();
+        $canvas = $image_manager->canvas($this->size['width'], $this->size['height'], $this->getCanvasColor(), $image);
 
-        $canvas->insert( $image, $this->getImagePosition() );
-        $image->destroy();
-
-        return $canvas;
-
+        return $canvas->insert($image, $this->getImagePosition());
     }
 }

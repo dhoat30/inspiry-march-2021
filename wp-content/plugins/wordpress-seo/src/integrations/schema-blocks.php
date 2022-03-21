@@ -137,7 +137,7 @@ class Schema_Blocks implements Integration_Interface {
 		 * @param array $templates The templates to filter.
 		 */
 		$templates = \apply_filters( 'wpseo_load_schema_templates', $templates );
-		if ( ! is_array( $templates ) || empty( $templates ) ) {
+		if ( ! \is_array( $templates ) || empty( $templates ) ) {
 			return;
 		}
 
@@ -145,7 +145,8 @@ class Schema_Blocks implements Integration_Interface {
 			if ( ! \file_exists( $template ) ) {
 				continue;
 			}
-			$type = ( \substr( $template, - 10 ) === '.block.php' ) ? 'block' : 'schema';
+			// `.schema` and other suffixes become Schema (root) templates.
+			$type = ( \substr( $template, -10 ) === '.block.php' ) ? 'block' : 'schema';
 			echo '<script type="text/' . \esc_html( $type ) . '-template">';
 			include $template;
 			echo '</script>';
@@ -154,9 +155,11 @@ class Schema_Blocks implements Integration_Interface {
 
 	/**
 	 * Loads the translations and localizes the schema-blocks script file.
+	 *
+	 * @codeCoverageIgnore
+	 * @deprecated 18.0
 	 */
 	public function load_translations() {
-		$yoast_components_l10n = new \WPSEO_Admin_Asset_Yoast_Components_L10n();
-		$yoast_components_l10n->localize_script( 'schema-blocks' );
+		_deprecated_function( __FUNCTION__, '18.0' );
 	}
 }

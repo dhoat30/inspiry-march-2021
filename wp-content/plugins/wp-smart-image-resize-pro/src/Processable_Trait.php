@@ -27,6 +27,9 @@ trait Processable_Trait
             return $cache === 'yes';
         }
 
+        if(! wp_attachment_is_image($image_id)){
+            return false;
+        }
         // Since the original image doesn't exist
         // we cannot process it.
         if ( ! is_readable( $imageMeta->getOriginalFullPath() ) ) {

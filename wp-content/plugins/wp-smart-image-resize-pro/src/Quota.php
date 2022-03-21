@@ -89,7 +89,7 @@ final class Quota
         ?>
       <div class="wpsirQuotaStatus">
 
-        <span><?php echo self::get_consumed() ?> image(s) of <?php echo self::get_initial_credits() ?> processed ( <a href="https://sirplugin.com/#pro">Upgrade to PRO</a> for unlimited images ).</span>
+        <span><?php echo self::get_consumed() ?> image(s) of <?php echo self::get_initial_credits() ?> processed ( <a target="_blank" href="https://sirplugin.com/#pro">Upgrade to PRO</a> for unlimited images ).</span>
         <span class="wpsirQuotaStatusProgressBar <?php echo self::is_exceeding_soon() ? 'isExceeding' : '' ?>
         
         <?php echo self::isExceeded() ? 'isExceeded' : '' ?>

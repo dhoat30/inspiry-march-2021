@@ -72,9 +72,10 @@ window.FWP = (($) => {
                         }
 
                         var choices = val;
-                        var facet_type = $('.facetwp-facet-' + key).attr('data-type');
+                        var $el = $('.facetwp-facet-' + key);
+                        var facet_type = $el.attr('data-ui') || $el.attr('data-type');
                         choices = FWP.hooks.applyFilters('facetwp/selections/' + facet_type, choices, {
-                            'el': $('.facetwp-facet-' + key),
+                            'el': $el,
                             'selected_values': choices
                         });
 
@@ -194,6 +195,10 @@ window.FWP = (($) => {
                 var facet_type = $this.attr('data-type');
                 var is_ignored = $this.hasClass('facetwp-ignore');
 
+                if (null !== $this.attr('data-ui')) {
+                    facet_type = $this.attr('data-ui');
+                }
+
                 // Store the facet type
                 FWP.facet_type[facet_name] = facet_type;
 
@@ -202,21 +207,6 @@ window.FWP = (($) => {
                     FWP.hooks.doAction('facetwp/refresh/' + facet_type, $this, facet_name);
                 }
             });
-
-            // Add pagination to the URL hash
-            if (1 < FWP.paged) {
-                FWP.facets['paged'] = FWP.paged;
-            }
-
-            // Add "per page" to the URL hash
-            if (FWP.extras.per_page && 'default' !== FWP.extras.per_page) {
-                FWP.facets['per_page'] = FWP.extras.per_page;
-            }
-
-            // Add sorting to the URL hash
-            if (FWP.extras.sort && 'default' !== FWP.extras.sort) {
-                FWP.facets['sort'] = FWP.extras.sort;
-            }
         }
 
         buildQueryString() {
@@ -234,7 +224,24 @@ window.FWP = (($) => {
             hash = hash.join('&');
 
             // FacetWP URL variables
-            var fwp_vars = FWP.helper.serialize(FWP.facets, FWP_JSON.prefix);
+            var fwp_vars = Object.assign({}, FWP.facets);
+
+            // Add pagination to the URL hash
+            if (1 < FWP.paged) {
+                fwp_vars['paged'] = FWP.paged;
+            }
+
+            // Add "per page" to the URL hash
+            if (FWP.extras.per_page && 'default' !== FWP.extras.per_page) {
+                fwp_vars['per_page'] = FWP.extras.per_page;
+            }
+
+            // Add sorting to the URL hash
+            if (FWP.extras.sort && 'default' !== FWP.extras.sort) {
+                fwp_vars['sort'] = FWP.extras.sort;
+            }
+
+            fwp_vars = FWP.helper.serialize(fwp_vars, FWP_JSON.prefix);
 
             if ('' !== hash) {
                 query_string += hash;
@@ -589,8 +596,8 @@ window.FWP = (($) => {
 
     FacetWP.prototype.helper = {
         getUrlVar: (name) => {
-            var query_string = FWP.buildQueryString();
-            var url_vars = query_string.split('&');
+            var name = FWP_JSON.prefix + name;
+            var url_vars = window.location.search.replace('?', '').split('&');
             for (var i = 0; i < url_vars.length; i++) {
                 var item = url_vars[i].split('=');
                 if (item[0] === name) {

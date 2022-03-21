@@ -65,7 +65,10 @@ class ImageManager
      */
     public function canvas($width, $height, $background = null)
     {
-        return $this->createDriver()->newImage($width, $height, $background);
+        $args = func_get_args();
+        $image = isset($args[3]) ? $args[3] : false;
+
+        return $this->createDriver()->newImage($width, $height, $background, $image);
     }
 
     /**

@@ -126,4 +126,28 @@ jQuery(function($) {
             }
         }
     });
+
+    $('#laybuy_send_support_request').on('click', function (e) {
+
+        e.preventDefault();
+        var $self = $(this);
+
+        $self.text('Sending...');
+
+        var data = {
+            action: 'send_laybuy_support_request'
+        };
+
+        jQuery.post( ajaxurl, data, function(response) {
+            if (response.success === true){
+                alert('Your support request has been sent!');
+            } else {
+                alert('Wait, something went wrong or too many requests, try later');
+            }
+        }).done(function(){
+
+        }).always(function () {
+            $self.text('Send Support Request');
+        });
+    });
 });
