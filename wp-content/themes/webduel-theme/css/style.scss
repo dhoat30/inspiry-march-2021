@@ -1305,3 +1305,19 @@ button[disabled] {
 }
 
 /* lightbox for design board */
+// disable button
+button:disabled,
+button[disabled] {
+  background-color: var(--lightGrey) !important;
+  border: 1px solid var(--darkGrey) !important;
+  color: var(--white) !important;
+  i {
+    color: var(--white) !important;
+  }
+  &:hover {
+    color: var(--white) !important;
+  }
+  &:hover i {
+    color: var(--white) !important;
+  }
+}

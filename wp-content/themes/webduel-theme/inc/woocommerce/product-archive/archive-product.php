@@ -13,7 +13,7 @@ add_action('woocommerce_archive_description', function () {
 // add sort form 
 add_action('woocommerce_archive_description', 'woocommerce_catalog_ordering', 40);
 add_action('woocommerce_archive_description', function () {
-   echo '<button class="filter-button secondary-button"><i class="fa-light fa-filter-list"></i> <span>Show Filters</span></div>';
+   echo '<button class="filter-button secondary-button"><i class="fa-regular fa-filter-list"></i> <span>Show Filters</span></div>';
    echo '</div"> ';
 }, 60);
 

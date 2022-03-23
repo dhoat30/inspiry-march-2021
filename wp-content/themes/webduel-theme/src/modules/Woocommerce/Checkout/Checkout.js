@@ -114,8 +114,6 @@ class Checkout {
             // hide the pay now button 
             $(this).hide()
         }
-
-
     }
 
 }

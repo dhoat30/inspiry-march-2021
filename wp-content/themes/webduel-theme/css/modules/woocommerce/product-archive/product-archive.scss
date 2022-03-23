@@ -40,6 +40,10 @@
         }
         button {
           text-transform: capitalize;
+          span {
+            font-size: var(--mediumSize);
+            font-weight: var(--bold);
+          }
           @media (max-width: 400px) {
             margin-top: 10px;
           }

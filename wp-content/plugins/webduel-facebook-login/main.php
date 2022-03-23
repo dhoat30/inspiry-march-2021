@@ -15,17 +15,17 @@ require_once 'Facebook/autoload.php';
 
 session_start();
   
-if (strstr($_SERVER['SERVER_NAME'], 'localhost')) {
+if (strstr($_SERVER['SERVER_NAME'], 'inspiry.co.nz')) {
 	$FBObject = new \Facebook\Facebook([
-		'app_id' => '1132170227592896',
-		'app_secret' => '413c607cace9c70218957992ad45893e',
+		'app_id' => '920976412116930',
+		'app_secret' => 'a80aaf481756f29b67143781fe32157b',
 		'default_graph_version' => 'v2.10'
 	]);
 	
   } else {
 	$FBObject = new \Facebook\Facebook([
-		'app_id' => '920976412116930',
-		'app_secret' => 'a80aaf481756f29b67143781fe32157b',
+		'app_id' => '318854856978798',
+		'app_secret' => 'e7c1c4426d836b0fcff2da87707e1215',
 		'default_graph_version' => 'v2.10'
 	]);
 	
@@ -131,7 +131,7 @@ function jwtTokenFbLogin($username, $password){
 	"password"=> $password
 			];
 		curl_setopt_array($curl, array(
-		CURLOPT_URL => 'https://inspiry.co.nz/wp-json/jwt-auth/v1/token',
+		CURLOPT_URL => get_site_url().'/wp-json/jwt-auth/v1/token',
 		CURLOPT_RETURNTRANSFER => true,
 		CURLOPT_ENCODING => '',
 		CURLOPT_MAXREDIRS => 10,
@@ -195,7 +195,7 @@ add_action( 'admin_init', 'add_ajax_actions' );
 			global $handler;
 			$nonce = wp_create_nonce("webduel_facebook_login_nonce");
 			// $link = admin_url('admin-ajax.php?action=webduel_facebook_login&nonce='.$nonce);
-			$link = 'https://inspiry.co.nz/wp-admin/admin-ajax.php?action=webduel_facebook_login';
+			$link = get_site_url().'/wp-admin/admin-ajax.php?action=webduel_facebook_login';
 			// $link = "https://".$_SERVER['SERVER_NAME']."/wp-admin/admin-ajax.php?action=webduel_facebook_login";
 
 			$redirect_to = $link;

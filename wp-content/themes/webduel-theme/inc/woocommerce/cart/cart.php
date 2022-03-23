@@ -358,7 +358,7 @@ add_action('woocommerce_before_cart', function () {
             <?php if (!WC()->cart->get_coupon_discount_amount(WC()->cart->get_applied_coupons()[0], false)) {
             ?>
                 <div class="coupon-code-input-container" )>
-                    <input type="text" name="coupon" id="coupon" />
+                    <input type="text" name="coupon" id="coupon" placeholder="Enter Coupon Code"/>
                     <button class="primary-button">Apply</button>
                 </div>
             <?php
