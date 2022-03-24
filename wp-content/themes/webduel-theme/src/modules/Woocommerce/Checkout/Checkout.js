@@ -112,7 +112,16 @@ class Checkout {
         if (validateBillingForm()) {
             $('#payment').show()
             // hide the pay now button 
-            $(this).hide()
+            if ($('#payment').is(":visible")) {
+                $(this).hide()
+            }
+            setTimeout(() => {
+                if ($('#payment').is(":hidden")) {
+                    $(this).show()
+                }
+            }, 5000)
+
+
         }
     }
 
