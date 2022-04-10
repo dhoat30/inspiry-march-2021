@@ -5,6 +5,11 @@
   justify-content: center;
   margin-top: 50px;
 }
+.inspiry-blogs {
+  .facet-wrap {
+    display: block !important;
+  }
+}
 .inspiry-blogs .first-section > div:nth-child(1) {
   width: 20%;
   margin-top: 20px;

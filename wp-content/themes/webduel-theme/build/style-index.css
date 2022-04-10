@@ -1806,6 +1806,10 @@ footer .copyright-section .copyright {
   margin-top: 50px;
 }
 
+.inspiry-blogs .facet-wrap {
+  display: block !important;
+}
+
 .inspiry-blogs .first-section > div:nth-child(1) {
   width: 20%;
   margin-top: 20px;
@@ -4683,7 +4687,7 @@ div .input-group-addon {
   font-size: var(--paragraphSize);
   position: relative;
   color: var(--darkGrey);
-  margin: 5px 0;
+  margin-top: 3px;
   display: block;
 }
 .archive #main .facet-product-container .product-loop-container .products .product .free-shipping::after {
@@ -4696,7 +4700,8 @@ div .input-group-addon {
   bottom: 0;
 }
 .archive #main .facet-product-container .product-loop-container .products .product .loop-deal {
-  color: var(--grey);
+  margin: 5px 0;
+  color: var(--red);
   font-size: var(--paragraphSize);
   font-weight: var(--medium);
 }

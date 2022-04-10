@@ -153,7 +153,7 @@ function inspiry_board_route(){
    				return $boardsResult; 
 			   }  
 			   else{
-			   return 'you do not have permission' ;
+				return 403;
 			   }
 	}
 

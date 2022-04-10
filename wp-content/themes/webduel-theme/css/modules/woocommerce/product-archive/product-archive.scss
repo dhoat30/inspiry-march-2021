@@ -113,7 +113,7 @@
               font-size: var(--paragraphSize);
               position: relative;
               color: var(--darkGrey);
-              margin: 5px 0;
+              margin-top: 3px;
               display: block;
               &::after {
                 position: absolute;
@@ -126,7 +126,8 @@
               }
             }
             .loop-deal {
-              color: var(--grey);
+              margin: 5px 0;
+              color: var(--red);
               font-size: var(--paragraphSize);
               font-weight: var(--medium);
             }

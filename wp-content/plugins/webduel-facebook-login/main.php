@@ -28,7 +28,6 @@ if (strstr($_SERVER['SERVER_NAME'], 'inspiry.co.nz')) {
 		'app_secret' => 'e7c1c4426d836b0fcff2da87707e1215',
 		'default_graph_version' => 'v2.10'
 	]);
-	
   }
 
 $handler = $FBObject -> getRedirectLoginHelper();

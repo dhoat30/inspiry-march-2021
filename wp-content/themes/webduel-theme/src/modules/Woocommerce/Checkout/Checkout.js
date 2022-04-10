@@ -8,9 +8,11 @@ class Checkout {
         this.windcavePaymentSelected = $("input[type='radio'][name='payment_method']:checked").val();
         this.events()
     }
+
     events() {
         $('#pay-button').on('click', this.showPaymentOptions)
     }
+
     showPaymentOptions(e) {
         e.preventDefault()
         const validateInputField = (selector, errorText, selectorID, validationFormat) => {

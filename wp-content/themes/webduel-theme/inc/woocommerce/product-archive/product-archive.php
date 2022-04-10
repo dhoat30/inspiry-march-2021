@@ -62,7 +62,8 @@ add_action('woocommerce_before_shop_loop', function(){
                 echo do_shortcode('[facetwp facet="colour_family"]');  
                 echo do_shortcode('[facetwp facet="pattern"]');  
                 echo do_shortcode('[facetwp facet="composition"]');  
-                echo do_shortcode('[facetwp facet="availability"]');  
+                echo do_shortcode('[facetwp facet="availability"]'); 
+            
                 //   echo do_shortcode('[facetwp facet="price_range"]');  
                 echo '<button class="facet-reset-btn secondary-button" onclick="FWP.reset()">Reset All Filter</button>'; 
             echo '</div>'; 

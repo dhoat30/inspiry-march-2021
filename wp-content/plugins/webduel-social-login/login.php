@@ -21,13 +21,7 @@ $gClient->setClientId("207300494956-sh03jj7mc8i5no707hi13bejql50m25n.apps.google
 $gClient->setClientSecret("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");
 $gClient->setApplicationName("Inspiry Local and Live");
 $gClient->setState($_GET['redirect-link']);
-
-    if (strstr($_SERVER['SERVER_NAME'], 'localhost')) {
-        $gClient->setRedirectUri("https://localhost/wp-admin/admin-ajax.php?action=vm_login_google");
-    }
-    else{ 
-        $gClient->setRedirectUri("https://inspiry.co.nz/wp-admin/admin-ajax.php?action=vm_login_google");
-    }
+$gClient->setRedirectUri(get_site_url()."/wp-admin/admin-ajax.php?action=vm_login_google");
 
 $gClient->addScope("https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email");
 
@@ -72,7 +66,7 @@ function vm_login_google(){
             );
 
             // get jwt token
-            jwtGoogleToken($userData['email'], $password); 
+            // jwtGoogleToken($userData['email'], $password); 
 
             if($new_user_id) {
                 // send an email to the admin
@@ -98,7 +92,7 @@ function vm_login_google(){
             wp_set_password( $password, $user->ID);
 
             // get jwt token
-            jwtGoogleToken($userData['email'], $password); 
+            // jwtGoogleToken($userData['email'], $password); 
 
             do_action('wp_login', $user->user_login, $user->user_email);
             wp_set_current_user($user->ID);
@@ -111,7 +105,6 @@ function vm_login_google(){
          wp_redirect($_GET['state']);
         exit;
     }
-
 }
 
 // ALLOW LOGGED OUT users to access admin-ajax.php action
@@ -122,45 +115,39 @@ add_action('admin_init', 'add_google_ajax_actions');
 
 
 // get jwt auth token 
-function jwtGoogleToken($username, $password){
-	unset($_COOKIE['inpiryAuthToken']);
-	// curl request for jwt token 
-	$curl = curl_init();
-	$postData = [ "username"=> $username, 
-	"password"=> $password
-			];
-		curl_setopt_array($curl, array(
-		CURLOPT_URL => 'https://inspiry.co.nz/wp-json/jwt-auth/v1/token',
-		CURLOPT_RETURNTRANSFER => true,
-		CURLOPT_ENCODING => '',
-		CURLOPT_MAXREDIRS => 10,
-		CURLOPT_TIMEOUT => 0,
-		CURLOPT_FOLLOWLOCATION => true,
-		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-		CURLOPT_CUSTOMREQUEST => 'POST',
-		CURLOPT_POSTFIELDS => json_encode($postData),
-		CURLOPT_HTTPHEADER => array(
-			'Content-Type: application/json'
-		),
-		));
+// function jwtGoogleToken($username, $password){
+// 	unset($_COOKIE['inpiryAuthToken']);
+// 	// curl request for jwt token 
+// 	$curl = curl_init();
+// 	$postData = [ "username"=> $username, 
+// 	"password"=> $password
+// 			];
+// 		curl_setopt_array($curl, array(
+//             CURLOPT_URL => get_site_url().'/wp-json/jwt-auth/v1/token',
+// 		CURLOPT_RETURNTRANSFER => true,
+// 		CURLOPT_ENCODING => '',
+// 		CURLOPT_MAXREDIRS => 10,
+// 		CURLOPT_TIMEOUT => 0,
+// 		CURLOPT_FOLLOWLOCATION => true,
+// 		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+// 		CURLOPT_CUSTOMREQUEST => 'POST',
+// 		CURLOPT_POSTFIELDS => json_encode($postData),
+// 		CURLOPT_HTTPHEADER => array(
+// 			'Content-Type: application/json'
+// 		),
+// 		));
 
-		$response = curl_exec($curl);
+// 		$response = curl_exec($curl);
 
-		curl_close($curl);
-		$obj = json_decode($response);
-		print_r($obj->token);
-		// sett auth cookie 
-		setcookie("inpiryAuthToken", $obj->token, time() + (86400 * 30), "/"); // 86400 = 1 day
-}
-
+// 		curl_close($curl);
+// 		$obj = json_decode($response);
+// 		print_r($obj->token);
+// 		// sett auth cookie 
+// 		setcookie("inpiryAuthToken", $obj->token, time() + (86400 * 30), "/"); // 86400 = 1 day
+// }
 
 
   // add login button on woocommerce login page
-  add_action('woocommerce_login_form_end', "wd_google_login_button", 10); 
-  add_action('woocommerce_register_form_end', "wd_google_login_button", 10); 
-  function wd_google_login_button(){ 
-      echo do_shortcode('[google-login]');
-  }
   
 add_action('webduel_social_login', function(){ 
     global $login_url;

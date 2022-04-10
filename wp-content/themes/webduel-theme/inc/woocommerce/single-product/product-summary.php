@@ -9,91 +9,92 @@ remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 /**
  * Remove product page tabs
  */
-add_filter( 'woocommerce_product_tabs', 'my_remove_all_product_tabs', 98 );
- 
-function my_remove_all_product_tabs( $tabs ) {
-  unset( $tabs['description'] );        // Remove the description tab
-  unset( $tabs['reviews'] );       // Remove the reviews tab
-  unset( $tabs['additional_information'] );    // Remove the additional information tab
-  return $tabs;
+add_filter('woocommerce_product_tabs', 'my_remove_all_product_tabs', 98);
+
+function my_remove_all_product_tabs($tabs)
+{
+    unset($tabs['description']);        // Remove the description tab
+    unset($tabs['reviews']);       // Remove the reviews tab
+    unset($tabs['additional_information']);    // Remove the additional information tab
+    return $tabs;
 }
 
 // price ------------------------------------------------------------------------------------------
 // Trim zeros in price decimals
-add_filter( 'woocommerce_price_trim_zeros', '__return_true' ); 
+add_filter('woocommerce_price_trim_zeros', '__return_true');
 
 // remove short description on single product page
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
 
 // add free delivery tag ----------------------------------------------
-add_action('woocommerce_single_product_summary', function(){ 
+add_action('woocommerce_single_product_summary', function () {
     echo '<div class="price-flex">';
-}, 5); 
-add_action('woocommerce_single_product_summary', function(){ 
-    global $product; 
-    if($product->get_shipping_class()=== "free-shipping"){ 
+}, 5);
+add_action('woocommerce_single_product_summary', function () {
+    global $product;
+    if ($product->get_shipping_class() === "free-shipping") {
         echo '<div class="free-shipping">
         <i class="fa-solid fa-cube"></i>
         Free Delivery
-        </div>'; 
+        </div>';
     }
     echo '
     </div>
     ';
-
-}, 10); 
+}, 10);
 
 
 // add deal information on single product page --------------------------------------
-add_action('woocommerce_single_product_summary', 'webduelModal', 15); 
+add_action('woocommerce_single_product_summary', 'webduelModal', 15);
 
-function webduelModal(){ 
-   if(is_product()){ 
-        global $product; 
+function webduelModal()
+{
+    if (is_product()) {
+        global $product;
         // get current deal for the single product 
-        $currentDeal = $product->get_attribute( 'pa_current-deal' );
-    
+        $currentDeal = $product->get_attribute('pa_current-deal');
+
         // get modal Categories
-        $modalCategories = get_terms( array( 
+        $modalCategories = get_terms(array(
             'taxonomy' => 'modal-categories',
             'parent'   => 0
-        ) );
+        ));
         // get category slug for custom post type
-        $categorySlug = ''; 
-        foreach ($modalCategories as $item ) {
+        $categorySlug = '';
+        foreach ($modalCategories as $item) {
             // process element here
-            if($item->name === $currentDeal){
-                $categorySlug = $item->slug; 
+            if ($item->name === $currentDeal) {
+                $categorySlug = $item->slug;
             }
         }
-        
-        singleProductQuery($categorySlug); 
-   }
-   
-}   
+
+        singleProductQuery($categorySlug);
+    }
+}
 
 // modal query 
-function singleProductQuery($categorySlug){ 
-       //  query modal with category slug
-       $the_query = new WP_Query( array(
+function singleProductQuery($categorySlug)
+{
+    //  query modal with category slug
+    $the_query = new WP_Query(array(
         'post_type' => 'modal',
         'tax_query' => array(
-            array (
+            array(
                 'taxonomy' => 'modal-categories',
                 'field' => 'slug',
                 'terms' => $categorySlug
             )
         ),
-    ) );
-    while($the_query->have_posts()){ 
-        $the_query->the_post(); 
+    ));
+    while ($the_query->have_posts()) {
+        $the_query->the_post();
         echo '<div class="deal-section">
                <div class="content" >
-                    <div class=" title">'.get_the_title().'</div>
-                    <div class="subtitle">'.get_the_content().'</div>
+                    <div class=" title">' . get_the_title() . '</div>
+                    <div class="subtitle">' . get_the_content() . '</div>
                 </div>
             </div>
-        '; 
+        ';
     }
     wp_reset_postdata();
 }
@@ -101,113 +102,125 @@ function singleProductQuery($categorySlug){
 
 // availability section _--------------------------------------------------------------
 
-add_action('woocommerce_single_product_summary', function (){ 
-    global $product;    
+add_action('woocommerce_single_product_summary', function () {
+    global $product;
     // Available on backorder
-    $countryOfOrigin = $product->get_attribute( 'pa_country-of-origin' );
-    $deliveryETA = $product->get_attribute( 'pa_availability' );
-    if($countryOfOrigin){ 
-        $countryOfOrigin = 'Country Of Origin: '.$countryOfOrigin; 
+    $countryOfOrigin = $product->get_attribute('pa_country-of-origin');
+    $availability = $product->get_attribute('pa_availability');
+    $deliveryEta = $product->get_attribute('pa_delivery');
+
+    if ($countryOfOrigin) {
+        $countryOfOrigin = 'Country Of Origin: ' . $countryOfOrigin;
     }
+    // add back order if the item is out of stock and add availability attributes for stock arrival date. 
+    // if the product is in stock then add delivery attribute with eta date 
     // echo '
     // <div class="availability">
-    //     <h3 class="title">'; 
-        // if($product->get_availability()['class'] === 'in-stock'){ 
-        //    echo ' 
-        //     <i class="fa-solid fa-circle-check" style="color: var(--green); "></i>
-        //     <span  style="color: var(--green); ">
-        //     IN STOCK
-        //     </span>
-        //     '; 
-
-        // }
-        // else{ 
-        //     echo ' 
-        //     <i class="fa-solid fa-circle-check" style="color: var(--orange); "></i>
-        //     <span  style="color: var(--orange); ">
-        //     Pre Order
-        //     </span>
-        //     '; 
-        // }
-    //     echo '
-    //     <h3>
-    //     <div class="content">
-    //         <h4 class="subtitle">
-    //             '.$countryOfOrigin.'
-    //         </h4>
-    //         <h5 class="delivery-info">
-    //             Availability: '.$deliveryETA.' 
-    //         </h5>
-    //     </div>
-    // </div>'; 
-}, 60) ; 
+    //   ';
+    // if ($product->get_availability()['class'] === 'in-stock') {
+    //     echo ' 
+    //        <h3 class="title">
+    //         <i class="fa-solid fa-circle-check" style="color: var(--green); "></i>
+    //         <span  style="color: var(--green); ">
+    //         IN STOCK
+    //         </span>
+    //         </h3>
+    //         <div class="content">
+    //             <h4 class="subtitle">
+    //                 ' . $countryOfOrigin . '
+    //             </h4>
+    //             <h5 class="delivery-info">
+    //                 Delivery: ' . $deliveryEta . ' 
+    //             </h5>
+    //         </div>
+    //         ';
+    // } else {
+    //     echo ' 
+    //         <h3 class="title">
+    //         <i class="fa-solid fa-circle-check" style="color: var(--orange); "></i>
+    //         <span  style="color: var(--orange); ">
+    //         Pre Order
+    //         </span>
+    //         </h3>
+    //         <div class="content">
+    //             <h4 class="subtitle">
+    //                 ' . $countryOfOrigin . '
+    //             </h4>
+    //             <h5 class="delivery-info">
+    //                 Availability: ' . $availability . ' 
+    //             </h5>
+    //         </div>
+    //         ';
+    // }
+    // echo '
+    // </div>';
+}, 60);
 
 // social share -----------------------------------------------------------
-add_action('woocommerce_single_product_summary', function(){
+add_action('woocommerce_single_product_summary', function () {
     echo '
     <div class="social-share-container">
         <p>Share:</p>
-    ';  
+    ';
     echo do_shortcode('[webduelSocialShare]');
     echo '</div>';
-}, 80); 
+}, 80);
 
 // add variation availability data before add to cart button ---------------------------------
-function iconic_output_engraving_field() {
-	
+function iconic_output_engraving_field()
+{
+
     global $product;
     echo $product->get_stock_quantity();
 
     // $product->is_type( $type ) checks the product type, string/array $type ( 'simple', 'grouped', 'variable', 'external' ), returns boolean
-    
-    if ( $product->is_type( 'variable' ) ) {
-        $dataArray = array(); 
-        foreach($product->get_available_variations() as $key){
-            $variation = wc_get_product( $key['variation_id'] );
+
+    if ($product->is_type('variable')) {
+        $dataArray = array();
+        foreach ($product->get_available_variations() as $key) {
+            $variation = wc_get_product($key['variation_id']);
             $stock = $variation->get_availability();
-            
+
             array_push($dataArray, array(
-                "variation_id" => $key['variation_id'], 
-                "availability"=>$stock['class']
-             )); 
+                "variation_id" => $key['variation_id'],
+                "availability" => $stock['class']
+            ));
         }
-        
-        ?>
-        <div class="variation-availability-data" 
-        data-variation_availability='<?php   print_r(json_encode($dataArray)); ?>'>
+
+?>
+        <div class="variation-availability-data" data-variation_availability='<?php print_r(json_encode($dataArray)); ?>'>
         </div>
-        <?php
-       
+<?php
+
     }
 }
 
-add_action( 'woocommerce_before_add_to_cart_button', 'iconic_output_engraving_field', 10 );
+add_action('woocommerce_before_add_to_cart_button', 'iconic_output_engraving_field', 10);
 
 //add wallpaper calculator 
-add_action('woocommerce_single_product_summary', function(){
-    global $post, $product; 
+add_action('woocommerce_single_product_summary', function () {
+    global $post, $product;
     $category = wp_strip_all_tags($product->get_categories());
     $CategoryWallpaper = "Wallpaper";
-    $categoryFabric = "Fabric"; 
+    $categoryFabric = "Fabric";
 
-    if($category === 'Wallpaper' ){
+    if ($category === 'Wallpaper') {
         echo '<div class="product-page-btn-container">
             <button class="sizing-calculator-button secondary-button"><i class="far fa-calculator" aria-hidden="true"></i> Wallpaper Calculator</button>       
-        </div>'; 
+        </div>';
 
-     //add calculator body 
-     calculator_body();
+        //add calculator body 
+        calculator_body();
     }
-    
-   
-}, 40); 
+}, 40);
 
 
 //wallpaper calculator 
- 
 
-function calculator_body(){
-    global $product; 
+
+function calculator_body()
+{
+    global $product;
     echo '<div class="body-container">
        
 
@@ -307,18 +320,19 @@ function calculator_body(){
 }
 
 // single product page wishlist container and add brand name before title 
-add_action("woocommerce_single_product_summary", "single_product_page_title_start", 1); 
+add_action("woocommerce_single_product_summary", "single_product_page_title_start", 1);
 
-function single_product_page_title_start(){ 
- 
-    global $product; 
+function single_product_page_title_start()
+{
+
+    global $product;
     // find the brand name of the product
-    $brand = array_shift( wc_get_product_terms( $product->id, 'pa_brands', array( 'fields' => 'names' ) ) );
+    $brand = array_shift(wc_get_product_terms($product->id, 'pa_brands', array('fields' => 'names')));
 
     echo  '<div class="single-product-before-title-container">';
-        echo '<div class="brand-name">'; 
-        echo $brand; 
-        echo '</div>';
-        echo '<div class="design-board-container">'. do_shortcode('[design_board_button_code]').'</div>';
+    echo '<div class="brand-name">';
+    echo $brand;
+    echo '</div>';
+    echo '<div class="design-board-container">' . do_shortcode('[design_board_button_code]') . '</div>';
     echo '</div>';
 }

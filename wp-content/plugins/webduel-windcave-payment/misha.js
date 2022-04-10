@@ -77,15 +77,15 @@ var tokenRequest = function (e) {
 
     $('.windcave-submit-button').on('click', () => {
         // validate windcave credit card form 
+        $('.windcave-submit-button').hide()
         WindcavePayments.Seamless.validate({
             onProcessed: function (isValid) {
                 if (isValid) {
                     console.log(isValid)
                     // if the credit card is valid, submit the form 
-                    $('.windcave-submit-button').hide()
+
                     WindcavePayments.Seamless.submit({
                         onProcessed: function (response) {
-                            console.log(response)
                             console.log('wincave submitted')
                             successCallback(webduel_params.windcaveObj.id)
 
@@ -96,10 +96,13 @@ var tokenRequest = function (e) {
                         }
                     });
                 }
+                else {
+                    $('.windcave-submit-button').show()
+                }
             },
             onError: function (error) {
                 console.log(error)
-                console.log('this is an error')
+                $('.windcave-submit-button').show()
             }
         });
     })

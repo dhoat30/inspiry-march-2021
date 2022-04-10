@@ -5,8 +5,8 @@
     <section class="row-container first-section">
         <div class="sidebar row-container">
                 <div class="poppins-font medium-font-sizeium">Category</div>
-                <?php echo do_shortcode('[facetwp facet="blogs"]');?>
-                <button onclick="FWP.reset()" class="facet-reset-btn">Reset</button>
+                <?php echo do_shortcode('[facetwp facet="blogs_filter"]');?>
+                <button class="secondary-button" onclick="FWP.reset()" class="facet-reset-btn">Reset</button>
         </div>
         <div class="flex">
         <?php echo do_shortcode('[facetwp template="blogs"]');?>
