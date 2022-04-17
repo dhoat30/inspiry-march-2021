@@ -123,7 +123,7 @@ jQuery(function () {
 
 function usingGateway() {
     // check if the windcave gateway is selected 
-    if (jQuery('form[name="checkout"] input[name="payment_method"]:checked').val() === 'webduel_windcave_gateway') {
+    if (jQuery('form[name="checkout"] input[name="payment_method"]:checked').val() === 'inspiry_windcave_gateway') {
         jQuery(function ($) {
 
             var checkout_form = $('form.woocommerce-checkout');

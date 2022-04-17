@@ -108,6 +108,16 @@
       }
     }
   }
+  .image-variable-wrapper {
+    .image-variable-item {
+      border-radius: 50% !important;
+      .variable-item-contents {
+        .variable-item-image {
+          border-radius: 50% !important;
+        }
+      }
+    }
+  }
 
   .button-variable-wrapper {
     li {

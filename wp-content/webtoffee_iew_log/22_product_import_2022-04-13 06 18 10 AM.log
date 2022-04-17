@@ -1,0 +1,241 @@
+04-13-2022 @ 18:18:10 - ---[ New import started at 2022-04-13 06:18:10 ] PHP Memory: 256 MB, WP Memory: 40 MB
+04-13-2022 @ 18:18:10 - Preparing for import.
+04-13-2022 @ 18:18:10 - Row :1 - Parsing item.
+04-13-2022 @ 18:18:10 - Row :1 - Processing item.
+04-13-2022 @ 18:18:10 - Found variable product object. ID:463102
+04-13-2022 @ 18:18:10 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A.jpg
+04-13-2022 @ 18:18:10 - Attachment ID:463016
+04-13-2022 @ 18:18:10 - Setting Gallery Images.
+04-13-2022 @ 18:18:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-1.jpg
+04-13-2022 @ 18:18:10 - Attachment ID:463017
+04-13-2022 @ 18:18:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-2.jpg
+04-13-2022 @ 18:18:10 - Attachment ID:463018
+04-13-2022 @ 18:18:10 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-3.jpg
+04-13-2022 @ 18:18:11 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:11 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-4.jpg
+04-13-2022 @ 18:18:12 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-5.jpg
+04-13-2022 @ 18:18:12 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B.jpg
+04-13-2022 @ 18:18:12 - Attachment ID:463020
+04-13-2022 @ 18:18:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-1.jpg
+04-13-2022 @ 18:18:12 - Attachment ID:463021
+04-13-2022 @ 18:18:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C.jpg
+04-13-2022 @ 18:18:12 - Attachment ID:463024
+04-13-2022 @ 18:18:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-1.jpg
+04-13-2022 @ 18:18:12 - Attachment ID:463025
+04-13-2022 @ 18:18:12 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-2.jpg
+04-13-2022 @ 18:18:12 - Attachment ID:463026
+04-13-2022 @ 18:18:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-3.jpg
+04-13-2022 @ 18:18:13 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:13 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-4.jpg
+04-13-2022 @ 18:18:14 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:14 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-5.jpg
+04-13-2022 @ 18:18:15 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-2.jpg
+04-13-2022 @ 18:18:15 - Attachment ID:463022
+04-13-2022 @ 18:18:15 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-3.jpg
+04-13-2022 @ 18:18:15 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:15 - Image URL:
+04-13-2022 @ 18:18:16 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-4.jpg
+04-13-2022 @ 18:18:17 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-5.jpg
+04-13-2022 @ 18:18:17 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C.jpg
+04-13-2022 @ 18:18:17 - Attachment ID:463024
+04-13-2022 @ 18:18:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-1.jpg
+04-13-2022 @ 18:18:17 - Attachment ID:463025
+04-13-2022 @ 18:18:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-2.jpg
+04-13-2022 @ 18:18:17 - Attachment ID:463026
+04-13-2022 @ 18:18:17 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-3.jpg
+04-13-2022 @ 18:18:18 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:18 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-4.jpg
+04-13-2022 @ 18:18:19 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:19 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-5.jpg
+04-13-2022 @ 18:18:20 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D.jpg
+04-13-2022 @ 18:18:20 - Attachment ID:463044
+04-13-2022 @ 18:18:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-1.jpg
+04-13-2022 @ 18:18:20 - Attachment ID:463045
+04-13-2022 @ 18:18:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-2.jpg
+04-13-2022 @ 18:18:20 - Attachment ID:463046
+04-13-2022 @ 18:18:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg
+04-13-2022 @ 18:18:20 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:20 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg
+04-13-2022 @ 18:18:22 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:22 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg
+04-13-2022 @ 18:18:23 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D.jpg
+04-13-2022 @ 18:18:23 - Attachment ID:463044
+04-13-2022 @ 18:18:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-1.jpg
+04-13-2022 @ 18:18:23 - Attachment ID:463045
+04-13-2022 @ 18:18:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-2.jpg
+04-13-2022 @ 18:18:23 - Attachment ID:463046
+04-13-2022 @ 18:18:23 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg
+04-13-2022 @ 18:18:24 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg
+04-13-2022 @ 18:18:24 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:24 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg
+04-13-2022 @ 18:18:25 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:25 - Row :1 - Product updated successfully.
+04-13-2022 @ 18:18:25 - Row :2 - Parsing item.
+04-13-2022 @ 18:18:25 - Row :2 - Processing item.
+04-13-2022 @ 18:18:25 - Found variation product object. ID:463103
+04-13-2022 @ 18:18:25 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A.jpg
+04-13-2022 @ 18:18:25 - Attachment ID:463016
+04-13-2022 @ 18:18:25 - Setting Gallery Images.
+04-13-2022 @ 18:18:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-1.jpg
+04-13-2022 @ 18:18:25 - Attachment ID:463017
+04-13-2022 @ 18:18:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-2.jpg
+04-13-2022 @ 18:18:25 - Attachment ID:463018
+04-13-2022 @ 18:18:25 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-3.jpg
+04-13-2022 @ 18:18:26 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:26 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-4.jpg
+04-13-2022 @ 18:18:27 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-5.jpg
+04-13-2022 @ 18:18:27 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005A-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:27 - Row :2 - Product updated successfully.
+04-13-2022 @ 18:18:27 - Row :3 - Parsing item.
+04-13-2022 @ 18:18:27 - Row :3 - Processing item.
+04-13-2022 @ 18:18:27 - Found variation product object. ID:463104
+04-13-2022 @ 18:18:27 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B.jpg
+04-13-2022 @ 18:18:27 - Attachment ID:463020
+04-13-2022 @ 18:18:27 - Setting Gallery Images.
+04-13-2022 @ 18:18:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-1.jpg
+04-13-2022 @ 18:18:27 - Attachment ID:463021
+04-13-2022 @ 18:18:27 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-2.jpg
+04-13-2022 @ 18:18:27 - Attachment ID:463022
+04-13-2022 @ 18:18:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-3.jpg
+04-13-2022 @ 18:18:28 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:28 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-4.jpg
+04-13-2022 @ 18:18:29 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:29 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-5.jpg
+04-13-2022 @ 18:18:30 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005B-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:30 - Row :3 - Product updated successfully.
+04-13-2022 @ 18:18:30 - Row :4 - Parsing item.
+04-13-2022 @ 18:18:30 - Row :4 - Processing item.
+04-13-2022 @ 18:18:30 - Found variation product object. ID:463105
+04-13-2022 @ 18:18:30 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C.jpg
+04-13-2022 @ 18:18:30 - Attachment ID:463024
+04-13-2022 @ 18:18:30 - Setting Gallery Images.
+04-13-2022 @ 18:18:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-1.jpg
+04-13-2022 @ 18:18:30 - Attachment ID:463025
+04-13-2022 @ 18:18:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-2.jpg
+04-13-2022 @ 18:18:30 - Attachment ID:463026
+04-13-2022 @ 18:18:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-3.jpg
+04-13-2022 @ 18:18:30 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:30 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-4.jpg
+04-13-2022 @ 18:18:31 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:31 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-5.jpg
+04-13-2022 @ 18:18:32 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005C-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:32 - Row :4 - Product updated successfully.
+04-13-2022 @ 18:18:32 - Row :5 - Parsing item.
+04-13-2022 @ 18:18:32 - Row :5 - Processing item.
+04-13-2022 @ 18:18:32 - Found variation product object. ID:463106
+04-13-2022 @ 18:18:32 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D.jpg
+04-13-2022 @ 18:18:32 - Attachment ID:463028
+04-13-2022 @ 18:18:32 - Setting Gallery Images.
+04-13-2022 @ 18:18:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-1.jpg
+04-13-2022 @ 18:18:32 - Attachment ID:463029
+04-13-2022 @ 18:18:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-2.jpg
+04-13-2022 @ 18:18:32 - Attachment ID:463030
+04-13-2022 @ 18:18:32 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-3.jpg
+04-13-2022 @ 18:18:33 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-4.jpg
+04-13-2022 @ 18:18:33 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:33 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-5.jpg
+04-13-2022 @ 18:18:34 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D.jpg
+04-13-2022 @ 18:18:34 - Attachment ID:463028
+04-13-2022 @ 18:18:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-1.jpg
+04-13-2022 @ 18:18:34 - Attachment ID:463029
+04-13-2022 @ 18:18:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-2.jpg
+04-13-2022 @ 18:18:34 - Attachment ID:463030
+04-13-2022 @ 18:18:34 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-3.jpg
+04-13-2022 @ 18:18:35 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:35 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-4.jpg
+04-13-2022 @ 18:18:36 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-5.jpg
+04-13-2022 @ 18:18:36 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2005D-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:36 - Row :5 - Product updated successfully.
+04-13-2022 @ 18:18:36 - Row :6 - Parsing item.
+04-13-2022 @ 18:18:36 - Row :6 - Processing item.
+04-13-2022 @ 18:18:36 - Found variation product object. ID:463107
+04-13-2022 @ 18:18:36 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A.jpg
+04-13-2022 @ 18:18:36 - Attachment ID:463032
+04-13-2022 @ 18:18:36 - Setting Gallery Images.
+04-13-2022 @ 18:18:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A-1.jpg
+04-13-2022 @ 18:18:36 - Attachment ID:463033
+04-13-2022 @ 18:18:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A-2.jpg
+04-13-2022 @ 18:18:36 - Attachment ID:463034
+04-13-2022 @ 18:18:36 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A-3.jpg
+04-13-2022 @ 18:18:37 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:37 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A-4.jpg
+04-13-2022 @ 18:18:38 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:38 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A-5.jpg
+04-13-2022 @ 18:18:39 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006A-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:39 - Row :6 - Product updated successfully.
+04-13-2022 @ 18:18:39 - Row :7 - Parsing item.
+04-13-2022 @ 18:18:39 - Row :7 - Processing item.
+04-13-2022 @ 18:18:39 - Found variation product object. ID:463108
+04-13-2022 @ 18:18:39 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B.jpg
+04-13-2022 @ 18:18:39 - Attachment ID:463036
+04-13-2022 @ 18:18:39 - Setting Gallery Images.
+04-13-2022 @ 18:18:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B-1.jpg
+04-13-2022 @ 18:18:39 - Attachment ID:463037
+04-13-2022 @ 18:18:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B-2.jpg
+04-13-2022 @ 18:18:39 - Attachment ID:463038
+04-13-2022 @ 18:18:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B-3.jpg
+04-13-2022 @ 18:18:39 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:39 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B-4.jpg
+04-13-2022 @ 18:18:40 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:40 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B-5.jpg
+04-13-2022 @ 18:18:41 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006B-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:41 - Row :7 - Product updated successfully.
+04-13-2022 @ 18:18:41 - Row :8 - Parsing item.
+04-13-2022 @ 18:18:41 - Row :8 - Processing item.
+04-13-2022 @ 18:18:41 - Found variation product object. ID:463109
+04-13-2022 @ 18:18:41 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C.jpg
+04-13-2022 @ 18:18:41 - Attachment ID:463040
+04-13-2022 @ 18:18:41 - Setting Gallery Images.
+04-13-2022 @ 18:18:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C-1.jpg
+04-13-2022 @ 18:18:41 - Attachment ID:463041
+04-13-2022 @ 18:18:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C-2.jpg
+04-13-2022 @ 18:18:41 - Attachment ID:463042
+04-13-2022 @ 18:18:41 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C-3.jpg
+04-13-2022 @ 18:18:42 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C-4.jpg
+04-13-2022 @ 18:18:42 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:42 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C-5.jpg
+04-13-2022 @ 18:18:43 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006C-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:43 - Row :8 - Product updated successfully.
+04-13-2022 @ 18:18:43 - Row :9 - Parsing item.
+04-13-2022 @ 18:18:43 - Row :9 - Processing item.
+04-13-2022 @ 18:18:43 - Found variation product object. ID:463110
+04-13-2022 @ 18:18:43 - Setting Featured Image. URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D.jpg
+04-13-2022 @ 18:18:43 - Attachment ID:463044
+04-13-2022 @ 18:18:43 - Setting Gallery Images.
+04-13-2022 @ 18:18:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-1.jpg
+04-13-2022 @ 18:18:43 - Attachment ID:463045
+04-13-2022 @ 18:18:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-2.jpg
+04-13-2022 @ 18:18:43 - Attachment ID:463046
+04-13-2022 @ 18:18:43 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg
+04-13-2022 @ 18:18:44 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:44 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg
+04-13-2022 @ 18:18:45 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg
+04-13-2022 @ 18:18:45 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D.jpg
+04-13-2022 @ 18:18:45 - Attachment ID:463044
+04-13-2022 @ 18:18:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-1.jpg
+04-13-2022 @ 18:18:45 - Attachment ID:463045
+04-13-2022 @ 18:18:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-2.jpg
+04-13-2022 @ 18:18:45 - Attachment ID:463046
+04-13-2022 @ 18:18:45 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg
+04-13-2022 @ 18:18:46 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-3.jpg. Error: Not Found
+04-13-2022 @ 18:18:46 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg
+04-13-2022 @ 18:18:47 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-4.jpg. Error: Not Found
+04-13-2022 @ 18:18:47 - Image URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg
+04-13-2022 @ 18:18:47 - URL:https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg Reason:Error getting remote image https://inspiry.co.nz/wp-content/uploads/oshan/RFA/RFA-PR2006D-5.jpg. Error: Not Found
+04-13-2022 @ 18:18:47 - Row :9 - Product updated successfully.
+04-13-2022 @ 18:18:47 - ---[ Import ended at 2022-04-13 06:18:47]---

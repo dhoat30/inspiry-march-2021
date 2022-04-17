@@ -37,8 +37,8 @@ class Coupon {
                     $('.total-summary .tax-row .amount span').text(response.tax)
                     $('.total-summary .total-row .amount').html(response.total)
                     $(` <ul class="flex-box coupon-row">
-                    <li class="title">Coupon: give10</li>
-                    <li class="amount">-$<span>10 <button>[Remove]</button></span></li>
+                    <li class="title">Coupon: ${response.couponCode}</li>
+                    <li class="amount">-$<span>${response.couponAmount} <button>[Remove]</button></span></li>
                     </ul>`).insertAfter('.subtotal-row')
                     // hide coupon input field 
                     $('.coupon-code-input-container').hide()

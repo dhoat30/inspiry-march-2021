@@ -7,7 +7,8 @@ function email_route() {
     // send email to trade professional
     register_rest_route("inspiry/v1/", "professional-email", array(
         "methods" => "POST",
-        "callback" => "professionalEmail"
+        "callback" => "professionalEmail",
+		
     ));
 	
 	 // send email for join trade form
@@ -50,12 +51,12 @@ function wincaveSuccess($data){
 		$boardName = 'testing boards';
 		$publishStatus =  "private";
 
-		   wp_insert_post(array(
-			  "post_type" => "boards", 
-			  "post_status" => $publishStatus, 
-			  "post_title" => $boardName,
-			  'post_content' => $data['sessionId']
-	   )); 
+	// 	   wp_insert_post(array(
+	// 		  "post_type" => "boards", 
+	// 		  "post_status" => $publishStatus, 
+	// 		  "post_title" => $boardName,
+	// 		  'post_content' => $data['sessionId']
+	//    )); 
 	  
 	return 200; 
 }

@@ -7,7 +7,8 @@ function auth_route() {
     // send email to trade professional
     register_rest_route("inspiry/v1/", "create-user", array(
         "methods" => "POST",
-        "callback" => "createUser"
+        "callback" => "createUser",
+        'permission_callback' => '__return_true'
     ));
 
 

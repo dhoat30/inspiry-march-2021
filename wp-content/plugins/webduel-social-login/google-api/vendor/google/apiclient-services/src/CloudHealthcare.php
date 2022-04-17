@@ -1423,6 +1423,25 @@ class CloudHealthcare extends \Google\Service
                   'required' => true,
                 ],
               ],
+            ],'Resource-validate' => [
+              'path' => 'v1/{+parent}/fhir/{+type}/$validate',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'type' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'profile' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
             ],'capabilities' => [
               'path' => 'v1/{+name}/fhir/metadata',
               'httpMethod' => 'GET',
@@ -1593,6 +1612,16 @@ class CloudHealthcare extends \Google\Service
                   'required' => true,
                 ],
               ],
+            ],'export' => [
+              'path' => 'v1/{+name}:export',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
             ],'get' => [
               'path' => 'v1/{+name}',
               'httpMethod' => 'GET',
@@ -1615,6 +1644,16 @@ class CloudHealthcare extends \Google\Service
                 'options.requestedPolicyVersion' => [
                   'location' => 'query',
                   'type' => 'integer',
+                ],
+              ],
+            ],'import' => [
+              'path' => 'v1/{+name}:import',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
                 ],
               ],
             ],'list' => [

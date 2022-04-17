@@ -68,6 +68,7 @@ function woocommerce_ajax_add_coupon() {
                     $dataArray = array(
                         'code'=>  200, 
                         'couponCode'=> $couponCode, 
+                        'couponAmount'=>WC()->cart->get_coupon_discount_amount(WC()->cart->get_applied_coupons()[0], false),
                         'subtotal'=> WC()->cart->subtotal, 
                     'total'=> WC()->cart->get_total(), 
                     'tax' => WC()->cart->get_taxes_total(), 

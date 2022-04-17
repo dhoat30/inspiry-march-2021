@@ -1,0 +1,142 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Variations as single products for WooCommerce\n"
+"POT-Creation-Date: 2021-08-18 17:42+0530\n"
+"PO-Revision-Date: 2021-08-18 17:42+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: variations-as-single-products-for-woocommerce.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-variations-as-single-products-for-woocommerce-admin.php:71
+msgid "settings"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-admin.php:71
+msgid "Settings"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-admin.php:86
+msgid "Single Variation"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-admin.php:108
+msgid "Exclude Variations"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-admin.php:111
+msgid ""
+"Check this option to hide single variations of this product on shop & "
+"category pages. "
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-admin.php:119
+msgid "Hide Parent Product"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-admin.php:122
+msgid "Check this option to hide the parent product on shop & category pages."
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-admin.php:170
+msgid "Variation Product Name"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-admin.php:171
+msgid "This option support for display variations as single product"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-admin.php:177
+msgid "Exclude this variation in shop and category page"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-admin.php:178
+msgid ""
+"&nbsp;&nbsp; Exclude Variation from display variations as single product"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-settings.php:72
+msgctxt "Settings tab label"
+msgid "Variations as Products"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-settings.php:148
+msgid "General options"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-settings.php:168
+msgid "All veriations updated"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-settings.php:176
+msgid "Plugin Settings"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-settings.php:182
+msgid "Enable/Disable"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-settings.php:185
+msgid ""
+"Display all product variations as single product on shop and category pages."
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-settings.php:189
+msgid "Hide parent products"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-settings.php:192
+msgid "Hide parent products on shop and category pages."
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-settings.php:196
+msgid "Process variations to display on shop/category pages"
+msgstr ""
+
+#. translators: %s count
+#: admin/class-variations-as-single-products-for-woocommerce-settings.php:231
+#, php-format
+msgid "Process %s variations"
+msgstr ""
+
+#: admin/class-variations-as-single-products-for-woocommerce-settings.php:242
+msgid "Re Process all variations"
+msgstr ""
+
+#: variations-as-single-products-for-woocommerce.php:112
+msgid ""
+"Variations as single products for WooCommerce requires the WooCommerce. "
+"Please install or activate woocommere"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Variations as single products for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://procomsoftsol.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin makes your product variations available as single products in "
+"shop, category & search result pages."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Procom"
+msgstr ""

@@ -1,0 +1,13 @@
+*** Variations as single products for WooCommerce ***
+
+2022-03-14 - version 1.0.2
+* Fixed minor bugs.
+
+2022-03-14 - version 1.0.1
+* Fixed the issue with Jet filters.
+* Fixed the issue with product import.
+
+2021-08-18 - version 1.0.0
+* Initial Release
+
+

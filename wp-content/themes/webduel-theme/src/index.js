@@ -52,9 +52,9 @@ import Checkout from "./modules/Woocommerce/Checkout/Checkout";
 
 // header 
 import Header from './modules/Header'
+import StockToggle from "./modules/Buttons/StockToggle/StockToggle";
 
 let $ = jQuery;
-
 
 // add to cart and remove from cart class 
 const popUpCart = new PopUpCart();
@@ -71,7 +71,7 @@ const everyOwlCarousel = new EveryOwlCarousel();
 
 // product archive
 const productArchive = new ProductArchive()
-
+const stocktoggle = new StockToggle()
 // cart 
 const cart = new Cart()
 const coupon = new Coupon()

@@ -114,46 +114,46 @@ add_action('woocommerce_single_product_summary', function () {
     }
     // add back order if the item is out of stock and add availability attributes for stock arrival date. 
     // if the product is in stock then add delivery attribute with eta date 
-    // echo '
-    // <div class="availability">
-    //   ';
-    // if ($product->get_availability()['class'] === 'in-stock') {
-    //     echo ' 
-    //        <h3 class="title">
-    //         <i class="fa-solid fa-circle-check" style="color: var(--green); "></i>
-    //         <span  style="color: var(--green); ">
-    //         IN STOCK
-    //         </span>
-    //         </h3>
-    //         <div class="content">
-    //             <h4 class="subtitle">
-    //                 ' . $countryOfOrigin . '
-    //             </h4>
-    //             <h5 class="delivery-info">
-    //                 Delivery: ' . $deliveryEta . ' 
-    //             </h5>
-    //         </div>
-    //         ';
-    // } else {
-    //     echo ' 
-    //         <h3 class="title">
-    //         <i class="fa-solid fa-circle-check" style="color: var(--orange); "></i>
-    //         <span  style="color: var(--orange); ">
-    //         Pre Order
-    //         </span>
-    //         </h3>
-    //         <div class="content">
-    //             <h4 class="subtitle">
-    //                 ' . $countryOfOrigin . '
-    //             </h4>
-    //             <h5 class="delivery-info">
-    //                 Availability: ' . $availability . ' 
-    //             </h5>
-    //         </div>
-    //         ';
-    // }
-    // echo '
-    // </div>';
+    echo '
+    <div class="availability">
+      ';
+    if ($product->get_availability()['class'] === 'in-stock') {
+        echo ' 
+           <h3 class="title">
+            <i class="fa-solid fa-circle-check" style="color: var(--green); "></i>
+            <span  style="color: var(--green); ">
+            IN STOCK
+            </span>
+            </h3>
+            <div class="content">
+                <h4 class="subtitle">
+                    ' . $countryOfOrigin . '
+                </h4>
+                <h5 class="delivery-info">
+                    Delivery: ' . $deliveryEta . ' 
+                </h5>
+            </div>
+            ';
+    } else {
+        echo ' 
+            <h3 class="title">
+            <i class="fa-solid fa-circle-check" style="color: var(--orange); "></i>
+            <span  style="color: var(--orange); ">
+            Pre Order
+            </span>
+            </h3>
+            <div class="content">
+                <h4 class="subtitle">
+                    ' . $countryOfOrigin . '
+                </h4>
+                <h5 class="delivery-info">
+                    Availability: ' . $availability . ' 
+                </h5>
+            </div>
+            ';
+    }
+    echo '
+    </div>';
 }, 60);
 
 // social share -----------------------------------------------------------
@@ -293,7 +293,7 @@ function calculator_body()
                   <button id="estimate-roll" class="primary-button">Calculate</button>
                 </section>
                 <section class="estimate-result margin-elements">
-                      <h3>Result</h3>
+                      <div>Result</div>
                       <p>
                       
                               <span class="calc-round">0</span>&nbsp;

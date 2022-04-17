@@ -2090,6 +2090,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_ErrorModal_ErrorModal__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./modules/ErrorModal/ErrorModal */ "./src/modules/ErrorModal/ErrorModal.js");
 /* harmony import */ var _modules_Woocommerce_Checkout_Checkout__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./modules/Woocommerce/Checkout/Checkout */ "./src/modules/Woocommerce/Checkout/Checkout.js");
 /* harmony import */ var _modules_Header__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./modules/Header */ "./src/modules/Header.js");
+/* harmony import */ var _modules_Buttons_StockToggle_StockToggle__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./modules/Buttons/StockToggle/StockToggle */ "./src/modules/Buttons/StockToggle/StockToggle.js");
  // form 
 
  // owl carousel 
@@ -2133,6 +2134,7 @@ __webpack_require__.r(__webpack_exports__);
  // header 
 
 
+
 let $ = jQuery; // add to cart and remove from cart class 
 
 const popUpCart = new _modules_PopUpCart__WEBPACK_IMPORTED_MODULE_10__["default"](); // woo Gallery 
@@ -2145,7 +2147,8 @@ const singleProduct = new _modules_Woocommerce_SingleProduct__WEBPACK_IMPORTED_M
 
 const everyOwlCarousel = new _modules_OwlCarousel_EveryOwlCarousel__WEBPACK_IMPORTED_MODULE_2__["default"](); // product archive
 
-const productArchive = new _modules_Woocommerce_ProductArchive__WEBPACK_IMPORTED_MODULE_22__["default"](); // cart 
+const productArchive = new _modules_Woocommerce_ProductArchive__WEBPACK_IMPORTED_MODULE_22__["default"]();
+const stocktoggle = new _modules_Buttons_StockToggle_StockToggle__WEBPACK_IMPORTED_MODULE_29__["default"](); // cart 
 
 const cart = new _modules_Woocommerce_Cart_Cart__WEBPACK_IMPORTED_MODULE_24__["default"]();
 const coupon = new _modules_Woocommerce_Cart_Coupon__WEBPACK_IMPORTED_MODULE_25__["default"](); // modals 
@@ -2414,6 +2417,128 @@ class Login {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Login);
+
+/***/ }),
+
+/***/ "./src/modules/Buttons/StockToggle/GetUrlParam.js":
+/*!********************************************************!*\
+  !*** ./src/modules/Buttons/StockToggle/GetUrlParam.js ***!
+  \********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const $ = jQuery;
+
+class GetUrlParam {
+  constructor() {
+    this.getUrlParam();
+  }
+
+  getUrlParam() {
+    var vars = [],
+        hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+
+    for (var i = 0; i < hashes.length; i++) {
+      hash = hashes[i].split('=');
+      vars.push(hash[0]);
+      vars[hash[0]] = hash[1];
+    }
+
+    return vars;
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (GetUrlParam);
+
+/***/ }),
+
+/***/ "./src/modules/Buttons/StockToggle/StockToggle.js":
+/*!********************************************************!*\
+  !*** ./src/modules/Buttons/StockToggle/StockToggle.js ***!
+  \********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _GetUrlParam__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GetUrlParam */ "./src/modules/Buttons/StockToggle/GetUrlParam.js");
+
+const $ = jQuery;
+
+class StockToggle {
+  constructor() {
+    this.events();
+  }
+
+  events() {
+    document.addEventListener('facetwp-refresh', function () {
+      let facetVar;
+      facetVar = FWP; // FWP.facets['availability'] = ['instock'];
+      // FWP.fetchData();
+      // if (null !== FWP.active_facet) {
+      //     let facet = FWP.active_facet;
+      //     let facet_name = facet.attr('data-name');
+      //     let facet_type = facet.attr('data-type');
+      //     console.log(facet_name);
+      //     console.log(facet_type);
+      // }
+
+      console.log(facetVar);
+      $('#stock-toggle-input').on('change', () => {
+        const getUrlParam = new _GetUrlParam__WEBPACK_IMPORTED_MODULE_0__["default"]();
+
+        if (getUrlParam.getUrlParam()["_availability"] === "instock") {
+          FWP.facets['availability'] = [''];
+          FWP.fetchData(); // window.location.href = window.location.href + '?' + FWP.buildQueryString();
+
+          var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + `?${FWP.buildQueryString()}`;
+          window.history.pushState({
+            path: refresh
+          }, '', refresh);
+          $('.stock-toggle').removeClass('enabled');
+          $('#stock-toggle-input').prop('checked', false);
+          $('#stock-toggle-label span').text("OFF");
+        } else {
+          console.log($('#stock-toggle-input').is(":checked"));
+          $('.stock-toggle').addClass('enabled');
+          FWP.facets['availability'] = ['instock'];
+          FWP.fetchData(); // window.location.href = window.location.href + '?' + FWP.buildQueryString();
+
+          var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + `?${FWP.buildQueryString()}`;
+          window.history.pushState({
+            path: refresh
+          }, '', refresh);
+          $('#stock-toggle-input').prop('checked', true);
+          $('#stock-toggle-label span').text("ON");
+        }
+      });
+    });
+    this.toggleStyle(); // on change handler for toggle input 
+  }
+
+  toggleValue() {
+    console.log("hello"); // console.log($('#cmn-toggle-1').is(":checked"))
+    // var url = window.location.href;
+    // console.log(url)
+    // const getUrlParam = new GetUrlParam()
+    // if (getUrlParam.getUrlParam()["hide_sold_products"]) {
+    //     location.assign(`${url}`)
+    // }
+    // else {
+    //     location.assign(`${url}?hide_sold_products=true`)
+    // }
+  }
+
+  toggleStyle() {
+    // function to get param value 
+    const getUrlParam = new _GetUrlParam__WEBPACK_IMPORTED_MODULE_0__["default"](); // console.log(getUrlParam.getUrlParam()["hide_sold_products"])
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (StockToggle);
 
 /***/ }),
 
@@ -3358,14 +3483,15 @@ class EveryOwlCarousel {
       responsiveBaseElement: ".row-container",
       responsiveClass: true,
       rewind: true,
+      dots: false,
       responsive: {
         0: {
           items: 4,
-          dots: true
+          dots: false
         },
         600: {
           items: 4,
-          dots: true
+          dots: false
         }
       }
     }; // const trendingNow = new OwlCarousel(args, className);
@@ -4355,8 +4481,8 @@ class Coupon {
           $('.total-summary .tax-row .amount span').text(response.tax);
           $('.total-summary .total-row .amount').html(response.total);
           $(` <ul class="flex-box coupon-row">
-                    <li class="title">Coupon: give10</li>
-                    <li class="amount">-$<span>10 <button>[Remove]</button></span></li>
+                    <li class="title">Coupon: ${response.couponCode}</li>
+                    <li class="amount">-$<span>${response.couponAmount} <button>[Remove]</button></span></li>
                     </ul>`).insertAfter('.subtotal-row'); // hide coupon input field 
 
           $('.coupon-code-input-container').hide();

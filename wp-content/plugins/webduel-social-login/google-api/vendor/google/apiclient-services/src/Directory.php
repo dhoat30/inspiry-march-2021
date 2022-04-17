@@ -281,6 +281,10 @@ class Directory extends \Google\Service
                   'type' => 'string',
                   'required' => true,
                 ],
+                'includeChildOrgunits' => [
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ],
                 'maxResults' => [
                   'location' => 'query',
                   'type' => 'integer',
@@ -528,6 +532,10 @@ class Directory extends \Google\Service
                   'required' => true,
                 ],
                 'filter' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+                'orderBy' => [
                   'location' => 'query',
                   'type' => 'string',
                 ],

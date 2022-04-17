@@ -35,7 +35,7 @@ class Spaces extends \Google\Service\Resource
    * Returns a space. (spaces.get)
    *
    * @param string $name Required. Resource name of the space, in the form
-   * "spaces". Example: spaces/AAAAMpdlehY
+   * "spaces". Example: spaces/AAAAAAAAAAAA
    * @param array $optParams Optional parameters.
    * @return Space
    */
@@ -68,10 +68,13 @@ class Spaces extends \Google\Service\Resource
    * response. (spaces.webhooks)
    *
    * @param string $parent Required. Space resource name, in the form "spaces".
-   * Example: spaces/AAAAMpdlehY
+   * Example: spaces/AAAAAAAAAAA
    * @param Message $postBody
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string requestId Optional. A unique request ID for this message.
+   * Specifying an existing request ID returns the message created with that ID
+   * instead of creating a new message.
    * @opt_param string threadKey Optional. Opaque thread identifier string that
    * can be specified to group messages into a single thread. If this is the first
    * message with a given thread identifier, a new thread is created. Subsequent

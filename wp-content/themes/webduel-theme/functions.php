@@ -128,3 +128,40 @@ function wc_track_product_view_always() {
 
 remove_action('template_redirect', 'wc_track_product_view', 20);
 add_action( 'template_redirect', 'wc_track_product_view_always', 20 );
+
+
+// stock toggle function
+function hide_sold_products_param() {
+
+    global $wp;
+
+    $wp->add_query_var('hide_sold_products');
+
+}
+
+add_filter('init', 'hide_sold_products_param');
+
+add_action('pre_get_posts', 'hide_sold_products_query', 10);
+
+function hide_sold_products_query($query){
+
+    if($query->get('hide_sold_products') == 'true'){
+
+        $query->set('meta_query', array(
+
+            array(
+
+                'key' => '_stock_status',
+
+                'value' => 'onbackorder',
+
+                'compare' => 'NOT IN'
+
+            )
+
+        ));
+
+    }
+
+}
+

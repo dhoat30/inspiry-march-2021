@@ -82,16 +82,16 @@
           while ($queryContact->have_posts()) {
             $queryContact->the_post();
           ?>
-            <a href="<?php echo get_field("facebook"); ?>">
+            <a href="<?php echo get_field("facebook"); ?>" aria-label="Follow Our Facebook Page">
               <i class="fa-brands fa-facebook-square"></i>
             </a>
-            <a href="<?php echo get_field("instagram"); ?>">
+            <a href="<?php echo get_field("instagram"); ?>" aria-label="Follow Our Instagram Page">
               <i class="fa-brands fa-instagram-square"></i>
             </a>
-            <a href="<?php echo get_field("pintrest_"); ?>">
+            <a href="<?php echo get_field("pintrest_"); ?>" aria-label="Follow Our Pinterest Page">
               <i class="fa-brands fa-pinterest-square"></i>
             </a>
-            <a href="<?php echo get_field("youtube"); ?>">
+            <a href="<?php echo get_field("youtube"); ?>" aria-label="Follow Our Youtube Channel">
               <i class="fa-brands fa-youtube"></i>
             </a>
           <?php

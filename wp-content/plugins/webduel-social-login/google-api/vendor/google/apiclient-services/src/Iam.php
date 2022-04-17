@@ -41,11 +41,16 @@ class Iam extends \Google\Service
       "https://www.googleapis.com/auth/cloud-platform";
 
   public $iamPolicies;
+  public $locations_workforcePools_operations;
+  public $locations_workforcePools_providers_keys_operations;
+  public $locations_workforcePools_providers_operations;
+  public $locations_workforcePools_subjects_operations;
   public $organizations_roles;
   public $permissions;
   public $projects_locations_workloadIdentityPools;
   public $projects_locations_workloadIdentityPools_operations;
   public $projects_locations_workloadIdentityPools_providers;
+  public $projects_locations_workloadIdentityPools_providers_keys_operations;
   public $projects_locations_workloadIdentityPools_providers_operations;
   public $projects_roles;
   public $projects_serviceAccounts;
@@ -82,6 +87,86 @@ class Iam extends \Google\Service
               'path' => 'v1/iamPolicies:queryAuditableServices',
               'httpMethod' => 'POST',
               'parameters' => [],
+            ],
+          ]
+        ]
+    );
+    $this->locations_workforcePools_operations = new Iam\Resource\LocationsWorkforcePoolsOperations(
+        $this,
+        $this->serviceName,
+        'operations',
+        [
+          'methods' => [
+            'get' => [
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->locations_workforcePools_providers_keys_operations = new Iam\Resource\LocationsWorkforcePoolsProvidersKeysOperations(
+        $this,
+        $this->serviceName,
+        'operations',
+        [
+          'methods' => [
+            'get' => [
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->locations_workforcePools_providers_operations = new Iam\Resource\LocationsWorkforcePoolsProvidersOperations(
+        $this,
+        $this->serviceName,
+        'operations',
+        [
+          'methods' => [
+            'get' => [
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->locations_workforcePools_subjects_operations = new Iam\Resource\LocationsWorkforcePoolsSubjectsOperations(
+        $this,
+        $this->serviceName,
+        'operations',
+        [
+          'methods' => [
+            'get' => [
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
             ],
           ]
         ]
@@ -383,6 +468,26 @@ class Iam extends \Google\Service
             ],'undelete' => [
               'path' => 'v1/{+name}:undelete',
               'httpMethod' => 'POST',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->projects_locations_workloadIdentityPools_providers_keys_operations = new Iam\Resource\ProjectsLocationsWorkloadIdentityPoolsProvidersKeysOperations(
+        $this,
+        $this->serviceName,
+        'operations',
+        [
+          'methods' => [
+            'get' => [
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'GET',
               'parameters' => [
                 'name' => [
                   'location' => 'path',

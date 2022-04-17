@@ -96,25 +96,29 @@ function inspiry_user_route(){
     //get user
    register_rest_route("inspiry/v1/", "get-user", array(
       "methods" => "POST",
-      "callback" => "getUser"
+      "callback" => "getUser",
+	  'permission_callback' => '__return_true'
    ));
 	
 	 //update user 
    register_rest_route("inspiry/v1/", "update-user", array(
       "methods" => "POST",
-      "callback" => "updateUser"
+      "callback" => "updateUser",
+	  'permission_callback' => '__return_true'
    ));
 	
 	 //update profile image 
    register_rest_route("inspiry/v1/", "update-image", array(
       "methods" => "POST",
-      "callback" => "updateProfileImage"
+      "callback" => "updateProfileImage",
+	  'permission_callback' => '__return_true'
    ));
 
    // 	register user 
    register_rest_route('wp/v2', 'users/register', array(
 	'methods' => 'POST',
 	'callback' => 'wc_rest_user_endpoint_handler',
+	'permission_callback' => '__return_true'
   ));
 }
 	// get board - new

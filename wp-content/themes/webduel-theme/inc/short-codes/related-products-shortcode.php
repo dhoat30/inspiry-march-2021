@@ -112,7 +112,6 @@ function bbloomer_recently_viewed_shortcode() {
         <div class="recently-viewed-products '.$owlCarouselClass.'">'; 
         foreach($viewed_products as $productID){ 
             $product = wc_get_product( $productID );
-            
             echo  '
             <a class="card" href="'.get_the_permalink($productID).'">
                 <div class="image-container">
@@ -121,8 +120,8 @@ function bbloomer_recently_viewed_shortcode() {
                     src="'. get_the_post_thumbnail_url($productID, "woocommerce_thumbnail").'" 
                     alt="'.get_the_title($productID).'"/>
                 </div>
-                <h5 >'.$product->get_name().'</h5>
-                <h6 class="price">'.$product->get_price_html().'</h6>
+                <h5 >'.get_the_title($productID).'</h5>
+                <h6 class="price">$'.$product->price.'</h6>
              </a>';
         }
     echo '

@@ -8,49 +8,58 @@ function inspiry_board_route(){
       //get boards
    register_rest_route("inspiry/v1/", "get-boards", array(
       "methods" => "POST",
-      "callback" => "getBoard"
+      "callback" => "getBoard",
+	  'permission_callback' => '__return_true'
    ));
 	
 	// 	add to board
     register_rest_route("inspiry/v1/", "add-to-board", array(
       "methods" => "POST",
-      "callback" => "addProjectToBoard"
+      "callback" => "addProjectToBoard",
+	  'permission_callback' => '__return_true'
       ));
 	
 // 	create board 
 		register_rest_route("inspiry/v1/", "manage-board", array(
 		   "methods" => "POST",
-		   "callback" => "createBoard"
+		   "callback" => "createBoard",
+		   'permission_callback' => '__return_true'
+
 		));
 	
 	// 	get pins related to the single board 
 		register_rest_route("inspiry/v1/", "get-pins", array(
 		   "methods" => "POST",
-		   "callback" => "getPins"
+		   "callback" => "getPins",
+		   'permission_callback' => '__return_true'
 		));
 	
 	  //update board -new
     register_rest_route("inspiry/v1/", "update-board", array(
       "methods" => "POST",
-      "callback" => "updateBoard"
+      "callback" => "updateBoard",
+	  'permission_callback' => '__return_true'
   	));
 
 // 	delete board - new
     register_rest_route("inspiry/v1/", "delete-board", array(
         "methods" => "DELETE",
-        "callback" => "deleteBoardFunc"
+        "callback" => "deleteBoardFunc",
+		'permission_callback' => '__return_true'
     ));
     
 	
     register_rest_route("inspiry/v1/", "manage-board", array(
         "methods" => "DELETE",
-        "callback" => "deletePin"
+        "callback" => "deletePin",
+		'permission_callback' => '__return_true'
     ));
 
 	// upload image 
 	register_rest_route("inspiry/v1/", "upload-image-board", array(
         "methods" => "POST",
-        "callback" => "uploadImageBoard"
+        "callback" => "uploadImageBoard",
+		'permission_callback' => '__return_true'
     ));
 
 }

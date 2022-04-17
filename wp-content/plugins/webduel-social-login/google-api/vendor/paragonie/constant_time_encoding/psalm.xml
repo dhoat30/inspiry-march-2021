@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <psalm
+    name="Example Psalm config with recommended defaults"
     useDocblockTypes="true"
-    totallyTyped="true"
+    totallyTyped="false"
 >
     <projectFiles>
         <directory name="src" />

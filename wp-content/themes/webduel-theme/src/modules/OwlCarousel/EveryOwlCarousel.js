@@ -64,15 +64,16 @@ class EveryOwlCarousel {
             responsiveBaseElement: ".row-container",
             responsiveClass: true,
             rewind: true,
+            dots: false,
             responsive: {
                 0: {
                     items: 4,
 
-                    dots: true
+                    dots: false
                 },
                 600: {
                     items: 4,
-                    dots: true
+                    dots: false
                 }
 
             }

@@ -1,9 +1,40 @@
 .single-product {
   .trending-section {
+    height: calc(600px - 20%);
     margin-top: 80px;
-    @media (max-width: 500px) {
-      margin-top: 50px;
-    }
+    // @media (max-width: 1600px) {
+    //   height: 550px;
+    // }
+    // @media (max-width: 1400px) {
+    //   height: 500px;
+    // }
+    // @media (max-width: 1200px) {
+    //   height: 450px;
+    // }
+    // @media (max-width: 1100px) {
+    //   height: 420px;
+    // }
+    // @media (max-width: 950px) {
+    //   height: 370px;
+    // }
+    // @media (max-width: 800px) {
+    //   height: 800px;
+    // }
+    // @media (max-width: 700px) {
+    //   height: 720px;
+    // }
+    // @media (max-width: 600px) {
+    //   height: 620px;
+    // }
+    // @media (max-width: 500px) {
+    //   height: 530px;
+    // }
+    // @media (max-width: 450px) {
+    //   height: 500px;
+    // }
+    // @media (max-width: 400px) {
+    //   height: 450px;
+    // }
     .title {
       font-size: var(--mediumSize);
       font-weight: var(--medium);
@@ -74,6 +105,7 @@
   // related categories
   .related-categories-section {
     margin-top: 80px;
+
     @media (max-width: 500px) {
       margin-top: 50px;
     }
@@ -106,7 +138,8 @@
 // recently viewed
 .single-product {
   .recently-viewed-section {
-    margin-top: 80px;
+    height: calc(600px - 20%);
+    margin-top: 60px;
     @media (max-width: 500px) {
       margin-top: 50px;
     }

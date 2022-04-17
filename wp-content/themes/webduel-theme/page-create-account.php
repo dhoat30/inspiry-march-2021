@@ -32,15 +32,15 @@
                         <div class="flex">
                             <button type="submit" class="primary-button" >CREATE ACCOUNT</button>
                             <?php 
-                            if(has_action('webduel_social_login')){ 
+                            if(has_action('webduel_social_login_button')){ 
                                 ?>
                                 <div class="divider">Or</div>
                                 <?php 
                             }
                             ?>
                             <?php 
-                            has_action('webduel_social_login');
-                             do_action('webduel_social_login');
+                            has_action('webduel_social_login_button');
+                             do_action('webduel_social_login_button');
 
                             ?>
                         </div>        

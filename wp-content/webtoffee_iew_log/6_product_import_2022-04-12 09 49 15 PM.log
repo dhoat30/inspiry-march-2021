@@ -1,0 +1,5 @@
+04-13-2022 @ 09:49:15 - ---[ New import started at 2022-04-12 21:49:15 ] PHP Memory: 256 MB, WP Memory: 40 MB
+04-13-2022 @ 09:49:15 - Preparing for import.
+04-13-2022 @ 09:49:15 - Row :1 - Parsing item.
+04-13-2022 @ 09:49:15 - Row :1 - Parsing failed. Reason: Could not insert post into the database.
+04-13-2022 @ 09:49:15 - ---[ Import ended at 2022-04-12 21:49:15]---

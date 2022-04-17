@@ -17,7 +17,7 @@ get_header();
                         <div class="flex">
                             <button class="primary-button" type="submit">SIGN IN</button>
                             <?php 
-                            if(has_action('webduel_social_login')){ 
+                            if(has_action('webduel_social_login_button')){ 
                                 ?>
                                 <div class="divider">Or</div>
                                 <?php 
@@ -25,7 +25,7 @@ get_header();
                             ?>
                             
                             <?php 
-                             do_action('webduel_social_login');
+                             do_action('webduel_social_login_button');
                             ?>
                         </div>        
                         <div class="terms-flex">

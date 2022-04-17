@@ -75,8 +75,7 @@ class ProjectsServiceAccountsKeys extends \Google\Service\Resource
   }
   /**
    * Disable a ServiceAccountKey. A disabled service account key can be enabled
-   * through EnableServiceAccountKey. The API is currently in preview phase.
-   * (keys.disable)
+   * through EnableServiceAccountKey. (keys.disable)
    *
    * @param string $name Required. The resource name of the service account key in
    * the following format:
@@ -95,8 +94,7 @@ class ProjectsServiceAccountsKeys extends \Google\Service\Resource
     return $this->call('disable', [$params], IamEmpty::class);
   }
   /**
-   * Enable a ServiceAccountKey. The API is currently in preview phase.
-   * (keys.enable)
+   * Enable a ServiceAccountKey. (keys.enable)
    *
    * @param string $name Required. The resource name of the service account key in
    * the following format:
@@ -125,8 +123,9 @@ class ProjectsServiceAccountsKeys extends \Google\Service\Resource
    * account.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string publicKeyType The output format of the public key
-   * requested. X509_PEM is the default output format.
+   * @opt_param string publicKeyType Optional. The output format of the public
+   * key. The default is `TYPE_NONE`, which means that the public key is not
+   * returned.
    * @return ServiceAccountKey
    */
   public function get($name, $optParams = [])
