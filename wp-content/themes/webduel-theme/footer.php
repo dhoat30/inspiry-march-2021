@@ -1,4 +1,15 @@
 <!-- newsletter section -->
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+	region: "na1",
+	portalId: "21683990",
+	formId: "e6fc4aba-352e-43b0-97b5-51037b60d0b5"
+});
+</script>
 <div class="footer-newsletter-section">
   <div class="flex-container  row-container">
     <div class="content">

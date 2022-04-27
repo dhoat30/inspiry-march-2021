@@ -99,7 +99,7 @@
 </head>
 
 <body id="header" <?php body_class(); ?>>
-
+    
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS7XFHN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -207,6 +207,7 @@
                 </div>
             </div>
         </div>
+      
         <!-- top navbar -->
         <section class="top-navbar-section row-container">
             <nav class="navbar">
@@ -320,8 +321,6 @@
                     echo do_shortcode('[sign-in-modal]');
                     ?>
                 </div>
-
-
 
             </div>
         </section>

@@ -41,7 +41,7 @@ add_action('woocommerce_single_product_summary', function () {
     echo '
     </div>
     ';
-}, 10);
+}, 13);
 
 
 // add deal information on single product page --------------------------------------

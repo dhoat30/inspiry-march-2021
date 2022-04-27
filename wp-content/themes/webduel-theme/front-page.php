@@ -134,7 +134,9 @@ get_header();
                     'field'    => 'slug',
                     'terms'    => array('category-section'),
                 )
-            )
+                ),
+                'orderby' => 'publish_date',
+                'order' => 'DSC'
         );
         $categoryCards = new WP_Query($argsCategoryCards);
 

@@ -2473,67 +2473,61 @@ class StockToggle {
   }
 
   events() {
-    document.addEventListener('facetwp-refresh', function () {
-      let facetVar;
-      facetVar = FWP; // FWP.facets['availability'] = ['instock'];
-      // FWP.fetchData();
-      // if (null !== FWP.active_facet) {
-      //     let facet = FWP.active_facet;
-      //     let facet_name = facet.attr('data-name');
-      //     let facet_type = facet.attr('data-type');
-      //     console.log(facet_name);
-      //     console.log(facet_type);
-      // }
+    // facet in stock for toggle button
+    document.addEventListener('facetwp-refresh', this.toggleStyleOnRefresh);
+    $('.product-archive-reset').on('click', this.resetFacet); // change toggle style on facet load 
+  }
 
-      console.log(facetVar);
-      $('#stock-toggle-input').on('change', () => {
-        const getUrlParam = new _GetUrlParam__WEBPACK_IMPORTED_MODULE_0__["default"]();
+  toggleStyleOnRefresh() {
+    $('#stock-toggle-input').on('change', () => {
+      // get url param to check the url parameter
+      const getUrlParam = new _GetUrlParam__WEBPACK_IMPORTED_MODULE_0__["default"]();
+      console.log(FWP);
 
-        if (getUrlParam.getUrlParam()["_availability"] === "instock") {
-          FWP.facets['availability'] = [''];
-          FWP.fetchData(); // window.location.href = window.location.href + '?' + FWP.buildQueryString();
+      if (getUrlParam.getUrlParam()["_availability"] === "instock") {
+        console.log('availability exist'); // if the instock exist when toggling in stock button off then pass empty value to availability facet 
 
-          var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + `?${FWP.buildQueryString()}`;
-          window.history.pushState({
-            path: refresh
-          }, '', refresh);
-          $('.stock-toggle').removeClass('enabled');
-          $('#stock-toggle-input').prop('checked', false);
-          $('#stock-toggle-label span').text("OFF");
-        } else {
-          console.log($('#stock-toggle-input').is(":checked"));
-          $('.stock-toggle').addClass('enabled');
-          FWP.facets['availability'] = ['instock'];
-          FWP.fetchData(); // window.location.href = window.location.href + '?' + FWP.buildQueryString();
+        FWP.facets['availability'] = [];
+        FWP.fetchData();
+        $('#stock-toggle-input').prop('checked', false);
+        $('#stock-toggle-label span').text("OFF");
+        $('.stock-toggle').removeClass('enabled');
+        document.addEventListener('facetwp-loaded', () => {
+          console.log("facet loaded"); // remove the availability param from url 
 
           var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + `?${FWP.buildQueryString()}`;
           window.history.pushState({
             path: refresh
           }, '', refresh);
-          $('#stock-toggle-input').prop('checked', true);
-          $('#stock-toggle-label span').text("ON");
-        }
-      });
+        });
+      } else {
+        console.log('availability does not exist');
+        console.log($('#stock-toggle-input').is(":checked"));
+        $('.stock-toggle').addClass('enabled');
+        FWP.facets['availability'] = ['instock'];
+        FWP.fetchData();
+        $('#stock-toggle-input').prop('checked', true);
+        $('#stock-toggle-label span').text("ON");
+        document.addEventListener('facetwp-loaded', () => {
+          // window.location.href = window.location.href + '?' + FWP.buildQueryString();
+          var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + `?${FWP.buildQueryString()}`;
+          window.history.pushState({
+            path: refresh
+          }, '', refresh);
+        });
+      }
     });
-    this.toggleStyle(); // on change handler for toggle input 
   }
 
-  toggleValue() {
-    console.log("hello"); // console.log($('#cmn-toggle-1').is(":checked"))
-    // var url = window.location.href;
-    // console.log(url)
-    // const getUrlParam = new GetUrlParam()
-    // if (getUrlParam.getUrlParam()["hide_sold_products"]) {
-    //     location.assign(`${url}`)
-    // }
-    // else {
-    //     location.assign(`${url}?hide_sold_products=true`)
-    // }
-  }
-
-  toggleStyle() {
-    // function to get param value 
-    const getUrlParam = new _GetUrlParam__WEBPACK_IMPORTED_MODULE_0__["default"](); // console.log(getUrlParam.getUrlParam()["hide_sold_products"])
+  resetFacet() {
+    // remove the availability param from url 
+    var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + `?${FWP.buildQueryString()}`;
+    window.history.pushState({
+      path: refresh
+    }, '', refresh);
+    $('.stock-toggle').removeClass('enabled');
+    $('#stock-toggle-input').prop('checked', false);
+    $('#stock-toggle-label span').text("OFF");
   }
 
 }
@@ -2993,6 +2987,9 @@ class ErrorModal {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var sticky_scroller__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! sticky-scroller */ "./node_modules/sticky-scroller/index.js");
+/* harmony import */ var sticky_scroller__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(sticky_scroller__WEBPACK_IMPORTED_MODULE_0__);
+
 const $ = jQuery;
 
 class FacetFilter {
@@ -3009,13 +3006,16 @@ class FacetFilter {
   }
 
   events() {
+    //    set cookie to false every page load to hide the facet container 
+    Cookies.set('showingProductFacetContainer', 'false'); // show filter button in the bottom on mobile div
+
     $(window).scroll(function (event) {
       var scroll = $(window).scrollTop(); // Do something
 
-      if (scroll > 300) {
-        $('.fixed-filter-button').slideDown();
+      if (scroll > 300 && window.matchMedia("(max-width: 1100px)").matches) {
+        $('.archive  .filter-button').addClass('fixed-filter-button');
       } else {
-        $('.fixed-filter-button').slideUp();
+        $('.archive .filter-button').removeClass('fixed-filter-button');
       }
     }); // show filter container
 
@@ -3029,27 +3029,39 @@ class FacetFilter {
 
 
   showDesktopContainer() {
+    console.log("filter button clicked");
+    const showContainer = Cookies.get('showingProductFacetContainer');
+    console.log(showContainer);
+
     if (window.matchMedia("(max-width: 1100px)").matches) {
       $('.facet-wp-container').slideDown('slow');
     } else {
-      $('.facet-wp-container').slideToggle('slow');
-    }
-
-    if ($('.filter-sort-container .filter-button span').text() === 'Show Filters') {
-      $('.filter-sort-container .filter-button span').text('Hide Filters');
-    } else {
-      $('.filter-sort-container .filter-button span').text('Show Filters');
+      if (showContainer === 'true') {
+        console.log('hide the filter container');
+        $('.facet-wp-container').animate({
+          width: '0',
+          marginRight: "0"
+        });
+        Cookies.set('showingProductFacetContainer', 'false');
+        $('.filter-sort-container .filter-button span').text('Show Filters');
+      } else {
+        console.log('show the filter container');
+        $('.facet-wp-container').animate({
+          width: '100%',
+          marginRight: "40px"
+        });
+        $('.filter-sort-container .filter-button span').text('Hide Filters');
+        Cookies.set('showingProductFacetContainer', 'true');
+      }
     }
   }
 
   hideDesktopContainer() {
-    console.log('clicked close button');
     $('.filter-sort-container .filter-button span').text('Show Filters');
     $('.facet-wp-container').hide('slow');
   }
 
   showFilter(e) {
-    console.log(e);
     $(this).siblings('.facetwp-facet').slideToggle('fast');
     $(this).find('i').toggleClass('fa-plus');
     $(this).find('i').toggleClass('fa-minus');
@@ -3890,8 +3902,8 @@ let $ = jQuery;
 class Search {
   // describe and create/initiate our object
   constructor() {
-    this.url = window.location.hostname === "localhost" ? "http://localhost/inspirynew/wp-json/inspiry/v1/search?term=" : "https://inspiry.co.nz/wp-json/inspiry/v1/search?term=";
-    this.allProductsURL = window.location.hostname === "localhost" ? "http://localhost/inspirynew/wp-json/inspiry/v1/all-products-search?term=" : "https://inspiry.co.nz/wp-json/inspiry/v1/all-products-search?term=";
+    this.url = `${inspiryData.root_url}/wp-json/inspiry/v1/search?term=`;
+    this.allProductsURL = `${inspiryData.root_url}/wp-json/inspiry/v1/all-products-search?term=`;
     this.loading = $('.fa-spinner');
     this.searchIcon = $('.search-code .fa-search');
     this.resultDiv = $('.search-code .result-div');
@@ -3905,6 +3917,7 @@ class Search {
 
 
   events() {
+    console.log(inspiryData.root_url);
     this.searchField.on("keyup", this.typingLogic.bind(this));
     this.searchField.on("click", this.searchFieldClickHandler.bind(this));
     $(document).on("click", this.documentClickHandler.bind(this));
@@ -8659,6 +8672,91 @@ __webpack_require__.r(__webpack_exports__);
 	}
 
 })(window.Zepto || window.jQuery, window, document);
+
+
+/***/ }),
+
+/***/ "./node_modules/sticky-scroller/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/sticky-scroller/index.js ***!
+  \***********************************************/
+/***/ (function(module) {
+
+/*
+ * StickyScroller - scroll your very long sticky positioned sidebar
+ *
+ * Copyright 2018 Guo Yunhe <guoyunhebrave@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option) any later
+ * version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/**
+ * StickyScroller main controller
+ */
+class StickyScroller {
+  constructor(element, options) {
+    this.newScrollPosition = 0;
+    this.oldScrollPositon = 0;
+    this.ticking = false;
+
+    if (typeof element === "string") {
+      this.element = document.querySelector(element);
+    } else if (element instanceof HTMLElement) {
+      this.element = element;
+    } else {
+      console.error("StickyScroller: element is required.");
+      return;
+    }
+
+    this.element.style.overflowY = "hidden";
+
+    window.addEventListener("scroll", this.onWindowScroll.bind(this));
+  }
+
+  /**
+   *
+   */
+  onWindowScroll() {
+    this.newScrollPosition = window.scrollY;
+
+    if (!this.ticking) {
+      window.requestAnimationFrame(() => {
+        this.translate();
+        this.ticking = false;
+        this.oldScrollPositon = this.newScrollPosition;
+      });
+
+      this.ticking = true;
+    }
+  }
+
+  translate() {
+    const parentRect = this.element.parentElement.getBoundingClientRect();
+    const distance = this.newScrollPosition - this.oldScrollPositon;
+    // Do not scroll up before sticky period
+    if (parentRect.top > 0 && distance > 0) {
+      return;
+    }
+    // Do not scroll down after sticky period
+    if (parentRect.bottom < window.innerHeight && distance < 0) {
+      return;
+    }
+    this.element.scrollTop = this.element.scrollTop + distance;
+  }
+}
+
+module.exports = StickyScroller;
 
 
 /***/ }),

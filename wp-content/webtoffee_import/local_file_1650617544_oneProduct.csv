@@ -1,0 +1,6 @@
+post_title,stock_status,backorders,attribute:pa_availability,attribute_data:pa_availability,attribute:pa_delivery,attribute_data:pa_delivery,attribute_default:pa_delivery
+Pascal Dining Chair,instock,no,In Stock,29|1|0,7-10 Days. Order Now!,30|1|0,
+Pascal Dining Chair - Dark Grey Velvet,instock,no,,,,,
+Pascal Dining Chair - Navy Blue Velvet,instock,no,,,,,
+Pascal Dining Chair - Coral Coloured Velvet,onbackorder,no,,,,,
+Pascal Dining Chair - Mustard Coloured Velvet,onbackorder,no,,,,,

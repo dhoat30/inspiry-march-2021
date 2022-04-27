@@ -1,0 +1,6 @@
+ID,sku,parent_sku,stock_status,attribute:pa_availability,attribute_data:pa_availability,attribute:pa_delivery,attribute_data:pa_delivery,attribute_default:pa_delivery
+999540594,RFA-PJ1041-P,,onbackorder,,,3-4 days. Order now ,30|1|0,
+999540612,RFA-PJ1041,RFA-PJ1041-P,instock,,,,,
+999540617,RFA-PJ1043,RFA-PJ1041-P,instock,,,,,
+999540622,RFA-PJ1045,RFA-PJ1041-P,onbackorder,,,,,
+999540627,RFA-PJ1046,RFA-PJ1041-P,onbackorder,,,,,

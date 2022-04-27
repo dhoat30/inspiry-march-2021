@@ -23,25 +23,22 @@
     font-weight: var(--medium);
   }
   .price-flex {
-    display: grid;
-    grid-template-columns: 130px 1fr 1fr 98px;
+    display: flex;
 
     align-items: center;
     justify-content: space-between;
     .price {
-      grid-column: 1/2;
+      width: auto;
+      color: var(--darkGrey) !important;
     }
     // sale percentage
 
     // free delivery
     .free-shipping {
+      width: 105px;
       font-size: var(--paragraphSize);
       font-weight: var(--regular);
       font-family: "Open Sans", sans-serif;
-      grid-column: 4/4;
-      @media (max-width: 350px) {
-        grid-column: 1/4;
-      }
       display: block;
       i {
         font-size: var(--mediumSize);

@@ -222,7 +222,17 @@
 .woocommerce-checkout select {
   height: 20px;
 }
-
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 0 !important;
+  height: 30px;
+  font-size: var(--paragraphSize);
+}
+.show-password-input {
+  width: 0 !important;
+  margin-right: 20px;
+}
 /* payment gateways */
 .wc_payment_method {
   border-bottom: 1px solid #dfdcde !important;

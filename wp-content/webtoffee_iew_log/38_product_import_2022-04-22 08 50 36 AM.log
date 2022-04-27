@@ -1,0 +1,66 @@
+04-22-2022 @ 20:50:36 - ---[ New import started at 2022-04-22 08:50:36 ] PHP Memory: 256 MB, WP Memory: 40 MB
+04-22-2022 @ 20:50:36 - Preparing for import.
+04-22-2022 @ 20:50:36 - Row :1 - Parsing item.
+04-22-2022 @ 20:50:36 - Row :1 - Processing item.
+04-22-2022 @ 20:50:36 - Found variable product object. ID:999540594
+04-22-2022 @ 20:50:37 - Setting Featured Image. URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1041-9.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540595
+04-22-2022 @ 20:50:37 - Setting Gallery Images.
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1041-1-6.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540596
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1041-2-6.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540597
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1041-3-6.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540598
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1046-9.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540599
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1046-1-6.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540600
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1046-2-6.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540601
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1046-3-6.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540602
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1043-9.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540603
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1043-1-6.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540604
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1043-2-6.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540605
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1043-3-6.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540606
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1045-7.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540607
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1045-1-4.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540608
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1045-2-4.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540609
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1045-3-4.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540610
+04-22-2022 @ 20:50:37 - Image URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1045-5.jpg
+04-22-2022 @ 20:50:37 - Attachment ID:999540611
+04-22-2022 @ 20:50:38 - Row :1 - Product updated successfully.
+04-22-2022 @ 20:50:38 - Row :2 - Parsing item.
+04-22-2022 @ 20:50:38 - Row :2 - Processing item.
+04-22-2022 @ 20:50:38 - Found variation product object. ID:999540612
+04-22-2022 @ 20:50:38 - Setting Featured Image. URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1041-8.jpg
+04-22-2022 @ 20:50:38 - Attachment ID:999540613
+04-22-2022 @ 20:50:38 - Row :2 - Product updated successfully.
+04-22-2022 @ 20:50:38 - Row :3 - Parsing item.
+04-22-2022 @ 20:50:38 - Row :3 - Processing item.
+04-22-2022 @ 20:50:38 - Found variation product object. ID:999540617
+04-22-2022 @ 20:50:38 - Setting Featured Image. URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1043-8.jpg
+04-22-2022 @ 20:50:38 - Attachment ID:999540618
+04-22-2022 @ 20:50:38 - Row :3 - Product updated successfully.
+04-22-2022 @ 20:50:38 - Row :4 - Parsing item.
+04-22-2022 @ 20:50:38 - Row :4 - Processing item.
+04-22-2022 @ 20:50:38 - Found variation product object. ID:999540622
+04-22-2022 @ 20:50:38 - Setting Featured Image. URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1045-6.jpg
+04-22-2022 @ 20:50:38 - Attachment ID:999540623
+04-22-2022 @ 20:50:38 - Row :4 - Product updated successfully.
+04-22-2022 @ 20:50:38 - Row :5 - Parsing item.
+04-22-2022 @ 20:50:38 - Row :5 - Processing item.
+04-22-2022 @ 20:50:38 - Found variation product object. ID:999540627
+04-22-2022 @ 20:50:38 - Setting Featured Image. URL:http://localhost/wp-content/uploads/2022/04/RFA-PJ1046-8.jpg
+04-22-2022 @ 20:50:38 - Attachment ID:999540628
+04-22-2022 @ 20:50:38 - Row :5 - Product updated successfully.
+04-22-2022 @ 20:50:38 - ---[ Import ended at 2022-04-22 08:50:38]---

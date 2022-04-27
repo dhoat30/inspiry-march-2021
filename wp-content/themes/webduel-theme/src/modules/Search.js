@@ -3,8 +3,8 @@ let $ = jQuery
 class Search {
     // describe and create/initiate our object
     constructor() {
-        this.url = window.location.hostname === "localhost" ? "http://localhost/inspirynew/wp-json/inspiry/v1/search?term=" : "https://inspiry.co.nz/wp-json/inspiry/v1/search?term="
-        this.allProductsURL = window.location.hostname === "localhost" ? "http://localhost/inspirynew/wp-json/inspiry/v1/all-products-search?term=" : "https://inspiry.co.nz/wp-json/inspiry/v1/all-products-search?term="
+        this.url = `${inspiryData.root_url}/wp-json/inspiry/v1/search?term=`
+        this.allProductsURL = `${inspiryData.root_url}/wp-json/inspiry/v1/all-products-search?term=`
         this.loading = $('.fa-spinner')
         this.searchIcon = $('.search-code .fa-search')
         this.resultDiv = $('.search-code .result-div')
@@ -17,6 +17,7 @@ class Search {
     }
     // events 
     events() {
+        console.log(inspiryData.root_url)
         this.searchField.on("keyup", this.typingLogic.bind(this))
         this.searchField.on("click", this.searchFieldClickHandler.bind(this))
         $(document).on("click", this.documentClickHandler.bind(this))

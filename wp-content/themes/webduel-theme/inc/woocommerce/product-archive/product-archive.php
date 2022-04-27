@@ -27,50 +27,39 @@ function add_category_banner_webduel()
     }
 
     // add tag banner
-    $current_tags = get_the_terms(get_the_ID(), 'product_tag');
-    $image_id = get_field('banner', $current_tags[0]);
-    // check if the first tag has an image
-    if (!$image_id) {
-        $image_id = get_field('banner', $current_tags[1]);
+    if(is_product_tag()){ 
+        $current_tags = get_the_terms(get_the_ID(), 'product_tag');
+        $image_id = get_field('banner', $current_tags[0]);
+        // check if the first tag has an image
+        if (!$image_id) {
+            $image_id = get_field('banner', $current_tags[1]);
+        }
+    
+        // get one image for desktop and one for mobile
+        $tagImage = wp_get_attachment_image_src($image_id, 'full');
+        $tagImageMobile = wp_get_attachment_image_src($image_id, 'large');
+        if ($tagImageMobile && $tagImage) {
+            echo '
+            <div class="category-banner-container">
+            <picture class="category-banner">
+                <source media="(min-width:1366px)" srcset="' . $tagImage[0] . '">
+                <source media="(min-width:600px)" srcset="' . $tagImage[0] . '">
+                <img class="product-cat-banner"  loading="lazy" src="' . $tagImageMobile[0] . '"
+                alt="' . get_the_title() . '" width="100%" >
+                </picture>
+                </div>
+                ';
+        }
     }
-
-    // get one image for desktop and one for mobile
-    $tagImage = wp_get_attachment_image_src($image_id, 'full');
-    $tagImageMobile = wp_get_attachment_image_src($image_id, 'large');
-    if ($tagImageMobile && $tagImage) {
-        echo ' <picture>
-            <source media="(min-width:1366px)" srcset="' . $tagImage[0] . '">
-            <source media="(min-width:600px)" srcset="' . $tagImage[0] . '">
-            <img class="product-cat-banner"  loading="lazy" src="' . $tagImageMobile[0] . '"
-            alt="' . get_the_title() . '" width="100%" >
-            </picture>';
-    }
+  
 }
 
 // add filter side bar section 
-add_action('woocommerce_before_shop_loop', function () {
+add_action('filter_buttons_before_shop_loop', function () {
     global $wp;
 
     $current_url = home_url(add_query_arg(array(), $wp->request));
 
-?>
-    
-    <?php 
-    // stock toggle button
-    $toggleEnableClass = ''; 
-    $toggleText = 'OFF'; 
-    // check if the availability param exist and is instock
-    if (isset($_GET['_availability']) && $_GET['_availability'] === 'instock') { 
-            $toggleEnableClass = 'enabled'; 
-            $toggleText = "ON"; 
-    }           
-    ?>
-        <div class="switch stock-toggle <?php echo $toggleEnableClass;?>">
-            <input id="stock-toggle-input" class="cmn-toggle cmn-toggle-round" type="checkbox">
-            <label for="stock-toggle-input"><span><?php echo $toggleText; ?></span></label>
-        </div>
-  
-    <?php
     if (is_product_category() || is_shop() || is_archive()) {
         echo '
         <div class="facet-product-container">
@@ -88,7 +77,7 @@ add_action('woocommerce_before_shop_loop', function () {
         echo do_shortcode('[facetwp facet="availability"]');
 
         //   echo do_shortcode('[facetwp facet="price_range"]');  
-        echo '<button class="facet-reset-btn secondary-button" onclick="FWP.reset()">Reset All Filter</button>';
+        echo '<button class="product-archive-reset facet-reset-btn secondary-button" onclick="FWP.reset()">Reset All Filter</button>';
         echo '</div>';
 
         echo '<div class="mobile-filter-container"> 
@@ -108,7 +97,7 @@ add_action('woocommerce_before_shop_loop', function () {
         echo '
                 <div class="button-containers">
                     <button class="primary-button"> Show Results </button>
-                    <button class="facet-reset-btn secondary-button" onclick="FWP.reset()">Reset All Filter</button>
+                    <button class="product-archive-reset facet-reset-btn secondary-button" onclick="FWP.reset()">Reset All Filter</button>
                 </div>
                     ';
         echo '</div>';

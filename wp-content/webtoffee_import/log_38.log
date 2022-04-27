@@ -8,3 +8,8 @@ a:4:{s:3:"row";i:7;s:7:"message";s:29:"Product updated successfully.";s:6:"statu
 a:4:{s:3:"row";i:8;s:7:"message";s:29:"Product updated successfully.";s:6:"status";b:1;s:7:"post_id";i:448910;}
 a:4:{s:3:"row";i:9;s:7:"message";s:29:"Product updated successfully.";s:6:"status";b:1;s:7:"post_id";i:448911;}
 a:4:{s:3:"row";i:10;s:7:"message";s:29:"Product updated successfully.";s:6:"status";b:1;s:7:"post_id";i:448912;}
+a:6:{s:3:"row";i:1;s:7:"message";s:29:"Product updated successfully.";s:6:"status";b:1;s:10:"status_msg";s:7:"Success";s:7:"post_id";i:999540594;s:9:"post_link";a:2:{s:8:"edit_url";s:66:"https://localhost/wp-admin/post.php?post=999540594&amp;action=edit";s:5:"title";s:19:"Pascal Dining Chair";}}
+a:6:{s:3:"row";i:2;s:7:"message";s:29:"Product updated successfully.";s:6:"status";b:1;s:10:"status_msg";s:7:"Success";s:7:"post_id";i:999540612;s:9:"post_link";a:2:{s:8:"edit_url";s:0:"";s:5:"title";s:44:"Pascal Dining Chair &#8211; Dark Grey Velvet";}}
+a:6:{s:3:"row";i:3;s:7:"message";s:29:"Product updated successfully.";s:6:"status";b:1;s:10:"status_msg";s:7:"Success";s:7:"post_id";i:999540617;s:9:"post_link";a:2:{s:8:"edit_url";s:0:"";s:5:"title";s:44:"Pascal Dining Chair &#8211; Navy Blue Velvet";}}
+a:6:{s:3:"row";i:4;s:7:"message";s:29:"Product updated successfully.";s:6:"status";b:1;s:10:"status_msg";s:7:"Success";s:7:"post_id";i:999540622;s:9:"post_link";a:2:{s:8:"edit_url";s:0:"";s:5:"title";s:49:"Pascal Dining Chair &#8211; Coral Coloured Velvet";}}
+a:6:{s:3:"row";i:5;s:7:"message";s:29:"Product updated successfully.";s:6:"status";b:1;s:10:"status_msg";s:7:"Success";s:7:"post_id";i:999540627;s:9:"post_link";a:2:{s:8:"edit_url";s:0:"";s:5:"title";s:51:"Pascal Dining Chair &#8211; Mustard Coloured Velvet";}}

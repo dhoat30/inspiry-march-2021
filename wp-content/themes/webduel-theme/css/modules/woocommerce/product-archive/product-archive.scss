@@ -24,7 +24,7 @@
         flex-wrap: wrap;
         margin-top: 10px;
         margin-bottom: 20px;
-        @media (max-width: 400px) {
+        @media (max-width: 450px) {
           flex-direction: column;
           align-items: flex-start;
         }
@@ -38,25 +38,41 @@
             outline: none;
           }
         }
-        button {
-          text-transform: capitalize;
-          span {
-            font-size: var(--mediumSize);
-            font-weight: var(--bold);
+        .filter-stock-container {
+          display: flex;
+          @media (max-width: 450px) {
+            width: 100%;
           }
-          @media (max-width: 400px) {
-            margin-top: 10px;
+          @media (max-width: 800px) {
+            flex-direction: column;
           }
-          i {
-            transition: var(--transition);
-            position: relative;
-            top: 2px;
-            font-size: 1.2rem;
-            width: 22px;
-            height: 10px;
-          }
-          &:hover i {
-            color: white;
+          button {
+            margin-right: 20px;
+            width: 180px;
+            text-transform: capitalize;
+            @media (max-width: 800px) {
+              margin-bottom: 10px;
+            }
+            span {
+              font-size: var(--mediumSize);
+              font-weight: var(--bold);
+            }
+            @media (max-width: 450px) {
+              margin-top: 10px;
+              width: 100%;
+              margin-right: 0 !important;
+            }
+            i {
+              transition: var(--transition);
+              position: relative;
+              top: 2px;
+              font-size: 1.2rem;
+              width: 22px;
+              height: 10px;
+            }
+            &:hover i {
+              color: white;
+            }
           }
         }
       }
@@ -68,10 +84,7 @@
           &::before {
             display: none !important;
           }
-          //   display: flex !important;
-          //   flex-wrap: wrap;
-          //   //   justify-content: flex-start !important;
-          //   position: relative;
+
           grid-template-columns: 1fr 1fr 1fr 1fr;
           width: calc(100% + 8px);
           flex-wrap: wrap;
@@ -236,12 +249,11 @@ to remove jitter on replacement */
 // stock toggle button
 
 /* toggle in label designing */
-h1 {
-  color: green;
-}
 
 /* toggle in label designing */
 .stock-toggle {
+  display: flex;
+  align-items: flex-end;
   label {
     span {
       position: absolute;
@@ -249,6 +261,14 @@ h1 {
       right: 10px;
       top: 10px;
       line-height: 0;
+      font-size: var(--paragraphSize);
+    }
+  }
+  .title {
+    font-size: var(--mediumSize);
+    font-weight: var(--bold);
+    margin-left: 10px;
+    @media (max-width: 500px) {
       font-size: var(--paragraphSize);
     }
   }

@@ -11,6 +11,8 @@
       height: 35px;
       display: flex;
       align-items: center;
+      padding: 0 10px;
+
       .banner-card {
         .anchor {
           color: white;
@@ -52,11 +54,11 @@
               width: 20px !important;
               margin-top: 8px;
               margin-left: 8px;
+              cursor: pointer;
             }
           }
           .search-input {
             border: none;
-            border-right: 1px solid var(--darkGrey);
             height: 40px !important;
             min-width: 250px;
             font-size: var(--paragraphSize);
@@ -323,6 +325,8 @@
       height: 50px;
       display: flex;
       align-items: center;
+      padding: 0 10px;
+
       .banner-card {
         .anchor {
           color: white;

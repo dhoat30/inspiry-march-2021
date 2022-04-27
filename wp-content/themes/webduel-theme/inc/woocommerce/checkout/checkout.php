@@ -127,14 +127,23 @@ function custom_override_checkout_fields($fields)
 {
 
     unset($fields['billing']['billing_company']);
-    unset($fields['billing']['billing_country']);
+    // unset($fields['billing']['billing_country']);
+    // unset($fields['billing']['billing_state']);
     unset($fields['billing']['billing_address_2']);
 
     unset($fields['shipping']['shipping_company']);
     unset($fields['shipping']['shipping_address_2']);
-    unset($fields['shipping']['shipping_country']);
+    // unset($fields['shipping']['shipping_country']);
+
     return $fields;
 }
+add_filter( 'default_checkout_billing_state', 'change_default_checkout_state' );
+add_filter( 'default_checkout_shipping_state', 'change_default_checkout_state' );
+
+function change_default_checkout_state() {
+  return 'Select'; // state code
+}
+
 
 // add windcave iframe 
 add_action('woocommerce_after_checkout_form', function () {

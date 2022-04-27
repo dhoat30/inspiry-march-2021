@@ -1,3 +1,4 @@
+import StickyScroller from 'sticky-scroller'
 const $ = jQuery
 
 class FacetFilter {
@@ -16,18 +17,23 @@ class FacetFilter {
 
     }
     events() {
+        //    set cookie to false every page load to hide the facet container 
+        Cookies.set('showingProductFacetContainer', 'false')
+
+        // show filter button in the bottom on mobile div
         $(window).scroll(function (event) {
             var scroll = $(window).scrollTop();
             // Do something
-            if (scroll > 300) {
-                $('.fixed-filter-button').slideDown()
+            if (scroll > 300 && window.matchMedia("(max-width: 1100px)").matches) {
+                $('.archive  .filter-button').addClass('fixed-filter-button')
             }
             else {
-                $('.fixed-filter-button').slideUp()
+                $('.archive .filter-button').removeClass('fixed-filter-button')
             }
         });
         // show filter container
         this.filterButton.on('click', this.showDesktopContainer)
+
         // hide filter container
         this.closeIcon.on('click', this.hideDesktopContainer)
         this.showResultsButton.on('click', this.hideDesktopContainer)
@@ -40,29 +46,44 @@ class FacetFilter {
 
     // show desktop filter container on button click
     showDesktopContainer() {
+        console.log("filter button clicked")
+        const showContainer = Cookies.get('showingProductFacetContainer')
 
+        console.log(showContainer)
         if (window.matchMedia("(max-width: 1100px)").matches) {
             $('.facet-wp-container').slideDown('slow')
         }
         else {
-            $('.facet-wp-container').slideToggle('slow')
+
+            if (showContainer === 'true') {
+                console.log('hide the filter container')
+                $('.facet-wp-container').animate({
+                    width: '0',
+                    marginRight: "0"
+                })
+                Cookies.set('showingProductFacetContainer', 'false')
+                $('.filter-sort-container .filter-button span').text('Show Filters')
+            }
+            else {
+                console.log('show the filter container')
+                $('.facet-wp-container').animate({
+                    width: '100%',
+                    marginRight: "40px"
+                })
+                $('.filter-sort-container .filter-button span').text('Hide Filters')
+
+                Cookies.set('showingProductFacetContainer', 'true')
+            }
         }
-        if ($('.filter-sort-container .filter-button span').text() === 'Show Filters') {
-            $('.filter-sort-container .filter-button span').text('Hide Filters')
-        }
-        else {
-            $('.filter-sort-container .filter-button span').text('Show Filters')
-        }
+
     }
 
     hideDesktopContainer() {
-        console.log('clicked close button')
         $('.filter-sort-container .filter-button span').text('Show Filters')
         $('.facet-wp-container').hide('slow')
     }
 
     showFilter(e) {
-        console.log(e)
         $(this).siblings('.facetwp-facet').slideToggle('fast')
         $(this).find('i').toggleClass('fa-plus')
         $(this).find('i').toggleClass('fa-minus')

@@ -89,6 +89,9 @@
       font-weight: var(--bold);
       padding: 20px 0;
       margin: 0;
+      @media (max-width: 800px) {
+        font-size: var(--sectionSize);
+      }
     }
     .card-list {
       position: relative;
