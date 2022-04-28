@@ -146,7 +146,7 @@
                     <div class="search-bar">
                         <input autocomplete="off" type="text" class="search-input" placeholder="Search for rugs, furniture, and more" id="search-term" />
                         <i class="fad fa-spinner fa-spin" aria-hidden="true"></i>
-                        <i class="far fa-search" aria-hidden="true"></i>
+                        <i class="far fa-search desktop-search" aria-hidden="true"></i>
                     </div>
                     <div class="result-div"></div>
                 </div>
@@ -324,12 +324,12 @@
 
             </div>
         </section>
-        <div class="search-container ">
+        <div class="search-container">
             <div class="search-code row-container">
                 <div class="search-bar">
                     <input autocomplete="off" type="text" class="search-input" placeholder="Search for rugs, furniture, and more" id="mobile-search-term" />
                     <i class="fad fa-spinner fa-spin" aria-hidden="true"></i>
-                    <i class="far fa-search" aria-hidden="true"></i>
+                    <i class="far fa-search mobile-search" aria-hidden="true"></i>
                 </div>
                 <div class="result-div"></div>
             </div>

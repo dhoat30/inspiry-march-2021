@@ -3,10 +3,10 @@ let $ = jQuery
 class MobileSearch {
     // describe and create/initiate our object
     constructor() {
-        this.url = window.location.hostname === "localhost" ? "http://localhost/inspirynew/wp-json/inspiry/v1/search?term=" : "https://inspiry.co.nz/wp-json/inspiry/v1/search?term="
-        this.allProductsURL = window.location.hostname === "localhost" ? "http://localhost/inspirynew/wp-json/inspiry/v1/all-products-search?term=" : "https://inspiry.co.nz/wp-json/inspiry/v1/all-products-search?term="
+        this.url = `${inspiryData.root_url}/wp-json/inspiry/v1/search?term=`
+        this.allProductsURL = `${inspiryData.root_url}/wp-json/inspiry/v1/all-products-search?term=`
         this.loading = $('.fa-spinner')
-        this.searchIcon = $('.search-code .fa-search')
+        this.searchIcon = $('.search-code .mobile-search')
         this.resultDiv = $('.search-code .result-div')
         this.searchField = $('#mobile-search-term')
         this.typingTimer
@@ -17,9 +17,12 @@ class MobileSearch {
     }
     // events 
     events() {
+
         this.searchField.on("keyup", this.typingLogic.bind(this))
         this.searchField.on("click", this.searchFieldClickHandler.bind(this))
         $(document).on("click", this.documentClickHandler.bind(this))
+        // redirect to result page when clicked on search icon  
+        this.searchIcon.on('click', this.takeToQueryPage)
     }
     // document click handler
     documentClickHandler(e) {
@@ -99,6 +102,14 @@ class MobileSearch {
                 this.isSpinnerVisible = false
             }
         })
+    }
+
+    // query page redirect 
+    takeToQueryPage() {
+        console.log($('#mobile-search-term').val())
+        if ($('#mobile-search-term').val().length >= 1) {
+            window.location.href = `${inspiryData.root_url}/products/?_search=${$('#mobile-search-term').val()}`;
+        }
     }
 
 }

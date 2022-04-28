@@ -97,9 +97,6 @@ window.onload = function () {
   const topnav = new TopNav();
   const overlay = new Overlay();
 
-
-
-
   //Tool tip 
   const toolTip = new ToolTip();
 

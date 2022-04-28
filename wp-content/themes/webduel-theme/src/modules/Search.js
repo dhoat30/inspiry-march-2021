@@ -6,7 +6,7 @@ class Search {
         this.url = `${inspiryData.root_url}/wp-json/inspiry/v1/search?term=`
         this.allProductsURL = `${inspiryData.root_url}/wp-json/inspiry/v1/all-products-search?term=`
         this.loading = $('.fa-spinner')
-        this.searchIcon = $('.search-code .fa-search')
+        this.searchIcon = $('.search-code .desktop-search')
         this.resultDiv = $('.search-code .result-div')
         this.searchField = $('#search-term')
         this.typingTimer
@@ -17,11 +17,14 @@ class Search {
     }
     // events 
     events() {
-        console.log(inspiryData.root_url)
         this.searchField.on("keyup", this.typingLogic.bind(this))
         this.searchField.on("click", this.searchFieldClickHandler.bind(this))
         $(document).on("click", this.documentClickHandler.bind(this))
+        // redirect to result page when clicked on search icon  
+        this.searchIcon.on('click', this.takeToQueryPage)
+
     }
+
     // document click handler
     documentClickHandler(e) {
         if (!this.searchBar.is(e.target) && this.searchBar.has(e.target).length === 0) {
@@ -52,11 +55,13 @@ class Search {
             }
         }
         this.previousValue = this.searchField.val()
+
     }
 
 
     // get result method
     async getResults() {
+        console.log(this.searchField.val())
         // send request 
         $.getJSON(`${this.url}${this.searchField.val()}`, (data) => {
             this.resultDiv.show()
@@ -102,5 +107,14 @@ class Search {
         })
     }
 
+    // query page redirect 
+    takeToQueryPage() {
+
+        console.log($('#search-term').val())
+        if ($('#search-term').val().length >= 1) {
+            window.location.href = `${inspiryData.root_url}/products/?_search=${$('#search-term').val()}`;
+        }
+
+    }
 }
 export default Search
