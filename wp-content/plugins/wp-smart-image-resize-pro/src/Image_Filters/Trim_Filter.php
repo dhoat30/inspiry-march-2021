@@ -6,6 +6,8 @@ use \Intervention\Image\Filters\FilterInterface;
 use Intervention\Image\Image;
 use WP_Smart_Image_Resize\Image_Meta;
 
+use function WP_Smart_Image_Resize\is_gd_image;
+
 class Trim_Filter implements FilterInterface
 {
 
@@ -55,6 +57,24 @@ class Trim_Filter implements FilterInterface
 
         try {
             $image->trim(null, null, $tolerance, $feather);
+
+            // Maybe add padding to the image.
+            if( !empty($feather) && is_gd_image( $image->getCore() ) ){
+
+                // 1.Create an empty canvas.
+                $canvas = wp_imagecreatetruecolor($image->getWidth() + $feather, $image->getHeight() + $feather);
+
+                // 2. Set the background color.
+                imagefill($canvas, 0,0,0x7fff0000);
+
+                // 3.Copy the image to the canvas.
+                imagecopy($canvas, $image->getCore(), $feather / 2, $feather / 2, 0, 0, $image->getWidth(), $image->getHeight());
+
+                // 4.Replace the core with the new canvas.
+                $image->setCore($canvas);
+
+            }
+          
             $this->set_new_dimensions($image);
         } catch (\Exception $e) {
         }

@@ -31,7 +31,85 @@ get_header();
     wp_reset_postdata();
     ?>
 </section>
+<!-- home page -->
+<section class="slider-container ">
+    <ul class="card-list owl-carousel">
+    <?php
+    $argsVideos = array(
+        'post_type' => 'sliders',
+        'posts_per_page' => -1,
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'slider-category',
+                'field'    => 'slug',
+                'terms'    => array('home-page-hero-slider'),
+            )
+        ),
+    );
+    $video = new WP_Query($argsVideos);
+    while ($video->have_posts()) {
+        $video->the_post();
+        $mobileImage = get_field('mobile_image');
+    ?>
+    <li>
+        <a href="<?php echo get_field('add_link'); ?>">
+                <picture>
+                    <source media="(min-width:1366px)" srcset="<?php echo get_the_post_thumbnail_url(null, "full"); ?>" >
+                    <source media="(min-width:600px)" srcset="<?php echo get_the_post_thumbnail_url(null, "large"); ?>" >
+                    <img loading="lazy" src="<?php echo $mobileImage['sizes']['woocommerce_thumbnail']; ?>" alt="<?php echo get_the_title(); ?>" width="100%">
+                </picture>
+        </a>
+        </li>
+    <?php
+    }
+    wp_reset_postdata();
+    ?>
+    </ul>
+</section>
 
+<!-- special section  -->
+<section class="special-section wide-image-section row-container">
+    <div class="image-container">
+        <?php
+
+        $argsSecondSectionImage = array(
+            'post_type' => 'banners',
+            'posts_per_page' => -1,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'banners_categories',
+                    'field'    => 'slug',
+                    'terms'    => array('home-special-section'),
+                )
+            )
+        );
+        $secondSectionImage = new WP_Query($argsSecondSectionImage);
+
+        while ($secondSectionImage->have_posts()) {
+            $secondSectionImage->the_post();
+            // get desktop and mobile image 
+            $image = get_field('banner_image');
+            $mobileImage = get_field('banner_mobile_image');
+        ?>
+            <h3 class="title row-container"><?php echo get_field('title'); ?></h3>
+            <a class="link" href="<?php echo get_field('banner_link'); ?>">
+                <picture>
+                    <source media="(min-width:1366px)" srcset="<?php echo $image['sizes']['2048x2048']; ?>">
+                    <source media="(min-width:600px)" srcset="<?php echo $image['sizes']['large']; ?>">
+                    <img loading="lazy" src="<?php echo $mobileImage['sizes']['woocommerce_thumbnail']; ?>" alt="<?php echo get_the_title(); ?>" width="100%">
+                </picture>
+            </a>
+            <a class="row-container link-text" href="<?php echo get_field('banner_link'); ?>">
+                <?php echo get_field('link_text'); ?>
+                <i class="fa-regular fa-arrow-right-long"></i>
+            </a>
+        <?php
+        }
+        wp_reset_postdata();
+
+        ?>
+    </div>
+</section>
 
 <!-- second section  -->
 <section class="second-section wide-image-section row-container">

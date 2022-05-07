@@ -24,6 +24,7 @@ class Woocommerce
     static $checkout_post = null;
 
     protected static $products = array();
+    protected static $product_variations = array();
 
     static function productTypeIs($product, $type)
     {
@@ -1687,12 +1688,17 @@ class Woocommerce
      * @return array
      */
     public static function availableProductVariations($product){
+        $product_id = self::getProductId($product);
+        if(isset(self::$product_variations[$product_id])){
+            return self::$product_variations[$product_id];
+        }
         $available_variations = array();
         $is_variable_product = self::productTypeIs($product, 'variable');
         if(!empty($product))
             if ($is_variable_product && method_exists($product, 'get_available_variations')){
                 $available_variations = $product->get_available_variations();
             }
+        self::$product_variations[$product_id] = $available_variations;
         return $available_variations;
     }
 

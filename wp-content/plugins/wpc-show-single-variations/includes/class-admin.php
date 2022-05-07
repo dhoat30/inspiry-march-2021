@@ -151,7 +151,8 @@ if ( ! class_exists( 'Woosv_Admin' ) ) {
 												// taxonomies
 												$taxonomies = apply_filters( 'woosv_init_taxonomies', array(
 													'product_cat',
-													'product_tag'
+													'product_tag',
+													'wpc-brand'
 												) );
 
 												foreach ( $taxonomies as $taxonomy ) {

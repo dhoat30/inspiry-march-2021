@@ -8,7 +8,7 @@ WC tested up to: 6.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Requires PHP: 5.6
-Stable tag: 1.7.6.2
+Stable tag: 1.7.6.4
 
 Make WooCommerce products images the same size and uniform without cropping.
 
@@ -52,9 +52,18 @@ Make sure PHP extension `fileinfo` is enabled.
 
 == Changelog ==
 
+= 1.7.6.4 =
+
+* Fixed an issue with the Trim whitespace's border size option not working properly in GD. 
+* Stability improvements
+
+= 1.7.6.3 =
+
+* Minor bugfixes
+
 = 1.7.6.2 =
 
-* Fixed a conflict in v1.7.6 causing some plugins admin pages to not load properly
+* Fixed an issue in v1.7.6 causing some plugins' assets to not load properly.
 
 = 1.7.6 =
 

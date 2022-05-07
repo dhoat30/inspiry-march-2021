@@ -11,8 +11,8 @@ function add_category_banner_webduel()
     $cat = $wp_query->get_queried_object();
     $catID = $cat->term_id;
     $thumbnail_id =   get_term_meta($catID, 'thumbnail_id', true);
-    $imageLarge = wp_get_attachment_image_src($thumbnail_id, 'large');
-    $imageMedium = wp_get_attachment_image_src($thumbnail_id, 'thumbnail_image_width');
+    $imageLarge = wp_get_attachment_image_src($thumbnail_id, 'woocommerce-single');
+    $imageMedium = wp_get_attachment_image_src($thumbnail_id, 'woocommerce-single');
     if ($thumbnail_id) {
         echo ' 
           <div class="category-banner-container">

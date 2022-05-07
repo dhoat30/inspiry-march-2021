@@ -18,6 +18,7 @@
             
             public function __construct() {
                 $this->hooks();
+                do_action( 'variation_duplicator_for_woocommerce_variation_image_clone_loaded', $this );
             }
             
             public function hooks() {
@@ -99,7 +100,8 @@
                         $selected_variation_data = $selected_variation->get_data();
                         $selected_variation_img  = absint( $selected_variation_data[ 'image_id' ] );
                         
-                        if ( empty( $current_variation_img ) || $current_variation_img == $selected_variation_img ) {
+                        // if ( empty( $current_variation_img ) || $current_variation_img == $selected_variation_img ) {
+                        if ( empty( $current_variation_img ) ) {
                             continue;
                         }
                         
@@ -130,7 +132,8 @@
                         $selected_variation_img = absint( $selected_variation->get_image_id() );
                     }
                     
-                    if ( empty( $selected_variation_img ) || $current_variation_img == $selected_variation_img ) {
+                    // if ( empty( $selected_variation_img ) || $current_variation_img == $selected_variation_img ) {
+                    if ( empty( $selected_variation_img ) ) {
                         return;
                     }
                     

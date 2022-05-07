@@ -22,7 +22,7 @@ class Search {
         $(document).on("click", this.documentClickHandler.bind(this))
         // redirect to result page when clicked on search icon  
         this.searchIcon.on('click', this.takeToQueryPage)
-
+        $(document).on('keypress', this.takeToQueryPageOnEnter);
     }
 
     // document click handler
@@ -97,8 +97,6 @@ class Search {
             else {
                 this.resultDiv.html(`<p class="center-align medium">Nothing found</p>`)
             }
-
-
             // hide loading spinner 
             if (this.isSpinnerVisible) {
                 this.loading.hide()
@@ -108,13 +106,18 @@ class Search {
     }
 
     // query page redirect 
-    takeToQueryPage() {
+    takeToQueryPage(e) {
 
-        console.log($('#search-term').val())
         if ($('#search-term').val().length >= 1) {
             window.location.href = `${inspiryData.root_url}/products/?_search=${$('#search-term').val()}`;
         }
 
+    }
+
+    takeToQueryPageOnEnter(e) {
+        if ($('#search-term').val().length >= 1 && e.which == 13) {
+            window.location.href = `${inspiryData.root_url}/products/?_search=${$('#search-term').val()}`;
+        }
     }
 }
 export default Search

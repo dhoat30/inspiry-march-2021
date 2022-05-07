@@ -21,10 +21,10 @@ class FacetFilter {
         Cookies.set('showingProductFacetContainer', 'false')
 
         // show filter button in the bottom on mobile div
-        $(window).scroll(function (event) {
+        $(window).on('scroll', function (event) {
             var scroll = $(window).scrollTop();
             // Do something
-            if (scroll > 300 && window.matchMedia("(max-width: 1100px)").matches) {
+            if (scroll > 400 && window.matchMedia("(max-width: 1100px)").matches) {
                 $('.archive  .filter-button').addClass('fixed-filter-button')
             }
             else {

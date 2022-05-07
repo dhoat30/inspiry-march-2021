@@ -74,6 +74,9 @@
 .woocommerce-variation-availability {
   display: none;
 }
+.woocommerce-variation-description {
+  display: none;
+}
 .variations {
   .label {
     label {
@@ -188,7 +191,7 @@
 
       .quantity {
         display: block;
-        margin: 20px 0 10px 0 !important;
+        margin: 10px 0 10px 0 !important;
         .input-text {
           height: 40px;
           width: 60px;

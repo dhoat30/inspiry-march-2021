@@ -5,6 +5,9 @@
     padding: 50px 0;
   }
   .product {
+    //     @media (min-width: 800px) {
+    //   display: none;
+    // }
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -36,7 +39,7 @@
       }
     }
     .variations {
-      margin: 20px 0 0 0 !important;
+      margin: 10px 0 0 0 !important;
       label {
         color: var(--grey);
         letter-spacing: 0;
@@ -63,40 +66,160 @@
 
 // images container
 
-// product summary
-.flex-control-nav {
-  max-width: 100px;
-  @media (max-width: 800px) {
-    display: none;
-  }
+// // // product summary
+// @media (min-width: 800px) {
+//   .flex-control-nav {
+//     max-width: 100px;
+//   }
+//   .woocommerce-product-gallery {
+//     display: flex;
+//     .owl-nav {
+//       button {
+//         span {
+//           color: var(--darkGrey) !important;
+//         }
+//       }
+//       .owl-next {
+//         position: absolute;
+//         right: 0;
+//       }
+//     }
+//   }
+//   // make gallery verticle
+//   .woocommerce-product-gallery .flex-control-thumbs {
+//     order: -10;
+//     margin-right: 10px !important;
+
+//     li {
+//       border: 1px solid var(--lightGrey);
+//       margin-bottom: 5px !important;
+//     }
+//   }
+
+//   .woocommerce div.product div.images .flex-control-thumbs li {
+//     width: 100%;
+//     padding-top: 0;
+//     padding-bottom: 5px;
+//   }
+// }
+
+// flex direction
+ul.flex-direction-nav {
+  position: absolute;
+  top: 30%;
+  z-index: 99999;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0px;
+  list-style: none;
 }
-.woocommerce-product-gallery {
-  display: flex;
-  .owl-nav {
-    button {
-      span {
-        color: var(--darkGrey) !important;
+
+li.flex-nav-prev {
+  float: left;
+}
+li.flex-nav-next {
+  float: right;
+}
+a.flex-next {
+  visibility: hidden;
+}
+a.flex-prev {
+  visibility: hidden;
+}
+
+a.flex-next::after {
+  visibility: visible;
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+a.flex-prev::before {
+  visibility: visible;
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+ul.flex-direction-nav li a {
+  color: #ccc;
+}
+ul.flex-direction-nav li a:hover {
+  text-decoration: none;
+}
+
+// mobile gallery carousel
+.single-product {
+  .flex-control-nav {
+    margin-top: 10px !important;
+    .owl-stage-outer {
+      .owl-stage {
+        .owl-item {
+          li {
+            width: 100%;
+            border: 1px solid var(--lightGrey);
+          }
+        }
       }
     }
-    .owl-next {
-      position: absolute;
-      right: 0;
+    // owl button style
+    .owl-nav {
+      button {
+        width: 30px;
+        height: 30px;
+        background-color: var(--black) !important;
+        top: 43%;
+        i {
+          color: white;
+          font-weight: var(--light) !important;
+        }
+      }
+      button:nth-child(1) {
+        left: -3px !important;
+      }
+      button:nth-child(2) {
+        right: -3px !important;
+      }
     }
   }
 }
 
-.woocommerce-product-gallery .flex-control-thumbs {
-  order: -10;
-  margin-right: 10px !important;
-
-  li {
-    border: 1px solid var(--lightGrey);
-    margin-bottom: 5px !important;
-  }
+// remove image section bottom margin
+.woocommerce div.product div.images {
+  margin-bottom: 0;
 }
+// // make owl carousel verticle
+// .woocommerce-product-gallery {
+//   .owl-carousel {
+//     transform: rotate(90deg);
+//     width: 100%;
+//     // height: 700px;
+//     border: solid red;
+//     margin-top: 100px;
+//     justify-self: stretch;
 
-.woocommerce div.product div.images .flex-control-thumbs li {
-  width: 100%;
-  padding-top: 0;
-  padding-bottom: 5px;
-}
+//     .owl-stage-outer {
+//       // width: 1000px;
+//     }
+//     .owl-item {
+//       transform: rotate(-90deg);
+//     }
+//   }
+
+//   .owl-carousel .owl-nav {
+//     display: flex;
+//     justify-content: space-between;
+//     position: absolute;
+//     width: 100%;
+//     top: calc(50% - 33px);
+//   }
+//   div.owl-carousel .owl-nav .owl-prev,
+//   div.owl-carousel .owl-nav .owl-next {
+//     font-size: 36px;
+//     top: unset;
+//     bottom: 15px;
+//   }
+// }

@@ -60,98 +60,100 @@ function woocommerce_header_add_to_cart_fragment($fragments)
     ob_start();
 ?>
     <div class="cart-box">
-        <div class="title-section">
-            <div class="title">My Cart</div>
-            <i class="fa-light fa-xmark"></i>
-        </div>
-        <div class="flex-card">
-            <?php
+            <div class="title-section">
+                <div class="title">My Cart</div>
+                <i class="fa-light fa-xmark"></i>
+            </div>
+            <div class="flex-card">
+                <?php
 
-            foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
-                $product = $cart_item['data'];
-                $product_id = $product_id = $cart_item['product_id'];
+                foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
+                    $product = $cart_item['data'];
+                    $product_id = $cart_item['product_id'];
+                    $variationID = $cart_item['variation_id']; 
+                    $quantity = $cart_item['quantity'];
+                    $price = WC()->cart->get_product_price($product);
+                    $subtotal = WC()->cart->get_product_subtotal($product, $cart_item['quantity']);
+                    $link = $product->get_permalink($cart_item);
+                    // Anything related to $product, check $product tutorial
+                    $meta = wc_get_formatted_cart_item_data($cart_item);
+                    if($variationID){ 
+                        $product_id = $variationID;
+                    }
+                ?>
+                    <div class="product-card">
+                        <?php
 
-                $quantity = $cart_item['quantity'];
-                $price = WC()->cart->get_product_price($product);
-                $subtotal = WC()->cart->get_product_subtotal($product, $cart_item['quantity']);
-                $link = $product->get_permalink($cart_item);
-                // Anything related to $product, check $product tutorial
-                $meta = wc_get_formatted_cart_item_data($cart_item);
+                        // condition to check if the product is simple
+                        if ($product->name == "Free Sample") {
+                            // pulling information of an original product in a form of an objec†
+                            $originalProduct = wc_get_product($cart_item["free_sample"]);
 
-            ?>
-                <div class="product-card">
-                    <?php
+                            if (!empty($originalProduct)) {
+                                $permalink = get_the_permalink($originalProduct->get_id());
+                                $imageID = $originalProduct->image_id;
+                                $name = $originalProduct->get_name();
+                            }
+                        ?>
+                            <a href="<?php echo $permalink; ?>" class="mini_cart_item <?php echo $cart_item_key; ?>">
+                                <div class="img-container">
+                                    <img src="<?php echo wp_get_attachment_image_url($imageID, 'woocommerce_gallery_thumbnail'); ?>" alt="<?php echo $name; ?>" />
+                                </div>
 
-                    // condition to check if the product is simple
-                    if ($product->name == "Free Sample") {
-                        // pulling information of an original product in a form of an objec†
-                        $originalProduct = wc_get_product($cart_item["free_sample"]);
+                                <div class="title-container">
+                                    <h5 class="title"> <?php echo $quantity; ?> X Free Sample (<?php echo $name; ?> )</h5>
+                                </div>
 
-                        if (!empty($originalProduct)) {
-                            $permalink = get_the_permalink($originalProduct->get_id());
-                            $imageID = $originalProduct->image_id;
-                            $name = $originalProduct->get_name();
-                        }
-                    ?>
-                        <a href="<?php echo $permalink; ?>" class="mini_cart_item <?php echo $cart_item_key; ?>">
-                            <div class="img-container">
-                                <img src="<?php echo wp_get_attachment_image_url($imageID, 'woocommerce_thumbnail'); ?>" alt="<?php echo $name; ?>" />
+                                <div class="price-container">
+                                    <h6 class="cart-price">$<?php echo number_format($product->price * $quantity) ?></h6>
+                                </div>
+
+                            </a>
+                            <div class="remove-column remove-product">
+                                <i class="fa-solid fa-trash" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>"></i>
                             </div>
+                        <?php
+                        } else {
+                        ?>
+                            <a href="<?php echo $link ?>" class="mini_cart_item <?php echo $cart_item_key; ?>">
+                                <div class="img-container">
+                                    <img src="<?php echo get_the_post_thumbnail_url( $product_id , 'woocommerce_gallery_thumbnail'); ?>" alt="<?php echo $product->name ?>" />
+                                </div>
+                                <div class="title-container">
+                                    <h5 class="title"> <?php echo $quantity; ?> X <?php echo $product->name ?></h5>
+                                </div>
 
-                            <div class="title-container">
-                                <h5 class="title"> <?php echo $quantity; ?> X Free Sample (<?php echo $name; ?> )</h5>
+                                <div class="price-container">
+                                    <h6 class="cart-price">$<?php echo number_format($product->price * $quantity); ?></h6>
+                                </div>
+                            </a>
+                            <div class="remove-column remove-product">
+                                <i class="fa-solid fa-trash" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>"></i>
                             </div>
-
-                            <div class="price-container">
-                                <h6 class="cart-price">$<?php echo number_format($product->price * $quantity) ?></h6>
-                            </div>
-
-                        </a>
-                        <div class="remove-column remove-product">
-                            <i class="fa-solid fa-trash" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>"></i>
-                        </div>
-                    <?php
-                    } else {
-                    ?>
-                        <a href="<?php echo $link ?>" class="mini_cart_item <?php echo $cart_item_key; ?>">
-                            <div class="img-container">
-                                <img src="<?php echo get_the_post_thumbnail_url($product_id, 'medium'); ?>" alt="<?php echo $product->name ?>" />
-                            </div>
-                            <div class="title-container">
-                                <h5 class="title"> <?php echo $quantity; ?> X <?php echo $product->name ?></h5>
-                            </div>
-
-                            <div class="price-container">
-                                <h6 class="cart-price">$<?php echo number_format($product->price * $quantity); ?></h6>
-                            </div>
-                        </a>
-                        <div class="remove-column remove-product">
-                            <i class="fa-solid fa-trash" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>"></i>
-                        </div>
-                    <?php
-                    } ?>
-                </div>
-            <?php
-            }
-            ?>
-        </div>
-        <div class="pop-up-footer">
-            <!-- <div class="total-container"> -->
-            <!-- <div class="total poppins-font">
+                        <?php
+                        } ?>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
+            <div class="pop-up-footer">
+                <!-- <div class="total-container"> -->
+                <!-- <div class="total poppins-font">
                         Total: $<?php
                                 //  $totalAmount = str_replace(".00", "", (string)number_format(WC()->cart->total, 2, ".", ""));
                                 //echo number_format($totalAmount); 
                                 ?>
                     </div> -->
-            <!-- </div> -->
-            <!-- <div class="cont-shopping">
+                <!-- </div> -->
+                <!-- <div class="cont-shopping">
                             <a class="secondary-button" href="#">Continue Shopping</a>
                         </div> -->
-            <div class="checkout-btn">
-                <a class="primary-button" href="<?php echo get_site_url(); ?>/cart">Cart</a>
+                <div class="checkout-btn">
+                    <a class="primary-button" href="<?php echo get_site_url(); ?>/cart">Cart</a>
+                </div>
             </div>
         </div>
-    </div>
 <?php
     $fragments['.cart-box'] = ob_get_clean();
     return $fragments;

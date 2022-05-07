@@ -11,73 +11,17 @@ function webduel_order_review()
 {
 ?>
     <div class="summary-payment">
-        <div class="total-summary" id="total-summary">
-            <div class="title-container">
-                <h2>Order Summary</h2>
-                <a href="<?php echo wc_get_cart_url(); ?>">Edit cart</a>
-            </div>
-            <div>
-                <?php
-                foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
-                    $product = $cart_item['data'];
+    <?php
+}
 
-                    $delivery = wc_get_product_terms($cart_item['product_id'], 'pa_delivery')[0]->name;
-                    $availability = "";
-                    $product_id = '';
-                    $colourAttribute = '';
-                    $sizeAttribute = '';
-                    if ($cart_item['data']->post_type === 'product_variation') {
-                        $product_id =  $cart_item['variation_id'];
-                        $variation = wc_get_product($product_id);
-                        $availability = $variation->get_availability();
-                        $colourAttribute = $product->get_attributes()['pa_colour'];
-                        $sizeAttribute = $product->get_attributes()['pa_sizes'];
-                    } else {
-                        $product_id = $cart_item['product_id'];
-                        $availability = $product->get_availability();
-                    }
-                    $quantity = $cart_item['quantity'];
-                    $regularPrice = $product->regular_price;
-                    $subtotal = WC()->cart->get_product_subtotal($product, $cart_item['quantity']);
-                    $link = $product->get_permalink($cart_item);
-                ?>
-                    <ul class="flex-box product-row">
-                        <li class="title"><?php echo $product->name; ?> X <?php echo $quantity; ?> </li>
-                        <li class="amount">$<span><?php echo round($product->get_price() * $quantity, 2); ?> </span></li>
-                    </ul>
-                <?php
-                }
-                ?>
-                <ul class="flex-box subtotal-row">
-                    <li class="title">Subtotal: </li>
-                    <li class="amount">$<span><?php echo WC()->cart->subtotal; ?> </span></li>
-                </ul>
-                <?php if (WC()->cart->get_coupon_discount_amount(WC()->cart->get_applied_coupons()[0], false)) {
-                ?>
-                    <ul class="flex-box coupon-row">
-                        <li class="title">Coupon: <?php print_r(WC()->cart->get_applied_coupons()[0]); ?> </li>
-                        <li class="amount">-$<span><?php echo WC()->cart->get_coupon_discount_amount(WC()->cart->get_applied_coupons()[0], false); ?> <button>[Remove]</button></span></li>
-                    </ul>
-                <?php
-                } ?>
+add_action('woocommerce_checkout_before_order_review', 'woocommerce_order_review', 15);
 
-                <ul class="flex-box shipping-row">
-                    <li class="title">Shipping: </li>
-                    <li class="amount">$<span><?php $shippingTotal = WC()->cart->get_shipping_total() + WC()->cart->get_shipping_taxes()[1];
-                                                echo $shippingTotal; ?>
-                        </span>
-                    </li>
-                </ul>
-                <ul class="flex-box tax-row">
-                    <li class="title">Est. GST: </li>
-                    <li class="amount">$<span><?php echo WC()->cart->get_taxes_total(); ?></span> </li>
-                </ul>
-                <ul class="flex-box total-row">
-                    <li class="title">Total: </li>
-                    <li class="amount"><?php echo WC()->cart->get_total(); ?> </li>
-                </ul>
-            </div>
-        </div>
+add_action('woocommerce_checkout_before_order_review', 'webduel_payment_btn', 20);
+
+function webduel_payment_btn()
+{
+    ?>
+
         <div class="payment-logo-container">
             <div class="title">Ways to pay: </div>
             <div class="img-container">
@@ -89,25 +33,27 @@ function webduel_order_review()
                 while ($queryContact->have_posts()) {
                     $queryContact->the_post();
                     // get images 
-                    if(have_rows('payment_option_images')){ 
-                        
-                        while(have_rows('payment_option_images')){ 
-                            the_row(); 
-                            $image = get_sub_field('image')['sizes']['medium'];  
-                            ?>
-                            <img src="<?php echo $image; ?>" alt="<?php echo get_sub_field('title');?>">
-                            <?php 
+                    if (have_rows('payment_option_images')) {
+
+                        while (have_rows('payment_option_images')) {
+                            the_row();
+                            $image = get_sub_field('image')['sizes']['medium'];
+                ?>
+                            <img src="<?php echo $image; ?>" alt="<?php echo get_sub_field('title'); ?>">
+                    <?php
                         }
                     }
-                ?>
-                    
+                    ?>
+
                 <?php
                 }
                 wp_reset_postdata();
                 ?>
             </div>
         </div>
-        <button class="primary-button" id="pay-button" disabled><i class="fa-regular fa-lock-keyhole"></i>Pay Securely Now</button>
+        <div class="pay-button-container">
+            <button class="primary-button" id="pay-button" disabled><i class="fa-regular fa-lock-keyhole"></i>Pay Securely Now</button>
+        </div>
     <?php
 }
 
@@ -127,21 +73,29 @@ function custom_override_checkout_fields($fields)
 {
 
     unset($fields['billing']['billing_company']);
-    // unset($fields['billing']['billing_country']);
-    // unset($fields['billing']['billing_state']);
     unset($fields['billing']['billing_address_2']);
 
     unset($fields['shipping']['shipping_company']);
     unset($fields['shipping']['shipping_address_2']);
-    // unset($fields['shipping']['shipping_country']);
-
+  
     return $fields;
 }
-add_filter( 'default_checkout_billing_state', 'change_default_checkout_state' );
-add_filter( 'default_checkout_shipping_state', 'change_default_checkout_state' );
 
-function change_default_checkout_state() {
-  return 'Select'; // state code
+//    change the country label and make region required  
+add_filter('woocommerce_get_country_locale', 'marcelbotezat_change_state_label_locale');
+function marcelbotezat_change_state_label_locale($locale){
+    $locale['NZ']['country']['label'] = __('Country', 'woocommerce');
+    $locale['NZ']['state']['required'] = true;
+    return $locale;
+}
+
+
+add_filter('default_checkout_billing_state', 'change_default_checkout_state');
+add_filter('default_checkout_shipping_state', 'change_default_checkout_state');
+
+function change_default_checkout_state()
+{
+    return 'Select'; // state code
 }
 
 
@@ -165,3 +119,4 @@ add_action('woocommerce_after_checkout_form', function () {
 
 <?php
 }, 20);
+

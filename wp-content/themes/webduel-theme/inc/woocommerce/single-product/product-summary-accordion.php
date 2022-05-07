@@ -22,7 +22,7 @@ function productDescription(){
             Description
             <span>+</span>
         </h2>
-        <div class="content">
+        <div class="content description">
         '. $product->get_description().'
         </div> 
     </div>'; 

@@ -12,27 +12,48 @@ class WooGallery {
 
     }
     slideShow() {
-        var x = window.matchMedia("(max-width: 800px)")
-        if (x.matches) {
-            $('.woocommerce-product-gallery__wrapper').addClass('owl-carousel')
-
+        // $('.single-product .flex-control-nauv').addClass('owl-carousel')
+        // setTimeout(() => {
+        $(".flex-control-nav ").ready(function () {
+            // Handler for .load() called.
+            var x = window.matchMedia("(max-width: 3000px)")
+            // if (x.matches) {
+            var thubmNav = $('.woocommerce-product-gallery .flex-control-nav');
+            if (thubmNav.length) {
+                if (!thubmNav.closest('.navWrapper').length) {
+                    thubmNav.addClass('owl-carousel')
+                }
+            }
             $('.owl-carousel').owlCarousel({
-                loop: true,
+                loop: false,
+                rewind: true,
+                autoplay: true,
                 margin: 10,
                 nav: true,
+                navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
                 responsive: {
                     0: {
-                        items: 1
+                        items: 4
+                    },
+                    400: {
+                        items: 6
                     },
                     600: {
-                        items: 1
+                        items: 8
                     },
-                    1000: {
-                        items: 1
+                    1366: {
+                        items: 10
                     }
                 }
             })
-        }
+        });
+
+
+        // }
+
+        // }, 200)
+
+
     }
 
 }

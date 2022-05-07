@@ -525,7 +525,7 @@ if (!class_exists('\WP_Smart_Image_Resize\Settings')) :
 
 
             <div id="wp-sir-sizes-options" style="max-height: 500px;overflow-y: scroll;border-bottom: 1px solid #ddd;">
-                <table width="100%" id="wp-sir-sizes-selector" data-defaults="<?php echo implode(',', _wp_sir_get_default_sizes()) ?>">
+                <table  id="wp-sir-sizes-selector" data-defaults="<?php echo implode(',', _wp_sir_get_default_sizes()) ?>">
                     <tr>
                         <th style="padding-left:0;padding-top:10px !important; padding-bottom:10px !important;border-bottom:1px solid #ddd;margin-bottom:0 !important;"><input type="checkbox" id="wp-sir-toggle-all-sizes" <?php echo (count($additional_sizes)) === count($settings['sizes']) ? 'checked' : '' ?> /> Select all</th>
                         <?php if($enable_fit_mode_option): ?>
@@ -609,7 +609,8 @@ if (!class_exists('\WP_Smart_Image_Resize\Settings')) :
                 </table>
             </div>
             <p class="description">
-                Select which image sizes to generate from the list above. To save disk space, only needed sizes are pre-selected. <button id="wpsirResetDefaultSizes" type="button" class="button-link">Reset to pre-selected sizes</button>
+                Select which image sizes to generate from the list above.
+                <br>To save disk space, only needed sizes are pre-selected. <button id="wpsirResetDefaultSizes" type="button" class="button-link">Reset to pre-selected sizes</button>
             </p>
         <?php
         }

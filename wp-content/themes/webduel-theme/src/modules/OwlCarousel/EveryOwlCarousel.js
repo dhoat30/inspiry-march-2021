@@ -1,5 +1,6 @@
 import OwlCarousel from './OwlCarousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
+
 import 'owl.carousel';
 let $ = jQuery;
 class EveryOwlCarousel {
@@ -7,12 +8,14 @@ class EveryOwlCarousel {
         this.events();
     }
     events() {
+        // home page hero slider 
+        this.homeHeroSlider()
         //trending section carousel 
         this.trendingCarousel();
 
         // this.brandLogoHomePageCarousel();
         // product gallery on single product page
-        this.productGallery();
+        // this.productGallery();
 
         // // banner carousel 
         this.banner();
@@ -24,6 +27,27 @@ class EveryOwlCarousel {
         this.homeCategoryCards()
         // be inspired home page
         this.beInspiredHome()
+    }
+    homeHeroSlider() {
+
+        // owl carousel 
+        let className = '.slider-container .owl-carousel';
+        let args = {
+            loop: true,
+            nav: true,
+            margin: 20,
+            lazyLoad: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsiveBaseElement: ".row-container",
+            responsiveClass: true,
+            rewind: true,
+            dots: true,
+            animateOut: 'fadeOut',
+            items: 1
+        }
+        const trendingNow = new OwlCarousel(args, className);
     }
 
     // banner carousel 

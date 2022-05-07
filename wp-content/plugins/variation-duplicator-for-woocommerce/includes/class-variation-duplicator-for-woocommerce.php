@@ -6,7 +6,7 @@
         
         class Variation_Duplicator_For_Woocommerce {
             
-            protected $_version = '2.0.1';
+            protected $_version = '2.0.2';
             
             protected static $_instance = null;
             

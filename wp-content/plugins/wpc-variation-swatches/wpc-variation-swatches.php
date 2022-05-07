@@ -3,20 +3,20 @@
 Plugin Name: WPC Variation Swatches for WooCommerce
 Plugin URI: https://wpclever.net/
 Description: WooCommerce Variation Swatches by WPClever
-Version: 2.1.0
+Version: 2.1.1
 Author: WPClever
 Author URI: https://wpclever.net
 Text Domain: wpc-variation-swatches
 Domain Path: /languages/
 Requires at least: 4.0
-Tested up to: 5.8
+Tested up to: 5.9
 WC requires at least: 3.0
-WC tested up to: 6.0
+WC tested up to: 6.4
 */
 
 defined( 'ABSPATH' ) || exit;
 
-! defined( 'WPCVS_VERSION' ) && define( 'WPCVS_VERSION', '2.1.0' );
+! defined( 'WPCVS_VERSION' ) && define( 'WPCVS_VERSION', '2.1.1' );
 ! defined( 'WPCVS_URI' ) && define( 'WPCVS_URI', plugin_dir_url( __FILE__ ) );
 ! defined( 'WPCVS_DIR' ) && define( 'WPCVS_DIR', plugin_dir_path( __FILE__ ) );
 ! defined( 'WPCVS_REVIEWS' ) && define( 'WPCVS_REVIEWS', 'https://wordpress.org/support/plugin/wpc-variation-swatches/reviews/?filter=5' );
@@ -248,11 +248,10 @@ if ( ! function_exists( 'wpcvs_init' ) ) {
                         <div class="wpclever_settings_page_nav">
                             <h2 class="nav-tab-wrapper">
                                 <a href="<?php echo admin_url( 'admin.php?page=wpclever-wpcvs&tab=settings' ); ?>"
-                                   class="<?php echo $active_tab === 'settings' ? 'nav-tab nav-tab-active' : 'nav-tab'; ?>">
+                                   class="<?php echo esc_attr( $active_tab === 'settings' ? 'nav-tab nav-tab-active' : 'nav-tab' ); ?>">
 									<?php esc_html_e( 'Settings', 'wpc-variation-swatches' ); ?>
                                 </a>
-                                <a href="<?php echo esc_url( admin_url( 'admin.php?page=wpclever-kit' ) ); ?>"
-                                   class="nav-tab">
+                                <a href="<?php echo admin_url( 'admin.php?page=wpclever-kit' ); ?>" class="nav-tab">
 									<?php esc_html_e( 'Essential Kit', 'wpc-variation-swatches' ); ?>
                                 </a>
                             </h2>
@@ -267,7 +266,7 @@ if ( ! function_exists( 'wpcvs_init' ) ) {
 								$archive_position = get_option( 'wpcvs_archive_position', 'before' );
 								?>
                                 <form method="post" action="options.php">
-									<?php wp_nonce_field( 'update-options' ) ?>
+									<?php wp_nonce_field( 'update-options' ); ?>
                                     <table class="form-table">
                                         <tr class="heading">
                                             <th colspan="2">
@@ -278,8 +277,8 @@ if ( ! function_exists( 'wpcvs_init' ) ) {
                                             <th><?php esc_html_e( 'Button swatch by default', 'wpc-variation-swatches' ); ?></th>
                                             <td>
                                                 <select name="wpcvs_button_default">
-                                                    <option value="yes" <?php echo( $button_default === 'yes' ? 'selected' : '' ); ?>><?php esc_html_e( 'Yes', 'wpc-variation-swatches' ); ?></option>
-                                                    <option value="no" <?php echo( $button_default === 'no' ? 'selected' : '' ); ?>><?php esc_html_e( 'No', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="yes" <?php echo esc_attr( $button_default === 'yes' ? 'selected' : '' ); ?>><?php esc_html_e( 'Yes', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="no" <?php echo esc_attr( $button_default === 'no' ? 'selected' : '' ); ?>><?php esc_html_e( 'No', 'wpc-variation-swatches' ); ?></option>
                                                 </select>
                                                 <span class="description">
                                                     <?php esc_html_e( 'Turn the default type to button type.', 'wpc-variation-swatches' ); ?>
@@ -290,8 +289,8 @@ if ( ! function_exists( 'wpcvs_init' ) ) {
                                             <th><?php esc_html_e( 'Enable second click to undo?', 'wpc-variation-swatches' ); ?></th>
                                             <td>
                                                 <select name="wpcvs_second_click">
-                                                    <option value="yes" <?php echo( $second_click === 'yes' ? 'selected' : '' ); ?>><?php esc_html_e( 'Yes', 'wpc-variation-swatches' ); ?></option>
-                                                    <option value="no" <?php echo( $second_click === 'no' ? 'selected' : '' ); ?>><?php esc_html_e( 'No', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="yes" <?php echo esc_attr( $second_click === 'yes' ? 'selected' : '' ); ?>><?php esc_html_e( 'Yes', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="no" <?php echo esc_attr( $second_click === 'no' ? 'selected' : '' ); ?>><?php esc_html_e( 'No', 'wpc-variation-swatches' ); ?></option>
                                                 </select>
                                                 <span class="description">
                                                     <?php esc_html_e( 'Enable/disable click again to undo the selection on current attribute.', 'wpc-variation-swatches' ); ?>
@@ -302,11 +301,11 @@ if ( ! function_exists( 'wpcvs_init' ) ) {
                                             <th><?php esc_html_e( 'Tooltip position', 'wpc-variation-swatches' ); ?></th>
                                             <td>
                                                 <select name="wpcvs_tooltip">
-                                                    <option value="top" <?php echo( $tooltip === 'top' ? 'selected' : '' ); ?>><?php esc_html_e( 'Top', 'wpc-variation-swatches' ); ?></option>
-                                                    <option value="right" <?php echo( $tooltip === 'right' ? 'selected' : '' ); ?>><?php esc_html_e( 'Right', 'wpc-variation-swatches' ); ?></option>
-                                                    <option value="bottom" <?php echo( $tooltip === 'bottom' ? 'selected' : '' ); ?>><?php esc_html_e( 'Bottom', 'wpc-variation-swatches' ); ?></option>
-                                                    <option value="left" <?php echo( $tooltip === 'left' ? 'selected' : '' ); ?>><?php esc_html_e( 'Left', 'wpc-variation-swatches' ); ?></option>
-                                                    <option value="no" <?php echo( $tooltip === 'no' ? 'selected' : '' ); ?>><?php esc_html_e( 'No', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="top" <?php echo esc_attr( $tooltip === 'top' ? 'selected' : '' ); ?>><?php esc_html_e( 'Top', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="right" <?php echo esc_attr( $tooltip === 'right' ? 'selected' : '' ); ?>><?php esc_html_e( 'Right', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="bottom" <?php echo esc_attr( $tooltip === 'bottom' ? 'selected' : '' ); ?>><?php esc_html_e( 'Bottom', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="left" <?php echo esc_attr( $tooltip === 'left' ? 'selected' : '' ); ?>><?php esc_html_e( 'Left', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="no" <?php echo esc_attr( $tooltip === 'no' ? 'selected' : '' ); ?>><?php esc_html_e( 'No', 'wpc-variation-swatches' ); ?></option>
                                                 </select>
                                             </td>
                                         </tr>
@@ -314,8 +313,8 @@ if ( ! function_exists( 'wpcvs_init' ) ) {
                                             <th><?php esc_html_e( 'Style', 'wpc-variation-swatches' ); ?></th>
                                             <td>
                                                 <select name="wpcvs_style">
-                                                    <option value="square" <?php echo( $style === 'square' ? 'selected' : '' ); ?>><?php esc_html_e( 'Square', 'wpc-variation-swatches' ); ?></option>
-                                                    <option value="rounded" <?php echo( $style === 'rounded' ? 'selected' : '' ); ?>><?php esc_html_e( 'Rounded', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="square" <?php echo esc_attr( $style === 'square' ? 'selected' : '' ); ?>><?php esc_html_e( 'Square', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="rounded" <?php echo esc_attr( $style === 'rounded' ? 'selected' : '' ); ?>><?php esc_html_e( 'Rounded', 'wpc-variation-swatches' ); ?></option>
                                                 </select>
                                             </td>
                                         </tr>
@@ -328,8 +327,8 @@ if ( ! function_exists( 'wpcvs_init' ) ) {
                                             <th><?php esc_html_e( 'Enable', 'wpc-variation-swatches' ); ?></th>
                                             <td>
                                                 <select name="wpcvs_archive_enable">
-                                                    <option value="yes" <?php echo( $archive_enable === 'yes' ? 'selected' : '' ); ?>><?php esc_html_e( 'Yes', 'wpc-variation-swatches' ); ?></option>
-                                                    <option value="no" <?php echo( $archive_enable === 'no' ? 'selected' : '' ); ?>><?php esc_html_e( 'No', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="yes" <?php echo esc_attr( $archive_enable === 'yes' ? 'selected' : '' ); ?>><?php esc_html_e( 'Yes', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="no" <?php echo esc_attr( $archive_enable === 'no' ? 'selected' : '' ); ?>><?php esc_html_e( 'No', 'wpc-variation-swatches' ); ?></option>
                                                 </select>
                                                 <span class="description">
                                                     <?php esc_html_e( 'Enable swatches for shop/ archive page.', 'wpc-variation-swatches' ); ?>
@@ -340,9 +339,9 @@ if ( ! function_exists( 'wpcvs_init' ) ) {
                                             <th><?php esc_html_e( 'Position', 'wpc-variation-swatches' ); ?></th>
                                             <td>
                                                 <select name="wpcvs_archive_position">
-                                                    <option value="before" <?php echo( $archive_position === 'before' ? 'selected' : '' ); ?>><?php esc_html_e( 'Before add to cart button', 'wpc-variation-swatches' ); ?></option>
-                                                    <option value="after" <?php echo( $archive_position === 'after' ? 'selected' : '' ); ?>><?php esc_html_e( 'After add to cart button', 'wpc-variation-swatches' ); ?></option>
-                                                    <option value="none" <?php echo( $archive_position === 'none' ? 'selected' : '' ); ?>><?php esc_html_e( 'None', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="before" <?php echo esc_attr( $archive_position === 'before' ? 'selected' : '' ); ?>><?php esc_html_e( 'Before add to cart button', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="after" <?php echo esc_attr( $archive_position === 'after' ? 'selected' : '' ); ?>><?php esc_html_e( 'After add to cart button', 'wpc-variation-swatches' ); ?></option>
+                                                    <option value="none" <?php echo esc_attr( $archive_position === 'none' ? 'selected' : '' ); ?>><?php esc_html_e( 'None', 'wpc-variation-swatches' ); ?></option>
                                                 </select>
                                                 <span class="description">
                                                     <?php printf( esc_html__( 'Swatches position on archive page. You also can use the shortcode: %s', 'wpc-variation-swatches' ), '<code>[wpcvs_archive]</code>' ); ?>

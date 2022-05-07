@@ -6,7 +6,7 @@ Stable tag: trunk
 Requires at least: 5.6
 Tested up to: 5.9
 WC requires at least: 5.6
-WC tested up to: 6.2
+WC tested up to: 6.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,9 +51,9 @@ Say good by to manually add the same variation image, variation price, SKU for t
 
 ### Automatic Install From WordPress Dashboard
 
-1. Login to your the admin panel
+1. Login to your admin panel
 2. Navigate to Plugins -> Add New
-3. Search **Variation Duplicator for WooCommerce**
+3. Search **Duplicate Variations for WooCommerce**
 4. Click install and activate respectively.
 
 ### Manual Install From WordPress Dashboard
@@ -77,6 +77,11 @@ If you are unable to use any of the methods due to internet connectivity and fil
 7. Activate the plugin
 
 == Changelog ==
+
+= 2.0.2 - 23-03-2022 =
+
+* Add WooCommerce 6.3+ compatibility
+* Add action hooks to more control.
 
 = 2.0.1 - 25-02-2022 =
 

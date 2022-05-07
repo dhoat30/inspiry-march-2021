@@ -1,8 +1,11 @@
 .inspiry-specials .hero-section {
-  height: 500px;
-  background-position: center !important;
-  /* background-attachment: fixed !important; */
+  padding-bottom: 25%;
   position: relative;
+  .sales-banner {
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .inspiry-specials .content {

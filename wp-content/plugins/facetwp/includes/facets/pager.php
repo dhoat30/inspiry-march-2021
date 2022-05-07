@@ -24,13 +24,7 @@ class FacetWP_Facet_Pager extends FacetWP_Facet
 
         $method = 'render_' . $pager_type;
         if ( method_exists( $this, $method ) ) {
-            $output = $this->$method( $facet );
-
-            if ( 'numbers' == $pager_type ) {
-                $output = '<div class="facetwp-pager">' . $output . '</div>';
-            }
-
-            return $output;
+            return $this->$method( $facet );
         }
     }
 
@@ -42,8 +36,8 @@ class FacetWP_Facet_Pager extends FacetWP_Facet
         $next_label = facetwp_i18n( $facet['next_label'] );
 
         $output = '';
-        $page = $this->pager_args['page'];
-        $total_pages = $this->pager_args['total_pages'];
+        $page = (int) $this->pager_args['page'];
+        $total_pages = (int) $this->pager_args['total_pages'];
         $inner_first = max( $page - $inner_size, 2 );
         $inner_last = min( $page + $inner_size, $total_pages - 1 );
 
@@ -80,7 +74,7 @@ class FacetWP_Facet_Pager extends FacetWP_Facet
             }
         }
 
-        return $output;
+        return '<div class="facetwp-pager">' . $output . '</div>';
     }
 
 
@@ -97,7 +91,13 @@ class FacetWP_Facet_Pager extends FacetWP_Facet
         }
 
         $data = empty( $page ) ? '' : ' data-page="' . $page . '"';
-        return '<a class="' . $class . '"' . $data . '>' . $label . '</a>';
+        $html = '<a class="' . $class . '"' . $data . '>' . $label . '</a>';
+
+        return apply_filters( 'facetwp_facet_pager_link', $html, [
+            'page' => $page,
+            'label' => $label,
+            'extra_class' => $extra_class
+        ]);
     }
 
 
@@ -110,6 +110,10 @@ class FacetWP_Facet_Pager extends FacetWP_Facet
         $per_page = $this->pager_args['per_page'];
         $total_rows = $this->pager_args['total_rows'];
         $total_pages = $this->pager_args['total_pages'];
+
+        if ( -1 == $per_page ) {
+            $per_page = $total_rows;
+        }
 
         if ( 1 < $total_rows ) {
             $lower = ( 1 + ( ( $page - 1 ) * $per_page ) );
@@ -141,31 +145,37 @@ class FacetWP_Facet_Pager extends FacetWP_Facet
         $text = facetwp_i18n( $facet['load_more_text'] );
         $loading_text = facetwp_i18n( $facet['loading_text'] );
 
-        $output = '<button class="facetwp-load-more" data-loading="' . esc_attr( $loading_text ) . '">' . esc_attr( $text ) . '</button>';
-        return $output;
+        return '<button class="facetwp-load-more" data-loading="' . esc_attr( $loading_text ) . '">' . esc_attr( $text ) . '</button>';
     }
 
 
     function render_per_page( $facet ) {
-        $label = facetwp_i18n( $facet['default_label'] );
-        $options = explode( ',', str_replace( ' ', '', $facet['per_page_options'] ) );
+        $default = facetwp_i18n( $facet['default_label'] );
+        $options = explode( ',', $facet['per_page_options'] );
+        $options = array_map( 'trim', $options );
+        $output = '';
 
-        $output = '<select class="facetwp-per-page-select">';
-
-        if ( ! empty( $label ) ) {
-            $output .= '<option value="">' . $label . '</option>';
+        if ( ! empty( $default ) ) {
+            $output .= '<option value="">' . esc_attr( $default ) . '</option>';
         }
 
         $per_page = $this->pager_args['per_page'];
         $var_exists = isset( FWP()->request->url_vars['per_page'] );
 
         foreach ( $options as $option ) {
-            $selected = ( $var_exists && $option == $per_page ) ? ' selected' : '';
-            $output .= '<option value="' . $option . '"' . $selected . '>' . $option . '</option>';
+            $val = $label = $option;
+
+            // Support "All" option
+            if ( ! ctype_digit( $val ) ) {
+                $val = -1;
+                $label = facetwp_i18n( $label );
+            }
+
+            $selected = ( $var_exists && $val == $per_page ) ? ' selected' : '';
+            $output .= '<option value="' . $val . '"' . $selected . '>' . esc_attr( $label ) . '</option>';
         }
 
-        $output .= '</select>';
-        return $output;
+        return '<select class="facetwp-per-page-select">' . $output . '</select>';
     }
 
 
@@ -258,7 +268,7 @@ class FacetWP_Facet_Pager extends FacetWP_Facet
             ],
             'per_page_options' => [
                 'label' => __( 'Per page options', 'fwp' ),
-                'notes' => 'A comma-separated list of choices',
+                'notes' => 'A comma-separated list of choices. Optionally add a non-numeric choice to be used as a "Show all" option.',
                 'default' => '10, 25, 50, 100',
                 'show' => "facet.pager_type == 'per_page'"
             ]

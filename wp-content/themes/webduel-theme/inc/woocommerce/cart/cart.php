@@ -336,14 +336,20 @@ add_action('woocommerce_before_cart', function () {
                     </ul>
                 <?php
                 } ?>
-
-                <ul class="flex-box shipping-row">
+                <?php $shippingTotal = WC()->cart->get_shipping_total() + WC()->cart->get_shipping_taxes()[1];
+                    if($shippingTotal > 0 ){ 
+                        ?>
+  <ul class="flex-box shipping-row">
                     <li class="title">Shipping: </li>
-                    <li class="amount">$<span><?php $shippingTotal = WC()->cart->get_shipping_total() + WC()->cart->get_shipping_taxes()[1];
-                                                echo $shippingTotal; ?>
+                  
+                    <li class="amount">$<?php echo $shippingTotal;?> <span>
                         </span>
                     </li>
                 </ul>
+                        <?php 
+                    }                            
+                    ?>
+              
                 <ul class="flex-box tax-row">
                     <li class="title">Est. GST: </li>
                     <li class="amount">$<span><?php echo WC()->cart->get_taxes_total(); ?></span> </li>

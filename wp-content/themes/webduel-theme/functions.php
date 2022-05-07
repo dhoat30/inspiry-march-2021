@@ -77,7 +77,7 @@ require get_theme_file_path('/inc/design-board-modal/design-board-modal.php');
 
  //enqueue scripts
  function inspiry_scripts(){ 
-   wp_enqueue_script('main', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', true);
+   wp_enqueue_script('main', get_theme_file_uri('/build/index.js'), array('jquery', 'megamenu'), '1.0', true);
    wp_enqueue_style('university_main_styles', get_theme_file_uri('/build/style-index.css'));
    wp_enqueue_style('university_extra_styles', get_theme_file_uri('/build/index.css'));
 

@@ -32,6 +32,7 @@ import MobileSearch from "./modules/MobileSearch";
 
 // facet filter
 import FacetFilter from './modules/FacetFilter/FacetFilter'
+import SortProduct from "./modules/FacetFilter/SortProduct";
 
 // customer service 
 import CustomerServiceMenu from './modules/CustomerService/CustomerServiceMenu'
@@ -53,6 +54,8 @@ import Checkout from "./modules/Woocommerce/Checkout/Checkout";
 // header 
 import Header from './modules/Header'
 import StockToggle from "./modules/Buttons/StockToggle/StockToggle";
+import FixedNavMobile from "./modules/Scroll/FixedNavMobile";
+import MobileMenu from "./modules/NavMenu/MobileMenu";
 
 let $ = jQuery;
 
@@ -79,10 +82,15 @@ const coupon = new Coupon()
 const errorModal = new ErrorModal()
 // design board save button 
 const designBoardSaveBtn = new DesignBoardSaveBtn();
-
+// scroll events 
+const fixedNavMobile = new FixedNavMobile()
 // header 
 const header = new Header();
+
+// mobile menu 
+const mobileMenu = new MobileMenu()
 window.onload = function () {
+
   // checkout 
   const checkout = new Checkout()
 
@@ -109,6 +117,7 @@ window.onload = function () {
 
   // facet filter 
   const facetFilter = new FacetFilter()
+  const sortProduct = new SortProduct()
 
   // customer service 
   const customerServiceMenu = new CustomerServiceMenu()
@@ -221,4 +230,20 @@ window.addEventListener("scroll", myScrollFunc);
 })(jQuery);
 
 
+/**********************Add js to js file on header or footer*********************************/
+
+// $(window).load(function () {
+//   setTimeout(function () {
+//     var thubmNav = $('.woocommerce-product-gallery .flex-control-nav');
+//     if (thubmNav.length) {
+//       //console.log('asd', !thubmNav.closest('.navWrapper').length)
+//       $('.woocommerce-product-gallery').addClass('flexslider')
+//       thubmNav.addClass('slides');
+
+//       $('.flexslider').flexslider();
+
+
+//     }
+//   }, 100)
+// });
 

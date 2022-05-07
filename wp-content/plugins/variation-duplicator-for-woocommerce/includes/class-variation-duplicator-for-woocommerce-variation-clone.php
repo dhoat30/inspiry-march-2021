@@ -18,6 +18,7 @@
             
             public function __construct() {
                 $this->hooks();
+                do_action( 'variation_duplicator_for_woocommerce_variation_clone_loaded', $this );
             }
             
             public function hooks() {
@@ -40,7 +41,7 @@
                     printf( '<div class="inline notice variation-duplicator-for-woocommerce-notice"><p>%s</p></div>', $message );
                     delete_transient( 'woo_variation_duplicator_cloned_ids' );
                 }
-
+                
                 if ( $limit_exceed ) {
                     printf( '<div class="inline notice variation-duplicator-for-woocommerce-notice error"><p>%s</p></div>', esc_html__( 'Variation clone limit exceed.', 'variation-duplicator-for-woocommerce' ) );
                     delete_transient( 'woo_variation_duplicator_exceed_clone_limit' );
@@ -62,7 +63,7 @@
                 
                 // Set $post global so its available, like within the admin screens.
                 global $post;
-
+                
                 $loop           = 0;
                 $product_id     = absint( $_POST[ 'product_id' ] );
                 $post           = get_post( $product_id ); // phpcs:ignore
@@ -70,17 +71,17 @@
                 $per_page       = ! empty( $_POST[ 'per_page' ] ) ? absint( $_POST[ 'per_page' ] ) : 10;
                 $page           = ! empty( $_POST[ 'page' ] ) ? absint( $_POST[ 'page' ] ) : 1;
                 $variations     = wc_get_products( array(
-                    'status'  => array( 'private', 'publish' ),
-                    'type'    => 'variation',
-                    'parent'  => $product_id,
-                    'limit'   => $per_page,
-                    'page'    => $page,
-                    'orderby' => array(
-                        'menu_order' => 'ASC',
-                        'ID'         => 'DESC',
-                    ),
-                    'return'  => 'objects',
-                ) );
+                                                       'status'  => array( 'private', 'publish' ),
+                                                       'type'    => 'variation',
+                                                       'parent'  => $product_id,
+                                                       'limit'   => $per_page,
+                                                       'page'    => $page,
+                                                       'orderby' => array(
+                                                           'menu_order' => 'ASC',
+                                                           'ID'         => 'DESC',
+                                                       ),
+                                                       'return'  => 'objects',
+                                                   ) );
                 
                 if ( $variations ) {
                     do_action( 'woo_variation_duplicator_load_variations', $product_object, $variations );
@@ -94,10 +95,10 @@
                         $loop ++;
                     }
                 }
-
+                
                 wp_die();
             }
-
+            
             public function add_checkbox( $variation ) {
                 printf( '<label class="clone-checkbox">
 <input class="no-track-change variation_is_cloneable" type="checkbox" name="variation_is_cloneable[]" value="%d"><span class="clone-text" data-clone-text="%s" data-clone-save-text="%s"></span>
@@ -114,19 +115,19 @@
                     $exceed      = wc_string_to_bool( $data[ 'exceed' ] );
                     $clone_limit = absint( apply_filters( 'woo_variation_duplicator_clone_limit', 9 ) );
                     $times       = ( $get_limit > $clone_limit ) ? 1 : $get_limit;
-
+                    
                     if ( $exceed ) {
                         set_transient( 'woo_variation_duplicator_exceed_clone_limit', 1 );
                     }
-
+                    
                     $variation_ids = array_map( 'absint', $data[ 'items' ] );
                     $cloned_ids    = [];
-
+                    
                     foreach ( $variation_ids as $variation_id ) {
                         for ( $i = 1; $i <= $times; $i ++ ) {
                             // Main Variation
                             $variation_object = wc_get_product_object( 'variation', $variation_id );
-
+                            
                             $cloned_variation_object = wc_get_product_object( 'variation', $variation_id );
                             $cloned_variation_object->set_props( [ 'id' => 0 ] );
                             $cloned_variation_object->set_parent_id( $product_id );

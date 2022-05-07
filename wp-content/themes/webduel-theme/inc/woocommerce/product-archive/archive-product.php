@@ -6,24 +6,35 @@ add_action('woocommerce_archive_title', 'woocommerce_result_count', 10);
 
 // add sort by and filter--------------------------------------------
 remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
-add_action('woocommerce_archive_description', function () {
+add_action('woocommerce_archive_description', 'filter_container_start', 20);
+function filter_container_start() {
    ?>
-   <div class="filter-sort-container"> 
+   <div class="filter-sort-container "> 
+      <div class="filter-sort-flex">
    <?php
-}, 20);
-
+}
 // add sort form 
-add_action('woocommerce_archive_description', 'woocommerce_catalog_ordering', 40);
-add_action('woocommerce_archive_description', function () {
+add_action('woocommerce_archive_description', 'woocommerce_catalog_ordering', 60);
+add_action('woocommerce_archive_description', "adding_filter_button", 50);
+function adding_filter_button() {
    ?> 
-      <div class="filter-stock-container">
-         <button class="filter-button secondary-button"><i class="fa-regular fa-filter-list"></i> <span>Show Filters</span></button>
-         <?php echo do_shortcode('[in_stock_toggle]');
-         ?>
-      </div>
-   </div>
+         <button class="filter-button secondary-button"><i class="fa-regular fa-filter-list"></i> <span>Filter</span></button>
+
+ 
    <?php 
-}, 60);
+}
+
+add_action('woocommerce_archive_description', "filter_container_end", 70); 
+function filter_container_end(){ 
+   ?>
+     </div>
+   <?php 
+    echo do_shortcode('[in_stock_toggle]');
+   ?>
+</div>
+<?php 
+}
+
 
 // remove add to cart button on loop product page
 add_action('woocommerce_after_shop_loop_item', 'remove_add_to_cart_buttons', 1);

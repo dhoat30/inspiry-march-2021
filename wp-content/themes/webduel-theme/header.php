@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
@@ -28,7 +29,7 @@
 
 
     <!-- splide -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"> -->
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/71827cc3f2.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
@@ -41,22 +42,30 @@
 
     <!-- Meta Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '828264374302518');
-    fbq('track', 'PageView');
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '828264374302518');
+        fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=828264374302518&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=828264374302518&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
-    
+
     <?php
     // get user email address 
     $pinterestUserEmail;
@@ -99,7 +108,7 @@
 </head>
 
 <body id="header" <?php body_class(); ?>>
-    
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS7XFHN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -207,7 +216,7 @@
                 </div>
             </div>
         </div>
-      
+
         <!-- top navbar -->
         <section class="top-navbar-section row-container">
             <nav class="navbar">
@@ -278,80 +287,69 @@
 
 
         <!--  main menu-->
-        <section class="main-navbar-section row-container">
-            <nav class="navbar ">
-                <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'inspiry_main_menu',
-                        'container_id' => 'cssmenu'
-                    )
-                );
-                ?>
-            </nav>
-            <div class="logo-container">
-                <?php
-                $argsLogo = array(
-                    'post_type' => 'page',
-                    'pagename' => 'contact',
-                    'posts_per_page' => 1
-                );
-                $queryLogo = new WP_Query($argsLogo);
-                while ($queryLogo->have_posts()) {
-                    $queryLogo->the_post();
-                    $image = get_field('logo')['url'];
-                ?>
-                    <a href="/">
-                        <img src="<?php echo $image ?>" alt="Inspiry Logo" />
-                    </a>
-                <?php
-                }
-                wp_reset_postdata();
-                ?>
-            </div>
-            <div class="useful-links-container">
-                <div class="cart-container container shopping-cart ">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-item-count cart-items-header"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
-                </div>
-                <div class="sign-in-container container">
-                    <i class="fa-solid fa-user"></i>
+        <div class="fixed-nav-container" id="fixed-nav-container">
+        <div class="mobile-nav-overlay"></div>
+            <section class="main-navbar-section row-container">
+         
+                <nav class="navbar ">
                     <?php
-                    // sign in modal 
-                    echo do_shortcode('[sign-in-modal]');
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'inspiry_main_menu_mobile',
+                            'container_id' => 'cssmenu'
+                        )
+                    );
+                    ?>
+                </nav>
+                <div class="logo-container">
+                    <?php
+                    $argsLogo = array(
+                        'post_type' => 'page',
+                        'pagename' => 'contact',
+                        'posts_per_page' => 1
+                    );
+                    $queryLogo = new WP_Query($argsLogo);
+                    while ($queryLogo->have_posts()) {
+                        $queryLogo->the_post();
+                        $image = get_field('logo')['url'];
+                    ?>
+                        <a href="/">
+                            <img src="<?php echo $image ?>" alt="Inspiry Logo" />
+                        </a>
+                    <?php
+                    }
+                    wp_reset_postdata();
                     ?>
                 </div>
+                <div class="useful-links-container">
+                    <div class="cart-container container shopping-cart ">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-item-count cart-items-header"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+                    </div>
+                    <div class="sign-in-container container">
+                        <i class="fa-solid fa-user"></i>
+                        <?php
+                        // sign in modal 
+                        echo do_shortcode('[sign-in-modal]');
+                        ?>
+                    </div>
 
-            </div>
-        </section>
-        <div class="search-container">
-            <div class="search-code row-container">
-                <div class="search-bar">
-                    <input autocomplete="off" type="text" class="search-input" placeholder="Search for rugs, furniture, and more" id="mobile-search-term" />
-                    <i class="fad fa-spinner fa-spin" aria-hidden="true"></i>
-                    <i class="far fa-search mobile-search" aria-hidden="true"></i>
                 </div>
-                <div class="result-div"></div>
+            </section>
+            <div class="search-container">
+                <div class="search-code row-container">
+                    <div class="search-bar">
+                        <input autocomplete="off" type="text" class="search-input" placeholder="Search for rugs, furniture, and more" id="mobile-search-term" />
+                        <i class="fad fa-spinner fa-spin" aria-hidden="true"></i>
+                        <i class="far fa-search mobile-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="result-div"></div>
+                </div>
             </div>
+           
         </div>
     </section>
-    <!-- <div class="design-boards-icon-container container">
-                    <i class="fa-solid fa-heart"></i>
-                </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <!-- cart drop down -->
     <div class="cart-popup-container box-shadow">
         <div class="cart-box">
             <div class="title-section">
@@ -363,15 +361,17 @@
 
                 foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
                     $product = $cart_item['data'];
-                    $product_id = $product_id = $cart_item['product_id'];
-
+                    $product_id = $cart_item['product_id'];
+                    $variationID = $cart_item['variation_id']; 
                     $quantity = $cart_item['quantity'];
                     $price = WC()->cart->get_product_price($product);
                     $subtotal = WC()->cart->get_product_subtotal($product, $cart_item['quantity']);
                     $link = $product->get_permalink($cart_item);
                     // Anything related to $product, check $product tutorial
                     $meta = wc_get_formatted_cart_item_data($cart_item);
-
+                    if($variationID){ 
+                        $product_id = $variationID;
+                    }
                 ?>
                     <div class="product-card">
                         <?php
@@ -389,7 +389,7 @@
                         ?>
                             <a href="<?php echo $permalink; ?>" class="mini_cart_item <?php echo $cart_item_key; ?>">
                                 <div class="img-container">
-                                    <img src="<?php echo wp_get_attachment_image_url($imageID, 'woocommerce_thumbnail'); ?>" alt="<?php echo $name; ?>" />
+                                    <img src="<?php echo wp_get_attachment_image_url($imageID, 'woocommerce_gallery_thumbnail'); ?>" alt="<?php echo $name; ?>" />
                                 </div>
 
                                 <div class="title-container">
@@ -409,7 +409,7 @@
                         ?>
                             <a href="<?php echo $link ?>" class="mini_cart_item <?php echo $cart_item_key; ?>">
                                 <div class="img-container">
-                                    <img src="<?php echo get_the_post_thumbnail_url($product_id, 'medium'); ?>" alt="<?php echo $product->name ?>" />
+                                    <img src="<?php echo get_the_post_thumbnail_url( $product_id , 'woocommerce_gallery_thumbnail'); ?>" alt="<?php echo $product->name ?>" />
                                 </div>
                                 <div class="title-container">
                                     <h5 class="title"> <?php echo $quantity; ?> X <?php echo $product->name ?></h5>

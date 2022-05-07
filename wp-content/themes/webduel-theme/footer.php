@@ -154,7 +154,7 @@
         <a href="<?php echo get_site_url(); ?>/customer-service/terms-conditions/">Terms & Conditions</a>
       </div>
       <div class="copyright">
-        © Copyright 2019 Inspiry NZ. All rights reserved.
+        © Copyright 2022 Inspiry NZ. All rights reserved.
       </div>
     </div>
   </div>
@@ -185,6 +185,14 @@
     <button>Dismiss</button>
   </div>
 </div>
+
+<!-- phone  -->
+<!-- <div class="fixed-phone-container">
+  <button class="primary-button call-btn">
+  <i class="fa-regular fa-phone"></i>
+    <span>Call</span>
+  </button>
+</div> -->
 <!-- design board modal  -->
 <?php
 do_action('design_board_modal_hook'); ?>

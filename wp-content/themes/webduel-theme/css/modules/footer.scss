@@ -186,3 +186,28 @@ footer {
 .hide {
   display: none;
 }
+
+// fixed phone container
+.fixed-phone-container {
+  .call-btn {
+    text-transform: capitalize;
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    background-color: #b1c3b1;
+    border-radius: 999rem !important;
+    border: 1px solid #b1c3b1;
+    padding: 12px 22px !important;
+    letter-spacing: 0.6;
+    font-weight: 700;
+    font-size: 15px;
+    width: 120px;
+    i {
+      font-size: 15px;
+      color: #404b40;
+    }
+    span {
+      color: #404b40;
+    }
+  }
+}

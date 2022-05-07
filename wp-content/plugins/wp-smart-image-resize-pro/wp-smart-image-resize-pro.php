@@ -11,7 +11,7 @@
  * Plugin Name: Smart Image Resize PRO
  * Plugin URI: https://sirplugin.com
  * Description: Make WooCommerce products images the same size and uniform without cropping.
- * Version: 1.7.6.2
+ * Version: 1.7.6.4
  * Author: Nabil Lemsieh
  * Author URI: https://sirplugin.com
  * License: GPLv3
@@ -47,7 +47,7 @@ if (!(defined('WP_CLI') && WP_CLI) && function_exists('\is_plugin_active') && fu
 endif;
 
 
-define( 'WP_SIR_VERSION', '1.7.6.2' );
+define( 'WP_SIR_VERSION', '1.7.6.4' );
 define( 'WP_SIR_NAME', 'wp-smart-image-resize' );
 define( 'WP_SIR_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WP_SIR_URL', plugin_dir_url( __FILE__ ) );
@@ -58,7 +58,7 @@ define('WP_SIR_IS_PRO', '1');
 
 
 try {
-    require_once WP_SIR_DIR . 'lib/wp-package-updater/class-wp-package-updater.php';
+    include_once WP_SIR_DIR . 'lib/wp-package-updater/class-wp-package-updater.php';
 
     $__u = new \WP_Package_Updater_SIR(
         'https://updates.nabillemsieh.com',
@@ -89,11 +89,11 @@ if( ! function_exists('\wp_sir_activate') ){
 // Load
 register_activation_hook( __FILE__, 'wp_sir_activate' );
 
-require_once WP_SIR_DIR . 'src/Plugin.php';
+include_once WP_SIR_DIR . 'src/Plugin.php';
 
 // Run the plugin.
 add_action( 'plugins_loaded', [\WP_Smart_Image_Resize\Plugin::get_instance(), 'run']);
 
 if(apply_filters('wp_sir_allow_background_processing', true)){
-    require_once(WP_SIR_DIR . '/libraries/action-scheduler/action-scheduler.php');
+    include_once(WP_SIR_DIR . '/libraries/action-scheduler/action-scheduler.php');
 }

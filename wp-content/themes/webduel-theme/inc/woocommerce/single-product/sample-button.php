@@ -15,18 +15,18 @@ function bbloomer_add_free_sample_add_cart() {
         if (strstr($_SERVER['SERVER_NAME'], 'localhost')) {
       ?>
       
-      <button type="submit" name="add-to-cart" value="456280" class="button btn-dk-green-border btn-full-width margin-top">ORDER FREE SAMPLE</button>
+      <button type="submit" name="add-to-cart" value="999540738" class="button btn-dk-green-border btn-full-width margin-top order-free-sample-btn">ORDER FREE SAMPLE</button>
       <?php
         }
 
         else{
             ?>
-              <button type="submit" name="add-to-cart" value="999471569" class="button btn-dk-green-border btn-full-width margin-top">ORDER FREE SAMPLE</button>
+              <button type="submit" name="add-to-cart" value="999471569" class="button btn-dk-green-border btn-full-width margin-top order-free-sample-btn">ORDER FREE SAMPLE</button>
 
             <?php
         }
       ?>
-      <input type="hidden" name="free_sample" value="<?php the_ID(); ?>">
+      <input id="order-free-sample-input" type="hidden" name="free_sample" value="<?php the_ID(); ?>">
       </form>
    <?php
     }

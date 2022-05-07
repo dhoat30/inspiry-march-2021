@@ -6,6 +6,7 @@
          "my-account-nav-top" => "My Account Top Navbar",
            "top-navbar" => "Top Navbar (under logo)",
           "inspiry_main_menu" => "Inspiry Main Menu",
+          "inspiry_main_menu_mobile" => "Inspiry Main Menu Mobile",
           "footer-services" => "Footer Services", 
           "footer-help-info" => "Footer Help & info", 
           "footer-store" => "Footer Store", 

@@ -17,7 +17,7 @@ class TrimCommand extends ResizeCommand
         $base = $this->argument(0)->type('string')->value();
         $away = $this->argument(1)->value();
         $tolerance = $this->argument(2)->type('numeric')->value(0);
-        $feather = $this->argument(3)->type('numeric')->value(0);
+        $feather = 0;//$this->argument(3)->type('numeric')->value(0);
 
         $width = $image->getWidth();
         $height = $image->getHeight();

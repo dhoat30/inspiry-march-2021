@@ -5,12 +5,12 @@
      * Description: Duplicate WooCommerce variable product variations with its all available properties including Variation Price, Variation Image, and SKU in just a single click.
      * Author: Emran Ahmed
      * Domain Path: /languages
-     * Version: 2.0.1
+     * Version: 2.0.2
      * Requires PHP: 7.0
      * Requires at least: 5.6
      * Tested up to: 5.9
      * WC requires at least: 5.6
-     * WC tested up to: 6.2
+     * WC tested up to: 6.3
      * Text Domain: variation-duplicator-for-woocommerce
      * Author URI: https://getwooplugins.com/
      */

@@ -32,35 +32,35 @@ msgstr ""
 msgid "Help &amp; Support"
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:39
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:40
 msgid "Variation: #%s cloned."
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:45
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:46
 msgid "Variation clone limit exceed."
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:51
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:52
 msgid "Check how variation duplicator works."
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:104
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:105
 msgid "Duplicate"
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:104
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:105
 msgid "Save before duplicate"
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:104
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:105
 msgid "If you want to duplicate this variation you have to save this variation first."
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:108
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:109
 msgid "Duplicate variations"
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-image-clone.php:64
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-image-clone.php:65
 msgid "Variation image cloned."
 msgstr ""
 

@@ -501,6 +501,9 @@ class ManageDiscount extends Base
                     if(!Woocommerce::variationIsVisible($variation)){
                         continue;
                     }
+		    if(!$variation->is_in_stock()) {
+                        continue;
+                    }
                     $prices = self::calculateInitialAndDiscountedPrice($variation, $quantity);
                     if (!isset($prices['initial_price']) || !isset($prices['discounted_price'])) {
                         return $this->removeDuplicateStrikeoutPrice($price_html);
@@ -1783,7 +1786,8 @@ class ManageDiscount extends Base
                             if($has_non_applied_lines == false && $discount_line_count === 2){
                                 $new_item_price_html .= '<div class="awdr_cart_strikeout_line">'.$this->getStrikeoutPrice($initial_price_with_tax_call, $discounted_price_with_tax_call).'</div>';
                             } else {
-                                $new_item_price_html .= '<div class="awdr_cart_strikeout_line">'.$this->getStrikeoutPrice($initial_price_with_tax_call, $discounted_price_with_tax_call).'&nbsp;x&nbsp;'.$discounted_qty.'</div>';
+				$item_quantity_html = apply_filters('advanced_woo_discount_rules_cart_strikeout_quantity_html', '&nbsp;x&nbsp;'.$discounted_qty, $discounted_qty);
+                                $new_item_price_html .= '<div class="awdr_cart_strikeout_line">'.$this->getStrikeoutPrice($initial_price_with_tax_call, $discounted_price_with_tax_call).$item_quantity_html.'</div>';
                             }
                         }
                     }
@@ -1791,7 +1795,8 @@ class ManageDiscount extends Base
                         if(isset($discount_lines['non_applied']) && !empty($discount_lines['non_applied'])){
                             if(isset($discount_lines['non_applied']['quantity']) && $discount_lines['non_applied']['quantity'] > 0){
                                 $discounted_qty = $discount_lines['non_applied']['quantity'];
-                                $new_item_price_html .= '<div class="awdr_cart_strikeout_line">'.self::$woocommerce_helper->formatPrice($initial_price_with_tax_call).'&nbsp;x&nbsp;'.$discounted_qty.'</div>';
+				$item_quantity_html = apply_filters('advanced_woo_discount_rules_cart_strikeout_quantity_html', '&nbsp;x&nbsp;'.$discounted_qty, $discounted_qty);
+                                $new_item_price_html .= '<div class="awdr_cart_strikeout_line">'.self::$woocommerce_helper->formatPrice($initial_price_with_tax_call).$item_quantity_html.'</div>';
                             }
                         }
                     }
