@@ -74,7 +74,7 @@ add_action('filter_buttons_before_shop_loop', function () {
         echo do_shortcode('[facetwp facet="colour_family"]');
         echo do_shortcode('[facetwp facet="pattern"]');
         echo do_shortcode('[facetwp facet="composition"]');
-        echo do_shortcode('[facetwp facet="availability"]');
+        // echo do_shortcode('[facetwp facet="availability"]');
 
         //   echo do_shortcode('[facetwp facet="price_range"]');  
         echo '<button class="product-archive-reset facet-reset-btn secondary-button" onclick="FWP.reset()">Reset All Filter</button>';
@@ -91,7 +91,7 @@ add_action('filter_buttons_before_shop_loop', function () {
         echo do_shortcode('[facetwp facet="colour_family_m"]');
         echo do_shortcode('[facetwp facet="pattern_m"]');
         echo do_shortcode('[facetwp facet="composition_m"]');
-        echo do_shortcode('[facetwp facet="availability_m"]');
+        // echo do_shortcode('[facetwp facet="availability_m"]');
         // echo do_shortcode('[facetwp facet="price_range_m"]');   
 
         echo '
@@ -101,7 +101,10 @@ add_action('filter_buttons_before_shop_loop', function () {
                 </div>
                     ';
         echo '</div>';
-        echo '<i class="fal fa-times close-icon"></i>';
+        echo '<i class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.994" viewBox="0 0 16 15.994">
+        <path id="Path_27" data-name="Path 27" d="M19.853,19.147,12.707,12l7.147-7.147a.5.5,0,0,0-.707-.707L12,11.293,4.853,4.147a.5.5,0,0,0-.707.707L11.293,12,4.146,19.146a.5.5,0,1,0,.707.707L12,12.707l7.147,7.147a.5.5,0,1,0,.707-.707Z" transform="translate(-4 -4.006)"/>
+      </svg>
+      </i>';
         echo '</div>';
         echo '</div>';
     }
@@ -122,7 +125,7 @@ function fwp_add_facet_labels()
 
                         if ($facet.closest('.facet-wrap').length < 1 && $facet.closest('.facetwp-flyout').length < 1) {
                             $facet.wrap('<div class="facet-wrap"></div>');
-                            $facet.before('<div class="facet-label-button"><button class="facet-label">' + facet_label + '<i class="fa-regular fa-plus"></i></button></div>');
+                            $facet.before(`<div class="facet-label-button"><button class="facet-label">${facet_label}<i class="plus-icon">+</i></button></div>`);
                         }
 
                     });
@@ -147,6 +150,8 @@ add_action('woocommerce_after_main_content', function () {
         </div>
     </div>';
 }, 10);
+
+
 // change image on hove on product archive page
 
 add_action('woocommerce_before_shop_loop_item_title', 'add_on_hover_shop_loop_image');
@@ -154,9 +159,15 @@ add_action('woocommerce_before_shop_loop_item_title', 'add_on_hover_shop_loop_im
 function add_on_hover_shop_loop_image()
 {
     $image_id = wc_get_product()->gallery_image_ids[0];
-
+  
     if ($image_id) {
-        echo '<img src="' . wp_get_attachment_image_src($image_id, 'woocommerce_thumbnail')[0] . '" class="current">';
+        // echo '<img src="' . wp_get_attachment_image_src($image_id, 'woocommerce_thumbnail')[0] . '" class="current">';
+        echo '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+        srcset="'.wp_get_attachment_image_src($image_id, 'woocommerce_thumbnail')[0].' 1300w,
+        '.wp_get_attachment_image_src(wc_get_product()->image_id,  'woocommerce_thumbnail')[0].' 1200w"
+        class="current"
+        alt="'.wc_get_product()->name.'"
+   />';
     } else {  //assuming not all products have galleries set
 
         echo wp_get_attachment_image(wc_get_product()->image_id,  'woocommerce_thumbnail');

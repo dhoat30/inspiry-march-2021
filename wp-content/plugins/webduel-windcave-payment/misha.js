@@ -1,8 +1,5 @@
 const $ = jQuery
 
-
-
-
 // windcave success callback
 var successCallback = function (data) {
     console.log(data)
@@ -10,7 +7,6 @@ var successCallback = function (data) {
     checkout_form.find('#windcave_session_id').val(data);
     // deactivate the tokenRequest function event
     checkout_form.off('checkout_place_order');
-
 
     // send request to api to check the transaction status before submiting a form 
     $.ajax({
@@ -137,5 +133,3 @@ function usingGateway() {
         // submit the form now
     }
 }
-
-

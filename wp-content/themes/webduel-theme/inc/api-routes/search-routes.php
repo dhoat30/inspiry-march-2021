@@ -35,7 +35,7 @@ function allProductsSearch($data){
         if($incVar > 10){ 
             array_push($secondResult, array(
                 "title"=> get_the_title(),
-                  "image"=> get_the_post_thumbnail_url(get_the_id()), 
+                  "image"=> get_the_post_thumbnail_url(get_the_id(), 'woocommerce_gallery_thumbnail'), 
                 "link"=> get_the_permalink()
             ));
         }
@@ -59,7 +59,7 @@ function allProductsSearch($data){
             array_push($secondResult, array(
                 "title"=> get_the_title(),
                 "link"=> get_the_permalink(),
-				  "image"=> get_the_post_thumbnail_url(get_the_id()), 
+				  "image"=> get_the_post_thumbnail_url(get_the_id(), 'woocommerce_gallery_thumbnail'), 
 
             ));
         }
@@ -83,7 +83,7 @@ function searchProducts($data){
 
         array_push($productResult, array(
             "title"=> get_the_title(),
-            "image"=> get_the_post_thumbnail_url(get_the_id()), 
+            "image"=> get_the_post_thumbnail_url(get_the_id(), 'woocommerce_gallery_thumbnail'), 
             "link"=> get_the_permalink()
         ));
     }
@@ -100,7 +100,7 @@ function searchProducts($data){
     
             array_push($productResult, array(
                 "title"=> get_the_title(),
-                "image"=> get_the_post_thumbnail_url(get_the_id()), 
+                "image"=> get_the_post_thumbnail_url(get_the_id(), 'woocommerce_gallery_thumbnail'), 
                 "link"=> get_the_permalink()
             ));
         }

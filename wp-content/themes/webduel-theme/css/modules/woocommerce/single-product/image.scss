@@ -172,9 +172,9 @@ ul.flex-direction-nav li a:hover {
         height: 30px;
         background-color: var(--black) !important;
         top: 43%;
-        i {
-          color: white;
-          font-weight: var(--light) !important;
+
+        svg {
+          padding: 0 2px;
         }
       }
       button:nth-child(1) {

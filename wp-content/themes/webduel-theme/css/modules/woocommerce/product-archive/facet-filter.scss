@@ -66,6 +66,8 @@
       font-weight: var(--regular);
       i {
         color: var(--grey);
+        font-size: 1.5rem;
+        font-weight: var(--light);
         position: absolute;
         right: 10px;
         top: 50%;
@@ -235,6 +237,7 @@
       color: var(--darkGrey);
       position: absolute;
       top: 20px;
+      right: 10px;
     }
     .mobile-filters {
       margin-top: 70px;
@@ -314,10 +317,16 @@
   margin: 0 !important;
   width: 100% !important;
   z-index: 1000;
+  padding: 7px 10px !important;
   span {
     color: var(--white) !important;
   }
-  i {
-    color: var(--white) !important;
+  svg {
+    fill: var(--white) !important;
   }
+}
+
+// custom style
+.organicweb1 {
+  background: #f7f6f2;
 }

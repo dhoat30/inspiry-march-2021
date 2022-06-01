@@ -68,8 +68,11 @@
       button {
         background-color: var(--beige);
         border: none;
-        padding: 10px 15px;
+        padding: 5px 15px;
         cursor: pointer;
+        i {
+          font-size: 1.5rem;
+        }
       }
       .subtitle {
         font-size: var(--mediumSize);
@@ -98,7 +101,7 @@
   z-index: 110;
   transform: translate(-50%, -50%);
   background: var(--white);
-  padding: 20px;
+  padding: 30px 20px;
   width: 100%;
   max-width: 350px;
   display: none;
@@ -111,7 +114,7 @@
     width: 120px;
     margin: 10px auto 0 auto;
   }
-  .fa-xmark {
+  .close-icon {
     position: absolute;
     right: 10px;
     top: 10px;

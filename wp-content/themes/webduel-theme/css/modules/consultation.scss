@@ -1,12 +1,20 @@
 .consultation-page {
   margin: 100px 0;
+  @media (max-width: 1000px) {
+    margin: 20px 0;
+  }
 }
 .consultation-page .flex {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap-reverse;
+  align-items: flex-start;
+  flex-wrap: wrap;
   flex-direction: row;
+  .form {
+    .calendly-inline-widget {
+      border: 1px solid var(--lightGrey);
+    }
+  }
 }
 .consultation-page .flex > div {
   width: 50%;
@@ -24,6 +32,10 @@
 
 .consultation-page .flex .form .column-font-size {
   margin-bottom: 20px;
+  margin-right: 0 !important;
+  @media (max-width: 1000px) {
+    font-size: var(--mediumSize);
+  }
 }
 /*stamp */
 .consultation-page .right-bar {
@@ -42,6 +54,9 @@
   font-weight: 100;
   margin: 0 auto;
   display: block;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 .consultation-page .stamp .section-font-size {
   letter-spacing: 2px;

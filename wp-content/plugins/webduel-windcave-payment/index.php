@@ -183,7 +183,7 @@ function wc_offline_gateway_init() {
 			}
 			 // get order details
 			 $totalAmount = WC()->cart->total; 
-			
+			print_r($totalAmount); 
 					// setting up environment variables 
 					$sessionUrl = ""; 
 					$authKey = ""; 
@@ -228,7 +228,7 @@ function wc_offline_gateway_init() {
 			 $selected_payment_method_id = WC()->session->get( 'chosen_payment_method' );
 
 			// let's suppose it is our payment processor JavaScript that allows to obtain a token
-			wp_enqueue_script( 'windcave_webduel_js', 'https://dev.windcave.com/js/windcavepayments-seamless-v1.js' );
+			wp_enqueue_script( 'windcave_webduel_js', 'https://sec.windcave.com/js/windcavepayments-seamless-v1.js' );
 			// and this is our custom JS in your plugin directory that works with token.js
 			wp_register_script( 'woocommerce_webduel', plugins_url( 'misha.js', __FILE__ ), array( 'jquery', 'windcave_webduel_js' ) );
 

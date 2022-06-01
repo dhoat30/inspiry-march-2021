@@ -5,7 +5,7 @@ import Form from './modules/Form/Form'
 // owl carousel 
 import EveryOwlCarousel from './modules/OwlCarousel/EveryOwlCarousel';
 // warranty 
-import Warranty from './modules/Warranty';
+// import Warranty from './modules/Warranty';
 import WallpaperCalc from './modules/WallpaperCalc';
 import DesignBoardSaveBtn from './modules/DesignBoardSaveBtn';
 import Overlay from './modules/overlay';
@@ -20,11 +20,10 @@ import PopUpCart from './modules/PopUpCart';
 import EnquiryModal from './modules/EnquiryModal/EnquiryModal'
 
 // cart modal 
-import CartModal from './modules/CartModal/CartModal'
-
+import CartModal from './modules/Modals/CartModal'
+import ExitIntentModal from "./modules/Modals/ExitIntentModal";
 // auth
 import Login from './modules/Auth/Login'
-
 
 // search 
 import Search from './modules/Search'
@@ -90,7 +89,8 @@ const header = new Header();
 // mobile menu 
 const mobileMenu = new MobileMenu()
 window.onload = function () {
-
+  // exit intent modal 
+  const exitIntentModal = new ExitIntentModal()
   // checkout 
   const checkout = new Checkout()
 
@@ -142,7 +142,7 @@ window.onload = function () {
 
 
 
-const warranty = new Warranty();
+// const warranty = new Warranty();
 const wallpaperCalc = new WallpaperCalc();
 
 

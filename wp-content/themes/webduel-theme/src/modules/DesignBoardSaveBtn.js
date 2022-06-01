@@ -10,18 +10,16 @@ class DesignBoardSaveBtn {
     }
     //events
     events() {
-
         // show design board modal 
         $(this.heartBtn).on('click', this.showDesignBoardModal)
         // hide design board modal 
         $(document).on('click', '.design-board-selection-modal .footer-container .cancel', this.hideDesignBoardModal)
         // hide design board modal 
-        $(document).on('click', '.design-board-selection-modal .fa-xmark', this.hideDesignBoardModal)
+        $(document).on('click', '.design-board-selection-modal .close-icon', this.hideDesignBoardModal)
         // hide design board modal when clicked on black overlay 
         $(document).on('click', '.dark-overlay', this.hideDesignBoardModal)
         // add to board
         $(document).on('click', '.design-board-selection-modal .board-list .list-item .save-btn', this.addToBoard)
-
         // show create modal 
         $(document).on('click', '.create-board-container', this.showCreateBoardModal)
     }
@@ -30,8 +28,6 @@ class DesignBoardSaveBtn {
     showDesignBoardModal(e) {
         $('.design-board-selection-modal').show()
         $('.dark-overlay').show()
-
-
         window.productID = $(this).attr('data-id')
         window.productName = $(this).attr('data-name')
     }
@@ -48,7 +44,7 @@ class DesignBoardSaveBtn {
         const boardID = $(e.target).attr('data-boardid')
         const boardPostStatus = $(e.target).attr('data-poststatus')
 
-        $(e.target).html('<i class="fa-duotone fa-loader fa-spin"></i>')
+        $(e.target).html(`Saving`)
 
         //add to board
         $.ajax({

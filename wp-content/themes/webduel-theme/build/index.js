@@ -2064,16 +2064,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ "./css/style.scss");
 /* harmony import */ var _modules_Form_Form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/Form/Form */ "./src/modules/Form/Form.js");
 /* harmony import */ var _modules_OwlCarousel_EveryOwlCarousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/OwlCarousel/EveryOwlCarousel */ "./src/modules/OwlCarousel/EveryOwlCarousel.js");
-/* harmony import */ var _modules_Warranty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/Warranty */ "./src/modules/Warranty.js");
-/* harmony import */ var _modules_WallpaperCalc__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/WallpaperCalc */ "./src/modules/WallpaperCalc.js");
-/* harmony import */ var _modules_DesignBoardSaveBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/DesignBoardSaveBtn */ "./src/modules/DesignBoardSaveBtn.js");
-/* harmony import */ var _modules_overlay__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/overlay */ "./src/modules/overlay.js");
-/* harmony import */ var _modules_TopNav__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/TopNav */ "./src/modules/TopNav.js");
-/* harmony import */ var _modules_ShopFav__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/ShopFav */ "./src/modules/ShopFav.js");
-/* harmony import */ var _modules_ToolTip__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/ToolTip */ "./src/modules/ToolTip.js");
-/* harmony import */ var _modules_PopUpCart__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/PopUpCart */ "./src/modules/PopUpCart.js");
-/* harmony import */ var _modules_EnquiryModal_EnquiryModal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/EnquiryModal/EnquiryModal */ "./src/modules/EnquiryModal/EnquiryModal.js");
-/* harmony import */ var _modules_CartModal_CartModal__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./modules/CartModal/CartModal */ "./src/modules/CartModal/CartModal.js");
+/* harmony import */ var _modules_WallpaperCalc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/WallpaperCalc */ "./src/modules/WallpaperCalc.js");
+/* harmony import */ var _modules_DesignBoardSaveBtn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/DesignBoardSaveBtn */ "./src/modules/DesignBoardSaveBtn.js");
+/* harmony import */ var _modules_overlay__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/overlay */ "./src/modules/overlay.js");
+/* harmony import */ var _modules_TopNav__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/TopNav */ "./src/modules/TopNav.js");
+/* harmony import */ var _modules_ShopFav__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/ShopFav */ "./src/modules/ShopFav.js");
+/* harmony import */ var _modules_ToolTip__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/ToolTip */ "./src/modules/ToolTip.js");
+/* harmony import */ var _modules_PopUpCart__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/PopUpCart */ "./src/modules/PopUpCart.js");
+/* harmony import */ var _modules_EnquiryModal_EnquiryModal__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/EnquiryModal/EnquiryModal */ "./src/modules/EnquiryModal/EnquiryModal.js");
+/* harmony import */ var _modules_Modals_CartModal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/Modals/CartModal */ "./src/modules/Modals/CartModal.js");
+/* harmony import */ var _modules_Modals_ExitIntentModal__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./modules/Modals/ExitIntentModal */ "./src/modules/Modals/ExitIntentModal.js");
 /* harmony import */ var _modules_Auth_Login__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./modules/Auth/Login */ "./src/modules/Auth/Login.js");
 /* harmony import */ var _modules_Search__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./modules/Search */ "./src/modules/Search.js");
 /* harmony import */ var _modules_MobileSearch__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./modules/MobileSearch */ "./src/modules/MobileSearch.js");
@@ -2099,7 +2099,7 @@ __webpack_require__.r(__webpack_exports__);
  // owl carousel 
 
  // warranty 
-
+// import Warranty from './modules/Warranty';
 
 
 
@@ -2111,6 +2111,7 @@ __webpack_require__.r(__webpack_exports__);
  // Enquire Modal 
 
  // cart modal 
+
 
  // auth
 
@@ -2143,7 +2144,7 @@ __webpack_require__.r(__webpack_exports__);
 
 let $ = jQuery; // add to cart and remove from cart class 
 
-const popUpCart = new _modules_PopUpCart__WEBPACK_IMPORTED_MODULE_10__["default"](); // woo Gallery 
+const popUpCart = new _modules_PopUpCart__WEBPACK_IMPORTED_MODULE_9__["default"](); // woo Gallery 
 
 const wooGallery = new _modules_Woocommerce_WooGallery__WEBPACK_IMPORTED_MODULE_21__["default"](); // single product page accordion 
 
@@ -2161,7 +2162,7 @@ const coupon = new _modules_Woocommerce_Cart_Coupon__WEBPACK_IMPORTED_MODULE_26_
 
 const errorModal = new _modules_ErrorModal_ErrorModal__WEBPACK_IMPORTED_MODULE_27__["default"](); // design board save button 
 
-const designBoardSaveBtn = new _modules_DesignBoardSaveBtn__WEBPACK_IMPORTED_MODULE_5__["default"](); // scroll events 
+const designBoardSaveBtn = new _modules_DesignBoardSaveBtn__WEBPACK_IMPORTED_MODULE_4__["default"](); // scroll events 
 
 const fixedNavMobile = new _modules_Scroll_FixedNavMobile__WEBPACK_IMPORTED_MODULE_31__["default"](); // header 
 
@@ -2170,19 +2171,21 @@ const header = new _modules_Header__WEBPACK_IMPORTED_MODULE_29__["default"](); /
 const mobileMenu = new _modules_NavMenu_MobileMenu__WEBPACK_IMPORTED_MODULE_32__["default"]();
 
 window.onload = function () {
-  // checkout 
+  // exit intent modal 
+  const exitIntentModal = new _modules_Modals_ExitIntentModal__WEBPACK_IMPORTED_MODULE_12__["default"](); // checkout 
+
   const checkout = new _modules_Woocommerce_Checkout_Checkout__WEBPACK_IMPORTED_MODULE_28__["default"](); // enquiry modal 
 
-  const enquiryModal = new _modules_EnquiryModal_EnquiryModal__WEBPACK_IMPORTED_MODULE_11__["default"](); // cart modal 
+  const enquiryModal = new _modules_EnquiryModal_EnquiryModal__WEBPACK_IMPORTED_MODULE_10__["default"](); // cart modal 
 
-  const cartModal = new _modules_CartModal_CartModal__WEBPACK_IMPORTED_MODULE_12__["default"](); // form data processing 
+  const cartModal = new _modules_Modals_CartModal__WEBPACK_IMPORTED_MODULE_11__["default"](); // form data processing 
 
   const form = new _modules_Form_Form__WEBPACK_IMPORTED_MODULE_1__["default"]();
-  const shopFav = new _modules_ShopFav__WEBPACK_IMPORTED_MODULE_8__["default"]();
-  const topnav = new _modules_TopNav__WEBPACK_IMPORTED_MODULE_7__["default"]();
-  const overlay = new _modules_overlay__WEBPACK_IMPORTED_MODULE_6__["default"](); //Tool tip 
+  const shopFav = new _modules_ShopFav__WEBPACK_IMPORTED_MODULE_7__["default"]();
+  const topnav = new _modules_TopNav__WEBPACK_IMPORTED_MODULE_6__["default"]();
+  const overlay = new _modules_overlay__WEBPACK_IMPORTED_MODULE_5__["default"](); //Tool tip 
 
-  const toolTip = new _modules_ToolTip__WEBPACK_IMPORTED_MODULE_9__["default"](); // login 
+  const toolTip = new _modules_ToolTip__WEBPACK_IMPORTED_MODULE_8__["default"](); // login 
 
   const login = new _modules_Auth_Login__WEBPACK_IMPORTED_MODULE_13__["default"](); // search 
 
@@ -2203,10 +2206,10 @@ window.onload = function () {
   $('.logo-container .slogan').css('opacity', '1');
 }; //log in 
 //const logIn = new LogIn();
+// const warranty = new Warranty();
 
 
-const warranty = new _modules_Warranty__WEBPACK_IMPORTED_MODULE_3__["default"]();
-const wallpaperCalc = new _modules_WallpaperCalc__WEBPACK_IMPORTED_MODULE_4__["default"](); // typewriter effect
+const wallpaperCalc = new _modules_WallpaperCalc__WEBPACK_IMPORTED_MODULE_3__["default"](); // typewriter effect
 
 document.addEventListener('DOMContentLoaded', function (event) {
   // array with texts to type in typewriter
@@ -2559,46 +2562,6 @@ class StockToggle {
 
 /***/ }),
 
-/***/ "./src/modules/CartModal/CartModal.js":
-/*!********************************************!*\
-  !*** ./src/modules/CartModal/CartModal.js ***!
-  \********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-let $ = jQuery;
-
-class CartModal {
-  constructor() {
-    this.events();
-  }
-
-  events() {
-    this.showModal(); // hide modal 
-
-    $('.modal-section .fa-times').on('click', this.hideModal);
-  }
-
-  showModal(e) {
-    setTimeout(() => {
-      $('.modal-section').show(200);
-
-      if ($('.modal-section').data('overlay') === true) {}
-    }, 3000);
-  }
-
-  hideModal() {
-    $('.modal-section').hide(200);
-    $('.overlay').hide();
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (CartModal);
-
-/***/ }),
-
 /***/ "./src/modules/CustomerService/ContactForm.js":
 /*!****************************************************!*\
   !*** ./src/modules/CustomerService/ContactForm.js ***!
@@ -2780,7 +2743,7 @@ class DesignBoardSaveBtn {
 
     $(document).on('click', '.design-board-selection-modal .footer-container .cancel', this.hideDesignBoardModal); // hide design board modal 
 
-    $(document).on('click', '.design-board-selection-modal .fa-xmark', this.hideDesignBoardModal); // hide design board modal when clicked on black overlay 
+    $(document).on('click', '.design-board-selection-modal .close-icon', this.hideDesignBoardModal); // hide design board modal when clicked on black overlay 
 
     $(document).on('click', '.dark-overlay', this.hideDesignBoardModal); // add to board
 
@@ -2808,7 +2771,7 @@ class DesignBoardSaveBtn {
   addToBoard(e) {
     const boardID = $(e.target).attr('data-boardid');
     const boardPostStatus = $(e.target).attr('data-poststatus');
-    $(e.target).html('<i class="fa-duotone fa-loader fa-spin"></i>'); //add to board
+    $(e.target).html(`Saving`); //add to board
 
     $.ajax({
       beforeSend: xhr => {
@@ -2951,7 +2914,7 @@ class EnquiryModal {
   events() {
     $('#enquire-button').on('click', this.showEnquiryModal); // hide modal 
 
-    $('.enquiry-form-section .fa-times').on('click', this.hideEnquiryModal);
+    $('.enquiry-form-section .close-icon').on('click', this.hideEnquiryModal);
   }
 
   showEnquiryModal(e) {
@@ -3010,9 +2973,6 @@ class ErrorModal {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var sticky_scroller__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! sticky-scroller */ "./node_modules/sticky-scroller/index.js");
-/* harmony import */ var sticky_scroller__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(sticky_scroller__WEBPACK_IMPORTED_MODULE_0__);
-
 const $ = jQuery;
 
 class FacetFilter {
@@ -3066,14 +3026,12 @@ class FacetFilter {
           marginRight: "0"
         });
         Cookies.set('showingProductFacetContainer', 'false');
-        $('.filter-sort-container .filter-button span').text('Show Filters');
       } else {
         console.log('show the filter container');
         $('.facet-wp-container').animate({
           width: '100%',
           marginRight: "40px"
         });
-        $('.filter-sort-container .filter-button span').text('Hide Filters');
         Cookies.set('showingProductFacetContainer', 'true');
       }
     }
@@ -3085,9 +3043,13 @@ class FacetFilter {
   }
 
   showFilter(e) {
-    $(this).siblings('.facetwp-facet').slideToggle('fast');
-    $(this).find('i').toggleClass('fa-plus');
-    $(this).find('i').toggleClass('fa-minus');
+    $(this).siblings('.facetwp-facet').slideToggle('fast', () => {
+      if ($(this).find('i').text() === "+") {
+        $(this).find('i').text('–');
+      } else {
+        $(this).find('i').text('+');
+      }
+    });
   }
 
 }
@@ -3376,7 +3338,7 @@ class MobileSearch {
   constructor() {
     this.url = `${inspiryData.root_url}/wp-json/inspiry/v1/search?term=`;
     this.allProductsURL = `${inspiryData.root_url}/wp-json/inspiry/v1/all-products-search?term=`;
-    this.loading = $('.fa-spinner');
+    this.loading = $('.search-bar .loading-icon');
     this.searchIcon = $('.search-code .mobile-search');
     this.resultDiv = $('.search-code .result-div');
     this.searchField = $('#mobile-search-term');
@@ -3394,6 +3356,7 @@ class MobileSearch {
     $(document).on("click", this.documentClickHandler.bind(this)); // redirect to result page when clicked on search icon  
 
     this.searchIcon.on('click', this.takeToQueryPage);
+    $(document).on('keypress', this.takeToQueryPageOnEnter);
   } // document click handler
 
 
@@ -3438,6 +3401,7 @@ class MobileSearch {
       this.resultDiv.show();
 
       if (data.length) {
+        console.log(data);
         this.resultDiv.html(`<ul class="search-list">
                 ${data.map(item => {
           return `<li>
@@ -3482,9 +3446,149 @@ class MobileSearch {
     }
   }
 
+  takeToQueryPageOnEnter(e) {
+    var key = e.which || e.keyCode || 0;
+
+    if ($('#mobile-search-term').val().length >= 1 && key == 13) {
+      window.location.href = `${inspiryData.root_url}/products/?_search=${$('#mobile-search-term').val()}`;
+    }
+  }
+
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (MobileSearch);
+
+/***/ }),
+
+/***/ "./src/modules/Modals/CartModal.js":
+/*!*****************************************!*\
+  !*** ./src/modules/Modals/CartModal.js ***!
+  \*****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+let $ = jQuery;
+
+class CartModal {
+  constructor() {
+    this.events();
+  }
+
+  events() {
+    this.showModal(); // hide modal 
+
+    $('.modal-section .fa-times').on('click', this.hideModal);
+  }
+
+  showModal(e) {
+    setTimeout(() => {
+      $('.modal-section').show(200);
+
+      if ($('.modal-section').data('overlay') === true) {}
+    }, 3000);
+  }
+
+  hideModal() {
+    $('.modal-section').hide(200);
+    $('.overlay').hide();
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (CartModal);
+
+/***/ }),
+
+/***/ "./src/modules/Modals/ExitIntentModal.js":
+/*!***********************************************!*\
+  !*** ./src/modules/Modals/ExitIntentModal.js ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const $ = jQuery;
+
+class ExitIntentModal {
+  constructor() {
+    this.closeIcon = $('.close-icon'); // get the show modal value to check the modal exist
+
+    this.showModalValue = $('.inspiry-modal .show-modal').data('show-modal'); // get local storage 
+
+    this.showModalObject = JSON.parse(localStorage.getItem("modalShowed")), this.events();
+  }
+
+  events() {
+    // set empty local storage on load if the show modal object doesn't exist. 
+    // This allow us to set the time stamp for the first time in showModalOnExit method and won't reset every time the exit intent method is called 
+    if (!this.showModalObject) {
+      var object = {
+        value: null,
+        timestamp: null
+      };
+      localStorage.setItem("modalShowed", JSON.stringify(object));
+    } // reset the local storage item "modalShowed" after an hour
+
+
+    this.resetLocalStorage(); // show modal on exit 
+
+    setTimeout(() => {
+      $(document).on("mouseout", this.showModalOnExit.bind(this));
+    }, 100); // close the modal 
+
+    this.closeIcon.on('click', this.hideModal);
+    $('.dark-overlay').on('click', this.hideModal);
+  }
+
+  resetLocalStorage() {
+    if (this.showModalObject.timestamp) {
+      const dateString = this.showModalObject.timestamp;
+      const now = new Date().getTime().toString();
+      console.log(now - dateString); // calculate time difference in minutes 
+
+      const timeDifference = (now - dateString) / 1000 / 60; //to implement
+
+      console.log(timeDifference);
+
+      if (timeDifference > 1) {
+        var object = {
+          value: null,
+          timestamp: null
+        };
+        localStorage.setItem("modalShowed", JSON.stringify(object));
+        this.showModalObject = JSON.parse(localStorage.getItem("modalShowed"));
+      }
+    }
+  }
+
+  showModalOnExit(evt) {
+    // !this.showModalObject.value
+    // && !localStorage.getItem('modalShowed')
+    if (evt.toElement === null && evt.relatedTarget === null && this.showModalValue) {
+      $(evt.currentTarget).off("mouseout"); // An intent to exit has happened
+
+      $('.inspiry-modal').show();
+      $('.dark-overlay').show(); // set local storage item so that the modal is not shown multiple time on different pages to the same customer
+
+      if (!this.showModalObject.value) {
+        var object = {
+          value: true,
+          timestamp: new Date().getTime()
+        };
+        localStorage.setItem("modalShowed", JSON.stringify(object));
+      }
+    }
+  }
+
+  hideModal() {
+    $('.inspiry-modal').hide();
+    $('.dark-overlay').hide();
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ExitIntentModal);
 
 /***/ }),
 
@@ -3680,7 +3784,13 @@ class EveryOwlCarousel {
     let className = '.trending-section .owl-carousel';
     let args = {
       loop: true,
-      navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
+      navText: [`<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_67" data-name="Path 67" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(117.361 172.804) rotate(180)"/>
+          </svg>
+          `, `<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_63" data-name="Path 63" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(-96 -159.986)"/>
+          </svg>
+          `],
       margin: 20,
       center: true,
       lazyLoad: true,
@@ -3717,7 +3827,13 @@ class EveryOwlCarousel {
     let className = '.recently-viewed-section .owl-carousel';
     let args = {
       loop: true,
-      navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
+      navText: [`<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_67" data-name="Path 67" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(117.361 172.804) rotate(180)"/>
+          </svg>
+          `, `<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_63" data-name="Path 63" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(-96 -159.986)"/>
+          </svg>
+          `],
       margin: 20,
       center: true,
       lazyLoad: true,
@@ -3729,12 +3845,10 @@ class EveryOwlCarousel {
       nav: true,
       responsive: {
         0: {
-          navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
           items: 1,
           dots: false
         },
         600: {
-          navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
           items: 2,
           dots: false
         },
@@ -3764,7 +3878,13 @@ class EveryOwlCarousel {
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
-      navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
+      navText: [`<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_67" data-name="Path 67" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(117.361 172.804) rotate(180)"/>
+          </svg>
+          `, `<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_63" data-name="Path 63" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(-96 -159.986)"/>
+          </svg>
+          `],
       margin: 20,
       responsive: {
         0: {
@@ -3803,7 +3923,13 @@ class EveryOwlCarousel {
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: true,
-      navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
+      navText: [`<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_67" data-name="Path 67" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(117.361 172.804) rotate(180)"/>
+          </svg>
+          `, `<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_63" data-name="Path 63" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(-96 -159.986)"/>
+          </svg>
+          `],
       responsive: {
         0: {
           items: 1,
@@ -3882,7 +4008,7 @@ class PopUpCart {
     $('.header .shopping-cart').on('click', this.openCart);
     $(document).on('click', '.cart-box .cont-shopping a', this.closeCart);
     $(document).on('click', '.dark-overlay', this.closeCart);
-    $(document).on('click', '.cart-popup-container .title-section i', this.closeCart); // $('.cart-popup-container .fa-times').on('click', this.closeCart)
+    $(document).on('click', '.cart-popup-container .title-section .close-cart', this.closeCart); // $('.cart-popup-container .fa-times').on('click', this.closeCart)
 
     $(document).on('click', '.single_add_to_cart_button', this.ajaxAddToCart); // remove item from cart ajax 
 
@@ -4067,7 +4193,7 @@ class Search {
   constructor() {
     this.url = `${inspiryData.root_url}/wp-json/inspiry/v1/search?term=`;
     this.allProductsURL = `${inspiryData.root_url}/wp-json/inspiry/v1/all-products-search?term=`;
-    this.loading = $('.fa-spinner');
+    this.loading = $('.search-bar .loading-icon');
     this.searchIcon = $('.search-code .desktop-search');
     this.resultDiv = $('.search-code .result-div');
     this.searchField = $('#search-term');
@@ -4174,7 +4300,9 @@ class Search {
   }
 
   takeToQueryPageOnEnter(e) {
-    if ($('#search-term').val().length >= 1 && e.which == 13) {
+    var key = e.which || e.keyCode || 0;
+
+    if ($('#search-term').val().length >= 1 && key == 13) {
       window.location.href = `${inspiryData.root_url}/products/?_search=${$('#search-term').val()}`;
     }
   }
@@ -4502,46 +4630,6 @@ class WallpaperCalc {
 
 /***/ }),
 
-/***/ "./src/modules/Warranty.js":
-/*!*********************************!*\
-  !*** ./src/modules/Warranty.js ***!
-  \*********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-let $ = jQuery;
-
-class Warranty {
-  constructor() {
-    this.events();
-  }
-
-  events() {
-    $('.bc-single-product__warranty h1').append('<i class="fal fa-plus"></i>');
-    $(document).on('click', '.bc-single-product__warranty i', this.showContentIcon);
-    $(document).on('click', '.bc-single-product__warranty h1', this.showContent);
-  }
-
-  showContent(e) {
-    $(e.target).closest('h1').next().slideToggle(300);
-    $(e.target).closest('h1').siblings('ul').slideToggle(300);
-    $(e.target).find('i').toggleClass('fa-plus');
-    $(e.target).find('i').toggleClass('fa-minus');
-  }
-
-  showContentIcon(e) {
-    console.log('worked !');
-    $(e.target).toggleClass('fa-plus');
-    $(e.target).toggleClass('fa-minus');
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Warranty);
-
-/***/ }),
-
 /***/ "./src/modules/Woocommerce/Cart/Cart.js":
 /*!**********************************************!*\
   !*** ./src/modules/Woocommerce/Cart/Cart.js ***!
@@ -4561,7 +4649,7 @@ class Cart {
     this.plusBtn = $('.woocommerce-cart .quantity-container .plus');
     this.minusBtn = $('.woocommerce-cart .quantity-container .minus');
     this.qtyInputField = $('.woocommerce-cart .quantity-container #cart-quantity');
-    this.removeIcon = $('.remove-product i');
+    this.removeIcon = $('.remove-product svg');
     this.events();
   }
 
@@ -4569,7 +4657,7 @@ class Cart {
     this.plusBtn.on('click', this.incrementValue);
     this.minusBtn.on('click', this.decrementValue);
     this.qtyInputField.on('change', this.onQtyChange);
-    $(document).on('click', '.remove-product i', this.removeCartItemOnClick);
+    $(document).on('click', '.remove-product svg', this.removeCartItemOnClick);
   }
 
   incrementValue(e) {
@@ -4615,7 +4703,6 @@ class Cart {
   }
 
   removeCartItemOnClick() {
-    console.log('remove clicked');
     var cart_item_key = $(this).attr('data-cart_item_key');
     const removeCartItem = new _RemoveCartItem__WEBPACK_IMPORTED_MODULE_0__["default"](0, cart_item_key);
   }
@@ -5033,6 +5120,7 @@ class Checkout {
         $('#payment').show();
         setTimeout(() => {
           $('#payment').show();
+          $(this).hide();
         }, 2000);
       } else {
         $(this).show();
@@ -5360,7 +5448,13 @@ class WooGallery {
         autoplay: true,
         margin: 10,
         nav: true,
-        navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
+        navText: [`<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+                <path fill="#ffffff" id="Path_67" data-name="Path 67" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(117.361 172.804) rotate(180)"/>
+              </svg>
+              `, `<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+                <path fill="#ffffff" id="Path_63" data-name="Path 63" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(-96 -159.986)"/>
+              </svg>
+              `],
         responsive: {
           0: {
             items: 4
@@ -8945,91 +9039,6 @@ __webpack_require__.r(__webpack_exports__);
 	}
 
 })(window.Zepto || window.jQuery, window, document);
-
-
-/***/ }),
-
-/***/ "./node_modules/sticky-scroller/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/sticky-scroller/index.js ***!
-  \***********************************************/
-/***/ (function(module) {
-
-/*
- * StickyScroller - scroll your very long sticky positioned sidebar
- *
- * Copyright 2018 Guo Yunhe <guoyunhebrave@gmail.com>
- *
- * This program is free software: you can redistribute it and/or modify it under
- * the terms of the GNU General Public License as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option) any later
- * version.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
- * details.
- *
- * You should have received a copy of the GNU General Public License along with
- * this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/**
- * StickyScroller main controller
- */
-class StickyScroller {
-  constructor(element, options) {
-    this.newScrollPosition = 0;
-    this.oldScrollPositon = 0;
-    this.ticking = false;
-
-    if (typeof element === "string") {
-      this.element = document.querySelector(element);
-    } else if (element instanceof HTMLElement) {
-      this.element = element;
-    } else {
-      console.error("StickyScroller: element is required.");
-      return;
-    }
-
-    this.element.style.overflowY = "hidden";
-
-    window.addEventListener("scroll", this.onWindowScroll.bind(this));
-  }
-
-  /**
-   *
-   */
-  onWindowScroll() {
-    this.newScrollPosition = window.scrollY;
-
-    if (!this.ticking) {
-      window.requestAnimationFrame(() => {
-        this.translate();
-        this.ticking = false;
-        this.oldScrollPositon = this.newScrollPosition;
-      });
-
-      this.ticking = true;
-    }
-  }
-
-  translate() {
-    const parentRect = this.element.parentElement.getBoundingClientRect();
-    const distance = this.newScrollPosition - this.oldScrollPositon;
-    // Do not scroll up before sticky period
-    if (parentRect.top > 0 && distance > 0) {
-      return;
-    }
-    // Do not scroll down after sticky period
-    if (parentRect.bottom < window.innerHeight && distance < 0) {
-      return;
-    }
-    this.element.scrollTop = this.element.scrollTop + distance;
-  }
-}
-
-module.exports = StickyScroller;
 
 
 /***/ }),

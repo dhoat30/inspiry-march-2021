@@ -5,7 +5,7 @@ class Search {
     constructor() {
         this.url = `${inspiryData.root_url}/wp-json/inspiry/v1/search?term=`
         this.allProductsURL = `${inspiryData.root_url}/wp-json/inspiry/v1/all-products-search?term=`
-        this.loading = $('.fa-spinner')
+        this.loading = $('.search-bar .loading-icon')
         this.searchIcon = $('.search-code .desktop-search')
         this.resultDiv = $('.search-code .result-div')
         this.searchField = $('#search-term')
@@ -115,7 +115,9 @@ class Search {
     }
 
     takeToQueryPageOnEnter(e) {
-        if ($('#search-term').val().length >= 1 && e.which == 13) {
+        var key = e.which || e.keyCode || 0;
+
+        if ($('#search-term').val().length >= 1 && key == 13) {
             window.location.href = `${inspiryData.root_url}/products/?_search=${$('#search-term').val()}`;
         }
     }

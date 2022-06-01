@@ -6,7 +6,16 @@ get_header();
         <div class="sidebar-mobile-menu">
             <button class="secondary-button">
                 <span>Customer Service Menu</span>
-                <i class="fal fa-angle-down"></i>
+                <i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18.475" height="10.653" viewBox="0 0 18.475 10.653">
+                    <g id="Group_11" data-name="Group 11" transform="translate(37.075 -24.1) rotate(90)">
+                        <g id="Icon-Chevron-Left" transform="translate(24.1 18.6)">
+                        <path id="Fill-35" d="M-211.551-297.925l-1.349-1.349,7.956-7.889-7.956-7.889,1.349-1.349,9.3,9.237-9.3,9.237" transform="translate(212.9 316.4)" fill="#474747"/>
+                        </g>
+                    </g>
+                </svg>          
+
+                </i>
             </button>
         </div>
         <div class="sidebar">

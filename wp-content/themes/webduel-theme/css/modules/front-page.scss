@@ -54,11 +54,19 @@
   // slider container
   .slider-container {
     margin: 5px 20px;
-    @media (max-width: 500px) {
+    position: relative;
+    padding-bottom: 43.75%;
+
+    @media (max-width: 600px) {
       font-size: var(--sectionSize);
       margin: 5px 7px !important;
+      padding-bottom: 100%;
     }
     .card-list {
+      position: absolute !important;
+      img {
+        height: auto;
+      }
       list-style: none;
       .owl-nav {
         button {
@@ -100,8 +108,10 @@
         font-size: var(--mediumSize);
         text-decoration: none;
         color: var(--darkGrey);
-        i {
-          color: var(--darkGrey);
+        svg {
+          fill: var(--darkGrey);
+          position: relative;
+          top: 2px;
         }
       }
     }

@@ -25,15 +25,16 @@
     height: 80vh;
   }
 }
-.enquiry-modal-container .fa-times {
+.enquiry-modal-container .close-icon {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.enquiry-modal-container .fa-times:hover {
+.enquiry-modal-container .close-icon:hover {
   position: absolute;
   top: 10px;
   right: 10px;
+  cursor: pointer;
 }
 
 .enquiry-modal-container > div {
@@ -144,12 +145,12 @@
 }
 #enquire-button i {
   font-size: var(--mediumSize);
-  top: 1px;
+  top: 3px;
   position: relative;
 }
 
-#enquire-button:hover i {
-  color: white;
+#enquire-button:hover svg {
+  fill: white;
 }
 @media (max-width: 435px) {
   #enquire-button {

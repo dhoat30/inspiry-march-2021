@@ -24,12 +24,82 @@
       }
     }
     .form {
+      .hs-form {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+      }
       @media (max-width: 900px) {
         margin-top: 10px;
       }
-      .label {
+      label {
         font-size: var(--paragraphSize);
         color: var(--darkGrey);
+      }
+      .hs_email {
+        font-size: var(--paragraphSize);
+        color: var(--darkGrey);
+      }
+      .input {
+        margin-top: 5px;
+        display: flex;
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
+        .error {
+          margin: 0 0 0 0;
+          letter-spacing: 0;
+          font-weight: 400;
+        }
+        input {
+          padding: 5px;
+          font-size: var(--paragraphSize) !important;
+          color: var(--grey);
+          border-radius: 0;
+          border: 1px solid var(--darkGrey);
+          height: 40px;
+          width: 400px;
+          @media (max-width: 600px) {
+            width: 92vw;
+            display: block;
+            margin-bottom: 10px;
+            max-width: 100%;
+          }
+          &::focus-visible {
+          }
+        }
+        input:focus-visible {
+          border-radius: 0 !important;
+          outline: 1px solid var(--black) !important;
+        }
+      }
+      .hs-button {
+        width: 120px;
+        height: 40px;
+        line-height: 1.3em;
+        padding: 10px 30px 10px 30px;
+        cursor: pointer;
+        font-weight: var(--regular);
+        border-radius: 0 !important;
+        border: 1px solid var(--black);
+        background: var(--black);
+        color: white !important;
+        text-transform: uppercase;
+        font-size: var(--paragraphSize);
+        letter-spacing: 0.05rem;
+        text-decoration: none;
+        margin-left: 5px;
+      }
+      // error container
+
+      .hs-error-msgs {
+        position: absolute;
+        list-style: none;
+        li {
+          label {
+            color: var(--red);
+          }
+        }
       }
       .mc4wp-form-fields {
         margin-top: 5px;
@@ -172,13 +242,17 @@ footer {
   top: 50%;
   right: 10px;
   transform: translate(0, -50%);
-  z-index: 10000;
+  z-index: 100;
 }
-.go-to-header a i {
-  font-size: 40px;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0px 10px;
-  color: white;
+.go-to-header a {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.go-to-header a svg {
+  // font-size: 40px;
+  // background: rgba(0, 0, 0, 0.5);
+  // padding: 0px 10px;
+  // color: white;
 }
 .show {
   display: block !important;

@@ -154,7 +154,13 @@ class EveryOwlCarousel {
         let className = '.trending-section .owl-carousel';
         let args = {
             loop: true,
-            navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
+            navText: [`<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_67" data-name="Path 67" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(117.361 172.804) rotate(180)"/>
+          </svg>
+          `, `<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_63" data-name="Path 63" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(-96 -159.986)"/>
+          </svg>
+          `],
             margin: 20,
             center: true,
             lazyLoad: true,
@@ -192,7 +198,13 @@ class EveryOwlCarousel {
         let className = '.recently-viewed-section .owl-carousel';
         let args = {
             loop: true,
-            navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
+            navText: [`<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_67" data-name="Path 67" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(117.361 172.804) rotate(180)"/>
+          </svg>
+          `, `<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_63" data-name="Path 63" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(-96 -159.986)"/>
+          </svg>
+          `],
             margin: 20,
             center: true,
             lazyLoad: true,
@@ -204,12 +216,10 @@ class EveryOwlCarousel {
             nav: true,
             responsive: {
                 0: {
-                    navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
                     items: 1,
                     dots: false
                 },
                 600: {
-                    navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
                     items: 2,
                     dots: false
                 },
@@ -240,7 +250,13 @@ class EveryOwlCarousel {
             autoplay: true,
             autoplayTimeout: 5000,
             autoplayHoverPause: true,
-            navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
+            navText: [`<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_67" data-name="Path 67" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(117.361 172.804) rotate(180)"/>
+          </svg>
+          `, `<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_63" data-name="Path 63" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(-96 -159.986)"/>
+          </svg>
+          `],
             margin: 20,
             responsive: {
                 0: {
@@ -280,7 +296,13 @@ class EveryOwlCarousel {
             autoplay: true,
             autoplayTimeout: 5000,
             autoplayHoverPause: true,
-            navText: ['<i class="fa-thin fa-arrow-left-long"></i>', '<i class="fa-thin fa-arrow-right-long"></i>'],
+            navText: [`<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_67" data-name="Path 67" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(117.361 172.804) rotate(180)"/>
+          </svg>
+          `, `<svg  width="21.361" height="12.817" viewBox="0 0 21.361 12.817">
+            <path fill="#ffffff" id="Path_63" data-name="Path 63" d="M111.1,172.65a.542.542,0,0,1,0-.754l4.432-4.966h-19a.534.534,0,0,1,0-1.068h19l-4.426-4.966a.533.533,0,1,1,.754-.754s5.287,5.808,5.34,5.874a.579.579,0,0,1,.16.38.548.548,0,0,1-.16.38c-.053.053-5.34,5.874-5.34,5.874a.541.541,0,0,1-.38.154A.552.552,0,0,1,111.1,172.65Z" transform="translate(-96 -159.986)"/>
+          </svg>
+          `],
             responsive: {
                 0: {
                     items: 1,

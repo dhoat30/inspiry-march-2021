@@ -61,8 +61,8 @@
 // @import "modules/trade-directory/single-board";
 // @import "modules/trade-directory/board-archive-page"; */
 // @import "modules/trade-directory/save-baord";
+@import "modules/trade/inspiry-trade.scss";
 /* Chrome, Safari, Edge, Opera */
-
 :root {
   --letterSpacing: 0.04rem;
   --offWhite: rgb(242, 242, 242);
@@ -489,7 +489,7 @@ h1 {
   width: 100vw;
   height: 100vh;
   z-index: 100 !important;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   display: none;
 }
 .overlay {
@@ -502,7 +502,7 @@ h1 {
   height: 100vh;
   z-index: 200;
   background: rgba(0, 0, 0, 0.5);
-  display: none;
+  display: block;
   .fa-loader {
     position: fixed;
     top: 50%;
@@ -539,13 +539,19 @@ h1 {
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.8);
   display: none;
-
-  i {
-    font-size: var(--rowSize);
+  .loading-icon {
     position: absolute;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
+
+    div {
+      width: 35px;
+      height: 35px;
+      border: 3px solid var(--darkGrey);
+      border-color: var(--darkGrey) transparent transparent transparent;
+    }
   }
 }
 
@@ -1132,6 +1138,21 @@ button[disabled] {
   z-index: 2000;
   background: rgba(0, 0, 0, 0.5);
   display: none;
+
+  .loading-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    div {
+      width: 35px;
+      height: 35px;
+      border: 3px solid var(--white);
+      border-color: var(--white) transparent transparent transparent;
+    }
+  }
 }
 
 /*error and success messages*/
@@ -1212,7 +1233,6 @@ button[disabled] {
 }
 
 /*404 */
-
 .not-found {
   padding: 20vh 0;
 }
@@ -1324,4 +1344,41 @@ button[disabled] {
 #launcher {
   margin-right: 10px !important;
   bottom: 35px !important;
+}
+
+// loading icon
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+  border: 3px solid var(--darkGrey);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: var(--darkGrey) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

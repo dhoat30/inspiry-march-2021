@@ -74,6 +74,9 @@ require get_theme_file_path('/inc/short-codes/general-shortcodes.php');
 
 // design board 
 require get_theme_file_path('/inc/design-board-modal/design-board-modal.php');
+require get_theme_file_path('/inc/be-inspired/design-boards.php');
+// modals 
+require get_theme_file_path('/inc/modals/inspiry-modals.php');
 
  //enqueue scripts
  function inspiry_scripts(){ 
@@ -92,6 +95,8 @@ require get_theme_file_path('/inc/design-board-modal/design-board-modal.php');
 }
 add_action( "wp_enqueue_scripts", "inspiry_scripts" ); 
 
+
+// add_action( 'wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100 );
 
 /**
  * Track product views. Always.
@@ -128,3 +133,12 @@ function wc_track_product_view_always() {
 
 remove_action('template_redirect', 'wc_track_product_view', 20);
 add_action( 'template_redirect', 'wc_track_product_view_always', 20 );
+
+// remove dashicons in frontend to non-admin 
+function wpdocs_dequeue_dashicon() {
+    if (current_user_can( 'update_core' )) {
+        return;
+    }
+    wp_deregister_style('dashicons');
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );

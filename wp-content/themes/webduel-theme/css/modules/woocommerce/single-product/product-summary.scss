@@ -40,10 +40,9 @@
       font-weight: var(--regular);
       font-family: "Open Sans", sans-serif;
       display: block;
-      i {
-        font-size: var(--mediumSize);
+      svg {
         position: relative;
-        top: 1px;
+        top: 3px;
       }
     }
   }
@@ -177,11 +176,21 @@
       width: 100%;
       margin: 10px 0 0 0;
       transition: var(--transition);
-      i {
+      svg {
         transition: var(--transition);
+        position: relative;
+        top: 2px;
+        margin-right: 3px;
       }
-      &:hover i {
+      &:hover svg path {
+        fill: var(--white);
+      }
+      &:hover svg circle {
+        fill: var(--white);
+      }
+      &:hover svg ellipse {
         color: var(--white);
+        fill: var(--white);
       }
     }
   }
@@ -238,6 +247,13 @@
       font-size: var(--columnSize);
       font-weight: var(--medium);
       text-transform: uppercase;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 3px;
+      }
     }
     .content {
       margin-left: 26px;

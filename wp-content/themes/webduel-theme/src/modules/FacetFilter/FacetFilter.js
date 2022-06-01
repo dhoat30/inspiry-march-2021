@@ -1,4 +1,3 @@
-import StickyScroller from 'sticky-scroller'
 const $ = jQuery
 
 class FacetFilter {
@@ -62,7 +61,6 @@ class FacetFilter {
                     marginRight: "0"
                 })
                 Cookies.set('showingProductFacetContainer', 'false')
-                $('.filter-sort-container .filter-button span').text('Show Filters')
             }
             else {
                 console.log('show the filter container')
@@ -70,7 +68,6 @@ class FacetFilter {
                     width: '100%',
                     marginRight: "40px"
                 })
-                $('.filter-sort-container .filter-button span').text('Hide Filters')
 
                 Cookies.set('showingProductFacetContainer', 'true')
             }
@@ -84,9 +81,15 @@ class FacetFilter {
     }
 
     showFilter(e) {
-        $(this).siblings('.facetwp-facet').slideToggle('fast')
-        $(this).find('i').toggleClass('fa-plus')
-        $(this).find('i').toggleClass('fa-minus')
+        $(this).siblings('.facetwp-facet').slideToggle('fast', () => {
+            if ($(this).find('i').text() === "+") {
+                $(this).find('i').text('–')
+            }
+            else {
+                $(this).find('i').text('+')
+            }
+        })
+
     }
 }
 

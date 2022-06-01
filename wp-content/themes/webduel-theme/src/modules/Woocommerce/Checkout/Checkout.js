@@ -162,6 +162,7 @@ class Checkout {
                 $('#payment').show()
                 setTimeout(() => {
                     $('#payment').show()
+                    $(this).hide()
                 }, 2000)
             }
             else {

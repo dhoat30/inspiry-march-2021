@@ -52,7 +52,18 @@ function webduel_payment_btn()
             </div>
         </div>
         <div class="pay-button-container">
-            <button class="primary-button" id="pay-button" disabled><i class="fa-regular fa-lock-keyhole"></i>Pay Securely Now</button>
+            <button class="primary-button" id="pay-button" disabled>
+            <svg xmlns="http://www.w3.org/2000/svg" width="8.692" height="11.926" viewBox="0 0 8.692 11.926">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(-5.26 -1.25)">
+    <path id="Path_48" data-name="Path 48" d="M13.091,21.522H6.117a.861.861,0,0,1-.857-.857V16.117a.861.861,0,0,1,.861-.857h6.97a.861.861,0,0,1,.861.861v4.544A.861.861,0,0,1,13.091,21.522Zm-6.974-5.66a.255.255,0,0,0-.251.255v4.548a.255.255,0,0,0,.255.255h6.97a.255.255,0,0,0,.255-.251V16.117a.255.255,0,0,0-.251-.251Z" transform="translate(0 -8.346)"/>
+    <path id="Path_49" data-name="Path 49" d="M14.516,7.516H8.25V4.383a3.133,3.133,0,1,1,6.266,0ZM8.856,6.91H13.91V4.383a2.527,2.527,0,1,0-5.054,0Z" transform="translate(-1.781 0)"/>
+    <path id="Path_50" data-name="Path 50" d="M13.532,16H6.558A.554.554,0,0,0,6,16.558v4.548a.554.554,0,0,0,.558.554h6.974a.554.554,0,0,0,.554-.554V16.558A.554.554,0,0,0,13.532,16ZM10.35,19.267v.982a.3.3,0,0,1-.606,0v-.982a1.112,1.112,0,1,1,.606,0Z" transform="translate(-0.441 -8.787)"/>
+  </g>
+</svg>
+
+
+                Pay Securely Now
+            </button>
         </div>
     <?php
 }
@@ -97,26 +108,3 @@ function change_default_checkout_state()
 {
     return 'Select'; // state code
 }
-
-
-// add windcave iframe 
-add_action('woocommerce_after_checkout_form', function () {
-?>
-
-    <div class="payment-gateway-container" data-carttotal="<?php echo WC()->cart->total; ?>">
-        <div class="foreground-loader">
-            <i class="fa-duotone fa-loader fa-spin"></i>
-        </div>
-        <img src="https://inspiry.co.nz/wp-content/uploads/2021/08/windcave-logo.png" width="95%">
-        <div id="payment-iframe-container">
-
-        </div>
-        <div class="button-container">
-            <button class="windcave-submit-button">Submit</button>
-            <div class="cancel-payment">Cancel Payment</div>
-        </div>
-    </div>
-
-<?php
-}, 20);
-

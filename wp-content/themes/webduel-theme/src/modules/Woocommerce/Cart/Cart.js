@@ -7,14 +7,14 @@ class Cart {
         this.plusBtn = $('.woocommerce-cart .quantity-container .plus')
         this.minusBtn = $('.woocommerce-cart .quantity-container .minus')
         this.qtyInputField = $('.woocommerce-cart .quantity-container #cart-quantity')
-        this.removeIcon = $('.remove-product i')
+        this.removeIcon = $('.remove-product svg')
         this.events()
     }
     events() {
         this.plusBtn.on('click', this.incrementValue)
         this.minusBtn.on('click', this.decrementValue)
         this.qtyInputField.on('change', this.onQtyChange)
-        $(document).on('click', '.remove-product i', this.removeCartItemOnClick)
+        $(document).on('click', '.remove-product svg', this.removeCartItemOnClick)
     }
 
     incrementValue(e) {
@@ -62,7 +62,7 @@ class Cart {
     }
 
     removeCartItemOnClick() {
-        console.log('remove clicked')
+
         var cart_item_key = $(this).attr('data-cart_item_key')
         const removeCartItem = new RemoveCartItem(0, cart_item_key)
     }

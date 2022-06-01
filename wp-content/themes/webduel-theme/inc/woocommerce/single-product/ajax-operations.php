@@ -40,7 +40,7 @@ function woocommerce_header_add_to_cart_item_fragment($fragments)
     global $woocommerce;
     ob_start();
 ?>
-    <span class="cart-item-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+    <span class="cart-item-count cart-items-header">(<?php echo WC()->cart->get_cart_contents_count(); ?>)</span>
 <?php
     $fragments['span.cart-item-count'] = ob_get_clean();
     return $fragments;
@@ -59,10 +59,13 @@ function woocommerce_header_add_to_cart_fragment($fragments)
     global $woocommerce;
     ob_start();
 ?>
-    <div class="cart-box">
+       <div class="cart-box">
             <div class="title-section">
                 <div class="title">My Cart</div>
-                <i class="fa-light fa-xmark"></i>
+                <svg class="close-cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path id="Path_28" data-name="Path 28" d="M13.4,12l6.3-6.3a.99.99,0,1,0-1.4-1.4L12,10.6,5.7,4.3A.99.99,0,0,0,4.3,5.7L10.6,12,4.3,18.3A.908.908,0,0,0,4,19a.945.945,0,0,0,1,1,.908.908,0,0,0,.7-.3L12,13.4l6.3,6.3a.967.967,0,0,0,1.4,0,.967.967,0,0,0,0-1.4Z" transform="translate(-4 -4)" fill="#474747" />
+                </svg>
+
             </div>
             <div class="flex-card">
                 <?php
@@ -70,14 +73,14 @@ function woocommerce_header_add_to_cart_fragment($fragments)
                 foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
                     $product = $cart_item['data'];
                     $product_id = $cart_item['product_id'];
-                    $variationID = $cart_item['variation_id']; 
+                    $variationID = $cart_item['variation_id'];
                     $quantity = $cart_item['quantity'];
                     $price = WC()->cart->get_product_price($product);
                     $subtotal = WC()->cart->get_product_subtotal($product, $cart_item['quantity']);
                     $link = $product->get_permalink($cart_item);
                     // Anything related to $product, check $product tutorial
                     $meta = wc_get_formatted_cart_item_data($cart_item);
-                    if($variationID){ 
+                    if ($variationID) {
                         $product_id = $variationID;
                     }
                 ?>
@@ -110,14 +113,20 @@ function woocommerce_header_add_to_cart_fragment($fragments)
 
                             </a>
                             <div class="remove-column remove-product">
-                                <i class="fa-solid fa-trash" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>"></i>
+
+                            <svg data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>" width="13.28" height="15.94" viewBox="0 0 18.469 22.17">
+                                    <g id="Group_13" data-name="Group 13" transform="translate(-96.038 -64)">
+                                        <path id="Path_29" data-name="Path 29" d="M114.373,68.006c-.139-.519-.231-.808-.231-.808-.15-.537-.531-.537-1.1-.629l-3.065-.387c-.381-.063-.381-.063-.531-.392-.5-1.131-.658-1.789-1.206-1.789H102.3c-.548,0-.7.658-1.2,1.8-.15.323-.15.323-.531.393l-3.071.387c-.56.092-.964.144-1.114.681,0,0-.069.237-.214.75-.185.687-.26.612.375.612H114C114.633,68.623,114.564,68.693,114.373,68.006Z" fill="#474747" />
+                                        <path id="Path_30" data-name="Path 30" d="M131.123,176H116.878c-.958,0-1,.127-.947.848l1.079,14c.092.71.162.854,1.01.854h11.96c.848,0,.918-.144,1.01-.854l1.079-14C132.128,176.121,132.081,176,131.123,176Z" transform="translate(-18.73 -105.535)" fill="#474747" />
+                                    </g>
+                                </svg>
                             </div>
                         <?php
                         } else {
                         ?>
                             <a href="<?php echo $link ?>" class="mini_cart_item <?php echo $cart_item_key; ?>">
                                 <div class="img-container">
-                                    <img src="<?php echo get_the_post_thumbnail_url( $product_id , 'woocommerce_gallery_thumbnail'); ?>" alt="<?php echo $product->name ?>" />
+                                    <img src="<?php echo get_the_post_thumbnail_url($product_id, 'woocommerce_gallery_thumbnail'); ?>" alt="<?php echo $product->name ?>" />
                                 </div>
                                 <div class="title-container">
                                     <h5 class="title"> <?php echo $quantity; ?> X <?php echo $product->name ?></h5>
@@ -128,7 +137,13 @@ function woocommerce_header_add_to_cart_fragment($fragments)
                                 </div>
                             </a>
                             <div class="remove-column remove-product">
-                                <i class="fa-solid fa-trash" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>"></i>
+                                <svg data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>" width="13.28" height="15.94" viewBox="0 0 18.469 22.17">
+                                    <g id="Group_13" data-name="Group 13" transform="translate(-96.038 -64)">
+                                        <path id="Path_29" data-name="Path 29" d="M114.373,68.006c-.139-.519-.231-.808-.231-.808-.15-.537-.531-.537-1.1-.629l-3.065-.387c-.381-.063-.381-.063-.531-.392-.5-1.131-.658-1.789-1.206-1.789H102.3c-.548,0-.7.658-1.2,1.8-.15.323-.15.323-.531.393l-3.071.387c-.56.092-.964.144-1.114.681,0,0-.069.237-.214.75-.185.687-.26.612.375.612H114C114.633,68.623,114.564,68.693,114.373,68.006Z" fill="#474747" />
+                                        <path id="Path_30" data-name="Path 30" d="M131.123,176H116.878c-.958,0-1,.127-.947.848l1.079,14c.092.71.162.854,1.01.854h11.96c.848,0,.918-.144,1.01-.854l1.079-14C132.128,176.121,132.081,176,131.123,176Z" transform="translate(-18.73 -105.535)" fill="#474747" />
+                                    </g>
+                                </svg>
+
                             </div>
                         <?php
                         } ?>

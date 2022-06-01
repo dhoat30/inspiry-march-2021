@@ -159,13 +159,17 @@
         margin-bottom: 10px;
         background-color: var(--red);
         border: 1px solid var(--red);
-
+        svg {
+          fill: var(--white);
+          position: relative;
+          top: 1px;
+        }
         &:hover {
           background-color: var(--white);
           color: var(--red) !important;
         }
-        &:hover i {
-          color: var(--red);
+        &:hover svg {
+          fill: var(--red);
         }
         :disabled {
           background-color: var(--lightGrey) !important;

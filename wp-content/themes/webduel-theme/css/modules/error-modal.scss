@@ -25,10 +25,12 @@
     padding: 20px 0 0 0;
     width: 100%;
     max-width: 350px;
-    i {
+    i,
+    svg {
       text-align: center;
       color: var(--errorRed);
       font-size: 3rem;
+      fill: var(--errorRed);
     }
     .content {
       font-size: var(--mediumSize);

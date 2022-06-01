@@ -52,21 +52,24 @@
             @media (max-width: 500px) {
               width: 100%;
             }
+            &:hover {
+              cursor: pointer;
+            }
             span {
               font-size: var(--mediumSize);
               font-weight: var(--bold);
             }
 
-            i {
+            svg {
               transition: var(--transition);
               position: relative;
               top: 2px;
               font-size: 1.2rem;
-              width: 22px;
-              height: 10px;
+              width: 15px;
+              height: 13px;
             }
-            &:hover i {
-              color: white;
+            &:hover svg {
+              fill: white;
             }
           }
 
@@ -82,16 +85,20 @@
               width: 150px;
               padding: 5px 10px;
               text-transform: capitalize;
+              cursor: pointer;
+
               @media (max-width: 500px) {
                 width: 100%;
               }
-              i {
+
+              svg {
                 transition: var(--transition);
                 position: relative;
                 top: 2px;
                 font-size: 1.2rem;
-                width: 22px;
-                height: 10px;
+                width: 15px;
+                height: 13px;
+                font-weight: 2rem;
               }
               span {
                 font-weight: var(--bold);

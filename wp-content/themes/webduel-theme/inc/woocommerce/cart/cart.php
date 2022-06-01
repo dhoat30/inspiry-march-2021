@@ -180,8 +180,12 @@ add_action('woocommerce_before_cart', function () {
                                 ?>
                             </td>
                             <td class="remove-column remove-product">
-                                <i class="fa-solid fa-trash" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>"></i>
-                            </td>
+  <svg data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>" width="13.28" height="15.94" viewBox="0 0 18.469 22.17">
+                                    <g id="Group_13" data-name="Group 13" transform="translate(-96.038 -64)">
+                                        <path id="Path_29" data-name="Path 29" d="M114.373,68.006c-.139-.519-.231-.808-.231-.808-.15-.537-.531-.537-1.1-.629l-3.065-.387c-.381-.063-.381-.063-.531-.392-.5-1.131-.658-1.789-1.206-1.789H102.3c-.548,0-.7.658-1.2,1.8-.15.323-.15.323-.531.393l-3.071.387c-.56.092-.964.144-1.114.681,0,0-.069.237-.214.75-.185.687-.26.612.375.612H114C114.633,68.623,114.564,68.693,114.373,68.006Z" fill="#474747" />
+                                        <path id="Path_30" data-name="Path 30" d="M131.123,176H116.878c-.958,0-1,.127-.947.848l1.079,14c.092.71.162.854,1.01.854h11.96c.848,0,.918-.144,1.01-.854l1.079-14C132.128,176.121,132.081,176,131.123,176Z" transform="translate(-18.73 -105.535)" fill="#474747" />
+                                    </g>
+                                    </svg>                            </td>
                             <td class="item-subtotal-column">
                                 <div class="subtotal"><?php echo $subtotal; ?></div>
                             </td>
@@ -299,8 +303,13 @@ add_action('woocommerce_before_cart', function () {
                                     <input type="number" name="quantity" id="cart-quantity" value="<?php echo $quantity; ?>" max="25" min="1" data-cart_item_key="<?php echo $cart_item_key; ?>" />
                                     <input class="plus" type="button" value="+" control-id="ControlID-3">
                                 </div>
-                                <div class="remove-column">
-                                    <i class="fa-solid fa-trash" data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>"></i>
+                                <div class="remove-column remove-product">
+                                    <svg data-product_id="<?php echo $product_id ?>" data-cart_item_key="<?php echo $cart_item_key; ?>" width="13.28" height="15.94" viewBox="0 0 18.469 22.17">
+                                    <g id="Group_13" data-name="Group 13" transform="translate(-96.038 -64)">
+                                        <path id="Path_29" data-name="Path 29" d="M114.373,68.006c-.139-.519-.231-.808-.231-.808-.15-.537-.531-.537-1.1-.629l-3.065-.387c-.381-.063-.381-.063-.531-.392-.5-1.131-.658-1.789-1.206-1.789H102.3c-.548,0-.7.658-1.2,1.8-.15.323-.15.323-.531.393l-3.071.387c-.56.092-.964.144-1.114.681,0,0-.069.237-.214.75-.185.687-.26.612.375.612H114C114.633,68.623,114.564,68.693,114.373,68.006Z" fill="#474747" />
+                                        <path id="Path_30" data-name="Path 30" d="M131.123,176H116.878c-.958,0-1,.127-.947.848l1.079,14c.092.71.162.854,1.01.854h11.96c.848,0,.918-.144,1.01-.854l1.079-14C132.128,176.121,132.081,176,131.123,176Z" transform="translate(-18.73 -105.535)" fill="#474747" />
+                                    </g>
+                                    </svg>
                                 </div>
 
                             </td>

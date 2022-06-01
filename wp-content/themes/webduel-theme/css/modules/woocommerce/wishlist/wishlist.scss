@@ -196,15 +196,19 @@
     border-radius: 50% !important;
     padding: 8px 5px 3px 8px !important;
     cursor: pointer;
-    i {
+    svg {
       margin-right: 0;
-      font-size: 1.2rem;
+      width: 20px;
+
       position: absolute;
-      color: var(--red);
+      fill: var(--red);
       left: 50%;
       top: 52%;
       transform: translate(-50%, -50%) !important;
       line-height: 0;
+      path {
+        stroke: var(--red);
+      }
     }
   }
   .yith-wcwl-add-button {

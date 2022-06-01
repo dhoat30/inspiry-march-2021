@@ -94,14 +94,19 @@
   height: 30px;
   display: inline-block;
   margin-right: 10px;
-}
-.contact-form-container .icon-container i {
-  color: white;
   position: relative;
-  left: 50%;
-  top: 4px;
-  transform: translate(-50%, 0);
+  svg {
+    fill: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    path {
+      fill: var(--white);
+    }
+  }
 }
+
 .contact-form-container a {
   text-decoration: none;
   display: flex;

@@ -18,7 +18,12 @@ add_action('woocommerce_archive_description', 'woocommerce_catalog_ordering', 60
 add_action('woocommerce_archive_description', "adding_filter_button", 50);
 function adding_filter_button() {
    ?> 
-         <button class="filter-button secondary-button"><i class="fa-regular fa-filter-list"></i> <span>Filter</span></button>
+         <button class="filter-button secondary-button">
+            <svg  viewBox="0 0 27.998 30">
+               <path id="Path_14" data-name="Path 14" d="M2,7h.142A3.981,3.981,0,0,0,9.858,7H30a1,1,0,0,0,0-2H9.858A3.981,3.981,0,0,0,2.142,5H2A1,1,0,0,0,2,7ZM6,4A2,2,0,1,1,4,6,2,2,0,0,1,6,4ZM30,15h-.142a3.981,3.981,0,0,0-7.716,0H2a1,1,0,0,0,0,2H22.142a3.981,3.981,0,0,0,7.716,0H30a1,1,0,0,0,0-2Zm-4,3a2,2,0,1,1,2-2A2,2,0,0,1,26,18Zm4,7H19.858a3.981,3.981,0,0,0-7.716,0H2a1,1,0,0,0,0,2H12.142a3.981,3.981,0,0,0,7.716,0H30a1,1,0,0,0,0-2ZM16,28a2,2,0,1,1,2-2A2,2,0,0,1,16,28Z" transform="translate(29.999 -1) rotate(90)"/>
+            </svg>
+
+            <span>Filter</span></button>
 
  
    <?php 

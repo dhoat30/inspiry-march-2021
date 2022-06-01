@@ -34,7 +34,10 @@ add_action('woocommerce_single_product_summary', function () {
     global $product;
     if ($product->get_shipping_class() === "free-shipping") {
         echo '<div class="free-shipping">
-        <i class="fa-solid fa-cube"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20">
+            <path id="Path_41" data-name="Path 41" d="M10.769,146.041l7.692-4.195V134.2L10.769,137ZM10,135.644l8.389-3.053L10,129.538l-8.389,3.053Zm10-3.029v9.231a1.491,1.491,0,0,1-.216.781,1.535,1.535,0,0,1-.589.565l-8.462,4.615a1.494,1.494,0,0,1-1.466,0L.805,143.192a1.535,1.535,0,0,1-.589-.565A1.491,1.491,0,0,1,0,141.846v-9.231a1.5,1.5,0,0,1,.276-.877,1.509,1.509,0,0,1,.733-.565L9.471,128.1a1.5,1.5,0,0,1,1.058,0l8.462,3.077A1.539,1.539,0,0,1,20,132.615Z" transform="translate(0 -128)" fill="#474747"/>
+            </svg>
+
         Free Delivery
         </div>';
     }
@@ -120,7 +123,10 @@ add_action('woocommerce_single_product_summary', function () {
     if ($product->get_availability()['class'] === 'in-stock') {
         echo ' 
            <h3 class="title">
-            <i class="fa-solid fa-circle-check" style="color: var(--green); "></i>
+            <svg  viewBox="0 0 20 20">
+                <path id="Path_40" data-name="Path 40" d="M12,22A10,10,0,1,0,2,12,10,10,0,0,0,12,22ZM15.535,8.464A1,1,0,0,1,16.95,9.879L11.3,15.532l0,0a1,1,0,0,1-1.414,0l0,0L7.05,12.707a1,1,0,0,1,1.414-1.414l2.121,2.121Z" transform="translate(-2 -2)" fill="#1fac75" fill-rule="evenodd"/>
+            </svg>
+
             <span  style="color: var(--green); ">
             IN STOCK
             </span>
@@ -137,7 +143,10 @@ add_action('woocommerce_single_product_summary', function () {
     } else {
         echo ' 
             <h3 class="title">
-            <i class="fa-solid fa-circle-check" style="color: var(--orange); "></i>
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20">
+                <path id="Path_40" data-name="Path 40" d="M12,22A10,10,0,1,0,2,12,10,10,0,0,0,12,22ZM15.535,8.464A1,1,0,0,1,16.95,9.879L11.3,15.532l0,0a1,1,0,0,1-1.414,0l0,0L7.05,12.707a1,1,0,0,1,1.414-1.414l2.121,2.121Z" transform="translate(-2 -2)" fill="#d69400" fill-rule="evenodd"/>
+            </svg>
+
             <span  style="color: var(--orange); ">
             Pre Order
             </span>
@@ -206,7 +215,24 @@ add_action('woocommerce_single_product_summary', function () {
 
     if ($category === 'Wallpaper') {
         echo '<div class="product-page-btn-container">
-            <button class="sizing-calculator-button secondary-button"><i class="far fa-calculator" aria-hidden="true"></i> Wallpaper Calculator</button>       
+            <button class="sizing-calculator-button secondary-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10.382" height="14.996" viewBox="0 0 10.382 14.996">
+            <g id="Group_15" data-name="Group 15" transform="translate(-5.5 -1.5)">
+              <path id="Path_42" data-name="Path 42" d="M14.151,16.5H7.23a1.732,1.732,0,0,1-1.73-1.73V3.23A1.732,1.732,0,0,1,7.23,1.5h6.921a1.732,1.732,0,0,1,1.73,1.73V14.765A1.732,1.732,0,0,1,14.151,16.5ZM7.23,2.654a.577.577,0,0,0-.577.577V14.765a.577.577,0,0,0,.577.577h6.921a.577.577,0,0,0,.577-.577V3.23a.577.577,0,0,0-.577-.577Z"/>
+              <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(7.5 10.5)"/>
+              <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(9.5 10.5)"/>
+              <path id="Path_43" data-name="Path 43" d="M12.333,22.654H10.411a.577.577,0,1,1,0-1.154h1.922a.577.577,0,1,1,0,1.154Z" transform="translate(-1.834 -8.465)"/>
+              <circle id="Ellipse_8" data-name="Ellipse 8" cx="0.5" cy="0.5" r="0.5" transform="translate(12.5 13.5)"/>
+              <circle id="Ellipse_9" data-name="Ellipse 9" cx="0.5" cy="0.5" r="0.5" transform="translate(12.5 10.5)"/>
+              <ellipse id="Ellipse_10" data-name="Ellipse 10" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(7.5 8.5)"/>
+              <ellipse id="Ellipse_11" data-name="Ellipse 11" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(9.5 8.5)"/>
+              <circle id="Ellipse_12" data-name="Ellipse 12" cx="0.5" cy="0.5" r="0.5" transform="translate(12.5 8.5)"/>
+              <path id="Path_44" data-name="Path 44" d="M14.114,8.947H10.654A1.155,1.155,0,0,1,9.5,7.794V6.64a1.155,1.155,0,0,1,1.154-1.154l3.44-.018A1.156,1.156,0,0,1,15.25,6.623V7.776a1.155,1.155,0,0,1-1.136,1.171ZM14.1,6.623l-3.44.018,0,1.154h3.461L14.1,7.776Z" transform="translate(-1.693 -1.68)"/>
+            </g>
+          </svg>
+          
+
+            Wallpaper Calculator</button>       
         </div>';
 
         //add calculator body 
@@ -227,8 +253,12 @@ function calculator_body()
     <!--sizing calculator-->
     <div class="overlay-background">
         <div class="calculator-overlay">
-        <i class="fal fa-times close"></i>
-
+       
+        <svg class="close" width="16" height="16" viewBox="0 0 16 16">
+            <path id="Path_28" data-name="Path 28" d="M13.4,12l6.3-6.3a.99.99,0,1,0-1.4-1.4L12,10.6,5.7,4.3A.99.99,0,0,0,4.3,5.7L10.6,12,4.3,18.3A.908.908,0,0,0,4,19a.945.945,0,0,0,1,1,.908.908,0,0,0,.7-.3L12,13.4l6.3,6.3a.967.967,0,0,0,1.4,0,.967.967,0,0,0,0-1.4Z" transform="translate(-4 -4)" fill="#474747"/>
+        </svg>
+    
+       
             <div id="calculator-container">
                 <div class="popup-modal wallpaper-calculator-modal is-open">
           
