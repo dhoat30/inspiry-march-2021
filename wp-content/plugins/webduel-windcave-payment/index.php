@@ -183,7 +183,7 @@ function wc_offline_gateway_init() {
 			}
 			 // get order details
 			 $totalAmount = WC()->cart->total; 
-			print_r($totalAmount); 
+			
 					// setting up environment variables 
 					$sessionUrl = ""; 
 					$authKey = ""; 
@@ -265,6 +265,7 @@ function wc_offline_gateway_init() {
 		 * @return array
 		 */
 		public function process_payment( $order_id ) {
+			// make an api call 
 
             global $woocommerce;
 			$sessionID = $_POST['windcave_session_id']; 

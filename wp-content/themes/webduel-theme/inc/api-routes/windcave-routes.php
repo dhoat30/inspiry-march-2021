@@ -18,11 +18,11 @@ function windcave_routes() {
 		
 }
 function createWindcaveSession($data){ 
-    $cartTotal = sanitize_text_field($_POST['cartTotal']); 
-    $firstName = sanitize_text_field($_POST['firstName']); 
-    $lastName = sanitize_text_field($_POST['lastName']); 
-    $emailAddress = sanitize_email($_POST['emailAddress']); 
-    $phone = preg_replace('/[^0-9]/', '', $_POST['phone']);
+    $cartTotal = sanitize_text_field($data['cartTotal']); 
+    $firstName = sanitize_text_field($data['firstName']); 
+    $lastName = sanitize_text_field($data['lastName']); 
+    $emailAddress = sanitize_email($data['emailAddress']); 
+    $phone = preg_replace('/[^0-9]/', '', $data['phone']);
     // setting up environment variables 
     $sessionUrl = ""; 
     $authKey = ""; 
@@ -70,8 +70,12 @@ function createWindcaveSession($data){
 
       $response = curl_exec($ch);
       $obj = json_decode($response);
+      
       return $obj; 
 }
+
+
+
 function windcaveSessionStatus($data){
     $sessionID = $data["sessionID"];
   

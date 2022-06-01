@@ -128,7 +128,6 @@ function usingGateway() {
         //Etc etc
     } else {
         var checkout_form = $('form.woocommerce-checkout');
-        console.log("Not using my gateway. Proceed as usual");
         checkout_form.off('checkout_place_order');
         // submit the form now
     }
