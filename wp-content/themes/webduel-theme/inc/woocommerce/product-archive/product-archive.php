@@ -74,6 +74,8 @@ add_action('filter_buttons_before_shop_loop', function () {
         echo do_shortcode('[facetwp facet="colour_family"]');
         echo do_shortcode('[facetwp facet="pattern"]');
         echo do_shortcode('[facetwp facet="composition"]');
+        echo do_shortcode('[facetwp facet="price_range"]');
+        echo do_shortcode('[facetwp facet="color_facet"]');
         // echo do_shortcode('[facetwp facet="availability"]');
 
         //   echo do_shortcode('[facetwp facet="price_range"]');  
@@ -91,6 +93,8 @@ add_action('filter_buttons_before_shop_loop', function () {
         echo do_shortcode('[facetwp facet="colour_family_m"]');
         echo do_shortcode('[facetwp facet="pattern_m"]');
         echo do_shortcode('[facetwp facet="composition_m"]');
+        echo do_shortcode('[facetwp facet="price_range"]');
+
         // echo do_shortcode('[facetwp facet="availability_m"]');
         // echo do_shortcode('[facetwp facet="price_range_m"]');   
 
@@ -110,24 +114,42 @@ add_action('filter_buttons_before_shop_loop', function () {
     }
 }, 10);
 
-// add facet label 
+// add facet label for desktop filters 
 function fwp_add_facet_labels()
 {
     ?>
     <script>
         (function($) {
+            // add label for desktop filters 
             $(document).on('facetwp-loaded', function() {
                 if (window.matchMedia("(min-width: 1100px)").matches) {
-                    $('.facetwp-facet').each(function() {
+                    $('.facetwp-facet').each(function(index) {
                         var $facet = $(this);
                         var facet_name = $facet.attr('data-name');
                         var facet_label = FWP.settings.labels[facet_name];
-
-                        if ($facet.closest('.facet-wrap').length < 1 && $facet.closest('.facetwp-flyout').length < 1) {
+                        
+                        if ($facet.closest('.facet-wrap').length < 1 && $facet.closest('.facetwp-flyout').length < 1 && facet_name === 'price_range' ) {
+                            $facet.wrap('<div class="facet-wrap"></div>');
+                            $facet.before(`<div class="price-facet">${facet_label}</div>`);
+                        }
+                        else if($facet.closest('.facet-wrap').length < 1 && $facet.closest('.facetwp-flyout').length < 1){
                             $facet.wrap('<div class="facet-wrap"></div>');
                             $facet.before(`<div class="facet-label-button"><button class="facet-label">${facet_label}<i class="plus-icon">+</i></button></div>`);
                         }
-
+                    });
+                }
+                        // add label for price range in mobile device 
+                else{ 
+                    $('.facetwp-facet').each(function(index) {
+                        var $facet = $(this);
+                        var facet_name = $facet.attr('data-name');
+                        var facet_label = FWP.settings.labels[facet_name];
+                        
+                        if ($facet.closest('.facet-wrap').length < 1 && $facet.closest('.facetwp-flyout').length < 1 && facet_name === 'price_range' ) {
+                            $facet.wrap('<div class="facet-wrap"></div>');
+                            $facet.before(`<div class="price-facet">${facet_label}</div>`);
+                        }
+                    
                     });
                 }
             });
@@ -156,10 +178,8 @@ add_action('woocommerce_after_main_content', function () {
 
 add_action('woocommerce_before_shop_loop_item_title', 'add_on_hover_shop_loop_image');
 
-function add_on_hover_shop_loop_image()
-{
+function add_on_hover_shop_loop_image(){
     $image_id = wc_get_product()->gallery_image_ids[0];
-  
     if ($image_id) {
         // echo '<img src="' . wp_get_attachment_image_src($image_id, 'woocommerce_thumbnail')[0] . '" class="current">';
         echo '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
@@ -169,7 +189,6 @@ function add_on_hover_shop_loop_image()
         alt="'.wc_get_product()->name.'"
    />';
     } else {  //assuming not all products have galleries set
-
         echo wp_get_attachment_image(wc_get_product()->image_id,  'woocommerce_thumbnail');
     }
 }

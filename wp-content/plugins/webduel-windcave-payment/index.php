@@ -181,73 +181,24 @@ function wc_offline_gateway_init() {
 			if ( 'no' === $this->enabled ) {
 				return;
 			}
-			 // get order details
-			 $totalAmount = WC()->cart->total; 
 			
-					// setting up environment variables 
-					$sessionUrl = ""; 
-					$authKey = ""; 
-					if(get_site_url() === "https://localhost"){ 
-						$sessionUrl = "https://uat.windcave.com/api/v1/sessions/"; 
-						$authKey = "Basic SW5zcGlyeV9SZXN0OmI0NGFiMjZmOWFkNzIwNDQ4OTc0MGQ1YWM3NmE5YzE2ZDgzNDJmODUwYTRlYjQ1NTc1NmRiNDgyYjFiYWVjMjk="; 
-					}
-					else{ 
-						$sessionUrl = "https://sec.windcave.com/api/v1/sessions/"; 
-						$authKey = "Basic SW5zcGlyeUxQOmRkYzdhZDg2ZDQ0NDA3NDk3OTNkZWM1OWU5YTk1MmI4ODU3ODlkM2Q0OGE2MzliODMwZWI0OTJhNjAyYmNhNjM=";
-					}
-			 // https request to windcave to create a session 
-			 $ch = curl_init();
-			 curl_setopt($ch, CURLOPT_URL, $sessionUrl);
-			 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-			 curl_setopt($ch, CURLOPT_HEADER, FALSE);
-		  
-			 curl_setopt($ch, CURLOPT_POST, TRUE);
-		  
-			 curl_setopt($ch, CURLOPT_POSTFIELDS, "{
-			 \"type\": \"purchase\",
-			 \"methods\": [
-				\"card\"
-			 ],
-			 \"amount\": \"$totalAmount\",
-			 \"currency\": \"NZD\",
-			 \"callbackUrls\": {
-				\"approved\": \"https://inspiry.co.nz/\",
-				\"declined\": \"https://inspiry.co.nz/\"
-			 },
-			 \"notificationUrl\": \"https://inspiry.co.nz/wp-json/inspiry/v1/windcave-success\"
-			 }");
-		  
-			 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-			 "Content-Type: application/json",
-			 "Authorization:".$authKey."" 
-			 ));
-		
-			 $response = curl_exec($ch);
-			 $obj = json_decode($response);
-			 $this->sessionID = $obj->id;
-			 $selected_payment_method_id = WC()->session->get( 'chosen_payment_method' );
 
 			// let's suppose it is our payment processor JavaScript that allows to obtain a token
 			wp_enqueue_script( 'windcave_webduel_js', 'https://sec.windcave.com/js/windcavepayments-seamless-v1.js' );
 			// and this is our custom JS in your plugin directory that works with token.js
-			wp_register_script( 'woocommerce_webduel', plugins_url( 'misha.js', __FILE__ ), array( 'jquery', 'windcave_webduel_js' ) );
+			wp_register_script( 'woocommerce_webduel', plugins_url( 'misha-1.1.js', __FILE__ ), array( 'jquery', 'windcave_webduel_js' ), '1.0', true );
 
 			// in most payment processors you have to use PUBLIC KEY to obtain a token
 			wp_localize_script( 'woocommerce_webduel', 'webduel_params', array(
-				'windcaveObj'=> $obj, 
 				"root_url" => get_site_url(),
       			"nonce" => wp_create_nonce("wp_rest")
 			) );
-
 			wp_enqueue_script( 'woocommerce_webduel' );
-         
         }
 
 		public function payment_fields(){ 
 			?>
 			<div class="windcave-description">Pay with your Credit or Debit Card via Windcave.</div>
-			<div id="windcave-custom-container"></div>
-			<div class="primary-button windcave-submit-button"> Submit</div>
 			<input id="windcave_session_id" name="windcave_session_id" type="text" value="" hidden/> 
 			<?php
 		}
@@ -266,14 +217,76 @@ function wc_offline_gateway_init() {
 		 */
 		public function process_payment( $order_id ) {
 			// make an api call 
+			$order = wc_get_order( $order_id );
+				// get order details
+				$orderTotal = $order->get_total(); 
+							
+				// setting up environment variables 
+				$sessionUrl = ""; 
+				$authKey = ""; 
+				if(get_site_url() === "https://localhost" || get_site_url() === "https://inspiryacademy.com"){ 
+					
+					$sessionUrl = "https://uat.windcave.com/api/v1/sessions/"; 
+					$authKey = "Basic SW5zcGlyeV9SZXN0OmI0NGFiMjZmOWFkNzIwNDQ4OTc0MGQ1YWM3NmE5YzE2ZDgzNDJmODUwYTRlYjQ1NTc1NmRiNDgyYjFiYWVjMjk="; 
+				}
+				else{ 
+					$sessionUrl = "https://sec.windcave.com/api/v1/sessions/"; 
+					$authKey = "Basic SW5zcGlyeUxQOmRkYzdhZDg2ZDQ0NDA3NDk3OTNkZWM1OWU5YTk1MmI4ODU3ODlkM2Q0OGE2MzliODMwZWI0OTJhNjAyYmNhNjM=";
+				}
+				// https request to windcave to create a session 
+				$ch = curl_init();
+				curl_setopt($ch, CURLOPT_URL, $sessionUrl);
+				curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+				curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
-            global $woocommerce;
-			$sessionID = $_POST['windcave_session_id']; 
-  
+				curl_setopt($ch, CURLOPT_POST, TRUE);
+
+				curl_setopt($ch, CURLOPT_POSTFIELDS, "{
+				\"type\": \"purchase\",
+				\"methods\": [
+				\"card\"
+				],
+				\"amount\": \"$orderTotal\",
+				\"currency\": \"NZD\",
+				\"callbackUrls\": {
+				\"approved\": \"https://inspiry.co.nz/\",
+				\"declined\": \"https://inspiry.co.nz/\"
+				},
+				\"notificationUrl\": \"https://inspiry.co.nz/wp-json/inspiry/v1/windcave-success\"
+				}");
+
+				curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+				"Content-Type: application/json",
+				"Authorization:".$authKey."" 
+				));
+
+				$response = curl_exec($ch);
+				$obj = json_decode($response);
+				$href=$obj->links[2]->href; 
+				$sessionID = $obj->id; 
+				$returnURL = $this->get_return_url( $order ); 
+			return array(
+				'result' => 'success',
+				'redirect' => "#$href&$order_id&$sessionID&$orderTotal&$returnURL"
+			);
+
+		}
+	
+	
+  } // end \WD_Windcave_Gateway class
+}
+
+// add to cart  Ajax -------------------------------------------------------------
+add_action('wp_ajax_webduel_complete_order', 'webduel_complete_order');
+add_action('wp_ajax_nopriv_webduel_complete_order', 'webduel_complete_order');
+              
+function webduel_complete_order() {
+	$orderID = sanitize_text_field($_POST['orderID']);
+	$windcaveSessionID = sanitize_text_field($_POST['windcaveSessionID']);
 					// setting up environment variables 
 					$sessionUrl = ""; 
 					$authKey = ""; 
-					if(get_site_url() === "https://localhost"){ 
+					if(get_site_url() === "https://localhost" || get_site_url() === "https://inspiryacademy.com"){ 
 						$sessionUrl = "https://uat.windcave.com/api/v1/sessions/"; 
 						$authKey = "Basic SW5zcGlyeV9SZXN0OmI0NGFiMjZmOWFkNzIwNDQ4OTc0MGQ1YWM3NmE5YzE2ZDgzNDJmODUwYTRlYjQ1NTc1NmRiNDgyYjFiYWVjMjk="; 
 					}
@@ -286,7 +299,7 @@ function wc_offline_gateway_init() {
 				$curl = curl_init();
 				
 				curl_setopt_array($curl, array(
-					CURLOPT_URL =>$sessionUrl.$sessionID,
+					CURLOPT_URL =>$sessionUrl.$windcaveSessionID,
 					CURLOPT_RETURNTRANSFER => true,
 					CURLOPT_ENCODING => '',
 					CURLOPT_MAXREDIRS => 10,
@@ -308,7 +321,7 @@ function wc_offline_gateway_init() {
 				if($sessionObj->transactions[0]->authorised){ 
 
 						// we need it to get any order detailes
-						$order = wc_get_order( $order_id );
+						$order = wc_get_order( $orderID );
 
 							// Mark as on-hold (we're awaiting the payment)
 							$order->update_status( 'processing', __( 'Payment Received', 'wc-gateway-windcave' ) );
@@ -317,18 +330,111 @@ function wc_offline_gateway_init() {
 							WC()->cart->empty_cart();
 							// and this is our custom JS in your plugin directory that works with token.js
 							// Redirect to the thank you page
-							return array(
-								'result' => 'success',
-								'redirect' => $this->get_return_url( $order )
+						
+							
+							$dataArray = array(
+								'code'=>  200, 
+								'data'=> $sessionObj->transactions[0]->authorised
 							);
+							echo wp_send_json($dataArray);
 				}
 				else {
-				
+					
 					wc_add_notice(  $sessionObj->transactions[0]->responseText, 'error' );
 
-					return;
+					$dataArray = array(
+						'code'=>  404, 
+						'data'=> $sessionObj->transactions[0]->responseText
+					);
+					echo wp_send_json($dataArray);
 				}
-		}
-	
-  } // end \WD_Windcave_Gateway class
 }
+
+// add modal in theme footer
+
+add_action('wp_footer', 'webduel_footer_windcave_container', 10);
+ function webduel_footer_windcave_container(){ 
+?>
+<style>
+
+#windcave-custom-container {
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 1px solid var(--lightGrey);
+  padding: 20px 10px;
+  display: none;
+
+  
+  
+ 
+}
+#windcave-custom-container  .primary-button {
+    background: var(--red);
+    margin: 0 auto;
+    display: block;
+    border: 1px solid var(--red);
+  }
+#windcave-iframe-container {
+    margin: 20px 0;
+  }
+#windcave-custom-container .close-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  #windcave-custom-container .logo-box img {
+      display: block;
+      margin: 0 auto;
+  }
+
+</style>
+<div class="windcave-custom-container" id="windcave-custom-container">
+<svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path id="Path_28" data-name="Path 28" d="M13.4,12l6.3-6.3a.99.99,0,1,0-1.4-1.4L12,10.6,5.7,4.3A.99.99,0,0,0,4.3,5.7L10.6,12,4.3,18.3A.908.908,0,0,0,4,19a.945.945,0,0,0,1,1,.908.908,0,0,0,.7-.3L12,13.4l6.3,6.3a.967.967,0,0,0,1.4,0,.967.967,0,0,0,0-1.4Z" transform="translate(-4 -4)" fill="#474747"></path>
+                </svg>
+                <div class="white-overlay"></div>
+    <div class="logo-box">
+        <?php
+                $argsWindcave = array(
+                    'pagename' => 'contact'
+                );
+             
+                $queryWindcave = new WP_Query($argsWindcave);
+                while ($queryWindcave->have_posts()) {
+                    $queryWindcave->the_post();
+                    // get images 
+                    if (have_rows('payment_option_images')) {
+
+                        while (have_rows('payment_option_images')) {
+                            the_row();
+                            $image = get_sub_field('image')['sizes']['medium'];
+                           if(get_sub_field('title')==="Windcave"){ 
+                       ?>
+                       <img src="<?php echo $image; ?>" alt="<?php echo get_sub_field('title'); ?>" width="200px">
+                       <?php 
+                           }
+             
+                        }
+                    }
+                    ?>
+
+                <?php
+                }
+                wp_reset_postdata();
+
+                ?>
+    </div>
+    <div id="windcave-iframe-container"></div>
+    <button class="primary-button windcave-submit-button">Submit</button>
+</div>
+
+<?php 
+ }

@@ -2094,6 +2094,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_Buttons_StockToggle_StockToggle__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./modules/Buttons/StockToggle/StockToggle */ "./src/modules/Buttons/StockToggle/StockToggle.js");
 /* harmony import */ var _modules_Scroll_FixedNavMobile__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./modules/Scroll/FixedNavMobile */ "./src/modules/Scroll/FixedNavMobile.js");
 /* harmony import */ var _modules_NavMenu_MobileMenu__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./modules/NavMenu/MobileMenu */ "./src/modules/NavMenu/MobileMenu.js");
+/* harmony import */ var _modules_Modals_PhoneModal__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./modules/Modals/PhoneModal */ "./src/modules/Modals/PhoneModal.js");
  // form 
 
  // owl carousel 
@@ -2142,6 +2143,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 let $ = jQuery; // add to cart and remove from cart class 
 
 const popUpCart = new _modules_PopUpCart__WEBPACK_IMPORTED_MODULE_9__["default"](); // woo Gallery 
@@ -2169,6 +2171,7 @@ const fixedNavMobile = new _modules_Scroll_FixedNavMobile__WEBPACK_IMPORTED_MODU
 const header = new _modules_Header__WEBPACK_IMPORTED_MODULE_29__["default"](); // mobile menu 
 
 const mobileMenu = new _modules_NavMenu_MobileMenu__WEBPACK_IMPORTED_MODULE_32__["default"]();
+const phoneModal = new _modules_Modals_PhoneModal__WEBPACK_IMPORTED_MODULE_33__["default"]();
 
 window.onload = function () {
   // exit intent modal 
@@ -3294,27 +3297,36 @@ class Header {
   }
 
   events() {
-    // show sign in modal 
-    $('.useful-links-container .sign-in-container').hover(this.showSignInModal, this.hideSignInModal); // show design boards header modal 
+    // show phone modal 
+    $('.useful-links-container .phone-container').hover(e => {
+      this.showSignInModal('.useful-links-container', '.wd-phone-modal-container');
+    }, e => {
+      this.hideSignInModal('.useful-links-container', '.wd-phone-modal-container');
+    }); // show sign in modal 
 
-    $('.useful-links-container .design-board-icon-container').hover(this.showDesignBoardModal, this.hideDesignBoardModal);
+    $('.useful-links-container .sign-in-container').hover(e => {
+      this.showSignInModal('.useful-links-container', '.sign-in-modal');
+    }, e => {
+      this.hideSignInModal('.useful-links-container', '.sign-in-modal');
+    }); // show design board in modal 
+
+    $('.useful-links-container .design-board-icon-container ').hover(e => {
+      this.showSignInModal('.useful-links-container', '.design-board-header-modal');
+    }, e => {
+      this.hideSignInModal('.useful-links-container', '.design-board-header-modal');
+    });
+  } // show phone modal 
+  // sign in modal 
+
+
+  showSignInModal(e, modalClass) {
+    console.log("show");
+    $(e).find(modalClass).show();
   }
 
-  showSignInModal() {
-    $('.useful-links-container .sign-in-modal').show();
-  }
-
-  hideSignInModal() {
-    $('.useful-links-container .sign-in-modal').hide();
-  } // design board modal 
-
-
-  showDesignBoardModal() {
-    $('.useful-links-container .design-board-header-modal').show();
-  }
-
-  hideDesignBoardModal() {
-    $('.useful-links-container .design-board-header-modal').hide();
+  hideSignInModal(e, modalClass) {
+    console.log("hide");
+    $(e).find(modalClass).hide();
   }
 
 }
@@ -3551,7 +3563,7 @@ class ExitIntentModal {
 
       console.log(timeDifference);
 
-      if (timeDifference > 1) {
+      if (timeDifference > 120) {
         var object = {
           value: null,
           timestamp: null
@@ -3565,7 +3577,7 @@ class ExitIntentModal {
   showModalOnExit(evt) {
     // !this.showModalObject.value
     // && !localStorage.getItem('modalShowed')
-    if (evt.toElement === null && evt.relatedTarget === null && this.showModalValue) {
+    if (evt.toElement === null && evt.relatedTarget === null && this.showModalValue && !localStorage.getItem('modalShowed')) {
       $(evt.currentTarget).off("mouseout"); // An intent to exit has happened
 
       $('.inspiry-modal').show();
@@ -3589,6 +3601,39 @@ class ExitIntentModal {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (ExitIntentModal);
+
+/***/ }),
+
+/***/ "./src/modules/Modals/PhoneModal.js":
+/*!******************************************!*\
+  !*** ./src/modules/Modals/PhoneModal.js ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const $ = jQuery;
+
+class PhoneModal {
+  constructor() {
+    this.stickyPhoneBtn = $('.sticky-phone-button .btn');
+    this.events();
+  }
+
+  events() {
+    this.stickyPhoneBtn.on('click', this.showStickyPhoneModal); // this.stickyPhoneBtn.hover(this.showStickyPhoneModal)
+  }
+
+  showStickyPhoneModal() {
+    console.log("on hover");
+    $('.sticky-phone-button .wd-phone-modal-container').toggle();
+    $('.sticky-phone-button .btn .phone-icon').toggle();
+    $('.sticky-phone-button .btn .close-icon').toggle();
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (PhoneModal);
 
 /***/ }),
 
@@ -4973,8 +5018,6 @@ class Checkout {
   constructor() {
     // disable the pay securely button  
     $(":submit").removeAttr("disabled");
-    this.onPaymentSelectionChange;
-    this.windcavePaymentSelected = $("input[type='radio'][name='payment_method']:checked").val();
     this.events();
   }
 

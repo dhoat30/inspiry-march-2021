@@ -16,7 +16,8 @@ add_action('woocommerce_single_product_summary', function() {
 
 function productDescription(){ 
     global $product; 
-    echo '
+    if($product->get_description()){ 
+ echo '
     <div class="item">
         <h2 class="title">
             Description
@@ -26,6 +27,8 @@ function productDescription(){
         '. $product->get_description().'
         </div> 
     </div>'; 
+    }
+   
 }
 function productDetails(){
     global $product; 

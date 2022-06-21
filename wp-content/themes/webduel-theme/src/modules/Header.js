@@ -5,25 +5,48 @@ class Header {
         this.events()
     }
     events() {
+        // show phone modal 
+        $('.useful-links-container .phone-container').hover(
+            (e) => {
+                this.showSignInModal('.useful-links-container', '.wd-phone-modal-container')
+            },
+            (e) => {
+                this.hideSignInModal('.useful-links-container', '.wd-phone-modal-container')
+            },
+        )
         // show sign in modal 
-        $('.useful-links-container .sign-in-container').hover(this.showSignInModal, this.hideSignInModal)
+        $('.useful-links-container .sign-in-container').hover(
+            (e) => {
+                this.showSignInModal('.useful-links-container', '.sign-in-modal')
+            },
+            (e) => {
+                this.hideSignInModal('.useful-links-container', '.sign-in-modal')
+            },
+        )
+        // show design board in modal 
+        $('.useful-links-container .design-board-icon-container ').hover(
+            (e) => {
+                this.showSignInModal('.useful-links-container', '.design-board-header-modal')
+            },
+            (e) => {
+                this.hideSignInModal('.useful-links-container', '.design-board-header-modal')
+            }
+        )
 
-        // show design boards header modal 
-        $('.useful-links-container .design-board-icon-container').hover(this.showDesignBoardModal, this.hideDesignBoardModal)
+    }
+    // show phone modal 
+
+    // sign in modal 
+    showSignInModal(e, modalClass) {
+        console.log("show")
+
+        $(e).find(modalClass).show()
+    }
+    hideSignInModal(e, modalClass) {
+        console.log("hide")
+        $(e).find(modalClass).hide()
 
     }
-    showSignInModal() {
-        $('.useful-links-container .sign-in-modal').show()
-    }
-    hideSignInModal() {
-        $('.useful-links-container .sign-in-modal').hide()
-    }
-    // design board modal 
-    showDesignBoardModal() {
-        $('.useful-links-container .design-board-header-modal').show()
-    }
-    hideDesignBoardModal() {
-        $('.useful-links-container .design-board-header-modal').hide()
-    }
+
 }
 export default Header

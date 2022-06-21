@@ -43,8 +43,19 @@
 }
 
 .facet-wrap {
+  background-color: var(--beige);
+
+  .price-facet {
+    color: var(--grey);
+    padding: 15px 10px 5px 10px;
+  }
+  .facetwp-type-slider {
+    padding-bottom: 15px !important;
+  }
+
   .facet-label-button {
     position: relative;
+    // price facet
 
     .facet-label {
       background-color: var(--beige);
@@ -86,8 +97,6 @@
   position: relative;
   padding: 0 10px;
   display: none;
-}
-.facet-wrap {
 }
 
 .facetwp-checkbox {
@@ -251,6 +260,10 @@
           margin: 5px 5px;
           text-transform: uppercase;
         }
+      }
+      .facetwp-type-slider {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
       }
     }
     /* mobile styling */

@@ -9,7 +9,6 @@ class SingleProduct {
         // set the availabilty depending on the variation selected 
         this.variationProduct.on('change', this.getVariationValue)
         this.variationProduct.on('change', this.setVariationDescription)
-
     }
     getVariationValue(e) {
         const variationID = $(this).val()

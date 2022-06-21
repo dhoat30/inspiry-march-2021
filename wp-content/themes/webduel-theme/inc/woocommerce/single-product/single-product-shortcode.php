@@ -12,13 +12,12 @@ function design_board_button(){
             </g>
                 </g>
             </svg>
-      
-   
         </div>
-    
+        '.           
+         do_shortcode('[yith_wcwl_add_to_wishlist]')
+        .'
     </div>
     '; 
-            // do_shortcode('[yith_wcwl_add_to_wishlist]')
 
     return $designBoardButton; 
 }

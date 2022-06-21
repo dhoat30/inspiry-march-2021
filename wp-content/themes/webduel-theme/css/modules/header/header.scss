@@ -152,6 +152,9 @@
 
       .container {
         margin: 0 0 0 50px;
+        @media (max-width: 1200px) {
+          margin: 0 0 0 30px;
+        }
         i {
           color: var(--darkGrey);
           font-size: 1.2rem;
@@ -159,12 +162,38 @@
         svg {
           color: var(--darkGrey);
           font-size: 1.2rem;
+        }
+      }
+      .phone-container {
+        cursor: pointer;
+        position: relative;
+        span {
+          font-size: 0.9rem;
+          color: var(--darkGrey);
           position: relative;
-          top: 3px;
+          top: -1px;
+          margin-right: 5px;
+        }
+        // modal styling
+        .wd-phone-modal-container {
+          top: 25px;
+          left: 0;
+          bottom: 0 !important;
+          height: 210px;
+          .title {
+            color: var(--darkGrey);
+          }
+          .phone-number {
+            color: var(--darkGrey);
+            a {
+              color: var(--darkGrey);
+            }
+          }
         }
       }
       .sign-in-container {
         position: relative;
+
         span {
           font-size: 0.9rem;
           color: var(--darkGrey);
@@ -179,7 +208,7 @@
           width: 270px;
           z-index: 100;
           position: absolute;
-          background-color: var(--white);
+          background-color: var(--beige);
           border: 1px solid var(--lightGrey);
           .list {
             list-style: none;
@@ -618,12 +647,9 @@
     }
   }
 }
-#mega-menu-inspiry_main_menu > li:last-child {
-  @media (min-width: 1100px) {
-    display: none !important;
-  }
-}
+
 // add custom icon for max mega menu
+
 li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator:after {
   font-family: inherit !important;
   border-style: solid !important;
@@ -637,6 +663,9 @@ li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator:after {
   transform: rotate(135deg) !important;
   vertical-align: top;
   width: 7px !important;
+  @media (min-width: 1100px) {
+    display: none !important;
+  }
 }
 
 li.mega-menu-item-has-children.mega-toggle-on
@@ -644,4 +673,7 @@ li.mega-menu-item-has-children.mega-toggle-on
   > span.mega-indicator:after {
   transform: rotate(-45deg) !important;
   top: 20px !important;
+  @media (min-width: 1100px) {
+    display: none;
+  }
 }

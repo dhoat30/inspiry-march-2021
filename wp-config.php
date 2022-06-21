@@ -67,8 +67,12 @@ $table_prefix = 'wp_';
 
 define('JWT_AUTH_SECRET_KEY', 'eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTY0NzUwODgzNiwiaWF0IjoxNjQ3NTA4ODM2fQ.HKK3gUccLYGMsY_C5zZVx4GYf80KRWJWtzwByJc53j4');
 define('JWT_AUTH_CORS_ENABLE', true);
+/* -------------------------------------------------- /
+/ CUSTOM SETTINGS FOR WP-CONFIG.PHP /
+/ INCREASE PHP MEMORY TO 256 MB /
 
-
+/ -------------------------------------------------- */
+define( "WP_MEMORY_LIMIT", "256M");
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

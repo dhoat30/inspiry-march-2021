@@ -5,9 +5,6 @@ class Checkout {
     constructor() {
         // disable the pay securely button  
         $(":submit").removeAttr("disabled");
-
-        this.onPaymentSelectionChange
-        this.windcavePaymentSelected = $("input[type='radio'][name='payment_method']:checked").val();
         this.events()
     }
 
@@ -30,6 +27,7 @@ class Checkout {
         // listen for form input change and show the payment options if the cookie exists 
         $('#customer_details input').on('change', this.showPaymentOptionsUsingCookie)
         $('#customer_details select').on('change', this.showPaymentOptionsUsingCookie)
+
 
     }
 
@@ -186,6 +184,7 @@ class Checkout {
         }
 
     }
+
 
 }
 export default Checkout

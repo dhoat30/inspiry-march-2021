@@ -29,6 +29,7 @@ function webduel_payment_btn()
                 $argsContact = array(
                     'pagename' => 'contact'
                 );
+             
                 $queryContact = new WP_Query($argsContact);
                 while ($queryContact->have_posts()) {
                     $queryContact->the_post();
@@ -38,6 +39,9 @@ function webduel_payment_btn()
                         while (have_rows('payment_option_images')) {
                             the_row();
                             $image = get_sub_field('image')['sizes']['medium'];
+                           if(get_sub_field('title')==="Windcave"){ 
+                             $windcaveLogo = $image; 
+                           }
                 ?>
                             <img src="<?php echo $image; ?>" alt="<?php echo get_sub_field('title'); ?>">
                     <?php
@@ -48,6 +52,7 @@ function webduel_payment_btn()
                 <?php
                 }
                 wp_reset_postdata();
+
                 ?>
             </div>
         </div>
@@ -60,8 +65,6 @@ function webduel_payment_btn()
     <path id="Path_50" data-name="Path 50" d="M13.532,16H6.558A.554.554,0,0,0,6,16.558v4.548a.554.554,0,0,0,.558.554h6.974a.554.554,0,0,0,.554-.554V16.558A.554.554,0,0,0,13.532,16ZM10.35,19.267v.982a.3.3,0,0,1-.606,0v-.982a1.112,1.112,0,1,1,.606,0Z" transform="translate(-0.441 -8.787)"/>
   </g>
 </svg>
-
-
                 Pay Securely Now
             </button>
         </div>

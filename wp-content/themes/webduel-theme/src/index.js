@@ -55,6 +55,7 @@ import Header from './modules/Header'
 import StockToggle from "./modules/Buttons/StockToggle/StockToggle";
 import FixedNavMobile from "./modules/Scroll/FixedNavMobile";
 import MobileMenu from "./modules/NavMenu/MobileMenu";
+import PhoneModal from "./modules/Modals/PhoneModal";
 
 let $ = jQuery;
 
@@ -88,6 +89,7 @@ const header = new Header();
 
 // mobile menu 
 const mobileMenu = new MobileMenu()
+const phoneModal = new PhoneModal()
 window.onload = function () {
   // exit intent modal 
   const exitIntentModal = new ExitIntentModal()

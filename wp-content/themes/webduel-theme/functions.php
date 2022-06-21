@@ -142,3 +142,7 @@ function wpdocs_dequeue_dashicon() {
     wp_deregister_style('dashicons');
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );
+
+add_filter( 'big_image_size_threshold', function ( $treshold, $imagesize, $file, $attachment_id ) {
+    return false;
+}, 10, 4 );

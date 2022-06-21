@@ -39,7 +39,7 @@ class ExitIntentModal {
             // calculate time difference in minutes 
             const timeDifference = (((now - dateString) / 1000) / 60); //to implement
             console.log(timeDifference)
-            if (timeDifference > 1) {
+            if (timeDifference > 120) {
                 var object = { value: null, timestamp: null }
                 localStorage.setItem("modalShowed", JSON.stringify(object));
                 this.showModalObject = JSON.parse(localStorage.getItem("modalShowed"))
@@ -50,7 +50,7 @@ class ExitIntentModal {
     showModalOnExit(evt) {
         // !this.showModalObject.value
         // && !localStorage.getItem('modalShowed')
-        if (evt.toElement === null && evt.relatedTarget === null && this.showModalValue) {
+        if (evt.toElement === null && evt.relatedTarget === null && this.showModalValue && !localStorage.getItem('modalShowed')) {
             $(evt.currentTarget).off("mouseout");
             // An intent to exit has happened
             $('.inspiry-modal').show();
