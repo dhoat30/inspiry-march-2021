@@ -38,12 +38,10 @@ class Header {
 
     // sign in modal 
     showSignInModal(e, modalClass) {
-        console.log("show")
 
         $(e).find(modalClass).show()
     }
     hideSignInModal(e, modalClass) {
-        console.log("hide")
         $(e).find(modalClass).hide()
 
     }

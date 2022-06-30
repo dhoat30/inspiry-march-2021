@@ -31,7 +31,7 @@ if ( 'yes' === $allow_templates ) {
 
 $selected_categories = get_post_meta( $post->ID, 'selected_images_categories', true );
 
-$selected_categories_unserialized = unserialize( $selected_categories );//phpcs:ignore --unserialize is discouraged
+$selected_categories_unserialized = json_decode( $selected_categories );
 
 if ( 'yes' === $allow_templates ) : ?>
 

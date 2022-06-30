@@ -47,7 +47,7 @@ function remove_add_to_cart_buttons()
 {
    if (is_product_category() || is_shop() || is_archive()) {
       remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart');
-      remove_action('woocommerce_after_shop_loop_item', 'wvs_pro_archive_variation_template', 30);
+      // remove_action('woocommerce_after_shop_loop_item', 'wvs_pro_archive_variation_template', 30);
    }
 }
 
@@ -55,8 +55,8 @@ function remove_add_to_cart_buttons()
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
 add_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 5);
 // woocommerce variations 
-
-add_action('woocommerce_shop_loop_item_title', 'wvs_pro_archive_variation_template', 5);
+// re add variation swatches 
+// add_action('woocommerce_shop_loop_item_title', 'wvs_pro_archive_variation_template', 5);
 // wrap product archive title with anchor 
 add_action('woocommerce_shop_loop_item_title', 'wrap_title_with_anchor', 6);
 function wrap_title_with_anchor()
@@ -64,7 +64,7 @@ function wrap_title_with_anchor()
    global $product;
    echo do_shortcode('[design_board_button_code]')
 ?> 
-   <a href="<?php echo get_permalink($product->get_id()); ?>" alt="<?php echo $product->get_name(); ?>">
+   <a href="<?php echo get_permalink($product->get_id()); ?>" alt="<?php echo $product->get_name(); ?>" class="product-title">
    <?php
 }
 add_action('woocommerce_shop_loop_item_title', function () {
@@ -106,5 +106,3 @@ function webduel_show_sale_percentage_loop()
    }
    if ($max_percentage > 0) echo "<div class='sale-perc'>(" . round($max_percentage) . "% OFF)</div>";
 }
-
-// add tag banner using acf fields

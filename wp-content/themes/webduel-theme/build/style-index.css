@@ -327,14 +327,12 @@
   display: none;
 }
 .desktop-header .top-banner .banner-container {
-  background-color: rgb(0, 0, 0);
   height: 35px;
   display: flex;
   align-items: center;
   padding: 0 10px;
 }
 .desktop-header .top-banner .banner-container .banner-card .anchor {
-  color: white;
   font-size: var(--paragraphSize);
   text-align: center;
   text-decoration: none;

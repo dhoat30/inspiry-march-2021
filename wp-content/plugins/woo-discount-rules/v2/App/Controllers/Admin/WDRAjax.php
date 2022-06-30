@@ -87,7 +87,8 @@ class WDRAjax extends Base
         Helper::validateRequest('wdr_ajax_rule_build_index');
         $shortcode_manager = new OnSaleShortCode();
         $rules = $this->input->post('rules', array());
-        $status = $shortcode_manager->rebuildOnSaleList($rules);
+        $update = (bool) $this->input->post('update', 0);
+        $status = $shortcode_manager->rebuildOnSaleList($rules, $update);
         wp_send_json_success($status);
     }
 
@@ -411,6 +412,13 @@ class WDRAjax extends Base
         $save_config['applied_rule_message'] = Rule::validateHtmlBeforeSave($this->input->post('applied_rule_message'));
         $save_config['discount_label_for_combined_discounts'] = Rule::validateHtmlBeforeSave($this->input->post('discount_label_for_combined_discounts'));
         $save_config['free_shipping_title'] = Rule::validateHtmlBeforeSave($this->input->post('free_shipping_title'));
+
+        if (isset($save_config['run_rebuild_on_sale_index_cron']) && $save_config['run_rebuild_on_sale_index_cron']) {
+            \Wdr\App\Helpers\Schedule::runRebuildOnSaleIndex();
+        } else {
+            \Wdr\App\Helpers\Schedule::stopRebuildOnSaleIndex();
+        }
+
         return array('result' => Configuration::saveConfig(configuration::DEFAULT_OPTION, $save_config), 'save_popup' => $save_alert, 'security_pass' => 'passed');
     }
 
@@ -450,9 +458,9 @@ class WDRAjax extends Base
             }
             $redirect_url = false;
             if (!empty($this->input->post('wdr_save_close', ''))) {
-                $redirect_url = admin_url("admin.php?" . http_build_query(array('page' => WDR_SLUG, 'tab' => 'rules')));
+                $redirect_url = esc_url(admin_url("admin.php?" . http_build_query(array('page' => WDR_SLUG, 'tab' => 'rules'))));
             } elseif (empty($this->input->post('edit_rule', ''))) {
-                $redirect_url = admin_url("admin.php?" . http_build_query(array('page' => WDR_SLUG, 'tab' => 'rules', 'task' => 'view', 'id' => $rule_id)));
+                $redirect_url = esc_url(admin_url("admin.php?" . http_build_query(array('page' => WDR_SLUG, 'tab' => 'rules', 'task' => 'view', 'id' => $rule_id))));
             }
             $build_index = array();
             if ($rule_id) {
@@ -489,8 +497,13 @@ class WDRAjax extends Base
                     '%d'
                 )
             );
+            OnSaleShortCode::updateOnsaleRebuildPageStatus($row_id);
         }
-        wp_send_json($deleted);
+        $build_index = array();
+        if ($row_id) {
+            $build_index = OnSaleShortCode::getOnPageReBuildOption($row_id);
+        }
+        wp_send_json(array('deleted' => $deleted, 'build_index' => $build_index));
     }
 
     /**
@@ -549,8 +562,13 @@ class WDRAjax extends Base
                     '%d'
                 )
             );
+            OnSaleShortCode::updateOnsaleRebuildPageStatus($row_id);
         }
-        wp_send_json($rule_status);
+        $build_index = array();
+        if ($row_id) {
+            $build_index = OnSaleShortCode::getOnPageReBuildOption($row_id);
+        }
+        wp_send_json(array('status' => $rule_status, 'build_index' => $build_index));
     }
 
     /**
@@ -563,6 +581,14 @@ class WDRAjax extends Base
         $action_type = $this->input->post('wdr_bulk_action', '');
         $saved_rules = $this->input->post('saved_rules', '');
         Helper::validateRequest('awdr_ajax_rule_bulk_actions');
+        if (!empty($saved_rules) && is_array($saved_rules)) {
+            $rebuild_on_sale_rules = self::$config->getConfig('awdr_rebuild_on_sale_rules', array());
+            if (!empty($rebuild_on_sale_rules)) {
+                if (in_array('all', $rebuild_on_sale_rules) || count(array_intersect($saved_rules, $rebuild_on_sale_rules)) > 0) {
+                    OnSaleShortCode::setRequiredRebuild();
+                }
+            }
+        }
         if ($action_type == 'enable') {
             if (!empty($saved_rules) && is_array($saved_rules)) {
                 foreach ($saved_rules as $saved_rule_id) {
@@ -772,7 +798,7 @@ class WDRAjax extends Base
             $rule_data = $recipes_data[$awdr_recipe_type];
             $rule_id = $recipes_object->save($rule_data);
             if (!empty($rule_id)) {
-                $redirect_url = admin_url("admin.php?" . http_build_query(array('page' => WDR_SLUG, 'tab' => 'rules', 'task' => 'view', 'id' => $rule_id)));
+                $redirect_url = esc_url(admin_url("admin.php?" . http_build_query(array('page' => WDR_SLUG, 'tab' => 'rules', 'task' => 'view', 'id' => $rule_id))));
             } else {
                 $redirect_url = '';
             }

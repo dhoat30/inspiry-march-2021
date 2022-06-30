@@ -127,10 +127,3 @@ function auto_redirect_after_logout(){
   wp_safe_redirect( home_url() );
   exit;
 }
-
-// index the facet once import is completed 
-function wt_pipe_cron_ended(){
-    if ( function_exists( 'FWP' ) ) {
-        FWP()->indexer->index();
-    }
-}

@@ -47,7 +47,7 @@ class CompositeProductsBySomewhereWarm extends Base
             ?>
             <div class="awdr-compatible-field">
                 <label>
-                    <input type="checkbox" name="wdrc[<?php echo $this->key; ?>]" id="<?php echo $this->key; ?>" value="1" <?php if ($value == 1) { ?> checked <?php } ?>>
+                    <input type="checkbox" name="wdrc[<?php echo esc_attr($this->key); ?>]" id="<?php echo esc_attr($this->key); ?>" value="1" <?php if ($value == 1) { ?> checked <?php } ?>>
                     <?php esc_html_e('Add compatible for WooCommerce Composite Products', 'woo-discount-rules'); ?>
                 </label>
                 <br>

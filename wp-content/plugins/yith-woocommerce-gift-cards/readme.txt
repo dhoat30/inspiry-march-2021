@@ -2,9 +2,9 @@
 
 Contributors: yithemes
 Tags: gift card, gift certificate, certificate, gift, woocommerce
-Requires at least: 5.7
-Tested up to: 5.9
-Stable tag: 2.8.0
+Requires at least: 5.8
+Tested up to: 6.0
+Stable tag: 2.10.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -192,6 +192,21 @@ Want to add a new language to our YITH WooCommerce Gift Cards? Learn how to cont
 
 
 == Changelog ==
+
+= 2.10.0 - Released on 16 June 2022 =
+
+* New: support for WooCommerce 6.6
+* Update: YITH Plugin Framework
+* Tweak: improved multiple versions handling
+* Fix: fatal error wrong file path
+* Dev: changed the serialized method to json methods
+
+= 2.9.0 - Released on 09 May 2022 =
+
+* New: support for WordPress 6.0
+* New: support for WooCommerce 6.5
+* Update: YITH Plugin Framework
+* Dev: cleared the containers with floated elements in the gift card form
 
 = 2.8.0 - Released on 31 March 2022 =
 

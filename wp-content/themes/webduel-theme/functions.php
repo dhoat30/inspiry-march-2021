@@ -34,6 +34,7 @@ require get_theme_file_path('/inc/customer-service/feedback-form.php');
 // general
 require get_theme_file_path('/inc/cart-modal.php');
 require get_theme_file_path('/inc/custom-post-type.php');
+require get_theme_file_path('/inc/cpt-settings.php');
 require get_theme_file_path('/inc/enquiry-modal.php');
 require get_theme_file_path('/inc/nav-registeration.php');
 require get_theme_file_path('/inc/rest-acf.php');
@@ -77,6 +78,9 @@ require get_theme_file_path('/inc/design-board-modal/design-board-modal.php');
 require get_theme_file_path('/inc/be-inspired/design-boards.php');
 // modals 
 require get_theme_file_path('/inc/modals/inspiry-modals.php');
+
+// notices 
+require get_theme_file_path('/inc/notices/product-notice.php');
 
  //enqueue scripts
  function inspiry_scripts(){ 

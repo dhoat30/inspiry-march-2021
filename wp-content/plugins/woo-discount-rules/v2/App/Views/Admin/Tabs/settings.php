@@ -347,7 +347,7 @@
                         </td>
                         <td>
                             <input type="text" name="discount_label_for_combined_discounts"
-                                   value="<?php echo $configuration->getConfig('discount_label_for_combined_discounts', 'Cart discount'); ?>">
+                                   value="<?php echo esc_attr($configuration->getConfig('discount_label_for_combined_discounts', 'Cart discount')); ?>">
                         </td>
                     </tr>
                     <?php
@@ -510,13 +510,13 @@
                                             foreach ($rules as $rule){
                                                 if($rule->rule->enabled == 1){
                                                     ?>
-                                                    <option value="<?php echo $rule->rule->id; ?>"
+                                                    <option value="<?php echo esc_attr($rule->rule->id); ?>"
                                                     <?php if(!empty($awdr_rebuild_on_sale_rules) && is_array($awdr_rebuild_on_sale_rules)){
                                                         if(in_array($rule->rule->id, $awdr_rebuild_on_sale_rules)){
                                                             echo ' selected ';
                                                         }
                                                     } ?>
-                                                    ><?php echo $rule->rule->title; ?></option>
+                                                    ><?php echo esc_html($rule->rule->title); ?></option>
                                                     <?php
                                                 }
                                             }
@@ -527,13 +527,30 @@
                                 <div class="awdr_rebuild_on_sale_list_notice">
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-warning" id="awdr_rebuild_on_sale_list" data-awdr_nonce="<?php echo \Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_rule_build_index'); ?>"><?php _e('Save and Build Index', 'woo-discount-rules' ); ?></button>
+                            <button type="button" class="btn btn-warning" id="awdr_rebuild_on_sale_list" data-awdr_nonce="<?php echo esc_attr(\Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_rule_build_index')); ?>"><?php _e('Save and Build Index', 'woo-discount-rules' ); ?></button>
                             <?php } else {
                                 _e("Unlock this feature by <a href='https://www.flycart.org/products/wordpress/woocommerce-discount-rules?utm_source=woo-discount-rules-v2&utm_campaign=doc&utm_medium=text-click&utm_content=unlock_pro' target='_blank'>Upgrading to Pro</a>", 'woo-discount-rules');
                             }?>
                         </td>
                     </tr>
                     <?php if($is_pro){ ?>
+                    <tr>
+                        <td scope="row">
+                            <label for="" class="awdr-left-align"><?php _e('Select cron to run daily', 'woo-discount-rules') ?></label>
+                            <span class="wdr_settings_desc_text awdr-clear-both"><?php _e('This setting will be useful for validity based rules.', 'woo-discount-rules'); ?></span>
+                        </td>
+                        <td>
+                            <input type="radio" name="run_rebuild_on_sale_index_cron" class="settings_option_show_hide"
+                                   id="awdr_run_rebuild_on_sale_index_cron_1"
+                                   value="1" <?php echo($configuration->getConfig('run_rebuild_on_sale_index_cron', 0) ? 'checked' : '') ?>><label
+                                    for="awdr_run_rebuild_on_sale_index_cron_1"><?php _e('Yes', 'woo-discount-rules'); ?></label>
+
+                            <input type="radio" name="run_rebuild_on_sale_index_cron" class="settings_option_show_hide"
+                                   id="awdr_run_rebuild_on_sale_index_cron_0"
+                                   value="0" <?php echo(!$configuration->getConfig('run_rebuild_on_sale_index_cron', 0) ? 'checked' : '') ?>><label
+                                    for="awdr_run_rebuild_on_sale_index_cron_0"><?php _e('No', 'woo-discount-rules'); ?></label>
+                        </td>
+                    </tr>
                     <tr>
                         <td scope="row" colspan="2">
                             <?php
@@ -651,7 +668,7 @@
                                                         <input type="checkbox" name="table_title_column" value="1" class="bulk_table_customizer_show_hide_column"
                                                                data-colname="popup_table_title_column"
                                                             <?php echo($configuration->getConfig('table_title_column', 1) ? 'checked' : '') ?>>
-                                                        <input type="text" style="width: 90% !important;" class="awdr_popup_col_name_text_box awdr_popup_col_title_keyup" data-keyup="title_on_keyup" name="table_title_column_name" value="<?php echo $configuration->getConfig('table_title_column_name', 'Title');?>">
+                                                        <input type="text" style="width: 90% !important;" class="awdr_popup_col_name_text_box awdr_popup_col_title_keyup" data-keyup="title_on_keyup" name="table_title_column_name" value="<?php echo esc_attr($configuration->getConfig('table_title_column_name', 'Title'));?>">
                                                     </td>
                                                 </tr>
                                                 <tr class="">
@@ -663,7 +680,7 @@
                                                         <input type="checkbox" name="table_discount_column" value="1" class="bulk_table_customizer_show_hide_column"
                                                                data-colname="popup_table_discount_column"
                                                             <?php echo($configuration->getConfig('table_discount_column', 1) ? 'checked' : '') ?>>
-                                                        <input type="text" style="width: 90% !important;" class="awdr_popup_col_name_text_box" data-keyup="discount_on_keyup" name="table_discount_column_name" value="<?php echo $configuration->getConfig('table_discount_column_name', 'Discount');?>">
+                                                        <input type="text" style="width: 90% !important;" class="awdr_popup_col_name_text_box" data-keyup="discount_on_keyup" name="table_discount_column_name" value="<?php echo esc_attr($configuration->getConfig('table_discount_column_name', 'Discount'));?>">
                                                     </td>
                                                 </tr>
                                                 <tr class="">
@@ -675,7 +692,7 @@
                                                         <input type="checkbox" name="table_range_column" value="1" class="bulk_table_customizer_show_hide_column"
                                                                data-colname="popup_table_range_column"
                                                             <?php echo($configuration->getConfig('table_range_column', 1) ? 'checked' : '') ?>>
-                                                        <input type="text" style="width: 90% !important;" class="awdr_popup_col_name_text_box" data-keyup="range_on_keyup" name="table_range_column_name" value="<?php echo $configuration->getConfig('table_range_column_name', 'Range');?>">
+                                                        <input type="text" style="width: 90% !important;" class="awdr_popup_col_name_text_box" data-keyup="range_on_keyup" name="table_range_column_name" value="<?php echo esc_attr($configuration->getConfig('table_range_column_name', 'Range'));?>">
                                                     </td>
                                                 </tr>
                                                 <tr class="">
@@ -985,14 +1002,14 @@
 
                 <div class="save-configuration">
                     <input type="hidden" class="customizer_save_alert" name="customizer_save_alert" value="">
-                    <input type="hidden" name="customize_bulk_table_title" class="customize_bulk_table_title" value="<?php echo $configuration->getConfig('customize_bulk_table_title', 0); ?>">
-                    <input type="hidden" name="customize_bulk_table_discount" class="customize_bulk_table_discount" value="<?php echo $configuration->getConfig('customize_bulk_table_discount', 2); ?>">
-                    <input type="hidden" name="customize_bulk_table_range" class="customize_bulk_table_range" value="<?php echo $configuration->getConfig('customize_bulk_table_range', 1); ?>">
+                    <input type="hidden" name="customize_bulk_table_title" class="customize_bulk_table_title" value="<?php echo esc_attr($configuration->getConfig('customize_bulk_table_title', 0)); ?>">
+                    <input type="hidden" name="customize_bulk_table_discount" class="customize_bulk_table_discount" value="<?php echo esc_attr($configuration->getConfig('customize_bulk_table_discount', 2)); ?>">
+                    <input type="hidden" name="customize_bulk_table_range" class="customize_bulk_table_range" value="<?php echo esc_attr($configuration->getConfig('customize_bulk_table_range', 1)); ?>">
 
                     <input type="hidden" name="method" value="save_configuration">
                    <!-- <input type="hidden" class="customize_banner_content" name="customize_banner_content" value="">-->
                     <input type="hidden" name="action" value="wdr_ajax">
-                    <input type="hidden" name="awdr_nonce" value="<?php echo \Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_save_configuration'); ?>">
+                    <input type="hidden" name="awdr_nonce" value="<?php echo esc_attr(\Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_save_configuration')); ?>">
                     <p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary save-configuration-submit"
                                              value="Save Changes"></p>
                 </div>

@@ -44,23 +44,23 @@ msgstr ""
 msgid "Check how variation duplicator works."
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:105
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:110
 msgid "Duplicate"
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:105
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:110
 msgid "Save before duplicate"
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:105
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:110
 msgid "If you want to duplicate this variation you have to save this variation first."
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:109
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-clone.php:119
 msgid "Duplicate variations"
 msgstr ""
 
-#: ../includes/class-variation-duplicator-for-woocommerce-variation-image-clone.php:65
+#: ../includes/class-variation-duplicator-for-woocommerce-variation-image-clone.php:70
 msgid "Variation image cloned."
 msgstr ""
 
@@ -120,10 +120,10 @@ msgstr ""
 msgid "Variation image not chosen. Please choose or upload a variation image first."
 msgstr ""
 
-#: ../variation-duplicator-for-woocommerce.php:32
+#: ../variation-duplicator-for-woocommerce.php:36
 msgid "WooCommerce"
 msgstr ""
 
-#: ../variation-duplicator-for-woocommerce.php:41
+#: ../variation-duplicator-for-woocommerce.php:45
 msgid "<strong>Duplicate Variations for WooCommerce</strong> is an add-on of "
 msgstr ""

@@ -32,7 +32,9 @@ class CurrencySwitcherByVillatheme extends Base
                             return $price;
                         }
                         if ( $price ) {
-                            $price = $price / $selected_currencies[ $current_currency ]['rate'];
+                            if($selected_currencies[ $current_currency ]['rate'] != 0){
+                                $price = $price / $selected_currencies[ $current_currency ]['rate'];
+                            }
                         }
                     }
                 }
@@ -52,7 +54,7 @@ class CurrencySwitcherByVillatheme extends Base
             ?>
             <div class="awdr-compatible-field">
                 <label>
-                    <input type="checkbox" name="wdrc[<?php echo $this->key; ?>]" id="<?php echo $this->key; ?>" value="1" <?php if ($value == 1) { ?> checked <?php } ?>>
+                    <input type="checkbox" name="wdrc[<?php echo esc_attr($this->key); ?>]" id="<?php echo esc_attr($this->key); ?>" value="1" <?php if ($value == 1) { ?> checked <?php } ?>>
                     <?php esc_html_e('Add compatible for WooCommerce Currency Switcher', 'woo-discount-rules'); ?>
                 </label>
             </div>

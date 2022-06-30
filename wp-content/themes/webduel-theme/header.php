@@ -115,7 +115,7 @@
   
     <section class="header desktop-header">
         <div class="top-banner">
-            <div class="banner-container">
+            <div class="banner-container" style="background:<?php echo get_option('top_navbar_background_color'); ?>">
                 <div class="banner-card owl-carousel">
                     <?php
 
@@ -136,7 +136,7 @@
                         $banner->the_post();
                         if (get_field('banner_link')) {
                     ?>
-                            <a href="<?php echo get_field('banner_link'); ?>" class="anchor"> <?php echo get_the_title(); ?> LEARN
+                            <a  href="<?php echo get_field('banner_link'); ?>" class="anchor" style="color:<?php echo get_option('top_navbar_font_color'); ?>"> <?php echo get_the_title(); ?> LEARN
                                 <svg xmlns="http://www.w3.org/2000/svg" width="5" height="8.67" viewBox="0 0 9.501 16.477">
                                     <g id="Group_11" data-name="Group 11" transform="translate(-24.1 -18.6)">
                                         <g id="Icon-Chevron-Left" transform="translate(24.1 18.6)">

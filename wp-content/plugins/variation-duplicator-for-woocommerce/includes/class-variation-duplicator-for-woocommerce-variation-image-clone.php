@@ -44,6 +44,11 @@
             }
             
             public function form( $loop, $variation_data, $variation ) {
+                
+                if ( apply_filters( 'disable_variation_duplicator_for_woocommerce_image_clone', false, $loop, $variation_data, $variation ) ) {
+                    return true;
+                }
+                
                 $variation_id = absint( $variation->ID );
                 $parent_id    = wp_get_post_parent_id( $variation_id );
                 $product      = wc_get_product( $parent_id );

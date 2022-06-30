@@ -61,7 +61,7 @@ if (!defined('ABSPATH')) {
             <div class="save-configuration">
                 <input type="hidden" name="method" value="save_advanced_option">
                 <input type="hidden" name="action" value="wdr_ajax">
-                <input type="hidden" name="awdr_nonce" value="<?php echo \Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_save_advanced_option_config'); ?>">
+                <input type="hidden" name="awdr_nonce" value="<?php echo esc_attr(\Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_save_advanced_option_config')); ?>">
                 <p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary save-configuration-submit"
                                          value="Save"></p>
             </div>

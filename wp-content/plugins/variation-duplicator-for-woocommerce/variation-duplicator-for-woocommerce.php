@@ -5,12 +5,12 @@
      * Description: Duplicate WooCommerce variable product variations with its all available properties including Variation Price, Variation Image, and SKU in just a single click.
      * Author: Emran Ahmed
      * Domain Path: /languages
-     * Version: 2.0.2
+     * Version: 2.0.4
      * Requires PHP: 7.0
      * Requires at least: 5.6
-     * Tested up to: 5.9
+     * Tested up to: 6.0
      * WC requires at least: 5.6
-     * WC tested up to: 6.3
+     * WC tested up to: 6.5
      * Text Domain: variation-duplicator-for-woocommerce
      * Author URI: https://getwooplugins.com/
      */
@@ -19,6 +19,10 @@
     
     if ( ! defined( 'VARIATION_DUPLICATOR_FOR_WOOCOMMERCE_PLUGIN_FILE' ) ) {
         define( 'VARIATION_DUPLICATOR_FOR_WOOCOMMERCE_PLUGIN_FILE', __FILE__ );
+    }
+    
+    if ( ! defined( 'VARIATION_DUPLICATOR_FOR_WOOCOMMERCE_PLUGIN_VERSION' ) ) {
+        define( 'VARIATION_DUPLICATOR_FOR_WOOCOMMERCE_PLUGIN_VERSION', '2.0.4' );
     }
     
     // Include the main class.
@@ -39,7 +43,7 @@
             );
             $link    = esc_url( add_query_arg( $info, admin_url( 'plugin-install.php' ) ) );
             $message = wp_kses( __( "<strong>Duplicate Variations for WooCommerce</strong> is an add-on of ", 'variation-duplicator-for-woocommerce' ), array( 'strong' => array() ) );
-
+            
             printf( '<div class="%1$s"><p>%2$s <a class="thickbox open-plugin-details-modal" href="%3$s"><strong>%4$s</strong></a></p></div>', 'notice notice-error', $message, $link, $text );
         }
     }

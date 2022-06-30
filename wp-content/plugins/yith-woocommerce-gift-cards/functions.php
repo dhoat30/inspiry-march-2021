@@ -9,10 +9,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 } // Exit if accessed directly
 
-require_once YITH_YWGC_DIR . 'lib/class-yith-woocommerce-gift-cards.php';
-require_once YITH_YWGC_DIR . 'lib/class-yith-ywgc-backend.php';
-require_once YITH_YWGC_DIR . 'lib/class-yith-ywgc-frontend.php';
-require_once YITH_YWGC_DIR . 'lib/class-yith-ywgc-gift-card.php';
+require_once YITH_YWGC_DIR . 'includes/class-yith-woocommerce-gift-cards.php';
+require_once YITH_YWGC_DIR . 'includes/class-yith-ywgc-backend.php';
+require_once YITH_YWGC_DIR . 'includes/class-yith-ywgc-frontend.php';
+require_once YITH_YWGC_DIR . 'includes/class-yith-ywgc-gift-card.php';
 
 /** Define constant values */
 defined( 'YWGC_CUSTOM_POST_TYPE_NAME' ) || define( 'YWGC_CUSTOM_POST_TYPE_NAME', 'gift_card' );
@@ -242,10 +242,10 @@ function ywgc_get_attachment_id_from_url( $attachment_url = '' ) {
 	// @codingStandardsIgnoreStart --Direct call to Database is discouraged
 		$attachment_id = $wpdb->get_var(
 			$wpdb->prepare(
-				"SELECT wposts.ID FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta 
-                          WHERE wposts.ID = wpostmeta.post_id 
-                          AND wpostmeta.meta_key = '_wp_attached_file' 
-                          AND wpostmeta.meta_value = '%s' 
+				"SELECT wposts.ID FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
+                          WHERE wposts.ID = wpostmeta.post_id
+                          AND wpostmeta.meta_key = '_wp_attached_file'
+                          AND wpostmeta.meta_value = '%s'
                           AND wposts.post_type = 'attachment'",
 				$attachment_url
 			)

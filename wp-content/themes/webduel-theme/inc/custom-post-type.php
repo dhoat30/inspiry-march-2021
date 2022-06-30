@@ -270,18 +270,18 @@ register_post_type("trade-professionals", array(
 ); 
 
    //select options
-   register_post_type("select-options", array(
+   register_post_type("product-notice", array(
       "supports" => array("title"), 
       "public" => true, 
       "show_ui" => true, 
       "show_in_rest"=>true, 
       "hierarchical" => true,
       "labels" => array(
-         "name" => "Select Option", 
-         "add_new_item" => "Add New Select Option", 
-         "edit_item" => "Edit Select Option", 
-         "all_items" => "All Select Options", 
-         "singular_name" => "Select Option"
+         "name" => "Product Notice", 
+         "add_new_item" => "Add New Product Notice", 
+         "edit_item" => "Edit Product Notice", 
+         "all_items" => "All Product Notices", 
+         "singular_name" => "Product Notice"
       ), 
       "menu_icon" => "dashicons-table-row-after"
    )
@@ -436,8 +436,6 @@ function wpdocs_register_private_taxonomy() {
       'hierarchical' => true,
    );
    register_taxonomy( 'video-category', 'videos', $argsVideos );
-
-
 
 }
 add_action( 'init', 'wpdocs_register_private_taxonomy', 0 );

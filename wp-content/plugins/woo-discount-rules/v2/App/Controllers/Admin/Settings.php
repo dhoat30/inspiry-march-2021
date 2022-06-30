@@ -63,7 +63,7 @@ class Settings extends Base
     function wdr_action_link($links)
     {
         $action_links = array(
-            'settings' => '<a href="' . admin_url('admin.php?page=woo_discount_rules&tab=settings') . '">' . __('Settings', 'woo-discount-rules') . '</a>',
+            'settings' => '<a href="' . esc_url(admin_url('admin.php?page=woo_discount_rules&tab=settings')) . '">' . __('Settings', 'woo-discount-rules') . '</a>',
         );
         return array_merge($action_links, $links);
     }
@@ -511,6 +511,7 @@ If a customer buys  2 of Product A - Small,  4 of Product A - Medium,  6 of Prod
             'filter_SKUs' => __('<span>Choose SKUs that get the discount using "In List". If you want to exclude a few SKUs, choose "Not In List" and select the SKUs you wanted to exclude from discount. (You can add multiple filters of same type)</span>', 'woo-discount-rules'),
             'filter_On_sale_products' => __('<span>Choose whether you want to include (or exclude) products on sale (those having a sale price) for the discount </span>', 'woo-discount-rules'),
             'filter_custom_taxonomies' => __('<span>Discount applies to custom taxonomy</span>', 'woo-discount-rules'),
+            'rebuild_on_sale_list_build_text' => __('Rebuild index', 'woo-discount-rules'),
             'rebuild_on_sale_list_processing_text' => __('Processing please wait..', 'woo-discount-rules'),
             'rebuild_on_sale_list_processed_text' => __('Rebuild index processed', 'woo-discount-rules'),
             'rebuild_on_sale_list_error_please_select_rule' => __('Please select the rules to build index', 'woo-discount-rules'),

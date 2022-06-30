@@ -47,10 +47,10 @@ if (!defined('ABSPATH')) {
                 <input type="text"
                        name="from"
                        class="wdr-condition-date wdr-title chart-period-start" data-class="start_dateonly"
-                       placeholder="<?php _e('From: yyyy/mm/dd', 'woo-discount-rules'); ?>" data-field="date"
+                       placeholder="<?php esc_attr_e('From: yyyy/mm/dd', 'woo-discount-rules'); ?>" data-field="date"
                        autocomplete="off"
                        id="rule_datetime_from" value="<?php if (isset($date[0]) && !empty($date[0])) {
-                    echo $date[0];
+                    echo esc_attr($date[0]);
                 } ?>" style="height: 34px;">
                 <!--<span class="wdr_desc_text"><?php /*_e('From', 'woo-discount-rules');  */?></span>-->
             </div>
@@ -61,16 +61,16 @@ if (!defined('ABSPATH')) {
                        placeholder="<?php _e('To: yyyy/mm/dd', 'woo-discount-rules'); ?>"
                        data-field="date" autocomplete="off"
                        id="rule_datetime_to" value="<?php if (isset($date[1]) && !empty($date[1])) {
-                    echo $date[1];
+                    echo esc_attr($date[1]);
                 } ?>" style="height: 34px;">
                 <!--<span class="wdr_desc_text"><?php /*_e('To', 'woo-discount-rules');  */?></span>-->
             </div>
             <div class="awdr-report-type" >
                 <select name="type" class="chart-type awdr-show-report-limit" style="height: 33px">
                     <?php foreach ( $charts as $group => $charts_by_group ): ?>
-                        <optgroup label="<?php echo $group ?>">
+                        <optgroup label="<?php echo esc_attr($group); ?>">
                             <?php foreach ( $charts_by_group as $key => $name ): ?>
-                                <option value="<?php echo $key ?>"><?php echo $name ?></option>
+                                <option value="<?php echo esc_attr($key) ?>"><?php echo esc_html($name) ?></option>
                             <?php endforeach; ?>
                         </optgroup>
                     <?php endforeach; ?>
@@ -88,7 +88,7 @@ if (!defined('ABSPATH')) {
                 <span class="wdr_desc_text"><?php /*_e('Report Limit (Eg: Top 5)', 'woo-discount-rules');  */?></span>
             </div>-->
             <div> <!--class="awdr-toggle-report-update"--> <!--style="display: none;>"-->
-                <input type="hidden" name="awdr_nonce" value="<?php echo \Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_report'); ?>">
+                <input type="hidden" name="awdr_nonce" value="<?php echo esc_attr(\Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_report')); ?>">
                 <button type="submit" class="update-chart btn btn-success"><?php _e('Update Chart', 'woo-discount-rules'); ?></button>
             </div>
         </div>

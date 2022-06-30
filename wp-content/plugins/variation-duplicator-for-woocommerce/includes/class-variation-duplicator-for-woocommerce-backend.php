@@ -54,7 +54,7 @@
                         'jquery',
                         'wp-util',
                         'select2'
-                    ),                 variation_duplicator_for_woocommerce()->assets_version( "/js/variation-duplicator-for-woocommerce{$suffix}.js" ), true );
+                    ), variation_duplicator_for_woocommerce()->assets_version( "/js/variation-duplicator-for-woocommerce{$suffix}.js" ), true );
                     
                     $clone_limit = absint( apply_filters( 'woo_variation_duplicator_clone_limit', 9 ) );
                     $translation = array(

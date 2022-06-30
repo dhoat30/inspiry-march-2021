@@ -490,7 +490,9 @@ class Woocommerce
         if (function_exists('WC')) {
             if(isset(WC()->cart) && WC()->cart != null){
                 if (method_exists(WC()->cart, 'get_cart')) {
-                    $cart = WC()->cart->get_cart();
+                    if (did_action('wp_loaded')) {
+                        $cart = WC()->cart->get_cart();
+                    }
                 }
             }
         }
@@ -868,7 +870,7 @@ class Woocommerce
     static function printNotice($message, $type)
     {
         if (function_exists('wc_print_notice')) {
-            wc_print_notice($message, $type);
+            wc_print_notice(wp_unslash($message), $type);
         }
     }
 
@@ -1752,7 +1754,8 @@ class Woocommerce
         $product_id = self::getProductId($product);
         if(self::productTypeIs($product, 'variation')){
             $attributes = (array) self::getProductAttributes($product);
-            if (count($attributes) > 2) {
+            $modify_count = apply_filters('advanced_woo_discount_rules_variation_title_modify_count', 2);
+            if (count($attributes) > $modify_count) {
                 $variation_parent_id = self::getProductParentId($product);
                 $variation_parent_title = get_the_title($variation_parent_id);
                 $variation_separator = apply_filters('woocommerce_product_variation_title_attributes_separator', ' - ', $product);

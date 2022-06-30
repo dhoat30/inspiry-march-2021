@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="ywgc-main-form-preview-container">
 
-		<div class="ywgc-form-preview-title-container">
+		<div class="ywgc-form-preview-title-container clearfix">
 			<span class="ywgc-form-preview-title"><?php echo wp_kses( $product->get_title(), 'post' ); ?></span>
 			<div class="ywgc-form-preview-amount"></div>
 

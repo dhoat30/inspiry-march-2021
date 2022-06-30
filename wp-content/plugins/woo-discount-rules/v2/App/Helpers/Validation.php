@@ -408,7 +408,8 @@ class Validation
                 'wdr_override_custom_price',
                 'disable_recalculate_total',
                 'disable_recalculate_total_when_coupon_apply',
-                'wdr_hide_other_shipping'
+                'wdr_hide_other_shipping',
+                'run_rebuild_on_sale_index_cron',
             )
         );
         //validate slug may contains a-zA-Z0-9_-

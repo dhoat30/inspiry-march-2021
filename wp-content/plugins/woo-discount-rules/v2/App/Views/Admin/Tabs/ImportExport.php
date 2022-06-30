@@ -14,7 +14,7 @@ $is_pro_activated = isset($is_pro_activated) ? $is_pro_activated : false;
             <div>
                 <p>
                 <form method="post">
-                    <input type="hidden" name="security" value="<?php echo wp_create_nonce('awdr_export_rules') ?>">
+                    <input type="hidden" name="security" value="<?php echo esc_attr(wp_create_nonce('awdr_export_rules')) ?>">
                     <button type="submit" id="wdr-export" name="wdr-export" class="button button-primary">
                         <?php _e('Export', 'woo-discount-rules'); ?>
                     </button>
@@ -141,7 +141,7 @@ $is_pro_activated = isset($is_pro_activated) ? $is_pro_activated : false;
                     }
                 } ?>
                 <form method="post" name="awdr-import-csv" id="awdr-import-csv" enctype="multipart/form-data">
-                    <input type="hidden" name="security" value="<?php echo wp_create_nonce('awdr_import_rules_csv') ?>">
+                    <input type="hidden" name="security" value="<?php echo esc_attr(wp_create_nonce('awdr_import_rules_csv')) ?>">
                     <input type="file" name="awdr_import_rule" id="awdr-file-uploader" accept=".csv"><br>
                     <span id="awdr-upload-response"><?php echo $message; ?></span></br>
                     <button type="submit" id="wdr-import" name="wdr-import" class="button button-primary">

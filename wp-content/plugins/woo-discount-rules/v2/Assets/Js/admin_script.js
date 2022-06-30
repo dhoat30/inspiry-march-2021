@@ -338,7 +338,7 @@ jQuery(document).ready(function ($) {
         if (rules != null) {
             $("#awdr_rebuild_on_sale_list").attr('disabled', "disabled");
             $("#awdr_rebuild_on_sale_list").html(wdr_data.localization_data.rebuild_on_sale_list_processing_text);
-            awdr_process_on_sale_list(rules, $(this));
+            awdr_process_on_sale_list(rules, $(this), true);
         } else {
             $(".awdr_rebuild_on_sale_list_notice").html(wdr_data.localization_data.rebuild_on_sale_list_error_please_select_rule);
         }
@@ -350,16 +350,17 @@ jQuery(document).ready(function ($) {
     $(document).on('click', '#awdr_rebuild_on_sale_list_on_rule_page', function () {
         $(this).attr('disabled', "disabled");
         $(this).html(wdr_data.localization_data.rebuild_on_sale_list_processing_text);
-        awdr_process_on_sale_list(null, $(this));
+        awdr_process_on_sale_list(null, $(this), false);
         //$(".awdr_rebuild_on_sale_rule_page_con").removeClass("need_attention");
     });
 
-    function awdr_process_on_sale_list(rules, current_obj) {
+    function awdr_process_on_sale_list(rules, current_obj, update=false) {
         $.ajax({
             data: {
                 method: 'rebuild_onsale_list',
                 action: 'wdr_ajax',
                 rules: rules,
+                update: update ? 1 : 0,
                 awdr_nonce: current_obj.attr('data-awdr_nonce')
             },
             type: 'post',
@@ -485,13 +486,20 @@ jQuery(document).ready(function ($) {
                     notify(wdr_data.localization_data.error, 'error', alert_counter);
                 },
                 success: function (data) {
-                    if (data === 'failed') {
-                        notify(wdr_data.localization_data.error, 'error', alert_counter);
+                    if (data) {
+                        if (data.status === 'failed') {
+                            notify(wdr_data.localization_data.error, 'error', alert_counter);
+                        } else {
+                            notify(wdr_data.localization_data.deleted_rule, 'success', alert_counter);
+                            wdr_delete_rule_row.hide(500, function () {
+                                wdr_delete_rule_row.remove();
+                            });
+                        }
+                        if (data.build_index !== undefined) {
+                            awdr_may_display_rebuild_index_button(data.build_index);
+                        }
                     } else {
-                        notify(wdr_data.localization_data.deleted_rule, 'success', alert_counter);
-                        wdr_delete_rule_row.hide(500, function () {
-                            wdr_delete_rule_row.remove();
-                        });
+                        notify(wdr_data.localization_data.error, 'error', alert_counter);
                     }
                 }
             });
@@ -530,20 +538,40 @@ jQuery(document).ready(function ($) {
                 notify(wdr_data.localization_data.error, 'error', alert_counter);
             },
             success: function (data) {
-                if (data === 'failed') {
-                    notify(wdr_data.localization_data.error, 'error', alert_counter);
-                } else {
-                    if (change_status == 1) {
-                        $(parent_tr).find('.awdr-enabled-status').show();
-                        notify(wdr_data.localization_data.enabled_rule, 'success', alert_counter);
+                if (data) {
+                    if (data.status === 'failed') {
+                        notify(wdr_data.localization_data.error, 'error', alert_counter);
                     } else {
-                        $(parent_tr).find('.awdr-enabled-status').hide();
-                        notify(wdr_data.localization_data.disabled_rule, 'success', alert_counter);
+                        if (change_status == 1) {
+                            $(parent_tr).find('.awdr-enabled-status').show();
+                            notify(wdr_data.localization_data.enabled_rule, 'success', alert_counter);
+                        } else {
+                            $(parent_tr).find('.awdr-enabled-status').hide();
+                            notify(wdr_data.localization_data.disabled_rule, 'success', alert_counter);
+                        }
+                        if (data.build_index !== undefined) {
+                            awdr_may_display_rebuild_index_button(data.build_index);
+                        }
                     }
+                } else {
+                    notify(wdr_data.localization_data.error, 'error', alert_counter);
                 }
             }
         });
     });
+
+    /**
+     * Display rebuild index button on rule page
+     * @param build_index
+     */
+    function awdr_may_display_rebuild_index_button(build_index) {
+        if (build_index.required_rebuild !== undefined) {
+            if (build_index.required_rebuild == true) {
+                $("#awdr_rebuild_on_sale_list_on_rule_page").html(wdr_data.localization_data.rebuild_on_sale_list_build_text);
+                $(".awdr_rebuild_on_sale_rule_page_con").addClass("need_attention");
+            }
+        }
+    }
 
     /**
      * ajax search function
@@ -827,11 +855,7 @@ jQuery(document).ready(function ($) {
                 var data = response.data;
                 if (response.success) {
                     if (data.build_index != undefined) {
-                        if (data.build_index.required_rebuild != undefined) {
-                            if (data.build_index.required_rebuild == true) {
-                                $(".awdr_rebuild_on_sale_rule_page_con").addClass("need_attention");
-                            }
-                        }
+                        awdr_may_display_rebuild_index_button(data.build_index);
                     }
                     if (data.redirect) {
                         window.location.href = data.redirect;
@@ -1460,7 +1484,7 @@ jQuery(document).ready(function ($) {
                         }
                         break;
                     case 'order_days':
-                        let order_days = $(element).find('.order_days').val();
+                        let order_days = $(element).find('.wdr_order_days').val();
                         if (order_days.length == 0) {
                             condition_array.push("fails");
                             $(element).find('.select2-selection').css("border", "1px solid red");

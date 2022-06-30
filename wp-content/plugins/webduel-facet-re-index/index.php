@@ -6,7 +6,6 @@ Description: Runs indexer periodically by cron
 Version: 1.0
 Author: Webduel Limited
 */
-
 add_action( 'fwp_scheduled_index', 'fwp_scheduled_index' );
 function fwp_scheduled_index() {
   FWP()->indexer->index();
@@ -23,3 +22,5 @@ register_deactivation_hook( __FILE__, 'fwp_schedule_indexer_deactivation' );
 function fwp_schedule_indexer_deactivation() {
   wp_clear_scheduled_hook( 'fwp_scheduled_index' );
 }
+// remove automatic indexing
+add_filter( 'facetwp_indexer_is_enabled', '__return_false' );

@@ -27,7 +27,7 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                     <input name="cart_adjustments[value]"
                            type="number"
                            class="awdr_cart_discount_value awdr-left-align"
-                           value="<?php echo (isset($cart_adjustment->value)) ? $cart_adjustment->value : ''; ?>"
+                           value="<?php echo (isset($cart_adjustment->value)) ? esc_attr($cart_adjustment->value) : ''; ?>"
                            placeholder="0.00" min="0" step="any"
                            style="width: 100%;">
                     <span class="wdr_desc_text awdr-clear"><?php _e('Value', 'woo-discount-rules'); ?></span>
@@ -36,7 +36,7 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                     <input name="cart_adjustments[label]"
                            type="text"
                            class="awdr-left-align"
-                           value="<?php echo (isset($cart_adjustment->label)) ? $cart_adjustment->label : ''; ?>"
+                           value="<?php echo (isset($cart_adjustment->label)) ? esc_attr(wp_unslash($cart_adjustment->label)) : ''; ?>"
                            placeholder="<?php _e('Discount label', 'woo-discount-rules'); ?>"
                            style="width: 100%;">
                     <span class="wdr_desc_text awdr-clear"><?php _e('Discount Label', 'woo-discount-rules'); ?></span>

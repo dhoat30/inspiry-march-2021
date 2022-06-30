@@ -7,6 +7,7 @@ use Wdr\App\Controllers\Admin\Tabs\AdvancedSection;
 use Wdr\App\Controllers\Admin\WDRAjax;
 use Wdr\App\Controllers\Admin\Tabs;
 use Wdr\App\Controllers\ManageDiscount;
+use Wdr\App\Controllers\OnSaleShortCode;
 use Wdr\App\Controllers\ShortCodeManager;
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
@@ -203,5 +204,13 @@ class Router
         //For loading snippets
         $advance_option = new AdvancedSection();
         $advance_option->runAdvancedOption($manage_discount_class::$config);
+
+        //For rebuild on sale index daily
+        $rebuild_on_sale_rules = $manage_discount_class::$config->getConfig('awdr_rebuild_on_sale_rules', array());
+        $run_rebuild_on_sale_index_cron = $manage_discount_class::$config->getConfig('run_rebuild_on_sale_index_cron', 0);
+        if (!empty($rebuild_on_sale_rules) && $run_rebuild_on_sale_index_cron) {
+            $shortcode_manager = new OnSaleShortCode();
+            add_action('advanced_woo_discount_rules_scheduled_rebuild_on_sale_index_event', array($shortcode_manager, 'rebuildOnSaleList'));
+        }
     }
 }

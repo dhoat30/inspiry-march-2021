@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
                 if (isset($wdr_product_filters) && !empty($wdr_product_filters)) {
                     foreach ($wdr_product_filters as $wdr_filter_key => $wdr_filter_value) {
                         ?>
-                        <optgroup label="<?php echo $wdr_filter_key; ?>"><?php
+                        <optgroup label="<?php echo esc_attr($wdr_filter_key); ?>"><?php
                         foreach ($wdr_filter_value as $key => $value) {
                             ?>
                             <option
@@ -33,7 +33,7 @@ if (!defined('ABSPATH')) {
                                 <?php
                             } else {
                                 ?>
-                                value="<?php echo $key; ?>"
+                                value="<?php echo esc_attr($key); ?>"
                                 <?php
                             }
                             ?>
@@ -61,7 +61,7 @@ if (!defined('ABSPATH')) {
                 if (isset($wdr_product_conditions) && !empty($wdr_product_conditions)) {
                     foreach ($wdr_product_conditions as $wdr_condition_key => $wdr_condition_value) {
                         ?>
-                        <optgroup label="<?php echo $wdr_condition_key; ?>"><?php
+                        <optgroup label="<?php echo esc_attr($wdr_condition_key); ?>"><?php
                         foreach ($wdr_condition_value as $key => $value) {
                             ?>
                             <option class="<?php echo ( $key == 'cart_item_product_onsale') ? 'wdr-hide awdr-free-shipping-special-condition' : ''; ?>"
@@ -72,7 +72,7 @@ if (!defined('ABSPATH')) {
                                 <?php
                             } else {
                                 ?>
-                                value="<?php echo $key; ?>"
+                                value="<?php echo esc_attr($key); ?>"
                                 <?php
                             }
                             ?>

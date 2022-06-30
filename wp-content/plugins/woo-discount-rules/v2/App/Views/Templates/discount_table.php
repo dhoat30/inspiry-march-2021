@@ -45,10 +45,11 @@ if (!empty($ranges) && !empty($woocommerce)) {
                     }
                     $existing_rule_id = $current_rule_id;
                     ?>
-                    <div class="awdr_discount_bar awdr_row_<?php echo $i;?>" style="<?php if($badge_bg_color){
-                        echo "background-color:".$badge_bg_color.';';
+
+                    <div class="awdr_discount_bar awdr_row_<?php echo esc_attr($i); ?>" style="<?php if($badge_bg_color){
+                        echo "background-color:". esc_attr($badge_bg_color) . ';';
                     }if($badge_text_color) {
-                        echo "color:".$badge_text_color.';';
+                        echo "color:". esc_attr($badge_text_color) . ';';
                     }?>">
                     <?php
                 }
@@ -176,20 +177,20 @@ if (!empty($ranges) && !empty($woocommerce)) {
                         $j=1;
                         foreach ($table_sort_by_columns as $column => $order) {
                             if ($column == "tbl_title") {?>
-                            <td class="wdr_bulk_table_td wdr_bulk_title  col_index_<?php echo $j;?>" data-colindex="<?php echo $j;?>"
+                            <td class="wdr_bulk_table_td wdr_bulk_title  col_index_<?php echo esc_attr($j);?>" data-colindex="<?php echo esc_attr($j);?>"
                                 style="<?php echo (!$base::$config->getConfig('table_title_column', 0)) ? 'display:none' : '';?>">
-                                <?php echo isset($range['rule_title']) ? $range['rule_title'] : '-' ?>
+                                <?php echo isset($range['rule_title']) ? esc_html($range['rule_title']) : '-' ?>
                                 </td><?php
 
                             } elseif ($column == "tbl_discount") {?>
-                            <td class="wdr_bulk_table_td wdr_bulk_table_discount  col_index_<?php echo $j;?>" data-colindex="<?php echo $j;?>"
+                            <td class="wdr_bulk_table_td wdr_bulk_table_discount  col_index_<?php echo esc_attr($j);?>" data-colindex="<?php echo esc_attr($j);?>"
                                 style="<?php echo (!$base::$config->getConfig('table_discount_column', 0)) ? 'display:none' : '';?>">
                                 <span class="wdr_table_discounted_value" style="<?php echo ( !$base::$config->getConfig('table_discount_column_value', 0)) ? 'display: none' : '';?>"><?php echo $discount_value; ?></span>
                                 <span class="wdr_table_discounted_price" style="<?php echo ( $base::$config->getConfig('table_discount_column_value', 0)) ? 'display: none' : '';?>"><?php echo $discounted_price_for_customizer; ?></span>
                                 </td><?php
                             } else {?>
                                 <td class="wdr_bulk_table_td wdr_bulk_range  col_index_<?php echo $j;?>" data-colindex="<?php echo $j;?>"
-                                    style="<?php echo (!$base::$config->getConfig('table_range_column', 0) || isset($range['discount_method']) && in_array($range['discount_method'], array('product', 'cart'))) ? 'display:none':'';?>"><?php echo $discount_range ?></td><?php
+                                    style="<?php echo (!$base::$config->getConfig('table_range_column', 0) || isset($range['discount_method']) && in_array($range['discount_method'], array('product', 'cart'))) ? 'display:none':'';?>"><?php echo esc_html($discount_range); ?></td><?php
                             }
                             $j++;
                         }?>

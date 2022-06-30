@@ -14,7 +14,7 @@ add_action('wp_ajax_awdr_switch_version', function (){
     }
     if (current_user_can( 'manage_woocommerce' )) {
         if($version !== '' && $page !== ''){
-            $url = admin_url('admin.php?page=' . $page . '&awdr_switch_plugin_to=' . $version);
+            $url = esc_url(admin_url('admin.php?page=' . $page . '&awdr_switch_plugin_to=' . $version));
             $do_switch = true;
             if (!isAWDREnvironmentCompatible()) {
                 $return['message'] = __('Discount Rules 2.0 requires minimum PHP version of ', 'woo-discount-rules') . ' ' . WDR_REQUIRED_PHP_VERSION;
@@ -62,7 +62,7 @@ add_action('advanced_woo_discount_rules_on_settings_head', function () {
     }
     global $awdr_load_version;
     $version = ($awdr_load_version == "v1") ? "v2" : "v1";
-    $url = admin_url('admin.php?page=' . $page . '&awdr_switch_plugin_to=' . $version);
+    $url = esc_url(admin_url('admin.php?page=' . $page . '&awdr_switch_plugin_to=' . $version));
     $message = __('Discount Rules V2 comes with a better UI and advanced options.', 'woo-discount-rules');
     $button_text = __("Switch to New User Interface", 'woo-discount-rules');
     if($version == "v1"){
@@ -81,7 +81,7 @@ add_action('advanced_woo_discount_rules_on_settings_head', function () {
 Click the "Switch" button to start using the new interface.</p>
             </div>';
 
-        echo '<div style="background: #fff;padding: 20px;font-size: 13px;font-weight: bold;">' . $message . ' <button class="btn btn-info awdr-switch-version-button" data-version="' . $version . '" data-page="'.$page.'" data-nonce="'.$nounce.'">' . $button_text . '</button></div>';
+        echo '<div style="background: #fff;padding: 20px;font-size: 13px;font-weight: bold;">' . $message . ' <button class="btn btn-info awdr-switch-version-button" data-version="' . esc_attr($version) . '" data-page="' . esc_attr($page) . '" data-nonce="' . esc_attr($nounce) . '">' . $button_text . '</button></div>';
         echo "<div class='wdr_switch_message' style='color:#a00;font-weight: bold;'></div>";
     }
 });

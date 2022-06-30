@@ -72,6 +72,7 @@ define('JWT_AUTH_CORS_ENABLE', true);
 / INCREASE PHP MEMORY TO 256 MB /
 
 / -------------------------------------------------- */
+// remove is on live ---------------------------------------------------
 define( "WP_MEMORY_LIMIT", "256M");
 /* That's all, stop editing! Happy publishing. */
 

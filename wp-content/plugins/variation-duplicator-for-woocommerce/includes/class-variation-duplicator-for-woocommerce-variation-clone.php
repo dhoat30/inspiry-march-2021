@@ -100,12 +100,22 @@
             }
             
             public function add_checkbox( $variation ) {
+                
+                if ( apply_filters( 'disable_variation_duplicator_for_woocommerce_variation_clone', false, $variation ) ) {
+                    return true;
+                }
+                
                 printf( '<label class="clone-checkbox">
 <input class="no-track-change variation_is_cloneable" type="checkbox" name="variation_is_cloneable[]" value="%d"><span class="clone-text" data-clone-text="%s" data-clone-save-text="%s"></span>
 %s </label> ', esc_attr( absint( $variation->ID ) ), esc_attr__( 'Duplicate', 'variation-duplicator-for-woocommerce' ), esc_attr__( 'Save before duplicate', 'variation-duplicator-for-woocommerce' ), wc_help_tip( esc_attr__( 'If you want to duplicate this variation you have to save this variation first.', 'variation-duplicator-for-woocommerce' ) ) );
             }
             
             public function add_dropdown() {
+                
+                if ( apply_filters( 'disable_variation_duplicator_for_woocommerce_variation_clone', false, null ) ) {
+                    return true;
+                }
+                
                 printf( '<option class="woo_variation_duplicate_option" value="woo_variation_duplicate">%s</option>', esc_html__( 'Duplicate variations', 'variation-duplicator-for-woocommerce' ) );
             }
             

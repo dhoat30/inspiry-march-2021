@@ -20,7 +20,9 @@ class CurrencySwitcherByWPWham extends Base
                     if (class_exists( 'Alg_WC_Currency_Switcher' ) ) {
                         if(function_exists('alg_wc_cs_get_currency_exchange_rate') && function_exists('alg_get_current_currency_code')){
                             $alg_wc_cs = alg_wc_cs_get_currency_exchange_rate(alg_get_current_currency_code());
-                            $price = $price / $alg_wc_cs;
+                            if($alg_wc_cs != 0){
+                                $price = $price / $alg_wc_cs;
+                            }
                         }
                     }
                 }
@@ -40,7 +42,7 @@ class CurrencySwitcherByWPWham extends Base
             ?>
             <div class="awdr-compatible-field">
                 <label>
-                    <input type="checkbox" name="wdrc[<?php echo $this->key; ?>]" id="<?php echo $this->key; ?>" value="1" <?php if ($value == 1) { ?> checked <?php } ?>>
+                    <input type="checkbox" name="wdrc[<?php echo esc_attr($this->key); ?>]" id="<?php echo esc_attr($this->key); ?>" value="1" <?php if ($value == 1) { ?> checked <?php } ?>>
                     <?php esc_html_e('Add compatible for WooCommerce Currency Switcher', 'woo-discount-rules'); ?>
                 </label>
             </div>

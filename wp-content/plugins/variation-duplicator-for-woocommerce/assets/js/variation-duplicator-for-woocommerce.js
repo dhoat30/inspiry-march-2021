@@ -2,7 +2,7 @@
  * Duplicate Variations for WooCommerce 
  * 
  * Author: Emran Ahmed ( emran.bd.08@gmail.com ) 
- * Date: 3/23/2022, 4:27:00 PM
+ * Date: 6/9/2022, 1:28:37 AM
  * Released under the GPLv3 license.
  */
 /******/ (function(modules) { // webpackBootstrap
@@ -256,10 +256,10 @@ jQuery(function ($) {
 
         var input_change_callback = events.filter(function (event) {
           return event.selector === '#variable_product_options .woocommerce_variations :input';
-        })[0]; // @todo: We should add namespace support on event also
+        })[0]; // @TODO: We should add namespace support on event also
 
-        $(document.body).off('change', '#variable_product_options .woocommerce_variations :input');
-        $(document.body).on('change', '#variable_product_options .woocommerce_variations :input:not(.no-track-change)', input_change_callback.handler); // Re Init
+        $(document.body).off('change input', '#variable_product_options .woocommerce_variations :input');
+        $(document.body).on('change input', '#variable_product_options .woocommerce_variations :input:not(.no-track-change)', input_change_callback.handler); // Re Init
 
         $('#variable_product_options').on('woocommerce_variations_added', function () {
           _this3.setHowTo();

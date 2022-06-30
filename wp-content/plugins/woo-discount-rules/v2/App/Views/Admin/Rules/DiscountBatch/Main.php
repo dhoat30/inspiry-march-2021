@@ -16,7 +16,7 @@ $is_pro = Helper::hasPro();
                 <div class="awdr-discount-bar-content">
                     <p><?php _e("It helps to display discount information in product pages.", 'woo-discount-rules'); ?> <a href="https://docs.flycart.org/en/articles/3946529-discount-bar?utm_source=woo-discount-rules-v2&utm_campaign=doc&utm_medium=text-click&utm_content=dicount_bar_inner" target="_blank" ><?php _e("Read docs.", 'woo-discount-rules'); ?></a> </p>
                     <b><?php _e('Preview', 'woo-discount-rules'); ?></b><br><br>
-                    <div class="awdr_admin_discount_bar awdr_row_0" style="background-color:<?php echo ($badge_bg_color) ? $badge_bg_color : '#ffffff' ?>;color:<?php echo ($badge_text_color) ? $badge_text_color : '#000000' ?>;">
+                    <div class="awdr_admin_discount_bar awdr_row_0" style="background-color:<?php echo ($badge_bg_color) ? esc_attr($badge_bg_color) : '#ffffff' ?>;color:<?php echo ($badge_text_color) ? esc_attr($badge_text_color) : '#000000' ?>;">
                         <?php echo ($badge_text) ? $badge_text : 'Discount Text';  ?>
                     </div>
                     <p><b><?php _e('Note:', 'woo-discount-rules'); ?></b><?php _e('Preview contains sample result for original result see product page.', 'woo-discount-rules'); ?></p>
@@ -62,10 +62,10 @@ $is_pro = Helper::hasPro();
                                             <input type="color" id="badge_colorpicker"
                                                    name="discount_badge[badge_color_picker]"
                                                    pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
-                                                   value="<?php echo ($badge_bg_color) ? $badge_bg_color : '#ffffff'; ?>">
+                                                   value="<?php echo ($badge_bg_color) ? esc_attr($badge_bg_color) : '#ffffff'; ?>">
                                             <input type="text" name="discount_badge[badge_color_picker]"
                                                    pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
-                                                   value="<?php echo ($badge_bg_color) ? $badge_bg_color : '#ffffff'; ?>"
+                                                   value="<?php echo ($badge_bg_color) ? esc_attr($badge_bg_color) : '#ffffff'; ?>"
                                                    id="badge_hexcolor" class="wdr_color_picker">
                                             <?php } else {
                                                 _e("Unlock this feature by <a href='https://www.flycart.org/products/wordpress/woocommerce-discount-rules' target='_blank'>Upgrading to Pro</a>", 'woo-discount-rules');
@@ -83,10 +83,10 @@ $is_pro = Helper::hasPro();
                                             <input type="color" id="text_colorpicker"
                                                    name="discount_badge[badge_text_color_picker]"
                                                    pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
-                                                   value="<?php echo ($badge_text_color) ? $badge_text_color : '#000000'; ?>">
+                                                   value="<?php echo ($badge_text_color) ? esc_attr($badge_text_color) : '#000000'; ?>">
                                             <input type="text" name="discount_badge[badge_text_color_picker]"
                                                    pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
-                                                   value="<?php echo ($badge_text_color) ? $badge_text_color : '#000000'; ?>"
+                                                   value="<?php echo ($badge_text_color) ? esc_attr($badge_text_color) : '#000000'; ?>"
                                                    id="text_hexcolor" class="wdr_color_picker">
                                             <?php } else {
                                                 _e("Unlock this feature by <a href='https://www.flycart.org/products/wordpress/woocommerce-discount-rules' target='_blank'>Upgrading to Pro</a>", 'woo-discount-rules');
@@ -108,7 +108,7 @@ $is_pro = Helper::hasPro();
                                     id="awdr_discount_bar_content"
                                     rows="4"
                                     cols="50"
-                                    placeholder="<?php _e('Discount Text', 'woo-discount-rules'); ?>"><?php echo ($badge_text) ? $badge_text : ''; ?></textarea>
+                                    placeholder="<?php esc_attr_e('Discount Text', 'woo-discount-rules'); ?>"><?php echo ($badge_text) ? $badge_text : ''; ?></textarea>
                                     <br/><span class="wdr_adv_msg_shortcode_text">
                                         <b class="adv-msg-title">{{title}} -&gt; <?php _e(' Rule Title,', 'woo-discount-rules'); ?></b>&nbsp;&nbsp;&nbsp;&nbsp;
                                         <?php

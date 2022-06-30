@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the YITH WooCommerce Gift Cards package.
 msgid ""
 msgstr ""
-"Project-Id-Version: YITH WooCommerce Gift Cards 2.8.0\n"
+"Project-Id-Version: YITH WooCommerce Gift Cards 2.10.0\n"
 "Report-Msgid-Bugs-To: YITH <plugins@yithemes.com>\n"
-"POT-Creation-Date: 2022-03-31 15:20:48+00:00\n"
+"POT-Creation-Date: 2022-06-16 14:41:23+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,720 +28,772 @@ msgstr ""
 msgid "This title is already used. Please choose another one"
 msgstr ""
 
-#: init.php:56
-msgid ""
-"YITH WooCommerce Gift Cards is enabled but not effective. It requires "
-"WooCommerce in order to work."
-msgstr ""
-
-#: init.php:72
-msgid ""
-"You can't activate the free version of YITH WooCommerce Gift Cards while "
-"you are using the premium one."
-msgstr ""
-
-#: lib/class-yith-wc-product-gift-card.php:239
+#: includes/class-yith-wc-product-gift-card.php:239
 msgid "Select amount"
 msgstr ""
 
-#: lib/class-yith-wc-product-gift-card.php:239
+#: includes/class-yith-wc-product-gift-card.php:239
 msgid "Read more"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:290
+#: includes/class-yith-woocommerce-gift-cards.php:288
 msgid "Create Gift Card Code"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:291
+#: includes/class-yith-woocommerce-gift-cards.php:289
 msgid "New Gift Card"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:292
+#: includes/class-yith-woocommerce-gift-cards.php:290
 msgid "Edit Gift Card"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:293
+#: includes/class-yith-woocommerce-gift-cards.php:291
 msgid "View Gift Card"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:294
+#: includes/class-yith-woocommerce-gift-cards.php:292
 msgid "All gift cards"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:295
+#: includes/class-yith-woocommerce-gift-cards.php:293
 msgid "Search gift cards"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:296
+#: includes/class-yith-woocommerce-gift-cards.php:294
 msgid "Parent gift cards:"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:297
+#: includes/class-yith-woocommerce-gift-cards.php:295
 #: templates/myaccount/my-giftcards.php:143
 msgid "No gift cards found."
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:298
+#: includes/class-yith-woocommerce-gift-cards.php:296
 msgid "No gift cards found in Trash."
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:300
-#: lib/class-yith-woocommerce-gift-cards.php:301
-#: lib/class-yith-ywgc-frontend.php:241
+#: includes/class-yith-woocommerce-gift-cards.php:298
+#: includes/class-yith-woocommerce-gift-cards.php:299
+#: includes/class-yith-ywgc-frontend.php:234
 msgid "Gift Cards"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:393
+#: includes/class-yith-woocommerce-gift-cards.php:391
 msgid "Gift card categories"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:394
-#: lib/class-yith-woocommerce-gift-cards.php:403
+#: includes/class-yith-woocommerce-gift-cards.php:392
+#: includes/class-yith-woocommerce-gift-cards.php:401
 msgid "Gift card category"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:395
+#: includes/class-yith-woocommerce-gift-cards.php:393
 msgid "Search gift card categories"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:396
+#: includes/class-yith-woocommerce-gift-cards.php:394
 msgid "All gift card categories"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:397
+#: includes/class-yith-woocommerce-gift-cards.php:395
 msgid "Parent gift card category"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:398
+#: includes/class-yith-woocommerce-gift-cards.php:396
 msgid "Parent gift card category:"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:399
+#: includes/class-yith-woocommerce-gift-cards.php:397
 msgid "Edit gift card category"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:400
+#: includes/class-yith-woocommerce-gift-cards.php:398
 msgid "Update gift card category"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:401
+#: includes/class-yith-woocommerce-gift-cards.php:399
 msgid "Add new gift card category"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:402
+#: includes/class-yith-woocommerce-gift-cards.php:400
 msgid "New gift card category name"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:421
+#: includes/class-yith-woocommerce-gift-cards.php:419
 msgid "None"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:424
+#: includes/class-yith-woocommerce-gift-cards.php:422
 msgid ""
 "Select this category in your gift card product if you do not want to "
 "display images in your gift card gallery"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:432
+#: includes/class-yith-woocommerce-gift-cards.php:430
 msgid "All"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:435
+#: includes/class-yith-woocommerce-gift-cards.php:433
 msgid ""
 "Select this category in your gift card product if you want to display all "
 "the images categories in your gift card gallery"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:467
+#: includes/class-yith-woocommerce-gift-cards.php:465
 msgid "Disabled"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:481
+#: includes/class-yith-woocommerce-gift-cards.php:479
 msgid "Dismissed"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:495
+#: includes/class-yith-woocommerce-gift-cards.php:493
 msgid "Code not valid"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:676
+#: includes/class-yith-woocommerce-gift-cards.php:659
 msgid "Gift card detail"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:682
-#: lib/class-ywgc-plugin-fw-loader.php:159
+#: includes/class-yith-woocommerce-gift-cards.php:665
+#: includes/class-ywgc-plugin-fw-loader.php:150
 msgid "General"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:688
+#: includes/class-yith-woocommerce-gift-cards.php:671
 msgid "Purchased amount"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:689
+#: includes/class-yith-woocommerce-gift-cards.php:672
 msgid "The amount purchased by the customer."
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:695
+#: includes/class-yith-woocommerce-gift-cards.php:678
 msgid "Current balance"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:696
+#: includes/class-yith-woocommerce-gift-cards.php:679
 msgid "The current amount available for the customer."
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:702
-#: lib/class-yith-ywgc-backend.php:1212
+#: includes/class-yith-woocommerce-gift-cards.php:685
+#: includes/class-yith-ywgc-backend.php:1202
 msgid "Digital"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:703
+#: includes/class-yith-woocommerce-gift-cards.php:686
 msgid ""
 "Check if the gift card will be sent via email. Leave it unchecked to make "
 "this work as a physical product."
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:709
-#: lib/class-yith-ywgc-backend.php:1214
+#: includes/class-yith-woocommerce-gift-cards.php:692
+#: includes/class-yith-ywgc-backend.php:1204
 msgid "Sender's name"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:710
+#: includes/class-yith-woocommerce-gift-cards.php:693
 msgid "The name of the digital gift card sender, if any."
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:721
+#: includes/class-yith-woocommerce-gift-cards.php:704
 msgid "Recipient's email"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:722
+#: includes/class-yith-woocommerce-gift-cards.php:705
 msgid "The email address of the digital gift card recipient."
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:732
-#: lib/class-yith-ywgc-backend.php:1216
+#: includes/class-yith-woocommerce-gift-cards.php:715
+#: includes/class-yith-ywgc-backend.php:1206
 msgid "Recipient's name"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:733
+#: includes/class-yith-woocommerce-gift-cards.php:716
 msgid "The name of the digital gift card recipient."
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:743
-#: lib/class-yith-ywgc-backend.php:1218
+#: includes/class-yith-woocommerce-gift-cards.php:726
+#: includes/class-yith-ywgc-backend.php:1208
 msgid "Message"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:744
+#: includes/class-yith-woocommerce-gift-cards.php:727
 msgid "The message attached to the gift card."
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:755
+#: includes/class-yith-woocommerce-gift-cards.php:738
 msgid "Internal notes"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:756
+#: includes/class-yith-woocommerce-gift-cards.php:739
 msgid "Enter your notes here. This will only be visible to the admin."
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:912
+#: includes/class-yith-woocommerce-gift-cards.php:862
 msgid "Your message will show up here…"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:1021
+#: includes/class-yith-woocommerce-gift-cards.php:971
 msgid ""
 "In order to use the gift card, the minimum total amount in the cart has to "
 "be "
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:1031
+#: includes/class-yith-woocommerce-gift-cards.php:981
 msgid ""
 "It is not possible to add any gift card if the cart contains a "
 "subscription-based product"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:1043
+#: includes/class-yith-woocommerce-gift-cards.php:993
 msgid "This code is already applied"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:214 lib/class-yith-ywgc-frontend.php:609
+#: includes/class-yith-ywgc-backend.php:203
+#: includes/class-yith-ywgc-frontend.php:556
 msgid "Gift card code: "
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:271
+#: includes/class-yith-ywgc-backend.php:261
 msgid "Choose Image"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:301
+#: includes/class-yith-ywgc-backend.php:291
 msgid "Set gift card category"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:302
+#: includes/class-yith-ywgc-backend.php:292
 msgid "Unset gift card category"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:330
+#: includes/class-yith-ywgc-backend.php:320
 msgid "Manage the Media library"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:331
+#: includes/class-yith-ywgc-backend.php:321
 msgid "Done"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:369
+#: includes/class-yith-ywgc-backend.php:359
 #: templates/yith-gift-cards/ywgc-gift-card-template.php:72
 msgid "Gift card"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:539
+#: includes/class-yith-ywgc-backend.php:529
 msgid "Gift card amount"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:543
+#: includes/class-yith-ywgc-backend.php:533
 msgid "Add"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:581
+#: includes/class-yith-ywgc-backend.php:571
 msgid "You haven't configured any gift card yet"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:896
+#: includes/class-yith-ywgc-backend.php:886
 msgid "Gift card: "
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1159
+#: includes/class-yith-ywgc-backend.php:1149
 msgid "Active"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1161
+#: includes/class-yith-ywgc-backend.php:1151
 msgid "Used"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1208
+#: includes/class-yith-ywgc-backend.php:1198
 msgid "Product ID"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1210
+#: includes/class-yith-ywgc-backend.php:1200
 msgid "Amount"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1220
+#: includes/class-yith-ywgc-backend.php:1210
 msgid "Design type"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1222
+#: includes/class-yith-ywgc-backend.php:1212
 msgid "Design"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1224
+#: includes/class-yith-ywgc-backend.php:1214
 msgid "Subtotal"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1226
+#: includes/class-yith-ywgc-backend.php:1216
 msgid "Subtotal tax"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1228
+#: includes/class-yith-ywgc-backend.php:1218
 msgid "Version"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1230
+#: includes/class-yith-ywgc-backend.php:1220
 msgid "Delivery date"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1232
+#: includes/class-yith-ywgc-backend.php:1222
 msgid "Postdated"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1358
+#: includes/class-yith-ywgc-backend.php:1348
 msgid "Manage the gift card images through the WordPress Media Library"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1360
+#: includes/class-yith-ywgc-backend.php:1350
 msgid "Manage media"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1361
+#: includes/class-yith-ywgc-backend.php:1351
 msgid ""
 "Upload/manage images in the WordPress Media Library and include them in the "
 "existing gift card categories."
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1418 lib/class-yith-ywgc-backend.php:1421
+#: includes/class-yith-ywgc-backend.php:1408
+#: includes/class-yith-ywgc-backend.php:1411
 msgid "Gift card updated"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1419
+#: includes/class-yith-ywgc-backend.php:1409
 msgid "Custom field updated"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1420
+#: includes/class-yith-ywgc-backend.php:1410
 msgid "Custom field deleted"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1422
+#: includes/class-yith-ywgc-backend.php:1412
 msgid "Revision restored"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1423
+#: includes/class-yith-ywgc-backend.php:1413
 msgid "Gift card published"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1424
+#: includes/class-yith-ywgc-backend.php:1414
 msgid "Gift card saved"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1425
+#: includes/class-yith-ywgc-backend.php:1415
 msgid "Gift card submitted"
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1428
+#: includes/class-yith-ywgc-backend.php:1418
 #. translators: %s is the date
 msgid "Gift card scheduled for: %s."
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1431
+#: includes/class-yith-ywgc-backend.php:1421
 msgid "Gift card draft updated."
 msgstr ""
 
-#: lib/class-yith-ywgc-backend.php:1447
+#: includes/class-yith-ywgc-backend.php:1437
 #. translators: %s: gift card count
 msgid "%s gift card updated."
 msgid_plural "%s gift cards updated."
 msgstr[0] ""
 msgstr[1] ""
 
-#: lib/class-yith-ywgc-backend.php:1449
+#: includes/class-yith-ywgc-backend.php:1439
 #. translators: %s: gift card count
 msgid "%s gift card not updated, somebody is editing it."
 msgid_plural "%s gift cards not updated, somebody is editing them."
 msgstr[0] ""
 msgstr[1] ""
 
-#: lib/class-yith-ywgc-backend.php:1451
+#: includes/class-yith-ywgc-backend.php:1441
 #. translators: %s: gift count
 msgid "%s gift card permanently deleted."
 msgid_plural "%s gift cards permanently deleted."
 msgstr[0] ""
 msgstr[1] ""
 
-#: lib/class-yith-ywgc-backend.php:1453
+#: includes/class-yith-ywgc-backend.php:1443
 #. translators: %s: gift card count
 msgid "%s gift card moved to the Trash."
 msgid_plural "%s gift cards moved to the Trash."
 msgstr[0] ""
 msgstr[1] ""
 
-#: lib/class-yith-ywgc-backend.php:1455
+#: includes/class-yith-ywgc-backend.php:1445
 #. translators: %s: gift card count
 msgid "%s gift card restored from the Trash."
 msgid_plural "%s gift cards restored from the Trash."
 msgstr[0] ""
 msgstr[1] ""
 
-#: lib/class-yith-ywgc-cart-checkout.php:219
+#: includes/class-yith-ywgc-cart-checkout.php:216
 msgid "Gift cards:"
 msgstr ""
 
-#: lib/class-yith-ywgc-cart-checkout.php:240
+#: includes/class-yith-ywgc-cart-checkout.php:237
 msgid "Gift card:"
 msgstr ""
 
-#: lib/class-yith-ywgc-cart-checkout.php:249
+#: includes/class-yith-ywgc-cart-checkout.php:246
 msgid "[Remove]"
 msgstr ""
 
-#: lib/class-yith-ywgc-cart-checkout.php:492
+#: includes/class-yith-ywgc-cart-checkout.php:489
 #. translators: %s: Price
 msgid "Order paid with gift cards for a total amount of %s."
 msgstr ""
 
-#: lib/class-yith-ywgc-cart-checkout.php:550
+#: includes/class-yith-ywgc-cart-checkout.php:547
 msgid "The gift card has an invalid amount"
 msgstr ""
 
-#: lib/class-yith-ywgc-cart-checkout.php:676
+#: includes/class-yith-ywgc-cart-checkout.php:673
 msgid "An error occurred while adding the product to the cart."
 msgstr ""
 
-#: lib/class-yith-ywgc-cart-checkout.php:690
+#: includes/class-yith-ywgc-cart-checkout.php:687
 msgid "Add a valid email address for the recipient"
 msgstr ""
 
-#: lib/class-yith-ywgc-cart-checkout.php:703
+#: includes/class-yith-ywgc-cart-checkout.php:700
 msgid "The recipient(s) email address is mandatory"
 msgstr ""
 
-#: lib/class-yith-ywgc-cart-checkout.php:714
+#: includes/class-yith-ywgc-cart-checkout.php:711
 msgid "Email address not valid, please check the following: "
 msgstr ""
 
-#: lib/class-yith-ywgc-frontend.php:326
+#: includes/class-yith-ywgc-frontend.php:319
 msgid "Please enter a valid email address"
 msgstr ""
 
-#: lib/class-yith-ywgc-frontend.php:617
+#: includes/class-yith-ywgc-frontend.php:564
 #. translators: %s: Date
 msgid "Sent on %s"
 msgstr ""
 
-#: lib/class-yith-ywgc-frontend.php:620
+#: includes/class-yith-ywgc-frontend.php:567
 msgid "Scheduled"
 msgstr ""
 
-#: lib/class-yith-ywgc-frontend.php:623
+#: includes/class-yith-ywgc-frontend.php:570
 msgid "Not yet sent"
 msgstr ""
 
-#: lib/class-yith-ywgc-frontend.php:626
+#: includes/class-yith-ywgc-frontend.php:573
 msgid "Failed"
 msgstr ""
 
-#: lib/class-yith-ywgc-frontend.php:632
+#: includes/class-yith-ywgc-frontend.php:579
 #. translators: %s: gc->recipient
 msgid "Recipient: %s"
 msgstr ""
 
-#: lib/class-yith-ywgc-frontend.php:637
+#: includes/class-yith-ywgc-frontend.php:584
 #. translators: %s: Delivery date
 msgid "Delivery date: %s"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:510
+#: includes/class-yith-ywgc-gift-card.php:511
 #. translators: %s: Gift card Number
 msgid "The gift card code %s does not exist!"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:514
+#: includes/class-yith-ywgc-gift-card.php:515
 #. translators: %s: Gift card Number
 msgid ""
 "Sorry, it seems that the gift card code \"%s\" is not yours and cannot be "
 "used for this order."
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:518
+#: includes/class-yith-ywgc-gift-card.php:519
 #. translators: %s: Gift card Number
 msgid "The gift card code %s has already been applied!"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:522
+#: includes/class-yith-ywgc-gift-card.php:523
 #. translators: %s: Gift card Number
 msgid "Sorry, the gift card code %s is expired and cannot be used."
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:526
+#: includes/class-yith-ywgc-gift-card.php:527
 #. translators: %s: Gift card Number
 msgid "Sorry, the gift card code %s is currently disabled and cannot be used."
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:530
+#: includes/class-yith-ywgc-gift-card.php:531
 #. translators: %s: Gift card Number
 msgid "Sorry, the gift card code %s is no longer valid!"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:534
+#: includes/class-yith-ywgc-gift-card.php:535
 #. translators: %s: Gift card Number
 msgid ""
 "Sorry, it seems that the gift card code %s is invalid - it has been removed "
 "from your cart."
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:538 lib/class-yith-ywgc-gift-card.php:567
+#: includes/class-yith-ywgc-gift-card.php:539
+#: includes/class-yith-ywgc-gift-card.php:568
 #. translators: %s: Gift card Number
 msgid "Gift card codes cannot be used to purchase other gift cards"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:560
+#: includes/class-yith-ywgc-gift-card.php:561
 msgid "Gift card code successfully applied."
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:563
+#: includes/class-yith-ywgc-gift-card.php:564
 msgid "Gift card code successfully removed."
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:839
+#: includes/class-yith-ywgc-gift-card.php:808
 msgid "The gift card has been disabled"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:842
+#: includes/class-yith-ywgc-gift-card.php:811
 msgid "Valid"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-card.php:845
+#: includes/class-yith-ywgc-gift-card.php:814
 msgid "No longer valid, replaced by another code"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:102
+#: includes/class-yith-ywgc-gift-cards-table.php:102
 msgid "Order"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:103
+#: includes/class-yith-ywgc-gift-cards-table.php:103
 #: templates/myaccount/my-giftcards.php:16
 msgid "Balance"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:104
+#: includes/class-yith-ywgc-gift-cards-table.php:104
 msgid "Orders"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:105
+#: includes/class-yith-ywgc-gift-cards-table.php:105
 msgid "Expiration date"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:106
+#: includes/class-yith-ywgc-gift-cards-table.php:106
 msgid "Information"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:147
+#: includes/class-yith-ywgc-gift-cards-table.php:147
 msgid "Guest"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:180
+#: includes/class-yith-ywgc-gift-cards-table.php:180
 msgid "Created manually"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:198
+#: includes/class-yith-ywgc-gift-cards-table.php:198
 msgid "Partially redeemed"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:200
+#: includes/class-yith-ywgc-gift-cards-table.php:200
 msgid "Completely redeemed"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:202
+#: includes/class-yith-ywgc-gift-cards-table.php:202
 #: templates/myaccount/my-giftcards.php:120
 msgid "The code has not been used yet"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:220
+#: includes/class-yith-ywgc-gift-cards-table.php:220
 msgid "Unlimited"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:259
-#: lib/class-yith-ywgc-gift-cards-table.php:260
+#: includes/class-yith-ywgc-gift-cards-table.php:259
+#: includes/class-yith-ywgc-gift-cards-table.php:260
 msgid "Send now"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:279
+#: includes/class-yith-ywgc-gift-cards-table.php:279
 msgid "This card is dismissed."
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:286
+#: includes/class-yith-ywgc-gift-cards-table.php:286
 msgid "Physical"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:292
+#: includes/class-yith-ywgc-gift-cards-table.php:292
 msgid "Virtual"
 msgstr ""
 
-#: lib/class-ywgc-plugin-fw-loader.php:158
+#: includes/class-ywgc-plugin-fw-loader.php:149
 msgid "Dashboard"
 msgstr ""
 
-#: lib/class-ywgc-plugin-fw-loader.php:160
+#: includes/class-ywgc-plugin-fw-loader.php:151
 msgid "Image categories"
 msgstr ""
 
-#: lib/class-ywgc-plugin-fw-loader.php:161
-msgid "Premium Version"
+#: includes/class-ywgc-plugin-fw-loader.php:159
+msgid ""
+"Set an <strong>expiration date for the gift card</strong> (a specific date, "
+"like January 01, or after a specific time after the purchase, like 3 months "
+"after)"
 msgstr ""
 
-#: lib/class-ywgc-plugin-fw-loader.php:226
+#: includes/class-ywgc-plugin-fw-loader.php:160
+msgid "Manage stock of each gift card product"
+msgstr ""
+
+#: includes/class-ywgc-plugin-fw-loader.php:161
+msgid "Enable an optional <strong>QR code</strong> in gift cards"
+msgstr ""
+
+#: includes/class-ywgc-plugin-fw-loader.php:162
+msgid "Import and export gift cards into a <strong>CSV file</strong>"
+msgstr ""
+
+#: includes/class-ywgc-plugin-fw-loader.php:163
+msgid "Allow users to <strong>choose a delivery date</strong> for the gift card"
+msgstr ""
+
+#: includes/class-ywgc-plugin-fw-loader.php:164
+msgid ""
+"Allow users to <strong>enter a custom amount</strong> (and set the minimum "
+"and/or maximum amount)"
+msgstr ""
+
+#: includes/class-ywgc-plugin-fw-loader.php:165
+msgid ""
+"Allow users to <strong>upload a custom image or photo</strong> to customize "
+"the gift card"
+msgstr ""
+
+#: includes/class-ywgc-plugin-fw-loader.php:166
+msgid "Option to attach a PDF to gift card email"
+msgstr ""
+
+#: includes/class-ywgc-plugin-fw-loader.php:167
+msgid "Notify the sender via email when the gift card is delivered to recipient"
+msgstr ""
+
+#: includes/class-ywgc-plugin-fw-loader.php:168
+msgid ""
+"Allow users to enter the gift card code into the standard coupon code field "
+"(instead of showing two different forms in cart and checkout)"
+msgstr ""
+
+#: includes/class-ywgc-plugin-fw-loader.php:169
+msgid ""
+"Enable the “Gift this product” option in product pages to sell gift cards "
+"linked to specific products"
+msgstr ""
+
+#: includes/class-ywgc-plugin-fw-loader.php:170
+msgid "Regular updates, Translations and Premium Support"
+msgstr ""
+
+#: includes/class-ywgc-plugin-fw-loader.php:222
 msgid ""
 "YITH WooCommerce Gift Cards is available in an outstanding premium version "
 "with many new options, discover it now."
 msgstr ""
 
-#: lib/class-ywgc-plugin-fw-loader.php:227
+#: includes/class-ywgc-plugin-fw-loader.php:223
 msgid "Premium version"
 msgstr ""
 
-#: lib/class-ywgc-plugin-fw-loader.php:236
+#: includes/class-ywgc-plugin-fw-loader.php:232
 msgid ""
 "In the YITH Plugins tab you can find YITH WooCommerce Gift Cards "
 "options.<br> From this menu you can access all the settings of your active "
 "YITH plugins."
 msgstr ""
 
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:171
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:246
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:171
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:246
 #. translators: %d: Comment ID
 msgid "Gift card %d contains personal data but could not be anonymized."
 msgstr ""
 
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:614
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:614
 msgid "Gift Card"
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:40
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:40
 msgid "YITH Gift Cards - Dispatch of the code"
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:43
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:43
 msgid "Send the digital gift card to the email address selected during the purchase"
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:46
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:46
 msgid "Your gift card"
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:47
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:47
 msgid "[{site_title}] You have received a gift card"
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:53
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:164
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:53
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:164
 msgid ""
 "Hi {recipient_name}, you have received this gift card from {sender}, use it "
 "on our online shop."
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:160
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:160
 msgid "a friend"
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:240
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:240
 msgid "Enable/Disable"
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:242
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:242
 msgid "Enable this email notification"
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:246
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:246
 msgid "Subject"
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:248
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:255
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:262
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:248
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:255
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:262
 #. translators: %s: Subject
 #. translators: %s: Heading
 #. translators: %s: Introductory_text
 msgid "Defaults to <code>%s</code>"
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:253
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:253
 msgid "Email Heading"
 msgstr ""
 
-#: lib/emails/class-yith-ywgc-email-send-gift-card.php:260
+#: includes/emails/class-yith-ywgc-email-send-gift-card.php:260
 msgid "Introductive message"
 msgstr ""
 
-#: lib/third-party/elementor/class-ywgc-form-widget.php:40
+#: includes/third-party/elementor/class-ywgc-form-widget.php:40
 msgid "YITH Gift Card Product Form"
 msgstr ""
 
-#: lib/third-party/elementor/class-ywgc-form-widget.php:65
+#: includes/third-party/elementor/class-ywgc-form-widget.php:65
 msgid "Content"
 msgstr ""
 
-#: lib/third-party/elementor/class-ywgc-form-widget.php:73
+#: includes/third-party/elementor/class-ywgc-form-widget.php:73
 msgid "Form Title"
 msgstr ""
 
-#: lib/third-party/elementor/class-ywgc-form-widget.php:76
+#: includes/third-party/elementor/class-ywgc-form-widget.php:76
 msgid "Your section title"
+msgstr ""
+
+#: init.php:52
+msgid ""
+"YITH WooCommerce Gift Cards is enabled but not effective. It requires "
+"WooCommerce in order to work."
 msgstr ""
 
 #: plugin-options/general-options.php:27
@@ -826,199 +878,6 @@ msgstr ""
 #: templates/emails/automatic-discount.php:13
 #: templates/emails/automatic-discount.php:19
 msgid "Apply your gift card code"
-msgstr ""
-
-#: templates/admin/premium.php:183 templates/admin/premium.php:429
-#. translators: %all: html
-#. translators: %s: html
-msgid ""
-"Upgrade to the %1$spremium version%2$s%3$sof %1$sYITH WooCommerce Gift "
-"Cards%2$s to benefit from all features!"
-msgstr ""
-
-#: templates/admin/premium.php:187 templates/admin/premium.php:433
-msgid "Upgrade"
-msgstr ""
-
-#: templates/admin/premium.php:194
-msgid "Premium Features"
-msgstr ""
-
-#: templates/admin/premium.php:199
-msgid "Gift cards, the most efficient way to increase sales."
-msgstr ""
-
-#: templates/admin/premium.php:201
-msgid ""
-"A gift card makes life for both your customer and the person who receives "
-"it a lot easier. This is the reason why gift cards have become more and "
-"more popular, to such an extent that 98% of shops – and not only virtual "
-"shops – use them to increase sales volume and to loyalize customers. Thanks "
-"to YITH WooCommerce Gift Cards you will be able to create digital or "
-"printable gift cards of any amount and give your customers the possibility "
-"to customize them to make a special gift for their friends and family."
-msgstr ""
-
-#: templates/admin/premium.php:216
-msgid "Provide a modern and usable interface to build the perfect gift card "
-msgstr ""
-
-#: templates/admin/premium.php:218
-msgid ""
-"We have updated the gift card page layout to guarantee a more modern look "
-"and a usable experience for your customers. Customizing gift cards has "
-"never been so quick and easy."
-msgstr ""
-
-#: templates/admin/premium.php:227
-msgid "Set up an effective image gallery with unlimited categories"
-msgstr ""
-
-#: templates/admin/premium.php:229
-msgid ""
-"Create unlimited design categories to organize the gift card images: "
-"Christmas, Birthdays, Friendship, Family... "
-msgstr ""
-
-#: templates/admin/premium.php:244
-msgid ""
-"Let your customers upload their images or photos and build a unique gift "
-"card!"
-msgstr ""
-
-#: templates/admin/premium.php:246
-msgid ""
-"With the custom uploader, your customers can upload an image or photo to "
-"send a special and customized gift card to their loved ones."
-msgstr ""
-
-#: templates/admin/premium.php:255
-msgid "Set fixed amounts or let the customer choose a custom amount "
-msgstr ""
-
-#: templates/admin/premium.php:257
-msgid ""
-"Offer a versatile gift card system allowing your customers to enter a "
-"custom amount or set specific amounts to choose from."
-msgstr ""
-
-#: templates/admin/premium.php:273
-msgid "Multiple recipient & scheduling delivery date options "
-msgstr ""
-
-#: templates/admin/premium.php:275
-msgid ""
-"Let your customers choose if they want to send multiple gift cards to "
-"different recipients or choose a specific delivery date."
-msgstr ""
-
-#: templates/admin/premium.php:284
-msgid "An advanced management of all aspects of gift cards purchased in your site."
-msgstr ""
-
-#: templates/admin/premium.php:288
-msgid ""
-"Set an expiration date for your gift cards, apply discounts, manage stock, "
-"check the gift card delivery status, suspend a gift card.\n"
-"Now you can enjoy a full and powerful control of each aspect of your gift "
-"cards."
-msgstr ""
-
-#: templates/admin/premium.php:306
-msgid "A wide range of notifications and e-mail options "
-msgstr ""
-
-#: templates/admin/premium.php:308
-msgid ""
-"Your customers can receive a notification when the gift card is sent to the "
-"recipient and when the gift card has been used."
-msgstr ""
-
-#: templates/admin/premium.php:320
-msgid "An advanced customization of cart and checkout page options"
-msgstr ""
-
-#: templates/admin/premium.php:324
-msgid ""
-"Choose where to display the gift card coupon form in cart and checkout "
-"page, customize the design and allow your customers to review and edit "
-"wrong delivery info directly from the cart page.\n"
-"From version 3.0 users can enter a gift card code in the default "
-"WooCommerce coupon form, to avoid a duplicated input field and improve "
-"usability. "
-msgstr ""
-
-#: templates/admin/premium.php:345
-msgid ""
-"Create and sell gift cards to print and send physically, for those who love "
-"to touch their gifts."
-msgstr ""
-
-#: templates/admin/premium.php:347
-msgid ""
-"If virtual gift cards are a limitation for you, sell gift cards to print "
-"and send them physically to your customers."
-msgstr ""
-
-#: templates/admin/premium.php:356
-msgid ""
-"Allow your customers to send a gift card and suggest a specific product of "
-"your store "
-msgstr ""
-
-#: templates/admin/premium.php:358
-msgid ""
-"With the “Gift this product “ option your customer can buy a gift card with "
-"the same value as the product he likes and suggest the product to the "
-"recipient."
-msgstr ""
-
-#: templates/admin/premium.php:373
-msgid "Switch easily from Smart Coupons to YITH Gift Card"
-msgstr ""
-
-#: templates/admin/premium.php:375
-msgid ""
-"Thanks to the integration, you can dismiss to use Smart Coupons and convert "
-"Store Credit / Gift Certificate coupons created with it, into new gift "
-"cards. "
-msgstr ""
-
-#: templates/admin/premium.php:384
-msgid "Add a QR Code for your gift cards"
-msgstr ""
-
-#: templates/admin/premium.php:386
-msgid ""
-"Thanks to the new QR integration, you can now add a QR code on your gift "
-"cards and use them even more easily and quickly."
-msgstr ""
-
-#: templates/admin/premium.php:402
-msgid ""
-"Create and edit gift cards from backend, without proceeding to checkout or "
-"creating an order in your shop. "
-msgstr ""
-
-#: templates/admin/premium.php:404
-msgid ""
-"A quick process to create gift card codes directly from backend, without "
-"creating products and without creating orders. The best solution if you "
-"need to create or edit physical gift cards or create gift card codes in a "
-"fast and simple way."
-msgstr ""
-
-#: templates/admin/premium.php:413
-msgid ""
-"Allow your customers to send a virtual gift card or download a printable "
-"PDF version"
-msgstr ""
-
-#: templates/admin/premium.php:415
-msgid ""
-"Do your customers want to print the gift card at home and put it into a "
-"beautiful envelope? No problem. They can get a PDF file and print it "
-"easily: they'll have a beautiful printed gift card to hand over."
 msgstr ""
 
 #: templates/checkout/form-gift-cards.php:32
@@ -1152,76 +1011,76 @@ msgid ""
 "plugins for your e-commerce shop on <strong>YITH</strong></a>."
 msgstr ""
 
-#: lib/class-yith-wc-product-gift-card.php:180
+#: includes/class-yith-wc-product-gift-card.php:180
 #. translators: %1: Min price %2: Max price
 msgctxt "Price range: from-to"
 msgid "%1$s&ndash;%2$s"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:285
+#: includes/class-yith-woocommerce-gift-cards.php:283
 msgctxt "post type general name"
 msgid "All Gift Cards"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:286
+#: includes/class-yith-woocommerce-gift-cards.php:284
 msgctxt "post type singular name"
 msgid "Gift Card"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:287
+#: includes/class-yith-woocommerce-gift-cards.php:285
 msgctxt "admin menu"
 msgid "Gift Cards"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:288
+#: includes/class-yith-woocommerce-gift-cards.php:286
 msgctxt "add new on admin bar"
 msgid "Gift Card"
 msgstr ""
 
-#: lib/class-yith-woocommerce-gift-cards.php:289
+#: includes/class-yith-woocommerce-gift-cards.php:287
 msgctxt "admin menu item"
 msgid "Create Code"
 msgstr ""
 
-#: lib/class-yith-ywgc-gift-cards-table.php:153
+#: includes/class-yith-ywgc-gift-cards-table.php:153
 #. translators: %s:html
 msgctxt "Order number by X"
 msgid "%1$s by %2$s"
 msgstr ""
 
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:35
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:35
 msgctxt "Privacy Policy Content"
 msgid "YITH Gift Cards for WooCommerce premium"
 msgstr ""
 
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:102
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:102
 msgctxt "GDPR privacy"
 msgid "YITH gift cards received and sent"
 msgstr ""
 
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:150
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:223
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:576
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:150
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:223
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:576
 msgctxt "GDPR privacy"
 msgid "Anonymous"
 msgstr ""
 
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:312
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:312
 msgctxt "GDPR privacy"
 msgid "YITH gift cards received"
 msgstr ""
 
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:364
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:364
 msgctxt "GDPR privacy"
 msgid "Gift cards received"
 msgstr ""
 
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:391
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:391
 msgctxt "GDPR privacy"
 msgid "YITH gift cards sent"
 msgstr ""
 
-#: lib/class.yith-woocommerce-gift-cards-privacy.php:438
+#: includes/class.yith-woocommerce-gift-cards-privacy.php:438
 msgctxt "GDPR privacy"
 msgid "Gift cards sent"
 msgstr ""

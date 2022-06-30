@@ -45,9 +45,9 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                         $extra_params = isset($rule->available_conditions[$type]['extra_params']) ? $rule->available_conditions[$type]['extra_params'] : array();
                         if (file_exists($template)) {
                             $options = isset($condition->options) ? $condition->options : array(); ?>
-                            <div class="wdr-grid wdr-conditions-container wdr-condition-group" data-index="<?php echo $i; ?>">
+                            <div class="wdr-grid wdr-conditions-container wdr-condition-group" data-index="<?php echo esc_attr($i); ?>">
                                 <div class="wdr-condition-type">
-                                    <select name="conditions[<?php echo $i; ?>][type]"
+                                    <select name="conditions[<?php echo esc_attr($i); ?>][type]"
                                             class="wdr-product-condition-type awdr-left-align"
                                             style="width: 100%"><?php
                                         if (isset($wdr_product_conditions) && !empty($wdr_product_conditions)) {
@@ -64,7 +64,7 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                                                         <?php
                                                     } else {
                                                         ?>
-                                                        value="<?php echo $key; ?>"
+                                                        value="<?php echo esc_attr($key); ?>"
                                                         <?php
                                                     }
                                                     ?>
@@ -94,13 +94,13 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                             $type_promotion = isset($condition->type) ? $condition->type : NULL;
                             if($type_promotion == 'cart_subtotal' && $subtotal_promo == 1){
                                 $operator = isset($options->operator) ? $options->operator : 'greater_than_or_equal';?>
-                                <div class="wdr-grid wdr-conditions-container wdr-condition-group <?php echo 'promo_show_hide_'.$i; ?>" data-index="<?php echo $i; ?>" style="<?php echo ($operator == 'greater_than_or_equal' || $operator == 'greater_than') ? '': 'display: none'; ?>">
+                                <div class="wdr-grid wdr-conditions-container wdr-condition-group <?php echo 'promo_show_hide_'.esc_attr($i); ?>" data-index="<?php echo esc_attr($i); ?>" style="<?php echo ($operator == 'greater_than_or_equal' || $operator == 'greater_than') ? '': 'display: none'; ?>">
                                     <?php include(WDR_PLUGIN_PATH . 'App/Views/Admin/Rules/Others/SubtotalPromotion.php'); ?>
                                 </div>
                                <?php
                             }else if($type_promotion == 'cart_items_quantity' && $cart_quantity_promo == 1 && $is_pro){
                                 $operator = isset($options->operator) ? $options->operator : 'greater_than_or_equal';?>
-                                <div class="wdr-grid wdr-conditions-container wdr-condition-group <?php echo 'promo_show_hide_'.$i; ?>" data-index="<?php echo $i; ?>" style="<?php echo ($operator == 'greater_than_or_equal' || $operator == 'greater_than') ? '': 'display: none'; ?>">
+                                <div class="wdr-grid wdr-conditions-container wdr-condition-group <?php echo 'promo_show_hide_'.esc_attr($i); ?>" data-index="<?php echo esc_attr($i); ?>" style="<?php echo ($operator == 'greater_than_or_equal' || $operator == 'greater_than') ? '': 'display: none'; ?>">
                                     <?php include(WDR_PLUGIN_PATH . 'App/Views/Admin/Rules/Others/QuantityPromotion.php'); ?>
                                 </div>
                                 <?php
@@ -151,7 +151,7 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                     </span>
                     <span class="awdr-rule-limit-timestamp "> <?php
                         _e('Rule Used: ', 'woo-discount-rules');
-                        echo "<b class='awdr-used-limit-total'>".$used_limits."</b>"; ?>
+                        echo "<b class='awdr-used-limit-total'>". esc_html($used_limits) ."</b>"; ?>
                     </span>
                 </label>
 
@@ -160,7 +160,7 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                 <div class="wdr-rule-setting">
                     <div class="wdr-apply-to" style="float:left;">
 
-                        <input type="number" name="usage_limits" value="<?php echo (!empty($usage_limits)) ? $usage_limits : '';?>" min="1" class="wdr-title number_only_field" id="select_usage_limits" placeholder="Unlimited">
+                        <input type="number" name="usage_limits" value="<?php echo (!empty($usage_limits)) ? esc_attr($usage_limits) : '';?>" min="1" class="wdr-title number_only_field" id="select_usage_limits" placeholder="Unlimited">
 
                         <span class="wdr_desc_text"><?php _e('Maximum usage limit', 'woo-discount-rules'); ?></span>
                     </div>
@@ -170,11 +170,11 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                                    name="date_from"
                                    class="wdr-condition-date wdr-title"
                                    data-class="start_datetimeonly"
-                                   placeholder="<?php _e('Rule Vaild From', 'woo-discount-rules'); ?>"
+                                   placeholder="<?php esc_attr_e('Rule Vaild From', 'woo-discount-rules'); ?>"
                                    data-field="date"
                                    autocomplete="off"
                                    id="rule_datetime_from"
-                                   value="<?php echo $rule->getStartDate(false, 'Y-m-d H:i'); ?>">
+                                   value="<?php echo esc_attr($rule->getStartDate(false, 'Y-m-d H:i')); ?>">
                             <span class="wdr_desc_text"><?php _e('Vaild from', 'woo-discount-rules'); ?></span>
                         </div>
                         <div class="wdr-dateandtime-value">
@@ -182,10 +182,10 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                                    name="date_to"
                                    class="wdr-condition-date wdr-title"
                                    data-class="end_datetimeonly"
-                                   placeholder="<?php _e('Rule Valid To', 'woo-discount-rules'); ?>"
+                                   placeholder="<?php esc_attr_e('Rule Valid To', 'woo-discount-rules'); ?>"
                                    data-field="date" autocomplete="off"
                                    id="rule_datetime_to"
-                                   value="<?php echo $rule->getEndDate(false, 'Y-m-d H:i'); ?>">
+                                   value="<?php echo esc_attr($rule->getEndDate(false, 'Y-m-d H:i')); ?>">
                             <span class="wdr_desc_text"><?php _e('Vaild to', 'woo-discount-rules'); ?></span>
                         </div>
                     </div>
@@ -197,14 +197,14 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                                     class="edit-preloaded-values"
                                     data-list="site_languages"
                                     data-field="preloaded"
-                                    data-placeholder="<?php _e('Select values', 'woo-discount-rules') ?>"
+                                    data-placeholder="<?php esc_attr_e('Select values', 'woo-discount-rules') ?>"
                                     name="rule_language[]"><?php
                                 $chosen_languages = $rule->getLanguages();
                                 foreach ($site_languages as $language_key => $name) {
                                     if (in_array($language_key, $chosen_languages)) {
                                         ?>
-                                        <option value="<?php echo $language_key; ?>"
-                                                selected><?php echo $name; ?></option>
+                                        <option value="<?php echo esc_attr($language_key); ?>"
+                                                selected><?php echo esc_html($name); ?></option>
                                         <?php
                                     }
                                 }

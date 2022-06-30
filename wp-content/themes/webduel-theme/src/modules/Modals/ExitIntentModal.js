@@ -11,6 +11,8 @@ class ExitIntentModal {
     }
 
     events() {
+        console.log("hello")
+
         // set empty local storage on load if the show modal object doesn't exist. 
         // This allow us to set the time stamp for the first time in showModalOnExit method and won't reset every time the exit intent method is called 
         if (!this.showModalObject) {
@@ -35,11 +37,12 @@ class ExitIntentModal {
         if (this.showModalObject.timestamp) {
             const dateString = this.showModalObject.timestamp
             const now = new Date().getTime().toString();
-            console.log(now - dateString)
+
             // calculate time difference in minutes 
             const timeDifference = (((now - dateString) / 1000) / 60); //to implement
-            console.log(timeDifference)
-            if (timeDifference > 120) {
+            console.log('this is a time difference' + timeDifference)
+            // reset the modal show value after 180 minutes 
+            if (timeDifference > 180) {
                 var object = { value: null, timestamp: null }
                 localStorage.setItem("modalShowed", JSON.stringify(object));
                 this.showModalObject = JSON.parse(localStorage.getItem("modalShowed"))
@@ -50,7 +53,7 @@ class ExitIntentModal {
     showModalOnExit(evt) {
         // !this.showModalObject.value
         // && !localStorage.getItem('modalShowed')
-        if (evt.toElement === null && evt.relatedTarget === null && this.showModalValue && !localStorage.getItem('modalShowed')) {
+        if (evt.toElement === null && evt.relatedTarget === null && this.showModalValue && !this.showModalObject.value) {
             $(evt.currentTarget).off("mouseout");
             // An intent to exit has happened
             $('.inspiry-modal').show();

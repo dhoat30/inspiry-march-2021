@@ -6,8 +6,6 @@
         
         class Variation_Duplicator_For_Woocommerce {
             
-            protected $_version = '2.0.2';
-            
             protected static $_instance = null;
             
             public static function instance() {
@@ -45,7 +43,7 @@
             }
             
             public function version() {
-                return esc_attr( $this->_version );
+                return esc_attr( VARIATION_DUPLICATOR_FOR_WOOCOMMERCE_PLUGIN_VERSION );
             }
             
             public function language() {

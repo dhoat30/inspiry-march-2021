@@ -64,13 +64,13 @@ class OnSaleShortCode extends ManageDiscount
         if($is_pro){
             $rules = self::getReBuildOnSaleRules();
             if(!empty($rules)){
+                $option['available'] = true;
+                $is_required = self::isRequiredRebuild();
+                if(!empty($is_required) && $is_required == 1){
+                    $option['required_rebuild'] = true;
+                }
                 if(is_array($rules) && (in_array("all", $rules) || in_array($id, $rules))){
-                    $option['available'] = true;
                     $option['rule_depend_on_sale_page'] = true;
-                    $is_required = self::isRequiredRebuild();
-                    if(!empty($is_required) && $is_required == 1){
-                        $option['required_rebuild'] = true;
-                    }
                 }
             }
         }
@@ -90,9 +90,13 @@ class OnSaleShortCode extends ManageDiscount
     }
 
     protected function getSelectedRules($rules_ids){
+        // To fetch rule based on date and active rules
+        add_filter('advanced_woo_discount_rules_is_front_end_request_for_fetching_rules', '__return_true', 101);
         $rule_helper = new Rule();
         $this->updateRebuildRulesInSettings($rules_ids);
-        return $rule_helper->getAvailableRules($this->getAvailableConditions(), $rules_ids);
+        $rules = $rule_helper->getAvailableRules($this->getAvailableConditions(), $rules_ids);
+        remove_filter('advanced_woo_discount_rules_is_front_end_request_for_fetching_rules', '__return_true', 101);
+        return $rules;
     }
 
     /**
@@ -126,56 +130,61 @@ class OnSaleShortCode extends ManageDiscount
         return update_option(self::$required_rebuild_key, $val);
     }
 
-    public function rebuildOnSaleList($rules_ids){
+    public function rebuildOnSaleList($rules_ids = [], $update = false){
         $this->on_sale_list = array();
-        if(empty($rules_ids)){
+        if ($update && empty($rules_ids)){
             update_option(self::$on_sale_list_key, array());
+            $this->updateRebuildRulesInSettings(array());
             self::setRequiredRebuild(0);
-            return ;
-        }
-        if(!empty($rules_ids) && is_array($rules_ids)){
+            return;
+        } elseif ($update && is_array($rules_ids)){
             if(!in_array("all", $rules_ids)){
                 self::$available_rules = $this->getSelectedRules($rules_ids);
+            } else {
+                $this->updateRebuildRulesInSettings($rules_ids);
             }
         } else {
-            self::getReBuildOnSaleRules();
             $rules_ids = self::getReBuildOnSaleRules();
             if(!empty($rules_ids)){
                 if(!in_array("all", $rules_ids)){
                     self::$available_rules = $this->getSelectedRules($rules_ids);
                 }
+            } else {
+                return;
             }
         }
         if (!empty(self::$available_rules)) {
             foreach (self::$available_rules as $rule) {
-                if($rule->rule->enabled == 1){
-                    $discount_type = $rule->getRuleDiscountType();
-                    if($discount_type != 'wdr_free_shipping'){
-                        $filters = $rule->getFilter();
-                        $additional_filter = $this->getAdditionalFilters($rule->rule, $discount_type);
-                        if(!empty($additional_filter)){
-                            if(isset($additional_filter['product']) && !empty($additional_filter['product'])){
-                                if(empty($filters)){
-                                    $filters = new \stdClass();
+                if($rule->rule->enabled == 1 && $rule->rule->deleted == 0) {
+                    if($rule->isSpecificConditionsPassed(['order_date', 'order_time', 'order_date_and_time', 'order_days'])) {
+                        $discount_type = $rule->getRuleDiscountType();
+                        if($discount_type != 'wdr_free_shipping'){
+                            $filters = $rule->getFilter();
+                            $additional_filter = $this->getAdditionalFilters($rule->rule, $discount_type);
+                            if(!empty($additional_filter)){
+                                if(isset($additional_filter['product']) && !empty($additional_filter['product'])){
+                                    if(empty($filters)){
+                                        $filters = new \stdClass();
+                                    }
+                                    $filters->bogo = new \stdClass();
+                                    $filters->bogo->type = 'products';
+                                    $filters->bogo->method = 'in_list';
+                                    $filters->bogo->value = $additional_filter['product'];
+                                    $filters->bogo->product_variants = array();
+                                    $filters->bogo->product_variants_for_sale_badge = array();
                                 }
-                                $filters->bogo = new \stdClass();
-                                $filters->bogo->type = 'products';
-                                $filters->bogo->method = 'in_list';
-                                $filters->bogo->value = $additional_filter['product'];
-                                $filters->bogo->product_variants = array();
-                                $filters->bogo->product_variants_for_sale_badge = array();
-                            }
-                            if(isset($additional_filter['category']) && !empty($additional_filter['category'])){
-                                if(empty($filters)){
-                                    $filters = new \stdClass();
+                                if(isset($additional_filter['category']) && !empty($additional_filter['category'])){
+                                    if(empty($filters)){
+                                        $filters = new \stdClass();
+                                    }
+                                    $filters->bogo = new \stdClass();
+                                    $filters->bogo->type = 'product_category';
+                                    $filters->bogo->method = 'in_list';
+                                    $filters->bogo->value = $additional_filter['category'];
                                 }
-                                $filters->bogo = new \stdClass();
-                                $filters->bogo->type = 'product_category';
-                                $filters->bogo->method = 'in_list';
-                                $filters->bogo->value = $additional_filter['category'];
                             }
+                            $this->rebuildOnSaleListForARule($rule, $filters, $additional_filter);
                         }
-                        $this->rebuildOnSaleListForARule($rule, $filters, $additional_filter);
                     }
                 }
             }
@@ -183,7 +192,7 @@ class OnSaleShortCode extends ManageDiscount
             self::setRequiredRebuild(0);
         }
     }
-    
+
     protected function mergeAllRebuildRules(){
         $final_on_sale_list = array();
         $exclude_list = $include_list = array();

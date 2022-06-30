@@ -166,7 +166,10 @@ class ManageDiscount extends Base
                 }
                 $discounted_price = apply_filters('advanced_woo_discount_rules_get_product_discount_price_from_custom_price', $product_price, $_product, 1, $product_price, 'discounted_price', true, false);
                 if($discounted_price !== false){
-                    $percentage_value = (( $product_price - $discounted_price ) / $product_price) * 100;
+                    $percentage_value = 0;
+                    if($product_price != 0){
+                        $percentage_value = (( $product_price - $discounted_price ) / $product_price) * 100;
+                    }
                     $percentage = apply_filters('advanced_woo_discount_rules_percentage_value_on_sale_badge', round($percentage_value, 2), $percentage_value, $_product);
                     $discount_value_to_display = Woocommerce::formatPrice(($product_price - $discounted_price));
                     $on_sale_badge_percentage_html = self::$config->getConfig('on_sale_badge_percentage_html', '<span class="onsale">{{percentage}}%</span>');
@@ -501,7 +504,7 @@ class ManageDiscount extends Base
                     if(!Woocommerce::variationIsVisible($variation)){
                         continue;
                     }
-		    if(!$variation->is_in_stock()) {
+                    if(!$variation->is_in_stock()) {
                         continue;
                     }
                     $prices = self::calculateInitialAndDiscountedPrice($variation, $quantity);
@@ -713,7 +716,10 @@ class ManageDiscount extends Base
                 return apply_filters('advanced_woo_discount_rules_strikeout_for_set_discount_price_html', $price_html, $original_price, $discounted_price, $total_discount, $other_discounts, $not_applied);
             } else {
                 $total_product_price = array_sum($calculate_product_price);
-                $single_product_price = $total_product_price / $total_quantity;
+                $single_product_price = $total_product_price;
+                if($total_quantity != 0){
+                    $single_product_price = $total_product_price / $total_quantity;
+                }
                 return $single_product_price;
             }
         }
@@ -1047,6 +1053,11 @@ class ManageDiscount extends Base
 				$available_url_coupons = $rule_helper->getAllUrlCoupons();
                 $available_url_coupons = array_map('\Wdr\App\Helpers\Woocommerce::formatStringToLower', $available_url_coupons);
 				$coupons = explode(",", $_GET['wdr_coupon']);
+                if (isset($woocommerce->session) && method_exists($woocommerce->session, 'has_session')) {
+                    if ( ! $woocommerce->session->has_session() && method_exists($woocommerce->session, 'set_customer_session_cookie')) {
+                        $woocommerce->session->set_customer_session_cookie( true );
+                    }
+                }
 				foreach ( $coupons as $coupon ) {
 					$coupon_code = rawurldecode( $coupon );
                     $coupon_code = Woocommerce::formatStringToLower($coupon_code);
@@ -1424,7 +1435,7 @@ class ManageDiscount extends Base
     function showBulkTableInPositionManually($product, $get_variable_product_table = false)
     {
         if (!empty($product)) {
-            $bulk_discounts_ranges = self::$calculator->getDefaultLayoutMessagesByRules($product, $get_variable_product_table);
+            $bulk_discounts_ranges = wp_unslash(self::$calculator->getDefaultLayoutMessagesByRules($product, $get_variable_product_table));
             if(empty($bulk_discounts_ranges)){
                 $bulk_discounts_ranges['layout']['type'] = 'default';
                 $bulk_discounts_ranges['layout']['bulk_variant_table'] = 'default_variant_empty';
@@ -1458,8 +1469,12 @@ class ManageDiscount extends Base
     function showAdvancedTableInPositionManually($product)
     {
         if (!empty($product)) {
-            $bulk_discounts_ranges = self::$calculator->getAdvancedLayoutMessagesByRules($product);
+            $bulk_discounts_ranges = wp_unslash(self::$calculator->getAdvancedLayoutMessagesByRules($product));
+            $override_path = get_theme_file_path('advanced_woo_discount_rules/discount_table.php');
             $bulk_table_template_path = WDR_PLUGIN_PATH . 'App/Views/Templates/discount_table.php';
+            if (file_exists($override_path)) {
+                $bulk_table_template_path = $override_path;
+            }
             self::$template_helper->setPath($bulk_table_template_path)->setData(array('ranges' => $bulk_discounts_ranges, 'woocommerce' => self::$woocommerce_helper))->display();
         }
     }
@@ -1935,7 +1950,9 @@ class ManageDiscount extends Base
                     $rule_applied_product_id = isset($detail['applied_product_ids']) ? $detail['applied_product_ids'] : array();
                     $cart_discount_price = isset( $meta_discount_details['cart_discount_details'][$key]['cart_discount_product_price'][$item_product_id][$key])? $meta_discount_details['cart_discount_details'][$key]['cart_discount_product_price'][$item_product_id][$key] : 0;
                     $meta_discount_details['cart_discount_details'][$key]['cart_discount_price'] = $cart_discount_price;
-                    $cart_discount_price = $cart_discount_price / $item_quantity;
+                    if($item_quantity != 0){
+                        $cart_discount_price = $cart_discount_price / $item_quantity;
+                    }
                     $meta_discount_details['cart_discount_details'][$key]['cart_discount_product_price'] = $cart_discount_price;
                     unset($meta_discount_details['cart_discount_details'][$key]['applied_product_ids']);
                     if(!in_array($item_product_id,$rule_applied_product_id)){
@@ -2034,7 +2051,9 @@ class ManageDiscount extends Base
                             $bogo_cheapest_quantity_extra = (int)$bogo_cheapest_quantity_extra - 1;
                             $bogo_cheapest_aditional_discount += $bogo_cheapest_discount_extra*$bogo_cheapest_quantity_extra;
                         }
-                        $bogo_cheapest_aditional_discount = $bogo_cheapest_aditional_discount / $cart_item_qty;
+                        if($cart_item_qty != 0){
+                            $bogo_cheapest_aditional_discount = $bogo_cheapest_aditional_discount / $cart_item_qty;
+                        }
                         $discounted_price = $discounted_price-$bogo_cheapest_aditional_discount;
                         $bogo_cheap_in_cart = array();
                     }else{
@@ -2527,7 +2546,7 @@ class ManageDiscount extends Base
         $messages = empty($cart) ? '' : $messages;
         if(!empty($messages) && is_array($messages)) {
             foreach ($messages as $message) {
-                wc_print_notice($message, "notice");
+                self::$woocommerce_helper->printNotice($message, "notice");
             }
         }
     }

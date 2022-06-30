@@ -5,7 +5,7 @@
     <div class="awdr-container"><br/>
         <?php
         if(isset($wdr_404_found) && !empty($wdr_404_found)){
-            echo "<h2 style='color: red;'>".$wdr_404_found."</h2>";
+            echo "<h2 style='color: red;'>" . esc_html($wdr_404_found) . "</h2>";
         }else{
             $current_time = '';
             if (function_exists('current_time')) {
@@ -65,7 +65,7 @@
                                 ?>
                                     <div class="notice inline notice-<?php echo esc_attr($notice_status); ?> notice-alt awdr-rule-notices">
                                         <p class="rule-notice">
-                                            <?php 
+                                            <?php
                                                 if (!empty($notice_title)) {
                                                     echo '<b>' . esc_html($notice_title) . ':</b> ';
                                                 }
@@ -126,7 +126,7 @@
 
                         if (isset($rule_id) && !empty($rule_id)) { ?>
                             <span class="wdr_desc_text awdr_valide_date_in_desc">
-                            <?php esc_html_e('#Rule ID: ', 'woo-discount-rules'); ?><b><?php echo $rule_id; ?></b>
+                            <?php esc_html_e('#Rule ID: ', 'woo-discount-rules'); ?><b><?php echo esc_html($rule_id); ?></b>
                             </span><?php
                         } ?>
                         <div class="awdr-common-save">
@@ -134,7 +134,7 @@
                                 <?php _e('Save', 'woo-discount-rules'); ?></button>
                             <button type="button" class="btn btn-success wdr_save_close">
                                 <?php _e('Save & Close', 'woo-discount-rules'); ?></button>
-                            <a href="<?php echo admin_url("admin.php?" . http_build_query(array('page' => WDR_SLUG, 'tab' => 'rules'))); ?>"
+                            <a href="<?php echo esc_url(admin_url("admin.php?" . http_build_query(array('page' => WDR_SLUG, 'tab' => 'rules')))); ?>"
                                class="btn btn-danger" style="text-decoration: none">
                                 <?php _e('Cancel', 'woo-discount-rules'); ?></a>
                         </div>
@@ -154,7 +154,7 @@
                                 if (isset($wdr_product_discount_types) && !empty($wdr_product_discount_types)) {
                                     foreach ($wdr_product_discount_types as $wdr_discount_key => $wdr_discount_value) {
                                         ?>
-                                    <optgroup label="<?php echo $wdr_discount_key; ?>">
+                                    <optgroup label="<?php echo esc_attr($wdr_discount_key); ?>">
                                         <?php
                                         foreach ($wdr_discount_value as $key => $value) {
                                             $enable_option = true;
@@ -165,7 +165,7 @@
                                             <option
                                             <?php if ($enable_option) {
                                                 ?>
-                                                value="<?php echo $key; ?>"
+                                                value="<?php echo esc_attr($key); ?>"
                                                 <?php
                                             } else {
                                                 ?>
@@ -203,7 +203,7 @@
                             <div id="wdr-save-rule" name="rule_generator">
                                 <input type="hidden" name="action" value="wdr_ajax">
                                 <input type="hidden" name="method" value="save_rule">
-                                <input type="hidden" name="awdr_nonce" value="<?php echo \Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_save_rule'); ?>">
+                                <input type="hidden" name="awdr_nonce" value="<?php echo esc_attr(\Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_save_rule')); ?>">
                                 <input type="hidden" name="wdr_save_close" value="">
                                 <div id="rule_template">
                                     <?php include 'Filters/Main.php'; ?>
@@ -284,7 +284,7 @@
                     <!-- ------------------------Rule Discount Batch Section End------------------ -->
 
                 </div>
-                <input type="hidden" name="wdr_ajax_select2" value="<?php echo \Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_select2'); ?>">
+                <input type="hidden" name="wdr_ajax_select2" value="<?php echo esc_attr(\Wdr\App\Helpers\Helper::create_nonce('wdr_ajax_select2')); ?>">
                 </form><?php
 
         }?>

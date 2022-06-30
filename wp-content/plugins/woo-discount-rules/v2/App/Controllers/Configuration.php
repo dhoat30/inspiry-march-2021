@@ -73,6 +73,7 @@ class Configuration
         'disable_recalculate_total' => 0, // 0,1
         'disable_recalculate_total_when_coupon_apply' => 0, // 0,1
         'wdr_hide_other_shipping' => 0, // 0,1
+        'run_rebuild_on_sale_index_cron' => 0, // 0,1
     );
     private static $default_advanced_section_config = array(
         'wdr_override_custom_price' => 0, // 0,1
@@ -115,12 +116,12 @@ class Configuration
             $this->setConfig();
         }
         if (isset(self::$config[$key])) {
-            return self::$config[$key];
+            return wp_unslash(self::$config[$key]);
         } elseif (isset(self::$advanced_section_config[$key])){
-            return self::$advanced_section_config[$key];
+            return wp_unslash(self::$advanced_section_config[$key]);
         }elseif (isset(self::$default_config[$key])) {
             //Check config found in default config
-            return self::$default_config[$key];
+            return wp_unslash(self::$default_config[$key]);
         } else {
             return $default;
         }

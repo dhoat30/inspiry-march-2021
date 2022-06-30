@@ -4,9 +4,9 @@ Tags: woocommerce variations duplicate, variation image duplicate, product varia
 Requires PHP: 7.0
 Stable tag: trunk
 Requires at least: 5.6
-Tested up to: 5.9
+Tested up to: 6.0
 WC requires at least: 5.6
-WC tested up to: 6.3
+WC tested up to: 6.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -77,6 +77,16 @@ If you are unable to use any of the methods due to internet connectivity and fil
 7. Activate the plugin
 
 == Changelog ==
+
+= 2.0.4 - 09-06-2022 =
+
+* Add WordPress 6.0+ compatibility
+* Add `disable_variation_duplicator_for_woocommerce_image_clone` filter to disable image clone feature
+* Add `disable_variation_duplicator_for_woocommerce_variation_clone` filter to disable variation clone feature
+
+= 2.0.3 - 17-05-2022 =
+
+* Add WooCommerce 6.5+ compatibility
 
 = 2.0.2 - 23-03-2022 =
 

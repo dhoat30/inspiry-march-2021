@@ -48,8 +48,8 @@ class SurveyForm
         ?>
         <script type="text/javascript">
             jQuery(function ($) {
-                var $deactivateLink = $('#the-list').find('[data-slug="<?php echo $this->plugin; ?>"] span.deactivate a'),
-                    $overlay = $('#plugin-deactivate-survey-<?php echo $this->plugin; ?>'),
+                var $deactivateLink = $('#the-list').find('[data-slug="<?php echo esc_attr($this->plugin); ?>"] span.deactivate a'),
+                    $overlay = $('#plugin-deactivate-survey-<?php echo esc_attr($this->plugin); ?>'),
                     $form = $overlay.find('form'),
                     formOpen = false;
                 // Plugin listing table deactivate link.
@@ -57,22 +57,22 @@ class SurveyForm
                     event.preventDefault();
                     $overlay.css('display', 'table');
                     formOpen = true;
-                    $form.find('.<?php echo $this->plugin; ?>-deactivate-survey-option:first-of-type input[type=radio]').focus();
+                    $form.find('.<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option:first-of-type input[type=radio]').focus();
                 });
                 // Survey radio option selected.
                 $form.on('change', 'input[type=radio]', function (event) {
                     event.preventDefault();
                     $form.find('input[type=text], .error').hide();
-                    $form.find('.<?php echo $this->plugin; ?>-deactivate-survey-option').removeClass('selected');
-                    $(this).closest('.<?php echo $this->plugin; ?>-deactivate-survey-option').addClass('selected').find('input[type=text]').show();
+                    $form.find('.<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option').removeClass('selected');
+                    $(this).closest('.<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option').addClass('selected').find('input[type=text]').show();
                 });
                 // Survey Skip & Deactivate.
-                $form.on('click', '.<?php echo $this->plugin; ?>-deactivate-survey-deactivate', function (event) {
+                $form.on('click', '.<?php echo esc_attr($this->plugin); ?>-deactivate-survey-deactivate', function (event) {
                     event.preventDefault();
                     location.href = $deactivateLink.attr('href');
                 });
                 // close button
-                $form.on('click', '.<?php echo $this->plugin; ?>-deactivate-survey-close', function (event) {
+                $form.on('click', '.<?php echo esc_attr($this->plugin); ?>-deactivate-survey-close', function (event) {
                     event.preventDefault();
                     $overlay.css('display', 'none');
                     formOpen = false;
@@ -81,11 +81,11 @@ class SurveyForm
                 $form.submit(function (event) {
                     event.preventDefault();
                     if (!$form.find('input[type=radio]:checked').val()) {
-                        $form.find('.<?php echo $this->plugin; ?>-deactivate-survey-footer').prepend('<span class="error"><?php echo esc_js(__('Please select an option', $this->plugin_text_domain)); ?></span>');
+                        $form.find('.<?php echo esc_attr($this->plugin); ?>-deactivate-survey-footer').prepend('<span class="error"><?php echo esc_js(__('Please select an option', $this->plugin_text_domain)); ?></span>');
                         return;
                     }
-                    $form.find('.<?php echo $this->plugin; ?>-deactivate-survey-submit').html('<?php echo esc_js(__('Sending Feedback', $this->plugin_text_domain)); ?>').attr("disabled", true).removeClass('button-primary');
-                    var reason = $form.find('.selected .<?php echo $this->plugin; ?>-deactivate-survey-option-reason').val();
+                    $form.find('.<?php echo esc_attr($this->plugin); ?>-deactivate-survey-submit').html('<?php echo esc_js(__('Sending Feedback', $this->plugin_text_domain)); ?>').attr("disabled", true).removeClass('button-primary');
+                    var reason = $form.find('.selected .<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option-reason').val();
                     if (reason === "Other") {
                         reason = $form.find('.selected input[type=text]').val();
                     }
@@ -93,14 +93,13 @@ class SurveyForm
                         subject: "Discount Rules for WooCommerce plugin deactivation survey form!",
                         message: reason,
                         url: '<?php echo esc_url(home_url()); ?>',
-                        name: '<?php echo $display_name; ?>',
+                        name: '<?php echo esc_attr($display_name); ?>',
                         code: $form.find('.selected input[type=radio]').val(),
-                        token: "<?php echo $this->token ?>"
+                        token: "<?php echo esc_attr($this->token); ?>"
                     };
                     var submitSurvey = $.ajax(
                         {
-
-                            url: "<?php echo $this->endpoint; ?>",
+                            url: "<?php echo esc_attr($this->endpoint); ?>",
                             type: "POST",
                             data: JSON.stringify(request_data),
                             dataType: 'json',
@@ -280,18 +279,18 @@ class SurveyForm
             ),
         );
         ?>
-        <div class="<?php echo $this->plugin; ?>-deactivate-survey-modal"
-             id="plugin-deactivate-survey-<?php echo $this->plugin; ?>">
-            <div class="<?php echo $this->plugin; ?>-deactivate-survey-wrap">
-                <form class="<?php echo $this->plugin; ?>-deactivate-survey" method="post">
-						<span class="<?php echo $this->plugin; ?>-deactivate-survey-header">
+        <div class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-modal"
+             id="plugin-deactivate-survey-<?php echo esc_attr($this->plugin); ?>">
+            <div class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-wrap">
+                <form class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey" method="post">
+						<span class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-header">
 							<span class="dashicons dashicons-testimonial"></span>
 							<?php echo ' ' . esc_html__('Quick Feedback', $this->plugin_text_domain); ?>
 							<span title="<?php esc_attr_e('Close', $this->plugin_text_domain); ?> "
-                                  class="<?php echo $this->plugin; ?>-deactivate-survey-close">✕</span>
+                                  class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-close">✕</span>
 						</span>
 
-                    <span class="<?php echo $this->plugin; ?>-deactivate-survey-desc">
+                    <span class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-desc">
 							<?php
                             printf(
                             /* translators: %s - plugin name. */
@@ -300,33 +299,33 @@ class SurveyForm
                             );
                             ?>
 						</span>
-                    <div class="<?php echo $this->plugin; ?>-deactivate-survey-options">
+                    <div class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-options">
                         <?php foreach ($options as $id => $option) : ?>
-                            <div class="<?php echo $this->plugin; ?>-deactivate-survey-option">
-                                <label for="<?php echo $this->plugin; ?>-deactivate-survey-option-<?php echo $this->plugin; ?>-<?php echo $id; ?>"
-                                       class="<?php echo $this->plugin; ?>-deactivate-survey-option-label">
-                                    <input id="<?php echo $this->plugin; ?>-deactivate-survey-option-<?php echo $this->plugin; ?>-<?php echo $id; ?>"
-                                           class="<?php echo $this->plugin; ?>-deactivate-survey-option-input"
+                            <div class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option">
+                                <label for="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option-<?php echo esc_attr($this->plugin); ?>-<?php echo esc_attr($id); ?>"
+                                       class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option-label">
+                                    <input id="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option-<?php echo esc_attr($this->plugin); ?>-<?php echo esc_attr($id); ?>"
+                                           class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option-input"
                                            type="radio"
-                                           name="code" value="<?php echo $id; ?>"/>
-                                    <span class="<?php echo $this->plugin; ?>-deactivate-survey-option-title"><?php echo $option['title']; ?></span>
-                                    <input class="<?php echo $this->plugin; ?>-deactivate-survey-option-reason"
+                                           name="code" value="<?php echo esc_attr($id); ?>"/>
+                                    <span class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option-title"><?php echo esc_html($option['title']); ?></span>
+                                    <input class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option-reason"
                                            type="hidden"
-                                           value="<?php echo $option['reason']; ?>"/>
+                                           value="<?php echo esc_attr($option['reason']); ?>"/>
                                 </label>
                                 <?php if (!empty($option['details'])) : ?>
-                                    <input class="<?php echo $this->plugin; ?>-deactivate-survey-option-details"
+                                    <input class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-option-details"
                                            type="text"
-                                           placeholder="<?php echo $option['details']; ?>"/>
+                                           placeholder="<?php echo esc_attr($option['details']); ?>"/>
                                 <?php endif; ?>
                             </div>
                         <?php endforeach; ?>
                     </div>
-                    <div class="<?php echo $this->plugin; ?>-deactivate-survey-footer">
+                    <div class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-footer">
                         <button type="submit"
-                                class="<?php echo $this->plugin; ?>-deactivate-survey-submit button button-primary button-large"><?php echo esc_html__('Submit & Deactivate', $this->plugin_text_domain); ?></button>
+                                class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-submit button button-primary button-large"><?php echo esc_html__('Submit & Deactivate', $this->plugin_text_domain); ?></button>
                         <a href="#"
-                           class="<?php echo $this->plugin; ?>-deactivate-survey-deactivate"><?php echo esc_html__('Skip & Deactivate', $this->plugin_text_domain); ?></a>
+                           class="<?php echo esc_attr($this->plugin); ?>-deactivate-survey-deactivate"><?php echo esc_html__('Skip & Deactivate', $this->plugin_text_domain); ?></a>
                     </div>
                 </form>
             </div>

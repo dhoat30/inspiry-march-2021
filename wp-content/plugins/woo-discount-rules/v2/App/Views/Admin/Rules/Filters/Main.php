@@ -9,20 +9,20 @@ if (!defined('ABSPATH')) {
         <div class="wdr-row">
             <div class="wdr-filter-group-items">
                 <input type="hidden" name="edit_rule"
-                       value="<?php echo ($rule->getId()) ? $rule->getId() : ''; ?>"><?php
+                       value="<?php echo ($rule->getId()) ? esc_attr($rule->getId()) : ''; ?>"><?php
                 if ($rule->hasFilter()) {
                     $filters = $rule->getFilter();
                     $filter_row_count = 1;
                     foreach ($filters as $filter) {
                         ?>
-                        <div class="wdr-grid wdr-filter-group" data-index="<?php echo $filter_row_count; ?>">
+                        <div class="wdr-grid wdr-filter-group" data-index="<?php echo esc_attr($filter_row_count); ?>">
                             <div class="wdr-filter-type">
-                                <select name="filters[<?php echo $filter_row_count; ?>][type]"
+                                <select name="filters[<?php echo esc_attr($filter_row_count); ?>][type]"
                                         class="wdr-product-filter-type"><?php
                                     if (isset($product_filters) && !empty($product_filters)) {
                                         foreach ($product_filters as $wdr_filter_key => $wdr_filter_value) {
                                             ?>
-                                            <optgroup label="<?php _e($wdr_filter_key, 'woo-discount-rules'); ?>" ><?php
+                                            <optgroup label="<?php esc_attr_e($wdr_filter_key, 'woo-discount-rules'); ?>" ><?php
                                             foreach ($wdr_filter_value as $key => $value) {
                                                 ?>
                                                 <option
@@ -33,7 +33,7 @@ if (!defined('ABSPATH')) {
                                                     <?php
                                                 } else {
                                                     ?>
-                                                    value="<?php echo $key; ?>"
+                                                    value="<?php echo esc_attr($key); ?>"
                                                     <?php
                                                 }
                                                 ?>
@@ -49,7 +49,7 @@ if (!defined('ABSPATH')) {
                                     if(in_array($filter->type, array('products'))){
                                         ?>
                                         <div class="wdr-product_filter_method">
-                                            <select name="filters[<?php echo $filter_row_count; ?>][method]">
+                                            <select name="filters[<?php echo esc_attr($filter_row_count); ?>][method]">
                                                 <option value="in_list"
                                                     <?php echo (isset($filter->method) && $filter->method == 'in_list') ? 'selected' : ''; ?>><?php _e('In List', 'woo-discount-rules'); ?></option>
                                                 <option value="not_in_list" <?php echo (isset($filter->method) && $filter->method == 'not_in_list') ? 'selected' : ''; ?>><?php _e('Not In List', 'woo-discount-rules'); ?></option>
@@ -64,22 +64,23 @@ if (!defined('ABSPATH')) {
                                                 foreach ($filter->value as $option) {
                                                     switch ($filter->type) {
                                                         case 'products':
-                                                            $item_name = '#'.$option.' '.\Wdr\App\Helpers\Woocommerce::getTitleOfProduct($option);
+                                                            $item_name = esc_attr('#'.$option.' '.\Wdr\App\Helpers\Woocommerce::getTitleOfProduct($option));
                                                             $placeholder = __('Products', 'woo-discount-rules');
                                                             break;
                                                     }
                                                     if (!empty($item_name)) {
-                                                        $selected_options .= "<option value={$option} selected>{$item_name}</option>";
+                                                        $option_value = esc_attr($option);
+                                                        $selected_options .= "<option value={$option_value} selected>{$item_name}</option>";
                                                     }
                                                 }
                                             }
                                             ?>
                                             <select multiple
                                                     class="edit-filters awdr_validation"
-                                                    data-list="<?php echo $filter->type; ?>"
+                                                    data-list="<?php echo esc_attr($filter->type); ?>"
                                                     data-field="autocomplete"
-                                                    data-placeholder="<?php _e('Select ' . $placeholder, 'woo-discount-rules'); ?>"
-                                                    name="filters[<?php echo $filter_row_count; ?>][value][]">
+                                                    data-placeholder="<?php esc_attr_e('Select ' . $placeholder, 'woo-discount-rules'); ?>"
+                                                    name="filters[<?php echo esc_attr($filter_row_count); ?>][value][]">
                                                 <?php echo $selected_options; ?>
                                             </select>
                                         </div>
@@ -131,7 +132,7 @@ if (!defined('ABSPATH')) {
                                 if (isset($product_filters) && !empty($product_filters)) {
                                     foreach ($product_filters as $wdr_filter_key => $wdr_filter_value) {
                                         ?>
-                                        <optgroup label="<?php _e($wdr_filter_key, 'woo-discount-rules'); ?>"><?php
+                                        <optgroup label="<?php esc_attr_e($wdr_filter_key, 'woo-discount-rules'); ?>"><?php
                                         foreach ($wdr_filter_value as $key => $value) {
                                             ?>
                                             <option
@@ -142,7 +143,7 @@ if (!defined('ABSPATH')) {
                                                 <?php
                                             } else {
                                                 ?>
-                                                value="<?php echo $key; ?>"
+                                                value="<?php echo esc_attr($key); ?>"
                                                 <?php
                                             }
                                             ?>

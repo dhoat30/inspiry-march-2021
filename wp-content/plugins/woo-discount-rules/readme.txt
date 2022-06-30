@@ -3,8 +3,8 @@ Contributors: flycart
 Donate link: https://flycart.org/
 Tags: woocommerce, coupons, discounts, dynamic pricing, Buy One Get One Free, pricing deals, bulk discount, discount
 Requires at least: 4.4.1
-Tested up to: 5.9
-Stable tag: 2.4.0
+Tested up to: 6.0
+Stable tag: 2.4.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -335,6 +335,27 @@ Note : Enable recursive checkbox if the discounts should be applied in sequentia
 * Dutch Translation - [@mvdburg1971](https://profiles.wordpress.org/mvdburg1971) - Michael van der Burg
 
 == Changelog ==
+
+= 2.4.2 - 21/06/22 =
+* Feature: Option to schedule sale page product rebuild on daily once.
+* Improvement: Event: advanced_woo_discount_rules_variation_title_modify_count
+* Improvement: Event: advanced_woo_discount_rules_refresh_shipping_options_on_order_review
+* Fix: Cart coupon Condition not working when cart is empty.
+* Fix: Fatal error due to Invalid Product ID on save rule.
+* Fix: Warning on ajax strikeout.
+* Fix: Strikeout not displayed for BXGY cheapest individual product on product page and cross sell block.
+* Fix: BXGY discount applies before matches.
+* Fix: esc_attr() applied to prevent XSS issues.
+
+= 2.4.1 - 17/05/22 =
+* Improvement: Added template override path for Bulk table.
+* Improvement: Removed backslash while using single quote on promotion message.
+* Improvement: Event: advanced_woo_discount_rules_allowed_html_elements_and_attributes.
+* Improvement: Load rule id on discount table info for BXGY and Set discount.
+* Improvement: V1 to v2 migration limit.
+* Fix: Table compare issue.
+* Fix: Division by zero.
+* Fix: Warning on get cart.
 
 = 2.4.0 - 06/04/22 =
 * Deprecated: V1 layout.

@@ -26,7 +26,7 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                     <input name="product_adjustments[value]"
                            type="number"
                            class="product_discount_value"
-                           value="<?php echo (isset($product_adjustments->value)) ? $product_adjustments->value : ''; ?>"
+                           value="<?php echo (isset($product_adjustments->value)) ? esc_attr($product_adjustments->value) : ''; ?>"
                            placeholder="0.00" min="0" step="any" style="width: 100%;">
                     <span class="wdr_desc_text"><?php _e('Value', 'woo-discount-rules'); ?></span>
                 </div>
@@ -44,8 +44,8 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                 <div class="simple_discount_value wdr-input-filed-hight apply_fee_coupon_label" style="<?php echo (isset($product_adjustments->apply_as_cart_rule) && !empty($product_adjustments->apply_as_cart_rule)) ? '' : 'display: none;' ?> <?php echo ($is_enabled_rtl) ? 'padding-top: 0px !important;' : ''; ?>">
                     <input name="product_adjustments[cart_label]"
                            type="text"
-                           value="<?php echo (isset($product_adjustments->cart_label)) ? $product_adjustments->cart_label : ''; ?>"
-                           placeholder="<?php esc_attr('Discount Label', 'woo-discount-rules'); ?>">
+                           value="<?php echo (isset($product_adjustments->cart_label)) ? esc_attr(wp_unslash($product_adjustments->cart_label)) : ''; ?>"
+                           placeholder="<?php esc_attr_e('Discount Label', 'woo-discount-rules'); ?>">
                 </div>
             </div>
         </div>

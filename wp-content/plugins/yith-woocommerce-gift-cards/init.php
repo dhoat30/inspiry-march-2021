@@ -3,13 +3,13 @@
  * Plugin Name: YITH WooCommerce Gift Cards
  * Plugin URI: https://yithemes.com/themes/plugins/yith-woocommerce-gift-cards
  * Description: <code><strong>YITH WooCommerce Gift Cards</strong></code> allows your users to purchase and give gift cards. In this way, you will increase the spread of your brand, your sales, and average spend, especially during the holidays. <a href="https://yithemes.com/" target="_blank">Get more plugins for your e-commerce shop on <strong>YITH</strong></a>.
- * Version: 2.8.0
+ * Version: 2.10.0
  * Author: YITH
  * Author URI: https://yithemes.com/
  * Text Domain: yith-woocommerce-gift-cards
  * Domain Path: /languages/
- * WC requires at least: 6.2
- * WC tested up to: 6.4
+ * WC requires at least: 6.4
+ * WC tested up to: 6.6
  *
  * @package yith-woocommerce-gift-cards
  **/
@@ -39,10 +39,6 @@ if ( ! function_exists( 'is_plugin_active' ) ) {
 	require_once ABSPATH . 'wp-admin/includes/plugin.php';
 }
 
-if ( ! function_exists( 'yit_deactive_free_version' ) ) {
-	require_once 'plugin-fw/yit-deactive-plugin.php';
-}
-
 if ( ! function_exists( 'yith_ywgc_install_woocommerce_admin_notice' ) ) {
 
 	/**
@@ -52,29 +48,12 @@ if ( ! function_exists( 'yith_ywgc_install_woocommerce_admin_notice' ) ) {
 	 */
 	function yith_ywgc_install_woocommerce_admin_notice() {
 		?>
-		<div class="error">
-			<p><?php esc_html_e( 'YITH WooCommerce Gift Cards is enabled but not effective. It requires WooCommerce in order to work.', 'yit' ); ?></p>
-		</div>
+        <div class="error">
+            <p><?php esc_html_e( 'YITH WooCommerce Gift Cards is enabled but not effective. It requires WooCommerce in order to work.', 'yit' ); ?></p>
+        </div>
 		<?php
 	}
 }
-
-if ( ! function_exists( 'yith_ywgc_install_free_admin_notice' ) ) {
-	/**
-	 * Unable to activate the free version while the premium version is active
-	 *
-	 * @author Lorenzo Giuffrida
-	 * @since  1.0.0
-	 */
-	function yith_ywgc_install_free_admin_notice() {
-		?>
-		<div class="error">
-			<p><?php esc_html_e( 'You can\'t activate the free version of YITH WooCommerce Gift Cards while you are using the premium one.', 'yith-woocommerce-gift-cards' ); ?></p>
-		</div>
-		<?php
-	}
-}
-
 
 if ( ! function_exists( 'yith_plugin_registration_hook' ) ) {
 	require_once 'plugin-fw/yit-plugin-registration-hook.php';
@@ -88,7 +67,7 @@ defined( 'YITH_YWGC_FREE_INIT' ) || define( 'YITH_YWGC_FREE_INIT', plugin_basena
 defined( 'YITH_YWGC_SECRET_KEY' ) || define( 'YITH_YWGC_SECRET_KEY', 'GcGTnx2i0Qdavxe9b9by' );
 defined( 'YITH_YWGC_PLUGIN_NAME' ) || define( 'YITH_YWGC_PLUGIN_NAME', 'YITH WooCommerce Gift Cards' );
 defined( 'YITH_YWGC_INIT' ) || define( 'YITH_YWGC_INIT', plugin_basename( __FILE__ ) );
-defined( 'YITH_YWGC_VERSION' ) || define( 'YITH_YWGC_VERSION', '2.8.0' );
+defined( 'YITH_YWGC_VERSION' ) || define( 'YITH_YWGC_VERSION', '2.10.0' );
 defined( 'YITH_YWGC_DB_CURRENT_VERSION' ) || define( 'YITH_YWGC_DB_CURRENT_VERSION', '1.0.1' );
 defined( 'YITH_YWGC_FILE' ) || define( 'YITH_YWGC_FILE', __FILE__ );
 defined( 'YITH_YWGC_DIR' ) || define( 'YITH_YWGC_DIR', plugin_dir_path( __FILE__ ) );
@@ -108,7 +87,9 @@ if ( ! function_exists( 'yit_maybe_plugin_fw_loader' ) && file_exists( YITH_YWGC
 }
 yit_maybe_plugin_fw_loader( YITH_YWGC_DIR );
 
-require_once YITH_YWGC_DIR . 'functions.php';
+if( file_exists( YITH_YWGC_DIR . 'functions.php' ) ){
+	require_once YITH_YWGC_DIR . 'functions.php';
+}
 
 if ( ! function_exists( 'yith_ywgc_init' ) ) {
 	/**
@@ -124,7 +105,7 @@ if ( ! function_exists( 'yith_ywgc_init' ) ) {
 		 */
 		load_plugin_textdomain( 'yith-woocommerce-gift-cards', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
-		require_once YITH_YWGC_DIR . 'lib/class-ywgc-plugin-fw-loader.php';
+		require_once YITH_YWGC_DIR . 'includes/class-ywgc-plugin-fw-loader.php';
 
 		// Start the plugin.
 		YITH_YWGC();
@@ -152,12 +133,14 @@ if ( ! function_exists( 'yith_ywgc_install' ) ) {
 	 * @since  1.0.0
 	 */
 	function yith_ywgc_install() {
+		if ( ! function_exists( 'yith_deactivate_plugins' ) ) {
+			require_once 'plugin-fw/yit-deactive-plugin.php';
+		}
 
 		if ( ! function_exists( 'WC' ) ) {
 			add_action( 'admin_notices', 'yith_ywgc_install_woocommerce_admin_notice' );
-		} elseif ( defined( 'YITH_YWGC_PREMIUM' ) ) {
-			add_action( 'admin_notices', 'yith_ywgc_install_free_admin_notice' );
-			deactivate_plugins( plugin_basename( __FILE__ ) );
+		} elseif ( defined( 'YITH_YWGC_PREMIUM' ) || defined( 'YITH_YWGC_EXTENDED' ) ) {
+			yith_deactivate_plugins( 'YITH_WCWL_FREE_INIT' );
 		} else {
 			do_action( 'yith_ywgc_init' );
 		}

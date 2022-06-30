@@ -1085,6 +1085,28 @@ class Rule
      */
     function isCartConditionsPassed($cart)
     {
+        return $this->isConditionsPassed($cart);
+    }
+
+    /**
+     * Check only the specified conditions are passed
+     * @param array $condition_types
+     * @param array $cart
+     * @return bool
+     */
+    function isSpecificConditionsPassed($condition_types, $cart = [])
+    {
+        return $this->isConditionsPassed($cart, $condition_types);
+    }
+
+    /**
+     * Check the conditions are passed
+     * @param array $cart
+     * @param array|null $condition_types
+     * @return bool
+     */
+    protected function isConditionsPassed($cart, $condition_types = null)
+    {
         $rule_object = $this;
         /*if (empty($cart)) {
             //if cart is empty then return with false
@@ -1103,59 +1125,61 @@ class Rule
             }
             foreach ($conditions as $condition) {
                 $type = isset($condition->type) ? $condition->type : NULL;
-                $options = isset($condition->options) ? $condition->options : array();
-                if (!empty($type) && !empty($options)) {
-                    //if condition available, then check the cart against the condition
-                    if (isset($this->available_conditions[$type]['object'])) {
-                        if(is_object($this->available_conditions[$type]['object'])){
-                            $this->available_conditions[$type]['object']->rule = $this;
-                            if(method_exists($this->available_conditions[$type]['object'], 'check')){
-                                $is_condition_passed = $this->available_conditions[$type]['object']->check($cart, $options);
-                            } else {
-                                $is_condition_passed = false;
-                            }
-                        } else {
-                            $is_condition_passed = false;
-                        }
-                    }elseif(!isset($this->available_conditions[$type]['object'])){
-                        $is_custom_taxonomy = strpos($type, "wdr_cart_item_"); //wdr_cart_item_
-                        if ( $is_custom_taxonomy === (int) 0 && $is_custom_taxonomy !== false && isset($this->available_conditions['cart_item_products_taxonomy']['object'])) {
-                            $custom_taxonomy = str_replace("wdr_cart_item_", "", $type);
-                            if(is_object($this->available_conditions['cart_item_products_taxonomy']['object'])){
-                                $this->available_conditions['cart_item_products_taxonomy']['object']->rule = $this;
-                                if(method_exists($this->available_conditions['cart_item_products_taxonomy']['object'], 'check')){
-                                    $options = (array)$options;
-                                    $options['custom_taxonomy'] = $custom_taxonomy;
-                                    $options = (object)$options;
-                                    $is_condition_passed = $this->available_conditions['cart_item_products_taxonomy']['object']->check($cart, $options);
+                if (empty($condition_types) || (is_array($condition_types) && in_array($type, $condition_types))) {
+                    $options = isset($condition->options) ? $condition->options : array();
+                    if (!empty($type) && !empty($options)) {
+                        //if condition available, then check the cart against the condition
+                        if (isset($this->available_conditions[$type]['object'])) {
+                            if (is_object($this->available_conditions[$type]['object'])) {
+                                $this->available_conditions[$type]['object']->rule = $this;
+                                if (method_exists($this->available_conditions[$type]['object'], 'check')) {
+                                    $is_condition_passed = $this->available_conditions[$type]['object']->check($cart, $options);
                                 } else {
                                     $is_condition_passed = false;
                                 }
                             } else {
                                 $is_condition_passed = false;
                             }
-                        }else{
-                            $object_not_available = apply_filters('advanced_woo_discount_rules_condition_object_not_available', false, $cart, $this, $condition_relationship);
-                            if($object_not_available){
-                                $is_condition_passed = apply_filters('advanced_woo_discount_rules_set_condition_status', false, $cart, $this, $condition_relationship);
-                            }else{
-                                continue;
+                        } elseif (!isset($this->available_conditions[$type]['object'])) {
+                            $is_custom_taxonomy = strpos($type, "wdr_cart_item_"); //wdr_cart_item_
+                            if ($is_custom_taxonomy === (int)0 && $is_custom_taxonomy !== false && isset($this->available_conditions['cart_item_products_taxonomy']['object'])) {
+                                $custom_taxonomy = str_replace("wdr_cart_item_", "", $type);
+                                if (is_object($this->available_conditions['cart_item_products_taxonomy']['object'])) {
+                                    $this->available_conditions['cart_item_products_taxonomy']['object']->rule = $this;
+                                    if (method_exists($this->available_conditions['cart_item_products_taxonomy']['object'], 'check')) {
+                                        $options = (array)$options;
+                                        $options['custom_taxonomy'] = $custom_taxonomy;
+                                        $options = (object)$options;
+                                        $is_condition_passed = $this->available_conditions['cart_item_products_taxonomy']['object']->check($cart, $options);
+                                    } else {
+                                        $is_condition_passed = false;
+                                    }
+                                } else {
+                                    $is_condition_passed = false;
+                                }
+                            } else {
+                                $object_not_available = apply_filters('advanced_woo_discount_rules_condition_object_not_available', false, $cart, $this, $condition_relationship);
+                                if ($object_not_available) {
+                                    $is_condition_passed = apply_filters('advanced_woo_discount_rules_set_condition_status', false, $cart, $this, $condition_relationship);
+                                } else {
+                                    continue;
+                                }
                             }
+                        } else {
+                            $is_condition_passed = false;
                         }
-                    } else {
-                        $is_condition_passed = false;
-                    }
-                    //if relationship is "and" and if current condition get fails, no need to check any other conditions provided by admin.just return rule condition failed
-                    if (isset($is_condition_passed) && !$is_condition_passed && $condition_relationship == "and") {
-                        return apply_filters('advanced_woo_discount_rules_is_conditions_passed', false, $rule_object, $this->rule);
-                    }
-                    //if relationship is "or" and if current condition get pass, no need to check any other conditions provided by admin.just return rule condition passed
-                    if (isset($is_condition_passed) &&  $is_condition_passed && $condition_relationship == "or") {
-                        return apply_filters('advanced_woo_discount_rules_is_conditions_passed', true, $rule_object, $this->rule);
-                    }
-                    //Check if any conditions fails
-                    if (isset($is_condition_passed) && !$is_condition_passed) {
-                        $conditions_result[] = false;
+                        //if relationship is "and" and if current condition get fails, no need to check any other conditions provided by admin.just return rule condition failed
+                        if (isset($is_condition_passed) && !$is_condition_passed && $condition_relationship == "and") {
+                            return apply_filters('advanced_woo_discount_rules_is_conditions_passed', false, $rule_object, $this->rule);
+                        }
+                        //if relationship is "or" and if current condition get pass, no need to check any other conditions provided by admin.just return rule condition passed
+                        if (isset($is_condition_passed) && $is_condition_passed && $condition_relationship == "or") {
+                            return apply_filters('advanced_woo_discount_rules_is_conditions_passed', true, $rule_object, $this->rule);
+                        }
+                        //Check if any conditions fails
+                        if (isset($is_condition_passed) && !$is_condition_passed) {
+                            $conditions_result[] = false;
+                        }
                     }
                 }
             }
@@ -1480,6 +1504,8 @@ class Rule
                 'h1' => array('class' => array()),
                 'h2' => array('class' => array()),
             );
+            // Since v2.4.1
+            $allowed_html = apply_filters( 'advanced_woo_discount_rules_allowed_html_elements_and_attributes', $allowed_html);
             return wp_kses($html, $allowed_html);
         }
         return $value;
@@ -1577,7 +1603,7 @@ class Rule
         if (!empty($product_ids)) {
             foreach ($product_ids as $product_id) {
                 $product = Woocommerce::getProduct($product_id);
-                if (method_exists($product, 'is_type')) {
+                if (!empty($product) && method_exists($product, 'is_type')) {
                     if ($product->is_type(array('variable', 'variable-subscription'))) {
                         $additional_variants = Woocommerce::getProductChildren($product);
                         if (!empty($additional_variants) && is_array($additional_variants)) {

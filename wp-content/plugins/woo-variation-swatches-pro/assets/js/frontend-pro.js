@@ -1,8 +1,8 @@
 /*!
- * Variation Swatches for WooCommerce - Pro v1.1.18 
+ * Variation Swatches for WooCommerce - PRO 
  * 
  * Author: Emran Ahmed ( emran.bd.08@gmail.com ) 
- * Date: 06/09/2021
+ * Date: 6/26/2022, 5:23:57 PM
  * Released under the GPLv3 license.
  */
 /******/ (function(modules) { // webpackBootstrap
@@ -43,12 +43,32 @@
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
 /******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
 /******/ 	};
 /******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
@@ -64,339 +84,212 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/";
+/******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
+/******/ ({
 
-module.exports = __webpack_require__(6);
+/***/ "./src/js/WooVariationSwatchesPro.js":
+/***/ (function(module, exports) {
 
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
-jQuery(function ($) {
-    Promise.resolve().then(function () {
-        return __webpack_require__(7);
-    }).then(function () {
-        $(document).on('wc_variation_form.wvs', '.variations_form:not(.wvs-pro-loaded)', function (event, form) {
-            $(this).WooVariationSwatchesPro();
-        });
-    });
-}); // end of jquery main wrapper
-
-/***/ }),
-/* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// ================================================================
-// WooCommerce Variation Change
-/*global wc_add_to_cart_variation_params, woo_variation_swatches_options */
-// ================================================================
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-var WooVariationSwatchesPro = function ($) {
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-  var Default = {};
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-  var WooVariationSwatchesPro = function () {
-    function WooVariationSwatchesPro(element, config) {
-      _classCallCheck(this, WooVariationSwatchesPro);
+/*global _, wp, wc_add_to_cart_variation_params, woo_variation_swatches_pro_params, woo_variation_swatches_pro_options */
+(function (window) {
+  'use strict';
 
-      // Assign
-      this._el = element;
-      this._element = $(element);
-      this._config = $.extend({}, Default, config);
-      this._generated = {};
-      this.product_variations = this._element.data('product_variations');
-      this.is_ajax_variation = !this.product_variations;
-      this.is_loop = this._element.hasClass('wvs-archive-variation-wrapper');
-      this.is_single_product = !this.is_loop;
-      this._attributeFields = this._element.find('.variations select');
-      // this._wrapper           = this._element.closest('.wvs-pro-product');
-      this._wrapper = this._element.closest(woo_variation_swatches_options.archive_product_wrapper);
-      this._cart_button = this._wrapper.find('.wvs_add_to_cart_button');
-      this._cart_button_ajax = this._wrapper.find('.wvs_ajax_add_to_cart');
-      this._cart_button_html = this._cart_button.clone().html();
-      // this._image             = this._wrapper.find('.wp-post-image');
-      this._image = this._wrapper.find(woo_variation_swatches_options.archive_image_selector);
-      this._price = this._wrapper.find('.price');
-      this._price_html = this._price.clone().html();
-      this._product_id = this._cart_button.data('product_id');
-      this._variation_shown = false;
-      this._resetVariations = this._element.find('.woo_variation_swatches_archive_reset_variations');
-      this.is_mobile = $('body').hasClass('woo-variation-swatches-on-mobile');
-      // Iconic Woothumbs Support
-      this.iconic_woothumbs_all_images_wrap = $('.iconic-woothumbs-all-images-wrap');
-      this.iconic_woothumbs_show_variation_trigger = 'iconic_woothumbs_show_variation';
-
-      if (woo_variation_swatches_options.archive_cart_button_selector.trim()) {
-        this._cart_button = this._wrapper.find(woo_variation_swatches_options.archive_cart_button_selector);
-        this._cart_button_ajax = this._wrapper.find(woo_variation_swatches_options.archive_cart_button_selector);
-      }
-
-      this._element.addClass('wvs-pro-loaded');
-
-      //console.log(this._element)
-
-      // Call
-
-      this.init();
-
-      $(document).trigger('woo_variation_swatches_pro', [this._element]);
-    }
-
-    _createClass(WooVariationSwatchesPro, [{
-      key: 'init',
-      value: function init() {
-
-        this.archiveCatalogHoverEvent();
-        this.setDefaultTemplate();
-        this.archiveEvents();
-        this.clickableVariationURL();
-        this.variationImagePreview();
-        this.showStockLabel();
-
-        this._element.trigger('woo_variation_swatches_pro_init', [this, this.product_variations]);
-        $(document).trigger('woo_variation_swatches_pro_loaded', [this._element, this.product_variations]);
-      }
-    }, {
-      key: 'variationImagePreview',
-      value: function variationImagePreview() {
-
-        var preview_attribute = woo_variation_swatches_options.single_variation_preview_attribute;
-
-        if (this.is_single_product && woo_variation_swatches_options.enable_single_variation_preview && woo_variation_swatches_options.single_variation_preview_attribute) {
-          this._attributeFieldSingle = this._element.find('.variations select#' + preview_attribute);
-          this.changeSingleAttributeImage();
-          this._attributeFieldSingle.trigger('change.wvs');
-        }
-
-        if (this.is_loop && woo_variation_swatches_options.enable_single_variation_preview_archive && woo_variation_swatches_options.enable_single_variation_preview && woo_variation_swatches_options.single_variation_preview_attribute) {
-
-          var archiveAttribute = this._element.data('single_variation_preview_attribute').trim();
-
-          preview_attribute = archiveAttribute ? archiveAttribute : preview_attribute;
-          // console.log(preview_attribute);
-          this._attributeFieldSingle = this._element.find('.variations select#' + preview_attribute);
-          this.changeSingleAttributeImage();
-        }
-      }
-    }, {
-      key: 'clickableVariationURL',
-      value: function clickableVariationURL() {
-
-        if (this.is_single_product && woo_variation_swatches_options.enable_linkable_variation_url) {
-          this.generateVariationURL();
-        }
-      }
-    }, {
-      key: 'generateVariationURL',
-      value: function generateVariationURL() {
-        var _this2 = this;
-
-        var url = new URL(window.location.toString());
-        var search = url.searchParams.toString();
-
-        var originalUrl = url.origin + url.pathname;
-
-        this._element.on('check_variations.wc-variation-form', function (event) {
-
-          var attributes = void 0;
-
-          if (woo_variation_swatches_options.wc_bundles_enabled) {
-            url = new URL(window.location.toString());
-            search = url.searchParams.toString();
-            attributes = _this2.getChosenAttributesBundleSupport();
-          } else {
-            attributes = _this2.getChosenAttributes();
-          }
-
-          var attributesObject = Object.keys(attributes).reduce(function (attrs, current) {
-
-            if (attributes[current]) {
-              attrs[current] = attributes[current];
-            }
-            return attrs;
-          }, {});
-
-          var searchObject = [].concat(_toConsumableArray(new URLSearchParams(search).keys())).reduce(function (attrs, current) {
-            attrs[current] = new URLSearchParams(search).get(current);
-            return attrs;
-          }, {});
-
-          var data = _extends({}, searchObject, attributesObject);
-
-          var params = $.param(data);
-
-          window.history.pushState({}, '', _this2.addQueryArg(originalUrl, params));
-        });
-      }
-    }, {
-      key: 'setDefaultTemplate',
-      value: function setDefaultTemplate() {
-
-        if (this.is_single_product) {
-          return false;
-        }
-
-        var product_variations = this._element.data('product_variations');
-
-        var attributes = this.getChosenAttributesAll();
-        var currentAttributes = attributes.data;
-
-        if (attributes.count && attributes.count === attributes.chosenCount) {
-          var matching_variations = this.findMatchingVariations(product_variations, currentAttributes);
-          var variation = matching_variations.shift();
-
-          if (variation) {
-            this.archiveImageUpdate(variation);
-            this.archiveTemplateUpdate(variation);
-          } else {
-            console.error('Default Product variation not available on product id ' + this._product_id);
-          }
-        }
-      }
-    }, {
-      key: 'archiveCatalogHoverEvent',
-      value: function archiveCatalogHoverEvent() {
-
+  var Plugin = function ($) {
+    return /*#__PURE__*/function () {
+      function _class2(element, options) {
         var _this = this;
-        this._element.find('ul.variable-items-wrapper.wvs-catalog-variable-wrapper > li:not(.disabled):not(.woo-variation-swatches-variable-item-more)').each(function (i, el) {
 
-          $(this).off('wvs-selected-item.catalog-image-hover');
-          $(this).off('wvs-selected-item.catalog-image-click');
-          $(this).off('mouseenter.catalog-image-hover');
-          $(this).off('mouseleave.catalog-image-hover');
-          $(this).off('click.linkable');
+        _classCallCheck(this, _class2);
 
-          if (woo_variation_swatches_options.catalog_mode_event === 'hover') {
+        _defineProperty(this, "defaults", {});
 
-            $(this).on('mouseenter.catalog-image-hover', function (event) {
-              event.stopPropagation();
+        _defineProperty(this, "onInit", function (event) {
+          _this.init();
+        });
 
-              $(this).trigger('click').trigger('focusin');
+        _defineProperty(this, "onAjaxAddToCart", function (event) {
+          if ($(event.target).is('.loading')) {
+            return false;
+          }
 
-              if (_this.is_mobile) {
-                $(this).trigger('touchstart');
-              }
-            });
+          if ($(event.target).is('.wvs_ajax_add_to_cart')) {
+            event.preventDefault();
+            event.stopPropagation();
 
-            //  Linkable
-            if (woo_variation_swatches_options.linkable_attribute) {
-              // On Click Open with selected variable
-              $(this).on('click.linkable', function (event) {
-                if ('undefined' !== typeof event.originalEvent) {
-                  var url = $(this).attr('data-url');
-                  // url ? /*location.replace(url)*/ window.history.pushState({}, '', url) : ''
-                  url ? window.location.href = url : '';
-                }
-              });
-            }
+            _this.AjaxAddToCart(event.target);
           }
         });
-      }
-    }, {
-      key: 'archiveEvents',
-      value: function archiveEvents() {
-        var _this3 = this;
 
-        if (this.is_single_product) {
-          return false;
+        _defineProperty(this, "onExpandVariableItems", function (event) {
+          event.preventDefault();
+
+          _this.expandVariableItems(event);
+        });
+
+        _defineProperty(this, "onPreviewChange", function (event) {
+          event.preventDefault();
+
+          _this.$element.off('reset_data.wc-variation-form');
+
+          _this.previewChange(event.currentTarget);
+        });
+
+        _defineProperty(this, "onChange", function (event) {
+          // this.$element.find('input[name="variation_id"], input.variation_id').val('').trigger('change')
+          // this.$element.find('.wc-no-matching-variations').remove()
+          _this.$element.trigger('woocommerce_variation_select_change');
+
+          _this.$element.trigger('check_variations'); // Custom event for when variation selection has been changed
+
+
+          _this.$element.trigger('woocommerce_variation_has_changed');
+        });
+
+        _defineProperty(this, "onReset", function (event) {
+          event.preventDefault();
+
+          _this.reset();
+        });
+
+        _defineProperty(this, "onResetDisplayedVariation", function (event) {
+          _this.resetDisplayedVariation();
+        });
+
+        _defineProperty(this, "onUpdateAttributes", function (event) {
+          _this.updateAttributes(event);
+        });
+
+        _defineProperty(this, "onCheckVariations", function (event) {
+          _this.checkVariations();
+        });
+
+        _defineProperty(this, "onVariationChanged", function (event) {
+          _this.setupSwatchesItems();
+        });
+
+        _defineProperty(this, "onFoundVariation", function (event, variation, is_ajax) {
+          _this.foundVariation(variation, is_ajax);
+        });
+
+        // Properties
+        this._element = element;
+        this.$element = $(element);
+        this.settings = $.extend(true, {}, this.defaults, options);
+        this.product_variations = this.$element.data('product_variations') || [];
+        this.is_ajax_variation = this.product_variations.length < 1;
+        this.product_id = parseInt(this.$element.data('product_id'), 10);
+        this.threshold_min = parseInt(this.$element.data('threshold_min'), 10);
+        this.threshold_max = parseInt(this.$element.data('threshold_max'), 10);
+        this.total_children = parseInt(this.$element.data('total_children'), 10);
+        this.xhr = false;
+        this.previewXhr = false;
+        this.loading = true;
+        this.$information = this.$element.find('.wvs-archive-information');
+        this.$wrapper = this.$element.closest(woo_variation_swatches_pro_options.archive_product_wrapper);
+        this.$image = this.$wrapper.find(woo_variation_swatches_pro_options.archive_image_selector);
+        this.$cart_button = this.$wrapper.find(woo_variation_swatches_pro_options.archive_cart_button_selector);
+        this.$price = this.$wrapper.find('.price');
+        this.$firstUL = this.$element.find('.variations ul:first');
+        this.$cart_button_html = this.$cart_button.clone().html();
+        this.$price_html = this.$price.clone().html();
+        this.$attributeFields = this.$element.find('.variations select');
+        this.$resetVariations = this.$element.find('.wvs_archive_reset_variations');
+        var single_variation_preview_selector = false;
+
+        if (woo_variation_swatches_pro_options.enable_single_variation_preview && woo_variation_swatches_pro_options.enable_single_variation_preview_archive) {
+          var name = this.$firstUL.data('preview_attribute_name') ? this.$firstUL.data('preview_attribute_name') : this.$attributeFields.first().data('attribute_name');
+          single_variation_preview_selector = ".variations select[data-attribute_name='".concat(name, "']");
+        } // Initial state.
+
+
+        this.$element.off('.wc-variation-form');
+        this.$element.addClass('wvs-pro-loaded'); // Events
+
+        this.$element.on('click.wc-variation-form', '.wvs_archive_reset_variations > a', this.onReset);
+        this.$element.on('change.wc-variation-form', '.variations select', this.onChange); // Start
+
+        this.$element.on('check_variations.wc-variation-form', this.onCheckVariations);
+        this.$element.on('update_variation_values.wc-variation-form', this.onUpdateAttributes);
+        this.$element.on('found_variation.wc-variation-form', this.onFoundVariation);
+        this.$element.on('reset_data.wc-variation-form', this.onResetDisplayedVariation);
+        this.$element.on('woocommerce_variation_has_changed.wc-variation-form', this.onVariationChanged);
+        this.$cart_button.on('click.wc-variation-form', this.onAjaxAddToCart);
+
+        if (!woo_variation_swatches_pro_options.enable_catalog_mode && woo_variation_swatches_pro_options.enable_single_variation_preview && woo_variation_swatches_pro_options.enable_single_variation_preview_archive) {
+          this.$element.on('click.wc-variation-form', '.wvs_archive_reset_variations > a', this.onResetDisplayedVariation);
+          this.$element.on('change.wc-variation-form', single_variation_preview_selector, this.onPreviewChange);
         }
 
-        // this._resetVariations.off('click.wvs');
-        this._element.off('found_variation.wvs');
-        this._element.off('reset_data.wvs');
-        this._element.off('wvs_single_attribute_chosen.wvs');
-        this._cart_button_ajax.off('click.wvs');
+        if ('expand' === woo_variation_swatches_pro_options.catalog_mode_behaviour) {
+          this.$element.on('click.wc-variation-form', '.woo-variation-swatches-variable-item-more', this.onExpandVariableItems);
+        }
 
-        this._element.on('found_variation.wvs', function (event, variation) {
-          var purchasable = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+        this.$element.on('woo_variation_swatches_pro_loaded.wc-variation-form', this.onInit);
+        this.$element.trigger('woo_variation_swatches_pro_loaded', this);
+      }
 
-          event.preventDefault();
-          event.stopPropagation();
-          _this3.archiveImageUpdate(variation);
-          if (purchasable) {
-            _this3.archiveTemplateUpdate(variation);
-          }
-        });
+      _createClass(_class2, [{
+        key: "start",
+        value: function start() {
+          var _this2 = this;
 
-        this._element.on('reset_data.wvs', function (event) {
+          // Init after gallery.
+          setTimeout(function () {
+            _this2.$element.trigger('check_variations'); // @TODO: Issue if "wc_variation_form" triggers
 
-          event.preventDefault();
-          event.stopPropagation();
 
-          var chosen = _this3.getChosenAttributesAll();
+            _this2.$element.trigger('wc_variation_form_pro', _this2);
 
-          if (chosen.chosenCount === 0) {
-            _this3.archiveImageUpdate();
-            _this3.archiveTemplateReset();
-          }
-        });
+            _this2.swatchInit();
+          }, 100);
+        }
+      }, {
+        key: "AjaxAddToCart",
+        value: function AjaxAddToCart(button) {
+          var $thisbutton = $(button);
+          var quantity = $thisbutton.data('quantity');
+          var args = this.getQueryArgs($thisbutton.attr('href'));
+          var variations = this.getAttributes(args);
+          var product_id = args.variation_id;
 
-        this._element.on('wvs_single_attribute_chosen.wvs', function (event, variation) {
-          _this3.archiveImageUpdate(variation);
-        });
-
-        this._cart_button_ajax.on('click.wvs', function (event) {
-
-          var $button = $(this);
-
-          if (woo_variation_swatches_options.enable_catalog_mode) {
-            return true;
-          }
-
-          if (!$button.data('variation_id')) {
-            return true;
-          }
-
-          event.preventDefault(); // Don't move it
-          event.stopPropagation(); // Don't move it
-
-          $button.removeClass('added');
-          $button.addClass('loading');
-
-          var data = {
-            action: 'wvs_add_variation_to_cart'
-          };
-
-          $.each($button.data(), function (key, value) {
-            // Don't include skipped data
-            if (!_.includes(['selectOptions', 'addToCart', 'selectOptionsAriaLabel', 'addToCartAriaLabel'], key)) {
-              data[key] = value;
-            }
+          var data = _objectSpread(_objectSpread({}, variations), {}, {
+            quantity: quantity,
+            product_id: product_id
           });
 
-          // Trigger event.
-          $(document.body).trigger('adding_to_cart', [$button, data]);
+          $thisbutton.removeClass('added');
+          $thisbutton.addClass('loading'); // Trigger event.
 
-          // Ajax action.
-          $.post(wc_add_to_cart_variation_params.ajax_url.toString(), data, function (response) {
+          $(document.body).trigger('adding_to_cart', [$thisbutton, data]);
+          $.ajax({
+            dataType: 'json',
+            global: false,
+            url: woo_variation_swatches_pro_params.wc_ajax_url.toString().replace('%%endpoint%%', 'woo_add_to_cart_variation'),
+            method: 'POST',
+            data: data
+          }).fail(function (jqXHR, textStatus) {
+            console.error("product cart data not available.", data, textStatus);
+          }).done(function (response) {
             if (!response) {
               return;
             }
@@ -404,505 +297,1010 @@ var WooVariationSwatchesPro = function ($) {
             if (response.error && response.product_url) {
               window.location = response.product_url;
               return;
-            }
+            } // Redirect to cart option
 
-            // Redirect to cart option
-            if (wc_add_to_cart_params.cart_redirect_after_add === 'yes') {
-              window.location = wc_add_to_cart_params.cart_url;
+
+            if (woo_variation_swatches_pro_options.cart_redirect_after_add === 'yes') {
+              window.location = woo_variation_swatches_pro_options.cart_url;
               return;
+            } // Trigger event so themes can refresh other areas.
+
+
+            $(document.body).trigger('added_to_cart', [response.fragments, response.cart_hash, $thisbutton]);
+          }).always(function () {});
+        }
+      }, {
+        key: "getAttributes",
+        value: function getAttributes(raw_attributes) {
+          var attributes = {};
+
+          for (var attr_name in raw_attributes) {
+            if ('attribute_' === attr_name.substring(0, 10)) {
+              attributes[attr_name] = raw_attributes[attr_name];
+            }
+          }
+
+          return attributes;
+        }
+      }, {
+        key: "expandVariableItems",
+        value: function expandVariableItems(event) {
+          $(event.currentTarget).parent().removeClass('enabled-display-limit-mode enabled-catalog-display-limit-mode');
+          $(event.currentTarget).remove();
+        }
+      }, {
+        key: "init",
+        value: function init() {
+          var _this3 = this;
+
+          var limit = this.threshold_max;
+          var total = this.total_children; // The Logic
+          // threshold_min = 30
+          // threshold_max = 200
+          // total_children = 20
+          // then load by html attr
+          //
+          // threshold_min = 30
+          // threshold_max = 200
+          // total_children = 100
+          // then load all variations by ajax
+          //
+          // threshold_min = 30
+          // threshold_max = 200
+          // total_children = 500
+          // then load selected variations only via ajax
+          // Store default image
+
+          this.defaultImage();
+          this.defaultCartButton();
+
+          if (this.isAjaxVariation() && limit >= total) {
+            if (this.xhr) {
+              this.xhr.abort();
             }
 
-            // Trigger event so themes can refresh other areas.
-            $(document.body).trigger('added_to_cart', [response.fragments, response.cart_hash, $button]);
+            this.$element.block({
+              message: null,
+              overlayCSS: {
+                background: '#FFFFFF',
+                opacity: 0.6
+              }
+            });
+            this.xhr = $.ajax({
+              global: false,
+              url: woo_variation_swatches_pro_params.wc_ajax_url.toString().replace('%%endpoint%%', 'woo_get_variations'),
+              method: 'POST',
+              data: {
+                product_id: this.product_id,
+                is_archive: true
+              }
+            });
+            this.xhr.fail(function (jqXHR, textStatus) {
+              console.error("product variations not available on: ".concat(_this3.product_id, "."), textStatus);
+            });
+            this.xhr.done(function (variations) {
+              if (variations) {
+                _this3.$element.data('product_variations', variations);
+
+                _this3.product_variations = _this3.$element.data('product_variations');
+                _this3.is_ajax_variation = false;
+
+                _this3.start();
+              }
+            });
+            this.xhr.always(function () {
+              _this3.$element.unblock();
+            });
+          } else {
+            this.start();
+          }
+        }
+      }, {
+        key: "previewChange",
+        value: function previewChange(el) {
+          var _this4 = this;
+
+          var attribute_name = $(el).data('attribute_name') || $(el).attr('name');
+          var value = $(el).val() || '';
+          var currentAttributes = {};
+          var attributes = this.getChosenAttributes();
+
+          if (value && attributes.count && attributes.count > attributes.chosenCount) {
+            currentAttributes['product_id'] = this.product_id;
+            currentAttributes[attribute_name] = value;
+            this.previewXhr = $.ajax({
+              global: false,
+              url: woo_variation_swatches_pro_params.wc_ajax_url.toString().replace('%%endpoint%%', 'woo_get_preview_variation'),
+              method: 'POST',
+              data: currentAttributes
+            });
+            this.previewXhr.fail(function (jqXHR, textStatus) {
+              console.error("archive product preview not available on ".concat(_this4.product_id, "."), attribute_name, textStatus);
+            });
+            this.previewXhr.done(function (variation) {
+              // console.log(variation)
+              _this4.updatePreviewImage(variation);
+            });
+          }
+        }
+      }, {
+        key: "getAvailableVariations",
+        value: function getAvailableVariations() {
+          return this.$element.data('product_variations') || [];
+        }
+      }, {
+        key: "toggleResetLink",
+        value: function toggleResetLink(show) {
+          if (show) {
+            this.$resetVariations.removeClass('show hide').addClass('show');
+          } else {
+            this.$resetVariations.removeClass('show hide').addClass('hide');
+          }
+        }
+      }, {
+        key: "reset",
+        value: function reset() {
+          this.$attributeFields.val('').trigger('change');
+          this.$element.trigger('reset_data');
+        }
+      }, {
+        key: "getChosenAttributes",
+        value: function getChosenAttributes() {
+          var data = {};
+          var count = 0;
+          var chosen = 0;
+          this.$attributeFields.each(function () {
+            var attribute_name = $(this).data('attribute_name') || $(this).attr('name');
+            var value = $(this).val() || '';
+
+            if (value.length > 0) {
+              chosen++;
+            }
+
+            count++;
+            data[attribute_name] = value;
           });
-        });
-      }
+          return {
+            'count': count,
+            'chosenCount': chosen,
+            'data': data
+          };
+        }
+      }, {
+        key: "isMatch",
+        value: function isMatch(variation_attributes, attributes) {
+          var match = true;
 
-      // Archive Templates
+          for (var attr_name in variation_attributes) {
+            if (variation_attributes.hasOwnProperty(attr_name)) {
+              var val1 = variation_attributes[attr_name];
+              var val2 = attributes[attr_name];
 
-    }, {
-      key: 'archiveTemplateReset',
-      value: function archiveTemplateReset() {
-
-        //  If not catalog mode
-        if (!woo_variation_swatches_options.enable_catalog_mode) {
-
-          // Cart button
-          if (this._cart_button.length > 0) {
-
-            this._cart_button.data('variation_id', '');
-            this._cart_button.data('variation', '');
-            this._cart_button.attr('aria-label', this._cart_button.data('select-options-aria-label'));
-            this._cart_button.html(this._cart_button.data('select-options'));
-            this._cart_button.removeClass('added');
-
-            // If woocommerce ajax add to cart disabled
-            if ('no' === wc_add_to_cart_variation_params.enable_ajax_add_to_cart) {
-              this._cart_button.prop('href', this._cart_button.data('product_permalink'));
+              if (val1 !== undefined && val2 !== undefined && val1.length !== 0 && val2.length !== 0 && val1 !== val2) {
+                match = false;
+              }
             }
           }
 
-          // Price Update
-          this._wrapper.find('.price').html(this._price_html);
-          this._wrapper.find('.added_to_cart, .added_to_cart_button').remove();
+          return match;
         }
-      }
-    }, {
-      key: 'archiveTemplateUpdate',
-      value: function archiveTemplateUpdate(variation) {
+      }, {
+        key: "findMatchingVariations",
+        value: function findMatchingVariations(variations, attributes) {
+          var matching = [];
 
-        var template = void 0;
-        if (variation && variation.variation_is_visible) {
-          template = wp.template('wvs-variation-template');
-        } else {
-          template = wp.template('unavailable-variation-template');
-        }
+          for (var i = 0; i < variations.length; i++) {
+            var variation = variations[i];
 
-        var $template_html = template({
-          variation: variation,
-          price_html: $(variation.price_html).unwrap().html() || this._price_html
-        });
-
-        $template_html = $template_html.replace('/*<![CDATA[*/', '');
-        $template_html = $template_html.replace('/*]]>*/', '');
-
-        // If not catalog mode
-        if (!woo_variation_swatches_options.enable_catalog_mode) {
-
-          if (this._cart_button.length > 0) {
-
-            this._cart_button.data('variation_id', variation.variation_id);
-            this._cart_button.data('variation', this.getChosenAttributes());
-            this._cart_button.attr('aria-label', this._cart_button.data('add-to-cart-aria-label'));
-            this._cart_button.html(this._cart_button.data('add-to-cart'));
-            this._cart_button.removeClass('added');
-
-            // If woocommerce ajax add to cart disabled
-            if ('no' === wc_add_to_cart_variation_params.enable_ajax_add_to_cart) {
-              var params = $.param(_extends({}, this.getChosenAttributes(), {
-                'add-to-cart': this._product_id,
-                variation_id: variation.variation_id
-              }));
-
-              // console.log(params)
-
-              this._cart_button.prop('href', this.addQueryArg(this._cart_button.data('add_to_cart_url'), params));
+            if (this.isMatch(variation.attributes, attributes)) {
+              matching.push(variation);
             }
           }
 
-          this._wrapper.find('.price').html($template_html);
-          this._wrapper.find('.added_to_cart, .added_to_cart_button').remove();
+          return matching;
         }
-      }
-    }, {
-      key: 'archiveImageUpdate',
-      value: function archiveImageUpdate() {
-        var variation = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+      }, {
+        key: "updateAttributes",
+        value: function updateAttributes(event) {
+          var _this5 = this;
 
-
-        /*this._image.addClass('wvs-pro-image-load').one('webkitAnimationEnd oanimationend msAnimationEnd animationend webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
-          $(this).removeClass('wvs-pro-image-load')
-        });*/
-
-        if (variation && variation.image && variation.image.thumb_src && variation.image.thumb_src.length > 1) {
-          this._image.wc_set_variation_attr('src', variation.image.thumb_src);
-          this._image.wc_set_variation_attr('height', variation.image.thumb_src_h);
-          this._image.wc_set_variation_attr('width', variation.image.thumb_src_w);
-          this._image.wc_set_variation_attr('srcset', variation.image.thumb_srcset);
-          this._image.wc_set_variation_attr('sizes', variation.image.thumb_sizes);
-          this._image.wc_set_variation_attr('title', variation.image.title);
-          this._image.wc_set_variation_attr('alt', variation.image.alt);
-        } else {
-          this._image.wc_reset_variation_attr('src');
-          this._image.wc_reset_variation_attr('width');
-          this._image.wc_reset_variation_attr('height');
-          this._image.wc_reset_variation_attr('srcset');
-          this._image.wc_reset_variation_attr('sizes');
-          this._image.wc_reset_variation_attr('title');
-          this._image.wc_reset_variation_attr('alt');
-        }
-      }
-    }, {
-      key: 'getChosenAttributesBundleSupport',
-      value: function getChosenAttributesBundleSupport() {
-        var data = {};
-        var count = 0;
-        var chosen = 0;
-
-        this._attributeFields.each(function () {
-          var attribute_name = $(this).attr('name');
-          var value = $(this).val() || '';
-
-          if (value.length > 0) {
-            chosen++;
-          }
-
-          count++;
-          data[attribute_name] = value;
-        });
-
-        return data;
-      }
-    }, {
-      key: 'getChosenAttributes',
-      value: function getChosenAttributes() {
-
-        var data = {};
-        var count = 0;
-        var chosen = 0;
-
-        this._attributeFields.each(function () {
-          var attribute_name = $(this).data('attribute_name') || $(this).attr('name');
-          var value = $(this).val() || '';
-
-          if (value.length > 0) {
-            chosen++;
-          }
-
-          count++;
-          data[attribute_name] = value;
-        });
-
-        return data;
-      }
-    }, {
-      key: 'addQueryArg',
-      value: function addQueryArg(url, query) {
-        if (query) {
-          // remove optional leading symbols
-          query = query.trim().replace(/^(\?|#|&)/, '').replace(/(\?|#|&)$/, '');
-
-          // don't append empty query
-          query = query ? '?' + query : query;
-
-          var parts = url.split(/[\?\#]/);
-          var start = parts[0];
-          if (query && /\:\/\/[^\/]*$/.test(start)) {
-            // e.g. http://foo.com -> http://foo.com/
-            start = start + '/';
-          }
-          var match = url.match(/(\#.*)$/);
-          url = start + query;
-          if (match) {
-            // add hash back in
-            url = url + match[0];
-          }
-        }
-        return url;
-      }
-    }, {
-      key: 'eventReAttach',
-      value: function eventReAttach(element, eventName, callback) {
-        // let events = $._data(element, 'events')
-        // let callback = jQuery.extend(true, {}, events[eventName])
-
-        for (var key in callback) {
-
-          if (callback.hasOwnProperty(key)) {
-            var fn = callback[key];
-            var namespace = fn.namespace ? '.' + fn.namespace : '';
-            var data = fn.data ? fn.data : {};
-            var handler = fn.handler ? fn.handler : function () {};
-            element.on('' + eventName + namespace, data, handler);
-          }
-        }
-      }
-
-      // Single Attribute Change Image
-
-    }, {
-      key: 'changeSingleAttributeImage',
-      value: function changeSingleAttributeImage() {
-        var _this4 = this;
-
-        var events = $._data(this._el, 'events');
-        var reset_data_callback = jQuery.extend(true, {}, events['reset_data']);
-
-        this._attributeFieldSingle.on('change.wvs', function (event) {
-
-          var allAttributes = _this4.getChosenAttributesAll();
-          var attributes = _this4.getChosenAttributesSingle();
+          var attributes = this.getChosenAttributes();
           var currentAttributes = attributes.data;
 
-          // allAttributes.count > attributes.chosenCount && attributes.chosenCount > 0
+          if (this.isAjaxVariation()) {
+            return;
+          } // Loop through selects and disable/enable options based on selections.
 
-          if (attributes.count > 0) {
-            if (allAttributes.count > 1 && allAttributes.chosenCount === 1) {
 
-              var variationData = _this4._element.data('product_variations');
-              var matching_variations = _this4.findMatchingVariations(variationData, currentAttributes);
+          this.$attributeFields.each(function (index, el) {
+            var current_attr_select = $(el),
+                current_attr_name = current_attr_select.data('attribute_name') || current_attr_select.attr('name'),
+                show_option_none = $(el).data('show_option_none'),
+                option_gt_filter = ':gt(0)',
+                attached_options_count = 0,
+                new_attr_select = $('<select/>'),
+                selected_attr_val = current_attr_select.val() || '',
+                selected_attr_val_valid = true; // Reference options set at first.
+
+            if (!current_attr_select.data('attribute_html')) {
+              var refSelect = current_attr_select.clone(); // refSelect.find('option').removeAttr('disabled attached').removeAttr('selected')
+
+              refSelect.find('option').prop('disabled', false).prop('selected', false).removeAttr('attached').removeClass('out-of-stock'); // current_attr_select.data('attribute_options', refSelect.find('option' + option_gt_filter).get()) // Legacy data attribute.
+
+              current_attr_select.data('attribute_html', refSelect.html());
+            }
+
+            new_attr_select.html(current_attr_select.data('attribute_html')); // The attribute of this select field should not be taken into account when calculating its matching variations:
+            // The constraints of this attribute are shaped by the values of the other attributes.
+
+            var checkAttributes = $.extend(true, {}, currentAttributes);
+            checkAttributes[current_attr_name] = '';
+
+            var variations = _this5.findMatchingVariations(_this5.getAvailableVariations(), checkAttributes); // Loop through variations.
+
+
+            for (var num in variations) {
+              if (typeof variations[num] !== 'undefined') {
+                var variationAttributes = variations[num].attributes;
+
+                for (var attr_name in variationAttributes) {
+                  if (variationAttributes.hasOwnProperty(attr_name)) {
+                    var attr_val = variationAttributes[attr_name];
+                    var variation_active = '';
+                    var variation_out_of_stock = false;
+
+                    if (attr_name === current_attr_name) {
+                      if (variations[num].variation_is_active) {
+                        variation_active = 'enabled';
+                      } // Out Of Stock Class
+
+
+                      if (!variations[num].is_in_stock) {
+                        variation_out_of_stock = true;
+                      }
+
+                      if (attr_val) {
+                        // Decode entities and add slashes.
+                        attr_val = $('<div/>').html(attr_val).text(); // Attach.
+                        // new_attr_select.find('option[value="' + form.addSlashes(attr_val) + '"]').addClass('attached ' + variation_active);
+                        // Attach to matching options by value. This is done to compare
+                        // TEXT values rather than any HTML entities.
+
+                        var $option_elements = new_attr_select.find('option');
+
+                        if ($option_elements.length) {
+                          for (var i = 0, len = $option_elements.length; i < len; i++) {
+                            var $option_element = $($option_elements[i]);
+                            var option_value = $option_element.val(); // @TODO: WORK HERE
+
+                            if (attr_val === option_value) {
+                              $option_element.addClass('attached ' + variation_active); // 1+ attributes, 1+ selected then non selected show out of stock
+
+                              if (attributes.count > 1 && attributes.chosenCount > 0 && !selected_attr_val && variation_out_of_stock) {
+                                $option_element.addClass('out-of-stock');
+                              } // 1+ attributes and all selected
+
+
+                              if (attributes.count > 1 && attributes.chosenCount === attributes.count && variation_out_of_stock) {
+                                $option_element.addClass('out-of-stock');
+                              } // 1 attribute except catalog mode
+
+
+                              if (!woo_variation_swatches_pro_options.enable_catalog_mode && attributes.count === 1 && variation_out_of_stock) {
+                                $option_element.addClass('out-of-stock');
+                              }
+
+                              break;
+                            }
+                          }
+                        }
+                      } else {
+                        // Attach all apart from placeholder.
+                        new_attr_select.find('option:gt(0)').addClass('attached ' + variation_active);
+                      }
+                    }
+                  }
+                }
+              }
+            } // Count available options.
+
+
+            attached_options_count = new_attr_select.find('option.attached').length; // Check if current selection is in attached options.
+
+            if (selected_attr_val) {
+              selected_attr_val_valid = false;
+
+              if (0 !== attached_options_count) {
+                new_attr_select.find('option.attached.enabled').each(function () {
+                  var option_value = $(this).val();
+
+                  if (selected_attr_val === option_value) {
+                    selected_attr_val_valid = true;
+                    return false; // break.
+                  }
+                });
+              }
+            } // Detach the placeholder if:
+            // - Valid options exist.
+            // - The current selection is non-empty.
+            // - The current selection is valid.
+            // - Placeholders are not set to be permanently visible.
+
+
+            if (attached_options_count > 0 && selected_attr_val && selected_attr_val_valid && 'no' === show_option_none) {
+              new_attr_select.find('option:first').remove();
+              option_gt_filter = '';
+            } // Detach unattached.
+
+
+            new_attr_select.find('option' + option_gt_filter + ':not(.attached)').remove(); // for out of stock
+            // new_attr_select.find('option' + option_gt_filter + ':not(.attached):not(.out-of-stock)').remove()
+            // Finally, copy to DOM and set value.
+
+            current_attr_select.html(new_attr_select.html());
+            current_attr_select.find('option' + option_gt_filter + ':not(.enabled)').prop('disabled', true); ////current_attr_select.find('option' + option_gt_filter + ':not(.enabled):not(.out-of-stock)').prop('disabled', true)
+            //current_attr_select.find('option' + option_gt_filter + ':not(.enabled)').addClass('out-of-stock')
+            // Choose selected value.
+
+            if (selected_attr_val) {
+              // If the previously selected value is no longer available, fall back to the placeholder (it's going to be there).
+              if (selected_attr_val_valid) {
+                current_attr_select.val(selected_attr_val);
+              } else {
+                // current_attr_select.val('').change()
+                current_attr_select.val('').trigger('change');
+              }
+            } else {
+              current_attr_select.val(''); // No change event to prevent infinite loop.
+            }
+          }); // Custom event for when variations have been updated.
+
+          this.$element.trigger('woocommerce_update_variation_values');
+        }
+      }, {
+        key: "checkVariations",
+        value: function checkVariations() {
+          var _this6 = this;
+
+          var chosenAttributes = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+          var attributes = chosenAttributes ? chosenAttributes : this.getChosenAttributes();
+          var currentAttributes = attributes.data;
+
+          if (attributes.count && attributes.count === attributes.chosenCount) {
+            if (this.isAjaxVariation()) {
+              // attributes based attr
+              if (this.xhr) {
+                this.xhr.abort();
+              }
+
+              this.$element.block({
+                message: null,
+                overlayCSS: {
+                  background: '#FFFFFF',
+                  opacity: 0.6
+                }
+              });
+              currentAttributes.product_id = this.product_id;
+              currentAttributes.custom_data = this.$element.data('custom_data');
+              this.xhr = $.ajax({
+                global: false,
+                url: woo_variation_swatches_pro_params.wc_ajax_url.toString().replace('%%endpoint%%', 'woo_get_variation'),
+                method: 'POST',
+                data: currentAttributes
+              });
+              this.xhr.fail(function (jqXHR, textStatus) {
+                console.error("product variations not available on ".concat(_this6.product_id, "."), textStatus);
+              });
+              this.xhr.done(function (variation) {
+                if (variation) {
+                  _this6.$element.trigger('found_variation', [variation, true]);
+                } else {
+                  _this6.$element.trigger('reset_data');
+
+                  attributes.chosenCount = 0;
+                }
+              });
+              this.xhr.always(function () {
+                _this6.$element.unblock();
+              });
+            } else {
+              // by html attr
+              this.$element.trigger('update_variation_values');
+              var variations = this.getAvailableVariations();
+              var matching_variations = this.findMatchingVariations(variations, currentAttributes);
               var variation = matching_variations.shift();
 
               if (variation) {
-                // _.delay(() => {
+                this.$element.trigger('found_variation', [variation, false]);
+              } else {
+                this.$element.trigger('reset_data');
+                attributes.chosenCount = 0;
+              }
+            }
+          } else {
+            this.$element.trigger('update_variation_values');
+            this.$element.trigger('reset_data');
+          } // Show reset link.
 
-                _this4._element.off('reset_data');
-                _this4._element.wc_variations_image_update(variation);
-                _this4._element.trigger('wvs_pro_single_preview_found_variation', [_this4, variation]);
-                _this4._element.trigger('wvs_single_attribute_chosen', [variation, _this4]);
 
-                // passed variation and non purchasable
-                //this._element.trigger('found_variation', [variation, false])
-                //this._element.trigger('show_variation', [variation, false])
-                _this4._element.trigger(woo_variation_swatches_options.single_variation_preview_js_event, [variation, false]);
+          this.toggleResetLink(attributes.chosenCount > 0);
+        }
+      }, {
+        key: "isAjaxVariation",
+        value: function isAjaxVariation() {
+          return this.is_ajax_variation;
+        }
+      }, {
+        key: "swatchInit",
+        value: function swatchInit() {
+          this.setupSwatchesItems();
+          this.setupSwatchesEvents();
+        }
+      }, {
+        key: "setupSwatchesItems",
+        value: function setupSwatchesItems() {
+          var _this7 = this;
 
-                // single_variation_preview_js_event
-                // Iconic support
-                //this.iconic_woothumbs_all_images_wrap.trigger(this.iconic_woothumbs_show_variation_trigger, [variation, false])
+          var self = this;
+          this.$element.find('ul.variable-items-wrapper').each(function (i, element) {
+            var selected = '';
+            var select = $(element).parent().find('select.woo-variation-raw-select');
+            var options = select.find('option');
+            var disabled = select.find('option:disabled');
+            var out_of_stock = select.find('option.enabled.out-of-stock');
+            var current = select.find('option:selected');
+            var eq = select.find('option').eq(1);
+            var selects = [];
+            var disabled_selects = [];
+            var out_of_stocks = []; // All Options
 
-                _this4._element.find('.single_add_to_cart_button').removeClass('wc-variation-is-unavailable').addClass('disabled wc-variation-selection-needed');
-                // }, 1)
+            options.each(function () {
+              if ($(this).val() !== '') {
+                selects.push($(this).val());
+                selected = current.length === 0 ? eq.val() : current.val();
+              }
+            }); // Disabled
+
+            disabled.each(function () {
+              if ($(this).val() !== '') {
+                disabled_selects.push($(this).val());
+              }
+            }); // Out Of Stocks
+
+            out_of_stock.each(function () {
+              if ($(this).val() !== '') {
+                out_of_stocks.push($(this).val());
+              }
+            });
+
+            var in_stocks = _.difference(selects, disabled_selects);
+
+            _this7.setupSwatchesItem(element, selected, in_stocks, out_of_stocks);
+          });
+        }
+      }, {
+        key: "setupSwatchesItem",
+        value: function setupSwatchesItem(element, selected, in_stocks, out_of_stocks) {
+          var _this8 = this;
+
+          // Mark Selected
+          $(element).find('li.variable-item').each(function (index, el) {
+            var attribute_value = $(el).attr('data-value');
+            var attribute_title = $(el).attr('data-title'); // Resetting LI
+
+            $(el).removeClass('selected disabled no-stock').addClass('disabled');
+            $(el).attr('aria-checked', 'false');
+            $(el).attr('tabindex', '-1');
+            $(el).attr('data-wvstooltip-out-of-stock', '');
+            $(el).find('input.variable-item-radio-input:radio').prop('disabled', true).prop('checked', false); // Ajax variation
+
+            if (_this8.isAjaxVariation()) {
+              $(el).find('input.variable-item-radio-input:radio').prop('disabled', false);
+              $(el).removeClass('selected disabled no-stock'); // Selected
+
+              if (attribute_value === selected) {
+                $(el).addClass('selected');
+                $(el).attr('aria-checked', 'true');
+                $(el).attr('tabindex', '0');
+                $(el).find('input.variable-item-radio-input:radio').prop('disabled', false).prop('checked', true);
+                $(el).trigger('wvs-item-updated', [selected, attribute_value]);
               }
             } else {
-              _this4.eventReAttach(_this4._element, 'reset_data', reset_data_callback);
-            }
-          }
-        });
-      }
-    }, {
-      key: 'findStockLabelVariation',
-      value: function findStockLabelVariation(allVariations, selectedAttributes) {
+              // Default Selected
+              // We can't use es6 includes for IE11
+              // in_stocks.includes(attribute_value)
+              // _.contains(in_stocks, attribute_value)
+              // _.includes(in_stocks, attribute_value)
+              if (_.includes(in_stocks, attribute_value)) {
+                $(el).removeClass('selected disabled');
+                $(el).removeAttr('aria-hidden');
+                $(el).attr('tabindex', '0');
+                $(el).find('input.variable-item-radio-input:radio').prop('disabled', false); // Selected
 
-        var found = [];
-
-        var _iteratorNormalCompletion = true;
-        var _didIteratorError = false;
-        var _iteratorError = undefined;
-
-        try {
-          for (var _iterator = Object.entries(selectedAttributes.data)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            var _ref = _step.value;
-
-            var _ref2 = _slicedToArray(_ref, 2);
-
-            var attribute_name = _ref2[0];
-            var attribute_value = _ref2[1];
-
-
-            if (attribute_value.length === 0) {
-
-              var values = this._element.find('ul[data-attribute_name=\'' + attribute_name + '\']').data('attribute_values') || [];
-
-              var _iteratorNormalCompletion2 = true;
-              var _didIteratorError2 = false;
-              var _iteratorError2 = undefined;
-
-              try {
-                for (var _iterator2 = values[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                  var value = _step2.value;
-
-
-                  var compare = _.extend(selectedAttributes.data, _defineProperty({}, attribute_name, value));
-                  var matched_variation = this.findMatchingVariations(allVariations, compare);
-
-                  if (matched_variation.length > 0) {
-                    var variation = matched_variation.shift();
-                    var data = {};
-                    data['attribute_name'] = attribute_name;
-                    data['attribute_value'] = value;
-                    data['variation'] = variation;
-                    found.push(data);
-                  }
+                if (attribute_value === selected) {
+                  $(el).addClass('selected');
+                  $(el).attr('aria-checked', 'true');
+                  $(el).find('input.variable-item-radio-input:radio').prop('checked', true);
+                  $(el).trigger('wvs-item-updated', [selected, attribute_value]);
                 }
-              } catch (err) {
-                _didIteratorError2 = true;
-                _iteratorError2 = err;
-              } finally {
-                try {
-                  if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                    _iterator2.return();
-                  }
-                } finally {
-                  if (_didIteratorError2) {
-                    throw _iteratorError2;
-                  }
-                }
+              } // Out of Stock
+
+
+              if (_.includes(out_of_stocks, attribute_value) && woo_variation_swatches_pro_options.clickable_out_of_stock) {
+                $(el).removeClass('disabled').addClass('no-stock');
+                $(el).attr('data-wvstooltip-out-of-stock', woo_variation_swatches_pro_options.out_of_stock_tooltip_text);
               }
             }
-          }
-        } catch (err) {
-          _didIteratorError = true;
-          _iteratorError = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion && _iterator.return) {
-              _iterator.return();
-            }
-          } finally {
-            if (_didIteratorError) {
-              throw _iteratorError;
-            }
-          }
+          });
         }
+      }, {
+        key: "setupSwatchesEvents",
+        value: function setupSwatchesEvents() {
+          var _this9 = this;
 
-        return found;
-      }
-    }, {
-      key: 'resetStockLabel',
-      value: function resetStockLabel() {
-        this._element.find('.variable-item').removeClass('wvs-show-stock-left-info');
-        this._element.find('.wvs-stock-left-info').attr('data-wvs-stock-info', '');
-      }
-    }, {
-      key: 'showStockLabel',
-      value: function showStockLabel() {
-        var _this5 = this;
+          var self = this;
+          this.$element.find('ul.variable-items-wrapper').each(function (i, element) {
+            var select = $(element).parent().find('select.woo-variation-raw-select'); // Trigger Select event based on list
 
-        if (this.is_single_product && woo_variation_swatches_options.show_variation_stock_info) {
+            if (woo_variation_swatches_pro_options.clear_on_reselect) {
+              // Non Selected Item Should Select
+              $(element).on('click.wc-variation-form', 'li.variable-item:not(.selected):not(.radio-variable-item)', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                var value = $(this).data('value');
+                select.val(value).trigger('change');
+                select.trigger('click'); // select.trigger('focusin')
 
-          this._element.off('wvs-selected-item.wc-variation-form');
-          this._element.off('reset_data.wvs');
+                if (woo_variation_swatches_pro_options.is_mobile) {//     select.trigger('touchstart')
+                } // $(this).trigger('focus') // Mobile tooltip
 
-          var max_stock_label = parseInt(woo_variation_swatches_options.stock_label_display_threshold);
 
-          var variations = this._element.data('product_variations');
-          var attributes = this.getChosenAttributesAll();
+                $(this).trigger('wvs-selected-item', [value, select, self.$element]); // Custom Event for li
+              }); // Selected Item Should un Select
 
-          this._element.on('wvs-selected-item.wc-variation-form', 'li.variable-item:not(.radio-variable-item):not(.woo-variation-swatches-variable-item-more)', function (event) {
+              $(element).on('click.wc-variation-form', 'li.variable-item.selected:not(.radio-variable-item)', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                var value = $(this).val();
 
-            var attributes = _this5.getChosenAttributesAll();
+                if (woo_variation_swatches_pro_options.enable_catalog_mode && 'hover' === woo_variation_swatches_pro_options.catalog_mode_trigger) {
+                  return false;
+                }
 
-            if (attributes.count > 1 && attributes.count === attributes.chosenCount) {
-              _this5.resetStockLabel();
-            }
+                select.val('').trigger('change');
+                select.trigger('click');
+                $(this).trigger('wvs-unselected-item', [value, select, self.$element]); // Custom Event for li
+              }); // RADIO
+              // On Click trigger change event on Radio button
 
-            if (attributes.count > 1 && attributes.count === attributes.mayChosenCount) {
+              $(element).on('click.wc-variation-form', 'input.variable-item-radio-input:radio', function (event) {
+                event.stopPropagation();
+                $(this).trigger('change.wc-variation-form', {
+                  radioChange: true
+                });
+              });
+              $(element).on('change.wc-variation-form', 'input.variable-item-radio-input:radio', function (event, params) {
+                event.preventDefault();
+                event.stopPropagation();
 
-              var variationData = _this5.findStockLabelVariation(variations, attributes);
+                if (params && params.radioChange) {
+                  var value = $(this).val();
+                  var is_selected = $(this).parent('li.radio-variable-item').hasClass('selected');
 
-              variationData.forEach(function (data) {
+                  if (is_selected) {
+                    select.val('').trigger('change');
+                    $(this).parent('li.radio-variable-item').trigger('wvs-unselected-item', [value, select, self.$element]); // Custom Event for li
+                  } else {
+                    select.val(value).trigger('change');
+                    $(this).parent('li.radio-variable-item').trigger('wvs-selected-item', [value, select, self.$element]); // Custom Event for li
+                  }
 
-                var stockInfoSelector = '[data-attribute_name="' + data.attribute_name + '"] > [data-value="' + data.attribute_value + '"]';
-                if (data.variation.is_in_stock && data.variation.max_qty && data.variation.wvs_stock_left && data.variation.max_qty <= max_stock_label) {
-                  _this5._element.find(stockInfoSelector + ' .wvs-stock-left-info').attr('data-wvs-stock-info', data.variation.wvs_stock_left);
-                  _this5._element.find(stockInfoSelector).addClass('wvs-show-stock-left-info');
-                } else {
-                  _this5._element.find(stockInfoSelector).removeClass('wvs-show-stock-left-info');
-                  _this5._element.find(stockInfoSelector + ' .wvs-stock-left-info').attr('data-wvs-stock-info', '');
+                  select.trigger('click'); //select.trigger('focusin')
+
+                  if (woo_variation_swatches_pro_options.is_mobile) {//    select.trigger('touchstart')
+                  }
                 }
               });
+            } else {
+              $(element).on('click.wc-variation-form', 'li.variable-item:not(.radio-variable-item)', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                var value = $(this).data('value');
+                select.val(value).trigger('change');
+                select.trigger('click'); // select.trigger('focusin')
+
+                if (woo_variation_swatches_pro_options.is_mobile) {//   select.trigger('touchstart')
+                } // $(this).trigger('focus') // Mobile tooltip
+
+
+                $(this).trigger('wvs-selected-item', [value, select, self._element]); // Custom Event for li
+              }); // Radio
+
+              $(element).on('change.wc-variation-form', 'input.variable-item-radio-input:radio', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                var value = $(this).val();
+                select.val(value).trigger('change');
+                select.trigger('click'); // select.trigger('focusin')
+
+                if (woo_variation_swatches_pro_options.is_mobile) {//   select.trigger('touchstart')
+                } // Radio
+
+
+                $(this).parent('li.radio-variable-item').removeClass('selected disabled no-stock').addClass('selected');
+                $(this).parent('li.radio-variable-item').trigger('wvs-selected-item', [value, select, self.$element]); // Custom Event for li
+              });
+            } // Keyboard Access
+
+
+            $(element).on('keydown.wvs', 'li.variable-item:not(.disabled)', function (event) {
+              if (event.keyCode && 32 === event.keyCode || event.key && ' ' === event.key || event.keyCode && 13 === event.keyCode || event.key && 'enter' === event.key.toLowerCase()) {
+                event.preventDefault();
+                $(this).trigger('click');
+              }
+            });
+
+            if (!woo_variation_swatches_pro_options.is_mobile && woo_variation_swatches_pro_options.enable_catalog_mode && 'hover' === woo_variation_swatches_pro_options.catalog_mode_trigger) {
+              if (_this9.threshold_max < _this9.total_children) {
+                $(element).on('mouseenter.wvs', 'li.variable-item:not(.radio-variable-item)', function () {
+                  $(this).trigger('click');
+                  $(element).off('mouseenter.wvs');
+                });
+              } else {
+                $(element).on('mouseenter.wvs', 'li.variable-item:not(.radio-variable-item)', function (event) {
+                  $(this).trigger('click');
+                });
+              } // linkable_attribute
+
+
+              if (woo_variation_swatches_pro_options.linkable_attribute) {
+                $(element).on('click.linkable', 'li.variable-item:not(.radio-variable-item)', function (event) {
+                  if ('undefined' !== typeof event.originalEvent) {
+                    var url = $(this).attr('data-url');
+                    url ? window.location.href = url : '';
+                  }
+                });
+              }
             }
           });
+        } // End ---
 
-          this._element.on('reset_data.wvs', function (event) {
+      }, {
+        key: "resetDisplayedVariation",
+        value: function resetDisplayedVariation() {
+          this.resetPrice();
+          this.resetImage();
+          this.resetAvailabilityInfo();
+          this.resetCartButton();
+        }
+      }, {
+        key: "foundVariation",
+        value: function foundVariation(variation, is_ajax) {
+          var purchasable = true;
+          var template;
+          var $template_html; // this.getVariation(variation, is_ajax)
 
-            event.stopImmediatePropagation();
+          this.updateImage(variation);
+          this.reAttachCatalogModeHover();
 
-            var attributes = _this5.getChosenAttributesAll();
-            if (attributes.count > 1 && attributes.chosenCount < 1) {
-              _this5.resetStockLabel();
-            }
+          if (!woo_variation_swatches_pro_options.enable_catalog_mode) {
+            this.updateAvailabilityInfo(variation);
+            this.updatePrice(variation);
+          } // Enable or disable the add to cart button
+
+
+          if (!variation.is_purchasable || !variation.is_in_stock || !variation.variation_is_visible) {
+            purchasable = false;
+          }
+
+          if (purchasable && !woo_variation_swatches_pro_options.enable_catalog_mode) {
+            this.updateCartButton(variation);
+          } else {
+            this.resetCartButton();
+          }
+
+          this.$element.trigger('show_variation', [variation, purchasable]);
+        }
+      }, {
+        key: "reAttachCatalogModeHover",
+        value: function reAttachCatalogModeHover() {
+          if (!woo_variation_swatches_pro_options.is_mobile && this.threshold_max < this.total_children && woo_variation_swatches_pro_options.enable_catalog_mode && 'hover' === woo_variation_swatches_pro_options.catalog_mode_trigger) {
+            this.$element.find('ul.variable-items-wrapper').each(function (i, element) {
+              $(element).one('mouseenter.wc-variation-form', 'li.variable-item:not(.radio-variable-item):not(.selected)', function () {
+                $(this).trigger('click');
+              });
+            });
+          }
+        }
+      }, {
+        key: "updateCartButton",
+        value: function updateCartButton(variation) {
+          // console.log(JSON.stringify(variation.attributes))
+          this.$cart_button.removeClass('added');
+          this.$wrapper.find('.added_to_cart').remove();
+
+          var params = _objectSpread(_objectSpread({}, this.getChosenAttributes().data), {}, {
+            'add-to-cart': this.product_id,
+            variation_id: variation.variation_id
           });
-        }
-      }
-    }, {
-      key: 'getChosenAttributesAll',
-      value: function getChosenAttributesAll() {
-        var data = {};
-        var count = 0;
-        var chosen = 0;
 
-        this._attributeFields.each(function () {
-          var attribute_name = $(this).data('attribute_name') || $(this).attr('name');
-          var value = $(this).val() || '';
+          this.$cart_button.attr('href', this.addQueryArgs(this.$cart_button.attr('href'), params));
+          this.$cart_button.html(variation.add_to_cart_text); // this.$cart_button.attr('href', variation.add_to_cart_url)
 
-          if (value.length > 0) {
-            chosen++;
-          }
+          this.$cart_button.attr('aria-label', variation.add_to_cart_description);
 
-          count++;
-          data[attribute_name] = value;
-        });
-
-        return {
-          'count': count,
-          'chosenCount': chosen,
-          'mayChosenCount': chosen + 1,
-          'data': data
-        };
-      }
-    }, {
-      key: 'getChosenAttributesSingle',
-      value: function getChosenAttributesSingle() {
-        var data = {};
-        var count = 0;
-        var chosen = 0;
-
-        this._attributeFieldSingle.each(function () {
-          var attribute_name = $(this).data('attribute_name') || $(this).attr('name');
-          var value = $(this).val() || '';
-
-          if (value.length > 0) {
-            chosen++;
-          }
-
-          count++;
-          data[attribute_name] = value;
-        });
-
-        return {
-          'count': count,
-          'chosenCount': chosen,
-          'data': data
-        };
-      }
-    }, {
-      key: 'findMatchingVariations',
-      value: function findMatchingVariations(variations, attributes) {
-        var matching = [];
-        for (var i = 0; i < variations.length; i++) {
-          var variation = variations[i];
-
-          if (this.isMatch(variation.attributes, attributes)) {
-            matching.push(variation);
+          if ('yes' === woo_variation_swatches_pro_options.enable_ajax_add_to_cart) {
+            this.$cart_button.addClass('wvs_ajax_add_to_cart');
           }
         }
-        return matching;
-      }
-    }, {
-      key: 'isMatch',
-      value: function isMatch(variation_attributes, attributes) {
-        var match = true;
-        for (var attr_name in variation_attributes) {
-          if (variation_attributes.hasOwnProperty(attr_name)) {
-            var val1 = variation_attributes[attr_name];
-            var val2 = attributes[attr_name];
-            if (val1 !== undefined && val2 !== undefined && val1.length !== 0 && val2.length !== 0 && val1 !== val2) {
-              match = false;
+      }, {
+        key: "resetCartButton",
+        value: function resetCartButton() {
+          this.$cart_button.data('variation_id', '');
+          this.$cart_button.data('variations', '');
+          this.$cart_button.html(this.$cart_button.attr('data-o_html'));
+          this.$cart_button.attr('data-product_id', this.$cart_button.attr('data-o_product_id'));
+          this.$cart_button.attr('href', this.$cart_button.attr('data-o_href'));
+          this.$cart_button.attr('aria-label', this.$cart_button.attr('data-o_aria-label'));
+          this.$cart_button.removeClass('wvs_ajax_add_to_cart');
+          this.$cart_button.removeClass('added');
+          this.$wrapper.find('.added_to_cart').remove();
+        }
+      }, {
+        key: "addQueryArgs",
+        value: function addQueryArgs(url) {
+          var param = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+          var createURL = new URL(url);
+
+          for (var key in param) {
+            createURL.searchParams.set(key, param[key]);
+          }
+
+          return createURL.href;
+        }
+      }, {
+        key: "getQueryArgs",
+        value: function getQueryArgs(url) {
+          var createURL = new URL(url);
+          return Object.fromEntries(createURL.searchParams);
+        }
+      }, {
+        key: "updateAvailabilityInfo",
+        value: function updateAvailabilityInfo(variation) {
+          if (woo_variation_swatches_pro_options.archive_show_availability) {
+            var $template_html;
+            var template = !variation.variation_is_visible ? wp.template('wvs-unavailable-variation-template') : wp.template('wvs-variation-template');
+            $template_html = template({
+              variation: variation
+            });
+            $template_html = $template_html.replace('/*<![CDATA[*/', '');
+            $template_html = $template_html.replace('/*]]>*/', '');
+            this.$information.html($template_html);
+          }
+        }
+      }, {
+        key: "resetAvailabilityInfo",
+        value: function resetAvailabilityInfo() {
+          this.$information.html('');
+        }
+      }, {
+        key: "updatePrice",
+        value: function updatePrice(variation) {
+          if (variation && variation.price_html && variation.price_html.length > 1) {
+            this.$price.html(variation.price_html);
+          }
+        }
+      }, {
+        key: "resetPrice",
+        value: function resetPrice() {
+          this.$price.html(this.$price_html);
+        }
+      }, {
+        key: "defaultImage",
+        value: function defaultImage() {
+          this.$image.attr('data-o_src', this.$image.attr('src'));
+
+          if (this.$image.attr('srcset')) {
+            this.$image.attr('data-o_srcset', this.$image.attr('srcset'));
+          }
+
+          if (this.$image.attr('sizes')) {
+            this.$image.attr('data-o_sizes', this.$image.attr('sizes'));
+          }
+        }
+      }, {
+        key: "defaultCartButton",
+        value: function defaultCartButton() {
+          this.$cart_button.attr('data-o_html', this.$cart_button.html()); // this.$cart_button.attr('data-o_product_id', this.$cart_button.attr('data-product_id'))
+
+          if (this.$cart_button.attr('href')) {
+            this.$cart_button.attr('data-o_href', this.$cart_button.attr('href'));
+          }
+
+          if (this.$cart_button.attr('aria-label')) {
+            this.$cart_button.attr('data-o_aria-label', this.$cart_button.attr('aria-label'));
+          }
+        }
+      }, {
+        key: "updateImage",
+        value: function updateImage(variation) {
+          if (variation && variation.image && variation.image.src && variation.image.src.length > 1) {
+            this.$image.attr('src', variation.image.src);
+
+            if (variation.image.srcset.length > 1) {
+              this.$image.attr('srcset', variation.image.srcset);
+            }
+
+            if (variation.image.sizes.length > 1) {
+              this.$image.attr('sizes', variation.image.sizes);
             }
           }
         }
-        return match;
-      }
-    }], [{
-      key: '_jQueryInterface',
-      value: function _jQueryInterface(config) {
-        return this.each(function () {
-          new WooVariationSwatchesPro(this, config);
+      }, {
+        key: "updatePreviewImage",
+        value: function updatePreviewImage(variation) {
+          if (variation && variation.image && variation.image.thumb_src && variation.image.thumb_src.length > 1) {
+            this.$image.attr('src', variation.image.thumb_src);
+
+            if (variation.image.srcset.length > 1) {
+              this.$image.attr('srcset', variation.image.srcset);
+            }
+
+            if (variation.image.sizes.length > 1) {
+              this.$image.attr('sizes', variation.image.sizes);
+            }
+          }
+        }
+      }, {
+        key: "resetImage",
+        value: function resetImage() {
+          this.$image.attr('src', this.$image.attr('data-o_src'));
+
+          if (this.$image.attr('data-o_srcset')) {
+            this.$image.attr('srcset', this.$image.attr('data-o_srcset'));
+          }
+
+          if (this.$image.attr('data-o_sizes')) {
+            this.$image.attr('sizes', this.$image.attr('data-o_sizes'));
+          }
+        }
+      }]);
+
+      return _class2;
+    }();
+  }(jQuery);
+
+  var jQueryPlugin = function ($) {
+    return function (PluginName, ClassName) {
+      $.fn[PluginName] = function (options) {
+        var _this10 = this;
+
+        for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+          args[_key - 1] = arguments[_key];
+        }
+
+        return this.each(function (index, element) {
+          var $element = $(element); // let $element = $(this)
+
+          var data = $element.data(PluginName);
+
+          if (!data) {
+            data = new ClassName($element, $.extend({}, options));
+            $element.data(PluginName, data);
+          }
+
+          if (typeof options === 'string') {
+            if (_typeof(data[options]) === 'object') {
+              return data[options];
+            }
+
+            if (typeof data[options] === 'function') {
+              var _data;
+
+              return (_data = data)[options].apply(_data, args);
+            }
+          }
+
+          return _this10;
         });
-      }
-    }]);
+      }; // Constructor
 
-    return WooVariationSwatchesPro;
-  }();
 
-  /**
-   * ------------------------------------------------------------------------
-   * jQuery
-   * ------------------------------------------------------------------------
-   */
+      $.fn[PluginName].Constructor = ClassName; // Short hand
 
-  $.fn['WooVariationSwatchesPro'] = WooVariationSwatchesPro._jQueryInterface;
-  $.fn['WooVariationSwatchesPro'].Constructor = WooVariationSwatchesPro;
-  $.fn['WooVariationSwatchesPro'].noConflict = function () {
-    $.fn['WooVariationSwatchesPro'] = $.fn['WooVariationSwatchesPro'];
-    return WooVariationSwatchesPro._jQueryInterface;
-  };
+      $[PluginName] = function (options) {
+        var _$;
 
-  return WooVariationSwatchesPro;
-}(jQuery);
+        for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+          args[_key2 - 1] = arguments[_key2];
+        }
 
-/* harmony default export */ __webpack_exports__["default"] = (WooVariationSwatchesPro);
+        return (_$ = $({}))[PluginName].apply(_$, [options].concat(args));
+      }; // No Conflict
+
+
+      $.fn[PluginName].noConflict = function () {
+        return $.fn[PluginName];
+      };
+    };
+  }(jQuery);
+
+  jQueryPlugin('WooVariationSwatchesPro', Plugin);
+})(window);
+
+/***/ }),
+
+/***/ "./src/js/frontend-pro.js":
+/***/ (function(module, exports) {
+
+jQuery(function ($) {
+  try {
+    $(document).on('woo_variation_swatches_pro_init', function () {
+      $('.wvs-archive-variations-wrapper:not(.wvs-pro-loaded)').WooVariationSwatchesPro();
+    }).trigger('woo_variation_swatches_pro_init');
+  } catch (err) {
+    // If failed (conflict?) log the error but don't stop other scripts breaking.
+    window.console.log('Variation Swatches Pro:', err);
+  } // Support JetWooBuilder Smart Filter
+
+
+  $(document).on('jet-filter-content-rendered.wvs', function () {
+    $(document).trigger('woo_variation_swatches_pro_init');
+  }); // Support for Yith Infinite Scroll
+
+  $(document).on('yith_infs_added_elem.wvs', function () {
+    $(document).trigger('woo_variation_swatches_pro_init');
+  }); // Yith Composite Product
+
+  $(document).on('wc_variation_form.wvs', '.ywcp_inner_selected_container:not(.wvs-loaded)', function (event) {
+    $(document).trigger('woo_variation_swatches_pro_init');
+  }); // Try to cover all ajax data complete
+
+  $(document).ajaxComplete(function (event, request, settings) {
+    _.delay(function () {// $(document.body).trigger('woo_variation_swatches_pro_init')
+    }, 100);
+  }); // Support for Jetpack's Infinite Scroll,
+
+  $(document.body).on('post-load.wvs', function () {
+    $(document).trigger('woo_variation_swatches_pro_init');
+  }); // Support for Yith Ajax Filter
+
+  $(document).on('yith-wcan-ajax-filtered.wvs', function () {
+    $(document).trigger('woo_variation_swatches_pro_init');
+  }); // Support for beRocket ajax filters
+
+  $(document).on('berocket_ajax_products_loaded.wvs berocket_ajax_products_infinite_loaded.wvs', function () {
+    $(document).trigger('woo_variation_swatches_pro_init');
+  }); // Flatsome Infinite Scroll Support
+
+  $('.shop-container .products, .infinite-scroll-wrap').on('append.infiniteScroll', function (event, response, path) {
+    $(document).trigger('woo_variation_swatches_pro_init');
+  }); // FacetWP Load More
+
+  $(document).on('facetwp-loaded.wvs', function () {
+    $(document.body).trigger('woo_variation_swatches_pro_init');
+  }); // Savoy Load More
+
+  $(document).on('nm_infload_after.wvs nm_ajax_shop_update_content.wvs', function () {
+    $(document).trigger('woo_variation_swatches_pro_init');
+  }); // WooCommerce Filter Nav
+
+  $('body').on('aln_reloaded.wvs', function () {
+    _.delay(function () {
+      $(document).trigger('woo_variation_swatches_pro_init');
+    }, 100);
+  });
+});
+
+/***/ }),
+
+/***/ 1:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__("./src/js/WooVariationSwatchesPro.js");
+module.exports = __webpack_require__("./src/js/frontend-pro.js");
+
 
 /***/ })
-/******/ ]);
+
+/******/ });
