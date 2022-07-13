@@ -33,13 +33,13 @@ add_action('woocommerce_single_product_summary', function () {
 add_action('woocommerce_single_product_summary', function () {
     global $product;
     if ($product->get_shipping_class() === "free-shipping") {
-        echo '<div class="free-shipping">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20">
-            <path id="Path_41" data-name="Path 41" d="M10.769,146.041l7.692-4.195V134.2L10.769,137ZM10,135.644l8.389-3.053L10,129.538l-8.389,3.053Zm10-3.029v9.231a1.491,1.491,0,0,1-.216.781,1.535,1.535,0,0,1-.589.565l-8.462,4.615a1.494,1.494,0,0,1-1.466,0L.805,143.192a1.535,1.535,0,0,1-.589-.565A1.491,1.491,0,0,1,0,141.846v-9.231a1.5,1.5,0,0,1,.276-.877,1.509,1.509,0,0,1,.733-.565L9.471,128.1a1.5,1.5,0,0,1,1.058,0l8.462,3.077A1.539,1.539,0,0,1,20,132.615Z" transform="translate(0 -128)" fill="#474747"/>
-            </svg>
+        // echo '<div class="free-shipping">
+        // <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20">
+        //     <path id="Path_41" data-name="Path 41" d="M10.769,146.041l7.692-4.195V134.2L10.769,137ZM10,135.644l8.389-3.053L10,129.538l-8.389,3.053Zm10-3.029v9.231a1.491,1.491,0,0,1-.216.781,1.535,1.535,0,0,1-.589.565l-8.462,4.615a1.494,1.494,0,0,1-1.466,0L.805,143.192a1.535,1.535,0,0,1-.589-.565A1.491,1.491,0,0,1,0,141.846v-9.231a1.5,1.5,0,0,1,.276-.877,1.509,1.509,0,0,1,.733-.565L9.471,128.1a1.5,1.5,0,0,1,1.058,0l8.462,3.077A1.539,1.539,0,0,1,20,132.615Z" transform="translate(0 -128)" fill="#474747"/>
+        //     </svg>
 
-        Free Delivery
-        </div>';
+        // Free Delivery
+        // </div>';
     }
     echo '
     </div>
@@ -105,7 +105,9 @@ function singleProductQuery($categorySlug)
 
 // availability section _--------------------------------------------------------------
 
-add_action('woocommerce_single_product_summary', function () {
+add_action('woocommerce_single_product_summary', 'availabilitySectionWebduel', 60); 
+
+function availabilitySectionWebduel() {
     global $product;
     // Available on backorder
     $countryOfOrigin = $product->get_attribute('pa_country-of-origin');
@@ -163,7 +165,7 @@ add_action('woocommerce_single_product_summary', function () {
     }
     echo '
     </div>';
-}, 60);
+};
 
 // social share -----------------------------------------------------------
 add_action('woocommerce_single_product_summary', function () {

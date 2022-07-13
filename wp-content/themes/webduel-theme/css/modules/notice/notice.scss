@@ -1,0 +1,15 @@
+.webduel-notice {
+  background-color: var(--lightOrange);
+  padding: 10px;
+  margin: 0 0 10px 0;
+  .notice-text {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 10px;
+    }
+    span {
+      font-size: var(--mediumSize);
+    }
+  }
+}

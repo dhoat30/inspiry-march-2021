@@ -1,17 +1,10 @@
-<?php // phpcs:ignore WordPress.NamingConventions
-/**
- * YITH_YWGC_Frontend class
- *
- * @package yith-woocommerce-gift-cards\lib
- */
+<?php
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+	exit; // Exit if accessed directly
 }
 
 if ( ! class_exists( 'YITH_YWGC_Frontend' ) ) {
 	/**
-	 * YITH_YWGC_Frontend
-	 *
 	 * @class   YITH_YWGC_Frontend
 	 *
 	 * @since   1.0.0
@@ -23,7 +16,6 @@ if ( ! class_exists( 'YITH_YWGC_Frontend' ) ) {
 		 * Single instance of the class
 		 *
 		 * @since 1.0.0
-		 * @var instance instance.
 		 */
 		protected static $instance;
 
@@ -65,9 +57,11 @@ if ( ! class_exists( 'YITH_YWGC_Frontend' ) ) {
 			/**
 			 * Show the gift card product frontend template
 			 */
-			add_action( 'woocommerce_single_product_summary', array( $this, 'show_gift_card_product_template' ), 60 );
+			add_action( 'woocommerce_gift-card_add_to_cart', array( $this, 'show_gift_card_product_template' ) );
 
-			/** Show element on gift card product template. */
+			/**
+			 * Show element on gift card product template
+			 */
 			add_action( 'yith_gift_cards_template_after_gift_card_form', array( $this, 'show_gift_card_add_to_cart_button' ), 20 );
 
 			add_action( 'yith_ywgc_show_gift_card_amount_selection', array( $this, 'show_amount_selection' ) );
@@ -90,11 +84,11 @@ if ( ! class_exists( 'YITH_YWGC_Frontend' ) ) {
 
 			add_action( 'woocommerce_order_item_meta_start', array( $this, 'show_gift_card_code_on_order_item' ), 10, 3 );
 
-			add_shortcode( 'yith_ywgc_display_gift_card_form', array( $this, 'yith_ywgc_display_gift_card_form' ) );
-
 			add_action( 'woocommerce_product_thumbnails', array( $this, 'yith_ywgc_display_gift_card_form_preview_below_image' ) );
 
 			add_action( 'wp', array( $this, 'yith_ywgc_remove_image_zoom_support' ), 100 );
+
+			add_action( 'ywgc_empty_table_state_action_customer', array( $this, 'display_empty_gift_cards_table_state_view_customer' ) );
 
 		}
 
@@ -105,32 +99,22 @@ if ( ! class_exists( 'YITH_YWGC_Frontend' ) ) {
 		 */
 		public function frontend_init() {
 
-				$ywgc_cart_hook = apply_filters( 'ywgc_gift_card_code_form_cart_hook', 'woocommerce_before_cart' );
-				/**
-				 * Show the gift card section for entering the discount code in the cart page
-				 */
+			/**
+			 * Show the gift card section for entering the discount code in the cart page
+			 */
+			$ywgc_cart_hook = apply_filters( 'ywgc_gift_card_code_form_cart_hook', 'woocommerce_before_cart' );
 
-				add_action(
-					$ywgc_cart_hook,
-					array(
-						$this,
-						'show_field_for_gift_code',
-					)
-				);
+			add_action( $ywgc_cart_hook, array( $this, 'show_field_for_gift_code' ) );
 
-				$ywgc_checkout_hook = apply_filters( 'ywgc_gift_card_code_form_checkout_hook', 'woocommerce_before_checkout_form' );
-				/**
-				 * Show the gift card section for entering the discount code in the cart page
-				 */
-				add_action(
-					$ywgc_checkout_hook,
-					array(
-						$this,
-						'show_field_for_gift_code',
-					)
-				);
+			/**
+			 * Show the gift card section for entering the discount code in the cart page
+			 */
+			$ywgc_checkout_hook = apply_filters( 'ywgc_gift_card_code_form_checkout_hook', 'woocommerce_before_checkout_form' );
+
+			add_action( $ywgc_checkout_hook, array( $this, 'show_field_for_gift_code' ) );
 
 		}
+
 		/**
 		 * Show_amount_selection
 		 *
@@ -150,20 +134,277 @@ if ( ! class_exists( 'YITH_YWGC_Frontend' ) ) {
 			);
 		}
 
+		/**
+		 * Show custom design area for the product
+		 *
+		 * @param WC_Product $product product.
+		 */
+		public function show_design_section( $product ) {
+
+			$args = apply_filters(
+				'yith_wcgc_design_presets_args',
+				array(
+					'hide_empty' => 1,
+				)
+			);
+
+			$categories = get_terms( YWGC_CATEGORY_TAXONOMY, $args );
+
+			$item_categories = array();
+			foreach ( $categories as $item ) {
+				$object_ids = get_objects_in_term( $item->term_id, YWGC_CATEGORY_TAXONOMY );
+				foreach ( $object_ids as $object_id ) {
+					$item_categories[ $object_id ] = isset( $item_categories[ $object_id ] ) ? $item_categories[ $object_id ] . ' ywgc-category-' . $item->term_id : 'ywgc-category-' . $item->term_id;
+				}
+			}
+
+			wc_get_template(
+				'yith-gift-cards/gift-card-design.php',
+				array(
+					'categories'      => $categories,
+					'item_categories' => $item_categories,
+					'product'         => $product,
+				),
+				'',
+				trailingslashit( YITH_YWGC_TEMPLATES_DIR )
+			);
+		}
+
+		/**
+		 * Show Gift Cards details
+		 *
+		 * @param WC_Product $product product.
+		 */
+		public function show_gift_card_details( $product ) {
+
+			if ( ( $product instanceof WC_Product_Gift_Card ) && $product->is_virtual() ) { // load virtual gift cards template.
+				wc_get_template(
+					'yith-gift-cards/gift-card-details.php',
+					array(
+						'mandatory_recipient' => apply_filters( 'yith_wcgc_gift_card_details_mandatory_recipient', YITH_YWGC()->mandatory_recipient() ),
+					),
+					'',
+					trailingslashit( YITH_YWGC_TEMPLATES_DIR )
+				);
+			} else {
+				wc_get_template(
+					'yith-gift-cards/physical-gift-card-details.php',
+					array(
+						'ywgc_physical_details_mandatory' => ( 'yes' === get_option( 'ywgc_physical_details_mandatory' ) ),
+					),
+					'',
+					trailingslashit( YITH_YWGC_TEMPLATES_DIR )
+				);
+			}
+
+		}
+
+		/**
+		 * Register new endpoint to use for My Account page.
+		 */
+		public function yith_ywgc_add_endpoint() {
+			add_rewrite_endpoint( 'gift-cards', EP_ROOT | EP_PAGES );
+		}
+
+		/**
+		 * Add new query var.
+		 *
+		 * @param $vars
+		 *
+		 * @return array
+		 */
+		public function yith_ywgc_gift_cards_query_vars( $vars ) {
+			$vars[] = 'gift-cards';
+
+			return $vars;
+		}
+
+		/**
+		 * Insert the new endpoint into the My Account menu.
+		 *
+		 * @param $items
+		 *
+		 * @return array
+		 */
+		public function yith_ywgc_add_gift_cards_link_my_account( $items ) {
+
+			$item_position = ( array_search( 'orders', array_keys( $items ), true ) );
+			$items_part1   = array_slice( $items, 0, $item_position + 1 );
+			$items_part2   = array_slice( $items, $item_position );
+
+			/**
+			 * APPLY_FILTERS: yith_wcgc_my_account_menu_item_title
+			 *
+			 * Filter the "Gift Cards" menu item title on "My Account".
+			 *
+			 * @param string the "Gift Cards" menu item title
+			 *
+			 * @return string
+			 */
+			$items_part1['gift-cards'] = apply_filters( 'yith_wcgc_my_account_menu_item_title', esc_html__( 'Gift Cards', 'yith-woocommerce-gift-cards' ) );
+			$items                     = array_merge( $items_part1, $items_part2 );
+
+			return $items;
+		}
+
+
+		/**
+		 *  Add content to the new endpoint.
+		 */
+		public function yith_ywgc_gift_cards_content() {
+			wc_get_template(
+				'myaccount/my-giftcards.php',
+				array(),
+				'',
+				trailingslashit( YITH_YWGC_TEMPLATES_DIR )
+			);
+		}
+
+		/**
+		 * Show the gift card code under the order item, in the order admin page
+		 *
+		 * @param int $item_id
+		 * @param array $item
+		 * @param WC_product $_product
+		 *
+		 * @throws Exception
+		 * @since  1.0.0
+		 * @author Lorenzo Giuffrida
+		 */
+		public function show_gift_card_code_on_order_item( $item_id, $item, $_product ) {
+
+			$gift_ids = ywgc_get_order_item_giftcards( $item_id );
+
+			if ( empty( $gift_ids ) ) {
+				return;
+			}
+
+			foreach ( $gift_ids as $gift_id ) {
+
+				$gc = new YITH_YWGC_Gift_Card( array( 'ID' => $gift_id ) );
+
+				if ( ! $gc->is_pre_printed() ) :
+					?>
+                    <div>
+						<?php
+						/**
+						 * APPLY_FILTERS: yith_ywgc_display_code_order_details
+						 *
+						 * Filter the condition to display the gift card code in the order details.
+						 *
+						 * @param bool true to display it, false to not. Default: true
+						 *
+						 * @return bool
+						 */
+						if ( apply_filters( 'yith_ywgc_display_code_order_details', true ) ) :
+							?>
+                            <span class="ywgc-gift-code-label"><?php echo esc_html__( 'Gift card code: ', 'yith-woocommerce-gift-cards' ); ?></span>
+                            <span class="ywgc-card-code"><?php echo $gc->get_code(); ?></span>
+						<?php
+						endif;
+						if ( $gc->is_virtual() ) {
+							if ( $gc->delivery_send_date ) {
+								$status_class = 'sent';
+								$message      = sprintf( esc_html__( 'Sent on %s', 'yith-woocommerce-gift-cards' ), $gc->get_formatted_date( $gc->delivery_send_date ) );
+							} elseif ( $gc->delivery_date >= current_time( 'timestamp' ) ) {//phpcs:ignore --timestamp is discouraged
+								$status_class = 'scheduled';
+								$message      = esc_html__( 'Scheduled', 'yith-woocommerce-gift-cards' );
+							} elseif ( $gc->has_been_sent() === '' ) {
+								$status_class = 'not-sent';
+								$message      = esc_html__( 'Not yet sent', 'yith-woocommerce-gift-cards' );
+							} else {
+								$status_class = 'failed';
+								$message      = esc_html__( 'Failed', 'yith-woocommerce-gift-cards' );
+							}
+							?>
+
+                            <div>
+                                <span><?php echo sprintf( esc_html__( 'Recipient: %s', 'yith-woocommerce-gift-cards' ), wp_kses( $gc->recipient, 'post' ) ); ?></span>
+                            </div>
+                            <div>
+								<?php if ( '' !== $gc->delivery_date ) : ?>
+                                    <span><?php echo sprintf( esc_html__( 'Delivery date: %s', 'yith-woocommerce-gift-cards' ), $gc->get_formatted_date( $item['ywgc_delivery_date'] ) ); ?></span>
+                                    <br>
+								<?php endif; ?>
+                                <span class="ywgc-delivery-status <?php echo esc_attr( $status_class ); ?>"><?php echo wp_kses( $message, 'post' ); ?></span>
+
+                            </div>
+							<?php
+						}
+						?>
+                    </div>
+				<?php
+				endif;
+			}
+		}
+
+		/**
+		 * Display a preview of the form under the gift card image
+		 */
+		public function yith_ywgc_display_gift_card_form_preview_below_image() {
+
+			if ( is_product() ) {
+
+				$product = wc_get_product( get_the_ID() );
+
+				if ( is_object( $product ) && $product->is_type( 'gift-card' ) && $product->is_virtual() ) {
+
+					wc_get_template(
+						'single-product/form-preview.php',
+						array(
+							'product' => $product,
+						),
+						'',
+						trailingslashit( YITH_YWGC_TEMPLATES_DIR )
+					);
+				}
+			}
+		}
+
+		/**
+		 * Remove zoom in gift card product pages
+		 */
+		public function yith_ywgc_remove_image_zoom_support() {
+
+			if ( is_product() ) {
+
+				$product = wc_get_product( get_the_ID() );
+
+				if ( is_object( $product ) && $product->is_type( 'gift-card' ) ) {
+					remove_theme_support( 'wc-product-gallery-zoom' );
+					remove_theme_support( 'wc-product-gallery-lightbox' );
+				}
+			}
+		}
 
 		/**
 		 * Output the add to cart button for variations.
 		 */
 		public function show_gift_card_add_to_cart_button() {
 			global $product;
+
+			if ( ! $product->is_purchasable() ) {
+				return;
+			}
+
 			if ( 'gift-card' === $product->get_type() ) {
 
-				// Load the template.
+				$product_id        = $product->get_id();
+				$sold_individually = $product->is_sold_individually();
+				$add_to_card_text  = $product->single_add_to_cart_text();
+
 				wc_get_template(
 					'single-product/add-to-cart/gift-card-add-to-cart.php',
+					array(
+						'product'           => $product,
+						'product_id'        => $product_id,
+						'sold_individually' => $sold_individually,
+						'add_to_card_text'  => $add_to_card_text,
+					),
 					'',
-					'',
-					trailingslashit( YITH_YWGC_TEMPLATES_DIR )
+					trailingslashit(
+						YITH_YWGC_TEMPLATES_DIR
+					)
 				);
 			}
 		}
@@ -185,75 +426,6 @@ if ( ! class_exists( 'YITH_YWGC_Frontend' ) ) {
 		}
 
 		/**
-		 * Show gift card field
-		 */
-		public function show_field_for_gift_code() {
-
-			wc_get_template(
-				'checkout/form-gift-cards.php',
-				array(),
-				'',
-				YITH_YWGC_TEMPLATES_DIR
-			);
-		}
-		// Register new endpoint to use for My Account page.
-		/**
-		 * Yith_ywgc_add_endpoint
-		 *
-		 * @return void
-		 */
-		public function yith_ywgc_add_endpoint() {
-			add_rewrite_endpoint( 'gift-cards', EP_ROOT | EP_PAGES );
-		}
-
-		/**
-		 * Yith_ywgc_gift_cards_query_vars
-		 *
-		 * @param  mixed $vars vars.
-		 * @return vars
-		 */
-		public function yith_ywgc_gift_cards_query_vars( $vars ) {
-			$vars[] = 'gift-cards';
-
-			return $vars;
-		}
-		/**
-		 * Yith_ywgc_add_gift_cards_link_my_account
-		 * Insert the new endpoint into the My Account menu
-		 *
-		 * @param  mixed $items items.
-		 * @return items
-		 */
-		public function yith_ywgc_add_gift_cards_link_my_account( $items ) {
-
-			$item_position = ( array_search( 'orders', array_keys( $items ), true ) );
-
-			$items_part1 = array_slice( $items, 0, $item_position + 1 );
-			$items_part2 = array_slice( $items, $item_position );
-
-			$items_part1['gift-cards'] = apply_filters( 'yith_wcgc_my_account_menu_item_title', esc_html__( 'Gift Cards', 'yith-woocommerce-gift-cards' ) );
-
-			$items = array_merge( $items_part1, $items_part2 );
-
-			return $items;
-		}
-
-		/**
-		 * Yith_ywgc_gift_cards_content
-		 *
-		 * @return void
-		 */
-		public function yith_ywgc_gift_cards_content() {
-			wc_get_template(
-				'myaccount/my-giftcards.php',
-				array(),
-				'',
-				trailingslashit( YITH_YWGC_TEMPLATES_DIR )
-			);
-		}
-
-
-		/**
 		 * Add frontend style to gift card product page
 		 *
 		 * @since  1.0
@@ -261,6 +433,15 @@ if ( ! class_exists( 'YITH_YWGC_Frontend' ) ) {
 		 */
 		public function enqueue_frontend_script() {
 
+			/**
+			 * APPLY_FILTERS: yith_ywgc_do_eneuque_frontend_scripts
+			 *
+			 * Filter the condition to enqueue of the frontend scripts.
+			 *
+			 * @param bool true to enqueue the scripts everywhere. False to only enqueue them in the product, cart and checkout pages.
+			 *
+			 * @return bool
+			 */
 			if ( is_product() || is_cart() || is_checkout() || is_account_page() || apply_filters( 'yith_ywgc_do_eneuque_frontend_scripts', false ) ) {
 				wp_register_script( 'accounting', WC()->plugin_url() . yit_load_js_file( '/assets/js/accounting/accounting.js' ), array( 'jquery' ), '0.4.2', true );
 
@@ -290,6 +471,15 @@ if ( ! class_exists( 'YITH_YWGC_Frontend' ) ) {
 
 				$date_format = get_option( 'ywgc_plugin_date_format_option', 'yy-mm-dd' );
 
+				/**
+				 * APPLY_FILTERS: yith_ywgc_gift_card_notice_target
+				 *
+				 * Filter the gift card notices target in the frontend script.
+				 *
+				 * @param string the notice target selector. Default: div.woocommerce
+				 *
+				 * @return string
+				 */
 				wp_localize_script(
 					'ywgc-frontend-script',
 					'ywgc_data',
@@ -463,205 +653,46 @@ if ( ! class_exists( 'YITH_YWGC_Frontend' ) ) {
 
 
 		/**
-		 * Show custom design area for the product
-		 *
-		 * @param WC_Product $product product.
+		 * Show gift card field
 		 */
-		public function show_design_section( $product ) {
+		public function show_field_for_gift_code() {
 
-			$args = apply_filters(
-				'yith_wcgc_design_presets_args',
-				array(
-					'hide_empty' => 1,
-				)
-			);
-
-			$categories = get_terms( YWGC_CATEGORY_TAXONOMY, $args );
-
-			$item_categories = array();
-			foreach ( $categories as $item ) {
-				$object_ids = get_objects_in_term( $item->term_id, YWGC_CATEGORY_TAXONOMY );
-				foreach ( $object_ids as $object_id ) {
-					$item_categories[ $object_id ] = isset( $item_categories[ $object_id ] ) ? $item_categories[ $object_id ] . ' ywgc-category-' . $item->term_id : 'ywgc-category-' . $item->term_id;
-				}
-			}
-
-			// Load the template.
 			wc_get_template(
-				'yith-gift-cards/gift-card-design.php',
-				array(
-					'categories'      => $categories,
-					'item_categories' => $item_categories,
-					'product'         => $product,
-				),
+				'checkout/form-gift-cards.php',
+				array(),
 				'',
-				trailingslashit( YITH_YWGC_TEMPLATES_DIR )
+				YITH_YWGC_TEMPLATES_DIR
 			);
 		}
 
 		/**
-		 * Show Gift Cards details
+		 * Display empty table state view for customers
 		 *
-		 * @param WC_Product $product product.
+		 * @param array $args Field Arguments.
 		 */
-		public function show_gift_card_details( $product ) {
+		public function display_empty_gift_cards_table_state_view_customer( $args = array() ) {
 
-			if ( ( $product instanceof WC_Product_Gift_Card ) && $product->is_virtual() ) { // load virtual gift cards template.
-				wc_get_template(
-					'yith-gift-cards/gift-card-details.php',
-					array(
-						'mandatory_recipient' => apply_filters( 'yith_wcgc_gift_card_details_mandatory_recipient', YITH_YWGC()->mandatory_recipient() ),
-					),
-					'',
-					trailingslashit( YITH_YWGC_TEMPLATES_DIR )
-				);
-			} else { // load physical gift cards template.
-				wc_get_template(
-					'yith-gift-cards/physical-gift-card-details.php',
-					array(
-						'ywgc_physical_details_mandatory' => ( 'yes' === get_option( 'ywgc_physical_details_mandatory' ) ),
-					),
-					'',
-					trailingslashit( YITH_YWGC_TEMPLATES_DIR )
-				);
-			}
+			yith_ywgc_get_view( 'empty-gift-cards-table-state-customer.php', compact( 'args' ) );
 
 		}
-
-		/**
-		 * Show the gift card code under the order item, in the order admin page
-		 *
-		 * @param int        $item_id item_id.
-		 * @param array      $item item.
-		 * @param WC_product $_product _product.
-		 *
-		 * @author Lorenzo Giuffrida
-		 * @since  1.0.0
-		 */
-		public function show_gift_card_code_on_order_item( $item_id, $item, $_product ) {
-
-			$gift_ids = ywgc_get_order_item_giftcards( $item_id );
-
-			if ( empty( $gift_ids ) ) {
-				return;
-			}
-
-			foreach ( $gift_ids as $gift_id ) {
-
-				$gc = new YITH_YWGC_Gift_Card( array( 'ID' => $gift_id ) );
-
-				if ( ! $gc->is_pre_printed() ) :
-					?>
-					<div>
-						<span class="ywgc-gift-code-label"><?php esc_html_e( 'Gift card code: ', 'yith-woocommerce-gift-cards' ); ?></span>
-						<span class="ywgc-card-code"><?php echo wp_kses( $gc->get_code(), 'post' ); ?></span>
-
-						<?php
-
-						if ( $gc->delivery_send_date ) {
-							$status_class = 'sent';
-							/* translators: %s: Date */
-							$message = sprintf( esc_html__( 'Sent on %s', 'yith-woocommerce-gift-cards' ), $gc->get_formatted_date( $gc->delivery_send_date ) );
-						} elseif ( $gc->delivery_date >= current_time( 'timestamp' ) ) { //phpcs:ignore --timestamp discouraged
-							$status_class = 'scheduled';
-							$message      = esc_html__( 'Scheduled', 'yith-woocommerce-gift-cards' );
-						} elseif ( '' === $gc->has_been_sent() ) {
-							$status_class = 'not-sent';
-							$message      = esc_html__( 'Not yet sent', 'yith-woocommerce-gift-cards' );
-						} else {
-							$status_class = 'failed';
-							$message      = esc_html__( 'Failed', 'yith-woocommerce-gift-cards' );
-						}
-						?>
-
-						<div>
-						<?php /* translators: %s: gc->recipient */ ?>
-							<span><?php echo sprintf( esc_html__( 'Recipient: %s', 'yith-woocommerce-gift-cards' ), wp_kses( $gc->recipient, 'post' ) ); ?></span>
-						</div>
-						<div>
-							<?php if ( '' !== $gc->delivery_date ) : ?>
-								<?php /* translators: %s: Delivery date */ ?>
-								<span><?php echo sprintf( esc_html__( 'Delivery date: %s', 'yith-woocommerce-gift-cards' ), wp_kses( $gc->get_formatted_date( $gc->delivery_date ) ), 'post' ); ?></span>
-								<br>
-							<?php endif; ?>
-							<span class="ywgc-delivery-status <?php echo esc_attr( $status_class ); ?>"><?php echo wp_kses( $message, 'post' ); ?></span>
-
-						</div>
-											</div>
-					<?php
-				endif;
-			}
-		}
-		/**
-		 * Yith_ywgc_display_gift_card_form
-		 * Shortcode to include the necessary hook to display the gift card form
-		 *
-		 * @param  mixed $atts atts.
-		 * @param  mixed $content content.
-		 * @return content
-		 */
-		public function yith_ywgc_display_gift_card_form( $atts, $content ) {
-
-			global $product;
-
-			if ( is_object( $product ) && $product instanceof WC_Product_Gift_Card && 'gift-card' === $product->get_type() ) {
-
-				ob_start();
-
-				wc_get_template(
-					'single-product/add-to-cart/gift-card.php',
-					'',
-					'',
-					trailingslashit( YITH_YWGC_TEMPLATES_DIR )
-				);
-
-				$content = ob_get_clean();
-
-			}
-			return $content;
-		}
-		/**
-		 * Yith_ywgc_display_gift_card_form_preview_below_image
-		 * Display a preview of the form under the gift card image
-		 *
-		 * @return void
-		 */
-		public function yith_ywgc_display_gift_card_form_preview_below_image() {
-
-			if ( is_product() ) {
-
-				$product = wc_get_product( get_the_ID() );
-
-				if ( is_object( $product ) && $product->is_type( 'gift-card' ) && $product->is_virtual() ) {
-
-					wc_get_template(
-						'single-product/form-preview.php',
-						array(
-							'product' => $product,
-						),
-						'',
-						trailingslashit( YITH_YWGC_TEMPLATES_DIR )
-					);
-				}
-			}
-		}
-
-
-		/**
-		 * Remove zoom in gift card product pages
-		 */
-		public function yith_ywgc_remove_image_zoom_support() {
-
-			if ( is_product() ) {
-
-				$product = wc_get_product( get_the_ID() );
-
-				if ( is_object( $product ) && $product->is_type( 'gift-card' ) ) {
-					remove_theme_support( 'wc-product-gallery-zoom' );
-					remove_theme_support( 'wc-product-gallery-lightbox' );
-				}
-			}
-		}
-
 	}
+}
+
+
+/**
+ * Unique access to instance of YITH_YWGC_Frontend_Premium class
+ *
+ * @return \YITH_YWGC_Frontend|\YITH_YWGC_Frontend_Premium
+ * @since 2.0.0
+ */
+function YITH_YWGC_Frontend() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
+	if ( defined( 'YITH_YWGC_PREMIUM' ) ) {
+		$instance = YITH_YWGC_Frontend_Premium::get_instance();
+	} elseif ( defined( 'YITH_YWGC_EXTENDED' ) ) {
+		$instance = YITH_YWGC_Frontend_Extended::get_instance();
+	} else {
+		$instance = YITH_YWGC_Frontend::get_instance();
+	}
+
+	return $instance;
 }

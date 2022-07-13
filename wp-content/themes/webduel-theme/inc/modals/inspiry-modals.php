@@ -8,26 +8,26 @@ function inspiry_modal_code()
     <section class="inspiry-modal">
         <div class="modal-container">
             <?php
-            // get the parent category id to show modal based on category 
-            $parentCategory = '';
+            // get the child category id to show modal based on category 
+            $childCategory = '';
             global $post;
             if (is_product()) {
-                $prod_terms = get_the_terms($post->ID, 'product_cat');
+                //Get all terms associated with post in taxonomy 'category'
+                $terms = get_the_terms(get_the_ID(),'product_cat');
+                //Get an array of their IDs
+                $term_ids = wp_list_pluck($terms,'term_id');
 
-                foreach ($prod_terms as $prod_term) {
+                //Get array of parents - 0 is not a parent
+                $parents = array_filter(wp_list_pluck($terms,'parent'));
 
-                    // gets product cat id
-                    $product_cat_id = $prod_term->term_id;
+                //Get array of IDs of terms which are not parents.
+                $term_ids_not_parents = array_diff($term_ids,  $parents);
 
-                    // gets an array of all parent category levels
-                    $product_parent_categories_all_hierachy = get_ancestors($product_cat_id, 'product_cat');
-                    // This cuts the array and extracts the last set in the array
-                    $last_parent_cat = array_slice($product_parent_categories_all_hierachy, -1, 1, true);
-                    foreach ($last_parent_cat as $last_parent_cat_value) {
-                        // $last_parent_cat_value is the id of the most top level category, can be use whichever one like
-                        $parentCategory =  $last_parent_cat_value;
-                    }
-                }
+                //Get corresponding term objects
+                $terms_not_parents = array_intersect_key($terms,  $term_ids_not_parents);
+                // child category 
+                $childCategory = $terms_not_parents[0]->term_id;
+               
             }
 
             // get all the tag assigned to the product 
@@ -50,16 +50,15 @@ function inspiry_modal_code()
                     // get the product category id from the modal
                     $terms = get_field('product_categories');
                     // function refracted
-                    if ($terms) { ?>
-
-                        <?php foreach ($terms as $term) {
+                    if ($terms) {
+                        foreach ($terms as $term) {
                             // check if the category exist on modal post and check if the modal content exist
 
-                            if ($term === $parentCategory && have_rows('modal_content')) {
+                            if ($term === $childCategory && have_rows('modal_content')) {
                                 $breakWhileLoop = true;
                                 $desktopImage = get_field('desktop_image');
                                 // refracted html modal code 
-                                modalWebduelHTML($desktopImage, $parentCategory);
+                                modalWebduelHTML($desktopImage, $childCategory);
                                 break;
                             }
                         }
@@ -68,8 +67,6 @@ function inspiry_modal_code()
                     // get the product tag id from the modal
                     $terms = get_field('product_tags');
 
-                  
-                       
                     if ($terms) {
                         foreach ($terms as $term) {
                             // check if the tag exist on modal post and check if the modal content exist
@@ -77,12 +74,10 @@ function inspiry_modal_code()
                                 $breakWhileLoop = true;
                                 $desktopImage = get_field('desktop_image');
                                 // refracted html code
-                                modalWebduelHTML($desktopImage); 
+                                modalWebduelHTML($desktopImage);
                                 break;
                             }
-                        } ?>
-
-                        <?php
+                        }
                     }
                 } elseif ($showOn === 'show-on-specific-page: Show on Specific Page') {
                     // get the page id 
@@ -97,12 +92,10 @@ function inspiry_modal_code()
                             // check if the tag exist on modal post and check if the modal content exist
                             if ($url === $term && have_rows('modal_content')) {
                                 $desktopImage = get_field('desktop_image');
-                                modalWebduelHTML($desktopImage); 
+                                modalWebduelHTML($desktopImage);
                                 break;
                             }
-                        } ?>
-
-            <?php
+                        }
                     }
                 }
                 if ($breakWhileLoop) {

@@ -6506,6 +6506,22 @@ input.DpsField {
   letter-spacing: 0.05rem;
 }
 
+.webduel-notice {
+  background-color: var(--lightOrange);
+  padding: 10px;
+  margin: 0 0 10px 0;
+}
+.webduel-notice .notice-text {
+  display: flex;
+  align-items: center;
+}
+.webduel-notice .notice-text svg {
+  margin-right: 10px;
+}
+.webduel-notice .notice-text span {
+  font-size: var(--mediumSize);
+}
+
 .inspiry-specials .hero-section {
   padding-bottom: 25%;
   position: relative;
@@ -7395,7 +7411,8 @@ a.login_button {
   --lightGrey: #dfdfdf;
   --blue: #007272;
   --green: #1fac75;
-  --orange: #d69400;
+  --orange: #ff9d00;
+  --lightOrange: #faf4e7;
   --grey: #636363;
   --darkGrey: #474747;
   --black: #303030;

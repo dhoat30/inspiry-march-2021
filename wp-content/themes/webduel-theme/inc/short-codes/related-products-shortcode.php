@@ -1,12 +1,42 @@
 <?php 
 // related products logic 
 function relatedProductLoopShortCode(){ 
+   
     global $product; 
     $childCategorySlug = "null"; 
     $parentCategory=''; 
     $categories = get_the_terms( $product->get_id(), 'product_cat' ); 
-    //  print_r($categories);
-    if ( $categories  ){
+    // show related products if the products are assigned to the current product 
+    if($product->get_upsell_ids()){ 
+        $productIDArr = $product->get_upsell_ids(); 
+        $relatedOwlCarouselClass = count($productIDArr) > 3 ? 'owl-carousel' : null; 
+       
+        ?>
+          <section class="trending-section row-container">
+            <h3 class="title">You may also like</h3>
+            <div class="related-product-section <?php echo $relatedOwlCarouselClass; ?>"><?php 
+             foreach( $productIDArr as $productID){ 
+                 $product = wc_get_product( $productID );
+
+            ?>
+                    <a class="card" href="<?php echo get_the_permalink($productID)?>">
+                        <div class="image-container">
+                            <img 
+                            loading="lazy" 
+                            src="<?php  echo get_the_post_thumbnail_url($productID,"woocommerce_thumbnail")?>" 
+                            alt="<?php echo get_the_title($productID)?>"/>
+                        </div>
+                        <h5 ><?php echo get_the_title($productID)?></h5>
+                        <h6 class="price"><?php echo $product->get_price_html()?></h6>
+                    </a>
+                   <?php 
+                    }
+                   ?>
+            </div>
+        </section>
+        <?php 
+    }
+    elseif ($categories){
         // loop through each cat
         foreach($categories as $category) {
             $parentCategory = $category->slug;
@@ -18,10 +48,36 @@ function relatedProductLoopShortCode(){
           }
         }
     }
-    
-    // echo $childCategorySlug; 
+    // related product loop function 
+   relatedProductLoopWebduel($childCategorySlug, $parentCategory); 
+}
+
+function relatedProductLoopWebduel($childCategorySlug, $parentCategory){ 
+     // echo $childCategorySlug; 
  
-        $childCategoriesQuery = array(
+     $childCategoriesQuery = array(
+        'post_type' => 'product',
+        'posts_per_page'=>12,
+            'orderby' => 'date', 
+            'order' => 'ASC',
+            'tax_query' => array(
+                'relation'=> 'OR', 
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field'    => 'slug',
+                    'terms'    => array($childCategorySlug),
+                )
+                ), 
+    );
+    $postsExists = ''; 
+
+    $posts = new WP_Query( $childCategoriesQuery );
+    // check of the child category exists and have posts
+    if($posts->have_posts()){ 
+        $postsExists = new WP_Query( $childCategoriesQuery );
+    }
+    else{ //else query for parent category 
+        $parentCategoriesQuery = array(
             'post_type' => 'product',
             'posts_per_page'=>12,
                 'orderby' => 'date', 
@@ -31,65 +87,43 @@ function relatedProductLoopShortCode(){
                     array(
                         'taxonomy' => 'product_cat',
                         'field'    => 'slug',
-                        'terms'    => array($childCategorySlug),
+                        'terms'    => array($parentCategory),
                     )
                     ), 
         );
-        $postsExists = ''; 
+        $postsExists = new WP_Query( $parentCategoriesQuery );
+    }
+    if($postsExists->have_posts()){ 
+        $relatedOwlCarouselClass = $postsExists->post_count>3 ? 'owl-carousel' : null; 
 
-        $posts = new WP_Query( $childCategoriesQuery );
-        // check of the child category exists and have posts
-        if($posts->have_posts()){ 
-            $postsExists = new WP_Query( $childCategoriesQuery );
-        }
-        else{ //else query for parent category 
-            $parentCategoriesQuery = array(
-                'post_type' => 'product',
-                'posts_per_page'=>12,
-                    'orderby' => 'date', 
-                    'order' => 'ASC',
-                    'tax_query' => array(
-                        'relation'=> 'OR', 
-                        array(
-                            'taxonomy' => 'product_cat',
-                            'field'    => 'slug',
-                            'terms'    => array($parentCategory),
-                        )
-                        ), 
-            );
-            $postsExists = new WP_Query( $parentCategoriesQuery );
-        }
-        if($postsExists->have_posts()){ 
-            $relatedOwlCarouselClass = $postsExists->post_count>3 ? 'owl-carousel' : null; 
-
-            ?>
-            <section class="trending-section row-container">
-                <h3 class="title">You may also like</h3>
-                <div class="related-product-section <?php echo $relatedOwlCarouselClass; ?>">
-                    <?php 
-                    while($postsExists->have_posts()){ 
-                        $postsExists->the_post(); 
-                        $product = wc_get_product( get_the_ID() );
-                        
-                        ?>
-                        <a class="card" href="<?php echo get_the_permalink()?>">
-                            <div class="image-container">
-                                <img 
-                                loading="lazy" 
-                                src="<?php  echo get_the_post_thumbnail_url(null,"woocommerce_thumbnail")?>" 
-                                alt="<?php echo get_the_title()?>"/>
-                            </div>
-                            <h5 ><?php echo get_the_title()?></h5>
-                            <h6 class="price"><?php echo $product->get_price_html()?></h6>
-                        </a>
-                        <?php 
-                    }
+        ?>
+        <section class="trending-section row-container">
+            <h3 class="title">You may also like</h3>
+            <div class="related-product-section <?php echo $relatedOwlCarouselClass; ?>">
+                <?php 
+                while($postsExists->have_posts()){ 
+                    $postsExists->the_post(); 
+                    $product = wc_get_product( get_the_ID() );
+                    
                     ?>
-                </div>
-            </section>
-            <?php 
-             wp_reset_postdata();
-        }
+                    <a class="card" href="<?php echo get_the_permalink()?>">
+                        <div class="image-container">
+                            <img 
+                            loading="lazy" 
+                            src="<?php  echo get_the_post_thumbnail_url(null,"woocommerce_thumbnail")?>" 
+                            alt="<?php echo get_the_title()?>"/>
+                        </div>
+                        <h5 ><?php echo get_the_title()?></h5>
+                        <h6 class="price"><?php echo $product->get_price_html()?></h6>
+                    </a>
+                    <?php 
+                }
+                ?>
+            </div>
+        </section>
+        <?php 
+         wp_reset_postdata();
+    }
 }
 
 add_shortcode('related_product_loop_short_code', 'relatedProductLoopShortCode'); 

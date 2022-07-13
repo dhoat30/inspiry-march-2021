@@ -78,7 +78,7 @@ add_action("woocommerce_after_shop_loop_item_title", "add_product_attributes", 1
 
 function add_product_attributes()
 {
-   echo do_shortcode('[add_free_shipping_tag]');
+   // echo do_shortcode('[add_free_shipping_tag]');
    // add free shipping 
    echo do_shortcode(('[add_deal_text]'));
 }

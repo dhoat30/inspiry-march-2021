@@ -3,13 +3,13 @@
  * Plugin Name: YITH WooCommerce Gift Cards
  * Plugin URI: https://yithemes.com/themes/plugins/yith-woocommerce-gift-cards
  * Description: <code><strong>YITH WooCommerce Gift Cards</strong></code> allows your users to purchase and give gift cards. In this way, you will increase the spread of your brand, your sales, and average spend, especially during the holidays. <a href="https://yithemes.com/" target="_blank">Get more plugins for your e-commerce shop on <strong>YITH</strong></a>.
- * Version: 2.10.0
+ * Version: 2.11.0
  * Author: YITH
  * Author URI: https://yithemes.com/
  * Text Domain: yith-woocommerce-gift-cards
  * Domain Path: /languages/
- * WC requires at least: 6.4
- * WC tested up to: 6.6
+ * WC requires at least: 6.5
+ * WC tested up to: 6.7
  *
  * @package yith-woocommerce-gift-cards
  **/
@@ -48,9 +48,9 @@ if ( ! function_exists( 'yith_ywgc_install_woocommerce_admin_notice' ) ) {
 	 */
 	function yith_ywgc_install_woocommerce_admin_notice() {
 		?>
-        <div class="error">
-            <p><?php esc_html_e( 'YITH WooCommerce Gift Cards is enabled but not effective. It requires WooCommerce in order to work.', 'yit' ); ?></p>
-        </div>
+		<div class="error">
+			<p><?php esc_html_e( 'YITH WooCommerce Gift Cards is enabled but not effective. It requires WooCommerce in order to work.', 'yit' ); ?></p>
+		</div>
 		<?php
 	}
 }
@@ -67,7 +67,7 @@ defined( 'YITH_YWGC_FREE_INIT' ) || define( 'YITH_YWGC_FREE_INIT', plugin_basena
 defined( 'YITH_YWGC_SECRET_KEY' ) || define( 'YITH_YWGC_SECRET_KEY', 'GcGTnx2i0Qdavxe9b9by' );
 defined( 'YITH_YWGC_PLUGIN_NAME' ) || define( 'YITH_YWGC_PLUGIN_NAME', 'YITH WooCommerce Gift Cards' );
 defined( 'YITH_YWGC_INIT' ) || define( 'YITH_YWGC_INIT', plugin_basename( __FILE__ ) );
-defined( 'YITH_YWGC_VERSION' ) || define( 'YITH_YWGC_VERSION', '2.10.0' );
+defined( 'YITH_YWGC_VERSION' ) || define( 'YITH_YWGC_VERSION', '2.11.0' );
 defined( 'YITH_YWGC_DB_CURRENT_VERSION' ) || define( 'YITH_YWGC_DB_CURRENT_VERSION', '1.0.1' );
 defined( 'YITH_YWGC_FILE' ) || define( 'YITH_YWGC_FILE', __FILE__ );
 defined( 'YITH_YWGC_DIR' ) || define( 'YITH_YWGC_DIR', plugin_dir_path( __FILE__ ) );
@@ -77,7 +77,8 @@ defined( 'YITH_YWGC_ASSETS_DIR' ) || define( 'YITH_YWGC_ASSETS_DIR', YITH_YWGC_D
 defined( 'YITH_YWGC_SCRIPT_URL' ) || define( 'YITH_YWGC_SCRIPT_URL', YITH_YWGC_ASSETS_URL . '/js/' );
 defined( 'YITH_YWGC_TEMPLATES_DIR' ) || define( 'YITH_YWGC_TEMPLATES_DIR', YITH_YWGC_DIR . 'templates/' );
 defined( 'YITH_YWGC_ASSETS_IMAGES_URL' ) || define( 'YITH_YWGC_ASSETS_IMAGES_URL', YITH_YWGC_ASSETS_URL . '/images/' );
-defined( 'YITH_YWGC_VIEWS_PATH' ) || define( 'YITH_YWGC_VIEWS_PATH', YITH_YWGC_DIR . 'views/' );
+defined( 'YITH_YWGC_VIEWS_PATH' ) || define( 'YITH_YWGC_VIEWS_PATH', YITH_YWGC_DIR . 'includes/admin/views/' );
+
 
 // endregion.
 
@@ -86,10 +87,6 @@ if ( ! function_exists( 'yit_maybe_plugin_fw_loader' ) && file_exists( YITH_YWGC
 	require_once YITH_YWGC_DIR . 'plugin-fw/init.php';
 }
 yit_maybe_plugin_fw_loader( YITH_YWGC_DIR );
-
-if( file_exists( YITH_YWGC_DIR . 'functions.php' ) ){
-	require_once YITH_YWGC_DIR . 'functions.php';
-}
 
 if ( ! function_exists( 'yith_ywgc_init' ) ) {
 	/**
@@ -105,7 +102,24 @@ if ( ! function_exists( 'yith_ywgc_init' ) ) {
 		 */
 		load_plugin_textdomain( 'yith-woocommerce-gift-cards', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
-		require_once YITH_YWGC_DIR . 'includes/class-ywgc-plugin-fw-loader.php';
+		/**
+		 * Load required classes
+		 */
+		require_once( YITH_YWGC_DIR . 'includes/admin/class-ywgc-plugin-fw-loader.php' );
+
+		// Free.
+		require_once YITH_YWGC_DIR . 'includes/class-yith-wc-product-gift-card.php';
+		require_once YITH_YWGC_DIR . 'includes/class-yith-ywgc-cart-checkout.php';
+		require_once YITH_YWGC_DIR . 'includes/class-yith-ywgc-emails.php';
+		require_once YITH_YWGC_DIR . 'includes/class-yith-ywgc-gift-cards-table.php';
+		require_once YITH_YWGC_DIR . 'includes/class-yith-woocommerce-gift-cards.php';
+		require_once YITH_YWGC_DIR . 'includes/admin/class-yith-ywgc-backend.php';
+		require_once YITH_YWGC_DIR . 'includes/class-yith-ywgc-frontend.php';
+		require_once YITH_YWGC_DIR . 'includes/class-yith-ywgc-gift-card.php';
+		require_once YITH_YWGC_DIR . 'includes/shortcodes/class-yith-ywgc-shortcodes.php';
+
+		// Load functions
+		require_once YITH_YWGC_DIR . 'includes/functions.yith-ywgc.php';
 
 		// Start the plugin.
 		YITH_YWGC();

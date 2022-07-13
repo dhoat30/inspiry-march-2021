@@ -4,7 +4,7 @@ Donate link: https://flycart.org/
 Tags: woocommerce, coupons, discounts, dynamic pricing, Buy One Get One Free, pricing deals, bulk discount, discount
 Requires at least: 4.4.1
 Tested up to: 6.0
-Stable tag: 2.4.2
+Stable tag: 2.4.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -335,6 +335,10 @@ Note : Enable recursive checkbox if the discounts should be applied in sequentia
 * Dutch Translation - [@mvdburg1971](https://profiles.wordpress.org/mvdburg1971) - Michael van der Burg
 
 == Changelog ==
+
+= 2.4.3 - 28/06/22 =
+* Fix: Sale page doesn't filters based on selected rules.
+* Improvement: Event: advanced_woo_discount_rules_get_price_of_cart_item_on_find_cheapest_item
 
 = 2.4.2 - 21/06/22 =
 * Feature: Option to schedule sale page product rebuild on daily once.

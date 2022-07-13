@@ -232,6 +232,31 @@ class DBTable
     }
 
     /**
+     * Get rules for on sale list (indexing)
+     *
+     * @param array $rule_ids
+     * @return array
+     */
+    public static function getRulesForOnSaleList($rule_ids, $all = false)
+    {
+        global $wpdb;
+        $wpdb->hide_errors();
+
+        $rules_table_name = $wpdb->prefix . self::RULES_TABLE_NAME;
+
+        $rule_query = '';
+        if (!$all && is_array($rule_ids)) {
+            $rule_ids = array_map('absint', $rule_ids);
+            $rule_ids = implode(",", $rule_ids);
+            $rule_query = "AND id IN ({$rule_ids})";
+        }
+        $current_time = current_time('timestamp');
+
+        $query = "SELECT * FROM {$rules_table_name} WHERE enabled = %d AND deleted = %d {$rule_query} AND (date_from <= %d OR date_from IS NULL) AND (date_to >= %d OR date_to IS NULL) AND (usage_limits > used_limits OR used_limits IS NULL OR usage_limits = 0)";
+        return self::$rules['on_sale_list'] = $wpdb->get_results($wpdb->prepare($query, array(1, 0, $current_time, $current_time)), OBJECT);
+    }
+
+    /**
      * save new rule
      * @param $format
      * @param $values

@@ -10,6 +10,9 @@ function add_category_banner_webduel()
     global $wp_query;
     $cat = $wp_query->get_queried_object();
     $catID = $cat->term_id;
+    $mobileImage= get_field('mobile_image',331); 
+    // echo $catID; 
+    // print_r($mobileImage);
     $thumbnail_id =   get_term_meta($catID, 'thumbnail_id', true);
     $imageLarge = wp_get_attachment_image_src($thumbnail_id, 'woocommerce-single');
     $imageMedium = wp_get_attachment_image_src($thumbnail_id, 'woocommerce-single');

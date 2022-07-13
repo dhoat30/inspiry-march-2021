@@ -4,6 +4,7 @@ namespace Wdr\App\Controllers;
 
 use Wdr\App\Helpers\Helper;
 use Wdr\App\Helpers\Rule;
+use Wdr\App\Models\DBTable;
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
@@ -89,14 +90,10 @@ class OnSaleShortCode extends ManageDiscount
         }
     }
 
-    protected function getSelectedRules($rules_ids){
-        // To fetch rule based on date and active rules
-        add_filter('advanced_woo_discount_rules_is_front_end_request_for_fetching_rules', '__return_true', 101);
+    protected function getRules($rule_ids, $all = false) {
         $rule_helper = new Rule();
-        $this->updateRebuildRulesInSettings($rules_ids);
-        $rules = $rule_helper->getAvailableRules($this->getAvailableConditions(), $rules_ids);
-        remove_filter('advanced_woo_discount_rules_is_front_end_request_for_fetching_rules', '__return_true', 101);
-        return $rules;
+        $available_rules = DBTable::getRulesForOnSaleList($rule_ids, $all);
+        return $rule_helper->getRuleObject($available_rules, $this->getAvailableConditions());
     }
 
     /**
@@ -138,16 +135,19 @@ class OnSaleShortCode extends ManageDiscount
             self::setRequiredRebuild(0);
             return;
         } elseif ($update && is_array($rules_ids)){
+            $this->updateRebuildRulesInSettings($rules_ids);
             if(!in_array("all", $rules_ids)){
-                self::$available_rules = $this->getSelectedRules($rules_ids);
+                self::$available_rules = $this->getRules($rules_ids);
             } else {
-                $this->updateRebuildRulesInSettings($rules_ids);
+                self::$available_rules = $this->getRules(null, true);
             }
         } else {
             $rules_ids = self::getReBuildOnSaleRules();
             if(!empty($rules_ids)){
                 if(!in_array("all", $rules_ids)){
-                    self::$available_rules = $this->getSelectedRules($rules_ids);
+                    self::$available_rules = $this->getRules($rules_ids);
+                } else {
+                    self::$available_rules = $this->getRules(null, true);
                 }
             } else {
                 return;
@@ -155,7 +155,7 @@ class OnSaleShortCode extends ManageDiscount
         }
         if (!empty(self::$available_rules)) {
             foreach (self::$available_rules as $rule) {
-                if($rule->rule->enabled == 1 && $rule->rule->deleted == 0) {
+                if($rule->rule->enabled == 1) {
                     if($rule->isSpecificConditionsPassed(['order_date', 'order_time', 'order_date_and_time', 'order_days'])) {
                         $discount_type = $rule->getRuleDiscountType();
                         if($discount_type != 'wdr_free_shipping'){
@@ -189,6 +189,9 @@ class OnSaleShortCode extends ManageDiscount
                 }
             }
             $this->mergeAllRebuildRules();
+            self::setRequiredRebuild(0);
+        } else {
+            update_option(self::$on_sale_list_key, array());
             self::setRequiredRebuild(0);
         }
     }

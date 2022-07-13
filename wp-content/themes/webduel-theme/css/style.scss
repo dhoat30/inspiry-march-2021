@@ -46,6 +46,9 @@
 // /* modal css  */
 @import "modules/modal/modal";
 
+// notice css
+@import "modules/notice/notice";
+
 @import "modules/inspiry-specials";
 
 /* customer service css  */
@@ -71,7 +74,8 @@
   --lightGrey: #dfdfdf;
   --blue: #007272;
   --green: #1fac75;
-  --orange: #d69400;
+  --orange: #ff9d00;
+  --lightOrange: #faf4e7;
   --grey: #636363;
   --darkGrey: #474747;
   --black: #303030;

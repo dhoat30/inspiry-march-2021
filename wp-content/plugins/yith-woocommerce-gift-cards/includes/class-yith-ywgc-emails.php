@@ -1,18 +1,11 @@
-<?php // phpcs:ignore WordPress.NamingConventions
-/**
- * YITH_YWGC_Emails class
- *
- * @package yith-woocommerce-gift-cards\lib
- */
+<?php
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+	exit; // Exit if accessed directly
 }
-
 
 if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 
 	/**
-	 * YITH_YWGC_Emails
 	 *
 	 * @class   YITH_YWGC_Emails
 	 *
@@ -21,14 +14,13 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 	 */
 	class YITH_YWGC_Emails {
 
-
 		/**
 		 * Single instance of the class
 		 *
 		 * @since 1.0.0
 		 * @var instance instance.
 		 */
-		protected static $instance;
+		public static $instance;
 
 		/**
 		 * Returns single instance of the class
@@ -51,7 +43,7 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 		 * @since  1.0
 		 * @author Lorenzo Giuffrida
 		 */
-		protected function __construct() {
+		public function __construct() {
 
 			/**
 			 * Add an email action for sending the digital gift card
@@ -76,67 +68,31 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 			/**
 			 * Add information to the email footer
 			 */
-			add_action(
-				'woocommerce_email_footer',
-				array(
-					$this,
-					'add_footer_information',
-				)
-			);
+			add_action( 'woocommerce_email_footer', array( $this, 'add_footer_information' ) );
 
 			/**
 			 * Add CSS style to gift card emails header
 			 */
-			add_action(
-				'woocommerce_email_header',
-				array(
-					$this,
-					'include_css_for_emails',
-				),
-				10,
-				2
-			);
+			add_action( 'woocommerce_email_header', array( $this, 'include_css_for_emails' ), 10, 2 );
 
 			/**
 			 * Show an introductory text before the gift cards editor
 			 */
-			add_action(
-				'ywgc_gift_cards_email_before_preview',
-				array(
-					$this,
-					'show_introductory_text',
-				),
-				10,
-				2
-			);
+			add_action( 'ywgc_gift_cards_email_before_preview', array( $this, 'show_introductory_text' ), 10, 2 );
 
 			/**
 			 * Show the link for cart discount on the gift card email
 			 */
-			add_action(
-				'ywgc_gift_card_email_after_preview',
-				array(
-					$this,
-					'show_link_for_cart_discount',
-				),
-				10
-			);
+			add_action( 'ywgc_gift_card_email_after_preview', array( $this, 'show_link_for_cart_discount' ), 10 );
 
-			add_action(
-				'yith_ywgc_send_gift_card_email',
-				array(
-					$this,
-					'send_gift_card_email',
-				)
-			);
+			add_action( 'yith_ywgc_send_gift_card_email', array( $this, 'send_gift_card_email' ) );
 		}
 
-
 		/**
-		 * Send the gift card code email
+		 * send the gift card code email
 		 *
 		 * @param YITH_YWGC_Gift_Card|int $gift_card the gift card.
-		 * @param bool                    $only_new  choose if only never sent gift card should be used.
+		 * @param bool                            $only_new  choose if only never sent gift card should be used.
 		 *
 		 * @author Lorenzo Giuffrida
 		 * @since  1.0.0
@@ -148,10 +104,19 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 			}
 
 			if ( ! $gift_card->exists() ) {
-				// it isn't a gift card.
 				return;
 			}
 
+			/**
+			 * APPLY_FILTERS: yith_wcgc_deny_gift_card_email
+			 *
+			 * Filter the condition to deny to send the gift card email.
+			 *
+			 * @param bool true to deny it, false to allow it. Default: false
+			 * @param object $gift_card the gift card object
+			 *
+			 * @return bool
+			 */
 			if ( ( ! $gift_card->is_virtual() || empty( $gift_card->recipient ) ) || apply_filters( 'yith_wcgc_deny_gift_card_email', false, $gift_card ) ) {
 				// not a digital gift card or missing recipient.
 				return;
@@ -162,14 +127,46 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 				return;
 			}
 
+			/**
+			 * APPLY_FILTERS: ywgc_recipient_email_before_sent_email
+			 *
+			 * Filter the recipient email before sending the gift card email.
+			 *
+			 * @param string the recipient email
+			 * @param object $gift_card the gift card object
+			 *
+			 * @return string
+			 */
 			$gift_card->recipient = apply_filters( 'ywgc_recipient_email_before_sent_email', $gift_card->recipient, $gift_card );
 
+			/**
+			 * DO_ACTION: ywgc_before_sent_email_gift_card_notification
+			 *
+			 * Before send the gift card notification via email.
+			 *
+			 * @param object $gift_card the gift card object
+			 */
 			do_action( 'ywgc_before_sent_email_gift_card_notification', $gift_card );
 
 			WC()->mailer();
 
+			/**
+			 * DO_ACTION: ywgc_email_send_gift_card_notification
+			 *
+			 * Trigger the gift card notification email.
+			 *
+			 * @param object $gift_card the gift card object
+			 * @param string the recipient case
+			 */
 			do_action( 'ywgc_email_send_gift_card_notification', $gift_card, 'recipient' );
 
+			/**
+			 * DO_ACTION: yith_ywgc_gift_card_email_sent
+			 *
+			 * After send the gift card notification via email.
+			 *
+			 * @param object $gift_card the gift card object
+			 */
 			do_action( 'yith_ywgc_gift_card_email_sent', $gift_card );
 
 			$old_file = get_post_meta( $gift_card->ID, 'ywgc_pdf_file', true );
@@ -204,23 +201,35 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 				);
 
 			}
-
 		}
 
 		/**
 		 * Show the introductory message on the email being sent
 		 *
-		 * @param string              $text text.
-		 * @param YITH_YWGC_Gift_Card $gift_card gift_card.
+		 * @param string              $text
+		 * @param YITH_YWGC_Gift_Card $gift_card
 		 *
 		 * @author Lorenzo Giuffrida
 		 * @since  1.0.0
 		 */
 		public function show_introductory_text( $text, $gift_card ) {
+
+			/**
+			 * APPLY_FILTERS: ywgc_gift_cards_email_before_preview_text
+			 *
+			 * Filter the introductory text in the gift card email.
+			 *
+			 * @param string $text introductory text
+			 * @param object $gift_card the gift card object
+			 *
+			 * @return string
+			 */
 			?>
-			<p class="center-email"><?php echo wp_kses( apply_filters( 'ywgc_gift_cards_email_before_preview_text', $text, $gift_card ), 'post' ); ?></p>
+            <p class="center-email"><?php echo apply_filters( 'ywgc_gift_cards_email_before_preview_text', $text, $gift_card ); ?></p>
 			<?php
 		}
+
+
 		/**
 		 * Include_css_for_emails
 		 * Add CSS style to gift card emails header
@@ -246,12 +255,21 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 
 			include YITH_YWGC_ASSETS_DIR . '/css/ywgc-frontend.css';
 
-			wc_get_template(
-				'emails/style.css',
-				'',
-				'',
-				YITH_YWGC_TEMPLATES_DIR
-			);
+			if ( is_rtl() ) {
+				wc_get_template(
+					'emails/style-rtl.css',
+					'',
+					'',
+					YITH_YWGC_TEMPLATES_DIR
+				);
+			} else {
+				wc_get_template(
+					'emails/style.css',
+					'',
+					'',
+					YITH_YWGC_TEMPLATES_DIR
+				);
+			}
 
 			echo '</style>';
 		}
@@ -278,7 +296,7 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 		 * @param WC_Email $email the email content.
 		 */
 		public function add_footer_information( $email = null ) {
-			if ( null === $email ) {
+			if ( is_null( $email ) ) {
 				return;
 			}
 
@@ -290,11 +308,37 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 				return;
 			}
 
+			/**
+			 * APPLY_FILTERS: yith_ywgc_email_shop_name
+			 *
+			 * Filter the shop name displayed on the gift card email footer.
+			 *
+			 * @param string the shop name
+			 *
+			 * @return string
+			 */
+			$shop_name = apply_filters( 'yith_ywgc_email_shop_name', get_option( 'ywgc_shop_name', '' ) );
+			/**
+			 * APPLY_FILTERS: yith_ywgc_email_shop_link
+			 *
+			 * Filter the shop link displayed on the gift card email footer.
+			 *
+			 * @param string the shop link. Default: shop page
+			 *
+			 * @return string
+			 */
+			$shop_link = apply_filters( 'yith_ywgc_email_shop_link', get_permalink( wc_get_page_id( 'shop' ) ) );
+
+			if ( ! $shop_name || ! $shop_link ) {
+				return;
+			}
+
 			wc_get_template(
 				'emails/gift-card-footer.php',
 				array(
-					'email'     => $email,
-					'shop_name' => get_option( 'ywgc_shop_name', '' ),
+					'email'      => $email,
+					'shop_name'  => $shop_name,
+					'$shop_link' => $shop_link,
 				),
 				'',
 				YITH_YWGC_TEMPLATES_DIR
@@ -311,7 +355,6 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 		public function add_gift_cards_trigger_action( $actions ) {
 			// Add trigger action for sending digital gift card.
 			$actions[] = 'ywgc-email-send-gift-card';
-			$actions[] = 'ywgc-email-notify-customer';
 
 			return $actions;
 		}
@@ -319,18 +362,15 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 		/**
 		 * Locate the plugin email templates
 		 *
-		 * @param mixed $core_file core_file.
-		 * @param mixed $template template.
-		 * @param mixed $template_base template_base.
+		 * @param $core_file
+		 * @param $template
+		 * @param $template_base
 		 *
 		 * @return string
 		 */
 		public function locate_core_template( $core_file, $template, $template_base ) {
 			$custom_template = array(
 				'emails/send-gift-card.php',
-				'emails/plain/send-gift-card.php',
-				'emails/notify-customer.php',
-				'emails/plain/notify-customer.php',
 			);
 
 			if ( in_array( $template, $custom_template, true ) ) {
@@ -354,9 +394,23 @@ if ( ! class_exists( 'YITH_YWGC_Emails' ) ) {
 
 			return $email_classes;
 		}
-
-
 	}
 }
 
-YITH_YWGC_Emails::get_instance();
+/**
+ * Unique access to instance of YITH_YWGC_Emails class
+ *
+ * @return YITH_YWGC_Emails|YITH_YWGC_Emails_Premium|YITH_YWGC_Emails_Extended
+ * @since 2.0.0
+ */
+function YITH_YWGC_Emails() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
+	if ( defined( 'YITH_YWGC_PREMIUM' ) ) {
+		$instance = YITH_YWGC_Emails_Premium::get_instance();
+	} elseif ( defined( 'YITH_YWGC_EXTENDED' ) ) {
+		$instance = YITH_YWGC_Emails_Extended::get_instance();
+	} else {
+		$instance = YITH_YWGC_Emails::get_instance();
+	}
+
+	return $instance;
+}
